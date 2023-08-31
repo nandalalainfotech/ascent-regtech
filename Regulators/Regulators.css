@@ -1,4 +1,21 @@
-.base{
+.base {
     background-image: url("our-approach-img-1.jpg");
     height: 520px;
+}
+
+@media screen and (max-width: 820px) {
+    img {
+        width: 300px !important;
+        /* margin-left: 50px; */
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    img {
+        width: 300px !important;
+        /* margin-left: 50px; */
+        display: flex;
+
+    }
 }

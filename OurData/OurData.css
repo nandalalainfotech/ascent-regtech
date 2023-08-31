@@ -2,3 +2,16 @@
     background-image: url("our-approach-img-1.jpg");
     height: 580px;
 }
+
+@media screen and (max-width: 750px) {
+    img {
+       max-width: 150px !important;
+       /* margin-left: 50px; */
+     }
+   }
+@media screen and (max-width: 600px) {
+   img {
+      max-width: 200px !important;
+      margin-left: 50px;
+    }
+  }
