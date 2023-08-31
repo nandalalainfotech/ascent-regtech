@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    color: #253859;
     font-family: Mulish;
 }
 
@@ -68,12 +67,16 @@ nav {
     margin-top: 1rem;
 }
 
-.line {
+.line a {
     cursor: pointer;
 }
 
-.line:hover {
-     border-bottom: 1px solid #03d5cc;
+.line a:hover {
+    border-bottom: 1px solid #03d5cc;
+}
+
+.show {
+    color: #253859;
 }
 
 /*Styling Buttons*/
@@ -86,10 +89,23 @@ nav {
     font-size: 1rem;
     cursor: pointer;
     margin: 1.5rem;
+    color: #253859 !important;
+    text-decoration: none !important;
+    /* color: #253859; */
+}
+
+.login-button a {
+    color: #253859 !important;
+    text-decoration: none !important;
+}
+
+.login-button a:hover {
+    color: #03d5cc !important;
+    transition: all ease-in-out 350ms;
 }
 
 .login-button:hover {
-    color: #03d5cc;
+    color: #03d5cc !important;
     background-color: #f2f5f7;
     border: 2px solid #03d5cc;
     transition: all ease-in-out 350ms;
@@ -166,20 +182,10 @@ nav {
     padding: 0.4rem !important;
 }
 
-ul#submenu a::before {
-    content: "" !important;
-    display: block !important;
-    height: 1px !important;
-    width: 0% !important;
-    background-color: #03d5cc !important;
-    position: absolute !important;
-    margin: 0 0 0 10% !important;
-}
-
-ul#submenu a:hover::before {
-    width: 50% !important;
-    margin-top: 1.5rem !important;
-    margin-left: 0 !important;
+ul#submenu a:hover {
+    padding-top: -0.4rem !important;
+    border-bottom: 1.5px solid #03d5cc;
+    width: fit-content !important;
 }
 
 /* submenu end */
@@ -268,6 +274,7 @@ ul#submenu a:hover::before {
 svg path {
     stroke: #03d5cc !important;
 }
+
 /* second div end */
 /* third div */
 /*Stying for small screens*/
@@ -301,6 +308,11 @@ svg path {
     .login-button:focus {
         background: #03d5cc;
         border: none;
+    }
+
+    .line a,
+    .login-button a {
+        color: #fff !important;
     }
 
     .join-button,
