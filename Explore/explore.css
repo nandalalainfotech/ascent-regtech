@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    outline-style: none !important;
+    font-family: Mulish;
+}
+
+.banner-paragraph {
+    font-size: 150%;
+    color: #ffffff;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.mapping-para {
+    font-size: 25.5px;
+    font-weight: bold;
+}
+
+.mapping-para:hover {
+    cursor: pointer;
+    color: #253859;
+}
+
+.regulatory {
+    color: #253859;
+    margin-top: 300px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#buttonlearn-work {
+    background-color: #03d5cc;
+    ;
+    color: #fff;
+    position: relative;
+}
+
+#buttonlearn-work:hover {
+    bottom: .5rem;
+    background-color: #28bebb;
+    animation-name: btn;
+    animation-duration: 1s;
+    box-shadow: 0px 1px 4px 4px lightblue;
+}
+
+.iwt-icon {
+    color: #03d5cc;
+    font-size: 34px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.heading-explore {
+    margin-top: 100px;
+    font-weight: 600;
+    color: #253859;
+}
+
+.paragraph-explore {
+    font-size: 1.3em;
+    color: #253859;
+}
+
+.mapping-paragraph {
+    font-size: 25.5px;
+    font-weight: bold;
+    color: #253859;
+    font-weight: bold;
+}
+
+.mapping-paragraph-icon {
+    color: #253859;
+    font-size: 15px;
+    font-weight: bold;
+}

@@ -1,0 +1,267 @@
+#loginpage {
+    overflow-x: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    text-align: center;
+    padding-top: 10em;
+}
+
+.logo img {
+    width: 90%;
+    max-width: 500px;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.form-body {
+    padding: 15px;
+}
+
+.panel-body {
+    padding: 15px;
+}
+
+form {
+    margin: 1.7em 2em 0.5em 1.7em;
+}
+
+.login-content {
+    border-color: #ddd;
+}
+
+.panel {
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.login-form label {
+    text-transform: capitalize;
+}
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.login-form #user_email {
+    margin-bottom: 1.6em;
+}
+
+.form-control {
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #e5e6e7;
+    border-radius: 1px;
+    color: inherit;
+    display: block;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+    height: 34px;
+    line-height: 1.42857143;
+    font-size: 14px;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #101010;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+#user_password {
+    margin-bottom: 1em;
+}
+
+.checkbox {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.checkbox label {
+    min-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.checkbox input[type=checkbox] {
+    position: absolute;
+    margin-top: 4px\9;
+    margin-left: -20px;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    margin: 4px 0 0;
+    line-height: normal;
+}
+
+.login-form .disclaimer {
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+}
+
+a {
+    cursor: pointer;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a {
+    background-color: transparent;
+}
+
+body {
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #183460;
+    font-size: 13px;
+    color: #676a6c;
+    overflow-x: hidden;
+}
+
+.btn {
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    background-color: #28b3bb;
+    border-color: #28b3bb;
+    color: #ffffff;
+}
+
+.btn {
+    border-radius: 3px;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:active:hover {
+    background-color: #9dd7cb;
+    border-color: #9dd7cb;
+    color: #ffffff;
+}
+
+.login-form input[type="submit"] {
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    display: block;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.devise-links {
+    /* margin: 10px 0; */
+    text-align: center;
+}
+
+.devise-links .devise-link {
+    display: inline;
+}
+
+.content {
+    padding: 20px 10px 10px;
+}
+
+@media (min-width: 768px) {
+    #page-wrapper {
+        margin: 0 0 0 0px;
+        min-height: 1200px;
+    }
+}
+
+#page-wrapper {
+    padding: 0 15px;
+    position: relative !important;
+}
+
+.gray-bg {
+    background-color: #f3f3f4;
+}
+
+.footer {
+    width: 100%;
+}
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+ul {
+    margin-top: 0;
+}
+
+ul.nav-pills li {
+    padding-top: 6px;
+}
+
+.nav-pills li {
+    float: left;
+}
+
+.nav li {
+    position: relative;
+    display: block;
+}
+
+.nav li a {
+    color: #a7b1c2;
+    font-weight: 600;
+    padding: 14px 20px 14px 25px;
+}
+
+.nav-pills li a {
+    border-radius: 4px;
+}
+
+.nav li a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
