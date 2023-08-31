@@ -1,0 +1,674 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #253859;
+    font-family: Mulish;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    height: 4rem;
+    width: 100vw;
+    background-color: #f8f8f8;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+    z-index: 10;
+}
+
+/*Styling logo*/
+.logo {
+    padding: 1vh 1vw;
+    text-align: center;
+}
+
+.logo img {
+    height: 65px;
+    width: 220px;
+    padding: 1rem 0 1.5rem 4rem;
+}
+
+/*Styling Links*/
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 88vw;
+    padding-top: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a {
+    color: #253859;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.3rem;
+}
+
+.nav-links li a::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0%;
+    background-color: #61DAFB;
+    position: absolute;
+    transition: all linear 250ms;
+    margin: 0 0 0 10%;
+}
+
+.nav-links li a:hover::before {
+    width: 80%;
+    margin-top: 1.5rem;
+}
+
+/*Styling Buttons*/
+.login-button {
+    background-color: transparent;
+    border: 1.5px solid #253859;
+    border-radius: 10px;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.login-button:hover {
+    color: #03d5cc;
+    background-color: #f2f5f7;
+    border: 1.5px solid #03d5cc;
+    transition: all ease-in-out 350ms;
+}
+
+.join-button {
+    color: #fff !important;
+    background-color: #03d5cc;
+    border: 1.5px solid #03d5cc;
+    border-radius: 10px;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 3rem;
+}
+
+.join-button:hover {
+    background: #03d5cc;
+    box-shadow: 5px 5px 5px 0 #03d5cc;
+    transition: all 0.5s ease;
+}
+
+/*Styling Hamburger Icon*/
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: #253859;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* submenu */
+#submenu {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    left: 0;
+    opacity: 0;
+
+    position: absolute;
+    top: 30px;
+    visibility: hidden;
+    z-index: 1;
+    transition: 0.2s ease;
+}
+
+li:hover ul#submenu {
+    opacity: 1;
+    top: 30px;
+    visibility: visible;
+    position: absolute;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 5px;
+    width: 250px;
+    margin: 10px;
+    /* transition: all 0.3s ease; */
+}
+
+li:hover ul#submenu a {
+    padding: 0.4rem;
+    font-size: 1rem;
+}
+
+ul#submenu a::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0%;
+    background-color: #03d5cc;
+    position: absolute;
+    margin: 0 0 0 10%;
+}
+
+ul#submenu a:hover::before {
+    width: 50%;
+    margin-top: 1.5rem;
+    margin-left: 0;
+}
+
+/* submenu end */
+.row1 {
+    background-color: #eff4f9;
+    height: 25rem !important;
+}
+
+/* first div vedio start */
+.index-head {
+    margin-top: 10rem !important;
+    margin-left: 5rem !important;
+    font-weight: 15rem !important;
+    font-size: 40.6px !important;
+}
+
+.index-heads {
+    margin-left: 5rem !important;
+}
+
+.vedio,
+.nectar-video-self-hosted {
+    margin-top: 15rem !important;
+    margin-left: 7rem !important;
+    border-radius: 10px !important;
+    box-shadow: 15px 15px 15px 5px #e7e4e4;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 9px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: white;
+    color: #03d5cc;
+    width: 10rem;
+    border: 2px solid #03d5cc;
+}
+
+.button3 {
+    background-color: #03d5cc;
+    height: 2.5rem;
+    margin-left: 5rem !important;
+}
+
+.button3:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button2:hover {
+    background-color: #03d5cc;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* first div vedio end */
+/* second div */
+.center {
+    text-align: center !important;
+    font-size: 2.5rem!important;
+    line-height: 2.5rem!important;
+    font-weight: 4rem!important;
+    margin-left: 20rem!important;
+    margin-right: 20rem!important;
+}
+
+.centers {
+    text-align: center!important;
+    font-size: 1rem!important;
+    font-weight: 4rem!important;
+    margin-left: 5rem!important;
+    margin-right: 2rem!important;
+}
+
+svg path {
+    stroke: #03d5cc !important;
+}
+
+/* second div end */
+/*Stying for small screens*/
+@media screen and (max-width: 800px) {
+    nav {
+        position: fixed;
+        height: 4rem;
+        background-color: #f2f5f7;
+        z-index: 5;
+        overflow-y: auto;
+    }
+
+    .logo,
+    .hamburger {
+        z-index: 5;
+    }
+
+    .logo img {
+        height: 35px;
+        width: 120px;
+        padding: 1rem 0 0 0;
+        top: 50%;
+    }
+
+    .login-button {
+        border: none;
+    }
+
+    .join-button,
+    .nav-links,
+    .login-button:focus {
+        background: #03d5cc;
+        border: none;
+    }
+
+    .join-button,
+    .nav-links,
+    .login-button:hover {
+        background: #03d5cc;
+        border: none;
+        color: #f8f8f8;
+    }
+
+    .join-button:focus {
+        border: none;
+        color: #253859;
+    }
+
+    .join-button:hover {
+        color: #f8f8f8;
+        border: none;
+    }
+
+    .nav-links li a {
+        top: 10em;
+        color: #fff;
+        z-index: 5;
+    }
+
+    .nav-links li a:focus::before,
+    .nav-links li a:hover::before {
+        display: none;
+    }
+
+    .nav-links {
+        top: 3.5rem;
+        position: fixed;
+        justify-content: space-evenly;
+        list-style: none;
+        width: 88vw;
+        align-items: center;
+        /* background: #03d5cc; */
+        color: #fff !important;
+        height: 90vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+
+    .join-button,
+    .login-button,
+    .nav-links li a {
+        color: #f8f8f8 !important;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.7s;
+    }
+
+    .nav-links li:nth-child(5) {
+        transition: all 0.5s ease 0.8s;
+    }
+
+    .nav-links li:nth-child(6) {
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+
+    .nav-links li:nth-child(7) {
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+
+    li.fade {
+        opacity: 1;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+
+    #submenu {
+        display: none;
+    }
+
+    .show {
+        display: block !important;
+        font-size: xx-small;
+        color: #fff;
+        position: fixed;
+        margin-top: -1rem;
+        bottom: 0;
+    }
+
+    .row1 {
+        background-color: #eff4f9;
+        height: 55rem !important;
+    }
+
+    /* first div */
+    .index-head {
+        text-align: start !important;
+        font-size: 2rem !important;
+        margin-left: -0.2rem !important;
+        margin-top: 5rem !important;
+    }
+
+    .index-heads {
+        margin-left: -0.2rem !important;
+    }
+
+    .button3 {
+        margin-left: -0.2rem !important;
+    }
+
+    .vedio,
+    .nectar-video-self-hosted {
+        background-color: #eff4f9 !important;
+        width: 100% !important;
+        margin-top: 0.5rem !important;
+        margin-left: -0.2rem !important;
+        border-radius: 10px !important;
+        box-shadow: 15px 15px 15px 5px #e7e4e4;
+    }
+
+    /*first div end */
+    /* second div start */
+    .center {
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        font-weight: 4rem;
+        margin-left: -1rem;
+        margin-right: 1rem;
+    }
+
+    .centers {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 4rem;
+        margin-left: 0rem;
+    }
+}
+
+/* tablet view */
+@media only screen and (min-width: 800px ) {
+    nav {
+            height: 4rem;
+            width: 100vw;
+            background-color: #f8f8f8;
+            box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+            display: flex;
+            position: fixed;
+            z-index: 10;
+        }
+    
+        /*Styling logo*/
+        .logo {
+            padding: 1vh 1vw;
+            text-align: center;
+        }
+    
+        .logo img {
+            height: 65px;
+            width: 250px;
+            padding: 1rem 0 1.5rem 4rem;
+        }
+    
+        /*Styling Links*/
+        .nav-links {
+            display: flex;
+            list-style: none;
+            width: 88vw;
+            padding-top: 1rem;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    
+        .nav-links li {
+            position: relative;
+        }
+    
+        .nav-links li a {
+            color: #253859;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.3rem;
+        }
+    
+        .nav-links li a::before {
+            content: "";
+            display: block;
+            height: 1px;
+            width: 0%;
+            background-color: #61DAFB;
+            position: absolute;
+            transition: all linear 250ms;
+            margin: 0 0 0 10%;
+        }
+    
+        .nav-links li a:hover::before {
+            width: 80%;
+            margin-top: 1.5rem;
+        }
+    
+        /*Styling Buttons*/
+        .login-button {
+            background-color: transparent;
+            border: 1.5px solid #253859;
+            border-radius: 10px;
+            padding: 0.6rem 0.8rem;
+            font-size: 1rem;
+            cursor: pointer;
+            margin: 1rem;
+        }
+    
+        .login-button:hover {
+            color: #03d5cc;
+            background-color: #f2f5f7;
+            border: 1.5px solid #03d5cc;
+            transition: all ease-in-out 350ms;
+        }
+    
+        .join-button {
+            color: #fff !important;
+            background-color: #03d5cc;
+            border: 1.5px solid #03d5cc;
+            border-radius: 10px;
+            padding: 0.6rem 0.8rem;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-right: 3rem;
+        }
+    
+        .join-button:hover {
+            background: #03d5cc;
+            box-shadow: 5px 5px 5px 0 #03d5cc;
+            transition: all 0.5s ease;
+        }
+    
+        /*Styling Hamburger Icon*/
+        .hamburger div {
+            width: 30px;
+            height: 3px;
+            background: #253859;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+    
+        .hamburger {
+            display: none;
+        }
+    
+        /* submenu */
+        #submenu {
+            display: flex;
+            flex-direction: column;
+            padding: 0.5rem;
+            left: 0;
+            opacity: 0;
+    
+            position: absolute;
+            top: 30px;
+            visibility: hidden;
+            z-index: 1;
+            transition: 0.2s ease;
+        }
+    
+        li:hover ul#submenu {
+            opacity: 1;
+            top: 30px;
+            visibility: visible;
+            position: absolute;
+            background-color: #fff;
+            overflow: hidden;
+            border-radius: 5px;
+            width: 250px;
+            margin: 10px;
+            /* transition: all 0.3s ease; */
+        }
+    
+        li:hover ul#submenu a {
+            padding: 0.4rem;
+            font-size: 1rem;
+        }
+    
+        ul#submenu a::before {
+            content: "";
+            display: block;
+            height: 1px;
+            width: 0%;
+            background-color: #03d5cc;
+            position: absolute;
+            margin: 0 0 0 10%;
+        }
+    
+        ul#submenu a:hover::before {
+            width: 50%;
+            margin-top: 1.5rem;
+            margin-left: 0;
+        }
+    .index-head {
+        text-align: start !important;
+        font-size: 2rem !important;
+        margin-left: 1.8rem !important;
+        margin-top: 5rem !important;
+    }
+
+    .index-heads {
+        margin-left: 1.8rem !important;
+    }
+
+    .button3 {
+        margin-left: 1.8rem !important;
+    }
+
+    .button2 {
+        margin-left: 1.8rem !important;
+    }
+
+    .vedio,
+    .nectar-video-self-hosted {
+        width: 100% !important;
+        margin-top: 5rem !important;
+        margin-left: 0.1rem !important;
+        border-radius: 10px !important;
+        box-shadow: 15px 15px 15px 5px #e7e4e4;
+    }
+
+    .row1 {
+        background-color: #eff4f9;
+        height: 35rem;
+    }
+    /* second div */
+         .center {
+             text-align: center;
+             font-size: 2.5rem;
+             line-height: 2.5rem;
+             font-weight: 4rem;
+             margin-left: -1rem;
+             margin-right: 1rem;
+         }
+}
+
+/*Animating Hamburger Icon on Click*/
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    transition: all 0.7s ease;
+    width: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
