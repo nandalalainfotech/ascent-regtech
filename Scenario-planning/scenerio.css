@@ -1,0 +1,189 @@
+.footer_body {
+    background-color: #253859;
+    background-size: cover;
+    height:400px;
+}
+
+.ascent_image {
+    width: 80%;
+    opacity: 1;
+    height: auto;
+}
+.comp{
+    color: #03d5cc;
+    font-size: 17px;
+    letter-spacing: 0.02em; 
+    font-family: Mulish;
+
+}
+.comps {
+  margin-top: 14px;
+}
+hr {
+ 
+  height: 2px; /* Set the height of the line */
+  background-color:  #f0ffff; /* Set the background color to white */
+}
+
+
+ .platforms {
+    font-size: 18px;
+    color: #f0ffff;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    font-family: Mulish;
+    text-decoration: none;
+    line-height: 40px;
+    text-align: left;
+} 
+.platform {
+  font-family: Mulish;
+    font-size: 15px;
+     line-height: 50px; 
+    font-weight: 600;
+    text-decoration: none;
+}
+.platform_sub{
+  font-size: 18px;
+  color: #f0ffff;
+  font-family: Mulish;
+  letter-spacing: -0.02em;
+  font-family: Mulish;
+  font-weight: 900;
+  text-decoration: none;
+  
+}
+.platform-copy {
+    font-size: 12px;
+    color: #f0ffff;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    font-family: Mulish;
+    text-decoration: none;
+    /* line-height: 37px; */
+    margin-left: 100px;
+    /* letter-spacing: 0.02em; */
+    text-align: left;
+}
+
+
+
+.hover-text {
+    color: #f0ffff; /* Set the initial text color */
+    transition: color 0.3s; /* Smooth transition for color change */
+  }
+  
+  .hover-text:hover {
+    color: #03d5cc; /* New text color on hover */
+  }
+  
+  .footer-top {
+    margin-top: 65px;
+  }
+
+  .as{
+    margin-left: 8%;
+  }
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px; /* Adjust as needed */
+  }
+  
+  .grid-item {
+
+    padding: 0px;
+  }
+
+  .grid-items {
+
+    padding: -1px;
+
+  }
+  li {
+    display: block;
+  }
+   
+  .icon {
+margin-left: 60%;
+  }
+  
+
+  /*horizonscanning*/
+  body{
+    font-family: "Mulish";
+}
+#requestBtn{
+    background-color: #03d5cc;;
+    color: #fff;
+    position: relative;
+}
+#requestBtn:hover{
+    bottom: .5rem;
+    background-color: #28bebb;
+    animation-name: btn;
+    animation-duration: 1s;
+    box-shadow: 0px 1px 4px 4px lightblue;
+}
+#learnMoreBtn{
+    background-color: #03d5cc;;
+    color: #fff;
+    position: relative;
+}
+@keyframes btn {
+    0%   {bottom : 0rem;}
+    50%  {bottom: .025  rem;}
+    100% {bottom : .50rem;}
+}
+#learnMoreBtn:hover{
+    bottom: .5rem;
+    background-color: #28bebb;
+    animation-name: btn;
+    animation-duration: 1s;
+}
+
+.centerPos{
+    text-align: left;
+}
+@media screen and (max-width: 480px){
+    .centerPos{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 480px){
+    #placing{
+        margin-top: 8rem;
+    }
+}
+#underline{
+    text-decoration: none;
+}
+#underline:hover{
+    text-decoration: underline;
+}
+@media screen  and (min-width: 480px){
+    #formPad{
+        height: 16rem;
+    }
+}
+@media screen  and (min-width: 1000px){
+    #moveDown{
+        margin-top: 12rem;
+    }
+}
+@media screen  and (max-width: 1000px) and (min-width: 700px){
+    #moveDown{
+        margin-top: 8rem;
+    }
+}
+
+/* ============================/==================================/=================================  */
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 10%;
+}
+

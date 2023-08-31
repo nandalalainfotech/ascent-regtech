@@ -1,0 +1,30 @@
+#financialbtn{
+    background-color: #28bebb;
+    position: relative;
+}
+@keyframes btn {
+    0%   {bottom : 0rem;}
+    50%  {bottom: .025  rem;}
+    100% {bottom : .50rem;}
+}
+#financialbtn:hover{
+    bottom: .5rem;
+    background-color: #28BEBB;
+    animation-name: btn;
+    animation-duration: 1s;
+}
+#finanletter{
+    /* margin-top: 20px; */
+    letter-spacing: -0.01em;
+    font: inherit;
+    vertical-align: baseline;
+}
+#spacestyle{
+    font-size: 20px;
+    padding: 0px 0px 27px;
+}
+@media screen  and (min-width: 480px){
+    #formPad{
+        height: 16rem;
+    }
+}

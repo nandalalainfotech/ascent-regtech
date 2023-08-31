@@ -1,0 +1,9 @@
+/* .initial-img {
+    background-image: url("our-approach-img-1.jpg");
+    height: 80%;
+} */
+
+.initial {
+    background-image: url("our-approach-img-1.jpg");
+    height: 580px;
+}

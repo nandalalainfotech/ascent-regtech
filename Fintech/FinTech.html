@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish"> -->
+    <link rel="stylesheet" href="FinTech.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    color: #253859;
+    font-family: Mulish;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    height: 4rem;
+    width: 100vw;
+    background-color: #f8f8f8;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+    z-index: 10;
+}
+
+/*Styling logo*/
+.logo {
+    padding: 1vh 1vw;
+    text-align: center;
+}
+
+.logo img {
+    height: 65px;
+    width: 250px;
+    padding: 1rem 0 1.5rem 4rem;
+}
+
+/*Styling Links*/
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 88vw;
+    padding-top: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a {
+    color: #253859;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.3rem;
+}
+
+.nav-links li a::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0%;
+    background-color: #61DAFB;
+    position: absolute;
+    transition: all linear 250ms;
+    margin: 0 0 0 10%;
+}
+
+.nav-links li a:hover::before {
+    width: 80%;
+    margin-top: 1.5rem;
+}
+
+/*Styling Buttons*/
+.login-button {
+    background-color: transparent;
+    border: 1.5px solid #253859;
+    border-radius: 10px;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.login-button:hover {
+    color: #03d5cc;
+    background-color: #f2f5f7;
+    border: 1.5px solid #03d5cc;
+    transition: all ease-in-out 350ms;
+}
+
+.join-button {
+    color: #fff !important;
+    background-color: #03d5cc;
+    border: 1.5px solid #03d5cc;
+    border-radius: 10px;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 3rem;
+}
+
+.join-button:hover {
+    background: #03d5cc;
+    box-shadow: 5px 5px 5px 0 #03d5cc;
+    transition: all 0.5s ease;
+}
+
+/*Styling Hamburger Icon*/
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: #253859;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* submenu */
+#submenu {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    left: 0;
+    opacity: 0;
+
+    position: absolute;
+    top: 30px;
+    visibility: hidden;
+    z-index: 1;
+    transition: 0.2s ease;
+}
+
+li:hover ul#submenu {
+    opacity: 1;
+    top: 30px;
+    visibility: visible;
+    position: absolute;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 5px;
+    width: 250px;
+    margin: 10px;
+    /* transition: all 0.3s ease; */
+}
+
+li:hover ul#submenu a {
+    padding: 0.4rem;
+    font-size: 1rem;
+}
+
+ul#submenu a::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0%;
+    background-color: #03d5cc;
+    position: absolute;
+    margin: 0 0 0 10%;
+}
+
+ul#submenu a:hover::before {
+    width: 50%;
+    margin-top: 1.5rem;
+    margin-left: 0;
+}
+
+/* submenu end */
+.row1 {
+    background-color: #eff4f9;
+    height: 25rem !important;
+}
+
+/* first div vedio start */
+.index-head {
+    margin-top: 10rem !important;
+    margin-left: 5rem !important;
+    font-weight: 15rem !important;
+    font-size: 40.6px !important;
+}
+
+.index-heads {
+    margin-left: 5rem !important;
+}
+
+.vedio,
+.nectar-video-self-hosted {
+    margin-top: 15rem !important;
+    margin-left: 7rem !important;
+    border-radius: 10px !important;
+    box-shadow: 15px 15px 15px 5px #e7e4e4;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 9px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: white;
+    color: #03d5cc;
+    width: 10rem;
+    border: 2px solid #03d5cc;
+}
+
+.button3 {
+    background-color: #03d5cc;
+    height: 2.5rem;
+    margin-left: 5rem !important;
+}
+
+.button3:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button2:hover {
+    background-color: #03d5cc;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* first div vedio end */
+/* second div */
+.center {
+    text-align: center !important;
+    font-size: 2.5rem!important;
+    line-height: 2.5rem!important;
+    font-weight: 4rem!important;
+    margin-left: 20rem!important;
+    margin-right: 20rem!important;
+}
+
+.centers {
+    text-align: center!important;
+    font-size: 1rem!important;
+    font-weight: 4rem!important;
+    margin-left: 5rem!important;
+    margin-right: 2rem!important;
+}
+
+svg path {
+    stroke: #03d5cc !important;
+}
+
+/* second div end */
+/*Stying for small screens*/
+@media screen and (max-width: 800px) {
+    nav {
+        position: fixed;
+        height: 4rem;
+        background-color: #f2f5f7;
+        z-index: 5;
+        overflow-y: auto;
+    }
+
+    .logo,
+    .hamburger {
+        z-index: 5;
+    }
+
+    .logo img {
+        height: 35px;
+        width: 120px;
+        padding: 1rem 0 0 0;
+        top: 50%;
+    }
+
+    .login-button {
+        border: none;
+    }
+
+    .join-button,
+    .nav-links,
+    .login-button:focus {
+        background: #03d5cc;
+        border: none;
+    }
+
+    .join-button,
+    .nav-links,
+    .login-button:hover {
+        background: #03d5cc;
+        border: none;
+        color: #f8f8f8;
+    }
+
+    .join-button:focus {
+        border: none;
+        color: #253859;
+    }
+
+    .join-button:hover {
+        color: #f8f8f8;
+        border: none;
+    }
+
+    .nav-links li a {
+        top: 10em;
+        color: #fff;
+        z-index: 5;
+    }
+
+    .nav-links li a:focus::before,
+    .nav-links li a:hover::before {
+        display: none;
+    }
+
+    .nav-links {
+        top: 3.5rem;
+        position: fixed;
+        justify-content: space-evenly;
+        list-style: none;
+        width: 88vw;
+        align-items: center;
+        /* background: #03d5cc; */
+        color: #fff !important;
+        height: 90vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+
+    .join-button,
+    .login-button,
+    .nav-links li a {
+        color: #f8f8f8 !important;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.7s;
+    }
+
+    .nav-links li:nth-child(5) {
+        transition: all 0.5s ease 0.8s;
+    }
+
+    .nav-links li:nth-child(6) {
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+
+    .nav-links li:nth-child(7) {
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+
+    li.fade {
+        opacity: 1;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+
+    #submenu {
+        display: none;
+    }
+
+    .show {
+        display: block !important;
+        font-size: xx-small;
+        color: #fff;
+        position: fixed;
+        margin-top: -1rem;
+        bottom: 0;
+    }
+
+    .row1 {
+        background-color: #eff4f9;
+        height: 55rem !important;
+    }
+
+    /* first div */
+    .index-head {
+        text-align: start !important;
+        font-size: 2rem !important;
+        margin-left: -0.2rem !important;
+        margin-top: 5rem !important;
+    }
+
+    .index-heads {
+        margin-left: -0.2rem !important;
+    }
+
+    .button3 {
+        margin-left: -0.2rem !important;
+    }
+
+    .vedio,
+    .nectar-video-self-hosted {
+        background-color: #eff4f9 !important;
+        width: 100% !important;
+        margin-top: 0.5rem !important;
+        margin-left: -0.2rem !important;
+        border-radius: 10px !important;
+        box-shadow: 15px 15px 15px 5px #e7e4e4;
+    }
+
+    /*first div end */
+    /* second div start */
+    .center {
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        font-weight: 4rem;
+        margin-left: -1rem;
+        margin-right: 1rem;
+    }
+
+    .centers {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 4rem;
+        margin-left: 0rem;
+    }
+}
+
+/* tablet view */
+@media only screen and (min-width: 800px ) {
+    nav {
+            height: 4rem;
+            width: 100vw;
+            background-color: #f8f8f8;
+            box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+            display: flex;
+            position: fixed;
+            z-index: 10;
+        }
+    
+        /*Styling logo*/
+        .logo {
+            padding: 1vh 1vw;
+            text-align: center;
+        }
+    
+        .logo img {
+            height: 65px;
+            width: 250px;
+            padding: 1rem 0 1.5rem 4rem;
+        }
+    
+        /*Styling Links*/
+        .nav-links {
+            display: flex;
+            list-style: none;
+            width: 88vw;
+            padding-top: 1rem;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    
+        .nav-links li {
+            position: relative;
+        }
+    
+        .nav-links li a {
+            color: #253859;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.3rem;
+        }
+    
+        .nav-links li a::before {
+            content: "";
+            display: block;
+            height: 1px;
+            width: 0%;
+            background-color: #61DAFB;
+            position: absolute;
+            transition: all linear 250ms;
+            margin: 0 0 0 10%;
+        }
+    
+        .nav-links li a:hover::before {
+            width: 80%;
+            margin-top: 1.5rem;
+        }
+    
+        /*Styling Buttons*/
+        .login-button {
+            background-color: transparent;
+            border: 1.5px solid #253859;
+            border-radius: 10px;
+            padding: 0.6rem 0.8rem;
+            font-size: 1rem;
+            cursor: pointer;
+            margin: 1rem;
+        }
+    
+        .login-button:hover {
+            color: #03d5cc;
+            background-color: #f2f5f7;
+            border: 1.5px solid #03d5cc;
+            transition: all ease-in-out 350ms;
+        }
+    
+        .join-button {
+            color: #fff !important;
+            background-color: #03d5cc;
+            border: 1.5px solid #03d5cc;
+            border-radius: 10px;
+            padding: 0.6rem 0.8rem;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-right: 3rem;
+        }
+    
+        .join-button:hover {
+            background: #03d5cc;
+            box-shadow: 5px 5px 5px 0 #03d5cc;
+            transition: all 0.5s ease;
+        }
+    
+        /*Styling Hamburger Icon*/
+        .hamburger div {
+            width: 30px;
+            height: 3px;
+            background: #253859;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+    
+        .hamburger {
+            display: none;
+        }
+    
+        /* submenu */
+        #submenu {
+            display: flex;
+            flex-direction: column;
+            padding: 0.5rem;
+            left: 0;
+            opacity: 0;
+    
+            position: absolute;
+            top: 30px;
+            visibility: hidden;
+            z-index: 1;
+            transition: 0.2s ease;
+        }
+    
+        li:hover ul#submenu {
+            opacity: 1;
+            top: 30px;
+            visibility: visible;
+            position: absolute;
+            background-color: #fff;
+            overflow: hidden;
+            border-radius: 5px;
+            width: 250px;
+            margin: 10px;
+            /* transition: all 0.3s ease; */
+        }
+    
+        li:hover ul#submenu a {
+            padding: 0.4rem;
+            font-size: 1rem;
+        }
+    
+        ul#submenu a::before {
+            content: "";
+            display: block;
+            height: 1px;
+            width: 0%;
+            background-color: #03d5cc;
+            position: absolute;
+            margin: 0 0 0 10%;
+        }
+    
+        ul#submenu a:hover::before {
+            width: 50%;
+            margin-top: 1.5rem;
+            margin-left: 0;
+        }
+    .index-head {
+        text-align: start !important;
+        font-size: 2rem !important;
+        margin-left: 1.8rem !important;
+        margin-top: 5rem !important;
+    }
+
+    .index-heads {
+        margin-left: 1.8rem !important;
+    }
+
+    .button3 {
+        margin-left: 1.8rem !important;
+    }
+
+    .button2 {
+        margin-left: 1.8rem !important;
+    }
+
+    .vedio,
+    .nectar-video-self-hosted {
+        width: 100% !important;
+        margin-top: 5rem !important;
+        margin-left: 0.1rem !important;
+        border-radius: 10px !important;
+        box-shadow: 15px 15px 15px 5px #e7e4e4;
+    }
+
+    .row1 {
+        background-color: #eff4f9;
+        height: 35rem;
+    }
+    /* second div */
+         .center {
+             text-align: center;
+             font-size: 2.5rem;
+             line-height: 2.5rem;
+             font-weight: 4rem;
+             margin-left: -1rem;
+             margin-right: 1rem;
+         }
+}
+
+/*Animating Hamburger Icon on Click*/
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    transition: all 0.7s ease;
+    width: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+    </style>
+</head>
+<body style=" font-family: Mulish">
+
+   <!-- nav bar start -->
+   <nav>
+    <div class="logo">
+        <img src="logo.png" alt="Logo Image">
+    </div>
+    <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="PlatForm-page/PlatForm.html">Platform</a>
+            <ul id="submenu">
+                <a href="../OurApproach/OurApproach.html">Our Approach</a>
+                <a href="../OurData/OurData.html">Our Data</a>
+                <a href="../Regulators/Regulators.html"> Regulators</a>
+                <a href="../TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
+            </ul>
+        </li>
+        <li><a href="#">Capabilities</a>
+            <ul id="submenu">
+                <a href="../Oligation-Inventory/obligations.html">Obligations Inventory</a>
+                <a href="../Scenario-planning/scenerio.html">Scenario Planning</a>
+                <a href="../Horizon-Scanning/horizonScanning.html">Horizon Scanning</a>
+                <a href="../Audit-Trail/Audit.html">Audit Trail</a>
+                <a href="#">Explore Use Cases</a>
+            </ul>
+        </li>
+        <li><a href="#">Who We Serve</a>
+            <ul id="submenu">
+                <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
+                <a href="../Mortage-Lenders/MortgageLenders.html">Mortgage Lenders</a>
+                <a href="../Fintech/FinTech.html">FinTech</a>
+                <a href="../Professional/professional.html">Professional Services</a>
+            </ul>
+        </li>
+        <li><a href="#">Resources</a>
+            <ul id="submenu">
+                <a href="#">What is RegTech?</a>
+                <a href="#">Blog</a>
+                <a href="#">Resources</a>
+                <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
+            </ul>
+        </li>
+        <li><a href="#">Company</a>
+            <ul id="submenu">
+                <a href="#">Our Team</a>
+                <a href="#">Diversity, Equity, and Inclusion</a>
+                <a href="../Careers/Careers.html">Careers</a>
+            </ul>
+        </li>
+        <li class="login-button">Sign In</li>
+        <li class="join-button">Contact Us</li>
+        <li class="show" style="display: none;">Ascent RegTech</li>
+    </ul>
+</nav>
+<!-- nav bar end -->
+
+    <div class="container-fluid" style="background-image: url(Ascent-for-FinTechs-2.png);background-repeat: no-repeat;
+        background-size: cover;" >
+       <div class="container">
+            <div class="row" >
+                <div class="col-md-7 p-5">
+                    <div>
+                        <h1 style="color: white; margin-top: 70px;">Ascent for FinTech</h1>
+                    </div>
+                    <div>
+                        <h1 style="color: #28bebb; margin-top: 10px;">Increase Speed-to-Market as You Minimize Risk</h1>
+                    </div>
+                    <div>
+                        <h4 style="color: white; margin-top: 10px;">Your business growth can be limited—and your ventures put at risk—by an inability to quickly identify, decipher, and meet compliance requirements.
+                        </h4>
+                    </div>
+                    <div>
+                        <button class="btn text-white mt-5" id="financialbtn" ><span style="font-size: .8rem;font-weight: 500;">LEARN MORE</span></button>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+    <div class="container">  
+        <div class="row">
+            <div class="col-md-6 p-5">
+                <p style="font-size: 31.45px; color: #28bebb; margin-top: -10px;">Enjoy compliance with confidence</p>
+                <p style="font-size: 17px;">
+                    Your business growth can be limited—and your ventures put at risk—by an inability to
+                     quickly identify, decipher, and meet compliance requirements. Ascent’s AI-driven
+                    technology quickly and accurately identifies the rules relevant to your business,
+                    and the specific obligations for which you’re responsible under those rules.
+                    For any move you might make in the market, Ascent helps you stay in total
+                     compliance with the federal, state, municipal, and international law.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="speed-v4.png" alt="" width="100%" height="80%">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="control-costs-2.png" alt="" width="100%" height="80%">
+            </div>
+            <div class="col-md-6" style="font-size: 17px;">
+                <h3 style="color: #28bebb;line-height: 1.1em;">Benefit of Ascent for FinTech</h3>
+                <ul style="font-size: 1.1em;">
+                    <li>Deploys quickly and inexpensively</li>
+                    <li>Cost-effective</li>
+                    <li>Reduces hours and dollars spent on compliance</li>
+                    <li>Frees hours and resources for your core business</li>
+                    <li>Minimizes risk</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid py-5 px-5" style="background-color: #183460;">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-5 text-center">
+                <div class="text-white" style="margin-top: auto;">
+                    <!-- <h2>See how you can meet obligations more easily and more effectively.</h2> -->
+                </div>
+                <div class="row">
+                    <div class="col-md-12" id="formPad"></div>
+                    <div class="col-md-12 text-white">
+                        <h2>Remove compliance from your list of worries and focus on your core business.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5" style="background-color: #ABB8C3;border-radius: 5px; ">
+                <div class="container" >
+                    <div class="row">
+                        <div class="col-md-12 text-center py-5">
+                            <div>
+                                <h3>Get Started</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-2">
+                            <div>
+                                <label for="fname" style="font-size: 14px;color: #33475B;display: block;">First name
+                                    <span style="color: red;">*</span></label>
+                                <input type="text" id="fname" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-2">
+                            <div>
+                                <label for="lname" style="font-size: 14px;color: #33475B;display: block;">Last name
+                                    <span style="color: red;">*</span></label>
+                                <input type="text" id="lname" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-2">
+                            <div>
+                                <label for="jobTitle" style="font-size: 14px;display: block;color: #33475B;">Job
+                                    title<span style="color: red;">*</span></label>
+                                <input type="text" id="jobTitle" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-2">
+                            <div>
+                                <label for="businessEmail"
+                                    style="font-size: 14px;color: #33475B;display: block;">Business Email<span
+                                        style="color: red;">*</span></label>
+                                <input type="text" id="businessEmail" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-2">
+                            <div>
+                                <label for="mobile" style="font-size: 14px;color: #33475B;display: block;">Phone
+                                    number<span style="color: red;">*</span></label>
+                                <input type="text" id="mobile" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-2">
+                            <div>
+                                <label for="companyName" style="font-size: 14px;color: #33475B;display: block;">Company
+                                    Name<span style="color: red;">*</span></label>
+                                <input type="text" id="companyName" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="col-md-12 py-2">
+                            <div>
+                                <label for="companyName" style="font-size: 14px;color: #33475B;">Country/Region<span
+                                        style="color: red;">*</span></label>
+                                <input type="text" id="companyName" placeholder="Please Select" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div>
+                                <p style="font-size: 14px;">Please share any specific objectives or goals you would like
+                                    to discuss with our sales team. </p>
+                                <textarea name="" id="" cols="30" rows="5"
+                                    style="width: 100%;height: 3.5rem;"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div>
+                                <p style="font-size: 11px;">
+                                    By submitting this form, you agree that you have read our <a href="#">Privacy
+                                        Policy</a> and consent to Ascent's cookie policy and receiving marketing
+                                    communications. You can unsubscribe at any time.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-white" style="width: 12.5rem;">
+                                <div style="float: left;background-color: #1A73E8;" class="p-2">
+                                    <ul style="list-style-type: none;font-size: 11px;margin: 0px;padding: 0px;">
+                                        <li>protected by reCAPTCHA</li>
+                                        <li>
+                                            <a href="#" class="text-white" id="underline">Privacy</a> -
+                                            <a href="#" class="text-white" id="underline">Terms</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div style="background-color: #fff;text-align: end;" class=" p-2">
+                                    <img src="captcha_img.png" alt="" style="width: 33px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6"></div>
+                        <div class="col-md-6 py-3">
+                            <div>
+                                <button class="btn text-white"
+                                    style="background-color: #03D5CC; font-size: 11px;"><strong>Request a
+                                        Demo</strong></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

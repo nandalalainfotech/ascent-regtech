@@ -1,0 +1,82 @@
+
+.career {
+    color: #253859;
+}
+
+.people {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #253859;
+    font-weight: 500;
+}
+
+.join {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.img {
+    text-align: center;
+    opacity: 1;
+}
+
+.role {
+    font-size: 42.5px;
+    color: #253859;
+}
+
+
+.ascent {
+    margin-left: 40px;
+    font-size: 2em;
+}
+
+#value {
+    margin-top: 130px;
+}
+
+.flex-container {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.trust {
+    position: relative !important;
+}
+
+.team {
+    font-size: 28px;
+    color: #253859;
+}
+
+.medicial ul,
+li {
+    color: #253859;
+}
+
+.location {
+    color: gray;
+}
+
+.direct {
+    color: #0942B0;
+}
+
+h5:hover {
+    cursor: pointer;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: darkgreen;
+}
+
+
+
+
+
+/***************Resources**************************/

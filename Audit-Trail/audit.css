@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    outline-style: none !important;
+    font-family: Mulish;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+#learnMoreBtn {
+    background-color: #03d5cc;
+    ;
+    color: #fff;
+    position: relative;
+}
+
+.image-banner {
+    height: 30rem;
+}
+
+.heading-banner {
+    color: #fff;
+    font-size: 58px;
+    margin-top: 50px;
+}
+
+.para-banner {
+    color: #fff;
+    font-size: 1.2em;
+    display: block;
+    margin-top: 50px;
+    font-size: 1.2em;
+}
+
+.button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #03d5cc !important;
+    text-transform: uppercase !important;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+}
+
+.regular-button {
+    color: white;
+    font-size: 12px;
+}
+
+.work {
+    color: #28bebb;
+    line-height: 1.1em;
+    font-weight: normal;
+}
+
+.heading-work {
+    color: #28bebb;
+    line-height: 1.1em;
+    font-weight: normal;
+    margin-top: 100px;
+}
+
+.paragraph-work {
+    color: #253859;
+    margin-top: 20px;
+}
+
+#buttonlearn-work {
+    background-color: #03d5cc;
+    ;
+    color: #fff;
+    position: relative;
+}
+
+#buttonlearn {
+    background-color: #03d5cc;
+    ;
+    color: #fff;
+    position: relative;
+}
+
+#buttonlearn-work:hover {
+    bottom: .5rem;
+    background-color: #28bebb;
+    animation-name: btn;
+    animation-duration: 1s;
+    box-shadow: 0px 1px 4px 4px lightblue;
+}
+
+.audit-information {
+    color: #28bebb;
+    line-height: 1.1em;
+    font-weight: normal;
+    margin-top: 300px;
+}
+
+.audit-paragraph {
+    font-size: 1.1em;
+    display: block;
+    letter-spacing: -0.02em;
+    color: #253859;
+    margin-top: 20px;
+}
+
+.image-filter {
+    width: 600px;
+    height: auto;
+    margin-top: 100px;
+}
+
+.single-click {
+    color: #28bebb;
+    line-height: 1.1em;
+    font-weight: normal;
+}
+
+.single-click-paragraph {
+    font-size: 1.1em;
+    color: #253859;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.obligations {
+    color: #28bebb;
+    line-height: 1.1em;
+    font-weight: normal;
+    margin-top: 200px;
+}
+
+.obligations-paragraph {
+    font-size: 1.1em;
+    color: #253859;
+
+}
+
+.started {
+    background-color: #183460;
+    font-size: 50px;
+    line-height: 1.2em;
+    color: #fff;
+}
+
+@media screen and (min-width: 480px) {
+    #formword {
+        height: 16rem;
+    }
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 10%;
+}

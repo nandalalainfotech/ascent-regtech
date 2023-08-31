@@ -1,0 +1,82 @@
+body{
+    font-family: "Mulish";
+}
+#requestBtn{
+    background-color: #03d5cc;;
+    color: #fff;
+    position: relative;
+}
+#requestBtn:hover{
+    bottom: .5rem;
+    background-color: #28bebb;
+    animation-name: btn;
+    animation-duration: 1s;
+    box-shadow: 0px 1px 4px 4px lightblue;
+}
+#learnMoreBtn{
+    background-color: #03d5cc;;
+    color: #fff;
+    position: relative;
+}
+@keyframes btn {
+    0%   {bottom : 0rem;}
+    50%  {bottom: .025  rem;}
+    100% {bottom : .50rem;}
+}
+#learnMoreBtn:hover{
+    bottom: .5rem;
+    background-color: #28bebb;
+    animation-name: btn;
+    animation-duration: 1s;
+}
+
+.centerPos{
+    text-align: left;
+}
+@media screen and (max-width: 480px){
+    .centerPos{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1000px){
+    #placing{
+        margin-top: 5rem;
+    }
+}
+@media screen and (max-width: 1000px) and  (min-width: 600px) {
+    #placing{
+        margin-top: 2rem;
+    }
+}
+#underline{
+    text-decoration: none;
+}
+#underline:hover{
+    text-decoration: underline;
+}
+@media screen  and (min-width: 480px){
+    #formPad{
+        height: 16rem;
+    }
+}
+@media screen  and (min-width: 1000px){
+    #moveDown{
+        margin-top: 12rem;
+    }
+}
+@media screen  and (max-width: 1000px) and (min-width: 700px){
+    #moveDown{
+        margin-top: 8rem;
+    }
+}
+
+/* ============================/==================================/=================================  */
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 10%;
+}
+

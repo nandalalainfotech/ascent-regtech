@@ -1,0 +1,605 @@
+<!-- 
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="PlatForm.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Browser</title>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body>
+  <div class="container-fluid" id="contain">
+    <div class="row mt-5">
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-sm-12 " style="height: 260px !important;">
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8">
+            <h1 class="text-white">Are you regulation ready?</h1>
+            <br>
+            <p class="text-white">Targeted obligations? Yes. Automated change management? Yes. Mapping to your controls
+              and policies? Yes.
+              But beyond groundbreaking capabilities, Ascent uses AI to solve your real problem — reducing your
+              regulatory and reputational risk, without the eye-boggling costs.</p>
+          </div>
+          <div class="col-sm-2"></div>
+
+        </div>
+      </div>
+      <div class="col-sm-5 " id="forms" style="height: fit-content;">
+        <div class="container" style="margin-top: 50px;">
+          <form class="mt-5" method="post">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="exampleInputEmail1" required>First Name</label><span style="color: red;">*</span>
+                  <input type="fname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="exampleInputEmail1" required>Last Name</label><span style="color: red;">*</span>
+                  <input type="lname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="exampleInputEmail1" required>Job Title Name</label><span style="color: red;">*</span>
+                  <input type="fname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="exampleInputEmail1" required>Business Email </label><span style="color: red;">*</span>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="exampleInputEmail1" required>Phone Number </label><span style="color: red;">*</span>
+                  <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="exampleInputEmail1" required>Company Name </label><span style="color: red;">*</span>
+                  <input type="Cname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="sel1">Country/ Region</label><span style="color: red;">*</span>
+                  <select class="form-control" id="sel1">
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>England</option>
+                    <option>Russia</option>
+                  </select>
+                </div>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Please share any specific objectives or goals you would like
+                    to discuss with our sales team. </label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <p>
+                  By submitting this form, you agree that you have read our <a href="#" style=" color: #03d5cc;">Privacy
+                    Policy</a> and consent to Ascent's
+                  cookie policy and receiving marketing communications. You can unsubscribe at any time.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="captcha bt-dark">
+                <div class="spinner">
+                  <label>
+                    <input type="checkbox" onclick="$(this).attr('disabled','disabled');">
+                    <span class="checkmark"><span>&nbsp;</span></span>
+                  </label>
+                </div>
+                <div class="text">
+                  I'm not a robot
+                </div>
+                <div class="logo">
+                  <img class="responsive" src="https://forum.nox.tv/core/index.php?media/9-recaptcha-png/" />
+                  <p>reCAPTCHA</p>
+                  <small>Privacy - Terms</small>
+                </div>
+              </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-1" style="background-color: #03d5cc !important;">Request A
+              Demo</button>
+            <br>
+            <br>
+          </form>
+        </div>
+      </div>
+      <div class="col-sm-1">
+
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-1">
+
+        </div>
+        <div class="col-sm-10" style="border-radius: 2% !important;padding: 2%; background: #eff4f9;margin-top: -60px;">
+          <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2">
+              <div style="color: #03d5cc;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" style="color: #03d5cc;"
+                  fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                  <path
+                    d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z" />
+                </svg>
+                <!-- <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                  y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
+                  xml:space="preserve" id="nectar-svg-animation-instance-0"
+                  style="height: 60px; width: 60px;color: #03d5cc !important;">
+                  <g>
+                    <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                      d="M29,6L46,6L63,27L32,58L1,27L18,6L32,6L32,58"
+                      style="stroke-dasharray: 225, 227; stroke-dashoffset: 0;">
+                    </path>
+                    <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M32,57L18,27L24,6"
+                      style="stroke-dasharray: 55, 57; stroke-dashoffset: 0;"></path>
+                    <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M32,57L46,27L40,6"
+                      style="stroke-dasharray: 55, 57; stroke-dashoffset: 0;"></path>
+                    <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M1,27L63,27"
+                      style="stroke-dasharray: 62, 64; stroke-dashoffset: 0;"></path>
+                  </g>
+                </svg> -->
+                <br>
+              </div>
+
+              <h3 style="color: #03d5cc;">
+                Cut Through The Clutter
+              </h3>
+              <p>
+                Cut through the clutter of irrelevant regulations. Establish a single, reliable source of regulatory
+                truth.
+              </p>
+            </div>
+            <div class="col-sm-2">
+              <div>
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                  y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
+                  xml:space="preserve" id="nectar-svg-animation-instance-1" style="height: 60px; width: 60px;">
+                  <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                    d="M3.7079999999999984,35A28.292,28.292 0,1,1 60.292,35A28.292,28.292 0,1,1 3.7079999999999984,35"
+                    style="stroke-dasharray: 178, 180; stroke-dashoffset: 0;"></path>
+                  <path fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10"
+                    d="M37,40L45,21L26,29L19,47Z" style="stroke-dasharray: 80, 82; stroke-dashoffset: 0;"></path>
+                  <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M26,29L37,40"
+                    style="stroke-dasharray: 16, 18; stroke-dashoffset: 0;"></path>
+                  <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                    d="M36.9,7C36.965,6.677,37,6.342,37,6c0-2.761-2.239-5-5-5s-5,2.239-5,5c0,0.342,0.035,0.677,0.1,1"
+                    style="stroke-dasharray: 18, 20; stroke-dashoffset: 0;"></path>
+                  <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M32,7L32,12"
+                    style="stroke-dasharray: 5, 7; stroke-dashoffset: 0;"></path>
+                  <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M32,58L32,63"
+                    style="stroke-dasharray: 5, 7; stroke-dashoffset: 0;"></path>
+                  <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M60,35L55,35"
+                    style="stroke-dasharray: 5, 7; stroke-dashoffset: 0;"></path>
+                  <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M9,35L4,35"
+                    style="stroke-dasharray: 5, 7; stroke-dashoffset: 0;"></path>
+                </svg>
+                <br>
+              </div>
+              <h3 style="color: #03d5cc;">
+                Stay Ahead Of Regulations</h3>
+              <br>
+              <p>Stay ahead of regulations by building a comprehensive register of obligations to ensure compliance.</p>
+            </div>
+            <div class="col-sm-2">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
+                xml:space="preserve" id="nectar-svg-animation-instance-2" style="height: 60px; width: 60px;">
+                <g>
+                  <g>
+                    <g>
+                      <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                        d="M31,1c-0.667,0-1.333,0.022-1.998,0.066"
+                        style="stroke-dasharray: 2, 4; stroke-dashoffset: 0;">
+                      </path>
+                      <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-dasharray="4.1705,2.0853" d="M26.929,1.275
+                        C20.659,2.13,14.607,4.967,9.788,9.787C-0.91,20.484-1.841,37.248,6.997,49l3.846,3.847"
+                        style="stroke-dasharray: 68, 70; stroke-dashoffset: 0;"></path>
+                      <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                        d="M11.584,53.588L12.998,55.002" style="stroke-dasharray: 2, 4; stroke-dashoffset: 0;"></path>
+                    </g>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <g>
+                      <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                        d="M33,63c0.667,0,1.333-0.022,1.998-0.066"
+                        style="stroke-dasharray: 2, 4; stroke-dashoffset: 0;">
+                      </path>
+                      <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                        stroke-dasharray="4.1705,2.0853" d="M37.071,62.725
+                        c6.27-0.854,12.321-3.691,17.141-8.512C64.91,43.516,65.841,26.752,57.003,15l-3.846-3.847"
+                        style="stroke-dasharray: 68, 70; stroke-dashoffset: 0;"></path>
+                      <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                        d="M52.416,10.412L51.002,8.998" style="stroke-dasharray: 2, 4; stroke-dashoffset: 0;"></path>
+                    </g>
+                  </g>
+                </g>
+                <path fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10"
+                  d="M13,44L13,55L2,55" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
+                <path fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10"
+                  d="M51,20L51,9L62,9" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
+              </svg>
+              <br>
+              <h3 style="color: #03d5cc;">Maximize Efficiency</h3>
+              <br>
+              <p>Maximize efficiency and scalability by removing the need to consider or research non-applicable
+                regulations.</p>
+            </div>
+            <div class="col-sm-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" style="color: #03d5cc;"
+                class="bi bi-bookmark-check-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm8.854-9.646a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+              </svg>
+              <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
+                xml:space="preserve" id="nectar-svg-animation-instance-3" style="height: 60px; width: 60px;">
+                <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                  d="M18,1L46,1L46,62L32,48L18,62Z" style="stroke-dasharray: 190, 192; stroke-dashoffset: 0;"></path>
+                <path fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="M23,22L30,29L
+                  43,16" style="stroke-dasharray: 29, 31; stroke-dashoffset: 0;"></path>
+              </svg> -->
+              <br>
+              <h3 style="color: #03d5cc;">Leave An Audit Trail</h3>
+              <p>Prove compliance by tracking & recording compliance activities; easily generate proof of compliance for
+                auditors.</p>
+            </div>
+            <div class="col-sm-2">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
+                xml:space="preserve" id="nectar-svg-animation-instance-4" style="height: 60px; width: 60px;">
+                <g>
+                  <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M1,59L22,51L42,59L63,51L63,5L42,13L22,5L
+                    1,13Z" style="stroke-dasharray: 225, 227; stroke-dashoffset: 0;"></path>
+                  <g>
+                    <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M22,5L22,51"
+                      style="stroke-dasharray: 46, 48; stroke-dashoffset: 0;"></path>
+                  </g>
+                  <g>
+                    <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M42,13L42,59"
+                      style="stroke-dasharray: 46, 48; stroke-dashoffset: 0;"></path>
+                  </g>
+                </g>
+              </svg>
+              <br>
+              <h3 style="color: #03d5cc;">
+                Map Compliance</h3>
+              <br>
+              <p>Map compliance to internal policies, procedures, and operations by integrating seamlessly with your GRC
+                tool.</p>
+            </div>
+            <div class="col-sm-1"></div>
+
+          </div>
+
+        </div>
+        <div class="col-sm-1">
+
+        </div>
+      </div>
+      <br>
+
+    </div>
+  </div>
+
+  <br>
+  <div class="container-fluid p-2 mt-4" style="">
+    <div class="row">
+      <div class="col-sm-6" style="margin-top: -60px;">
+        <img class="responsive" src="img1.png" alt="" width="586" height="640">
+      </div>
+      <!-- <div class="col-sm1"></div> -->
+      <div class="col-sm-6">
+        <div>
+          <h2> Your Obligations, Automatically Generated
+          </h2>
+          <br>
+          <h3> <span><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+                class="bi bi-bullseye" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
+                <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
+                <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+              </svg></span>Targeted to Your Firm</h3>
+
+          <p>Ascent filters out regulatory white noise, getting you to the right obligations that matter to your
+            business,
+            almost instantly.</p>
+          <br>
+          <h3><span style="color: #03d5cc;"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                style="color: #03d5cc;" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+              </svg></span> Granular and Precise</h3>
+          <p>Your obligations are precise and granular, meaning each one equals the individual requirement your firm
+            must comply with, not an entire rule or large block of text.</p>
+          <br>
+          <h2>
+            <span style="color: #03d5cc;"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                <path
+                  d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+                <path fill-rule="evenodd"
+                  d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+              </svg></span> Dynamically Updates
+          </h2>
+          <p>Static or outdated obligations are useless. Ascent updates your obligations automatically every time a rule
+            changes, for your immediate review.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <img src="ingcommbank.jpg" alt="" width="100%">
+      </div>
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-3" style="margin-top: -500px;">
+          <div>
+            <h2>ING and CommBank</h2>
+            <h3 style="color: rgb(255, 255, 255);">generated their obligations for a European regulation (MiFID/MiFID
+              II) in 2.5 minutes, compared to 1,800
+              hours when done manually.</h3>
+            <br>
+            <h3 style="color: #183460;">Read Their Story <span><svg xmlns="http://www.w3.org/2000/svg" width="40"
+                  height="40" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                </svg></span></h3>
+          </div>
+        </div>
+        <div class="col-sm-6"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 p-4">
+        <div class="row">
+          <div class="col-sm-12 p-5">
+            <div>
+              <h2>A Single Source of Regulatory Truth</h2><br>
+              <h3><span style="color: #03d5cc !important;padding: 15px;"><i class="icon-default-style fa fa-users ">
+                  </i></span>Bridge Organizational Divides</h3>
+              <p style="text-align: justify;margin-left: 50px;">Siloed teams and processes are prone to gaps. Ascent
+                unites your people, ensuring they’re always working
+                off the same data, even as rules change.</p>
+            </div>
+            <div>
+              <h3><span style="color: #03d5cc !important;padding: 15px;"><i
+                    class="icon-default-style fa fa-eye "></i></span>Avoid
+                Black Boxes</h3>
+              <p style="text-align: justify;margin-left: 50px;">Your requirements shouldn’t be a mystery. Ascent gives
+                you 360 degree visibility into every obligation and lets you trace each one back to the exact rule it
+                came from.</p>
+            </div>
+            <div>
+              <h3><span style="color: #03d5cc;padding: 15px;"><i class="icon-default-style fa fa-shield "></i></span>
+                Evidence Compliance</h3>
+              <p style="text-align: justify;margin-left: 50px;">Easily show proof of compliance to auditors or the
+                Board. Every activity is meticulously tracked and recorded per industry standards.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-sm-12">
+            <img src="img-3.png" alt="" width="616" height="616">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <br>
+  <div class="container-fluid">
+    <div class="img-Sizes">
+      <div class="row " id="img-Sizes">
+        <div class="col-sm-12 " style="height: 120px !important;">
+
+        </div>
+        <div class="row">
+          <div class="col-sm-2">
+
+          </div>
+          <div class="col-sm-4">
+            <h1>A Global Bank</h1>
+            <h3 class="text-white">achieved 99% cost reduction and 30% time savings in regulatory change triage across
+              the business.</h3>
+            <br>
+            <h3 style="color: #183460;">Read Their Story <span><svg xmlns="http://www.w3.org/2000/svg" width="40"
+                  height="40" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                </svg></span></h3>
+          </div>
+          <div class="col-sm-4">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 p-3">
+        <img src="Overview-3-edit.png" alt="" width="546" height="546">
+      </div>
+      <div class="col-sm-6">
+        <div class="row p-5">
+          <div class="col-sm-12">
+            <div>
+              <h1 id="header-color">Be Compliance-Ready from Day 1</h1>
+              <h2><span style="color: #03d5cc;padding: 10px"><i class="icon-default-style fa fa-clock-o"></i></span>
+                Rapid Deployment
+              </h2>
+              <p style="margin-left: 45px;">
+                Unlike legacy tools or traditional service engagements that can take months to implement, Ascent is
+                ready
+                for your immediate use.
+              </p>
+            </div>
+            <div>
+
+              <h2 id="header-color"><span style="color: #03d5cc;padding: 10px"><i
+                    class="icon-default-style fa fa-usd"></i></span>No
+                Implementation Costs</h2>
+              <p style="margin-left: 45px;">
+                There are no additional implementation costs, API costs, or hidden fees.
+              </p>
+            </div>
+            <div>
+              <h2 id="header-color"><span style="color: #03d5cc;padding: 10px"><i
+                    class="icon-default-style fa fa-globe"></i></span>Easy to Scale</h2>
+              <p style="margin-left: 45px;">
+                Whether your business complies with a couple regulators or hundreds, Ascent is your partner in
+                untangling complex regulation into a streamlined process that scales with you.
+              </p>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container-fluid" style="background-color: #eff4f9; ">
+    <div class="row">
+      <div class="col-6 mt-5">
+        <!-- <div class="col-sm-6"> -->
+        <h1 style="color:#253859 ;text-indent: 55px;"> Platform Features</h1>
+        <div class="col-sm-4"></div>
+        <!-- </div> -->
+      </div>
+      <div class="row p-5 mx-2">
+        <div class="col-sm-6">
+          <h2 style="color:#253859 ;"><b>Obligations Register</b></h2>
+          <p>An easy-to-read digital register of your firm’s regulatory obligations. Automatically generated and kept
+            up-to-date by Ascent.</p>
+          <h2 style="color:#253859 ;"><b>Rule Inventory</b></h2>
+          <p>A living library of all laws, rules, and regulations. Find information quickly with powerful search and
+            filtering.</p>
+          <h2 style="color:#253859 ;"><b>Horizon Scanning Feed</b></h2>
+          <p>A continuous feed of regulatory documents. Download, share, and mark important documents for review.</p>
+        </div>
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-12">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <h2 style="color:#253859 ;"><b>Rule Compare</b></h2>
+              <p>A side-by-side comparison of the new and former versions of a rule, with the changes redlined. </p>
+              <h2 style="color:#253859 ;"><b>Auto-Impact Assessment</b></h2>
+              <p>Relevant rule updates are surfaced automatically. Any changes to your existing obligations are marked
+                for your review.</p>
+              <h2 style="color:#253859 ;"><b>Workflow & Assignment Tools</b></h2>
+              <p>Work your obligations as bite-sized, actionable tasks. Assign teammates, add notes, and track
+                deadlines.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container mt-3">
+    <div class="row mt-5">
+      <div class="col-sm-12 mt-5">
+        <h1 style="color: #253859;text-align: center;">Built-in Flexibility — Work the Way You Want</h1>
+      </div>
+    </div>
+    <div class="row mt-5 p-4">
+
+      <div class="col-sm-6 p-3">
+        <div class="text-center">
+          <i class="fa fa-list-alt" style="font-size:48px;color:#03d5cc"></i>
+          <br>
+          <div class="mt-4">
+            <h3 style="color:#253859;"><b>Manage Obligations in Ascent</b></h3>
+            <p>Work your obligations as bite-sized, actionable tasks. Assign teammates, add notes, and track deadlines
+              so
+              you can make sure the right things get done.</p>
+            <a href="#" style="color: #03d5cc;">Talk to Sales</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 p-3">
+        <div class="text-center">
+          <i class="fa fa-link" style="font-size:48px;color:#03d5cc"></i>
+          <br>
+          <div class="mt-4">
+            <h3 style="color:#253859;"><b>Leverage Ascent Data via API</b></h3>
+            <p>Using a different GRC or internal system to manage your obligations? Seamlessly connect Ascent data to
+              other enterprise platforms via API.</p>
+            <a href="#" style="color: #03d5cc;">Learn More </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
