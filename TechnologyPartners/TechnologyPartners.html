@@ -208,22 +208,22 @@ Online HTML, CSS and JavaScript editor to run code online.
                 </div>
               </div>
               <div class="col-sm-12">
-                <div class="captcha bt-dark">
-                  <div class="spinner">
-                    <label>
-                      <input type="checkbox" onclick="$(this).attr('disabled','disabled');">
-                      <span class="checkmark"><span>&nbsp;</span></span>
-                    </label>
+                <!-- <div class="col-sm-12"> -->
+                  <div class="text-white" style="width: 13rem;">
+                    <div style="float: left;background-color: #1A73E8;" class="p-2">
+                      <ul style="list-style-type: none;font-size: 11px;margin: 0px;padding: 0px;">
+                        <li>protected by reCAPTCHA</li>
+                        <li>
+                          <a href="#" class="text-white" id="underline">Privacy</a> -
+                          <a href="#" class="text-white" id="underline">Terms</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div style="background-color: #fff;text-align: end;" class=" p-2">
+                      <img src="captcha_img.png" alt="" style="width: 33px;">
+                    </div>
                   </div>
-                  <div class="text">
-                    I'm not a robot
-                  </div>
-                  <div class="logo">
-                    <img class="responsive" src="https://forum.nox.tv/core/index.php?media/9-recaptcha-png/" />
-                    <p>reCAPTCHA</p>
-                    <small>Privacy - Terms</small>
-                  </div>
-                </div>
+                <!-- </div> -->
               </div>
               <br>
               <button type="submit" class="btn btn-1" style="background-color: #03d5cc !important;">Request A
@@ -405,32 +405,32 @@ Online HTML, CSS and JavaScript editor to run code online.
     </div> -->
   </div>
   <script src="script.js"></script>
-    <Script>
-      const hamburger = document.querySelector(".hamburger");
-      const navLinks = document.querySelector(".nav-links");
-      const links = document.querySelectorAll(".nav-links li");
+  <Script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    const links = document.querySelectorAll(".nav-links li");
 
-      hamburger.addEventListener('click', () => {
-        //Animate Links
-        navLinks.classList.toggle("open");
-        links.forEach(link => {
-          link.classList.toggle("fade");
-        });
-
-        //Hamburger Animation
-        hamburger.classList.toggle("toggle");
+    hamburger.addEventListener('click', () => {
+      //Animate Links
+      navLinks.classList.toggle("open");
+      links.forEach(link => {
+        link.classList.toggle("fade");
       });
 
-      const gif = document.querySelector(".nectar-video-self-hosted");
-      const vedio = document.querySelector(".vedio");
-      gif.addEventListener('click'), () => {
-        vedio('play')
-      }
-      vedio.addEventListener('click'), () => {
-        gif('play')
-      }
+      //Hamburger Animation
+      hamburger.classList.toggle("toggle");
+    });
+
+    const gif = document.querySelector(".nectar-video-self-hosted");
+    const vedio = document.querySelector(".vedio");
+    gif.addEventListener('click'), () => {
+      vedio('play')
+    }
+    vedio.addEventListener('click'), () => {
+      gif('play')
+    }
     // first div scroll animation
-    </Script>
+  </Script>
 </body>
 
 </html>
