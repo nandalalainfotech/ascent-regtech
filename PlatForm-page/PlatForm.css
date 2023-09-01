@@ -9,7 +9,7 @@
 #forms {
     border-radius: 3%;
     height: auto;
-    background-color: rgb(255, 255, 255);
+    background-color: #e6f3ff;
 }
 
 /* responsive */
@@ -389,3 +389,6 @@ body .bold {
     font-weight: 900;
 }
 
+.hello{
+    color: #03d5cc;
+}
