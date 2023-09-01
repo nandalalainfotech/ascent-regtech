@@ -25,7 +25,7 @@
 }
 @media screen  and (min-width: 480px){
     #formPad{
-        height: 16rem;
+        height: 20rem;
     }
 }
 #underline{
@@ -33,4 +33,15 @@
 }
 #underline:hover{
     text-decoration: underline;
+}
+#footerhover:hover{
+    color: #28BEBB;
+}
+#footerhover{
+    color: white;
+    text-decoration: none;
+    
+}
+.ptag{
+    padding-top: 7px;
 }
