@@ -1,5 +1,6 @@
-.initial {
+.initial{
     background-image: url("our-approach-img-1.jpg");
+    height: 520px;
 }
 
 .para {
@@ -9,4 +10,8 @@
 .responsive {
     width: 100%;
     height: auto;
+}
+body{
+    letter-spacing: 0.02em;
+  font-family: Mulish;
 }
