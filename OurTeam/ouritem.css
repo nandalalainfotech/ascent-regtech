@@ -7,6 +7,8 @@
   opacity: 1;
   display: block;
   transition: .5s ease;
+  width: 18rem;
+  height: 18rem;
   backface-visibility: hidden;
 }
 
@@ -15,10 +17,12 @@
   opacity: 0;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 55%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: center; 
+  max-height: 250px;
+  max-width: 300px;
 }
 
 .contain1:hover .image1 {
@@ -32,10 +36,11 @@
 .text1 {
   background-color: #000;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   padding: 32px 32px;
   opacity: .8;
-  /* width: 100%; */
+  max-height: 250px;
+  max-width: 300px;
 }
 
 /* @keyframes example {
