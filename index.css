@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    color: #253859;
     font-family: Mulish;
 }
 
@@ -67,16 +68,12 @@ nav {
     margin-top: 1rem;
 }
 
-.line a {
+.line {
     cursor: pointer;
 }
 
-.line a:hover {
+.line:hover {
     border-bottom: 1px solid #03d5cc;
-}
-
-.show {
-    color: #253859;
 }
 
 /*Styling Buttons*/
@@ -89,23 +86,11 @@ nav {
     font-size: 1rem;
     cursor: pointer;
     margin: 1.5rem;
-    color: #253859 !important;
-    text-decoration: none !important;
-    /* color: #253859; */
-}
-
-.login-button a {
-    color: #253859 !important;
-    text-decoration: none !important;
-}
-
-.login-button a:hover {
-    color: #03d5cc !important;
-    transition: all ease-in-out 350ms;
+    color: #253859;
 }
 
 .login-button:hover {
-    color: #03d5cc !important;
+    color: #03d5cc;
     background-color: #f2f5f7;
     border: 2px solid #03d5cc;
     transition: all ease-in-out 350ms;
@@ -170,12 +155,6 @@ nav {
     /* transition-delay:1s; */
 }
 
-/* 
-.show:hover ul#submenu  ::after {
-    display: none;
-    transition: 0s all;
-} */
-
 .show:hover ul#submenu a {
     text-decoration: none;
     color: #253859 !important;
@@ -196,9 +175,9 @@ ul#submenu a:hover {
 
 /* first div vedio start */
 .index-head {
-    margin-top: 5rem !important;
+    margin-top: 8rem !important;
     margin-left: 5rem !important;
-    font-weight: 15rem !important;
+    font-weight: 900 !important;
     font-size: 40.6px !important;
 }
 
@@ -208,7 +187,7 @@ ul#submenu a:hover {
 
 .vedio,
 .nectar-video-self-hosted {
-    margin-top: 5rem !important;
+    margin-top: 8rem !important;
     margin-left: 7rem !important;
     border-radius: 10px !important;
     box-shadow: 15px 15px 15px 5px #e7e4e4;
@@ -230,16 +209,18 @@ ul#submenu a:hover {
 }
 
 .button2 {
-    background-color: white;
+    background-color: #eff4f9;
     color: #03d5cc;
     width: 10rem;
     border: 2px solid #03d5cc;
+    text-transform: uppercase !important;
 }
 
 .button3 {
     background-color: #03d5cc;
     height: 2.5rem;
     margin-left: 5rem !important;
+    text-transform: uppercase !important;
 }
 
 .button3:hover {
@@ -256,27 +237,181 @@ ul#submenu a:hover {
 /* second div */
 .center {
     text-align: center !important;
-    font-size: 2.5rem !important;
-    line-height: 2.5rem !important;
-    font-weight: 4rem !important;
+    font-size: 2rem !important;
+    line-height: 2rem !important;
+    font-weight: 900 !important;
     margin-left: 20rem !important;
-    margin-right: 20rem !important;
+    margin-right: 15rem !important;
 }
 
 .centers {
     text-align: center !important;
     font-size: 1rem !important;
-    font-weight: 4rem !important;
+    font-weight: 900 !important;
     margin-left: 0rem !important;
     margin-right: 2rem !important;
 }
 
-/* svg path {
-    stroke: #03d5cc !important;
-} */
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 3s ease-in-out;
+}
+
+.path1 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 0.5s ease;
+}
+
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 200;
+    }
+
+    to {
+        stroke-dashoffset: 10;
+    }
+}
+
 
 /* second div end */
+
 /* third div */
+.center-content {
+    font-weight: 900;
+    margin-left: 5rem;
+}
+
+.centers-content {
+    margin-left: 5rem;
+}
+
+.resposive-phone {
+    display: none;
+}
+
+/* third div end */
+/* fourth div */
+/* .g-blue {
+    background-color: #83eee8;
+    width: 100%;
+    padding: 3rem 0 0 0;
+} */
+
+.centers-contents {
+    text-align: center !important;
+    font-size: 1.4rem !important;
+    font-weight: 700;
+    padding: 1rem 0 1rem 0;
+    margin-left: 0rem !important;
+    margin-right: 2rem !important;
+    /* margin-top: 100px; */
+}
+
+.centers-contents span {
+    top: 1rem !important;
+}
+
+.image-div {
+    margin: 1rem 0 2rem 0;
+    opacity: 1;
+}
+
+/* fourth div end */
+
+/* fifth div */
+.centers-para {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem !important;
+}
+
+/* fifth div end */
+/* sixth div */
+.svg-span {
+    background-color: #d3fcfa;
+    /* width: 50px; */
+    height: 50px;
+    /* padding:10px 55px 20px 20px; */
+    /* border-radius: 50%; */
+}
+
+/* .svg {
+    margin-top: 10rem !important;
+    margin-left: 2rem !important;
+    margin-bottom: 2rem !important;
+    margin-right:10rem !important ;
+
+} */
+
+/* sixth div end */
+.row3 {
+    background-color: #eff4f9;
+    height: 30rem !important;
+}
+
+.obligations {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.obligations-para {
+    color: #253859;
+    font-weight: bold;
+}
+
+.regulatory {
+    font-size: 50px;
+    line-height: 45px;
+    font-weight: 600;
+    margin-top: 10rem;
+}
+
+.regulatory-card {
+    height: 300px;
+    /* margin-top: 7rem; */
+    margin-left: 5rem;
+}
+
+.card {
+    min-height: 300px;
+    margin-left: 8rem;
+}
+
+#buttonlearn-work {
+    background-color: #03d5cc;
+    ;
+    color: #fff;
+    position: relative;
+}
+
+#buttonlearn-work:hover {
+    bottom: .5rem;
+    background-color: #28bebb;
+    animation-name: btn;
+    animation-duration: 1s;
+    box-shadow: 0px 1px 4px 4px lightblue;
+}
+
+.card-body {
+    color: #fff;
+    margin-left: 2rem;
+}
+
+.regulatory-card-text {
+    width: 100px;
+    color: #fff;
+    margin-left: 5rem !important;
+}
+
+.regulatory-card-para {
+    color: #fff;
+    margin-left: 5rem;
+}
+
 /*Stying for small screens*/
 @media screen and (max-width: 800px) {
     nav {
@@ -308,11 +443,6 @@ ul#submenu a:hover {
     .login-button:focus {
         background: #03d5cc;
         border: none;
-    }
-
-    .line a,
-    .login-button a {
-        color: #fff !important;
     }
 
     .join-button,
@@ -412,6 +542,10 @@ ul#submenu a:hover {
         opacity: 1;
     }
 
+    a.fade {
+        opacity: 1;
+    }
+
     .hamburger {
         display: block;
         position: absolute;
@@ -423,21 +557,15 @@ ul#submenu a:hover {
         transition: all 0.7s ease;
     }
 
-    #submenu {
-        display: none !important;
-    }
-
+    /* #submenu {
+        transition: all 0.7s ease;
+    }  */
     .show {
         display: block !important;
         color: #fff;
         position: fixed;
         margin-top: -1rem;
         bottom: 0;
-    }
-
-    .row1 {
-        background-color: #eff4f9;
-        height: 55rem !important;
     }
 
     .line {
@@ -453,16 +581,28 @@ ul#submenu a:hover {
     .index-head {
         text-align: start !important;
         font-size: 2rem !important;
-        margin-left: -0.2rem !important;
+        font-weight: 900;
+        margin-left: 1rem !important;
         margin-top: 5rem !important;
     }
 
     .index-heads {
-        margin-left: -0.2rem !important;
+        margin-left: 1rem !important;
+
     }
 
-    .button3 {
-        margin-left: -0.2rem !important;
+    .button3,
+    .button2 {
+        margin-left: 1rem !important;
+        width: 15rem;
+        font-weight: 900;
+        text-transform: uppercase !important;
+    }
+
+    .button2 {
+        width: 10rem;
+        font-weight: 900;
+        text-transform: uppercase !important;
     }
 
     .vedio,
@@ -479,11 +619,12 @@ ul#submenu a:hover {
     /* second div start */
 
     .center {
-        text-align: justify !important;
-        font-size: 2.5rem !important;
-        line-height: 2.5rem !important;
-        font-weight: 4rem !important;
-        margin-left: 1rem !important;
+        text-align: center !important;
+        font-size: 1.5rem !important;
+        line-height: 2rem !important;
+        font-weight: 900 !important;
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
     }
 
 
@@ -493,6 +634,48 @@ ul#submenu a:hover {
         font-weight: 4rem;
         margin-left: 0rem;
     }
+
+    /* second div end */
+    /* third div start */
+    .resposive-phone {
+        display: block;
+    }
+
+    .resposive-desktop {
+        display: none;
+    }
+
+    .center-content {
+        font-weight: 900;
+        margin-left: 0.5rem;
+        font-style: 1rem;
+    }
+
+    .centers-content {
+        margin-left: 0.5rem;
+    }
+
+    /* third div end */
+    /* fourth div  */
+    .image-div {
+        width: 100%;
+    }
+
+    .centers-contents {
+        text-align: center !important;
+        font-size: 1.4rem !important;
+        font-weight: 700;
+        padding: 0 1rem 0 1rem;
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+
+    }
+
+    .image-div {
+        margin: 1rem 0 1rem 3rem;
+    }
+
+    /* fourth div end */
 }
 
 /* tablet view */
@@ -509,4 +692,10 @@ ul#submenu a:hover {
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.Gain-Compliance {
+    color: #253859;
+    margin-top: 20px;
+    font-family: Mulish;
 }
