@@ -134,7 +134,7 @@ a {
     cursor: pointer;
 }
 
-.card {
+.carded {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 100%;
@@ -152,7 +152,7 @@ a {
     text-align: center;
 }
 
-.card:hover {
+.carded:hover {
     background-color: #03D5CC !important;
     transform: translateY(-4px);
     transition: transform .32s ease, background-color .32s ease;
