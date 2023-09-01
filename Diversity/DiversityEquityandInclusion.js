@@ -1,0 +1,63 @@
+var myContext1 = document.getElementById(
+    "stackedChartID1").getContext('2d');
+var myContext2 = document.getElementById(
+        "stackedChartID2").getContext('2d');
+var myChart = new Chart(myContext1, {
+    type: 'bar',
+    data: {
+        labels: ["Associate", "Lead", "Director/VP", "Executive"],
+        datasets: [{
+            label: 'worst',
+            backgroundColor: "#253859 ",
+            data: [12.5, 0, 33.3, 50],
+        }, {
+            label: 'Okay',
+            backgroundColor: "#28bebb",
+            data: [6.25, 0, 0, 0],
+        }, {
+            label: 'bad',
+            backgroundColor: "#8387BA",
+            data: [81.25, 100, 66.67, 50],
+        }],
+    },
+    options: {
+        indexAxis: 'y',
+        scales: {
+            x: {
+                stacked: true,
+            },
+            y: {
+                stacked: true
+            }
+        },
+        responsive: true
+    }
+});
+var myChart = new Chart(myContext2, {
+    type: 'bar',
+    data: {
+        labels: ["Associate", "Lead", "Director/VP", "Executive"],
+        datasets: [{
+            label: 'worst',
+            backgroundColor: "#d2d2d2",
+            data: [43.75, 0, 33.3, 0],
+        },
+          {
+            label: 'bad',
+            backgroundColor: "#253859 ",
+            data: [56.25, 100, 66.67, 100],
+        }],
+    },
+    options: {
+        indexAxis: 'y',
+        scales: {
+            x: {
+                stacked: true,
+            },
+            y: {
+                stacked: true
+            }
+        },
+        responsive: true
+    }
+});

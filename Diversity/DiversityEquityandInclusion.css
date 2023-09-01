@@ -1,0 +1,23 @@
+body{
+    font-family: Mulish;
+}
+
+td{
+  border-bottom: #28bebb 1px solid;
+}
+#learnMoreBtn{
+    background-color: #03D5CC;;
+    color: #fff;
+    position: relative;
+}
+@keyframes btn {
+    0%   {bottom : 0rem;}
+    50%  {bottom: .025  rem;}
+    100% {bottom : .50rem;}
+}
+#learnMoreBtn:hover{
+    bottom: .5rem;
+    background-color: #28BEBB;
+    animation-name: btn;
+    animation-duration: 1s;
+}
