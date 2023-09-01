@@ -1,0 +1,227 @@
+.career {
+    color: #253859;
+}
+
+.people {
+    font-size: 20px;
+    font-family: Cambria, Cochin;
+    color: #253859;
+    font-weight: 500;
+}
+
+.join {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.img {
+    text-align: center;
+    opacity: 1;
+}
+
+.role {
+    font-size: 42.5px;
+    color: #253859;
+}
+
+
+.ascent {
+    margin-left: 40px;
+    font-size: 2em;
+}
+
+#value {
+    margin-top: 130px;
+}
+
+.flex-container {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.trust {
+    position: relative !important;
+}
+
+.team {
+    font-size: 28px;
+    color: #253859;
+}
+
+.medicial ul,
+li {
+    color: #253859;
+}
+
+.location {
+    color: gray;
+}
+
+.direct {
+    color: #0942B0;
+}
+
+h5:hover {
+    cursor: pointer;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: darkgreen;
+}
+
+/***************Resources**************************/
+
+.full-width-content .col.padding-6-percent>.vc_column-inner {
+    padding: calc(100vw * 0.08);
+}
+
+.col.centered-text,
+.wpb_column.centered-text {
+    text-align: center;
+}
+
+.wpb_wrapper>div {
+    margin-bottom: 24px;
+}
+
+.full-width-content h1 {
+    font-weight: 700;
+    color: #253859;
+}
+
+.nectar-highlighted-text em {
+    position: relative;
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    text-transform: inherit;
+    letter-spacing: inherit;
+    line-height: 1em;
+    padding: 0 3px;
+}
+
+
+.nectar-highlighted-text .nectar-scribble {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    font-weight: 600;
+}
+
+.wpb_row .nectar-post-grid-filters[data-active-color="accent-color"] a:after {
+    background-color: #03D5CC;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav li {
+    padding: 20px;
+    font-size: 16px;
+}
+
+.nav li:hover {
+    text-decoration: underline;
+    text-decoration-color: #03D5CC;
+    cursor: pointer;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+}
+
+.double {
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.6 !important;
+}
+
+.doubles {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.card:hover {
+    background-color: #03D5CC !important;
+    transform: translateY(-4px);
+    transition: transform .32s ease, background-color .32s ease;
+    cursor: pointer;
+}
+
+.cards {
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.cards:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#white {
+    margin-top: 15px !important;
+}
+
+#blog {
+    margin-top: 150px;
+    text-align: center;
+    color: #03D5CC;
+}
+
+.w3-animate-bottom {
+    opacity: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 3s !important;
+}
+
+.pilot {
+    /* text-align: left; */
+    margin-top: 20px;
+    line-height: 1.6 !important;
+    margin-left: 20px;
+    font-weight: 740;
+}
+
+.pilots {
+    margin-left: 20px;
+    font-weight: 500;
+    line-height: 1.8 !important;
+}
+
+.filter {
+    display: none;
+}
+
+
+
+@media (min-width: 300px) and (max-width: 700px) {
+    .filter {
+        font-size: 20px;
+        color: #253859;
+        padding: 16px 32px;
+        display: block !important;
+        text-align: center;
+        margin-top: 20px !important;
+    }
+
+    #myDIV {
+        margin-left: 40px;
+    }
+
+    .button {
+        border: 1px solid lightgray;
+        padding: 10px 40px;
+        background-color: #fff;
+    }
+}

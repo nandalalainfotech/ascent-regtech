@@ -1,11 +1,29 @@
-
 .career {
     color: #253859;
+    margin-top: 100px !important;
+    font-family: Mulish !important;
+}
+
+.circle:hover {
+    display: none !important;
+    background-color: #fff;
+}
+
+.view circle:nth-child(2) {
+    display: none;
+}
+
+.view:hover circle:nth-child(1) {
+    display: none;
+}
+
+.view:hover circle:nth-child(2) {
+    display: block;
 }
 
 .people {
     font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin;
     color: #253859;
     font-weight: 500;
 }
@@ -47,6 +65,7 @@
 .team {
     font-size: 28px;
     color: #253859;
+    font-weight: 700;
 }
 
 .medicial ul,
@@ -60,6 +79,7 @@ li {
 
 .direct {
     color: #0942B0;
+    font-weight: 600;
 }
 
 h5:hover {
@@ -75,7 +95,9 @@ a {
     color: darkgreen;
 }
 
-
+#build {
+    font-weight: 700;
+}
 
 
 
