@@ -1,23 +1,40 @@
-body{
-    font-family: Mulish;
+body {
+  font-family: Mulish;
 }
 
-td{
+td {
   border-bottom: #28bebb 1px solid;
 }
-#learnMoreBtn{
-    background-color: #03D5CC;;
-    color: #fff;
-    position: relative;
+#learnMoreBtn {
+  background-color: #03d5cc;
+  color: #fff;
+  position: relative;
 }
 @keyframes btn {
-    0%   {bottom : 0rem;}
-    50%  {bottom: .025  rem;}
-    100% {bottom : .50rem;}
+  0% {
+    bottom: 0rem;
+  }
+  50% {
+    bottom: 0.025 rem;
+  }
+  100% {
+    bottom: 0.5rem;
+  }
 }
-#learnMoreBtn:hover{
-    bottom: .5rem;
-    background-color: #28BEBB;
-    animation-name: btn;
-    animation-duration: 1s;
+#learnMoreBtn:hover {
+  bottom: 0.5rem;
+  background-color: #28bebb;
+  animation-name: btn;
+  animation-duration: 1s;
 }
+
+/* .box-container {
+  box-sizing: border-box;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ 
+} */
+ 
