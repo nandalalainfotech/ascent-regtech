@@ -12,6 +12,22 @@
     background-color: rgb(255, 255, 255);
 }
 
+/* responsive */
+
+@media screen and (max-width: 750px) {
+    .img-res {
+       max-width: 150px !important;
+       /* margin-left: 50px; */
+      }
+   } 
+ @media screen and (max-width: 600px) {
+    .img-res {
+      max-width: 200px !important;
+      /* margin-left: 50px; */
+    }
+  }  
+
+
 /* captcha */
 
 
