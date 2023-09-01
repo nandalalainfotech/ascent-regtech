@@ -11,6 +11,38 @@
     <link rel="stylesheet" href="contact.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+<style>
+    body b,
+    body strong,
+    body .bold {
+        font-family: "Mulish";
+        font-weight: 900;
+    }
+
+    .nectar-scribble.circle {
+        width: 130%;
+        height: 140%;
+        top: -20%;
+        left: -15%;
+    }
+
+    em.animated .nectar-scribble path {
+        stroke-linecap: round;
+        opacity: 1;
+        animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    em {
+        font-size: inherit;
+        font-style: inherit;
+        background-size: 0 80%;
+    }
+
+    /* style="color:#03d5cc;    font-weight: revert;
+            -webkit-text-stroke: medium;
+            font-size: 40px;" */
+</style>
+
 
 <body>
     <nav>
@@ -84,6 +116,8 @@
     <div class="container-fluid py-5 px-5" style="background-color: #03d5cc;">
         <div class="container">
             <div class="row">
+                <div class="col-sm-12 " style="height: 100px !important;">
+                </div>
                 <div class="col-md-5 text-center">
                     <div class="text-white" style="margin-top: auto;">
                     </div>
@@ -94,9 +128,18 @@
                             font-family: Mulish;
                             font-weight: 900 !important;
                             text-align: justify;
-                            letter-spacing: -0.02em;">From chaos to <br />compliance<br />
-                                confidence.
-
+                            letter-spacing: -0.02em;">From chaos to <br />compliance<br /> <em
+                                    class="animated">confidence.
+                                    <!-- <svg class="nectar-scribble circle" role="presentation"
+                                        viewBox="0 0 800 350" preserveAspectRatio="none">
+                                        <path style="animation-duration: 1.8s;"
+                                            transform="matrix(0.9791300296783447,0,0,0.9791300296783447,400,179)"
+                                            stroke-linejoin="miter" fill-opacity="0" pathLength="1"
+                                            stroke-miterlimit="4" stroke="#253859" stroke-opacity="1" stroke-width="20"
+                                            d=" M253,-161 C253,-161 -284.78900146484375,-201.4600067138672 -376,-21 C-469,163 67.62300109863281,174.2100067138672 256,121 C564,34 250.82899475097656,-141.6929931640625 19.10700035095215,-116.93599700927734">
+                                        </path>
+                                    </svg> -->
+                                </em>
                             </h1>
                             <br />
                             <p style="color: #ffffff; font-size: 17px;
@@ -124,8 +167,9 @@
                             <p style="text-align: justify; text-decoration: none;">
                                 <strong>
                                     <span style="color: #253859;">
-                                        <a style="color: #253859;  text-decoration: none;  margin-bottom: -20px !important;"
-                                            href="#">+1 (815) 396-4754</a>
+                                        <a style="color: #253859;  text-decoration: none;  margin-bottom: -20px !important; font-weight: revert;
+                                        -webkit-text-stroke: medium;
+                                        " href=" #">+1 (815) 396-4754</a>
                                     </span>
                                 </strong>
                             </p>
@@ -135,8 +179,8 @@
                             <p style=" text-align: justify;">
                                 <strong>
                                     <span style="color: #253859;">
-                                        <a style="color: #253859;  text-decoration: none;"
-                                            href="#">sales@ascentregtech.com</a>
+                                        <a style="color: #253859;  text-decoration: none;  font-weight: revert;
+                                        -webkit-text-stroke: medium;" href="#">sales@ascentregtech.com</a>
                                     </span>
                                 </strong>
                             </p>
@@ -211,8 +255,32 @@
                                 <div>
                                     <label for="companyName" style="font-size: 14px;color: #33475B;">Country/Region<span
                                             style="color: red;">*</span></label>
-                                    <input type="text" id="companyName" placeholder="Please Select"
-                                        style="width: 100%; height: 40px;background-color: #f5f8fa; border: 1px solid #cbd6e2;  border-radius: 3px;">
+                                    <!-- <select class="form-control" id="sel1">
+                                        <option>India</option>
+                                        <option>USA</option>
+                                        <option>England</option>
+                                        <option>Russia</option>
+                                    </select> -->
+                                    <select class="form-control" placeholder="Please Select">
+                                        <option value="" style="    color: #bfbfbf;">Please Select</option>
+                                        <option value="United States">United States</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="Mexico">Mexico</option>
+                                        <option value="United Kingdom">United Kingdom</option>
+                                        <option value="Ireland">Ireland</option>
+                                        <option value="Europe">Europe</option>
+                                        <option value="Central America">Central America</option>
+                                        <option value="South America">South America</option>
+                                        <option value="Caribbean Islands">Caribbean Islands</option>
+                                        <option value="Australia">Australia &amp; New Zealand</option>
+                                        <option value="Eastern Asia">Eastern Asia</option>
+                                        <option value="Western Asia">Western Asia</option>
+                                        <option value="Southern Asia">Southern Asia</option>
+                                        <option value="Africa">Africa</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <!-- <input type="text" id="companyName" placeholder="Please Select"
+                                        style="width: 100%; height: 40px;background-color: #f5f8fa; border: 1px solid #cbd6e2;  border-radius: 3px;"> -->
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -226,7 +294,7 @@
                             </div><br /><br /><br /><br /><br />
                             <div class="col-md-12">
                                 <div>
-                                    <p style="font-size: 11px;">
+                                    <p style="font-size: 11px; font-family: Mulish; line-height: 24px;">
                                         By submitting this form, you agree that you have read our <a href="#"
                                             style="color: #03d5cc;">Privacy
                                             Policy</a> and consent to Ascent's cookie policy and receiving marketing
