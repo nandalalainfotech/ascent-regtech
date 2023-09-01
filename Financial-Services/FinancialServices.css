@@ -34,3 +34,10 @@
 #underline:hover{
     text-decoration: underline;
 }
+#footer-hover:hover{
+color: #28BEBB;
+}
+#footer-hover{
+    text-decoration: none;
+    color: white;
+}
