@@ -37,10 +37,6 @@
         font-style: inherit;
         background-size: 0 80%;
     }
-
-    /* style="color:#03d5cc;    font-weight: revert;
-            -webkit-text-stroke: medium;
-            font-size: 40px;" */
 </style>
 
 
@@ -122,6 +118,15 @@
                     <div class="text-white" style="margin-top: auto;">
                     </div>
                     <style>
+                        @media only screen and (min-width : 1400px) {
+                            .nectar-highlighted-text .nectar-scribble {
+                                position: absolute;
+                                left: 269px !important;
+                                top: 250PX;
+                                z-index: 4;
+                            }
+                        }
+
                         @keyframes nectarStrokeAnimation {
                             0% {
                                 stroke-dashoffset: 1;
@@ -162,7 +167,7 @@
 
                         .nectar-highlighted-text .nectar-scribble {
                             position: absolute;
-                            left: 20px;
+                            left: 30px;
                             top: 250PX;
                             z-index: 4;
                         }
