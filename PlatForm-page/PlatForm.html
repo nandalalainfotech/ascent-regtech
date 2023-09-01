@@ -21,6 +21,17 @@ Online HTML, CSS and JavaScript editor to run code online.
   .login-button {
     color: #253859 !important;
   }
+
+  .hover-sm:hover {
+    opacity: .87;
+    color: #fff;
+  }
+
+  .hover-sm:hover,
+  .hover-sm:focus {
+    box-shadow: 0 0.4em 0.4em -0.4em var(--hover);
+    transform: translateY(-0.23em);
+  }
 </style>
 
 <body>
@@ -100,9 +111,12 @@ Online HTML, CSS and JavaScript editor to run code online.
           </div>
 
           <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8">
-              <h1 class="text-white">Are you regulation ready?</h1>
+            <!-- <div class="col-sm-1"></div> -->
+            <div class="col-sm-12 text-sm">
+              <h1 class="text-white" style="-webkit-text-stroke: inherit;font-size: 38px;
+              -webkit-text-stroke: medium;
+              font-size: 40px;">Are you
+                regulation ready?</h1>
               <br>
               <p class="text-white">Targeted obligations? Yes. Automated change management? Yes. Mapping to your
                 controls
@@ -110,11 +124,10 @@ Online HTML, CSS and JavaScript editor to run code online.
                 But beyond groundbreaking capabilities, Ascent uses AI to solve your real problem — reducing your
                 regulatory and reputational risk, without the eye-boggling costs.</p>
             </div>
-            <div class="col-sm-2"></div>
-
+            <!-- <div class="col-sm-1"></div> -->
           </div>
         </div>
-        <div class="col-sm-5 " id="forms" style="height: fit-content;">
+        <div class="col-sm-6 " id="forms" style="height: fit-content;">
           <div class="container-fluid">
             <div class="container" style="margin-top: 50px;">
               <form class="mt-5" method="post">
@@ -194,23 +207,7 @@ Online HTML, CSS and JavaScript editor to run code online.
                     </p>
                   </div>
                 </div>
-                <div class="col-sm-12">
-                  <!-- <div class="captcha bt-dark">
-                    <div class="spinner">
-                      <label>
-                        <input type="checkbox" onclick="$(this).attr('disabled','disabled');">
-                        <span class="checkmark"><span>&nbsp;</span></span>
-                      </label>
-                    </div>
-                    <div class="text">
-                      I'm not a robot
-                    </div>
-                    <div class="logo">
-                      <img class="responsive" src="https://forum.nox.tv/core/index.php?media/9-recaptcha-png/" />
-                      <p>reCAPTCHA</p>
-                      <small>Privacy - Terms</small>
-                    </div>
-                  </div> -->
+                <!-- <div class="col-sm-12">
                   <div class="col-sm-12">
                     <div class="text-white" style="width: 11rem;margin-left: -10px;">
                       <div style="float: left;background-color: #1A73E8;" class="p-2">
@@ -225,6 +222,38 @@ Online HTML, CSS and JavaScript editor to run code online.
                       <div style="background-color: #fff;text-align: end;" class=" p-2">
                         <img src="captcha_img.png" alt="" style="width: 33px;">
                       </div>
+                    </div>
+                  </div>
+                </div> -->
+                <div class="col-md-6">
+                  <div class="text-white" style="height: 60px;
+                  width: 256px;
+                  box-shadow: gray 0px 0px 5px;">
+                    <div style="float: left; 
+                      background-color: #1A73E8;
+                       color: white; 
+                       font-size: 13px;
+                        padding: 0 19px;
+                        text-align: justify;
+                      
+                        height: 60px;">
+                      <ul style="list-style-type: none;font-size: 11px;margin: 0px;padding: 0px;">
+                        <li style="font-family: Roboto,helvetica,arial,sans-serif;
+                              font-size: 13px;   margin-top: 10px;
+                             ">protected by <strong>reCAPTCHA</strong>
+                        </li>
+                        <a href="#" class="text-white" id="underline" style="
+                                  font-size: 10px; text-decoration: none !important; ">Privacy -Terms</a>
+                      </ul>
+                    </div>
+                    <div style="background-color: #fff;
+                      text-align: center;  height: 60px;
+                  width: 256px;
+                  " class=" p-2">
+                      <img src="../images/logo_48.png" alt="" style="background-size: 44px;
+                          height: 44px;
+                          width: 44px;
+                          margin-right: -5px;">
                     </div>
                   </div>
                 </div>
@@ -251,9 +280,8 @@ Online HTML, CSS and JavaScript editor to run code online.
     <div class="container">
       <div class="row">
         <div class="col-sm-1">
-
         </div>
-        <div class="col-sm-10" style="border-radius: 2% !important;padding: 2%; background: #eff4f9;margin-top: -60px;">
+        <div class="col-sm-12" style="border-radius: 2% !important;padding: 2%; background: #eff4f9;margin-top: -60px;">
           <div class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-2">
@@ -263,64 +291,58 @@ Online HTML, CSS and JavaScript editor to run code online.
                   <path
                     d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z" />
                 </svg>
-                <!-- <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                  y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
-                  xml:space="preserve" id="nectar-svg-animation-instance-0"
-                  style="height: 60px; width: 60px;color: #03d5cc !important;">
-                  <g>
-                    <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
-                      d="M29,6L46,6L63,27L32,58L1,27L18,6L32,6L32,58"
-                      style="stroke-dasharray: 225, 227; stroke-dashoffset: 0;">
-                    </path>
-                    <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M32,57L18,27L24,6"
-                      style="stroke-dasharray: 55, 57; stroke-dashoffset: 0;"></path>
-                    <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M32,57L46,27L40,6"
-                      style="stroke-dasharray: 55, 57; stroke-dashoffset: 0;"></path>
-                    <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M1,27L63,27"
-                      style="stroke-dasharray: 62, 64; stroke-dashoffset: 0;"></path>
-                  </g>
-                </svg> -->
                 <br>
               </div>
 
-              <h3 style="color: #03d5cc;">
+              <h3 style="color: #03d5cc;font-family: Mulish;
+              font-weight: 900;">
                 Cut Through The Clutter
               </h3>
-              <p>
+              <p style="color: #253859;     font-family: Mulish;
+              letter-spacing: -0.02em;
+              font-size: 17px;
+              line-height: 30px;
+              font-weight: 500;">
                 Cut through the clutter of irrelevant regulations. Establish a single, reliable source of regulatory
                 truth.
               </p>
             </div>
             <div class="col-sm-2">
-              <div>
+              <div style="color: #03d5cc;">
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                   y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
                   xml:space="preserve" id="nectar-svg-animation-instance-1" style="height: 60px; width: 60px;">
                   <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
                     d="M3.7079999999999984,35A28.292,28.292 0,1,1 60.292,35A28.292,28.292 0,1,1 3.7079999999999984,35"
-                    style="stroke-dasharray: 178, 180; stroke-dashoffset: 0;"></path>
+                    style="stroke-dasharray: 178, 180; stroke-dashoffset: 0; color: #03d5cc;"></path>
                   <path fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10"
                     d="M37,40L45,21L26,29L19,47Z" style="stroke-dasharray: 80, 82; stroke-dashoffset: 0;"></path>
                   <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M26,29L37,40"
-                    style="stroke-dasharray: 16, 18; stroke-dashoffset: 0;"></path>
+                    style="stroke-dasharray: 16, 18; stroke-dashoffset: 0; color: #03d5cc;"></path>
                   <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
                     d="M36.9,7C36.965,6.677,37,6.342,37,6c0-2.761-2.239-5-5-5s-5,2.239-5,5c0,0.342,0.035,0.677,0.1,1"
-                    style="stroke-dasharray: 18, 20; stroke-dashoffset: 0;"></path>
+                    style="stroke-dasharray: 18, 20; stroke-dashoffset: 0; color: #03d5cc;"></path>
                   <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M32,7L32,12"
-                    style="stroke-dasharray: 5, 7; stroke-dashoffset: 0;"></path>
+                    style="stroke-dasharray: 5, 7; stroke-dashoffset: 0; color: #03d5cc;"></path>
                   <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M32,58L32,63"
-                    style="stroke-dasharray: 5, 7; stroke-dashoffset: 0;"></path>
+                    style="stroke-dasharray: 5, 7; stroke-dashoffset: 0; color: #03d5cc;"></path>
                   <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M60,35L55,35"
-                    style="stroke-dasharray: 5, 7; stroke-dashoffset: 0;"></path>
+                    style="stroke-dasharray: 5, 7; stroke-dashoffset: 0; color: #03d5cc;"></path>
                   <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M9,35L4,35"
-                    style="stroke-dasharray: 5, 7; stroke-dashoffset: 0;"></path>
+                    style="stroke-dasharray: 5, 7; stroke-dashoffset: 0; color: #03d5cc;"></path>
                 </svg>
                 <br>
               </div>
-              <h3 style="color: #03d5cc;">
+              <h3 style="color: #03d5cc; font-family: Mulish;
+              font-weight: 900;">
                 Stay Ahead Of Regulations</h3>
               <br>
-              <p>Stay ahead of regulations by building a comprehensive register of obligations to ensure compliance.</p>
+              <p style="color: #253859;     font-family: Mulish;
+              letter-spacing: -0.02em;
+              font-size: 17px;
+              line-height: 30px;
+              font-weight: 500;">Stay ahead of regulations by building a comprehensive register of obligations to
+                ensure compliance.</p>
             </div>
             <div class="col-sm-2">
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -364,9 +386,15 @@ Online HTML, CSS and JavaScript editor to run code online.
                   d="M51,20L51,9L62,9" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
               </svg>
               <br>
-              <h3 style="color: #03d5cc;">Maximize Efficiency</h3>
+              <h3 style="color: #03d5cc;font-family: Mulish;
+              font-weight: 900;">Maximize Efficiency</h3>
               <br>
-              <p>Maximize efficiency and scalability by removing the need to consider or research non-applicable
+              <p style="color: #253859;     font-family: Mulish;
+              letter-spacing: -0.02em;
+              font-size: 17px;
+              line-height: 30px;
+              font-weight: 500;">Maximize efficiency and scalability by removing the need to consider or research
+                non-applicable
                 regulations.</p>
             </div>
             <div class="col-sm-2">
@@ -375,17 +403,16 @@ Online HTML, CSS and JavaScript editor to run code online.
                 <path fill-rule="evenodd"
                   d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm8.854-9.646a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
               </svg>
-              <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
-                xml:space="preserve" id="nectar-svg-animation-instance-3" style="height: 60px; width: 60px;">
-                <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
-                  d="M18,1L46,1L46,62L32,48L18,62Z" style="stroke-dasharray: 190, 192; stroke-dashoffset: 0;"></path>
-                <path fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="M23,22L30,29L
-                  43,16" style="stroke-dasharray: 29, 31; stroke-dashoffset: 0;"></path>
-              </svg> -->
+
               <br>
-              <h3 style="color: #03d5cc;">Leave An Audit Trail</h3>
-              <p>Prove compliance by tracking & recording compliance activities; easily generate proof of compliance for
+              <h3 style="color: #03d5cc; font-family: Mulish;
+              font-weight: 900;">Leave An Audit Trail</h3>
+              <p style="color: #253859;     font-family: Mulish;
+              letter-spacing: -0.02em;
+              font-size: 17px;
+              line-height: 30px;
+              font-weight: 500;">Prove compliance by tracking & recording compliance activities; easily generate proof
+                of compliance for
                 auditors.</p>
             </div>
             <div class="col-sm-2">
@@ -406,10 +433,16 @@ Online HTML, CSS and JavaScript editor to run code online.
                 </g>
               </svg>
               <br>
-              <h3 style="color: #03d5cc;">
+              <h3 style="color: #03d5cc;font-family: Mulish;
+              font-weight: 900;">
                 Map Compliance</h3>
               <br>
-              <p>Map compliance to internal policies, procedures, and operations by integrating seamlessly with your GRC
+              <p style="color: #253859;     font-family: Mulish;
+              letter-spacing: -0.02em;
+              font-size: 17px;
+              line-height: 30px;
+              font-weight: 500;">Map compliance to internal policies, procedures, and operations by integrating
+                seamlessly with your GRC
                 tool.</p>
             </div>
             <div class="col-sm-1"></div>
@@ -417,9 +450,9 @@ Online HTML, CSS and JavaScript editor to run code online.
           </div>
 
         </div>
-        <div class="col-sm-1">
+        <!-- <div class="col-sm-1">
 
-        </div>
+        </div> -->
       </div>
       <br>
 
@@ -427,48 +460,95 @@ Online HTML, CSS and JavaScript editor to run code online.
   </div>
 
   <br>
-  <div class="container-fluid p-2 mt-4">
+  <div class="container-fluid mt-4">
     <div class="container">
       <div class="row">
         <div class="col-sm-6" style="margin-top: -60px;">
-          <img class="img-res" src="img1.png" alt="" width="546" height="640">
+          <img class="img-res" id="img-sm" src="../images/Overview-1.png" alt="" width="600" height="640">
         </div>
-        <!-- <div class="col-sm1"></div> -->
-        <div class="col-sm-6">
+        <div class="col-sm-6 obligation">
           <div>
-            <h2> Your Obligations, Automatically Generated
+            <h2 style="font-family: Mulish;
+            text-transform: none;
+            letter-spacing: -0.02em;
+            font-size: 37px;
+            line-height: 30px;
+            font-weight: 900; 
+            color: #253859;"> Your Obligations, Automatically Generated
             </h2>
             <br>
-            <h3> <span><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-                  class="bi bi-bullseye" viewBox="0 0 16 16">
-                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                  <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
-                  <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
-                  <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
-                </svg></span>Targeted to Your Firm</h3>
+            <h3 style="font-family: Mulish;
+            text-transform: none;
+            letter-spacing: -0.02em;
+            font-size: x-large;
+            line-height: 30px;
+            font-weight: 900; 
+            color: #253859;">
+              <i class="icon-default-style fa fa-bullseye" style="color: #03d5cc; line-height: 34px;
+              height: 34px;
+              width: 34px;
+              margin-right: 0;
+              font-size: 34px;
+              font-style: normal;
+              background-color: transparent;"></i>
+              Targeted to Your Firm
+            </h3>
 
-            <p>Ascent filters out regulatory white noise, getting you to the right obligations that matter to your
+            <p style="font-family: Mulish;
+            text-transform: none;
+            line-height: 30px;
+            font-weight: 400; 
+            color: #253859;">Ascent filters out regulatory white noise, getting you to the right obligations that
+              matter to your
               business,
               almost instantly.</p>
             <br>
-            <h3><span style="color: #03d5cc;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                  style="color: #03d5cc;" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                </svg></span> Granular and Precise</h3>
-            <p>Your obligations are precise and granular, meaning each one equals the individual requirement your firm
+            <h3 style="font-family: Mulish;
+            text-transform: none;
+            letter-spacing: -0.02em;
+            font-size: x-large;
+            line-height: 30px;
+            font-weight: 900; 
+            color: #253859;">
+              <i class="icon-default-style fa fa-list-ul" style="color: #03d5cc; line-height: 34px;
+              height: 34px;
+              width: 34px;
+              margin-right: 0;
+              font-size: 34px;
+              font-style: normal;
+              background-color: transparent;"></i>
+              Granular and Precise
+            </h3>
+            <p style="font-family: Mulish;
+            text-transform: none;
+            line-height: 30px;
+            font-weight: 400; 
+            color: #253859;">Your obligations are precise and granular, meaning each one equals the individual
+              requirement your firm
               must comply with, not an entire rule or large block of text.</p>
             <br>
-            <h2>
-              <span style="color: #03d5cc;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                  fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
-                  <path
-                    d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
-                  <path fill-rule="evenodd"
-                    d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
-                </svg></span> Dynamically Updates
-            </h2>
-            <p>Static or outdated obligations are useless. Ascent updates your obligations automatically every time a
+            <h3 style="font-family: Mulish;
+            text-transform: none;
+            letter-spacing: -0.02em;
+            font-size: x-large;
+            line-height: 30px;
+            font-weight: 900; 
+            color: #253859;">
+              <i class="icon-default-style fa fa-refresh" style="color: #03d5cc; line-height: 34px;
+              height: 34px;
+              width: 34px;
+              margin-right: 0;
+              font-size: 34px;
+              font-style: normal;
+              background-color: transparent;"></i>
+              Dynamically Updates
+            </h3>
+            <p style="font-family: Mulish;
+            text-transform: none;
+            line-height: 30px;
+            font-weight: 400; 
+            color: #253859;">Static or outdated obligations are useless. Ascent updates your obligations automatically
+              every time a
               rule
               changes, for your immediate review.</p>
           </div>
@@ -479,18 +559,18 @@ Online HTML, CSS and JavaScript editor to run code online.
   </div>
 
   <br>
-  <div class="container-fluid">
-    <!-- <div class="container"> -->
+  <div class=" container-fluid">
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-12 ingcommbank-sm">
         <img src="ingcommbank.jpg" alt="" width="100%">
       </div>
       <div class="row">
         <div class="col-sm-2"></div>
-        <div class="col-sm-3" style="margin-top: -500px;">
+        <div class="col-sm-4 ing">
           <div>
-            <h2>ING and CommBank</h2>
-            <h3 style="color: rgb(255, 255, 255);">generated their obligations for a European regulation (MiFID/MiFID
+            <h2 style="color: #253859;">ING and CommBank</h2>
+            <h3 style="color: rgb(255, 255, 255);">generated their obligations for a European regulation
+              (MiFID/MiFID
               II) in 2.5 minutes, compared to 1,800
               hours when done manually.</h3>
             <br>
@@ -503,10 +583,7 @@ Online HTML, CSS and JavaScript editor to run code online.
         </div>
         <div class="col-sm-6"></div>
       </div>
-      <!-- </div> -->
     </div>
-
-
   </div>
 
   <br>
@@ -516,26 +593,74 @@ Online HTML, CSS and JavaScript editor to run code online.
         <div class="col-sm-6 p-4">
           <div class="row">
             <div class="col-sm-12 p-5">
-              <div>
-                <h2>A Single Source of Regulatory Truth</h2><br>
-                <h3><span style="color: #03d5cc !important;padding: 15px;"><i class="icon-default-style fa fa-users ">
-                    </i></span>Bridge Organizational Divides</h3>
-                <p style="text-align: justify;margin-left: 50px;">Siloed teams and processes are prone to gaps. Ascent
+              <div class="single-sm">
+                <h2 style="font-family: Mulish;
+                text-transform: none;
+                letter-spacing: -0.02em;
+                font-size: 37px;
+                line-height: 30px;
+                font-weight: 900; 
+                color: #253859;">A Single Source of Regulatory Truth</h2><br>
+                <h3 style="font-family: Mulish;
+                text-transform: none;
+                letter-spacing: -0.02em;
+                font-size: x-large;
+                line-height: 30px;
+                font-weight: 900; 
+                color: #253859;">
+                  <span style="color: #03d5cc !important;padding: 15px;">
+                    <i class="icon-default-style fa fa-users ">
+                    </i>
+                  </span>Bridge Organizational Divides
+                </h3>
+                <p style="font-family: Mulish;
+                text-transform: none;
+                line-height: 30px;
+                font-weight: 400; 
+                color: #253859;
+                text-align: justify;margin-left: 50px;">Siloed teams and processes are prone to gaps.
+                  Ascent
                   unites your people, ensuring they’re always working
                   off the same data, even as rules change.</p>
               </div>
-              <div>
-                <h3><span style="color: #03d5cc !important;padding: 15px;"><i
+              <div class="single-sm">
+                <h3 style="font-family: Mulish;
+                text-transform: none;
+                letter-spacing: -0.02em;
+                font-size: x-large;
+                line-height: 30px;
+                font-weight: 900; 
+                color: #253859;"><span style="color: #03d5cc !important;padding: 15px;"><i
                       class="icon-default-style fa fa-eye "></i></span>Avoid
                   Black Boxes</h3>
-                <p style="text-align: justify;margin-left: 50px;">Your requirements shouldn’t be a mystery. Ascent gives
-                  you 360 degree visibility into every obligation and lets you trace each one back to the exact rule it
+                <p style="font-family: Mulish;
+                text-transform: none;
+                line-height: 30px;
+                font-weight: 400; 
+                color: #253859;
+                text-align: justify;margin-left: 50px;">Your requirements shouldn’t be a mystery.
+                  Ascent gives
+                  you 360 degree visibility into every obligation and lets you trace each one back to the exact
+                  rule it
                   came from.</p>
               </div>
-              <div>
-                <h3><span style="color: #03d5cc;padding: 15px;"><i class="icon-default-style fa fa-shield "></i></span>
+              <div class="single-sm">
+                <h3 style="font-family: Mulish;
+                text-transform: none;
+                letter-spacing: -0.02em;
+                font-size: x-large;
+                line-height: 30px;
+                font-weight: 900; 
+                color: #253859;"><span style="color: #03d5cc;padding: 15px;"><i
+                      class="icon-default-style fa fa-shield "></i></span>
                   Evidence Compliance</h3>
-                <p style="text-align: justify;margin-left: 50px;">Easily show proof of compliance to auditors or the
+                <p style="font-family: Mulish;
+                text-transform: none;
+                line-height: 30px;
+                font-weight: 400; 
+                color: #253859;
+                text-align: justify;margin-left: 50px;">Easily show proof of compliance to auditors or
+                  the
                   Board. Every activity is meticulously tracked and recorded per industry standards.</p>
               </div>
             </div>
@@ -551,12 +676,9 @@ Online HTML, CSS and JavaScript editor to run code online.
         </div>
       </div>
     </div>
-
-
   </div>
   <br>
   <div class="container-fluid">
-    <!-- <div class="container"> -->
     <div class="img-Sizes">
       <div class="row " id="img-Sizes">
         <div class="col-sm-12 " style="height: 120px !important;">
@@ -567,9 +689,17 @@ Online HTML, CSS and JavaScript editor to run code online.
 
           </div>
           <div class="col-sm-4">
-            <h1>A Global Bank</h1>
-            <h3 class="text-white">achieved 99% cost reduction and 30% time savings in regulatory change triage across
-              the business.</h3>
+            <p><strong><span style="font-size: 300%; font-family: Mulish;
+              font-weight: 900;color: #253859;
+          ">A Global Bank</span></strong></p>
+
+            <p>
+              <span style="color: #ffffff;">
+                <span style="font-size: 200%; line-height: inherit;">achieved <strong>99% cost reduction
+                  </strong>and <strong>30% time savings </strong>in regulatory change triage across the
+                  business.</span>
+              </span>
+            </p>
             <br>
             <h3 style="color: #183460;">Read Their Story <span><svg xmlns="http://www.w3.org/2000/svg" width="40"
                   height="40" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
@@ -583,9 +713,6 @@ Online HTML, CSS and JavaScript editor to run code online.
         </div>
       </div>
     </div>
-    <!-- </div> -->
-
-
   </div>
   <br>
   <div class="container-fluid">
@@ -598,19 +725,41 @@ Online HTML, CSS and JavaScript editor to run code online.
           <div class="row p-5">
             <div class="col-sm-12">
               <div>
-                <h1 id="header-color">Be Compliance-Ready from Day 1</h1>
-                <h2><span style="color: #03d5cc;padding: 10px"><i class="icon-default-style fa fa-clock-o"></i></span>
+                <p id="header-color" style="font-family: Mulish;
+                text-transform: none;
+                letter-spacing: -0.02em;
+                font-size: 31.45px;
+                font-weight: 900; 
+                color: #253859;">Be Compliance-Ready from Day 1</p>
+                <h2 style="font-family: Mulish;
+                text-transform: none;
+                letter-spacing: -0.02em;
+                font-size: x-large;
+                line-height: 30px;
+                font-weight: 900; 
+                color: #253859;">
+                  <span style="color: #03d5cc;padding: 10px">
+                    <i class="icon-default-style fa fa-clock-o">
+                    </i>
+                  </span>
                   Rapid Deployment
                 </h2>
                 <p style="margin-left: 45px;">
-                  Unlike legacy tools or traditional service engagements that can take months to implement, Ascent is
+                  Unlike legacy tools or traditional service engagements that can take months to implement,
+                  Ascent is
                   ready
                   for your immediate use.
                 </p>
               </div>
               <div>
 
-                <h2 id="header-color"><span style="color: #03d5cc;padding: 10px"><i
+                <h2 id="header-color" style="font-family: Mulish;
+                text-transform: none;
+                letter-spacing: -0.02em;
+                font-size: x-large;
+                line-height: 30px;
+                font-weight: 900; 
+                color: #253859;"><span style="color: #03d5cc;padding: 10px"><i
                       class="icon-default-style fa fa-usd"></i></span>No
                   Implementation Costs</h2>
                 <p style="margin-left: 45px;">
@@ -618,7 +767,13 @@ Online HTML, CSS and JavaScript editor to run code online.
                 </p>
               </div>
               <div>
-                <h2 id="header-color"><span style="color: #03d5cc;padding: 10px"><i
+                <h2 id="header-color" style="font-family: Mulish;
+                text-transform: none;
+                letter-spacing: -0.02em;
+                font-size: x-large;
+                line-height: 30px;
+                font-weight: 900; 
+                color: #253859;"><span style="color: #03d5cc;padding: 10px"><i
                       class="icon-default-style fa fa-globe"></i></span>Easy to Scale</h2>
                 <p style="margin-left: 45px;">
                   Whether your business complies with a couple regulators or hundreds, Ascent is your partner in
@@ -641,21 +796,40 @@ Online HTML, CSS and JavaScript editor to run code online.
 
       <div class="row">
         <div class="col-6 mt-5">
-          <!-- <div class="col-sm-6"> -->
-          <h1 style="color:#253859 ;text-indent: 55px;"> Platform Features</h1>
+          <h1 style="color:#253859 ;text-indent: 55px; font-size: 42.5px;"> Platform Features</h1>
           <div class="col-sm-4"></div>
-          <!-- </div> -->
         </div>
         <div class="row p-5 mx-2">
           <div class="col-sm-6">
-            <h2 style="color:#253859 ;"><b>Obligations Register</b></h2>
-            <p>An easy-to-read digital register of your firm’s regulatory obligations. Automatically generated and kept
+            <h2 style="font-family: Mulish;
+            text-transform: none;
+            letter-spacing: -0.02em;
+            font-size: 30px;
+            line-height: 30px;
+            font-weight: 900; 
+            color: #253859;"><b>Obligations Register</b></h2>
+            <p>An easy-to-read digital register of your firm’s regulatory obligations. Automatically generated
+              and kept
               up-to-date by Ascent.</p>
-            <h2 style="color:#253859 ;"><b>Rule Inventory</b></h2>
-            <p>A living library of all laws, rules, and regulations. Find information quickly with powerful search and
+            <h2 style="font-family: Mulish;
+            text-transform: none;
+            letter-spacing: -0.02em;
+            font-size: 30px;
+            line-height: 30px;
+            font-weight: 900; 
+            color: #253859;"><b>Rule Inventory</b></h2>
+            <p>A living library of all laws, rules, and regulations. Find information quickly with powerful
+              search and
               filtering.</p>
-            <h2 style="color:#253859 ;"><b>Horizon Scanning Feed</b></h2>
-            <p>A continuous feed of regulatory documents. Download, share, and mark important documents for review.</p>
+            <h2 style="font-family: Mulish;
+            text-transform: none;
+            letter-spacing: -0.02em;
+            font-size: 30px;
+            line-height: 30px;
+            font-weight: 900; 
+            color: #253859;"><b>Horizon Scanning Feed</b></h2>
+            <p>A continuous feed of regulatory documents. Download, share, and mark important documents for
+              review.</p>
           </div>
           <div class="col-sm-6">
             <div class="row">
@@ -664,12 +838,32 @@ Online HTML, CSS and JavaScript editor to run code online.
             </div>
             <div class="row">
               <div class="col-sm-12">
-                <h2 style="color:#253859 ;"><b>Rule Compare</b></h2>
-                <p>A side-by-side comparison of the new and former versions of a rule, with the changes redlined. </p>
-                <h2 style="color:#253859 ;"><b>Auto-Impact Assessment</b></h2>
-                <p>Relevant rule updates are surfaced automatically. Any changes to your existing obligations are marked
+                <h2 style="font-family: Mulish;
+                text-transform: none;
+                letter-spacing: -0.02em;
+                font-size: 30px;
+                line-height: 30px;
+                font-weight: 900; 
+                color: #253859;"><b>Rule Compare</b></h2>
+                <p>A side-by-side comparison of the new and former versions of a rule, with the changes
+                  redlined. </p>
+                <h2 style="font-family: Mulish;
+                text-transform: none;
+                letter-spacing: -0.02em;
+                font-size: 30px;
+                line-height: 30px;
+                font-weight: 900; 
+                color: #253859;"><b>Auto-Impact Assessment</b></h2>
+                <p>Relevant rule updates are surfaced automatically. Any changes to your existing obligations
+                  are marked
                   for your review.</p>
-                <h2 style="color:#253859 ;"><b>Workflow & Assignment Tools</b></h2>
+                <h2 style="font-family: Mulish;
+                text-transform: none;
+                letter-spacing: -0.02em;
+                font-size: 30px;
+                line-height: 30px;
+                font-weight: 900; 
+                color: #253859;"><b>Workflow & Assignment Tools</b></h2>
                 <p>Work your obligations as bite-sized, actionable tasks. Assign teammates, add notes, and track
                   deadlines.</p>
               </div>
@@ -684,7 +878,12 @@ Online HTML, CSS and JavaScript editor to run code online.
     <div class="container mt-3">
       <div class="row mt-5">
         <div class="col-sm-12 mt-5">
-          <h1 style="color: #253859;text-align: center;">Built-in Flexibility — Work the Way You Want</h1>
+          <h2 style="text-align: center; font-size: 42.5px;
+          line-height: 38.25px;font-family: Mulish;
+          text-transform: none;
+          letter-spacing: -0.05em;font-weight: 600;color: #253859;"><span style="font-weight: 400;">Built-in
+              Flexibility&nbsp; — Work the Way You
+              Want </span></h2>
         </div>
       </div>
       <div class="row mt-5 p-4">
@@ -694,10 +893,10 @@ Online HTML, CSS and JavaScript editor to run code online.
             <i class="fa fa-list-alt" style="font-size:48px;color:#03d5cc"></i>
             <br>
             <div class="mt-4">
-              <h3 style="color:#253859;"><b>Manage Obligations in Ascent</b></h3>
-              <p>Work your obligations as bite-sized, actionable tasks. Assign teammates, add notes, and track deadlines
-                so
-                you can make sure the right things get done.</p>
+              <h3 style="color:#253859;font-size: large; font-family: Mulish;
+              font-weight: 900;"><b>Manage Obligations in Ascent</b></h3>
+              <p><span style="font-size: large;">Work your obligations as bite-sized, actionable tasks. Assign
+                  teammates, add notes, and track deadlines so you can make sure the right things get done.</span></p>
               <a href="#" style="color: #03d5cc;">Talk to Sales</a>
             </div>
           </div>
@@ -707,9 +906,10 @@ Online HTML, CSS and JavaScript editor to run code online.
             <i class="fa fa-link" style="font-size:48px;color:#03d5cc"></i>
             <br>
             <div class="mt-4">
-              <h3 style="color:#253859;"><b>Leverage Ascent Data via API</b></h3>
-              <p>Using a different GRC or internal system to manage your obligations? Seamlessly connect Ascent data to
-                other enterprise platforms via API.</p>
+              <h3 style="color:#253859;font-size: large; font-family: Mulish;
+              font-weight: 900;"><b>Leverage Ascent Data via API</b></h3>
+              <p><span style="font-size: large;">Using a different GRC or internal system to manage your obligations?
+                  Seamlessly connect Ascent data to other enterprise platforms via API.</span></p>
               <a href="#" style="color: #03d5cc;">Learn More </a>
             </div>
           </div>
@@ -718,9 +918,120 @@ Online HTML, CSS and JavaScript editor to run code online.
       </div>
     </div>
   </div>
-
+  <div class="container-fluid" style="background-image: url(../images/ascent_cta-bg-1.jpg);
+  background-repeat: no-repeat;background-size: cover;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 py-5">
+          <div style="height: 3rem;" class="pt-5"> </div>
+          <h6 style="text-align: center; font-size: 24px;
+          line-height: 28px; "><span style="color: #ffffff;">Turn compliance into a competitive
+              advantage</span></h6>
+          <h2 style="text-align: center; font-size: 42.5px;
+          line-height: 38.25px; font-family: Mulish;
+          font-weight: 600;"><strong><span style="color: #ffffff;">Talk to a solutions specialist
+                today</span></strong></h2>
+          <div class="pt-5" style="text-align: center;">
+            <button class="btn text-white hover-sm" style="background: #03d5cc;
+                                        border-color: #03d5cc;
+                                        color: #ffffff;
+                                        line-height: 15px;
+                                        font-family: Mulish;
+                                        padding: 12px 24px;text-align: center;
+                                        font-size: 14px;
+                                       padding: 15px 22px;
+                                         "><strong>REQUEST A DEMO</strong>
+            </button>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+    </div>
+  </div>
+  <!-- fotter -->
+  <div class="container-fluid" style="background-color: #253859; ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mt-5">
+          <img src="../images/footer.png" alt="">
+          <h5 style="color: #03D5CC;">Compliance, Uncomplicated.</h5>
+        </div>
+        <div class="col-md-4 mt-5">
+          <div class="row">
+            <div class="col-6">
+              <p style="color: white;"><strong>Platform</strong></p>
+              <p style="color: white;">Our Approach</p>
+              <p style="color: white;">Our Data</p>
+              <p style="color: white;">Regulators</p>
+              <p style="color: white;">Technology Partners</p>
+            </div>
+            <div class="col-6">
+              <p style="color: white;"><strong>Capabilities</strong></p>
+              <p style="color: white;">Obligations Inventory</p>
+              <p style="color: white;">Scenario Planning</p>
+              <p style="color: white;">Horizon Scanning</p>
+              <p style="color: white;">Audit Trail</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-5">
+          <div class="row">
+            <div class="col-6">
+              <p style="color: white;"><strong>Resources</strong></p>
+              <p style="color: white;">Our Approach</p>
+              <p style="color: white;">Our Data</p>
+              <p style="color: white;">Regulators</p>
+              <p style="color: white;">Technology Partners</p>
+            </div>
+            <div class="col-6">
+              <p style="color: white;"><strong>Capabilities</strong></p>
+              <p style="color: white;">Obligations Inventory</p>
+              <p style="color: white;">Scenario Planning</p>
+              <p style="color: white;">Horizon Scanning</p>
+              <p style="color: white;">Audit Trail</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid" style="background-color: #253859;    border-top: 1px solid #FFFFFF;">
+    <div class="container">
+      <div class="row p-3">
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+          <p style="color: white;font-size: 12px;">© 2023 Ascent RegTech. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-3">
+          <span style="color: white;padding-right: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="24"
+              fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+            </svg></span>
+          <span style="color: white;padding-right: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="24"
+              fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+            </svg></span>
+          <span style="color: white;padding-right: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="24"
+              fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+              <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+            </svg></span>
+          <span style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-instagram" viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+            </svg></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fotter end -->
   <script src="script.js"></script>
-  <script>
+  <Script>
     const hamburger = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
     const links = document.querySelectorAll(".nav-links li");
@@ -744,9 +1055,8 @@ Online HTML, CSS and JavaScript editor to run code online.
     vedio.addEventListener('click'), () => {
       gif('play')
     }
-// first div scroll animation
-
-  </script>
+    // first div scroll animation
+  </Script>
 </body>
 
 </html>

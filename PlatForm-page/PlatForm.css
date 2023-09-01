@@ -28,6 +28,63 @@
     }
 }
 
+@media screen and (min-width:375px) and (max-width:667px) {
+    #img-sm {
+        width: 200px !important;
+        height: 215px !important;
+        margin-left: 22px !important;
+    }
+
+    .obligation h3 {
+        font-size: 24.05px;
+    }
+
+    .granular-svg {
+        width: 25px !important;
+    }
+
+    .ingcommbank-sm img {
+        height: 300%;
+    }
+
+    .ing {
+        margin-top: 10px !important;
+    }
+
+    .ing h2 {
+        font-size: 300%;
+        color: #253859;
+        font-weight: bold;
+        padding: 0px 0px 0px 35px;
+        margin-top: -164px;
+    }
+
+    .ing h3 {
+        font-size: 174%;
+        padding-left: 32px;
+        color: #ffffff;
+    }
+
+    .single-sm h2 {
+        font-family: Mulish;
+        text-transform: none;
+        letter-spacing: -0.02em;
+        font-weight: 900;
+        font-size: 24.05px;
+        line-height: 19.5px;
+        color: #253859;
+        margin-left: -33px;
+    }
+
+    .single-sm h3 {
+        font-family: Mulish;
+        font-weight: 900;
+        font-size: x-large;
+        /* padding-left: 55px; */
+        font-size: 1.75rem;
+    }
+
+}
 
 /* captcha */
 
@@ -55,6 +112,7 @@
     align-items: center;
 }
 
+/* @media screen and (max-width:) */
 @media screen and (max-width: 500px) {
     .captcha {
         flex-direction: column;
@@ -306,3 +364,28 @@ path {
     width: 100%;
     height: auto;
   } */
+.img-res {
+
+    margin-left: -50px
+}
+
+.ing {
+    margin-top: -500px;
+}
+
+h3 {
+    font-size: none !important;
+}
+
+body {
+    font-family: Mulish;
+}
+
+body b,
+body strong,
+body .bold {
+    font-family: Mulish;
+    font-family: "Mulish";
+    font-weight: 900;
+}
+
