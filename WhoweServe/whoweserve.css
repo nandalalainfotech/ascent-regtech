@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    outline-style: none !important;
+    font-family: Mulish;
+}
+
+.card-title {
+    color: #fff;
+    font-size: 31.45px;
+    line-height: 25.5px;
+    font-family: Mulish;
+    text-transform: none;
+    letter-spacing: -0.02em;
+    padding: 30px;
+    font-weight: 900;
+}
+
+.link-text {
+    color: #fff;
+    padding: 50px;
+}
+
+.link-text-down {
+    color: #fff;
+    padding: 30px;
+    margin-top: 60px;
+}
+
+.img-fluid {
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 0px;
+}
+
+.img-fluid img {
+    transition: 0.5s all ease-in-out;
+}
+
+.img-fluid:hover img {
+    transform: scale(1.5);
+    /* width: 371px; */
+    /* height: 215px; */
+}
+
+.arrow {
+    padding: 10PX;
+}
