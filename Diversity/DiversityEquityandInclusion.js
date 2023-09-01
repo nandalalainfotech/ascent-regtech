@@ -18,7 +18,8 @@ var myChart = new Chart(myContext1, {
             label: 'bad',
             backgroundColor: "#8387BA",
             data: [81.25, 100, 66.67, 50],
-        }],
+            }],
+        
     },
     options: {
         indexAxis: 'y',
@@ -30,7 +31,9 @@ var myChart = new Chart(myContext1, {
                 stacked: true
             }
         },
-        responsive: true
+        responsive: true,
+        // width: "50%",
+        // height: 400
     }
 });
 var myChart = new Chart(myContext2, {
