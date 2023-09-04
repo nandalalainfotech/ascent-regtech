@@ -41,3 +41,11 @@ color: #28BEBB;
     text-decoration: none;
     color: white;
 }
+
+#form-input {
+    width: 85%;
+    height: 40px;
+    margin-left: 30px;
+    border: none;
+    border-radius: 2px;
+}
