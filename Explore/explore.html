@@ -71,6 +71,78 @@
         transform: translateY(0);
     }
 </style>
+<style>
+    @keyframes nectarStrokeAnimation {
+        0% {
+            stroke-dashoffset: 1;
+            opacity: 0;
+        }
+
+        1% {
+            opacity: 1;
+        }
+
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    .nectar-highlighted-text .nectar-scribble {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+    }
+
+    .nectar-highlighted-text em.animated .nectar-scribble path {
+        stroke-linecap: round;
+        opacity: 1;
+        animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    .nectar-highlighted-text .nectar-scribble path {
+        stroke-dasharray: 1;
+        stroke-dashoffset: 1;
+        opacity: 0;
+    }
+
+    .nectar-highlighted-text em.animated .nectar-scribble path {
+        stroke-linecap: round;
+        opacity: 1;
+        animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    .nectar-highlighted-text[data-style="scribble"] em {
+        background-image: none !important;
+    }
+
+    body .nectar-scribble.squiggle-underline {
+        width: 300px;
+        height: 30px;
+    }
+
+    .nectar-highlighted-text .nectar-scribble {
+        position: absolute;
+        top: 160px;
+        z-index: 7;
+    }
+
+    @media screen and (max-width:500px) {}
+
+    @media screen and (min-width:1000px) {
+        .nectar-highlighted-text .nectar-scribble {
+            left: 290px;
+            top: 210px;
+        }
+    }
+
+    @media screen and (max-width:1000px) and (min-width:780px) {
+        .nectar-highlighted-text .nectar-scribble {
+            left: 20px;
+            top: 200px;
+        }
+    }
+</style>
 
 
 <body>
@@ -142,21 +214,36 @@
             <li class="show" style="display: none; font-size: xx-small;">Ascent RegTech</li>
         </ul>
     </nav>
-    <div class="container-fluid" style="background-image: url(images/our-approach-2.png);
-    background-repeat: no-repeat;background-size: cover; height: 25rem;">
+
+
+    <div class="container-fluid" style="background-image: url(images/Audit_banner.png);
+    background-repeat: no-repeat;background-size: cover;">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 p-5 text-white">
-                    <div style="height:5rem; " class="pt-5"> </div>
-                    <h1 style="font-weight:900">PlatformCapabilities </h1>
-                    <p style="font-size: 1.2rem; margin-top: 20px; ">Learn how teams in financial compliance
-                        unlock the full
-                        potential of Ascent</p>
-
-                    <div style="height: 5rem;"></div>
+                <div class="col-sm-12 text-white pt-5 py--5">
+                    <div class="col-sm-8 py-5">
+                        <div style="height:3rem;" class="pt-5 mt-3"> </div>
+                        <strong class="header ">PlatformCapabilities
+                        </strong>
+                        <h3 class="nectar-highlighted-text" data-style="scribble" data-exp="default"
+                            data-using-custom-color="false" data-animation-delay="false" data-color=""
+                            data-color-gradient=""> <em class="animated"><svg class="nectar-scribble squiggle-underline"
+                                    role="presentation" viewBox="-347 -30.1947 694 96.19" preserveAspectRatio="none">
+                                    <path style="animation-duration: 1.8s;"
+                                        d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
+                                        stroke="#03d5cc" pathLength="1" stroke-width="9" fill="none"></path>
+                                </svg></em>
+                        </h3>
+                        <p style="font-size: 1.2em;line-height: 30px;" class="pt-4"><b>Learn how teams in financial
+                                compliance
+                                unlock the full
+                                potential of Ascent</b></p>
+                        <div style="height: 7.5rem;"></div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
     <div class="container">
         <div class="row">
@@ -235,9 +322,18 @@
 
             </div>
             <div class="col-sm-6">
-                <section class="scroll-section">
-                    <img src="images/Obligations-Register.png" alt="Nature" class="responsive" width="400" height="400">
-                </section>
+                <div class="row">
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                    </div>
+                    <div class="col-sm-8">
+                        <section class="scroll-section">
+                            <img src="images/img-3.png" width="100%">
+                        </section>
+                    </div>
+                    <br>
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -281,17 +377,31 @@
 
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-sm-6 ">
-                <section class="scroll-section">
-                    <img src="images/ascent.png" alt="Nature" class="responsive" width="400" height="400">
-                </section>
+        <div class="row p-3">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                    </div>
+                    <div class="col-sm-8">
+                        <section class="scroll-section">
+                            <img src="images/ascent.png" width="100%">
+                        </section>
+                    </div>
+                    <br>
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                    </div>
+                </div>
 
             </div>
             <div class="col-sm-6">
                 <section class="scroll-section">
                     <div class="container">
-                        <h3 class="regulatory" id="Regulatory Change Management">Regulatory Change Management</h3>
+                        <div class="wpb_wrapper">
+                            <h3 class="regulatory-unique" id="Regulatory Change Management"
+                                style=" -webkit-text-stroke: medium;  letter-spacing: 0.05em;font-size: 35px;">
+                                Regulatory
+                                Change Management</h3>
+                        </div>
                         <p>
                             <span class="paragraph-explore">Ascent helps you stay ahead of regulatory
                                 change. Sifting through mountains of rule updates and manually determining their impact
@@ -342,7 +452,10 @@
             <div class="col-sm-6 ">
                 <section class="scroll-section">
                     <div class="container">
-                        <h1 class="regulatory" id="Obligations Management">Obligations Management</h1>
+                        <h3 class="regulatory" id="Obligations Management"
+                            style=" -webkit-text-stroke: medium;  letter-spacing: 0.05em;font-size: 35px;">
+                            Obligations Management</h3>
+                        <!-- <h1 class="regulatory" id="Obligations Management"></h1> -->
                         <p>
                             <span class="paragraph-explore">Effective compliance requires the work of many.
                                 Ascent’s workflow tools help you manage your obligations across teams and
@@ -353,11 +466,18 @@
 
             </div>
             <div class="col-sm-6">
-                <section class="scroll-section">
-                    <img src="images/ascent-obligations-management-800px.png" alt="Nature" class="responsive"
-                        width="400" height="400">
-                </section>
-
+                <div class="row">
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                    </div>
+                    <div class="col-sm-8">
+                        <section class="scroll-section">
+                            <img src="images/ascent-obligations-management-800px.png" alt="Nature" width="100%">
+                        </section>
+                    </div>
+                    <br>
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -399,15 +519,24 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6 ">
-                <section class="scroll-section">
-                    <img src="images/ascent-regulatory-monitoring-800px.png" alt="Nature" class="responsive" width="100"
-                        height="100" style="margin-top: 100px;">
-                </section>
+                <div class="col-sm-2 col-md-2 col-lg-2">
+                </div>
+                <div class="col-sm-8">
+                    <section class="scroll-section">
+                        <img src="images/ascent-regulatory-monitoring-800px.png" alt="Nature" width="100%">
+                    </section>
+                </div>
+                <br>
+                <div class="col-sm-2 col-md-2 col-lg-2">
+                </div>
             </div>
             <div class="col-sm-6">
                 <section class="scroll-section">
                     <div class="container">
-                        <h1 class="regulatory" id="Regulatory Monitoring">Regulatory Monitoring</h1>
+                        <h3 class="regulatory" id="Regulatory Monitoring"
+                            style=" -webkit-text-stroke: medium;  letter-spacing: 0.05em;font-size: 35px;">
+                            Regulatory Monitoring</h3>
+                        <!-- <h1 class="regulatory" id="Regulatory Monitoring">Regulatory Monitoring</h1> -->
                         <p>
                             <span style="font-size: 1.3em; color: #253859;">Stay ahead of the curve. Ascent helps you
                                 scan
@@ -456,7 +585,10 @@
             <div class="col-sm-6">
                 <section class="scroll-section">
                     <div class="container">
-                        <h1 class="regulatory" id="Obligations Gap Analysics">Obligations Gap Analysis</h1>
+                        <h3 class="regulatory" id="Obligations Gap Analysics"
+                            style=" -webkit-text-stroke: medium;  letter-spacing: 0.05em;font-size: 35px;">
+                            Obligations Gap Analysis</h3>
+                        <!-- <h1 class="regulatory" id="Obligations Gap Analysics">Obligations Gap Analysis</h1> -->
                         <p>
                             <span class="paragraph-explore">Need assurances that your compliance program is
                                 watertight? Use Ascent to backtest and update your current obligations inventory.</span>
@@ -466,10 +598,18 @@
 
             </div>
             <div class="col-sm-6 ">
-                <section class="scroll-section">
-                    <img src="images/gap-analysis-v6.png" alt="Nature" class="responsive" width="100" height="100"
-                        style="margin-top: 100px;">
-                </section>
+                <div class="row">
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                    </div>
+                    <div class="col-sm-8">
+                        <section class="scroll-section">
+                            <img src="images/gap-analysis-v6.png" width="100%">
+                        </section>
+                    </div>
+                    <br>
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -509,16 +649,18 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 ">
+            <div class="col-sm-6">
                 <section class="scroll-section">
-                    <img src="images/ascent-audit-800px.png" alt="Nature" class="responsive" width="100" height="100"
-                        style="margin-top: 100px;">
+                    <img src="images/ascent-audit-800px.png" width="100%">
                 </section>
             </div>
             <div class="col-sm-6">
                 <section class="scroll-section">
                     <div class="container">
-                        <h1 class="regulatory" id="Compliance Audits">Compliance Audits</h1>
+                        <h3 class="regulatory" id="Compliance Audits"
+                            style=" -webkit-text-stroke: medium;  letter-spacing: 0.05em;font-size: 35px;">
+                            Compliance Audits</h3>
+                        <!-- <h1 class="regulatory" id="Compliance Audits">Compliance Audits</h1> -->
                         <p>
                             <span class="paragraph-explore">Whether you are preparing for an internal or
                                 compliance audit, or an external supervisory audit, Ascent helps you show evidence that
