@@ -126,7 +126,9 @@ nav {
 .hamburger {
     display: none;
 }
-
+/* a{
+    colr
+} */
 /* submenu */
 #submenu {
     display: flex !important;
