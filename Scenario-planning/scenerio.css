@@ -185,7 +185,11 @@ margin-left: 60%;
         margin-top: 8rem;
     }
 }
-
+@media screen and (min-width:980px) {
+  #others{
+      display: block;
+  }
+}
 /* ============================/==================================/=================================  */
 
 .item{
