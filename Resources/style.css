@@ -77,7 +77,7 @@ a {
 /***************Resources**************************/
 
 .full-width-content .col.padding-6-percent>.vc_column-inner {
-    padding: calc(100vw * 0.10);
+    padding: calc(100vw * 0.08);
 }
 
 .col.centered-text,
@@ -92,6 +92,7 @@ a {
 .full-width-content h1 {
     font-weight: 700;
     color: #253859;
+    font-size: 43px;
 }
 
 .nectar-highlighted-text em {
@@ -129,9 +130,37 @@ a {
 }
 
 .nav li:hover {
-    text-decoration: underline;
-    text-decoration-color: #03D5CC;
     cursor: pointer;
+}
+
+.hover-underline-animation {
+    position: relative;
+}
+
+
+.hover-underline-text:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #03D5CC;
+    transform-origin: bottom right;
+    transition: transform 0.20s ease-out;
+    margin-bottom: 20px;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    margin-bottom: 20px;
 }
 
 .carded {
@@ -142,13 +171,14 @@ a {
 
 .double {
     text-align: center;
-    font-weight: 600;
-    font-size: 35px;
+    font-weight: 500;
+    font-size: 37px;
     /* line-height: 1.6 !important; */
 }
 
-.doubles {
+#doubles {
     margin-top: 30px;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -160,7 +190,7 @@ a {
 }
 
 .cards {
-    transition: transform .2s;
+    transition: transform .1s;
     cursor: pointer;
 }
 
@@ -178,6 +208,7 @@ a {
     margin-top: 150px;
     text-align: center;
     color: #03D5CC;
+    font-weight: 500 !important;
 }
 
 .w3-animate-bottom {
@@ -188,10 +219,19 @@ a {
 
 .pilot {
     margin-top: 20px;
-    line-height: 1.6 !important;
+    line-height: 1.4em;
     margin-left: 20px;
-    font-weight: 800 !important;
-    font-size: 20px;
+    font-weight: 900 !important;
+    font-size: 19px;
+}
+
+.meta-excerpt {
+    margin-top: 10px;
+    display: block;
+    line-height: 1.6;
+    font-weight: 550;
+    font-size: 16px;
+    color: #000;
 }
 
 .pilots {
@@ -202,6 +242,16 @@ a {
 
 .filter {
     display: none;
+}
+
+.wrapper {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.cards:hover .cardzoom {
+    transition: 1s;
+    transform: scale(1.05);
 }
 
 
@@ -216,9 +266,9 @@ a {
         margin-top: 20px !important;
     }
 
-    #myDIV {
+    /* #myDIV {
         margin-left: 40px;
-    }
+    } */
 
     .button1 {
         border: 1px solid lightgray;
@@ -272,12 +322,67 @@ a {
 }
 
 body .nectar-scribble.squiggle-underline {
-    width: 400px;
-    height: 30px;
+    width: 480px;
+    height: 28px;
 }
 
 .nectar-highlighted-text .nectar-scribble {
     position: absolute;
-    top: 25px;
+    top: 33px;
     z-index: 4;
+}
+
+@media screen and (max-width:500px) {
+    .nectar-highlighted-text .nectar-scribble {
+        /* left: 400px; */
+        top: 80px;
+    }
+
+    .nectar-highlighted-text {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .nectar-highlighted-text .nectar-scribble {
+        /* left: 400px; */
+        top: 40px;
+    }
+
+    .nectar-highlighted-text {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:1000px) and (min-width:780px) {
+    .nectar-highlighted-text .nectar-scribble {
+        /* left: 20px; */
+        top: 50px;
+    }
+
+    .nectar-highlighted-text {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width:780px) and (min-width:600px) {
+    .nectar-highlighted-text .nectar-scribble {
+        /* left: 40px; */
+        top: 50px;
+    }
+
+    .nectar-highlighted-text {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width:600px) and (min-width:500) {
+    .nectar-highlighted-text .nectar-scribble {
+        top: 50px;
+        /* left: 150px */
+    }
+
+    .nectar-highlighted-text {
+        margin-top: 100px;
+    }
 }
