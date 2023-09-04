@@ -155,6 +155,15 @@ margin-left: 60%;
         margin-top: 8rem;
     }
 }
+@media screen and (max-width: 480px){
+  #captcha{
+      width: 11.8rem !important;
+      /* display: none; */
+  }
+}
+#captcha{
+  width: 12.5rem;
+}
 #underline{
     text-decoration: none;
 }
