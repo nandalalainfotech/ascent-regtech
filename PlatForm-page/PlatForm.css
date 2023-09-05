@@ -130,6 +130,21 @@
         margin-left: -8px !important;
         max-width: 321px !important;
     }
+
+    .gray-cards {
+        border-radius: 10px !important;
+        /* padding: 9%; */
+        background-color: #eff4f9;
+        margin-top: -97px;
+    }
+
+    .top-content {
+        height: 0px !important;
+    }
+
+    .global-sm {
+        margin: 38px;
+    }
 }
 
 .Clutter h5 {
@@ -540,7 +555,7 @@ body .bold {
     border-radius: 10px !important;
     /* padding: 9%; */
     background-color: #eff4f9;
-    margin-top: -97px;
+    margin-top: -46px;
 }
 
 .cutters p {
@@ -550,4 +565,8 @@ body .bold {
     font-size: 17px;
     line-height: 30px;
     font-weight: 500;
+}
+
+.top-content {
+    height: 260px;
 }
