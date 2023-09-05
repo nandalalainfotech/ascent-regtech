@@ -12,8 +12,26 @@ Online HTML, CSS and JavaScript editor to run code online.
   <link rel="stylesheet" href="TechnologyPartners.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
   <link rel="stylesheet" href="../index.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <title>Browser</title>
 </head>
+
+
+<style>
+  .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+</style>
 
 <body>
   <nav>
@@ -57,11 +75,11 @@ Online HTML, CSS and JavaScript editor to run code online.
       <li class="show" style="padding: 1rem"><span class="line">
           <a href="" style="text-decoration: none;color: #253859;">Resources</a></span>
         <ul id="submenu">
-                    <a href="../WhatisReg/whatis.html">What is RegTech?</a>
-                    <a href="../Blogs/blogs.html">Blog</a>
-                    <a href="../Resources/Resources.html">Resources</a>
-                    <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
-                </ul>
+          <a href="../WhatisReg/whatis.html">What is RegTech?</a>
+          <a href="../Blogs/blogs.html">Blog</a>
+          <a href="../Resources/Resources.html">Resources</a>
+          <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
+        </ul>
       </li>
       <li class="show" style="padding: 1rem"><span class="line">
           <a href="" style="text-decoration: none;color: #253859;">Company</a></span>
@@ -82,7 +100,6 @@ Online HTML, CSS and JavaScript editor to run code online.
       <li class="show" style="display: none; font-size: xx-small;">Ascent RegTech</li>
     </ul>
   </nav>
-
   <div class="container-fluid initial-img">
     <div class="row">
       <div class="col-sm-12" style="height: 120px !important;">
@@ -96,29 +113,28 @@ Online HTML, CSS and JavaScript editor to run code online.
       </div>
     </div>
   </div>
-  <div class="container-fluid p-5">
+  <!-- <section class="scroll-section"> -->
+  <div class="container-fluid p-5 reveal">
     <div class="row p-5">
-      <!-- <div class="col-sm-1"></div> -->
+
       <div class="col-sm-6 p-3">
-        <div>
-          <br><br>
-          <h2 style="color: #03d5cc;">Why partner with Ascent?</h2><br>
-          <div class="row">
-            <div class="col-sm-9">
-              <p style="font-size: large;"> Partnering with Ascent helps <br> organizations up-level their compliance
-                <br> operations, mapping compliance <br>
-                requirements to internal controls, policies, <br> and procedures, and enabling compliance <br> at every
-                organizational touchpoint.
-              </p>
-            </div>
+        <br><br>
+        <h2 style="color: #03d5cc;">Why partner with Ascent?</h2><br>
+        <div class="row">
+          <div class="col-sm-9">
+            <p style="font-size: large;"> Partnering with Ascent helps <br> organizations up-level their compliance
+              <br> operations, mapping compliance <br>
+              requirements to internal controls, policies, <br> and procedures, and enabling compliance <br> at
+              every
+              organizational touchpoint.
+            </p>
           </div>
         </div>
         <div class="row">
-
           <div class="col-sm-10">
             <h1 style="color: #03d5cc;">Empower clients and customers</h1><br>
-
           </div>
+
           <div class="row">
             <!-- <div class="col-sm-1"></div> -->
             <div class="col-sm-12 mx-2">
@@ -128,12 +144,15 @@ Online HTML, CSS and JavaScript editor to run code online.
                 rules <br> and
                 rule changes applicable to specific <br> business units. When regulatory rule <br> changes occur,
                 obligations are <br>
-                automatically updated, alerting the user <br> to assess the impact and take necessary <br> actions.</p>
+                automatically updated, alerting the user <br> to assess the impact and take necessary <br> actions.
+              </p>
+
             </div>
           </div>
 
         </div>
       </div>
+
       <div class="col-sm-6 p-1">
         <div class="row p-3"
           style="background-color: rgb(243, 244, 241);border-radius: 2%;box-shadow: 0 30px 60px rgba(0,0,0,.15);opacity: 1;">
@@ -221,18 +240,25 @@ Online HTML, CSS and JavaScript editor to run code online.
               </div>
 
               <br>
-              <button type="submit" class="btn btn-1 text-white" style="background-color: #03d5cc !important;">Request A
+              <button type="submit" class="btn btn-1 text-white" style="background-color: #03d5cc !important;">Request
+                A
                 Demo</button>
               <br>
               <br>
             </form>
+
           </div>
         </div>
       </div>
+
+
     </div>
   </div>
-  <div class="container-fluid">
-    <div class="row">
+  <!-- </section> -->
+
+
+  <div class="container-fluid reveal">
+    <div class="row ">
       <div class="col-sm-6 p-5">
         <div class="row">
           <div class="col-sm-12 " style="height: 80px !important;">
@@ -276,7 +302,7 @@ Online HTML, CSS and JavaScript editor to run code online.
       </div>
     </div>
   </div>
-  <div class="container-fluid p-5">
+  <div class="container-fluid p-5 reveal">
     <div class="row">
       <div class="col-sm-6 ">
         <div>
@@ -307,7 +333,7 @@ Online HTML, CSS and JavaScript editor to run code online.
       </div>
     </div>
   </div>
-  <div class="container-fluid mt-5">
+  <div class="container-fluid mt-5 reveal">
     <div class="row">
       <div class="col-sm-12">
         <h1 style="color: #253859;text-align: center;">Our partners include:</h1>
@@ -408,6 +434,11 @@ Online HTML, CSS and JavaScript editor to run code online.
       </div>
     </div> -->
   </div>
+
+
+
+
+
   <!-- fotter -->
   <div class="container-fluid" style="background-color: #253859; ">
     <div class="container">
@@ -449,7 +480,7 @@ Online HTML, CSS and JavaScript editor to run code online.
               <p style="color: white;">Our Team</p>
               <p style="color: white;">Careers</p>
               <p style="color: white;">Culture</p>
-             
+
             </div>
           </div>
         </div>
@@ -491,7 +522,7 @@ Online HTML, CSS and JavaScript editor to run code online.
         </div>
         <!-- <div class="col-sm-1"></div> -->
         <!-- <div class="col-md-1"></div> -->
-      
+
         <!-- <div class="col-md-4"></div> -->
 
       </div>
@@ -526,5 +557,26 @@ Online HTML, CSS and JavaScript editor to run code online.
     // first div scroll animation
   </Script>
 </body>
+
+<script>
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", reveal);
+</script>
+
 
 </html>
