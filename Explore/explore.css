@@ -8,6 +8,11 @@
     font-family: Mulish;
 }
 
+.initial {
+    background-image: url("images/Audit_banner.png");
+    height: 450px;
+}
+
 .banner-paragraph {
     font-size: 150%;
     color: #ffffff;
@@ -39,8 +44,9 @@
 .regulatory-unique {
     color: #253859;
     margin-top: 100px;
-    font-size: 38px;
-    font-weight: 900;
+    -webkit-text-stroke: thick;
+    /* font-size: 38px; */
+    /* font-weight: 900; */
 }
 
 #buttonlearn-work {
@@ -69,10 +75,22 @@
     margin-top: 100px;
     font-weight: 800;
     color: #253859;
+    font-size: 42.5px;
+    letter-spacing: -0.05em;
+    font-weight: bold;
+}
+
+span.regulatory-unique {
+    -webkit-text-stroke: thin;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Mulish';
+    text-shadow: 1px 1px;
+    letter-spacing: -1.1px;
 }
 
 .paragraph-explore {
-    font-size: 1.3em;
+    font-size: 1.4em;
     color: #253859;
     font-weight: 400;
 }
@@ -80,8 +98,8 @@
 .mapping-paragraph {
     font-size: 25.5px;
     color: #253859;
-    -webkit-text-stroke: medium;
-    /* font-weight: bold; */
+    -webkit-text-stroke: thin;
+    font-weight: bold;
 }
 
 .mapping-paragraph-icon {
@@ -95,7 +113,8 @@
 }
 
 .header {
-    font-size: 50px;
+    font-size: 40px;
+    font-weight: bold;
     /* padding-top: 7px; */
     -webkit-text-stroke: 1.5px;
 }
@@ -105,10 +124,22 @@
         font-size: 30px;
     }
 
-
+    .heading-explore {
+        /* display: none; */
+        font-size: 30px;
+    }
 }
 
-em{
+#footer-hover:hover {
+    color: #28BEBB;
+}
+
+#footer-hover {
+    text-decoration: none;
+    color: white;
+}
+
+em {
     position: relative;
     display: inline-block;
 }
