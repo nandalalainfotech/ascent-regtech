@@ -316,7 +316,7 @@ ul#submenu a:hover {
     /* #submenu {
         transition: all 0.7s ease;
     }  */
-    .show1 {
+    .show1{
         display: block !important;
         color: #fff !important;
         position: fixed;
@@ -324,7 +324,7 @@ ul#submenu a:hover {
         margin-top: -1rem;
         bottom: 0;
     }
- .show1 .line a {
+ .show1.line a {
      color: #fff !important;
      text-decoration: none !important;
      cursor: pointer !important;
