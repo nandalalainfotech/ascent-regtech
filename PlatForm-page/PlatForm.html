@@ -12,14 +12,40 @@ Online HTML, CSS and JavaScript editor to run code online.
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="PlatForm.css" />
+  <link rel="stylesheet" id="redux-google-fonts-salient_redux-css"
+    href="https://fonts.googleapis.com/css?family=Mulish%3A700%2C400%2C500%2C800%2C600%2C900%2C200%2C500italic&amp;subset=latin&amp;display=swap&amp;ver=6.3"
+    type="text/css" media="all">
+  <link rel="stylesheet" id="nectar_default_font_open_sans-css"
+    href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700&amp;subset=latin%2Clatin-ext&amp;display=swap"
+    type="text/css" media="all">
+  <link rel="stylesheet" id="bsf-Defaults-css"
+    href="https://www.ascentregtech.com/wp-content/uploads/smile_fonts/Defaults/Defaults.css?ver=3.19.15"
+    type="text/css" media="all">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="../index.css">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" id="nectar_default_font_open_sans-css"
+    href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700&amp;subset=latin%2Clatin-ext&amp;display=swap"
+    type="text/css" media="all">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="preload" href="https://www.ascentregtech.com/wp-content/themes/salient/css/fonts/icomoon.woff?v=1.6"
+    as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="preload" href="https://www.ascentregtech.com/wp-content/themes/salient/css/fonts/icomoon.woff?v=1.6"
+    as="font" type="font/woff" crossorigin="anonymous">
   <title>Browser</title>
   <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <style>
+  @font-face {
+    font-family: ETmodules;
+    font-display: block;
+    src: url(//www.ascentregtech.com/wp-content/plugins/divi-builder/core/admin/fonts/modules/base/modules.eot);
+    src: url(//www.ascentregtech.com/wp-content/plugins/divi-builder/core/admin/fonts/modules/base/modules.eot?#iefix) format("embedded-opentype"), url(//www.ascentregtech.com/wp-content/plugins/divi-builder/core/admin/fonts/modules/base/modules.woff) format("woff"), url(//www.ascentregtech.com/wp-content/plugins/divi-builder/core/admin/fonts/modules/base/modules.ttf) format("truetype"), url(//www.ascentregtech.com/wp-content/plugins/divi-builder/core/admin/fonts/modules/base/modules.svg#ETmodules) format("svg");
+    font-weight: 400;
+    font-style: normal
+  }
+
   .login-button {
     color: #253859 !important;
   }
@@ -33,6 +59,53 @@ Online HTML, CSS and JavaScript editor to run code online.
   .hover-sm:focus {
     box-shadow: 0 0.4em 0.4em -0.4em var(--hover);
     transform: translateY(-0.23em);
+  }
+
+  #Privacy a {
+    color: #03d5cc;
+    text-decoration: underline;
+  }
+
+  #Privacy a:hover {
+    color: #2AB4B0;
+  }
+
+  body b,
+  body strong,
+  body .bold {
+    font-family: Mulish;
+    font-weight: 900;
+  }
+
+  .obligation p {
+    /* font-weight: 400; */
+    font-family: "Mulish";
+    text-transform: none;
+    line-height: 30px;
+    font-weight: 400;
+    color: #253859;
+  }
+
+  .big:hover {
+    color: #253859;
+    text-decoration: none;
+  }
+
+  .Overview {
+    height: 900;
+    font-weight: 900;
+  }
+
+  .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
   }
 </style>
 
@@ -78,11 +151,11 @@ Online HTML, CSS and JavaScript editor to run code online.
       <li class="show" style="padding: 1rem"><span class="line">
           <a href="" style="text-decoration: none;color: #253859;">Resources</a></span>
         <ul id="submenu">
-                    <a href="../WhatisReg/whatis.html">What is RegTech?</a>
-                    <a href="../Blogs/blogs.html">Blog</a>
-                    <a href="../Resources/Resources.html">Resources</a>
-                    <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
-                </ul>
+          <a href="../WhatisReg/whatis.html">What is RegTech?</a>
+          <a href="../Blogs/blogs.html">Blog</a>
+          <a href="../Resources/Resources.html">Resources</a>
+          <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
+        </ul>
       </li>
       <li class="show" style="padding: 1rem"><span class="line">
           <a href="" style="text-decoration: none;color: #253859;">Company</a></span>
@@ -115,10 +188,12 @@ Online HTML, CSS and JavaScript editor to run code online.
           <div class="row">
             <!-- <div class="col-sm-1"></div> -->
             <div class="col-sm-12 text-sm " style="margin-left: -15px;line-height: 28px;">
-              <h1 class="text-white mt-5" style="-webkit-text-stroke: inherit;font-size: 38px;
-              -webkit-text-stroke: medium;
-              font-size: 40px;letter-spacing: 2px;">Are you
-                regulation ready?</h1>
+              <div class="reveal">
+                <h1 class="text-white mt-5" style="-webkit-text-stroke: inherit;font-size: 38px;
+              -webkit-text-stroke: thin;
+              font-size: 40px;letter-spacing: 2px; font-weight: 600;">Are you
+                  regulation ready?</h1>
+              </div>
               <br>
               <p class="text-white">Targeted obligations? Yes. Automated change management? Yes. Mapping to your
                 controls
@@ -136,13 +211,13 @@ Online HTML, CSS and JavaScript editor to run code online.
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <label for="exampleInputEmail1" required>First Name</label><span style="color: red;">*</span>
+                      <label for="exampleInputEmail1" required>First name</label><span style="color: red;">*</span>
                       <input type="fname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <label for="exampleInputEmail1" required>Last Name</label><span style="color: red;">*</span>
+                      <label for="exampleInputEmail1" required>Last name</label><span style="color: red;">*</span>
                       <input type="lname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                   </div>
@@ -150,7 +225,7 @@ Online HTML, CSS and JavaScript editor to run code online.
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <label for="exampleInputEmail1" required>Job Title Name</label><span style="color: red;">*</span>
+                      <label for="exampleInputEmail1" required>Job title</label><span style="color: red;">*</span>
                       <input type="fname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                   </div>
@@ -164,13 +239,13 @@ Online HTML, CSS and JavaScript editor to run code online.
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <label for="exampleInputEmail1" required>Phone Number </label><span style="color: red;">*</span>
+                      <label for="exampleInputEmail1" required>Phone number</label><span style="color: red;">*</span>
                       <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <label for="exampleInputEmail1" required>Company Name </label><span style="color: red;">*</span>
+                      <label for="exampleInputEmail1" required>Company name</label><span style="color: red;">*</span>
                       <input type="Cname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                   </div>
@@ -178,7 +253,7 @@ Online HTML, CSS and JavaScript editor to run code online.
                 <div class="row">
                   <div class="col-sm-12">
                     <div class="form-group">
-                      <label for="sel1">Country/ Region</label><span style="color: red;">*</span>
+                      <label for="sel1">Country/Region</label><span style="color: red;">*</span>
                       <select class="form-control" id="sel1">
                         <option>India</option>
                         <option>USA</option>
@@ -200,33 +275,16 @@ Online HTML, CSS and JavaScript editor to run code online.
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-sm-12 ">
-                    <p>
-                      By submitting this form, you agree that you have read our <a href="#"
-                        style=" color: #03d5cc;">Privacy
+                  <div class="col-sm-12" id="Privacy">
+                    <p style="font-family: Mulish;
+                    color: #33475b;
+                    font-size: 11px; line-height: 20px;">
+                      By submitting this form, you agree that you have read our <a href="#" style=" ">Privacy
                         Policy</a> and consent to Ascent's
                       cookie policy and receiving marketing communications. You can unsubscribe at any time.
                     </p>
                   </div>
                 </div>
-                <!-- <div class="col-sm-12">
-                  <div class="col-sm-12">
-                    <div class="text-white" style="width: 11rem;margin-left: -10px;">
-                      <div style="float: left;background-color: #1A73E8;" class="p-2">
-                        <ul style="list-style-type: none;font-size: 11px;margin: 0px;padding: 0px;">
-                          <li>protected by reCAPTCHA</li>
-                          <li>
-                            <a href="#" class="text-white" id="underline">Privacy</a> -
-                            <a href="#" class="text-white" id="underline">Terms</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div style="background-color: #fff;text-align: end;" class=" p-2">
-                        <img src="captcha_img.png" alt="" style="width: 33px;">
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
                 <div class="col-md-6">
                   <div class="text-white" style="height: 60px;margin-left: -18px;
                   width: 256px;
@@ -272,11 +330,9 @@ Online HTML, CSS and JavaScript editor to run code online.
 
         </div>
         <div class="col-sm-1">
-
         </div>
       </div>
     </div>
-
   </div>
   <br>
   <div class="container-fluid">
@@ -284,175 +340,219 @@ Online HTML, CSS and JavaScript editor to run code online.
       <div class="row">
         <div class="col-sm-1">
         </div>
-        <div class="col-sm-12" style="border-radius: 2% !important;padding: 2%; background: #eff4f9;margin-top: -60px;">
-          <div class="row">
+        <div class="col-sm-12 gray-cards">
+          <div class="row cutters">
             <div class="col-sm-1"></div>
-            <div class="col-sm-2">
-              <div style="color: #03d5cc;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" style="color: #03d5cc;"
-                  fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
-                  <path
-                    d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z" />
-                </svg>
+            <div class="col-sm-2 Clutter">
+              <div style="color: #03d5cc; text-align: center;">
+                <div class="nectar_icon_wrap " data-draw="true" data-style="default" data-padding="0px"
+                  data-color="accent-color" style="">
+                  <div class="nectar_icon">
+                    <span class="svg-icon-holder bound animated-in" data-size="60" data-animation-speed="fast"
+                      data-animation="true" data-animation-delay="" data-color="accent-color"
+                      style="height: 60px; width: 60px; opacity: 1;">
+                      <span style="color: #03d5cc!important;">
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64"
+                          enable-background="new 0 0 64 64" xml:space="preserve" id="nectar-svg-animation-instance-0"
+                          style="height: 60px; width: 60px;">
+                          <g>
+                            <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                              d="M29,6L46,6L63,27L32,58L1,27L18,6L32,6L32,58"
+                              style="stroke-dasharray: 225, 227; stroke-dashoffset: 0;"></path>
+                            <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                              d="M32,57L18,27L24,6" style="stroke-dasharray: 55, 57; stroke-dashoffset: 0;"></path>
+                            <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                              d="M32,57L46,27L40,6" style="stroke-dasharray: 55, 57; stroke-dashoffset: 0;"></path>
+                            <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M1,27L63,27"
+                              style="stroke-dasharray: 62, 64; stroke-dashoffset: 0;"></path>
+                          </g>
+                        </svg>
+                      </span>
+                    </span>
+                  </div>
+                </div>
                 <br>
               </div>
 
-              <h4 style="color: #03d5cc;font-family: Mulish;
-              font-weight: 900;">
-                Cut Through The Clutter
-              </h4>
-              <p class="mt-5" style="color: #253859;     font-family: Mulish;
-              letter-spacing: -0.02em;
-              font-size: 17px;
-              line-height: 30px;
-              font-weight: 500;">
+              <h5>
+                <strong>Cut through the clutter</strong>
+              </h5>
+              <p>
                 Cut through the clutter of irrelevant regulations. Establish a single, reliable source of regulatory
                 truth.
               </p>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 Clutter1">
 
-              <div style="color: #03d5cc;">
-                <!-- <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                  y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
-                  xml:space="preserve" id="nectar-svg-animation-instance-1" style="height: 60px; width: 60px;">
-                  <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
-                    d="M3.7079999999999984,35A28.292,28.292 0,1,1 60.292,35A28.292,28.292 0,1,1 3.7079999999999984,35"
-                    style="stroke-dasharray: 178, 180; stroke-dashoffset: 0; color: #03d5cc;"></path>
-                  <path fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10"
-                    d="M37,40L45,21L26,29L19,47Z" style="stroke-dasharray: 80, 82; stroke-dashoffset: 0;"></path>
-                  <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M26,29L37,40"
-                    style="stroke-dasharray: 16, 18; stroke-dashoffset: 0; color: #03d5cc;"></path>
-                  <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
-                    d="M36.9,7C36.965,6.677,37,6.342,37,6c0-2.761-2.239-5-5-5s-5,2.239-5,5c0,0.342,0.035,0.677,0.1,1"
-                    style="stroke-dasharray: 18, 20; stroke-dashoffset: 0; color: #03d5cc;"></path>
-                  <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M32,7L32,12"
-                    style="stroke-dasharray: 5, 7; stroke-dashoffset: 0; color: #03d5cc;"></path>
-                  <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M32,58L32,63"
-                    style="stroke-dasharray: 5, 7; stroke-dashoffset: 0; color: #03d5cc;"></path>
-                  <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M60,35L55,35"
-                    style="stroke-dasharray: 5, 7; stroke-dashoffset: 0; color: #03d5cc;"></path>
-                  <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M9,35L4,35"
-                    style="stroke-dasharray: 5, 7; stroke-dashoffset: 0; color: #03d5cc;"></path>
-                </svg>  -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor"
-                  style="margin-left: 16px;color: #03D5CC;" class="bi bi-browser-safari" viewBox="0 0 16 16">
-                  <path
-                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16Zm.25-14.75v1.5a.25.25 0 0 1-.5 0v-1.5a.25.25 0 0 1 .5 0Zm0 12v1.5a.25.25 0 1 1-.5 0v-1.5a.25.25 0 1 1 .5 0ZM4.5 1.938a.25.25 0 0 1 .342.091l.75 1.3a.25.25 0 0 1-.434.25l-.75-1.3a.25.25 0 0 1 .092-.341Zm6 10.392a.25.25 0 0 1 .341.092l.75 1.299a.25.25 0 1 1-.432.25l-.75-1.3a.25.25 0 0 1 .091-.34ZM2.28 4.408l1.298.75a.25.25 0 0 1-.25.434l-1.299-.75a.25.25 0 0 1 .25-.434Zm10.392 6 1.299.75a.25.25 0 1 1-.25.434l-1.3-.75a.25.25 0 0 1 .25-.434ZM1 8a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 0 .5h-1.5A.25.25 0 0 1 1 8Zm12 0a.25.25 0 0 1 .25-.25h1.5a.25.25 0 1 1 0 .5h-1.5A.25.25 0 0 1 13 8ZM2.03 11.159l1.298-.75a.25.25 0 0 1 .25.432l-1.299.75a.25.25 0 0 1-.25-.432Zm10.392-6 1.299-.75a.25.25 0 1 1 .25.433l-1.3.75a.25.25 0 0 1-.25-.434ZM4.5 14.061a.25.25 0 0 1-.092-.341l.75-1.3a.25.25 0 0 1 .434.25l-.75 1.3a.25.25 0 0 1-.342.091Zm6-10.392a.25.25 0 0 1-.091-.342l.75-1.299a.25.25 0 1 1 .432.25l-.75 1.3a.25.25 0 0 1-.341.09ZM6.494 1.415l.13.483a.25.25 0 1 1-.483.13l-.13-.483a.25.25 0 0 1 .483-.13ZM9.86 13.972l.13.483a.25.25 0 1 1-.483.13l-.13-.483a.25.25 0 0 1 .483-.13ZM3.05 3.05a.25.25 0 0 1 .354 0l.353.354a.25.25 0 0 1-.353.353l-.354-.353a.25.25 0 0 1 0-.354Zm9.193 9.193a.25.25 0 0 1 .353 0l.354.353a.25.25 0 1 1-.354.354l-.353-.354a.25.25 0 0 1 0-.353ZM1.545 6.01l.483.13a.25.25 0 1 1-.13.483l-.483-.13a.25.25 0 1 1 .13-.482Zm12.557 3.365.483.13a.25.25 0 1 1-.13.483l-.483-.13a.25.25 0 1 1 .13-.483Zm-12.863.436a.25.25 0 0 1 .176-.306l.483-.13a.25.25 0 1 1 .13.483l-.483.13a.25.25 0 0 1-.306-.177Zm12.557-3.365a.25.25 0 0 1 .176-.306l.483-.13a.25.25 0 1 1 .13.483l-.483.13a.25.25 0 0 1-.306-.177ZM3.045 12.944a.299.299 0 0 1-.029-.376l3.898-5.592a.25.25 0 0 1 .062-.062l5.602-3.884a.278.278 0 0 1 .392.392L9.086 9.024a.25.25 0 0 1-.062.062l-5.592 3.898a.299.299 0 0 1-.382-.034l-.005-.006Zm3.143 1.817a.25.25 0 0 1-.176-.306l.129-.483a.25.25 0 0 1 .483.13l-.13.483a.25.25 0 0 1-.306.176ZM9.553 2.204a.25.25 0 0 1-.177-.306l.13-.483a.25.25 0 1 1 .483.13l-.13.483a.25.25 0 0 1-.306.176Z" />
-                </svg>
+              <div style="color: #03d5cc; text-align: center;">
+                <div class="nectar_icon_wrap " data-draw="true" data-style="default" data-padding="0px"
+                  data-color="accent-color" style="">
+                  <div class="nectar_icon"><span class="svg-icon-holder bound animated-in" data-size="60"
+                      data-animation-speed="fast" data-animation="true" data-animation-delay="400"
+                      data-color="accent-color"
+                      style="height: 60px; width: 60px; opacity: 1;"><span><!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64"
+                          enable-background="new 0 0 64 64" xml:space="preserve" id="nectar-svg-animation-instance-1"
+                          style="height: 60px; width: 60px;">
+                          <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                            d="M3.7079999999999984,35A28.292,28.292 0,1,1 60.292,35A28.292,28.292 0,1,1 3.7079999999999984,35"
+                            style="stroke-dasharray: 178, 180; stroke-dashoffset: 0;"></path>
+                          <path fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="bevel"
+                            stroke-miterlimit="10" d="M37,40L45,21L26,29L19,47Z"
+                            style="stroke-dasharray: 80, 82; stroke-dashoffset: 0;"></path>
+                          <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M26,29L37,40"
+                            style="stroke-dasharray: 16, 18; stroke-dashoffset: 0;"></path>
+                          <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                            d="M36.9,7C36.965,6.677,37,6.342,37,6c0-2.761-2.239-5-5-5s-5,2.239-5,5c0,0.342,0.035,0.677,0.1,1"
+                            style="stroke-dasharray: 18, 20; stroke-dashoffset: 0;"></path>
+                          <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M32,7L32,12"
+                            style="stroke-dasharray: 5, 7; stroke-dashoffset: 0;"></path>
+                          <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M32,58L32,63"
+                            style="stroke-dasharray: 5, 7; stroke-dashoffset: 0;"></path>
+                          <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M60,35L55,35"
+                            style="stroke-dasharray: 5, 7; stroke-dashoffset: 0;"></path>
+                          <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M9,35L4,35"
+                            style="stroke-dasharray: 5, 7; stroke-dashoffset: 0;"></path>
+                        </svg>
+                      </span></span></div>
+                </div>
                 <br>
               </div>
-              <h4 style="color: #03d5cc; font-family: Mulish;margin-top: 12px;
-              font-weight: 900;">
-                Stay Ahead Of Regulations</h4>
+              <h5>
+                <strong>Stay ahead of regulations</strong>
+              </h5>
               <br>
-              <p style="color: #253859;     font-family: Mulish;
-              letter-spacing: -0.02em;
-              font-size: 17px;
-              line-height: 30px;
-              font-weight: 500;">Stay ahead of regulations by building a comprehensive register of obligations to
-                ensure compliance.</p>
+              <p>
+                Stay ahead of regulations by building a comprehensive register of obligations to
+                ensure compliance.
+              </p>
             </div>
-            <div class="col-sm-2">
-              <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
-                xml:space="preserve" id="nectar-svg-animation-instance-2" style="height: 60px; width: 60px;color: #03D5CC;">
-                <g class="hello">
-                  <g>
-                    <g>
-                      <path  fill="none" stroke="#000000"  stroke-width="2" stroke-miterlimit="10"
-                        d="M31,1c-0.667,0-1.333,0.022-1.998,0.066"
-                        style="stroke-dasharray: 2, 4; stroke-dashoffset: 0;">
-                      </path>
-                      <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
-                        stroke-dasharray="4.1705,2.0853" d="M26.929,1.275
-                        C20.659,2.13,14.607,4.967,9.788,9.787C-0.91,20.484-1.841,37.248,6.997,49l3.846,3.847"
-                        style="stroke-dasharray: 68, 70; stroke-dashoffset: 0;"></path>
-                      <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
-                        d="M11.584,53.588L12.998,55.002" style="stroke-dasharray: 2, 4; stroke-dashoffset: 0;"></path>
-                    </g>
-                  </g>
-                </g>
-                <g>
-                  <g>
-                    <g>
-                      <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
-                        d="M33,63c0.667,0,1.333-0.022,1.998-0.066"
-                        style="stroke-dasharray: 2, 4; stroke-dashoffset: 0;">
-                      </path>
-                      <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
-                        stroke-dasharray="4.1705,2.0853" d="M37.071,62.725
-                        c6.27-0.854,12.321-3.691,17.141-8.512C64.91,43.516,65.841,26.752,57.003,15l-3.846-3.847"
-                        style="stroke-dasharray: 68, 70; stroke-dashoffset: 0;"></path>
-                      <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
-                        d="M52.416,10.412L51.002,8.998" style="stroke-dasharray: 2, 4; stroke-dashoffset: 0;"></path>
-                    </g>
-                  </g>
-                </g>
-                <path fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10"
-                  d="M13,44L13,55L2,55" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
-                <path fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10"
-                  d="M51,20L51,9L62,9" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
-              </svg> -->
-              <!-- <i class="fa-thin fa fa-arrows-rotate"></i> -->
-              <!-- <i class="icon-default-style fa fa-refresh "
-                style="color: #03d5cc;font-size: 40px;margin-left: 30px;"></i> 
-              -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor"
-                class="bi bi-arrow-repeat" viewBox="0 0 16 16" style="margin-left:20px;color: #03D5CC;">
-                <path
-                  d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
-                <path fill-rule="evenodd"
-                  d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
-              </svg>
+            <div class="col-sm-2 Clutter2">
+              <div style="color: #03d5cc; text-align: center;">
+                <div class="nectar_icon_wrap " data-draw="true" data-style="default" data-padding="0px"
+                  data-color="accent-color" style="">
+                  <div class="nectar_icon"><span class="svg-icon-holder bound animated-in" data-size="60"
+                      data-animation-speed="fast" data-animation="true" data-animation-delay="800"
+                      data-color="accent-color"
+                      style="height: 60px; width: 60px; opacity: 1;"><span><!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64"
+                          enable-background="new 0 0 64 64" xml:space="preserve" id="nectar-svg-animation-instance-2"
+                          style="height: 60px; width: 60px;">
+                          <g>
+                            <g>
+                              <g>
+                                <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                                  d="M31,1c-0.667,0-1.333,0.022-1.998,0.066"
+                                  style="stroke-dasharray: 2, 4; stroke-dashoffset: 0;"></path>
+                                <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                                  stroke-dasharray="4.1705,2.0853" d="M26.929,1.275
+                    C20.659,2.13,14.607,4.967,9.788,9.787C-0.91,20.484-1.841,37.248,6.997,49l3.846,3.847"
+                                  style="stroke-dasharray: 68, 70; stroke-dashoffset: 0;"></path>
+                                <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                                  d="M11.584,53.588L12.998,55.002"
+                                  style="stroke-dasharray: 2, 4; stroke-dashoffset: 0;">
+                                </path>
+                              </g>
+                            </g>
+                          </g>
+                          <g>
+                            <g>
+                              <g>
+                                <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                                  d="M33,63c0.667,0,1.333-0.022,1.998-0.066"
+                                  style="stroke-dasharray: 2, 4; stroke-dashoffset: 0;"></path>
+                                <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                                  stroke-dasharray="4.1705,2.0853" d="M37.071,62.725
+                    c6.27-0.854,12.321-3.691,17.141-8.512C64.91,43.516,65.841,26.752,57.003,15l-3.846-3.847"
+                                  style="stroke-dasharray: 68, 70; stroke-dashoffset: 0;"></path>
+                                <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                                  d="M52.416,10.412L51.002,8.998" style="stroke-dasharray: 2, 4; stroke-dashoffset: 0;">
+                                </path>
+                              </g>
+                            </g>
+                          </g>
+                          <path fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="bevel"
+                            stroke-miterlimit="10" d="M13,44L13,55L2,55"
+                            style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
+                          <path fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="bevel"
+                            stroke-miterlimit="10" d="M51,20L51,9L62,9"
+                            style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
+                        </svg>
+                      </span></span></div>
+                </div>
+                <br>
+              </div>
+              <h5><strong>Maximize efficiency</strong></h5>
+
               <br>
-              <h4 style="color: #03d5cc;font-family: Mulish;margin-top: 12px;
-              font-weight: 900;">Maximize Efficiency</h4>
-              <br>
-              <p style="color: #253859;     font-family: Mulish;
-              letter-spacing: -0.02em;
-              font-size: 17px;
-              line-height: 30px;
-              font-weight: 500;">Maximize efficiency and scalability by removing the need to consider or research
+              <p>Maximize efficiency and scalability by removing the need to consider or research
                 non-applicable
                 regulations.</p>
             </div>
-            <div class="col-sm-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" style="color: #03d5cc;"
-                class="bi bi-bookmark-check-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm8.854-9.646a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
-              </svg>
+            <div class="col-sm-2 Clutter3">
+              <div style="color: #03d5cc; text-align: center;">
+                <div class="nectar_icon_wrap " data-draw="true" data-style="default" data-padding="0px"
+                  data-color="accent-color" style="">
+                  <div class="nectar_icon"><span class="svg-icon-holder bound animated-in" data-size="60"
+                      data-animation-speed="fast" data-animation="true" data-animation-delay="1200"
+                      data-color="accent-color"
+                      style="height: 60px; width: 60px; opacity: 1;"><span><!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64"
+                          enable-background="new 0 0 64 64" xml:space="preserve" id="nectar-svg-animation-instance-3"
+                          style="height: 60px; width: 60px;">
+                          <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                            d="M18,1L46,1L46,62L32,48L18,62Z" style="stroke-dasharray: 190, 192; stroke-dashoffset: 0;">
+                          </path>
+                          <path fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="bevel"
+                            stroke-miterlimit="10" d="M23,22L30,29L
+              43,16" style="stroke-dasharray: 29, 31; stroke-dashoffset: 0;"></path>
+                        </svg>
+                      </span></span></div>
+                </div>
 
-              <br>
-              <h3 style="color: #03d5cc; font-family: Mulish;
-              font-weight: 900;">Leave An Audit Trail</h3>
-              <p style="color: #253859;font-family: Mulish;
-              letter-spacing: -0.02em;
-              font-size: 17px;
-              line-height: 30px;
-              margin-top: 35px;
-              font-weight: 500;">Prove compliance by tracking & recording compliance activities; easily generate proof
+                <br>
+              </div>
+              <h5><strong>Leave an audit trail</strong></h5>
+              <p>Prove compliance by tracking & recording compliance activities; easily generate proof
                 of compliance for
                 auditors.</p>
             </div>
-            <div class="col-sm-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-map"
-                viewBox="0 0 16 16" style="color: #03D5CC;margin-left:20px">
-                <path fill-rule="evenodd"
-                  d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z" />
-              </svg>
-              <!-- <i class="bi bi-map" style="color: #03D5CC; font-size: 40px;"></i> -->
+            <div class="col-sm-2 Clutter4">
+              <div style="color: #03d5cc; text-align: center;">
+                <div class="nectar_icon_wrap " data-draw="true" data-style="default" data-padding="0px"
+                  data-color="accent-color" style="">
+                  <div class="nectar_icon"><span class="svg-icon-holder bound animated-in" data-size="60"
+                      data-animation-speed="fast" data-animation="true" data-animation-delay="1200"
+                      data-color="accent-color"
+                      style="height: 60px; width: 60px; opacity: 1;"><span><!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64"
+                          enable-background="new 0 0 64 64" xml:space="preserve" id="nectar-svg-animation-instance-4"
+                          style="height: 60px; width: 60px;">
+                          <g>
+                            <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M1,59L22,51L42,59L63,51L63,5L42,13L22,5L
+                1,13Z" style="stroke-dasharray: 225, 227; stroke-dashoffset: 0;"></path>
+                            <g>
+                              <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M22,5L22,51"
+                                style="stroke-dasharray: 46, 48; stroke-dashoffset: 0;"></path>
+                            </g>
+                            <g>
+                              <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+                                d="M42,13L42,59" style="stroke-dasharray: 46, 48; stroke-dashoffset: 0;"></path>
+                            </g>
+                          </g>
+                        </svg>
+                      </span></span></div>
+                </div>
+                <br>
+              </div>
+              <h5><strong>Leave an audit trail</strong></h5>
               <br>
-              <h4 style="color: #03d5cc;font-family: Mulish;
-              font-weight: 900;">
-                Map Compliance</h4>
-              <br>
-              <p class="mt-2" style="color: #253859;     font-family: Mulish;
-              letter-spacing: -0.02em;
-              font-size: 17px;
-              line-height: 30px;
-              font-weight: 500;">Map compliance to internal policies, procedures, and operations by integrating
+              <p>Map compliance to internal policies, procedures, and operations by integrating
                 seamlessly with your GRC
                 tool.</p>
             </div>
@@ -475,18 +575,11 @@ Online HTML, CSS and JavaScript editor to run code online.
     <div class="container">
       <div class="row">
         <div class="col-sm-6" style="margin-top: -60px;">
-          <img class="img-res" id="img-sm" src="../images/Overview-1.png" alt="" width="600" height="640">
+          <img class="img-res  " id="img-sm" src="../images/Overview-1.png" alt="" width="600" height="640">
         </div>
         <div class="col-sm-6 obligation">
-          <div>
-            <h2 style="font-family: Mulish;
-            text-transform: none;
-            letter-spacing: -0.02em;
-            font-size: 37px;
-            line-height: 30px;
-            font-weight: 900; 
-            color: #253859;"> Your Obligations, Automatically Generated
-            </h2>
+          <div class="obligation">
+            <h3 style="color: #253859;  font-weight: 900; ">Your Obligations, Automatically Generated</h3>
             <br>
             <h5 style="font-family: Mulish;
             text-transform: none;
@@ -502,15 +595,11 @@ Online HTML, CSS and JavaScript editor to run code online.
               font-size: 34px;
               font-style: normal;
               background-color: transparent;"></i>
-              <strong style="-webkit-text-stroke: medium;font-size: 22px;letter-spacing: 1px;"><b>Targeted to Your
+              <strong style="-webkit-text-stroke: thin;font-size: 22px;letter-spacing: 1px;"><b>Targeted to Your
                   Firm</b> </strong>
             </h5>
 
-            <p style="font-family: Mulish;
-            text-transform: none;
-            line-height: 30px;
-            font-weight: 400; 
-            color: #253859;">Ascent filters out regulatory white noise, getting you to the right obligations that
+            <p>Ascent filters out regulatory white noise, getting you to the right obligations that
               matter to your
               business,
               almost instantly.</p>
@@ -529,14 +618,10 @@ Online HTML, CSS and JavaScript editor to run code online.
               font-size: 34px;
               font-style: normal;
               background-color: transparent;"></i>
-              <strong style="-webkit-text-stroke: medium;font-size: 22px;letter-spacing: 1px;">Granular and
+              <strong style="-webkit-text-stroke: thin;font-size: 22px;letter-spacing: 1px;">Granular and
                 Precise</strong>
             </h5>
-            <p style="font-family: Mulish;
-            text-transform: none;
-            line-height: 30px;
-            font-weight: 400; 
-            color: #253859;">Your obligations are precise and granular, meaning each one equals the individual
+            <p>Your obligations are precise and granular, meaning each one equals the individual
               requirement your firm
               must comply with, not an entire rule or large block of text.</p>
             <br>
@@ -554,15 +639,11 @@ Online HTML, CSS and JavaScript editor to run code online.
               font-size: 34px;
               font-style: normal;
               background-color: transparent;"></i>
-              <strong style="-webkit-text-stroke: medium;font-size: 22px;letter-spacing: 1px;">Dynamically
+              <strong style="-webkit-text-stroke: thin;font-size: 22px;letter-spacing: 1px;">Dynamically
                 Updates</strong>
 
             </h5>
-            <p style="font-family: Mulish;
-            text-transform: none;
-            line-height: 30px;
-            font-weight: 400; 
-            color: #253859;">Static or outdated obligations are useless. Ascent updates your obligations automatically
+            <p>Static or outdated obligations are useless. Ascent updates your obligations automatically
               every time a
               rule
               changes, for your immediate review.</p>
@@ -577,17 +658,19 @@ Online HTML, CSS and JavaScript editor to run code online.
   <div class=" container-fluid">
     <div class="row">
       <div class="col-sm-12 ingcommbank-sm">
-        <img src="ingcommbank.jpg" alt="" width="100%">
+        <img src="../images/ingcommbank.jpg" alt="">
       </div>
       <div class="row">
         <div class="col-sm-2"></div>
         <div class="col-sm-4 ing">
-          <div>
-            <h2 style="color: #253859;">ING and CommBank</h2>
-            <h3 style="color: rgb(255, 255, 255);">generated their obligations for a European regulation
-              (MiFID/MiFID
-              II) in 2.5 minutes, compared to 1,800
-              hours when done manually.</h3>
+          <div class="CommBank">
+            <h2 style="font-size: 300%; font-family: Mulish;
+            font-weight: 900;color: #253859;line-height: 45px;
+        ">ING and CommBank</h2>
+            <p><span style="color: #ffffff;"><span style="font-size: 207%;line-height: 30px;">generated their
+                  obligations for a European
+                  regulation (MiFID/MiFID II) in <strong>2.5 minutes</strong>, compared to 1,800 hours when done
+                  manually.</span></span></p>
             <br>
             <h3 style="color: #183460;">Read Their Story <span><svg xmlns="http://www.w3.org/2000/svg" width="40"
                   height="40" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
@@ -602,34 +685,27 @@ Online HTML, CSS and JavaScript editor to run code online.
   </div>
 
   <br>
-  <div class="container-fluid">
+  <div class="container-fluid ">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 p-4">
           <div class="row">
             <div class="col-sm-12 p-5">
               <div class="single-sm">
-                <h2 style="font-family: Mulish;
-                text-transform: none;
-                letter-spacing: -0.02em;
-                font-size: 37px;
-                line-height: 30px;
-                font-weight: 900; 
-                color: #253859;">A Single Source of Regulatory Truth</h2><br>
-                <h3 style="font-family: Mulish;font-size: inherit; -webkit-text-stroke: medium; letter-spacing: 1px;
+                <h3>A Single Source of Regulatory Truth</h3><br>
+                <p style="font-family: Mulish;font-size: inherit; -webkit-text-stroke: medium; letter-spacing: 1px;
                 text-transform: none;
                 letter-spacing: -0.02em;
                 font-size: large;
                 line-height: 30px;
-               
-                 
                 color: #253859;">
                   <span></span> <span style="color: #03d5cc !important;padding: 15px;">
-                    <i class="icon-default-style fa fa-users ">
-                    </i>
-                  </span> Bridge Organizational Divides
-                </h3>
-                </h3>
+                    <!-- <i class="icon-default-style fa fa-users accent-color"></i> -->
+                    <i class="icon-default-style fa fa-users accent-color"></i>
+
+                  </span>
+                  <b>Bridge Organizational Divides</b>
+                </p>
                 <p style="font-family: Mulish;
                 text-transform: none;
                 line-height: 30px;
@@ -688,7 +764,7 @@ Online HTML, CSS and JavaScript editor to run code online.
         <div class="col-sm-6">
           <div class="row">
             <div class="col-sm-12">
-              <img class="img-res" src="img-3.png" alt="" width="616" height="616">
+              <img class="img-res1 Overview1" src="../images/img/img-3.png" alt="">
             </div>
           </div>
         </div>
@@ -699,31 +775,31 @@ Online HTML, CSS and JavaScript editor to run code online.
   <div class="container-fluid">
     <div class="img-Sizes">
       <div class="row " id="img-Sizes">
-        <div class="col-sm-12 " style="height: 120px !important;">
-
-        </div>
+        <div class="col-sm-12 " style="height: 120px !important;"></div>
         <div class="row">
-          <div class="col-sm-2">
-
-          </div>
+          <div class="col-sm-2"> </div>
           <div class="col-sm-4">
-            <p><strong><span style="font-size: 300%; font-family: Mulish;
-              font-weight: 900;color: #253859;
-          ">A Global Bank</span></strong></p>
+            <p style="font-size: 300%; font-family: Mulish;
+            font-weight: 900;color: #253859;
+        "><strong><span>A Global Bank</span></strong></p>
 
             <p>
               <span style="color: #ffffff;">
-                <span style="font-size: 200%; line-height: inherit;">achieved <strong>99% cost reduction
+                <span style="font-size: 200%; line-height: 30px;">achieved <strong>99% cost reduction
                   </strong>and <strong>30% time savings </strong>in regulatory change triage across the
                   business.</span>
               </span>
             </p>
             <br>
-            <h3 style="color: #183460;">Read Their Story <span><svg xmlns="http://www.w3.org/2000/svg" width="40"
+            <h4 style="color: #183460;">Read Their Story <span><svg xmlns="http://www.w3.org/2000/svg" width="40"
                   height="40" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                   <path fill-rule="evenodd"
                     d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                </svg></span></h3>
+                </svg></span></h4>
+            <!-- <h4 style="color: #183460;"> Read Their Story<span class="link_wrap"><a
+                  class="link_text" role="button"
+                  href="https://www.ascentregtech.com/customer-story-global-bank-gdpr/"><span
+                    class="arrow"></span></a></span></h4> -->
           </div>
           <div class="col-sm-4">
 
@@ -737,17 +813,19 @@ Online HTML, CSS and JavaScript editor to run code online.
     <div class="container">
       <div class="row">
         <div class="col-sm-6 p-3">
-          <img class="img-res" src="Overview-3-edit.png" alt="" width="546" height="546">
+          <img class="img-res Overview2" src="../images/img/Overview-3-edit.png" alt="">
         </div>
         <div class="col-sm-6">
           <div class="row p-5">
             <div class="col-sm-12">
               <div>
-                <p id="header-color" style="font-family: Mulish;font-size: 28.45px;letter-spacing: 1px;font-size: inherit; -webkit-text-stroke: medium; letter-spacing: 1px;
+                <h3 id="header-color" style="	font-size: 27.45px;
+                line-height: 25.5px;
+                font-family: Mulish;
                 text-transform: none;
                 letter-spacing: -0.02em;
-                font-size: 28.45px;
-                color: #253859;">Be Compliance-Ready from Day 1</p>
+                font-weight: 900;
+                color: #253859;">Be Compliance-Ready from Day 1</h3><br>
                 <h2 style="font-family: Mulish; letter-spacing: 1px;font-size: inherit; -webkit-text-stroke: medium; letter-spacing: 1px;
                 text-transform: none;
                 letter-spacing: -0.02em;
@@ -761,7 +839,9 @@ Online HTML, CSS and JavaScript editor to run code online.
                   </span>
                   Rapid Deployment
                 </h2>
-                <p style="margin-left: 45px;">
+                <p style="margin-left: 45px;
+                font-weight: 400;
+                color: #253859;    line-height: 27px;">
                   Unlike legacy tools or traditional service engagements that can take months to implement,
                   Ascent is
                   ready
@@ -779,7 +859,9 @@ Online HTML, CSS and JavaScript editor to run code online.
                 color: #253859;"><span style="color: #03d5cc;padding: 10px"><i
                       class="icon-default-style fa fa-usd"></i></span>No
                   Implementation Costs</h2>
-                <p style="margin-left: 45px;">
+                <p style="margin-left: 45px;
+                font-weight: 400;
+                color: #253859;    line-height: 27px;">
                   There are no additional implementation costs, API costs, or hidden fees.
                 </p>
               </div>
@@ -792,7 +874,9 @@ Online HTML, CSS and JavaScript editor to run code online.
                
                 color: #253859;"><span style="color: #03d5cc;padding: 10px"><i
                       class="icon-default-style fa fa-globe"></i></span>Easy to Scale</h2>
-                <p style="margin-left: 45px;">
+                <p style="margin-left: 45px;
+                font-weight: 400;
+                color: #253859;    line-height: 27px;">
                   Whether your business complies with a couple regulators or hundreds, Ascent is your partner in
                   untangling complex regulation into a streamlined process that scales with you.
                 </p>
@@ -818,33 +902,27 @@ Online HTML, CSS and JavaScript editor to run code online.
         </div>
         <div class="row p-5 mx-2">
           <div class="col-sm-6">
-            <h2 style="font-family: Mulish;font-size: 28.45px;letter-spacing: 1px;font-size: inherit; -webkit-text-stroke: medium; letter-spacing: 1px;
-            text-transform: none;
-            letter-spacing: -0.02em;
-            font-size: 30px;
-            line-height: 30px;
-            letter-spacing: 1px;
-            color: #253859;">Obligations Register</h2>
+            <h4 style="font-size: 30px;
+                line-height: 40px;
+                font-family: Mulish;
+                letter-spacing: -0.04em;
+                font-weight: 700;
+                color: #253859;"><b>Obligations Register</b></h4>
             <p>An easy-to-read digital register of your firm’s regulatory obligations. Automatically generated
               and kept
               up-to-date by Ascent.</p>
-            <h2 style="font-family: Mulish;font-size: 28.45px;letter-spacing: 1px;font-size: inherit; -webkit-text-stroke: medium; letter-spacing: 1px;
-            text-transform: none;
-            letter-spacing: -0.02em;
-            font-size: 30px;
-            line-height: 30px;
-            letter-spacing: 1px;
-            color: #253859;">Rule Inventory</h2>
+            <h2 style=" font-family: Mulish;font-size: 28.45px;letter-spacing: 1px;font-size: inherit;
+              -webkit-text-stroke: medium; letter-spacing: 1px; text-transform: none; letter-spacing: -0.02em;
+              font-size: 30px; line-height: 30px; letter-spacing: 1px; color: #253859;">Rule Inventory</h2>
             <p>A living library of all laws, rules, and regulations. Find information quickly with powerful
               search and
               filtering.</p>
-            <h2 style="font-family: Mulish;font-size: 28.45px;letter-spacing: 1px;font-size: inherit; -webkit-text-stroke: medium; letter-spacing: 1px;
-            text-transform: none;
-            letter-spacing: -0.02em;
-            font-size: 30px;
-            line-height: 30px;
-            letter-spacing: 1px;
-            color: #253859;">Horizon Scanning Feed</h2>
+            <h4 style="font-size: 30px;
+                line-height: 40px;
+                font-family: Mulish;
+                letter-spacing: -0.04em;
+                font-weight: 700;
+                color: #253859;"><b>Horizon Scanning Feed</b></h4>
             <p>A continuous feed of regulatory documents. Download, share, and mark important documents for
               review.</p>
           </div>
@@ -855,32 +933,29 @@ Online HTML, CSS and JavaScript editor to run code online.
             </div>
             <div class="row">
               <div class="col-sm-12">
-                <h2 style="font-family: Mulish;font-size: 28.45px;letter-spacing: 1px;font-size: inherit; -webkit-text-stroke: medium; letter-spacing: 1px;
-                text-transform: none;
-                letter-spacing: -0.02em;
-                font-size: 30px;
-                line-height: 30px;
-                letter-spacing: 1px;
-                color: #253859;">Rule Compare</h2>
+                <h4 style="font-size: 30px;
+                line-height: 40px;
+                font-family: Mulish;
+                letter-spacing: -0.04em;
+                font-weight: 700;
+                color: #253859;"><b>Rule Compare</b></h4>
                 <p>A side-by-side comparison of the new and former versions of a rule, with the changes
                   redlined. </p>
-                <h2 style="font-family: Mulish;font-size: 28.45px;letter-spacing: 1px;font-size: inherit; -webkit-text-stroke: medium; letter-spacing: 1px;
-                text-transform: none;
-                letter-spacing: -0.02em;
-                font-size: 30px;
-                line-height: 30px;
-            letter-spacing: 1px;
-                color: #253859;"><b>Auto-Impact Assessment</b></h2>
+                <h4 style="font-size: 30px;
+                line-height: 40px;
+                font-family: Mulish;
+                letter-spacing: -0.04em;
+                font-weight: 700;
+                color: #253859;"><b>Auto-Impact Assessment</b></h4>
                 <p>Relevant rule updates are surfaced automatically. Any changes to your existing obligations
                   are marked
                   for your review.</p>
-                <h2 style="font-family: Mulish;font-size: 28.45px;letter-spacing: 1px;font-size: inherit; -webkit-text-stroke: medium; letter-spacing: 1px;
-                text-transform: none;
-                letter-spacing: -0.02em;
-                font-size: 30px;
-                line-height: 30px;
-                letter-spacing: 1px;
-                color: #253859;"><b>Workflow & Assignment Tools</b></h2>
+                <h4 style="font-size: 30px;
+                line-height: 40px;
+                font-family: Mulish;
+                letter-spacing: -0.04em;
+                font-weight: 700;
+                color: #253859;"><b>Workflow & Assignment Tools</b></h4>
                 <p>Work your obligations as bite-sized, actionable tasks. Assign teammates, add notes, and track
                   deadlines.</p>
               </div>
@@ -903,39 +978,59 @@ Online HTML, CSS and JavaScript editor to run code online.
               Want </span></h2>
         </div>
       </div>
-      <div class="row mt-5 p-4">
+      <div class="row mt-5 p-4 reveal">
 
         <div class="col-sm-6 p-3">
           <div class="text-center">
             <i class="fa fa-list-alt" style="font-size:48px;color:#03d5cc"></i>
             <br>
             <div class="mt-4">
-              <h3 style="color:#253859;font-size: large; font-family: Mulish;font-size: 28.45px;letter-spacing: 1px;font-size: inherit; -webkit-text-stroke: medium; letter-spacing: 1px;
-              letter-spacing: 1px;
-              ">Manage Obligations in Ascent</h3>
+              <p class="big">
+                <span style="font-size: large;font-family: Mulish;
+                font-weight: 900; color: #253859;letter-spacing: -0.02em;">
+                  <b>Manage Obligations in Ascent</b>
+                </span>
+              </p>
               <div class="mt-4">
-                <p class=""><span style="font-size: large; color: #253859;">Work your obligations as bite-sized, actionable tasks. Assign
-                  teammates, add notes, and track deadlines so you can make sure the right things get done.</span></p>
-              <a href="#" style="color: #03d5cc;text-decoration: none;"><b>Talk to Sales</b></a>
+                <p class="">
+                  <span style="font-size: large; color: #253859;">Work your obligations as bite-sized,
+                    actionable tasks. Assign
+                    teammates, add notes, and track deadlines so you can make sure the right things get done.
+                  </span>
+                </p>
+                <a href="#" style="font-size: large;color: #03d5cc;text-decoration: none;">
+                  Talk to Sales
+                </a>
               </div>
-              
             </div>
           </div>
         </div>
+        <style>
+          a:hover {
+            color: #253859 !important;
+            text-decoration: none;
+          }
+        </style>
         <div class="col-sm-6 p-3">
           <div class="text-center">
             <i class="fa fa-link" style="font-size:48px;color:#03d5cc"></i>
             <br>
             <div class="mt-4">
-              <h3 style="color:#253859;font-size: large; font-family: Mulish;font-size: 28.45px;font-size: inherit; -webkit-text-stroke: medium; letter-spacing: 1px;
-              letter-spacing: 1.4px;
-              ">Leverage Ascent Data via API</h3>
-               <div class="mt-4">
-                <p class=""><span style="font-size: large; color: #253859;">Using a different GRC or internal system to manage your obligations?
-                  Seamlessly connect Ascent data to other enterprise platforms via API.</span></p>
-              <a href="#" style="color: #03d5cc;text-decoration: none;"><b>Learn More</b> </a>
-               </div>
-              
+              <p class="big"><span span style="font-size: large;font-family: Mulish;
+                font-weight: 900; color: #253859;letter-spacing: -0.02em;"><b>Leverage Ascent Data via API</b></span>
+              </p>
+              <div class="mt-4">
+                <p class="">
+                  <span style="font-size: large; color: #253859;">Using a different GRC or internal system to
+                    manage your obligations?
+                    Seamlessly connect Ascent data to other enterprise platforms via API.
+                  </span>
+                </p>
+                <a href="#" style="font-size: large;color: #03d5cc;text-decoration: none;">
+                  Learn More
+                </a>
+              </div>
+
             </div>
           </div>
         </div>
@@ -948,15 +1043,18 @@ Online HTML, CSS and JavaScript editor to run code online.
     <div class="container">
       <div class="row">
         <div class="col-sm-2"></div>
-        <div class="col-sm-8 py-5">
-          <div style="height: 3rem;" class="pt-5"> </div>
-          <h6 style="text-align: center; font-size: 24px;
+        <div class="col-sm-8 py-5 ">
+          <div class="reveal">
+            <div style="height: 3rem;" class="pt-5"> </div>
+            <h6 style="text-align: center; font-size: 24px;
           line-height: 28px; "><span style="color: #ffffff;">Turn compliance into a competitive
-              advantage</span></h6>
-          <h2 style="text-align: center; font-size: 42.5px;
+                advantage</span></h6>
+            <h2 style="text-align: center; font-size: 42.5px;
           line-height: 38.25px; font-family: Mulish;
-          font-weight: 600;"><strong><span style="color: #ffffff;">Talk to a solutions specialist
-                today</span></strong></h2>
+          font-weight: 600;letter-spacing: -0.05em;"><strong><span style="color: #ffffff;">Talk to a solutions
+                  specialist
+                  today</span></strong></h2>
+          </div>
           <div class="pt-5" style="text-align: center;">
             <button class="btn text-white hover-sm" style="background: #03d5cc;
                                         border-color: #03d5cc;
@@ -1082,6 +1180,22 @@ Online HTML, CSS and JavaScript editor to run code online.
     }
     // first div scroll animation
   </Script>
+  <script>
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+    window.addEventListener("scroll", reveal);
+  </script>
 </body>
 
 </html>

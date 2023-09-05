@@ -9,22 +9,28 @@
 #forms {
     border-radius: 3%;
     height: auto;
-    background-color: #e6f3ff;
+    /* background-color: #eff4f9; */
+    opacity: 1;
+    background-color: #eff4f9;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, .15);
 }
 
-/* responsive */
+.ingcommbank-sm img {
+    background-size: cover;
+    width: 109%;
+    height: 100%;
+}
+
 
 @media screen and (max-width: 750px) {
     .img-res {
         max-width: 180px !important;
-        /* margin-left: 50px; */
     }
 }
 
 @media screen and (max-width: 600px) {
     .img-res {
         max-width: 200px !important;
-        /* margin-left: 50px; */
     }
 }
 
@@ -37,6 +43,12 @@
 
     .obligation h3 {
         font-size: 24.05px;
+        line-height: 19.5px;
+        font-family: Mulish;
+        text-transform: none;
+        letter-spacing: -0.02em;
+        font-weight: 900;
+        color: #253859;
     }
 
     .granular-svg {
@@ -80,27 +92,105 @@
         font-family: Mulish;
         font-weight: 900;
         font-size: x-large;
-        /* padding-left: 55px; */
         font-size: 1.75rem;
     }
 
+    #forms {
+        border-radius: 2%;
+        border-radius: 10px;
+        width: 129%;
+        margin-left: -36px;
+        height: auto;
+        background-color: #eff4f9;
+        box-shadow: 0 30px 60px rgba(0, 0, 0, .15);
+    }
+
+    .form-group {
+        font-family: Mulish;
+        font-size: 14px;
+        color: #33475b;
+        font-weight: 500;
+        line-height: 20px;
+        width: 126%;
+        margin-left: -30px;
+    }
+
+    .CommBank {
+        margin-left: 50px;
+    }
+
+    .Overview1 {
+        width: 616 !important;
+        height: 616 !important;
+        max-width: 338px !important;
+        margin-left: -30px !important;
+    }
+
+    .Overview2 {
+        margin-left: -8px !important;
+        max-width: 321px !important;
+    }
 }
 
-/* captcha */
+.Clutter h5 {
+    color: #03d5cc;
+    font-weight: 900;
+    font-size: 22.5px;
+    line-height: 27px;
+    font-family: Mulish;
+    text-transform: capitalize;
+    letter-spacing: -0.04em;
+}
 
+.Clutter1 h5 {
+    color: #03d5cc;
+    margin-top: 12px;
+    font-weight: 900;
+    font-size: 22.5px;
+    line-height: 27px;
+    font-family: Mulish;
+    text-transform: capitalize;
+    letter-spacing: -0.04em;
+}
 
+.Clutter2 h5 {
+    color: #03d5cc;
+    font-family: Mulish;
+    margin-top: 12px;
+    font-weight: 900;
+    font-size: 22.5px;
+    line-height: 27px;
+    text-transform: capitalize;
+    letter-spacing: -0.04em;
+}
 
+.Clutter3 h5 {
+    color: #03d5cc;
+    font-weight: 900;
+    font-size: 22.5px;
+    line-height: 27px;
+    font-family: Mulish;
+    text-transform: capitalize;
+    letter-spacing: -0.04em;
+}
 
-/* body {
-    margin: 0;
-    background-image: url(https://www.google.com/recaptcha/intro/images/hero-street-bg.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-} */
+.Clutter4 h5 {
+    color: #03d5cc;
+    font-weight: 900;
+    font-size: 22.5px;
+    line-height: 27px;
+    font-family: Mulish;
+    text-transform: capitalize;
+    letter-spacing: -0.04em;
+}
+
+.form-group {
+    font-family: Mulish;
+    font-size: 14px;
+    color: #33475b;
+    font-weight: 500;
+    line-height: 20px;
+}
 
 .captcha {
     background-color: #f9f9f9;
@@ -111,6 +201,33 @@
     justify-content: center;
     align-items: center;
 }
+
+.single-sm h3 {
+    /* font-family: Mulish;
+    text-transform: none;
+    letter-spacing: -0.02em;
+    font-weight: 900;
+    color: #253859;
+    font-size: 31.45px;
+    line-height: 25.5px; */
+    font-family: Mulish;
+    color: #253859;
+    font-size: 24.05px;
+    line-height: 19.5px;
+    font-family: Mulish;
+    text-transform: none;
+    letter-spacing: -0.02em;
+    font-weight: 900;
+}
+
+.img-res1 {
+    width: 900 !important;
+    height: 900 !important;
+    /* max-width: 338px !important;
+    margin-left: -30px !important; */
+}
+
+
 
 /* @media screen and (max-width:) */
 @media screen and (max-width: 500px) {
@@ -343,9 +460,9 @@ input[type="checkbox"]:checked+.checkmark>span:before {
     color: #03d5cc;
 }
 
-path {
+/* path {
     color: #03d5cc;
-}
+} */
 
 /* img */
 /* style="height:600px;width: 380px;" */
@@ -389,6 +506,48 @@ body .bold {
     font-weight: 900;
 }
 
-.hello{
+.hello {
     color: #03d5cc;
+}
+
+.nectar_icon_wrap {
+    display: inline-block;
+    position: relative;
+}
+
+.nectar_icon_wrap .nectar_icon .svg-icon-holder {
+    margin-bottom: 0;
+}
+
+.svg-icon-holder {
+    /* height: 64px; */
+    overflow: hidden;
+    min-width: 1px;
+    /* margin-bottom: 20px; */
+    display: inline-block;
+    /* opacity: 0; */
+}
+
+.nectar_icon_wrap .svg-icon-holder[data-color="accent-color"] svg path {
+    stroke: #03d5cc !important;
+}
+
+.svg-icon-holder[data-color="accent-color"] {
+    color: #03d5cc !important;
+}
+
+.gray-cards {
+    border-radius: 10px !important;
+    /* padding: 9%; */
+    background-color: #eff4f9;
+    margin-top: -97px;
+}
+
+.cutters p {
+    color: #253859;
+    font-family: Mulish;
+    letter-spacing: -0.02em;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 500;
 }
