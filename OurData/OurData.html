@@ -15,6 +15,237 @@ Online HTML, CSS and JavaScript editor to run code online.
 
   <link rel="stylesheet" href="../index.css">
   <title>Browser</title>
+
+  <style>
+    @keyframes nectarStrokeAnimation {
+            0% {
+                stroke-dashoffset: 1;
+                opacity: 0;
+            }
+            1% {
+                opacity: 1;
+            }
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+        .nectar-highlighted-text .nectar-scribble {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 2;
+        }
+        .nectar-highlighted-text em.animated .nectar-scribble path {
+            stroke-linecap: round;
+            opacity: 1;
+            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+        .nectar-highlighted-text .nectar-scribble path {
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+            opacity: 0;
+        }
+        .nectar-highlighted-text em.animated .nectar-scribble path {
+            stroke-linecap: round;
+            opacity: 1;
+            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+        .nectar-highlighted-text[data-style="scribble"] em {
+            background-image: none !important;
+        }
+        body .nectar-scribble.squiggle-underline {
+            width: 100px;
+            height: 22px;
+        }
+        .nectar-highlighted-text .nectar-scribble {
+            position: absolute;
+            top: 60px;
+            left: 100px;
+            z-index:7;
+        }
+
+       .nectar-highlighted-text .nectar-scribble path {
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+            opacity: 0;
+        }
+        .nectar-highlighted-text em.animated .nectar-scribble path {
+            stroke-linecap: round;
+            opacity: 1;
+            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+        @keyframes nectarStrokeAnimation {
+            0% {
+                stroke-dashoffset: 1;
+                opacity: 0;
+            }
+            1% {
+                opacity: 1;
+            }
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+        .nectar1-highlighted-text .nectar1-scribble {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        .nectar1-highlighted-text em.animated .nectar1-scribble path {
+            stroke-linecap: round;
+            opacity: 1;
+            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+        .nectar1-highlighted-text .nectar1-scribble path {
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+            opacity: 0;
+        }
+        .nectar1-highlighted-text em.animated .nectar1-scribble path {
+            stroke-linecap: round;
+            opacity: 1;
+            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+        .nectar1-highlighted-text[data-style="scribble"] em {
+            background-image: none !important;
+        }
+        body .nectar1-scribble.squiggle-underline {
+            width: 188px;
+            height: 25px;
+        }
+        .nectar1-highlighted-text .nectar1-scribble {
+            position: absolute;
+            top: 52px;
+            left: 235px;
+            z-index:7;
+        }
+
+       .nectar1-highlighted-text .nectar1-scribble path {
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+            opacity: 0;
+        }
+        .nectar1-highlighted-text em.animated .nectar1-scribble path {
+            stroke-linecap: round;
+            opacity: 1;
+            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+        @keyframes nectarStrokeAnimation {
+            0% {
+                stroke-dashoffset: 1;
+                opacity: 0;
+            }
+            1% {
+                opacity: 1;
+            }
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+        .nectar2-highlighted-text .nectar2-scribble {
+            position: absolute;
+            left: 0;
+            top: 20;
+            z-index: 2;
+        }
+        .nectar2-highlighted-text em.animated .nectar2-scribble path {
+            stroke-linecap: round;
+            opacity: 1;
+            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+        .nectar2-highlighted-text .nectar2-scribble path {
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+            opacity: 0;
+        }
+        .nectar2-highlighted-text em.animated .nectar2-scribble path {
+            stroke-linecap: round;
+            opacity: 1;
+            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+        .nectar2-highlighted-text[data-style="scribble"] em {
+            background-image: none !important;
+        }
+        body .nectar2-scribble.squiggle-underline {
+            width: 160px;
+            height: 22px;
+        }
+        .nectar2-highlighted-text .nectar2-scribble {
+            position: absolute;
+            top: 42px;
+            left: 110px;
+            z-index:7;
+        }
+
+       .nectar2-highlighted-text .nectar2-scribble path {
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+            opacity: 0;
+        }
+        .nectar2-highlighted-text em.animated .nectar2-scribble path {
+            stroke-linecap: round;
+            opacity: 1;
+            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+        @keyframes nectarStrokeAnimation {
+            0% {
+                stroke-dashoffset: 1;
+                opacity: 0;
+            }
+            1% {
+                opacity: 1;
+            }
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+        .nectar3-highlighted-text .nectar3-scribble {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 2;
+        }
+        .nectar3-highlighted-text em.animated .nectar3-scribble path {
+            stroke-linecap: round;
+            opacity: 1;
+            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+        .nectar3-highlighted-text .nectar3-scribble path {
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+            opacity: 0;
+        }
+        .nectar3-highlighted-text em.animated .nectar3-scribble path {
+            stroke-linecap: round;
+            opacity: 1;
+            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+        .nectar3-highlighted-text[data-style="scribble"] em {
+            background-image: none !important;
+        }
+        body .nectar3-scribble.squiggle-underline {
+            width: 160px;
+            height: 22px;
+        }
+        .nectar3-highlighted-text .nectar3-scribble {
+            position: absolute;
+            top: 48px;
+            left: 240px;
+            z-index:1;
+        }
+
+       .nectar3-highlighted-text .nectar3-scribble path {
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+            opacity: 0;
+        }
+        .nectar3-highlighted-text em.animated .nectar3-scribble path {
+            stroke-linecap: round;
+            opacity: 1;
+            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+  </style>
 </head>
 
 <body>
@@ -95,8 +326,14 @@ Online HTML, CSS and JavaScript editor to run code online.
     <div class="row p-5 mt-3 ">
       <!-- <div class="col-sm-1"></div> -->
       <div class="col-sm-8 p-4">
-        <h1 style="color:white;font-weight: revert;-webkit-text-stroke: medium;font-size: 35px;letter-spacing: 0.1rem;">
-          <b>Our Data</b>
+        <h1 class="nectar-highlighted-text" data-style="scribble" data-exp="default" data-user-color="true"
+        style="color: #ffffff;-webkit-text-stroke: thin;font-weight: 700;" data-using-custom-color="false" data-animation-delay="false" data-color=""
+        data-color-gradient=""> Our <em class="animated">Data<svg class="nectar-scribble squiggle-underline" role="presentation"
+          viewBox="-347 -30.1947 694 96.19" preserveAspectRatio="none">
+          <path style="animation-duration: 1.8s;"
+            d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
+            stroke="#03d5cc" pathLength="1" stroke-width="14" fill="none"></path>
+        </svg></em></h1>
         </h1>
         <h4 class="text-white mt-4">There’s nothing we take more seriously than the quality and accuracy of our data.
           With the highest standards
@@ -111,11 +348,19 @@ Online HTML, CSS and JavaScript editor to run code online.
       <div class="row p-3">
         <div class="col-sm-7 p-3">
           <div>
-            <h1 style="color: #03d5cc;color:#03d5cc;line-height: 40px; -webkit-text-stroke: medium; font-size: 40px;">
+            <h1 class="nectar1-highlighted-text" data-style="scribble" data-exp="default" data-user-color="true"
+        style="color: #03d5cc;-webkit-text-stroke: medium; z-index: 1;" data-using-custom-color="false" data-animation-delay="false" data-color=""
+        data-color-gradient="">  How do we transform raw  <em class="animated"><br> data into something useful?<svg class="nectar1-scribble squiggle-underline" role="presentation"
+          viewBox="-347 -30.1947 694 96.19" preserveAspectRatio="none">
+          <path style="animation-duration: 1.8s;"
+            d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
+            stroke="#253859" pathLength="1" stroke-width="14" fill="none"></path>
+        </svg></em></h1>
+            <!-- <h1 style="color: #03d5cc;color:#03d5cc;line-height: 40px; -webkit-text-stroke: medium; font-size: 40px;">
             
                 How do we transform raw  <br> data into something useful?
             </h1>
-           
+            -->
           </div>
           <div class="row">
             <div class="col-sm-10">
@@ -152,10 +397,18 @@ Online HTML, CSS and JavaScript editor to run code online.
         </div>
         <!-- <div class="col-sm-1"></div> -->
         <div class="col-sm-6 p-2 mt-5">
-          <h2 style="color: #03d5cc;color:#03d5cc;-webkit-text-stroke: medium; font-size: 35px;">
+          <h1 class="nectar2-highlighted-text" data-style="scribble" data-exp="default" data-user-color="true"
+          style="color: #03d5cc;-webkit-text-stroke: medium;" data-using-custom-color="false" data-animation-delay="false" data-color=""
+          data-color-gradient=""> <span style="font-size: 40px;font-weight: 700;-webkit-text-stroke: thin;">How accurate is our output?</span> <em class="animated"><svg class="nectar2-scribble squiggle-underline" role="presentation"
+            viewBox="-347 -30.1947 694 96.19" preserveAspectRatio="none">
+            <path style="animation-duration: 1.8s;"
+              d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
+              stroke="#253859" pathLength="1" stroke-width="14" fill="none"></path>
+          </svg></em></h1>
+          <!-- <h2 style="color: #03d5cc;color:#03d5cc;-webkit-text-stroke: medium; font-size: 35px;">
             <b>
               How accurate is our output? </b>
-          </h2>
+          </h2> -->
           <p class="mt-3" style="text-align: justify; line-height: 30px;color: #253859;"> What compliance professionals know is that the size of regulatory
             data that exists
             in
@@ -175,10 +428,18 @@ Online HTML, CSS and JavaScript editor to run code online.
       <div class="row p-2">
         <div class="col-sm-6 p-1">
           <div class="p-2">
-            <h3 style="color: #03d5cc;color:#03d5cc;-webkit-text-stroke: medium; font-size: 35px;">
+            <h1 class="nectar3-highlighted-text" data-style="scribble" data-exp="default" data-user-color="true"
+            style="color: #03D5CC;-webkit-text-stroke: medium;" data-using-custom-color="false" data-animation-delay="false" data-color=""
+            data-color-gradient=""> How do we manage model <em class="animated"><br> risk ? <svg class="nectar3-scribble squiggle-underline" role="presentation"
+              viewBox="-347 -30.1947 694 96.19" preserveAspectRatio="none">
+              <path style="animation-duration: 1.8s;"
+                d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
+                stroke="#253859" pathLength="1" stroke-width="14" fill="none"></path>
+            </svg></em></h1>
+            <!-- <h3 style="color: #03d5cc;color:#03d5cc;-webkit-text-stroke: medium; font-size: 35px;">
 
               How do we manage model <br> risk?
-            </h3>
+            </h3> -->
             <p style="text-align: justify; line-height: 30px;color: #253859;"> From day one, we have invested in building a robust model risk
               management
               framework, established on many of
