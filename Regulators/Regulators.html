@@ -73,6 +73,76 @@ Online HTML, CSS and JavaScript editor to run code online.
       opacity: 1;
       transform: translateX(0);
   }
+
+
+  /* Animation sign */
+  @keyframes nectarStrokeAnimation {
+      0% {
+        stroke-dashoffset: 1;
+        opacity: 0;
+      }
+
+      1% {
+        opacity: 1;
+      }
+
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    .nectar-highlighted-text .nectar-scribble {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2;
+    }
+
+    .nectar-highlighted-text em.animated .nectar-scribble path {
+      stroke-linecap: round;
+      opacity: 1;
+      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    .nectar-highlighted-text .nectar-scribble path {
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      opacity: 0;
+    }
+
+    .nectar-highlighted-text em.animated .nectar-scribble path {
+      stroke-linecap: round;
+      opacity: 1;
+      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    .nectar-highlighted-text[data-style="scribble"] em {
+      background-image: none !important;
+    }
+
+    body .nectar-scribble.squiggle-underline {
+      width: 185px;
+      height: 22px;
+    }
+
+    .nectar-highlighted-text .nectar-scribble {
+      position: absolute;
+      top: 58px;
+      left: 250px;
+      z-index: 11;
+    }
+
+    .nectar-highlighted-text .nectar-scribble path {
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      opacity: 0;
+    }
+
+    .nectar-highlighted-text em.animated .nectar-scribble path {
+      stroke-linecap: round;
+      opacity: 1;
+      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
 </style>
 <body>
   <nav>
@@ -147,10 +217,23 @@ Online HTML, CSS and JavaScript editor to run code online.
       <div class="col-sm-12" style="height: 120px !important;"></div>
     </div>
     <div class="row p-3 mt-3">
-      <div class="col-sm-9 p-4 mt-5 mx-4">
-        <h1 style="color:#ffffff ;font-weight: 900;">Regulatory Coverage</h1><br>
-        <h4 class="text-white" style="font-weight: 700;">Ascent provides the industry’s most thorough intelligence <br>
-          for every regulation in
+      <div class="col-sm-9 p-4 mt-3 mx-4">
+        <div class="mb-4">
+          <h1 class="nectar-highlighted-text" data-style="scribble" data-exp="default" data-user-color="true"
+            style="color: #ffffff;-webkit-text-stroke: thin;font-weight: 700;" data-using-custom-color="false"
+            data-animation-delay="false" data-color="" data-color-gradient=""> Regulatory  <em class="animated">Coverage<svg
+                class="nectar-scribble squiggle-underline" role="presentation" viewBox="-347 -30.1947 694 96.19"
+                preserveAspectRatio="none">
+                <path style="animation-duration: 1.8s;"
+                  d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
+                  stroke="#03d5cc" pathLength="1" stroke-width="14" fill="none"></path>
+              </svg></em></h1>
+          </h1>
+        </div>
+        
+        <!-- <h1 style="color:#ffffff ;font-weight: 900;">Regulatory Coverage</h1><br> -->
+        <h4 class="text-white" style="font-weight: 600;" class="mt-5">Ascent provides the industry’s most thorough intelligence  for<br>
+           every regulation in
           our platform.</h4>
       </div>
     </div>
@@ -176,7 +259,7 @@ Online HTML, CSS and JavaScript editor to run code online.
       <div class=" col-sm-7">
         <section class="scroll-section">
            <img src="reg-1.png" alt="Image" width="100%" height="427" class="img-res">
-           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, tempora voluptatum?</p>
+           <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, tempora voluptatum?</p> -->
         </section>
       </div>
     </div>
