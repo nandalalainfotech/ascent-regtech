@@ -37,15 +37,6 @@ Online HTML, CSS and JavaScript editor to run code online.
   <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <style>
-  @font-face {
-    font-family: ETmodules;
-    font-display: block;
-    src: url(//www.ascentregtech.com/wp-content/plugins/divi-builder/core/admin/fonts/modules/base/modules.eot);
-    src: url(//www.ascentregtech.com/wp-content/plugins/divi-builder/core/admin/fonts/modules/base/modules.eot?#iefix) format("embedded-opentype"), url(//www.ascentregtech.com/wp-content/plugins/divi-builder/core/admin/fonts/modules/base/modules.woff) format("woff"), url(//www.ascentregtech.com/wp-content/plugins/divi-builder/core/admin/fonts/modules/base/modules.ttf) format("truetype"), url(//www.ascentregtech.com/wp-content/plugins/divi-builder/core/admin/fonts/modules/base/modules.svg#ETmodules) format("svg");
-    font-weight: 400;
-    font-style: normal
-  }
-
   .login-button {
     color: #253859 !important;
   }
@@ -106,6 +97,45 @@ Online HTML, CSS and JavaScript editor to run code online.
   .reveal.active {
     transform: translateY(0);
     opacity: 1;
+  }
+
+  .link {
+    color: #2175FF;
+    cursor: pointer;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .link--arrowed {
+    display: inline-block;
+    height: 2rem;
+    line-height: 2rem;
+  }
+
+  .link--arrowed .arrow-icon {
+    position: relative;
+    top: -1px;
+    transition: transform 0.3s ease;
+    vertical-align: middle;
+  }
+
+  .link--arrowed .arrow-icon--circle {
+    stroke-dashoffset: 0;
+  }
+
+  .link--arrowed:hover .arrow-icon {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  .link--arrowed:hover .arrow-icon--circle {
+    transition: stroke-dashoffset 0.3s ease;
+    stroke-dasharray: 95;
+    stroke-dashoffset: 95;
+  }
+
+  .checkout {
+    text-align: center;
+    font-size: 18px;
   }
 </style>
 
@@ -181,7 +211,7 @@ Online HTML, CSS and JavaScript editor to run code online.
       <div class="row mt-5">
         <div class="col-sm-6">
           <div class="row">
-            <div class="col-sm-12 " style="height: 260px !important;">
+            <div class="col-sm-12 top-content">
             </div>
           </div>
 
@@ -577,7 +607,7 @@ Online HTML, CSS and JavaScript editor to run code online.
         <div class="col-sm-6" style="margin-top: -60px;">
           <img class="img-res  " id="img-sm" src="../images/Overview-1.png" alt="" width="600" height="640">
         </div>
-        <div class="col-sm-6 obligation">
+        <div class="col-sm-6 obligation ">
           <div class="obligation">
             <h3 style="color: #253859;  font-weight: 900; ">Your Obligations, Automatically Generated</h3>
             <br>
@@ -672,11 +702,26 @@ Online HTML, CSS and JavaScript editor to run code online.
                   regulation (MiFID/MiFID II) in <strong>2.5 minutes</strong>, compared to 1,800 hours when done
                   manually.</span></span></p>
             <br>
-            <h3 style="color: #183460;">Read Their Story <span><svg xmlns="http://www.w3.org/2000/svg" width="40"
+            <h3 style="color: #183460;">Read Their Story <span>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="40"
                   height="40" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                   <path fill-rule="evenodd"
                     d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                </svg></span></h3>
+                </svg> -->
+                <span class="link link--arrowed" style="color: #253859">
+                  <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 32 32">
+                    <g fill="none" stroke="#03D5CC" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
+                      <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                      <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98">
+                      </path>
+                    </g>
+                  </svg></span>
+                <!-- <section class="checkout"><a class="link link--arrowed"
+                    style="color: #03D5CC;text-align: center ;margin-top: 25px;font-weight: 600;" href="#">Check
+                    us out on Instagram!
+                   </a></section> -->
+              </span>
+            </h3>
           </div>
         </div>
         <div class="col-sm-6"></div>
@@ -704,7 +749,8 @@ Online HTML, CSS and JavaScript editor to run code online.
                     <i class="icon-default-style fa fa-users accent-color"></i>
 
                   </span>
-                  <b>Bridge Organizational Divides</b>
+                  Bridge Organizational Divides
+                  <!-- <b>Bridge Organizational Divides</b> -->
                 </p>
                 <p style="font-family: Mulish;
                 text-transform: none;
@@ -778,7 +824,7 @@ Online HTML, CSS and JavaScript editor to run code online.
         <div class="col-sm-12 " style="height: 120px !important;"></div>
         <div class="row">
           <div class="col-sm-2"> </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4 global-sm">
             <p style="font-size: 300%; font-family: Mulish;
             font-weight: 900;color: #253859;
         "><strong><span>A Global Bank</span></strong></p>
@@ -791,11 +837,15 @@ Online HTML, CSS and JavaScript editor to run code online.
               </span>
             </p>
             <br>
-            <h4 style="color: #183460;">Read Their Story <span><svg xmlns="http://www.w3.org/2000/svg" width="40"
-                  height="40" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+            <h4 style="color: #183460;">Read Their Story
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                  class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                   <path fill-rule="evenodd"
                     d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                </svg></span></h4>
+                </svg>
+              </span>
+            </h4>
             <!-- <h4 style="color: #183460;"> Read Their Story<span class="link_wrap"><a
                   class="link_text" role="button"
                   href="https://www.ascentregtech.com/customer-story-global-bank-gdpr/"><span

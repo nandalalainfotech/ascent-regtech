@@ -58,6 +58,19 @@ td {
   animation-duration: 0.5s;
   animation-name: slide-in-left1;
 }
+#slider2{
+  animation-duration: 0.5s;
+  animation-name: slide-in-left2;
+}
+@keyframes slide-in-left2{
+  from {
+    transform: translateX(50%);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
 @keyframes slide-in-left1{
   from {
     transform: translateX(50%);
@@ -73,6 +86,6 @@ td {
 #hoveran:hover{
 color: #253859;
 }
-#hover-h2:hover{
-  /* color: #253859; */
-}
+
+
+

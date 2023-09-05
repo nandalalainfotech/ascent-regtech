@@ -37,3 +37,11 @@ body{
     /* letter-spacing: 0.02em; */
   font-family: Mulish;
 }
+
+#footer-hover:hover{
+    color: #28BEBB;
+    }
+  #footer-hover{
+    text-decoration: none;
+    color: white;
+  }

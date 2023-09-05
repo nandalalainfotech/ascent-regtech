@@ -14,7 +14,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
-    
+    <link rel="stylesheet" id="nectar-element-fancy-box-css"
+        href="https://www.ascentregtech.com/wp-content/themes/salient/css/build/elements/element-fancy-box.css?ver=16.0.5"
+        type="text/css" media="all">
+
 </head>
 
 <style>
@@ -56,10 +59,10 @@
     }
 
     .nectar-highlighted-text .nectar-scribble {
-        position: absolute;
-        left: 71px;
-        top: 163PX;
-        z-index: 4;
+        position: relative;
+        /* left: 21px; */
+        top: -13PX;
+        z-index: 0;
         width: 179px;
         height: 18px;
     }
@@ -76,6 +79,45 @@
         opacity: 1;
         animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
     }
+
+    .link {
+        color: #2175FF;
+        cursor: pointer;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    .link--arrowed {
+        display: inline-block;
+        height: 2rem;
+        line-height: 2rem;
+    }
+
+    .link--arrowed .arrow-icon {
+        position: relative;
+        top: -1px;
+        transition: transform 0.3s ease;
+        vertical-align: middle;
+    }
+
+    .link--arrowed .arrow-icon--circle {
+        stroke-dashoffset: 0;
+    }
+
+    .link--arrowed:hover .arrow-icon {
+        transform: translate3d(5px, 0, 0);
+    }
+
+    .link--arrowed:hover .arrow-icon--circle {
+        transition: stroke-dashoffset 0.3s ease;
+        stroke-dasharray: 95;
+        stroke-dashoffset: 95;
+    }
+
+    .checkout {
+        text-align: center;
+        font-size: 18px;
+    }
 </style>
 
 <body>
@@ -89,7 +131,7 @@
             <div class="line3"></div>
         </div>
         <ul class="nav-links">
-            <li class="show" style="padding: 1rem"> <span class="line">
+            <li class="show1" style="padding: 1rem"> <span class="line">
                     <a href="../PlatForm-page/PlatForm.html"
                         style="text-decoration: none;color: #253859;">Platform</a></span>
                 <ul id="submenu">
@@ -99,7 +141,7 @@
                     <a href="../TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
                 </ul>
             </li>
-            <li class="show" style="padding: 1rem;"><span class="line">
+            <li class="show1" style="padding: 1rem;"><span class="line">
                     <a href="" style="text-decoration: none;color: #253859;">Capabilities</a></span>
                 <ul id="submenu">
                     <a href="../Oligation-Inventory/obligations.html">Obligations Inventory</a>
@@ -109,7 +151,7 @@
                     <a href="../Explore/explore.html">Explore Use Cases</a>
                 </ul>
             </li>
-            <li class="show" style="padding: 1rem;"><span class="line"><a href=""
+            <li class="show1" style="padding: 1rem;"><span class="line"><a href=""
                         style="text-decoration: none;color: #253859;">Who We Serve</a></span>
                 <ul id="submenu">
                     <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
@@ -118,7 +160,7 @@
                     <a href="../Professional/professional.html">Professional Services</a>
                 </ul>
             </li>
-            <li class="show" style="padding: 1rem"><span class="line">
+            <li class="show1" style="padding: 1rem"><span class="line">
                     <a href="" style="text-decoration: none;color: #253859;">Resources</a></span>
                 <ul id="submenu">
                     <a href="#">What is RegTech?</a>
@@ -127,7 +169,7 @@
                     <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
                 </ul>
             </li>
-            <li class="show" style="padding: 1rem"><span class="line">
+            <li class="show1" style="padding: 1rem"><span class="line">
                     <a href="" style="text-decoration: none;color: #253859;">Company</a></span>
                 <ul id="submenu">
                     <a href="../OurTeam/ourteam.html">Our Team</a>
@@ -135,16 +177,16 @@
                     <a href="../Careers/Careers.html">Careers</a>
                 </ul>
             </li>
-            <li class="login-button show"><a href="../Signin/sign.html"
+            <li class="login-button show1"><a href="../Signin/sign.html"
                     style="text-decoration: none;color: #253859;">Sign
                     In</a>
             </li>
-            <li class="join-button show">
+            <li class="join-button show1">
                 <a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;">
                     Contact Us
                 </a>
             </li>
-            <li class="show" style="display: none; font-size: xx-small;">Ascent RegTech</li>
+            <li class="show1" style="display: none; font-size: xx-small;">Ascent RegTech</li>
         </ul>
     </nav>
     <div class="container-fluid" style="background-image: url(our-approach-new.png);
@@ -153,22 +195,24 @@
             <div class="row">
                 <div class="col-sm-12 text-white">
                     <div style="height: 8rem;" class="pt-5"> </div>
-                    <h1>Industries</h1>
+                    <h1 style="font-size: 43.5px;font-weight: 900;line-height: 33.75px;letter-spacing: -0.05em;">
+                        Industries</h1>
 
                     <div class="nectar-highlighted-text" data-style="scribble" data-exp="default" data-user-color="true"
                         style="color: #FFFFFF;" data-using-custom-color="false" data-animation-delay="false"
                         data-color="" data-color-gradient="">
                         <!-- <h1> -->
-                            <em class="animated"><svg class="nectar-scribble squiggle-underline"
-                                    role="presentation" viewBox="-347 -30.1947 694 96.19" preserveAspectRatio="none">
-                                    <path style="animation-duration: 1.8s;"
-                                        d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
-                                        stroke="#03D5CC" pathLength="1" stroke-width="14" fill="none"></path>
-                                </svg></em>
-                            <!-- </h1> -->
+                        <em class="animated"><svg class="nectar-scribble squiggle-underline" role="presentation"
+                                viewBox="-347 -30.1947 694 96.19" preserveAspectRatio="none">
+                                <path style="animation-duration: 1.8s;"
+                                    d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
+                                    stroke="#03D5CC" pathLength="1" stroke-width="14" fill="none"></path>
+                            </svg></em>
+                        <!-- </h1> -->
                     </div>
 
-                    <p style="font-size: 1.2rem;margin-top: 30px;">Ascent empowers you to stay ahead of regulatory changes
+                    <p style="font-size: 1.2rem;margin-top: 30px;">Ascent empowers you to stay ahead of regulatory
+                        changes
                         in your industry through advanced</br> machine learning and automation that streamlines
                         compliance.
                     </p>
@@ -187,8 +231,18 @@
                         <div class="card-img-overlay">
                             <h4 class="card-title">Financial </br> Services</h4>
                             <div class="link-text">LEARN MORE
-                                <span class="arrow"><i class='fa fa-chevron-circle-right'></i>
-                                    <i class='fa fa-long-arrow-alt-right' style='font-size:48px;color:red'></i>
+
+                                <span class="link link--arrowed">
+                                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27"
+                                        viewBox="0 0 32 32">
+                                        <g fill="none" stroke="#03D5CC" stroke-width="1.5" stroke-linejoin="round"
+                                            stroke-miterlimit="10">
+                                            <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                                            <path class="arrow-icon--arrow"
+                                                d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98">
+                                            </path>
+                                        </g>
+                                    </svg>
                                 </span>
                             </div>
                         </div>
@@ -202,8 +256,20 @@
                             style="width:100%;border-radius: 0px;height: 250px">
                         <div class="card-img-overlay">
                             <h4 class="card-title">Mortgage </br> Lenders</h4>
-                            <div class="link-text">LEARN MORE<span class="arrow"><i
-                                        class='fa fa-chevron-circle-right'></i></span></div>
+                            <div class="link-text">LEARN MORE
+                                <span class="link link--arrowed">
+                                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27"
+                                        viewBox="0 0 32 32">
+                                        <g fill="none" stroke="#03D5CC" stroke-width="1.5" stroke-linejoin="round"
+                                            stroke-miterlimit="10">
+                                            <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                                            <path class="arrow-icon--arrow"
+                                                d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -215,8 +281,20 @@
                             style="width:100%;border-radius: 0px;height: 250px">
                         <div class="card-img-overlay">
                             <h4 class="card-title">Fintech</h4>
-                            <div class="link-text" style="margin-top: 30px;">LEARN MORE<span class="arrow"><i
-                                        class='fa fa-chevron-circle-right'></i></span></div>
+                            <div class="link-text" style="margin-top: 30px;">LEARN MORE
+                                <span class="link link--arrowed">
+                                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27"
+                                        viewBox="0 0 32 32">
+                                        <g fill="none" stroke="#03D5CC" stroke-width="1.5" stroke-linejoin="round"
+                                            stroke-miterlimit="10">
+                                            <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                                            <path class="arrow-icon--arrow"
+                                                d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -232,8 +310,20 @@
                             style="width:100%;border-radius: 0px;height: 250px">
                         <div class="card-img-overlay">
                             <h4 class="card-title">Consulting & </br> Advisory Firms</h4>
-                            <div class="link-text-down">LEARN MORE<span class="arrow"><i
-                                        class='fa fa-chevron-circle-right'></i></span></div>
+                            <div class="link-text-down" >LEARN MORE
+                                <span class="link link--arrowed">
+                                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27"
+                                        viewBox="0 0 32 32">
+                                        <g fill="none" stroke="#03D5CC" stroke-width="1.5" stroke-linejoin="round"
+                                            stroke-miterlimit="10">
+                                            <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                                            <path class="arrow-icon--arrow"
+                                                d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -245,8 +335,20 @@
                             style="width:100%;border-radius: 0px;height: 250px">
                         <div class="card-img-overlay">
                             <h4 class="card-title">Law Firms</h4>
-                            <div class="link-text-down">LEARN MORE<span class="arrow"><i
-                                        class='fa fa-chevron-circle-right'></i></span></div>
+                            <div class="link-text-down" style="margin-top: 30px;">LEARN MORE
+                                <span class="link link--arrowed">
+                                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27"
+                                        viewBox="0 0 32 32">
+                                        <g fill="none" stroke="#03D5CC" stroke-width="1.5" stroke-linejoin="round"
+                                            stroke-miterlimit="10">
+                                            <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                                            <path class="arrow-icon--arrow"
+                                                d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>

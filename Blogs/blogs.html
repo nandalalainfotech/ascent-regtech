@@ -4,17 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../index.css">
-    <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="audit.css">
+    <title>Ascent Project</title>
+    <link rel="stylesheet" id="redux-google-fonts-salient_redux-css"
+        href="https://fonts.googleapis.com/css?family=Mulish%3A700%2C400%2C500%2C800%2C600%2C900%2C200%2C500italic&amp;subset=latin&amp;display=swap&amp;ver=6.3"
+        type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="../index.css">
     <style>
+        body {
+            letter-spacing: 0.02em;
+            font-family: Mulish;
+        }
+
         @keyframes nectarStrokeAnimation {
             0% {
                 stroke-dashoffset: 1;
@@ -60,8 +70,8 @@
         }
 
         body .nectar-scribble.squiggle-underline {
-            width: 300px;
-            height: 50px;
+            width: 200px;
+            height: 30px;
 
 
         }
@@ -81,8 +91,9 @@
 
         @media screen and (min-width:1000px) {
             .nectar-highlighted-text .nectar-scribble {
-                left: 400px;
-                top: 190px;
+                left: 500px;
+                top: 200px;
+
             }
         }
 
@@ -143,9 +154,8 @@
             margin-bottom: 30px;
             border-radius: 6px;
             color: rgba(0, 0, 0, 0.87);
-            background: #fff;
-            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-                0 1px 5px 0 rgba(0, 0, 0, 0.12);
+            background: #ffffff;
+            border: none;
         }
 
         .card .card-image {
@@ -205,15 +215,10 @@
         .card .table {
             padding: 15px 30px;
         }
-
-
-
-
-
         /* ============ Card Blog ============ */
 
         .card-blog {
-            margin-top: 30px;
+            
         }
 
         .card-blog .card-caption {
@@ -263,7 +268,7 @@
             /* padding: 15px 50px; */
             color: #000;
             opacity: 0;
-            transform: translateY(50px);
+            transform: translate(300px, 0px);
             transition: opacity 0.5s, transform 0.5s;
         }
 
@@ -307,12 +312,111 @@
             transform: scaleX(1);
             transform-origin: bottom left;
         }
+
+        #footer-hover:hover {
+            color: #28BEBB;
+        }
+
+        #footer-hover {
+            text-decoration: none;
+            color: white;
+        }
     </style>
+    <!-- for animation -->
+    <style>
+        .excerpt {
+            color: #000;
+            line-height: 30px;
+            font-weight: 500;
+        }
+
+        .titles {
+            font-family: Mulish;
+            letter-spacing: -0.06em;
+            font-size: 20px !important;
+            line-height: 24px;
+            font-weight: 500 !important;
+        }
+
+        .title {
+            font-style: normal;
+            color: #000;
+            font-size: 31.45px;
+            line-height: 25.5px;
+            font-family: Mulish;
+            text-transform: none;
+            letter-spacing: -0.02em;
+
+        }
+
+        :before,
+        :after {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        .box {
+            width: 100%;
+
+            margin: 10px auto;
+            position: relative;
+        }
+
+
+
+
+        .animation-element {
+            position: relative;
+        }
+
+        .bounce-up .box {
+            opacity: 0;
+            -moz-transition: all 700ms ease-out;
+            -webkit-transition: all 700ms ease-out;
+            -o-transition: all 700ms ease-out;
+            transition: all 700ms ease-out;
+            -moz-transform: translate3d(0px, 200px, 0px);
+            -webkit-transform: translate3d(0px, 200px, 0px);
+            -o-transform: translate(0px, 200px);
+            -ms-transform: translate(0px, 200px);
+            transform: translate3d(0px, 200, 0px);
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .bounce-up.in-view .box {
+            opacity: 1;
+            -moz-transform: translate3d(0px, 0px, 0px);
+            -webkit-transform: translate3d(0px, 0px, 0px);
+            -o-transform: translate(0px, 0px);
+            -ms-transform: translate(0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+        }
+
+        body {
+            font-family: Mulish;
+        }
+
+        .headings {
+            font-family: Mulish;
+            letter-spacing: -0.05em;
+            font-size: 42px;
+            line-height: 45px;
+            font-weight: 800;
+        }
+        .para{
+            font-weight: 500;
+            color: #fff; 
+        }
+    </style>
+
+
 </head>
 
 <body>
-     <!-- nav bar start -->
-     <!-- <nav>
+    <nav>
         <div class="logo">
             <a href="../index.html"><img src="../images/index/logo.png" alt="Logo Image"></a>
         </div>
@@ -353,7 +457,7 @@
             </li>
             <li class="show" style="padding: 1rem"><span class="line">
                     <a href="" style="text-decoration: none;color: #253859;">Resources</a></span>
-               <ul id="submenu">
+                <ul id="submenu">
                     <a href="#">What is RegTech?</a>
                     <a href="#">Blog</a>
                     <a href="../Resources/Resources.html">Resources</a>
@@ -379,36 +483,33 @@
             </li>
             <li class="show" style="display: none; font-size: xx-small;">Ascent RegTech</li>
         </ul>
-    </nav> -->
-    <!-- nav bar end -->
+    </nav>
 
-
-    <!-- --------------- BANNER SECTION START----------------------   -->
     <div style="background-image: url(peopletemastock.jpg);
-      background-repeat: no-repeat; background-size: cover;">
+    background-repeat: no-repeat; background-size: cover;">
         <div class="container-fluid"
             style="background: #03D5CC; background: linear-gradient(135deg,#03D5CC 1%,rgba(3,213,204,0.82) 100%);  opacity: 0.95; width: 100%;">
             <div class="container-fluid">
                 <div class="container">
                     <div class="row text-white">
-                        <div class="col-sm-9">
+                        <div class="col-sm-10">
                             <div style="height: 10rem;"></div>
-                            <h1 class="nectar-highlighted-text" data-style="scribble" data-exp="default"
+                            <h1 class="headings nectar-highlighted-text" data-style="scribble" data-exp="default"
                                 data-using-custom-color="false" data-animation-delay="false" data-color=""
                                 data-color-gradient="">Regulatory Compliance <em class="animated">Ascent-tials<svg
                                         class="nectar-scribble squiggle-underline" role="presentation"
                                         viewBox="-347 -30.1947 694 96.19" preserveAspectRatio="none">
                                         <path style="animation-duration: 1.8s;"
                                             d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
-                                            stroke="#253859" pathLength="1" stroke-width="5" fill="none"></path>
+                                            stroke="#253859" pathLength="1" stroke-width="14" fill="none"></path>
                                     </svg></em>
                             </h1>
                             <br>
-                            <p>In our blog, you’ll find all the essential resources, regulatory news, and research to
-                                stay ahead of the compliance curve.</p>
+                            <div class="para">In our blog, you’ll find all the essential resources, regulatory news, and research to
+                                stay ahead of the compliance curve.</div>
                             <div style="height: 8rem;"></div>
                         </div>
-                        <div class="col-sm-3"></div>
+                        <div class="col-sm-2"></div>
                     </div>
                 </div>
             </div>
@@ -416,455 +517,1210 @@
     </div>
     <!-- --------------- BANNER SECTION END----------------------   -->
 
-    <article class="col-md-12">
+    <article class="col-md-12" style="background-color:  rgb(238,238,238) ">
         <div class="cards-1 ">
             <div class="container ">
                 <div class="row">
                     <!-- COL-1 -->
 
                     <div class="col-md-4">
+                        <!-- <div class="animation-element bounce-up"> -->
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="NEW-PARTNERSHIP-Diligent-1-768x401.gif"
+                                        alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">News &
+                                            Press
+                                        </h4>
+                                        <h3 class="title" style="font-weight: 900;">
+                                            Ascent and Diligent partner for a seamless, efficient compliance management
+                                            experience
+                                        </h3>
 
-                        <div class="card card-blog wrapper">
-                            <img class="card-img-top zoomer" src="NEW-PARTNERSHIP-Diligent-1-768x401.gif"
-                                alt="Card image">
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">News & Press
-                                </h4>
-                                <h3 class="card-title" style="font-weight: 900;">
-                                    Ascent and Diligent partner for a seamless, efficient compliance management
-                                    experience
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">Ascent and Diligent partner for a
-                                    seamless,
-                                    efficient compliance management experiance. This
-                                    partnership will transform work for risk and compliance...
-                                </p>
+                                        <div class="excerpt">&nbsp;Ascent and Diligent partner for a seamless, efficient
+                                            compliance management experience This partnership will transform work for
+                                            risk and compliance…</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        <!-- </div> -->
+
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card wrapper">
+                                    <img class="card-img-top zoomer" src="charge.gif" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            5 Tips to Supercharge Your Compliance Programs in 2023
+                                        </h3>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
 
-                        <div class="card wrapper">
-                            <img class="card-img-top zoomer" src="charge.gif" alt="Card image" style="width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">Blog
-                                </h4>
-                                <h3 class="card-title" style="font-weight: 900;">
-                                    5 Tips to Supercharge Your Compliance Programs in 2023
-                                </h3>
-
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper ">
+                                    <img class="card-img-top zoomer" src="Productiza.gif" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">News &
+                                            Press
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            Regulatory mapping is key to compliance. Are you doing it effectively?
+                                        </h3>
+                                        <div class="excerpt">Regulatory mapping may mean
+                                            different
+                                            things to different
+                                            organizations, but new RegTech tools can help you more accurately and
+                                            efficiently…
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card card-blog wrapper ">
-                            <img class="card-img-top zoomer" src="Productiza.gif" alt="Card image"
-                                style="width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">News & Press
-                                </h4>
-                                <h3 class="card-title" style="font-weight: 900;">
-                                    Regulatory mapping is key to compliance. Are you doing it effectively?
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">Regulatory mapping may mean different
-                                    things to different
-                                    organizations, but new RegTech tools can help you more accurately and efficiently…
-                                </p>
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="large-1-1.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">News &
+                                            Press
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            Press Release | Ascent &amp; Onspring Partnership
+                                        </h3>
+                                        <div class="excerpt">Ascent and Onspring Partner to
+                                            Streamline
+                                            Regulatory Compliance
+                                            for Financial Services The strategic integration empowers users with greater
+                                            visibility into…
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card card-blog wrapper">
-                            <img class="card-img-top zoomer" src="large-1-1.png" alt="Card image"
-                                style="width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">News & Press
-                                </h4>
-                                <h3 class="card-title" style="font-weight: 900;">
-                                    Press Release | Ascent &amp; Onspring Partnership
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">Ascent and Onspring Partner to Streamline
-                                    Regulatory Compliance
-                                    for Financial Services The strategic integration empowers users with greater
-                                    visibility into…
-                                </p>
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="secret.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">News &
+                                            Press
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            The Secret to Operating Like a Fortune 500 Compliance Team as a Team of
+                                            One
+                                        </h3>
+                                        <div class="excerpt">As a vital contributor in any
+                                            financial
+                                            services business,
+                                            compliance officers are under immense pressure to not only maintain
+                                            regulatory…
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card card-blog wrapper">
-                            <img class="card-img-top zoomer" src="secret.png" alt="Card image" style="width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">News & Press
-                                </h4>
-                                <h3 class="card-title" style="font-weight: 900;">
-                                    The Secret to Operating Like a Fortune 500 Compliance Team as a Team of
-                                    One
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">As a vital contributor in any financial
-                                    services business,
-                                    compliance officers are under immense pressure to not only maintain regulatory…
-                                </p>
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="FivePlatform.gif" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">News &
+                                            Press
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            Investment Advisors: How to Know a RegTech Solution Will Work for Your
+                                            Firm
+                                        </h3>
+                                        <div class="excerpt">nvestment advisory firms are faced
+                                            with
+                                            navigating an
+                                            increasingly complex regulatory landscape, especially as they look to expand
+                                            into
+                                            new…
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card card-blog wrapper">
-                            <img class="card-img-top zoomer" src="FivePlatform.gif" alt="Card image"
-                                style="width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">News & Press
-                                </h4>
-                                <h3 class="card-title" style="font-weight: 900;">
-                                    Investment Advisors: How to Know a RegTech Solution Will Work for Your
-                                    Firm
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">nvestment advisory firms are faced with
-                                    navigating an
-                                    increasingly complex regulatory landscape, especially as they look to expand into
-                                    new…
-                                </p>
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="Maintain.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">News &
+                                            Press
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            Is Your Regulatory Risk Management Strategy Missing Critical Obligations?
+                                        </h3>
+                                        <div class="excerpt">nvestment advisory firms are faced
+                                            with
+                                            navigating an
+                                            Regulatory risk management has always been a minefield of
+                                            potential costly missteps and omissions for mortgage lenders. Over the past…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="Effective.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog &
+                                            Featured
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            The role of requirements in effective regulatory risk management
+                                        </h3>
+                                        <div class="excerpt">To effectively manage your
+                                            regulatory
+                                            risk, you must first
+                                            understand what is required of your firm. At Ascent, we believe…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="Productiza.gif" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog &
+                                            Featured
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            The Automation and Productization of Knowledge Work
+                                        </h3>
+                                        <div class="excerpt">As digital services proliferate,
+                                            we’re
+                                            entering a new age of
+                                            commercial opportunity: one where the digital world increasingly reflects
+                                            changes…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="DiFi-pt.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog &
+                                            Featured
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            A ‘Token’ for Their Thoughts: Digital Finance from a Regulatory
+                                            Perspective
+                                        </h3>
+                                        <div class="excerpt">In Part 1 (DiFi or Die Trying: A
+                                            Quick and Dirty Overview of
+                                            Digital Finance), we discussed the digital financial…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="Banks-768x360.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog &
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            An Equal Playing Field for FinTechs &amp; Banks: Time to Pull the Regulatory
+                                            Ripcord?
+                                        </h3>
+                                        <div class="excerpt">In 2018, there were 12,131 FinTech
+                                            startups worldwide. In a
+                                            little over two years (as of February 2021), that number…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="global-coverage.jpg" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            Press Release | Ascent’s AI Supports Global Financial Regulations
+                                        </h3>
+                                        <div class="excerpt">Ascent’s solution ensures global
+                                            financial firms can comply
+                                            better and more cost-effectively in light of increasing regulatory burden.
+                                            ---
+                                            Chicago…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                            Compliance
+                                            Over Coffee
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            Press Release | Ascent’s AI Supports Global Financial Regulations
+                                        </h3>
+                                        <div class="excerpt">— The RegTech market has grown
+                                            exponentially since it came on
+                                            to the scene nearly a decade ago ...
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="Infographic.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            [Infographic] Regulatory Knowledge Automation for Lawyers, Explained
+                                        </h3>
+                                        <div class="excerpt">Subscribe to our monthly
+                                            newsletter Cliff Notes to stay at the
+                                            forefront of technology and compliance.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            Readying for U.S. regulatory changes
+                                        </h3>
+                                        <div class="excerpt">— Peter and Ascent Founder Brian
+                                            Clark discuss a variety of
+                                            topics—from potential regulatory changes under ...
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="1-768x360.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            OCC’s Heightened Standards [Part 1/2]: What Recent Enforcement Actions
+                                            Signal
+                                            for Firms
+                                        </h3>
+                                        <div class="excerpt">2020 was a year that was
+                                            remarkable for one very obvious
+                                            reason. However, with the exception of one multi-billion dollar…
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
 
-                        <div class="card card-blog wrapper">
-                            <img class="card-img-top zoomer" src="Maintain.png" alt="Card image" style="width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">News & Press
-                                </h4>
-                                <h3 class="card-title" style="font-weight: 900;">
-                                    Is Your Regulatory Risk Management Strategy Missing Critical Obligations?
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">nvestment advisory firms are faced with
-                                    navigating an
-                                    Regulatory risk management has always been a minefield of
-                                    potential costly missteps and omissions for mortgage lenders. Over the past…
-                                </p>
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="Brexit-768x360.jpg" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            Brexit Impact: A Look at the Next Normal</h3>
+                                        <div class="excerpt">Back in 2016 when the concept
+                                            of the United Kingdom’s exit from
+                                            the European Union (“EU”) seemed like a fantastical…
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card card-blog wrapper">
-                            <img class="card-img-top zoomer" src="Effective.png" alt="Card image"
-                                style="width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">Blog & Featured
-                                </h4>
-                                <h3 class="card-title" style="font-weight: 900;">
-                                    The role of requirements in effective regulatory risk management
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">To effectively manage your regulatory
-                                    risk, you must first
-                                    understand what is required of your firm. At Ascent, we believe…
-                                </p>
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="Storiesss.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+
+                                        </h4>
+                                        <h3 class="title" style="font-weight: 900;">
+                                            A former regulator’s take on AI, Big Tech, and RCM</h3>
+                                        <div class="excerpt">We recently sat down with Rick
+                                            Bonhof, a managing consultant
+                                            who leads the Amsterdam regulatory change and compliance practice
+                                            within…
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="card card-blog wrapper">
-                            <img class="card-img-top zoomer" src="Productiza.gif" alt="Card image"
-                                style="width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">Blog & Featured
-                                </h4>
-                                <h3 class="card-title" style="font-weight: 900;">
-                                    The Automation and Productization of Knowledge Work
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">As digital services proliferate, we’re
-                                    entering a new age of
-                                    commercial opportunity: one where the digital world increasingly reflects changes…
-                                </p>
-                            </div>
-                        </div>
-
 
                     </div>
                     <!-- COL-2 -->
                     <div class="col-md-4">
 
-                        <div class="card wrapper">
-                            <img class="card-img-top zoomer" src="regchange.png" alt="Card image"
-                                style="width:100%">
+                        <!-- <div class="animation-element bounce-up"> -->
+                            <div class="box box1">
+                                <div class="card wrapper">
+                                    <img class="card-img-top zoomer" src="regchange.png" alt="Card image"
+                                        style="width:100%">
 
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">Blog</h4>
-                                <h3 class="card-title" style="font-weight: 900;">
-                                    Are you ready for regulatory change?
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">Recent upheavals in the banking industry
-                                    have
-                                    sharpened the regulatory gaze for 2023. Regional banks have the usual complex
-                                    interplay…
-                                </p>
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            Are you ready for regulatory change?
+                                        </h3>
+                                        <div class="excerpt">Recent upheavals in the banking
+                                            industry
+                                            have
+                                            sharpened the regulatory gaze for 2023. Regional banks have the usual
+                                            complex
+                                            interplay…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card wrapper">
+                                    <img class="card-img-top zoomer" src="Delivery.png" alt="Card image"
+                                        style="width:100%">
+
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            How Mortgage Lenders Can Leverage Automation to Strengthen Compliance in a
+                                            Turbulent
+                                            Economy
+                                        </h3>
+                                        <div class="excerpt">This post was contributed by
+                                            Michael
+                                            Rasmussen, GRC Pundit
+                                            &amp; Analyst. In today's ever-changing economy, mortgage lenders and
+                                            service
+                                            providers…
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card wrapper">
-                            <img class="card-img-top zoomer" src="Delivery.png" alt="Card image" style="width:100%">
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="House.png" alt="Card image"
+                                        style="width:100%">
 
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">Blog</h4>
-                                <h3 class="card-title" style="font-weight: 900;">
-                                    How Mortgage Lenders Can Leverage Automation to Strengthen Compliance in a Turbulent
-                                    Economy
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">This post was contributed by Michael
-                                    Rasmussen, GRC Pundit
-                                    &amp; Analyst. In today's ever-changing economy, mortgage lenders and service
-                                    providers…
-                                </p>
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            The first (and most difficult) step in setting a regulatory compliance
+                                            framework
+                                        </h3>
+                                        <div class="excerpt">Compliance and Risk professionals
+                                            have a
+                                            tough job. Not only
+                                            are they responsible for maintaining compliance according to their
+                                            organizations’…
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card card-blog wrapper">
-                            <img class="card-img-top zoomer" src="House.png" alt="Card image" style="width:100%">
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="Social.jpg" alt="Card image"
+                                        style="width:100%">
 
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">Blog</h4>
-                                <h3 class="card-title" style="font-weight: 900;">
-                                    The first (and most difficult) step in setting a regulatory compliance
-                                    framework
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">Compliance and Risk professionals have a
-                                    tough job. Not only
-                                    are they responsible for maintaining compliance according to their organizations’…
-                                </p>
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            Visualizing RegTech Findings Powers Swifter Solutions
+                                        </h3>
+                                        <div class="excerpt">Rapidly evolving regulatory rules
+                                            have
+                                            created an unequivocally
+                                            challenging environment for financial services. As compliance teams face
+                                            pressure
+                                            to respond…
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card card-blog wrapper">
-                            <img class="card-img-top zoomer" src="Social.jpg" alt="Card image" style="width:100%">
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="socials.png" alt="Card image"
+                                        style="width:100%">
 
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">Blog</h4>
-                                <h3 class="card-title" style="font-weight: 900;">
-                                    Visualizing RegTech Findings Powers Swifter Solutions
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">Rapidly evolving regulatory rules have
-                                    created an unequivocally
-                                    challenging environment for financial services. As compliance teams face pressure
-                                    to respond…
-                                </p>
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            Consumer Lending Teams: Here’s Everything You Need to Know About the CFPB’s
+                                            Recent Announcements
+                                        </h3>
+                                        <div class="excerpt">Things are changing for consumer
+                                            lending
+                                            compliance officers. A
+                                            CFPB News Release on May 19th highlights a concerted effort amongst…
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card card-blog wrapper">
-                            <img class="card-img-top zoomer" src="socials.png" alt="Card image" style="width:100%">
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="Women.png" alt="Card image"
+                                        style="width:100%">
 
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">Blog</h4>
-                                <h3 class="card-title" style="font-weight: 900;">
-                                    Consumer Lending Teams: Here’s Everything You Need to Know About the CFPB’s
-                                    Recent Announcements
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">Things are changing for consumer lending
-                                    compliance officers. A
-                                    CFPB News Release on May 19th highlights a concerted effort amongst…
-                                </p>
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            Recognizing Women in RegTech: Recapping Our Celebration on International
+                                            Women’s Day
+                                        </h3>
+                                        <div class="excerpt">In case you missed it, we teamed
+                                            up with
+                                            The Chicago RegTech
+                                            Meetup and HData to celebrate International Women’s Day…
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card card-blog wrapper">
-                            <img class="card-img-top zoomer" src="Women.png" alt="Card image" style="width:100%">
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="Fun-2.jpg" alt="Card image"
+                                        style="width:100%">
 
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">Blog</h4>
-                                <h3 class="card-title" style="font-weight: 900;">
-                                    Recognizing Women in RegTech: Recapping Our Celebration on International
-                                    Women’s Day
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">In case you missed it, we teamed up with
-                                    The Chicago RegTech
-                                    Meetup and HData to celebrate International Women’s Day…
-                                </p>
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            Ascent Selected for Several Built In Awards for the Third Year in a Row
+                                        </h3>
+                                        <div class="excerpt">Ascent is excited to start off the
+                                            new
+                                            year recognized as one
+                                            of Chicago's Best Places to Work and Best…
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="COCTom.png" alt="Card image"
+                                        style="width:100%">
 
-                        <div class="card card-blog wrapper">
-                            <img class="card-img-top zoomer" src="Fun-2.jpg" alt="Card image" style="width:100%">
-
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">Blog</h4>
-                                <h3 class="card-title" style="font-weight: 900;">
-                                    Ascent Selected for Several Built In Awards for the Third Year in a Row
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">Ascent is excited to start off the new
-                                    year recognized as one
-                                    of Chicago's Best Places to Work and Best…
-                                </p>
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                            Compliance
+                                            Over Coffee Featured</h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            Coinbase and the democratization of finance
+                                        </h3>
+                                        <div class="excerpt">— If you watch CNBC, then you
+                                            might
+                                            recognize our next guest,
+                                            Tom Loverro.&nbsp;Tom has helped some of the ...
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card card-blog wrapper">
-                            <img class="card-img-top zoomer" src="COCTom.png" alt="Card image" style="width:100%">
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="Dieor Difi.png" alt="Card image"
+                                        style="width:100%">
 
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">Blog Compliance
-                                    Over Coffee Featured</h4>
-                                <h3 class="card-title" style="font-weight: 900;">
-                                    Coinbase and the democratization of finance
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">— If you watch CNBC, then you might
-                                    recognize our next guest,
-                                    Tom Loverro.&nbsp;Tom has helped some of the ...
-                                </p>
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                            Featured</h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            DiFi or Die
+                                            Trying: A Quick and Dirty Overview of Digital Finance
+                                        </h3>
+                                        <div class="excerpt">Emerging from the ashes of the
+                                            financial wildfire that spread
+                                            across the world in 2008, the seeds of a new…
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                            Compliance
+                                            Over Coffee</h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            Inside the complicated world of digital assets
+                                        </h3>
+                                        <div class="excerpt">https://youtu.be/5vXHVuh_VDA — As
+                                            the former Branch Chief of
+                                            the Division of Trading and Markets at the SEC, Val Dahiya knows…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="Vincent.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            What makes a good RegTech partner: fit and scalability
+                                        </h3>
+                                        <div class="excerpt">Finding the right RegTech partner
+                                            can be difficult. So we sat
+                                            down with an industry expert to get his take…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="Traceability-768x360.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            Solution Highlight: Traceability of Obligations in Ascent
+                                        </h3>
+                                        <div class="excerpt">Can you trace your regulatory
+                                            obligations back to their source?
+                                            Here we explain how Ascent helps you do exactly that.…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="Outsourcing-768x360.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            To Outsource or Not to Outsource Compliance?
+                                        </h3>
+                                        <div class="excerpt">For years, the basic underlying
+                                            approach to compliance has been
+                                            to avoid a one-size-fits-all approach, tailoring controls and resources to…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="2-768x360.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            OCC’s Heightened Standards [Part 2/2]: Use Key Risk Indicators to Unify
+                                            Compliance
+                                        </h3>
+                                        <div class="excerpt">In Part 1 of this writeup, we
+                                            discussed the approach that the
+                                            Office of the Comptroller of the Currency (OCC)…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="Built-In.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                            Culture
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            Ascent Named as One of Chicago’s Best Places to Work and Best Small
+                                            Companies
+                                            to Work for in 2021 by Built In
+                                        </h3>
+                                        <div class="excerpt">Chicago IL (January 8, 2021) -
+                                            Ascent, an AI-driven solution
+                                            that helps financial services institutions automate regulatory compliance,
+                                            today
+                                            announced…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="Regulation-Overview.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                            Culture
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            The Most Telling Guidance of 2020: Corporate Compliance Programs, AML &amp;
+                                            More
+                                        </h3>
+                                        <div class="excerpt">There has been no shortage of
+                                            media chatter in the very unusual
+                                            2020 calendar year.&nbsp; For those concerned with organizational…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card card-blog wrapper">
+                                    <img class="card-img-top zoomer" src="AscentRegTech100-768x360.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                            Culture
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            Ascent Named to the Prestigious RegTech 100 List for the Third Consecutive
+                                            Year
+                                        </h3>
+                                        <div class="excerpt">Ascent has been named to the
+                                            prestigious RegTech 100 list for
+                                            the third year running. The RegTech 100 list is…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+
                     <!-- COL-3 -->
                     <div class="col-md-4">
-                        <div class="card card-blog">
-                            <img class="card-img-top zoomer" src="weight.jpg" alt="Card image" style="width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">Blog
-                                </h4>
-                                <h3 class="card-title" style="font-weight: 900;">
-                                    Is the CCO Liable? Two SEC Cases, Two Wildly Different Rulings
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">Understandably, CCOs worry about being
-                                    held personally
-                                    responsible for compliance failures. That is, in fact, exactly what legislators
-                                    and regulators…
-                                </p>
+
+                        <!-- <div class="animation-element bounce-up"> -->
+                            <div class="box box1">
+                                <div class="card card-blog">
+                                    <img class="card-img-top zoomer" src="weight.jpg" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            Is the CCO Liable? Two SEC Cases, Two Wildly Different Rulings
+                                        </h3>
+                                        <div class="excerpt">Understandably, CCOs worry about
+                                            being
+                                            held personally
+                                            responsible for compliance failures. That is, in fact, exactly what
+                                            legislators
+                                            and regulators…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card wrapper">
+                                    <img class="card-img-top zoomer" src="Questions.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            9 Common RegTech Questions, Answered
+                                        </h3>
+                                        <div class="excerpt">As a young industry, RegTech often
+                                            gives
+                                            rise to a host of
+                                            questions — everything from “what is it?” to…
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card wrapper">
-                            <img class="card-img-top zoomer" src="Questions.png" alt="Card image"
-                                style="width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">Blog
-                                </h4>
-                                <h3 class="card-title" style="font-weight: 900;">
-                                    9 Common RegTech Questions, Answered
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">As a young industry, RegTech often gives
-                                    rise to a host of
-                                    questions — everything from “what is it?” to…
-                                </p>
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card wrapper">
+                                    <img class="card-img-top zoomer" src="2023.png" alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            Ascent Named to the Esteemed RegTech 100 List for the Fifth Year
+                                        </h3>
+                                        <div class="excerpt">The RegTech100 list compiles the
+                                            world’s
+                                            most pioneering
+                                            businesses in the regulatory technology market that are helping financial
+                                            institutions deal…
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card wrapper">
-                            <img class="card-img-top zoomer" src="2023.png" alt="Card image" style="width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">Blog
-                                </h4>
-                                <h3 class="card-title" style="font-weight: 900;">
-                                    Ascent Named to the Esteemed RegTech 100 List for the Fifth Year
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">The RegTech100 list compiles the world’s
-                                    most pioneering
-                                    businesses in the regulatory technology market that are helping financial
-                                    institutions deal…
-                                </p>
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card wrapper">
+                                    <img class="card-img-top zoomer" src="HaloAi.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">News &
+                                            Press
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            Press Release | Ascent &amp; Halo Ai Partnership
+                                        </h3>
+                                        <div class="excerpt">Ascent partners with Halo Ai to
+                                            transform
+                                            enterprise risk &amp;
+                                            compliance management CHICAGO (October 27, 2022) — Ascent, the pioneer…
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card wrapper">
-                            <img class="card-img-top zoomer" src="HaloAi.png" alt="Card image" style="width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">News & Press
-                                </h4>
-                                <h3 class="card-title" style="font-weight: 900;">
-                                    Press Release | Ascent &amp; Halo Ai Partnership
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">Ascent partners with Halo Ai to transform
-                                    enterprise risk &amp;
-                                    compliance management CHICAGO (October 27, 2022) — Ascent, the pioneer…
-                                </p>
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card wrapper">
+                                    <img class="card-img-top zoomer" src="unnamed-1.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">News &
+                                            Press
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            Mortgage &amp; Consumer Lenders: How Inflation Could Impact Regulation
+                                        </h3>
+                                        <div class="excerpt">Over the past two years,
+                                            researchers have
+                                            honed in on consumer
+                                            spending habits, particularly in the mortgage and consumer lending…
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card wrapper">
-                            <img class="card-img-top zoomer" src="unnamed-1.png" alt="Card image"
-                                style="width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">News & Press
-                                </h4>
-                                <h3 class="card-title" style="font-weight: 900;">
-                                    Mortgage &amp; Consumer Lenders: How Inflation Could Impact Regulation
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">Over the past two years, researchers have
-                                    honed in on consumer
-                                    spending habits, particularly in the mortgage and consumer lending…
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="card wrapper">
-                            <img class="card-img-top zoomer" src="VComply.png" alt="Card image" style="width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">News & Press
-                                </h4>
-                                <h3 class="card-title" style="font-weight: 900;"> Press Release | Ascent RegTech &amp;
-                                    VComply Partnership
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">Ascent RegTech &amp; VComply Partner to
-                                    Create Out-of-the-Box
-                                    Compliance Solutions for Traditionally Underserved Market &nbsp; Chicago IL (May
-                                    25, 2022)…
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="card wrapper">
-                            <img class="card-img-top zoomer" src="Newsletter-.png" alt="Card image"
-                                style="width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">Blog
-                                </h4>
-                                <h3 class="card-title" style="font-weight: 900;"> Regulatory Roundup: April 2022
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">Industry regulations change seemingly
-                                    overnight. It’s
-                                    impossible to pay attention 24/7, and while Ascent makes it easy to monitor
-                                    important…
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="card wrapper">
-                            <img class="card-img-top zoomer" src="Traceability-768x360.png" alt="Card image"
-                                style="width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">Blog
-                                </h4>
-                                <h3 class="card-title" style="font-weight: 900;"> Not All Obligations Are Created Equal
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">Risk and compliance teams have a language
-                                    problem. They’ve
-                                    become accustomed to regulatory providers defining “obligations” as long,
-                                    text-filled documents,…
-                                </p>
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card wrapper">
+                                    <img class="card-img-top zoomer" src="VComply.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">News &
+                                            Press
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;"> Press Release | Ascent RegTech
+                                            &amp;
+                                            VComply Partnership
+                                        </h3>
+                                        <div class="excerpt">Ascent RegTech &amp; VComply
+                                            Partner to
+                                            Create Out-of-the-Box
+                                            Compliance Solutions for Traditionally Underserved Market &nbsp; Chicago IL
+                                            (May
+                                            25, 2022)…
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
 
-                        <div class="card wrapper">
-                            <img class="card-img-top zoomer" src="Conferences.png" alt="Card image"
-                                style="width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">Blog
-                                </h4>
-                                <h3 class="card-title" style="font-weight: 900;"> [Updated 2021] The Ultimate List of
-                                    Compliance Conferences and Events
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">Updated September 2021: As the COVID-19
-                                    pandemic continues, the
-                                    information on this page may change as organizations adapt their in-person…
-                                    text-filled documents,…
-                                </p>
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card wrapper">
+                                    <img class="card-img-top zoomer" src="Newsletter-.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;"> Regulatory Roundup: April 2022
+                                        </h3>
+                                        <div class="excerpt">Industry regulations change
+                                            seemingly
+                                            overnight. It’s
+                                            impossible to pay attention 24/7, and while Ascent makes it easy to monitor
+                                            important…
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card wrapper">
-                            <img class="card-img-top zoomer" src="Screen.png" alt="Card image" style="width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title hover-underline-animation" style="color: #03D5CC;">Blog
-                                </h4>
-                                <h3 class="card-title" style="font-weight: 900;"> Aligning quarterly results with
-                                    long-term ethics
-                                </h3>
-                                <p class="card-text" style="font-size: 21px;">— There’s a reason why Sian Lewin is known
-                                    as the “The Reg
-                                    Doctor” ...
-                                </p>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card wrapper">
+                                    <img class="card-img-top zoomer" src="Traceability-768x360.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;"> Not All Obligations Are
+                                            Created Equal
+                                        </h3>
+                                        <div class="excerpt">Risk and compliance teams have a
+                                            language
+                                            problem. They’ve
+                                            become accustomed to regulatory providers defining “obligations” as long,
+                                            text-filled documents,…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card wrapper">
+                                    <img class="card-img-top zoomer" src="Conferences.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;"> [Updated 2021] The Ultimate
+                                            List of
+                                            Compliance Conferences and Events
+                                        </h3>
+                                        <div class="excerpt">Updated September 2021: As the
+                                            COVID-19
+                                            pandemic continues, the
+                                            information on this page may change as organizations adapt their in-person…
+                                            text-filled documents,…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card wrapper">
+                                    <img class="card-img-top zoomer" src="Screen.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;"> Aligning quarterly results
+                                            with
+                                            long-term ethics
+                                        </h3>
+                                        <div class="excerpt">— There’s a reason why Sian Lewin
+                                            is known
+                                            as the “The Reg
+                                            Doctor” ...
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card wrapper">
+                                    <img class="card-img-top zoomer" src="Blog-MTLs.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                            Featured
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;"> A Quick Look at Money
+                                            Transmission Laws (+ How to Know Your MTL
+                                            Obligations)
+                                        </h3>
+                                        <div class="excerpt">— There’s a reason why Sian Lewin
+                                            The rise of digital currency (aka cryptocurrency) has caused
+                                            regulators to grapple with how to fit it under existing money…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card wrapper">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                            Compliance
+                                            Over Coffee Featured featured
+                                            video
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;"> No more email chains!
+                                            Traceability and OpenPages
+                                        </h3>
+                                        <div class="excerpt">— There are two compliance issues
+                                            that are on Heather Gentile’s
+                                            mind — repeatability and...
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card wrapper">
+                                    <img class="card-img-top zoomer" src="COFFE.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                            Compliance
+                                            Over Coffee
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">Managing risk in the aftermath
+                                            of COVID
+                                        </h3>
+                                        <div class="excerpt">— In this installment of
+                                            Compliance Over Coffee, Ascent’s
+                                            Rachael Battista subs in to talk to Corrie Ehler ...
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card wrapper">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                            Compliance
+                                            Over Coffee
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">Clear roles, good tech, and the
+                                            right data
+                                        </h3>
+                                        <div class="excerpt">— What makes compliance work?
+                                            According to Matt, it's clear
+                                            roles, good tech, and the right data ...
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card wrapper">
+                                    <img class="card-img-top zoomer" src="Leaks.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                            Compliance
+                                            Over Coffee
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;"> Suspicious Activity Reports
+                                            [Part 1/2]: Big Leaks, Tighter Controls
+                                        </h3>
+                                        <div class="excerpt">SARs have been in the media a lot
+                                            recently, dragging these
+                                            reports into the limelight.&nbsp;Here we discuss how financial firms…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card wrapper">
+                                    <img class="card-img-top zoomer" src="AMLA-768x360.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                            Compliance
+                                            Over Coffee
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            A New Dawn for AML Compliance + 7 Questions You Should be Asking
+                                        </h3>
+                                        <div class="excerpt">To those in the anti-money
+                                            laundering practice, Nina Simone’s
+                                            memorable singing that it’s a “new dawn” and “a new day”…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card wrapper">
+                                    <img class="card-img-top zoomer" src="Blog_-PPP-fraud-768x360.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            How Bad is
+                                            PPP Fraud in Financial Services?
+                                        </h3>
+                                        <div class="excerpt">There seems to be a sharp
+                                            correlation between the scientific
+                                            and banking industries’ efforts to abate the harm caused by…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card wrapper">
+                                    <img class="card-img-top zoomer" src="Sec-priorities-768x360.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            SEC Priorities: Cryptocurrency Regulation and a Changing of the Guard
+                                        </h3>
+                                        <div class="excerpt">Despite the pandemic, Reuters
+                                            reports that the U.S. Securities
+                                            and Exchange Commission (SEC) has had a banner year, with more…
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animation-element bounce-up">
+                            <div class="box box1">
+                                <div class="card wrapper">
+                                    <img class="card-img-top zoomer" src="Webinar-768x360.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="titles hover-underline-animation" style="color: #03D5CC;">Blog
+                                        </h4>
+                                        <h3 class=" title" style="font-weight: 900;">
+                                            [Webinar] Effectively Managing Your Regulatory Obligations Register
+                                        </h3>
+                                        <div class="excerpt">Struggling to understand what your
+                                            organization needs to comply
+                                            with? Wasting too much time and resources scraping through regulations and…
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -877,26 +1733,167 @@
 
     </article>
 
+    <!-- fotter -->
+    <div class="container-fluid" style="background-color: #253859">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mt-5">
+                    <img src="../images/footer.png" alt="" />
+                    <h5 style="color: #03d5cc; margin-top: 15px">
+                        Compliance, Uncomplicated.
+                    </h5>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="row">
+                        <div class="col-6">
+                            <p style="color: white"><strong>Platform</strong></p>
+                            <p style="padding-top: 10px;font-size: 15px;"><a href="" id="footer-hover">Our Approach</a>
+                            </p>
+                            <p style="padding-top: 10px;font-size: 15px;"><a href="" id="footer-hover">Our Data</a></p>
+                            <p style="padding-top: 10px;font-size: 15px;"><a href="" id="footer-hover">Regulators</a>
+                            </p>
+                            <p style="padding-top: 10px;font-size: 15px;"><a href="" id="footer-hover">Technology
+                                    Partners</a></p>
+                        </div>
+                        <div class="col-6">
+                            <p style="color: white"><strong>Capabilities</strong></p>
+                            <p style="padding-top: 10px;font-size: 15px;"><a href="" id="footer-hover">Obligations
+                                    Inventory</a></p>
+                            <p style="padding-top: 10px;font-size: 15px;"><a href="" id="footer-hover">Scenario
+                                    Planning</a></p>
+                            <p style="padding-top: 10px;font-size: 15px;"><a href="" id="footer-hover">Horizon
+                                    Scanning</a></p>
+                            <p style="padding-top: 10px;font-size: 15px;"><a href="" id="footer-hover">Audit Trail</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="row">
+                        <div class="col-6">
+                            <p style="color: white"><strong>Resources</strong></p>
+                            <p style="padding-top: 10px;font-size: 15px;"><a href="" id="footer-hover">Our Approach</a>
+                            </p>
+                            <p style="padding-top: 10px;font-size: 15px;"><a href="" id="footer-hover">Our Data</a></p>
+                            <p style="padding-top: 10px;font-size: 15px;"><a href="" id="footer-hover">Regulators</a>
+                            </p>
+                            <p style="padding-top: 10px;font-size: 15px;"><a href="" id="footer-hover">Technology
+                                    Partners</a></p>
+                        </div>
+                        <div class="col-6">
+                            <p style="color: white"><strong>Capabilities</strong></p>
+                            <p style="padding-top: 10px;font-size: 15px;"><a href="" id="footer-hover">Obligations
+                                    Inventory</a></p>
+                            <p style="padding-top: 10px;font-size: 15px;"><a href="" id="footer-hover">Scenario
+                                    Planning</a></p>
+                            <p style="padding-top: 10px;font-size: 15px;"><a href="" id="footer-hover">Horizon
+                                    Scanning</a></p>
+                            <p style="padding-top: 10px;font-size: 15px;"><a href="" id="footer-hover">Audit Trail</a>
+                            </p>
+                        </div>
+                        <div style="height: 80px"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #253859; border-top: 1px solid #ffffff">
+        <div class="container">
+            <div class="row py-3">
+                <!-- <div class="col-md-1"></div> -->
+                <div class="col-md-4">
+                    <p style="color: white; font-size: 12px">
+                        © 2023 Ascent RegTech. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col-md-6"></div>
+                <div class="col-md-2">
+                    <span style="color: white; padding-right: 12px"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg></span>
+                    <span style="color: white; padding-right: 12px"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg></span>
+                    <span style="color: white; padding-right: 12px"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path
+                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                        </svg></span>
+                    <span style="color: white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fotter end -->
 
+
+
+
+    <!-- For Animation -->
     <script>
-        $(window).on("scroll", function () {
-            $(".scroll-section").each(function () {
-                if (isElementInViewport(this)) {
-                    $(this).addClass("visible");
+        var $animation_element = $('.animation-element');
+        var $window = $(window);
+
+        function check_if_in_view() {
+
+            var window_height = $window.height();
+            var window_top_position = $window.scrollTop();
+            var window_bottom_position = (window_height + window_top_position);
+
+            $.each($animation_element, function () {
+                var $element = $(this);
+                var element_height = $element.outerHeight();
+                var element_top_position = $element.offset().top;
+                var element_bottom_position = (element_height + element_top_position);
+
+                if ((element_bottom_position >= window_top_position) &&
+                    (element_top_position <= window_bottom_position)) {
+                    $element.addClass('in-view');
+                } else {
+                    $element.removeClass('in-view');
                 }
             });
-        });
-        function isElementInViewport(el) {
-            var rect = el.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <=
-                (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
+        };
+
+        $window.on('scroll resize', check_if_in_view);
+        $window.trigger('scroll');
     </script>
+
+    <Script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links li");
+
+        hamburger.addEventListener('click', () => {
+            //Animate Links
+            navLinks.classList.toggle("open");
+            links.forEach(link => {
+                link.classList.toggle("fade");
+            });
+
+            //Hamburger Animation
+            hamburger.classList.toggle("toggle");
+        });
+
+        const gif = document.querySelector(".nectar-video-self-hosted");
+        const vedio = document.querySelector(".vedio");
+        gif.addEventListener('click'), () => {
+            vedio('play')
+        }
+        vedio.addEventListener('click'), () => {
+            gif('play')
+        }
+// first div scroll animation
+    </Script>
 </body>
+
 
 </html>
