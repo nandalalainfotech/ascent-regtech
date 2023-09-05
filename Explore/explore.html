@@ -127,21 +127,36 @@
         z-index: 7;
     }
 
-    @media screen and (max-width:500px) {}
-
-    @media screen and (min-width:1000px) {
-        .nectar-highlighted-text .nectar-scribble {
-            left: 290px;
-            top: 210px;
-        }
+    
+    @media screen and (max-width:500px) {
+            .nectar-highlighted-text .nectar-scribble {
+                left: 0px;
+                top: -34px;
+            }
+            body .nectar-scribble.squiggle-underline {
+        width: 175px;
+        height: 30px;
     }
-
-    @media screen and (max-width:1000px) and (min-width:780px) {
-        .nectar-highlighted-text .nectar-scribble {
-            left: 20px;
-            top: 200px;
+    #capabilitie{
+            display: block;
         }
+
+        }
+        @media screen and (min-width:500px) {
+            .nectar-highlighted-text .nectar-scribble {
+                left: 200px;
+                top: -40px;
+            }
+            body .nectar-scribble.squiggle-underline {
+        width: 275px;
+        height: 30px;
     }
+        }
+       
+
+
+
+
 </style>
 
 
@@ -223,8 +238,8 @@
                 <div class="col-sm-12 text-white pt-5 py--5">
                     <div class="col-sm-8 py-5">
                         <div style="height:3rem;" class="pt-5 mt-3"> </div>
-                        <strong class="header ">PlatformCapabilities
-                        </strong>
+                        <h1 class="header ">Platform<span id="capabilitie">Capabilities</span>
+                        </h1>
                         <h3 class="nectar-highlighted-text" data-style="scribble" data-exp="default"
                             data-using-custom-color="false" data-animation-delay="false" data-color=""
                             data-color-gradient=""> <em class="animated"><svg class="nectar-scribble squiggle-underline"
