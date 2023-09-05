@@ -10,10 +10,14 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Responsive Animated Navbar</title>
 </head>
 <style>
+    * {
+        font-family: Mulish;
+    }
+
     .row1 {
         display: none;
     }
@@ -308,12 +312,14 @@
         }
 
         /* first div */
-        .row2{
+        .row2 {
             display: none;
         }
-        .row1{
+
+        .row1 {
             display: block;
         }
+
         .index-head {
             text-align: start !important;
             color: #253859;
@@ -479,23 +485,43 @@
         .card-body {
             color: #fff;
             margin-left: 0rem;
-            padding-bottom: 2rem;
-            margin-bottom: 5rem;
+            padding-bottom: 0rem;
+            margin-bottom: -3rem;
+            overflow-y: hidden;
         }
 
         .card-para {
             color: #fff;
-            margin-top: 10px;
-            margin-bottom: 2.5rem;
+            margin-top: 22px;
+            margin-bottom: 3.5rem;
             font-size: 17px;
-            line-height: 30px;
+            line-height: 27px;
+            overflow-y: hidden;
         }
 
         .card-head {
-            -webkit-text-stroke: thin;
-            margin-top: 10px;
-            font-size: 42.6px;
-            line-height: 37px;
+            margin-top: 15px;
+            font-size: 30.6px;
+            line-height: 35px;
+            overflow-y: hidden;
+
+        }
+
+        .contaier {
+            margin-left: -4rem;
+            margin-right: 4rem;
+            margin-top: -100px;
+            width: 100%;
+        }
+
+        .contaier1 {
+            margin-left: 0rem !important;
+            margin-right: 4rem;
+            margin-top: -74px;
+        }
+
+        .contaier2 {
+            margin-top: -73px;
         }
 
         .regulatory {
@@ -570,12 +596,72 @@
 
     /* tablet view */
 </style>
+<style>
+    /* Réinitialisation des styles par défaut */
+    body,
+    h1,
+    h2,
+    p,
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Importer la police Roboto depuis Google Fonts */
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+    /* Appliquer la police à vos éléments */
+    body {
+        font-family: "Roboto", sans-serif;
+    }
+
+    /* Styles pour l'arrière-plan dégradé bleu-violet */
+    body {
+        /* background-image: linear-gradient(to top, #7FFFD4, #0F52BA); */
+        background-repeat: repeat;
+        background-position: center;
+        /* Mode de fusion pour superposer l'image */
+        background-blend-mode: overlay;
+    }
+
+    body::after {
+        /* Opacité de l'image superposée */
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background: url("https://github.com/berru-g/scroll-effect/blob/main/src/img/back.png?raw=true") center/cover; */
+        opacity: 0.3;
+        /* Modifier l'opacité ici */
+        pointer-events: none;
+    }
+
+    /*scroll effect*/
+    .scroll-section {
+        /* padding: 15px 50px; */
+        color: #000;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.5s, transform 0.5s;
+    }
+
+    .scroll-section.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
 
 <body>
     <!-- nav bar start -->
     <nav>
         <div class="logo">
-            <a href="index.html"><img src="images/index/logo.png" alt="Logo Image"></a>
+            <a href="index.html">
+                <img src="images/index/image (3).png" alt="Logo Image" />
+            </a>
         </div>
         <div class="hamburger">
             <div class="line1"></div>
@@ -659,15 +745,18 @@
         </div>
         <div class="row">
             <div class="col-sm-6">
-                <h3 class="index-head mt-5" style="color: #253859;">Streamline compliance processes, even in
-                    complex multi-jurisdictional operating environments</h3>
-                <h6 class="index-heads ">Cut through the regulatory clutter. Identify only the specific <br> regulatory
-                    information
-                    you need to stay compliant.</h6>
-                <div class="col-sm-1" style="display: inline;">
-                    <button class="button button3">Talk to a solutions specialist</button>
-                    <button class="button button2">Explore Solutions</button>
-                </div>
+                <section class="scroll-section">
+                    <h3 class="index-head mt-5" style="color: #253859;">Streamline compliance processes, even in
+                        complex multi-jurisdictional operating environments</h3>
+                    <h6 class="index-heads ">Cut through the regulatory clutter. Identify only the specific <br>
+                        regulatory
+                        information
+                        you need to stay compliant.</h6>
+                    <div class="col-sm-1" style="display: inline;">
+                        <button class="button button3">Talk to a solutions specialist</button>
+                        <button class="button button2">Explore Solutions</button>
+                    </div>
+                </section>
             </div>
             <div class="col-sm-3">
                 <video width="449.49" height="256.26" class="nectar-video-self-hosted" preload="metadata" controls=""
@@ -691,15 +780,18 @@
 
         <div class="row" style="background-image: url(wave1.svg);">
             <div class="col-sm-6">
-                <h3 class="index-head mt-5" style="color: #253859;">Streamline compliance processes, even in
-                    complex multi-jurisdictional operating environments</h3>
-                <h6 class="index-heads ">Cut through the regulatory clutter. Identify only the specific <br> regulatory
-                    information
-                    you need to stay compliant.</h6>
-                <div class="col-sm-1" style="display: inline;">
-                    <button class="button button3">Talk to a solutions specialist</button>
-                    <button class="button button2">Explore Solutions</button>
-                </div>
+                <section class="scroll-section">
+                    <h3 class="index-head mt-5" style="color: #253859;">Streamline compliance processes, even in
+                        complex multi-jurisdictional operating environments</h3>
+                    <h6 class="index-heads ">Cut through the regulatory clutter. Identify only the specific <br>
+                        regulatory
+                        information
+                        you need to stay compliant.</h6>
+                    <div class="col-sm-1" style="display: inline;">
+                        <button class="button button3">Talk to a solutions specialist</button>
+                        <button class="button button2">Explore Solutions</button>
+                    </div>
+                </section>
             </div>
             <div class="col-sm-3">
                 <video width="449.49" height="256.26" class="nectar-video-self-hosted" preload="metadata" controls=""
@@ -806,24 +898,26 @@
         <!-- third div start -->
         <div class="row mt-5 resposive-desktop">
             <div class="col-sm-7">
-                <h4 class="center-content">Cut through the clutter</h4>
-                <p class="centers-content">
-                    of irrelevant regulations. Establish a single,
-                    reliable source of regulatory truth.
-                </p>
+                <section class="scroll-section">
+                    <h4 class="center-content">Cut through the clutter</h4>
+                    <p class="centers-content">
+                        of irrelevant regulations. Establish a single,
+                        reliable source of regulatory truth.
+                    </p>
 
-                <h4 class="center-content">Stay ahead of regulations</h4>
-                <p class="centers-content">by building a comprehensive register of
-                    obligations to ensure compliance.
-                </p>
+                    <h4 class="center-content">Stay ahead of regulations</h4>
+                    <p class="centers-content">by building a comprehensive register of
+                        obligations to ensure compliance.
+                    </p>
 
-                <h4 class="center-content">Maximize efficiency and the ability to scale</h4>
-                <p class="centers-content"> by removing the need to
-                    consider or research non-applicable regulations.
-                </p>
-                <h4 class="center-content">Map compliance to internal policies, procedures, and operations</h4>
-                <p class="centers-content">by integrating seamlessly with your GRC tool.
-                </p>
+                    <h4 class="center-content">Maximize efficiency and the ability to scale</h4>
+                    <p class="centers-content"> by removing the need to
+                        consider or research non-applicable regulations.
+                    </p>
+                    <h4 class="center-content">Map compliance to internal policies, procedures, and operations</h4>
+                    <p class="centers-content">by integrating seamlessly with your GRC tool.
+                    </p>
+                </section>
             </div>
             <div class="col-sm-5">
                 <img src="images/index/change-v2.png" alt="change" style="height: 400px;width:400px;margin-top: 5rem;">
@@ -834,217 +928,233 @@
                 <img src="images/index/change-v2.png" alt="change" style="height: 300px;width:250px ;">
             </div>
             <div class="col-sm-7">
-                <h2 class="center-content">Cut through the clutter</h2>
-                <p class="centers-content">
-                    of irrelevant regulations. Establish a single,
-                    reliable source of regulatory truth.
-                </p>
+                <section class="scroll-section">
+                    <h2 class="center-content">Cut through the clutter</h2>
+                    <p class="centers-content">
+                        of irrelevant regulations. Establish a single,
+                        reliable source of regulatory truth.
+                    </p>
 
-                <h2 class="center-content">Stay ahead of regulations</h2>
-                <p class="centers-content">by building a comprehensive register of
-                    obligations to ensure compliance.
-                </p>
+                    <h2 class="center-content">Stay ahead of regulations</h2>
+                    <p class="centers-content">by building a comprehensive register of
+                        obligations to ensure compliance.
+                    </p>
 
-                <h2 class="center-content">Maximize efficiency and the ability to scale</h2>
-                <p class="centers-content"> by removing the need to
-                    consider or research non-applicable regulations.
-                </p>
-                <h2 class="center-content">Map compliance to internal policies, procedures, and operations</h2>
-                <p class="centers-content">by integrating seamlessly with your GRC tool.
-                </p>
+                    <h2 class="center-content">Maximize efficiency and the ability to scale</h2>
+                    <p class="centers-content"> by removing the need to
+                        consider or research non-applicable regulations.
+                    </p>
+                    <h2 class="center-content">Map compliance to internal policies, procedures, and operations</h2>
+                    <p class="centers-content">by integrating seamlessly with your GRC tool.
+                    </p>
+                </section>
             </div>
         </div>
     </div>
     <div style="background-image: url(wave2.svg);">
-        <div class="centers-contents">
-            <span>Financial Firms That Trust Ascent</span>
-        </div>
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-1"></div>
-            <div class="col-sm-2 image-div">
-                <img src="images/index/logo.hd_.png" alt="" style="height: 50px;width: 200px;">
+        <section class="scroll-section">
+            <div class="centers-contents">
+                <span>Financial Firms That Trust Ascent</span>
             </div>
-            <div class="col-sm-2 image-div">
-                <img src="images/index/Resolver_Kroll_Logo_RGB-2048x726.png" alt="" style="height: 50px;width: 200px;">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 image-div">
+                    <img src="images/index/logo.hd_.png" alt="" style="height: 50px;width: 200px;">
+                </div>
+                <div class="col-sm-2 image-div">
+                    <img src="images/index/Resolver_Kroll_Logo_RGB-2048x726.png" alt=""
+                        style="height: 50px;width: 200px;">
+                </div>
+                <div class="col-sm-2 image-div">
+                    <img src="images/index/hiddenroad.png" alt="" style="height: 50px;width: 200px;">
+                </div>
+                <div class="col-sm-2 image-div">
+                    <img src="images/index/halo.png" alt="" style="height: 50px;width: 200px;">
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-1"></div>
             </div>
-            <div class="col-sm-2 image-div">
-                <img src="images/index/hiddenroad.png" alt="" style="height: 50px;width: 200px;">
-            </div>
-            <div class="col-sm-2 image-div">
-                <img src="images/index/halo.png" alt="" style="height: 50px;width: 200px;">
-            </div>
-            <div class="col-sm-1"></div>
-            <div class="col-sm-1"></div>
-        </div>
+        </section>
     </div>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-2">
-                <p class="centers-svg">
-                    <br>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="Compress" width="50px"
-                        height="50px">
-                        <path
-                            d="M47.707 25.707l-1.561-1.414-7.146 7v1.414l7.146 7 1.488-1.414L42.414 33H64v-2H42.414zM16.293 38.293l1.561 1.414 7.146-7v-1.414l-7.146-7-1.488 1.414L21.586 31H0v2h21.586zM31.293 39l-7 7.146 1.414 1.488L31 42.414V64h2V42.414l5.293 5.293 1.414-1.561-7-7.146zM31 0v21.586l-5.293-5.293-1.414 1.561 7 7.146h1.414l7-7.146-1.414-1.488L33 21.586V0z"
-                            fill="#03D5CC" class="color000000 svgShape">
-                        </path>
-                    </svg>
-                </p>
-                <h3 class="centers-head">Obligations Library</h3>
-                <p class="centers-para">
-                    Get an automatically generated, up-to-date, easy-to-read digital register of your firm’s regulatory
-                    obligations that
-                    keeps you ahead of regulatory change.
-                </p>
-            </div>
-            <div class="col-sm-2">
-                <p class="centers-svg">
-                    <br>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="Bookmark" width="50px"
-                        height="50px">
-                        <path
-                            d="M69 15H31c-1.1 0-2 .9-2 2v66c0 1.8 2.1 2.7 3.4 1.4L50 66.8l17.6 17.6c1 1 3.4.7 3.4-1.4V17c0-1.1-.9-2-2-2zm-2 63.2L51.4 62.6c-.8-.8-2-.8-2.8 0L33 78.2V19h34v59.2z"
-                            fill="#03D5CC" stroke-width="2" class="color000000 svgShape"></path>
-                        <path fill="#03D5CC" d="M664-930V754h-1784V-930H664m8-8h-1800V762H672V-938z"
-                            class="color0000ff svgShape"></path>
-                    </svg>
-                </p>
-                <h3 class="centers-head">Rule Compare</h3>
-                <p class="centers-para">
-                    Take the pain out of regulatory changes with a side-by-side comparison of the new and former
-                    versions of
-                    a rule, with
-                    changes redlined..
-                </p>
-            </div>
-            <div class="col-sm-2">
-                <p class="centers-svg">
-                    <br><svg enable-background="new 0 0 64 64" height="50px" viewBox="0 0 64 64" width="50px"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g fill="none" stroke="#03D5CC" stroke-miterlimit="10" stroke-width="2">
-                            <circle cx="21" cy="21" r="20" />
-                            <path d="m35 35 6 6" />
-                            <path d="m46.257 37.065h8.485v26.87h-8.485z"
-                                transform="matrix(-.7071 .7071 -.7071 -.7071 121.9178 50.5)" />
-                        </g>
-                    </svg>
-                </p>
-                <h3 class="centers-head">Horizon Scanning</h3>
-                <p class="centers-para">
-                    Gain a comprehensive understanding of your business’s regulatory requirements to make more informed
-                    decisions on new
-                    products or services.
-                </p>
-            </div>
-            <div class="col-sm-2">
-                <p class="centers-svg">
-                    <br>
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px"
-                        viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-                        <g>
+        <section class="scroll-section">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2">
+                    <p class="centers-svg">
+                        <br>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="Compress" width="50px"
+                            height="50px">
                             <path
-                                d="M43,14.586L30.414,2H0v60h43V14.586z M31,5.414L39.586,14H31V5.414z M2,60V4h27v12h12v44H2z"
-                                fill="#03D5CC" />
+                                d="M47.707 25.707l-1.561-1.414-7.146 7v1.414l7.146 7 1.488-1.414L42.414 33H64v-2H42.414zM16.293 38.293l1.561 1.414 7.146-7v-1.414l-7.146-7-1.488 1.414L21.586 31H0v2h21.586zM31.293 39l-7 7.146 1.414 1.488L31 42.414V64h2V42.414l5.293 5.293 1.414-1.561-7-7.146zM31 0v21.586l-5.293-5.293-1.414 1.561 7 7.146h1.414l7-7.146-1.414-1.488L33 21.586V0z"
+                                fill="#03D5CC" class="color000000 svgShape">
+                            </path>
+                        </svg>
+                    </p>
+                    <h3 class="centers-head">Obligations Library</h3>
+                    <p class="centers-para">
+                        Get an automatically generated, up-to-date, easy-to-read digital register of your firm’s
+                        regulatory
+                        obligations that
+                        keeps you ahead of regulatory change.
+                    </p>
+                </div>
+                <div class="col-sm-2">
+                    <p class="centers-svg">
+                        <br>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="Bookmark" width="50px"
+                            height="50px">
                             <path
-                                d="M64,0H54v54.236l5,10l5-10V0z M62,2v8h-6V2H62z M59,59.764l-3-6V12h6v41.764L59,59.764z"
-                                fill="#03D5CC" />
-                            <rect x="8" y="12" width="12" height="2" fill="#03D5CC" />
-                            <rect x="8" y="22" width="27" height="2" fill="#03D5CC" />
-                            <rect x="8" y="30" width="27" height="2" fill="#03D5CC" />
-                            <rect x="8" y="38" width="27" height="2" fill="#03D5CC" />
-                            <rect x="8" y="46" width="27" height="2" fill="#03D5CC" />
-                        </g>
-                    </svg>
-                </p>
-                <h3 class="centers-head">Scenario Planning</h3>
-                <p class="centers-para">
-                    Know the compliance obligations that will apply in any acquisition or expansion effort with Ascent’s
-                    powerful scenario
-                    planning software.
-                </p>
-            </div>
-            <div class="col-sm-2">
-                <p class="centers-svg"><br>
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px"
-                        viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-                        <g>
-                            <path
-                                d="M8,14.586V64h48V0H22.586L8,14.586z M22,3.414V14H11.414L22,3.414z M54,62H10V16h14V2h30V62z"
-                                fill="#03D5CC" />
-                            <path d="M22,35c0,3.86,3.141,7,7,7c1.569,0,3.016-0.526,4.185-1.402l7.108,7.109l1.414-1.414l-7.108-7.109
+                                d="M69 15H31c-1.1 0-2 .9-2 2v66c0 1.8 2.1 2.7 3.4 1.4L50 66.8l17.6 17.6c1 1 3.4.7 3.4-1.4V17c0-1.1-.9-2-2-2zm-2 63.2L51.4 62.6c-.8-.8-2-.8-2.8 0L33 78.2V19h34v59.2z"
+                                fill="#03D5CC" stroke-width="2" class="color000000 svgShape"></path>
+                            <path fill="#03D5CC" d="M664-930V754h-1784V-930H664m8-8h-1800V762H672V-938z"
+                                class="color0000ff svgShape"></path>
+                        </svg>
+                    </p>
+                    <h3 class="centers-head">Rule Compare</h3>
+                    <p class="centers-para">
+                        Take the pain out of regulatory changes with a side-by-side comparison of the new and former
+                        versions of
+                        a rule, with
+                        changes redlined..
+                    </p>
+                </div>
+                <div class="col-sm-2">
+                    <p class="centers-svg">
+                        <br><svg enable-background="new 0 0 64 64" height="50px" viewBox="0 0 64 64" width="50px"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" stroke="#03D5CC" stroke-miterlimit="10" stroke-width="2">
+                                <circle cx="21" cy="21" r="20" />
+                                <path d="m35 35 6 6" />
+                                <path d="m46.257 37.065h8.485v26.87h-8.485z"
+                                    transform="matrix(-.7071 .7071 -.7071 -.7071 121.9178 50.5)" />
+                            </g>
+                        </svg>
+                    </p>
+                    <h3 class="centers-head">Horizon Scanning</h3>
+                    <p class="centers-para">
+                        Gain a comprehensive understanding of your business’s regulatory requirements to make more
+                        informed
+                        decisions on new
+                        products or services.
+                    </p>
+                </div>
+                <div class="col-sm-2">
+                    <p class="centers-svg">
+                        <br>
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px"
+                            viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                            <g>
+                                <path
+                                    d="M43,14.586L30.414,2H0v60h43V14.586z M31,5.414L39.586,14H31V5.414z M2,60V4h27v12h12v44H2z"
+                                    fill="#03D5CC" />
+                                <path
+                                    d="M64,0H54v54.236l5,10l5-10V0z M62,2v8h-6V2H62z M59,59.764l-3-6V12h6v41.764L59,59.764z"
+                                    fill="#03D5CC" />
+                                <rect x="8" y="12" width="12" height="2" fill="#03D5CC" />
+                                <rect x="8" y="22" width="27" height="2" fill="#03D5CC" />
+                                <rect x="8" y="30" width="27" height="2" fill="#03D5CC" />
+                                <rect x="8" y="38" width="27" height="2" fill="#03D5CC" />
+                                <rect x="8" y="46" width="27" height="2" fill="#03D5CC" />
+                            </g>
+                        </svg>
+                    </p>
+                    <h3 class="centers-head">Scenario Planning</h3>
+                    <p class="centers-para">
+                        Know the compliance obligations that will apply in any acquisition or expansion effort with
+                        Ascent’s
+                        powerful scenario
+                        planning software.
+                    </p>
+                </div>
+                <div class="col-sm-2">
+                    <p class="centers-svg"><br>
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px"
+                            viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                            <g>
+                                <path
+                                    d="M8,14.586V64h48V0H22.586L8,14.586z M22,3.414V14H11.414L22,3.414z M54,62H10V16h14V2h30V62z"
+                                    fill="#03D5CC" />
+                                <path d="M22,35c0,3.86,3.141,7,7,7c1.569,0,3.016-0.526,4.185-1.402l7.108,7.109l1.414-1.414l-7.108-7.109
                         		C35.475,38.016,36,36.57,36,35c0-3.86-3.141-7-7-7S22,31.14,22,35z M29,30c2.757,0,5,2.243,5,5s-2.243,5-5,5s-5-2.243-5-5
                         		S26.243,30,29,30z" fill="#03D5CC" />
-                        </g>
-                    </svg>
-                </p>
-                <h3 class="centers-head">Audit Trail</h3>
-                <p class="centers-para">
-                    Know exactly where you stand in the event of an audit with Ascent’s comprehensive dashboard view of
-                    your
-                    active
-                    obligations.
-                </p>
+                            </g>
+                        </svg>
+                    </p>
+                    <h3 class="centers-head">Audit Trail</h3>
+                    <p class="centers-para">
+                        Know exactly where you stand in the event of an audit with Ascent’s comprehensive dashboard view
+                        of
+                        your
+                        active
+                        obligations.
+                    </p>
+                </div>
             </div>
-        </div>
+        </section>
     </div>
     <div class="container-fluid py-5 overall" style="background-color: #EFF4F9;">
-        <div class="row">
-            <div class="col-sm-8">
-                <h2 class="Gain-Compliance">Gain Compliance
-                    Confidence
-                    with Ascent’s Suite of Regulatory
-                    Change Management Tools</h2>
-            </div>
-            <div class="col-sm-4"></div>
-        </div>
-        <div class="container">
+        <section class="scroll-section">
             <div class="row">
-                <div class="col-sm-6">
-                    <div
-                        style="background-color: #D3FCFA;width: 50px;padding: 20px 55px 20px 20px;border-radius: 50%;margin-top: 5rem;">
-                        <span><svg role="presentation" version="1.1" xmlns="http://www.w3.org/2000/svg" width="36"
-                                height="36" viewBox="0 0 32 32">
-                                <path
-                                    d="M28.667 31.279c-0.147 0-0.295-0.049-0.416-0.145l-2.251-1.792-2.251 1.792c-0.2 0.161-0.472 0.193-0.705 0.080-0.231-0.112-0.377-0.345-0.377-0.601v-11.279c0-0.365-0.299-0.667-0.667-0.667-0.367 0-0.667-0.299-0.667-0.667 0-0.365 0.3-0.667 0.667-0.667h5.333c1.104 0 2 0.899 2 2v11.279c0 0.256-0.145 0.489-0.377 0.6-0.092 0.045-0.191 0.067-0.289 0.067zM26 27.823c0.147 0 0.295 0.047 0.417 0.143l1.583 1.263v-9.896c0-0.368-0.299-0.667-0.667-0.667h-3.445c0.073 0.207 0.112 0.433 0.112 0.667v9.896l1.584-1.261c0.123-0.096 0.271-0.144 0.416-0.144zM31.333 14c-0.367 0-0.667-0.299-0.667-0.667v-4c0-2.205-1.795-4-4-4h-11.167c-0.368 0-0.667-0.299-0.667-0.667 0-1.041-1.652-3.333-3.417-3.333h-6.667c-1.755 0-3.416 1.823-3.416 3.751v8.251c0 0.368-0.299 0.667-0.667 0.667s-0.667-0.299-0.667-0.667v-8.251c0-2.66 2.263-5.084 4.751-5.084h6.667c2.231 0 4.22 2.26 4.66 4h10.589c2.943 0 5.333 2.392 5.333 5.333v4c0 0.368-0.299 0.667-0.667 0.667zM4.695 32c-2.612 0-4.695-2.081-4.695-4.639v-14.028c0-0.368 0.299-0.667 0.667-0.667s0.667 0.299 0.667 0.667v14.028c0 1.823 1.483 3.305 3.305 3.305 1.88 0 3.361-1.483 3.361-3.305v-14.695c0-2.573 2.093-4.667 4.667-4.667h14.667c2.575 0 4.667 2.093 4.667 4.667v2c0 0.368-0.299 0.667-0.667 0.667-0.367 0-0.667-0.299-0.667-0.667v-2c0-1.837-1.495-3.333-3.333-3.333h-14.667c-1.836 0-3.333 1.496-3.333 3.333v14.695c0 2.557-2.081 4.639-4.639 4.639zM18.667 32h-13.333c-0.368 0-0.667-0.3-0.667-0.667s0.3-0.667 0.667-0.667h13.333c0.368 0 0.667 0.3 0.667 0.667s-0.299 0.667-0.667 0.667z"
-                                    fill="#03D5CC">
-                                </path>
-                            </svg></span>
-                    </div>
-                    <div class="pt-5">
-                        <h2 style="-webkit-text-stroke-width: thin;
-                    color: #253859;" class="overall">Obligations Management</h2>
-                        <p style="color: #253859; font-size: 18px;">
-                            Run your entire compliance program from a centralized location that includes customizable
-                            risk taxonomy, powerful filters, easy to act upon obligations and audit trail capabilities.
-                        </p>
-                    </div>
+                <div class="col-sm-8">
+                    <h2 class="Gain-Compliance">Gain Compliance
+                        Confidence
+                        with Ascent’s Suite of Regulatory
+                        Change Management Tools</h2>
                 </div>
-                <div class="col-sm-6">
-                    <div
-                        style="background-color: #D3FCFA;width: 50px;padding: 20px 55px 20px 20px;border-radius: 50%;margin-top: 5rem;">
-                        <span><svg role="presentation" version="1.1" xmlns="http://www.w3.org/2000/svg" width="36"
-                                height="36" viewBox="0 0 32 32">
-                                <path
-                                    d="M31.333 29.976c-0.055 0-0.108-0.005-0.161-0.021l-10.505-2.624-10.505 2.625c-0.113 0.028-0.233 0.027-0.344-0.005l-9.333-2.667c-0.287-0.084-0.484-0.344-0.484-0.641v-16c0-0.209 0.099-0.407 0.265-0.532 0.167-0.124 0.385-0.165 0.584-0.108l9.163 2.617 3.453-0.863c0.353-0.093 0.719 0.127 0.808 0.485 0.089 0.357-0.128 0.719-0.485 0.808l-3.627 0.907c-0.113 0.029-0.233 0.027-0.344-0.005l-8.484-2.424v14.612l8.679 2.479 10.493-2.625c0.105-0.027 0.217-0.027 0.323 0l9.839 2.463v-14.624l-6.697-1.675c-0.357-0.089-0.575-0.451-0.484-0.808 0.087-0.359 0.449-0.579 0.807-0.485l7.203 1.801c0.297 0.075 0.505 0.34 0.505 0.647v16c0 0.203-0.095 0.399-0.255 0.527-0.12 0.091-0.267 0.137-0.412 0.137zM18.688 19.013c-0.137 0-0.273-0.041-0.391-0.128-0.255-0.188-6.261-4.607-6.261-10.228 0-3.721 2.921-6.635 6.652-6.635 3.732 0 6.652 2.915 6.652 6.635 0 5.621-6.005 10.044-6.261 10.228-0.115 0.087-0.253 0.128-0.391 0.128zM18.688 3.357c-2.983 0-5.319 2.329-5.319 5.301 0 4.168 4.029 7.791 5.319 8.841 1.289-1.055 5.319-4.672 5.319-8.841 0-2.972-2.337-5.301-5.319-5.301zM18.688 11.309c-1.471 0-2.667-1.196-2.667-2.667s1.196-2.667 2.667-2.667c1.472 0 2.667 1.196 2.667 2.667s-1.196 2.667-2.667 2.667zM18.688 7.309c-0.735 0-1.333 0.599-1.333 1.333s0.599 1.333 1.333 1.333 1.333-0.599 1.333-1.333-0.6-1.333-1.333-1.333zM10 29.309c-0.368 0-0.667-0.3-0.667-0.667v-14.667c0-0.368 0.299-0.667 0.667-0.667s0.667 0.299 0.667 0.667v14.667c0 0.368-0.299 0.667-0.667 0.667zM20.667 26.643c-0.367 0-0.667-0.3-0.667-0.667v-9.333c0-0.367 0.3-0.667 0.667-0.667s0.667 0.3 0.667 0.667v9.333c0 0.368-0.3 0.667-0.667 0.667z"
-                                    fill="#03D5CC">
-                                </path>
-                            </svg></span>
+                <div class="col-sm-4"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div
+                            style="background-color: #D3FCFA;width: 50px;padding: 20px 55px 20px 20px;border-radius: 50%;margin-top: 5rem;">
+                            <span><svg role="presentation" version="1.1" xmlns="http://www.w3.org/2000/svg" width="36"
+                                    height="36" viewBox="0 0 32 32">
+                                    <path
+                                        d="M28.667 31.279c-0.147 0-0.295-0.049-0.416-0.145l-2.251-1.792-2.251 1.792c-0.2 0.161-0.472 0.193-0.705 0.080-0.231-0.112-0.377-0.345-0.377-0.601v-11.279c0-0.365-0.299-0.667-0.667-0.667-0.367 0-0.667-0.299-0.667-0.667 0-0.365 0.3-0.667 0.667-0.667h5.333c1.104 0 2 0.899 2 2v11.279c0 0.256-0.145 0.489-0.377 0.6-0.092 0.045-0.191 0.067-0.289 0.067zM26 27.823c0.147 0 0.295 0.047 0.417 0.143l1.583 1.263v-9.896c0-0.368-0.299-0.667-0.667-0.667h-3.445c0.073 0.207 0.112 0.433 0.112 0.667v9.896l1.584-1.261c0.123-0.096 0.271-0.144 0.416-0.144zM31.333 14c-0.367 0-0.667-0.299-0.667-0.667v-4c0-2.205-1.795-4-4-4h-11.167c-0.368 0-0.667-0.299-0.667-0.667 0-1.041-1.652-3.333-3.417-3.333h-6.667c-1.755 0-3.416 1.823-3.416 3.751v8.251c0 0.368-0.299 0.667-0.667 0.667s-0.667-0.299-0.667-0.667v-8.251c0-2.66 2.263-5.084 4.751-5.084h6.667c2.231 0 4.22 2.26 4.66 4h10.589c2.943 0 5.333 2.392 5.333 5.333v4c0 0.368-0.299 0.667-0.667 0.667zM4.695 32c-2.612 0-4.695-2.081-4.695-4.639v-14.028c0-0.368 0.299-0.667 0.667-0.667s0.667 0.299 0.667 0.667v14.028c0 1.823 1.483 3.305 3.305 3.305 1.88 0 3.361-1.483 3.361-3.305v-14.695c0-2.573 2.093-4.667 4.667-4.667h14.667c2.575 0 4.667 2.093 4.667 4.667v2c0 0.368-0.299 0.667-0.667 0.667-0.367 0-0.667-0.299-0.667-0.667v-2c0-1.837-1.495-3.333-3.333-3.333h-14.667c-1.836 0-3.333 1.496-3.333 3.333v14.695c0 2.557-2.081 4.639-4.639 4.639zM18.667 32h-13.333c-0.368 0-0.667-0.3-0.667-0.667s0.3-0.667 0.667-0.667h13.333c0.368 0 0.667 0.3 0.667 0.667s-0.299 0.667-0.667 0.667z"
+                                        fill="#03D5CC">
+                                    </path>
+                                </svg></span>
+                        </div>
+                        <div class="pt-5">
+                            <h2 style="-webkit-text-stroke-width: thin;
+                    color: #253859;" class="overall">Obligations Management</h2>
+                            <p style="color: #253859; font-size: 18px;">
+                                Run your entire compliance program from a centralized location that includes
+                                customizable
+                                risk taxonomy, powerful filters, easy to act upon obligations and audit trail
+                                capabilities.
+                            </p>
+                        </div>
                     </div>
-                    <div class="pt-5">
-                        <h2 style="-webkit-text-stroke-width: thin;
+                    <div class="col-sm-6">
+                        <div
+                            style="background-color: #D3FCFA;width: 50px;padding: 20px 55px 20px 20px;border-radius: 50%;margin-top: 5rem;">
+                            <span><svg role="presentation" version="1.1" xmlns="http://www.w3.org/2000/svg" width="36"
+                                    height="36" viewBox="0 0 32 32">
+                                    <path
+                                        d="M31.333 29.976c-0.055 0-0.108-0.005-0.161-0.021l-10.505-2.624-10.505 2.625c-0.113 0.028-0.233 0.027-0.344-0.005l-9.333-2.667c-0.287-0.084-0.484-0.344-0.484-0.641v-16c0-0.209 0.099-0.407 0.265-0.532 0.167-0.124 0.385-0.165 0.584-0.108l9.163 2.617 3.453-0.863c0.353-0.093 0.719 0.127 0.808 0.485 0.089 0.357-0.128 0.719-0.485 0.808l-3.627 0.907c-0.113 0.029-0.233 0.027-0.344-0.005l-8.484-2.424v14.612l8.679 2.479 10.493-2.625c0.105-0.027 0.217-0.027 0.323 0l9.839 2.463v-14.624l-6.697-1.675c-0.357-0.089-0.575-0.451-0.484-0.808 0.087-0.359 0.449-0.579 0.807-0.485l7.203 1.801c0.297 0.075 0.505 0.34 0.505 0.647v16c0 0.203-0.095 0.399-0.255 0.527-0.12 0.091-0.267 0.137-0.412 0.137zM18.688 19.013c-0.137 0-0.273-0.041-0.391-0.128-0.255-0.188-6.261-4.607-6.261-10.228 0-3.721 2.921-6.635 6.652-6.635 3.732 0 6.652 2.915 6.652 6.635 0 5.621-6.005 10.044-6.261 10.228-0.115 0.087-0.253 0.128-0.391 0.128zM18.688 3.357c-2.983 0-5.319 2.329-5.319 5.301 0 4.168 4.029 7.791 5.319 8.841 1.289-1.055 5.319-4.672 5.319-8.841 0-2.972-2.337-5.301-5.319-5.301zM18.688 11.309c-1.471 0-2.667-1.196-2.667-2.667s1.196-2.667 2.667-2.667c1.472 0 2.667 1.196 2.667 2.667s-1.196 2.667-2.667 2.667zM18.688 7.309c-0.735 0-1.333 0.599-1.333 1.333s0.599 1.333 1.333 1.333 1.333-0.599 1.333-1.333-0.6-1.333-1.333-1.333zM10 29.309c-0.368 0-0.667-0.3-0.667-0.667v-14.667c0-0.368 0.299-0.667 0.667-0.667s0.667 0.299 0.667 0.667v14.667c0 0.368-0.299 0.667-0.667 0.667zM20.667 26.643c-0.367 0-0.667-0.3-0.667-0.667v-9.333c0-0.367 0.3-0.667 0.667-0.667s0.667 0.3 0.667 0.667v9.333c0 0.368-0.3 0.667-0.667 0.667z"
+                                        fill="#03D5CC">
+                                    </path>
+                                </svg></span>
+                        </div>
+                        <div class="pt-5">
+                            <h2 style="-webkit-text-stroke-width: thin;
                     color: #253859;" class="overall">Regulatory Change Management</h2>
-                        <p style="color: #253859; font-size: 18px;">
-                            Empower compliance teams to take action immediately on new and updated obligations without
-                            first spending hours sifting through regulatory PDFs.
-                        </p>
+                            <p style="color: #253859; font-size: 18px;">
+                                Empower compliance teams to take action immediately on new and updated obligations
+                                without
+                                first spending hours sifting through regulatory PDFs.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
     <div class="container">
         <div class="row">
@@ -1052,7 +1162,7 @@
                 <h3 class="regulatory">Regulatory Coverage<br> Bundles Built for Your
                     Industry</h3>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 contaier2">
                 <div class="container" style="margin-top: 125px; width: 30rem;height: 350px;">
                     <div class="card" style=" background-color: #03d5cc;">
                         <div class="card-body">
@@ -1075,8 +1185,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="container" style="margin-top: 125px;margin-left: 4rem; width: 30rem;height: 350px;">
+            <div class="col-sm-3 contaier">
+                <div class="container " style="margin-top: 125px;margin-left: 4rem; width: 30rem;height: 350px;">
                     <div class="card" style=" background-color: #03d5cc;">
                         <div class="card-body">
                             <svg style="margin-top: 20px;" role="presentation" version="1.1"
@@ -1121,7 +1231,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3" style="margin-left: 4rem; ">
+            <div class="col-sm-3 contaier1" style="margin-left: 4rem; ">
                 <div class="container" style="margin-top: 50px;width: 30rem;height: 350px;">
                     <div class="card" style=" background-color: #03d5cc;">
                         <div class="card-body">
@@ -1151,93 +1261,134 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="text-center" style=" color: white;">
-                        <p style="font-size: 1.2rem; margin-top: 120px; ">Turn compliance into a competitive advantage
-                        </p>
-                        <h1 style="font-weight:900">Talk to a solutions specialist today</h1>
-                        <div class="pt-2">
-                            <button class="btn text-white" id="buttonlearn-work"><span
-                                    style="font-size: .8rem;font-weight: 500; padding: 5px;"><b>REQUEST
-                                        DEMO</b></span></button>
+                    <section class="scroll-section">
+                        <div class="text-center" style=" color: white;">
+                            <p style="font-size: 1.2rem; margin-top: 120px; ">Turn compliance into a competitive
+                                advantage
+                            </p>
+                            <h1 style="font-weight:900">Talk to a solutions specialist today</h1>
+                            <div class="pt-2">
+                                <button class="btn text-white" id="buttonlearn-work"><span
+                                        style="font-size: .8rem;font-weight: 500; padding: 5px;"><b>REQUEST
+                                            DEMO</b></span></button>
+                            </div>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </div>
         </div>
     </div>
     <!-- main content end -->
     <!-- fotter -->
-    <div class="container-fluid" style="background-color: #253859; ">
+    <div class="container-fluid" style="background-color: #253859">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mt-5">
-                    <img src="../ascent-regtech/images/footer.png" alt="">
-                    <h5 style="color: #03D5CC;">Compliance, Uncomplicated.</h5>
+                    <img src="images/footer.png" alt="" />
+                    <h5 style="color: #03d5cc; margin-top: 15px">
+                        Compliance, Uncomplicated.
+                    </h5>
                 </div>
                 <div class="col-md-4 mt-5">
                     <div class="row">
                         <div class="col-6">
-                            <p style="color: white;"><strong>Platform</strong></p>
-                            <p style="color: white;">Our Approach</p>
-                            <p style="color: white;">Our Data</p>
-                            <p style="color: white;">Regulators</p>
-                            <p style="color: white;">Technology Partners</p>
+                            <p style="color: white"><strong>Platform</strong></p>
+                            <p style="padding-top: 10px; font-size: 15px">
+                                <a href="OurApproach/OurApproach.html" id="footer-hover">Our Approach</a>
+                            </p>
+                            <p style="padding-top: 10px; font-size: 15px">
+                                <a href="OurData/OurData.html" id="footer-hover">Our Data</a>
+                            </p>
+                            <p style="padding-top: 10px; font-size: 15px">
+                                <a href="Regulators/Regulators.html" id="footer-hover">Regulators</a>
+                            </p>
+                            <p style="padding-top: 10px; font-size: 15px">
+                                <a href="TechnologyPartners/TechnologyPartners.html" id="footer-hover">Technology
+                                    Partners</a>
+                            </p>
                         </div>
                         <div class="col-6">
-                            <p style="color: white;"><strong>Capabilities</strong></p>
-                            <p style="color: white;">Obligations Inventory</p>
-                            <p style="color: white;">Scenario Planning</p>
-                            <p style="color: white;">Horizon Scanning</p>
-                            <p style="color: white;">Audit Trail</p>
+                            <p style="color: white"><strong>Capabilities</strong></p>
+                            <p style="padding-top: 10px; font-size: 15px">
+                                <a href="Oligation-Inventory/obligations.html" id="footer-hover">Obligations
+                                    Inventory</a>
+                            </p>
+                            <p style="padding-top: 10px; font-size: 15px">
+                                <a href="Scenario-planning/scenerio.html" id="footer-hover">Scenario Planning</a>
+                            </p>
+                            <p style="padding-top: 10px; font-size: 15px">
+                                <a href="Horizon-Scanning/horizonScanning.html" id="footer-hover">Horizon
+                                    Scanning</a>
+                            </p>
+                            <p style="padding-top: 10px; font-size: 15px">
+                                <a href="Audit-Trail/Audit.html" id="footer-hover">Audit Trail</a>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mt-5">
                     <div class="row">
                         <div class="col-6">
-                            <p style="color: white;"><strong>Resources</strong></p>
-                            <p style="color: white;">Our Approach</p>
-                            <p style="color: white;">Our Data</p>
-                            <p style="color: white;">Regulators</p>
-                            <p style="color: white;">Technology Partners</p>
+                            <p style="color: white"><strong>Resources</strong></p>
+                            <p style="padding-top: 10px; font-size: 15px">
+                                <a href="WhatisReg/whatis.html" id="footer-hover">What is RegTech?</a>
+                            </p>
+                            <p style="padding-top: 10px; font-size: 15px">
+                                <a href="Blogs/blogs.html" id="footer-hover">Blog</a>
+                            </p>
+                            <p style="padding-top: 10px; font-size: 15px">
+                                <a href="Resources/Resources.html" id="footer-hover">Resources</a>
+                            </p>
+                            <p style="padding-top: 10px; font-size: 15px">
+                                <a href="Customer-Stories/Customerstories.html" id="footer-hover">Customer
+                                    Stories</a>
+                            </p>
                         </div>
                         <div class="col-6">
-                            <p style="color: white;"><strong>Capabilities</strong></p>
-                            <p style="color: white;">Obligations Inventory</p>
-                            <p style="color: white;">Scenario Planning</p>
-                            <p style="color: white;">Horizon Scanning</p>
-                            <p style="color: white;">Audit Trail</p>
+                            <p style="color: white"><strong>Company</strong></p>
+                            <p style="padding-top: 10px; font-size: 15px">
+                                <a href="OurTeam/ourteam.html" id="footer-hover">Our Team</a>
+                            </p>
+                            <p style="padding-top: 10px; font-size: 15px">
+                                <a href="Careers/Careers.html" id="footer-hover">Careers</a>
+                            </p>
+                            <p style="padding-top: 10px; font-size: 15px">
+                                <a href="Careers/Careers.html" id="footer-hover">Culture</a>
+                            </p>
                         </div>
+                        <div style="height: 80px"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid" style="background-color: #253859;    border-top: 1px solid #FFFFFF;">
+    <div class="container-fluid" style="background-color: #253859; border-top: 1px solid #ffffff">
         <div class="container">
-            <div class="row p-3">
-                <div class="col-md-1"></div>
+            <div class="row py-3">
+                <!-- <div class="col-md-1"></div> -->
                 <div class="col-md-4">
-                    <p style="color: white;font-size: 12px;">© 2023 Ascent RegTech. All Rights Reserved.</p>
+                    <p style="color: white; font-size: 12px">
+                        © 2023 Ascent RegTech. All Rights Reserved.
+                    </p>
                 </div>
-                <div class="col-md-4"></div>
-                <div class="col-md-3">
-                    <span style="color: white;padding-right: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                <div class="col-md-6"></div>
+                <div class="col-md-2">
+                    <span style="color: white; padding-right: 12px"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                             height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
                             <path
                                 d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
                         </svg></span>
-                    <span style="color: white;padding-right: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    <span style="color: white; padding-right: 12px"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                             height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
                             <path
                                 d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
                         </svg></span>
-                    <span style="color: white;padding-right: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    <span style="color: white; padding-right: 12px"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                             height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                             <path
                                 d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
                         </svg></span>
-                    <span style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    <span style="color: white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
                             <path
                                 d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
@@ -1274,6 +1425,25 @@
         }
     // first div scroll animation
     </Script>
+    <script>
+        $(window).on("scroll", function () {
+            $(".scroll-section").each(function () {
+                if (isElementInViewport(this)) {
+                    $(this).addClass("visible");
+                }
+            });
+        });
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <=
+                (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+    </script>
     <!-- main content end -->
 </body>
 
