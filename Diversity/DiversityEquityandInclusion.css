@@ -28,24 +28,51 @@ td {
   animation-duration: 1s;
 }
 
-/* .box-container {
-  box-sizing: border-box;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
- 
-} */
-
-/* .col-md-4 .inclusioncard {
-background-color: orange;
+#group_img{
+  animation-name: slide-in-right1;
+  animation-duration: 1s;
 }
-.col-4 .inclusioncard {
- background-color: brown;
-} */
-/* @media screen and (max-width: 600px) {
-  .col-4 {
-    font-size: 2px !important;
+@keyframes slide-in-right1{
+  from {
+    transform: translateX(-50%);
   }
-} */
+  to{
+    transform: translateX(0);
+  }
+}
+
+
+#top-content{
+  animation-duration: 0.5s;
+  animation-name: slide-in-right2;
+}
+@keyframes slide-in-right2{
+  from {
+    transform: translateX(-50%);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+#slider1{
+  animation-duration: 0.5s;
+  animation-name: slide-in-left1;
+}
+@keyframes slide-in-left1{
+  from {
+    transform: translateX(50%);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+#hoveran{
+  color: #03d5cc;
+  text-align: center;
+  }
+#hoveran:hover{
+color: #253859;
+}
+#hover-h2:hover{
+  /* color: #253859; */
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 120 100">
+  <defs>
+    <style>.cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7{fill:none;stroke-miterlimit:10;stroke-width:2px;}.cls-1{stroke:#153d65;}.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7{stroke:#9dd7cb;}.cls-3{stroke-dasharray:1.78 1.78;}.cls-4{stroke-dasharray:1.78 1.78;}.cls-5{stroke-dasharray:1.78 1.78;}.cls-6{stroke-dasharray:1.78 1.78;}.cls-7{stroke-dasharray:1.78 1.78;}</style>
+  </defs>
+  <title>ascent_icon-11</title>
+  <polygon class="cls-1" points="60 14 71.97 38.26 98.75 42.15 79.37 61.03 83.94 87.7 60 75.11 36.05 87.7 40.63 61.03 21.25 42.15 48.03 38.26 60 14"/>
+  <polyline class="cls-2" points="60.88 68.79 60 68.33 59.12 68.79"/>
+  <line class="cls-3" x1="57.54" y1="69.62" x2="45.7" y2="75.85"/>
+  <polyline class="cls-2" points="44.91 76.26 44.02 76.73 44.19 75.74"/>
+  <line class="cls-4" x1="44.49" y1="73.99" x2="46.76" y2="60.8"/>
+  <polyline class="cls-2" points="46.91 59.92 47.08 58.94 46.36 58.24"/>
+  <line class="cls-5" x1="45.08" y1="57" x2="35.5" y2="47.66"/>
+  <polyline class="cls-2" points="34.87 47.04 34.15 46.34 35.14 46.2"/>
+  <line class="cls-6" x1="36.9" y1="45.94" x2="50.14" y2="44.02"/>
+  <polyline class="cls-2" points="51.02 43.89 52.01 43.74 52.45 42.85"/>
+  <line class="cls-7" x1="53.24" y1="41.25" x2="59.16" y2="29.25"/>
+  <polyline class="cls-2" points="59.56 28.45 60 27.56 60.44 28.45"/>
+  <line class="cls-7" x1="61.23" y1="30.05" x2="67.15" y2="42.05"/>
+  <polyline class="cls-2" points="67.55 42.85 67.99 43.74 68.98 43.89"/>
+  <line class="cls-6" x1="70.74" y1="44.14" x2="83.98" y2="46.07"/>
+  <polyline class="cls-2" points="84.86 46.2 85.85 46.34 85.14 47.04"/>
+  <line class="cls-5" x1="83.86" y1="48.28" x2="74.28" y2="57.62"/>
+  <polyline class="cls-2" points="73.64 58.24 72.92 58.94 73.09 59.92"/>
+  <line class="cls-4" x1="73.4" y1="61.68" x2="75.66" y2="74.86"/>
+  <polyline class="cls-2" points="75.81 75.74 75.98 76.73 75.09 76.26"/>
+  <line class="cls-3" x1="73.51" y1="75.43" x2="61.67" y2="69.21"/>
+</svg>
