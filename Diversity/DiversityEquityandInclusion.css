@@ -86,6 +86,13 @@ td {
 #hoveran:hover{
 color: #253859;
 }
+#footer-hover:hover{
+  color: #28BEBB;
+  }
+  #footer-hover{
+      text-decoration: none;
+      color: white;
+  }
 
 
 
