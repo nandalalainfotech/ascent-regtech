@@ -21,123 +21,13 @@
 }
 
 
-/* @media only screen and (min-width: 300px) and (max-width: 560px)   {
-  @keyframes nectarStrokeAnimation {
-    0% {
-        stroke-dashoffset: 1;
-        opacity: 0;
-    }
-    1% {
-        opacity: 1;
-    }
-    100% {
-        stroke-dashoffset: 0;
-    }
+#footer-hover:hover{
+  color: #28BEBB;
+  }
+#footer-hover{
+  text-decoration: none;
+  color: white;
 }
-.nectar-highlighted-text .nectar-scribble {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 2;
-}
-.nectar-highlighted-text em.animated .nectar-scribble path {
-    stroke-linecap: round;
-    opacity: 1;
-    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-}
-.nectar-highlighted-text .nectar-scribble path {
-    stroke-dasharray: 1;
-    stroke-dashoffset: 1;
-    opacity: 0;
-}
-.nectar-highlighted-text em.animated .nectar-scribble path {
-    stroke-linecap: round;
-    opacity: 1;
-    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-}
-.nectar-highlighted-text[data-style="scribble"] em {
-    background-image: none !important;
-}
-body .nectar-scribble.squiggle-underline {
-    width: 60px;
-    height: 22px;
-}
-.nectar-highlighted-text .nectar-scribble {
-    position: absolute;
-    top: 45px;
-    left: 0px;
-    z-index: 7;
-}
-
-.nectar-highlighted-text .nectar-scribble path {
-    stroke-dasharray: 1;
-    stroke-dashoffset: 1;
-    opacity: 0;
-}
-.nectar-highlighted-text em.animated .nectar-scribble path {
-    stroke-linecap: round;
-    opacity: 1;
-    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-}
-} */
-
-/* @media only screen and (min-width: 300px) and (max-width: 560px)   {
-  @keyframes nectarStrokeAnimation {
-    0% {
-        stroke-dashoffset: 1;
-        opacity: 0;
-    }
-    1% {
-        opacity: 1;
-    }
-    100% {
-        stroke-dashoffset: 0;
-    }
-}
-.nectar1-highlighted-text .nectar1-scribble {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-}
-.nectar1-highlighted-text em.animated .nectar1-scribble path {
-    stroke-linecap: round;
-    opacity: 1;
-    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-}
-.nectar1-highlighted-text .nectar1-scribble path {
-    stroke-dasharray: 1;
-    stroke-dashoffset: 1;
-    opacity: 0;
-}
-.nectar1-highlighted-text em.animated .nectar1-scribble path {
-    stroke-linecap: round;
-    opacity: 1;
-    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-}
-.nectar1-highlighted-text[data-style="scribble"] em {
-    background-image: none !important;
-}
-body .nectar1-scribble.squiggle-underline {
-    width: 28px;
-    height: 25px;
-}
-.nectar1-highlighted-text .nectar1-scribble {
-    position: absolute;
-    z-index:7;
-}
-
-.nectar1-highlighted-text .nectar1-scribble path {
-    stroke-dasharray: 1;
-    stroke-dashoffset: 1;
-    opacity: 0;
-}
-.nectar1-highlighted-text em.animated .nectar1-scribble path {
-    stroke-linecap: round;
-    opacity: 1;
-    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-}
-} */
 
 
 
