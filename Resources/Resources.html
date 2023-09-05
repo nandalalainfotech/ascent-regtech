@@ -70,6 +70,72 @@
         opacity: 1;
         transform: translateY(0);
     }
+
+    .cssanimation,
+    .cssanimation span {
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+
+    .cssanimation span {
+        display: inline-block;
+    }
+
+    .fadeInBottom {
+        animation-name: fadeInBottom;
+    }
+
+    @keyframes fadeInBottom {
+        from {
+            opacity: 0;
+            transform: translateY(100%);
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes nectarStrokeAnimation {
+        0% {
+            stroke-dashoffset: 1;
+            opacity: 0;
+        }
+
+        1% {
+            opacity: 1;
+        }
+
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+
+
+    .hover-underline-animation {
+        position: relative;
+    }
+
+    .hover-underline-animation:after {
+        content: '';
+        position: absolute;
+        width: 22%;
+        transform: scaleX(0);
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: #03D5CC;
+        transform-origin: bottom right;
+        transition: transform 0.10s ease-out;
+        margin-bottom: 20px;
+    }
+
+    .hover-underline-animation:hover:after {
+        transform: scaleX(4);
+        transform-origin: bottom left;
+        margin-bottom: 20px;
+    }
 </style>
 
 <body>
@@ -84,7 +150,7 @@
             <div class="line3"></div>
         </div>
         <ul class="nav-links">
-            <li class="show" style="padding: 1rem"> <span class="line">
+            <li class="show1" style="padding: 1rem"> <span class="line">
                     <a href="../PlatForm-page/PlatForm.html"
                         style="text-decoration: none;color: #253859;">Platform</a></span>
                 <ul id="submenu">
@@ -94,7 +160,7 @@
                     <a href="../TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
                 </ul>
             </li>
-            <li class="show" style="padding: 1rem;"><span class="line">
+            <li class="show1" style="padding: 1rem;"><span class="line">
                     <a href="" style="text-decoration: none;color: #253859;">Capabilities</a></span>
                 <ul id="submenu">
                     <a href="../Oligation-Inventory/obligations.html">Obligations Inventory</a>
@@ -104,7 +170,7 @@
                     <a href="../Explore/explore.html">Explore Use Cases</a>
                 </ul>
             </li>
-            <li class="show" style="padding: 1rem;"><span class="line"><a href=""
+            <li class="show1" style="padding: 1rem;"><span class="line"><a href=""
                         style="text-decoration: none;color: #253859;">Who We Serve</a></span>
                 <ul id="submenu">
                     <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
@@ -113,7 +179,7 @@
                     <a href="../Professional/professional.html">Professional Services</a>
                 </ul>
             </li>
-            <li class="show" style="padding: 1rem"><span class="line">
+            <li class="show1" style="padding: 1rem"><span class="line">
                     <a href="" style="text-decoration: none;color: #253859;">Resources</a></span>
                 <ul id="submenu">
                     <a href="#">What is RegTech?</a>
@@ -122,7 +188,7 @@
                     <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
                 </ul>
             </li>
-            <li class="show" style="padding: 1rem"><span class="line">
+            <li class="show1" style="padding: 1rem"><span class="line">
                     <a href="" style="text-decoration: none;color: #253859;">Company</a></span>
                 <ul id="submenu">
                     <a href="../OurTeam/ourteam.html">Our Team</a>
@@ -130,15 +196,15 @@
                     <a href="../Careers/Careers.html">Careers</a>
                 </ul>
             </li>
-            <li class="login-button show"><a href="../Signin/sign.html"
+            <li class="login-button show1"><a href="../Signin/sign.html"
                     style="text-decoration: none;color: #253859;">Sign
                     In</a>
             </li>
-            <li class="join-button show"><a href="../ContactUs/contact-us.html"
+            <li class="join-button show1"><a href="../ContactUs/contact-us.html"
                     style="text-decoration: none;color: #fff;">
                     Contact Us
                 </a></li>
-            <li class="show" style="display: none; font-size: xx-small;">Ascent RegTech</li>
+            <li class="show1" style="display: none; font-size: xx-small;">Ascent RegTech</li>
         </ul>
     </nav>
     <div class="container-fluid">
@@ -157,17 +223,15 @@
                                             d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
                                             stroke="#03D5CC" pathLength="1" stroke-width="16" fill="none"></path>
                                     </svg></em></h1>
-                            <section class="scroll-section">
-                                <h2 style="font-weight: 700;color: #253859;margin-top: 20px;font-size: 24px;">
-                                    Explore
+                            <div>
+                                <h2 style="font-weight: 700;color: #253859;margin-top: 20px;font-size: 24px;"
+                                    class="cssanimation sequence fadeInBottom"> Explore
                                     Ascent's
                                     library of carefully
                                     crafted resources
                                     to support your compliance
-                                    team as it grows.
-                                </h2>
-                            </section>
-                            <!-- </div> -->
+                                    team as it grows.</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -185,7 +249,8 @@
             </div>
             <div class="col-sm-7" style="margin-left: 40px;">
                 <ul class="nav" id="myDIV">
-                    <li href="#" class="hover-underline-animation">All</li>
+                    <li href="#" style="text-decoration: 2px solid underline;text-decoration-color: #03D5CC;">
+                        All</li>
                     <li href="#" class="hover-underline-animation">Double Check</li>
                     <li href="#" class="hover-underline-animation">E-book</li>
                     <li href="#" class="hover-underline-animation">Guide</li>
@@ -254,7 +319,7 @@
                     <img class="card-img-top" src="../Resources/Digitalizing-Compliance-in-2023-.png" alt="Card image"
                         style="width:100%;height: 200px;border-radius: 10px;">
                     <h4 id="doubles" class="hover-underline-text">Whitepaper</h4>
-                    <h3 class="double">What Every CCO Must know Digitalizing Compliance
+                    <h3 class="double">What Every CCO Must know About Digitalizing Compliance
                     </h3>
                 </div>
             </div>
