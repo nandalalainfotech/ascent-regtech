@@ -15,15 +15,13 @@
 </head>
 <style>
     .row1 {
-        background-color: #eff4f9;
-        height: 35rem !important;
+        display: none;
     }
 
     /* first div vedio start */
     .index-head {
-        margin-top: 11rem !important;
+        margin-top: 9rem !important;
         margin-left: 7rem !important;
-        font-weight: 900 !important;
         font-size: 42px !important;
         -webkit-text-stroke: thin;
     }
@@ -40,7 +38,7 @@
 
     .vedio,
     .nectar-video-self-hosted {
-        margin-top: 11rem !important;
+        margin-top: 9rem !important;
         /* margin-left: 7rem !important; */
         border-radius: 10px !important;
         box-shadow: 15px 15px 15px 5px #e7e4e4;
@@ -58,6 +56,7 @@
         margin: 0 0 10px;
         border-radius: 5px;
         transition-duration: 0.4s;
+        z-index: 5;
         cursor: pointer;
     }
 
@@ -65,15 +64,20 @@
         background-color: inherit;
         color: #03d5cc;
         width: 10rem;
+        z-index: 5;
         border: 2px solid #03d5cc;
         text-transform: uppercase !important;
+        position: absolute;
+        margin-left: 0.5rem;
     }
 
     .button3 {
         background-color: #03d5cc;
         height: 2.5rem;
+        z-index: 5 !important;
         margin-left: 7rem !important;
         text-transform: uppercase !important;
+        position: relative;
     }
 
     .button3:hover {
@@ -89,14 +93,13 @@
     /* first div vedio end */
     /* second div */
     .center {
-        margin-top: -13rem;
+        margin-top: -15rem;
         text-align: center;
         color: #253859;
         text-transform: none;
         letter-spacing: -0.01em;
         font-size: 29px;
         line-height: 27px;
-        font-weight: 900;
         margin-left: 20rem !important;
         margin-right: 15rem !important;
         -webkit-text-stroke: 1.5px;
@@ -190,7 +193,8 @@
     /* fifth div */
     .centers-para {
         margin-top: 1rem;
-        line-height: 2rem;
+        letter-spacing: -0.02em;
+        line-height: 30px;
         text-align: center;
         color: #253859;
         font-size: 17px;
@@ -205,7 +209,7 @@
         letter-spacing: -0.04em;
         font-size: 25px;
         line-height: 30px;
-        font-weight: 500;
+        font-weight: inherit;
         color: #253859 !important;
     }
 
@@ -292,8 +296,9 @@
         color: #253859;
         margin-top: 20px;
         font-family: Mulish;
-        font-size: 2.4rem;
+        font-size: 2rem;
         -webkit-text-stroke: thin;
+        margin-left: 4rem;
     }
 
 
@@ -303,18 +308,25 @@
         }
 
         /* first div */
+        .row2{
+            display: none;
+        }
+        .row1{
+            display: block;
+        }
         .index-head {
             text-align: start !important;
             color: #253859;
             font-size: 2rem !important;
-            font-weight: 900;
             margin-left: 1rem !important;
             margin-top: 5rem !important;
+            overflow-y: hidden;
         }
 
         .index-heads {
             margin-left: 1rem !important;
             color: #253859;
+            overflow-y: hidden;
 
         }
 
@@ -322,7 +334,7 @@
         .button2 {
             margin-left: 1rem !important;
             width: 15rem;
-            font-weight: 900;
+            overflow-y: hidden;
             text-transform: uppercase !important;
         }
 
@@ -330,16 +342,24 @@
             width: 10rem;
             font-weight: 900;
             text-transform: uppercase !important;
+            margin-right: 5rem;
+            display: block;
         }
 
         .vedio,
         .nectar-video-self-hosted {
             background-color: #eff4f9 !important;
             width: 100% !important;
-            margin-top: 0.5rem !important;
+            margin-top: 5rem !important;
             margin-left: -0.2rem !important;
             border-radius: 10px !important;
+            z-index: 5;
+            overflow: hidden;
             box-shadow: 15px 15px 15px 5px #e7e4e4;
+        }
+
+        .nectar-shape-divider {
+            display: none;
         }
 
         /*first div end */
@@ -492,11 +512,60 @@
             color: #253859;
             margin-top: 20px;
             font-family: Mulish;
-            font-size: 2rem;
-            -webkit-text-stroke: thin;
+            font-size: 30PX;
+            overflow-y: hidden;
+            margin-right: 0;
+        }
+
+        .overall {
+            overflow-y: hidden;
+            padding-right: 5rem;
+
         }
     }
 
+    .full-width-section>.nectar-shape-divider-wrap {
+        /* margin-left: -50vw; */
+        margin-left: calc(-50vw + var(13px)/ 2);
+        left: 50%;
+        /* width: 100vw; */
+        width: calc(100vw - var(13px));
+    }
+
+    .nectar-shape-divider-wrap {
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 150px;
+        /* z-index: 1;  */
+        /* overflow: visible; */
+        transform: translateZ(0);
+    }
+
+    .nectar-shape-divider-wrap.no-color .nectar-shape-divider {
+        fill: #fff;
+    }
+
+    .nectar-shape-divider {
+        width: 100%;
+        left: 0;
+        bottom: -1px;
+        height: 100%;
+        position: relative;
+        overflow: visible;
+        z-index: -1;
+    }
+
+    .nectar-shape-divider-wrap[data-style="waves_opacity_alt"] svg path:nth-child(1) {
+        opacity: 0.15;
+    }
+
+    .nectar-shape-divider-wrap[data-style="waves_opacity_alt"] svg path:nth-child(2) {
+        opacity: 0.3;
+    }
 
 
     /* tablet view */
@@ -571,11 +640,26 @@
 
     <!-- main content start -->
     <!-- main content start -->
-    <div class="container-fluid" style="background-color:#eff4f9 ;">
+    <div class="container-fluid row2" style="background-color:#eff4f9 ;">
         <!-- first div vedio start -->
-        <div class="row" style="background-image:url(wave1.svg)">
+        <div class="nectar-shape-divider-wrap no-color " style=" height:50%;" data-using-percent-val="true"
+            data-height="50%" data-front="" data-style="waves_opacity_alt" data-position="bottom">
+            <svg class="nectar-shape-divider" aria-hidden="true" fill="" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1000 300" preserveAspectRatio="none">
+                <path fill="#fff"
+                    d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z">
+                </path>
+                <path fill="#fff"
+                    d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z">
+                </path>
+                <path fill="#fff"
+                    d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z">
+                </path>
+            </svg>
+        </div>
+        <div class="row">
             <div class="col-sm-6">
-                <h3 class="index-head" style="color: #253859;">Streamline compliance processes, even in
+                <h3 class="index-head mt-5" style="color: #253859;">Streamline compliance processes, even in
                     complex multi-jurisdictional operating environments</h3>
                 <h6 class="index-heads ">Cut through the regulatory clutter. Identify only the specific <br> regulatory
                     information
@@ -601,8 +685,41 @@
                 </video>
             </div>
         </div>
-    </div><!-- first div vedio start -->
-    <div class="container">
+    </div>
+    <div class="container-fluid row1" style="background-color:#eff4f9 ;">
+        <!-- first div vedio start -->
+
+        <div class="row" style="background-image: url(wave1.svg);">
+            <div class="col-sm-6">
+                <h3 class="index-head mt-5" style="color: #253859;">Streamline compliance processes, even in
+                    complex multi-jurisdictional operating environments</h3>
+                <h6 class="index-heads ">Cut through the regulatory clutter. Identify only the specific <br> regulatory
+                    information
+                    you need to stay compliant.</h6>
+                <div class="col-sm-1" style="display: inline;">
+                    <button class="button button3">Talk to a solutions specialist</button>
+                    <button class="button button2">Explore Solutions</button>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <video width="449.49" height="256.26" class="nectar-video-self-hosted" preload="metadata" controls=""
+                    controlslist="nodownload"
+                    poster="https://www.ascentregtech.com/wp-content/uploads/2023/03/Obligations-GIF-1.gif"
+                    style="visibility: visible;">
+                    <source
+                        src="https://www.ascentregtech.com/wp-content/uploads/2023/04/Turn-Regulatory-Content-into-Regulatory-Intelligence-with-Ascents-Powerful-Data-1.mp4"
+                        type="video/webm">
+                </video>
+                <video width="500" controls autoplay class="vedio" style="visibility: hidden;">
+                    <source src="../Ascent RegTech/vedio/head-vedio.mp4" type="video/mp4">
+                    <source src="../Ascent RegTech/vedio/head-vedio.mp4" type="video/ogg">
+                    Your browser does not support HTML video.
+                </video>
+            </div>
+        </div>
+    </div>
+    <!-- first div vedio start -->
+    <div class="container-fluid bg-white">
         <!-- second div start -->
         <div class="center">
             <p>Superior Compliance Technology to <br> Keep Your Organization <br> Regulation Ready</p>
@@ -874,16 +991,15 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid py-5" style="background-color: #EFF4F9;">
+    <div class="container-fluid py-5 overall" style="background-color: #EFF4F9;">
         <div class="row">
-            <div class="col-sm-12">
-                <div class="container">
-                    <h1 class="Gain-Compliance">Gain Compliance
-                        Confidence
-                        with Ascent’s <br>Suite of Regulatory
-                        Change Management<br> Tools</h1>
-                </div>
+            <div class="col-sm-8">
+                <h2 class="Gain-Compliance">Gain Compliance
+                    Confidence
+                    with Ascent’s Suite of Regulatory
+                    Change Management Tools</h2>
             </div>
+            <div class="col-sm-4"></div>
         </div>
         <div class="container">
             <div class="row">
@@ -900,7 +1016,7 @@
                     </div>
                     <div class="pt-5">
                         <h2 style="-webkit-text-stroke-width: thin;
-                    color: #253859;">Obligations Management</h2>
+                    color: #253859;" class="overall">Obligations Management</h2>
                         <p style="color: #253859; font-size: 18px;">
                             Run your entire compliance program from a centralized location that includes customizable
                             risk taxonomy, powerful filters, easy to act upon obligations and audit trail capabilities.
@@ -920,7 +1036,7 @@
                     </div>
                     <div class="pt-5">
                         <h2 style="-webkit-text-stroke-width: thin;
-                    color: #253859;  ">Regulatory Change Management</h2>
+                    color: #253859;" class="overall">Regulatory Change Management</h2>
                         <p style="color: #253859; font-size: 18px;">
                             Empower compliance teams to take action immediately on new and updated obligations without
                             first spending hours sifting through regulatory PDFs.

@@ -42,3 +42,16 @@
         color: white;
         
     }
+
+    .whowe{
+        display: none;
+    }
+    @media screen and (max-width: 800px) {
+        .whowe{
+            display: block;
+        }
+        .serve{
+            display: none;
+        }
+    
+    }
