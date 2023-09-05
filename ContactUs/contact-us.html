@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="contact.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="contact.js"></script>
 </head>
 <style>
     body b,
@@ -260,13 +261,15 @@
                 </div>
 
                 <div class="col-md-7" style="background-color: #eff4f9;border-radius: 10px; ">
-                    <div class="container">
+
+                    <!-- ============== Request a Demo Form ================  -->
+                    <div class="container" id="request_form">
                         <div class="row">
                             <div class="col-md-3"></div>
                             <div class="col-md-6 text-center py-5" style="display: inline-block;">
                                 <button type="button" class="btn btn-primary" style="padding: 8px 15px; background-color: #03d5cc;
                                 border-color: #03d5cc; border-radius: 1px !important;">Request A Demo</button>
-                                <button type="button" class="btn btn-primary active"
+                                <button onclick="request_form_showOff()" type="button" class="btn btn-primary active"
                                     style="background-color: rgba(0,0,0,.045);     color: #888;    border: 1px solid rgba(0,0,0,.06);;padding: 8px 15px;  border-radius: 1px !important; margin-left: -5px;">Other
                                     Inquiries</button>
                             </div>
@@ -419,10 +422,186 @@
                             </div>
                         </div>
                     </div>
+                    <!-- ============== Other Inquiries Form ================  -->
+                    <div class="container" id="other_inquiry">
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6 text-center py-5" style="display: inline-block;">
+                                <button type="button" class="btn btn-primary" style="padding: 8px 15px; background-color:rgba(0,0,0,.045);border: 1px solid rgba(0,0,0,.06);
+                                border-radius: 1px !important;" onclick="request_form_showOn()">Request A Demo</button>
+                                <button type="button" class="btn btn-primary active"
+                                    style="background-color: #03D5CC;color: #888;border: 1px solid rgba(0,0,0,.06);padding: 8px 15px;  border-radius: 1px !important; margin-left: -5px;">Other
+                                    Inquiries</button>
+                            </div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6 py-2">
+                                <div>
+                                    <label for="fname" style="font-size: 14px;color: #33475B;display: block;">First name
+                                        <span style="color: red;">*</span></label>
+                                    <input type="text" id="fname" class="hs-input"
+                                        style="width: 100%; height: 40px; background-color: #f5f8fa; border: 1px solid #cbd6e2;  border-radius: 3px;">
+                                </div>
+                            </div>
+                            <div class="col-md-6 py-2">
+                                <div>
+                                    <label for="lname" style="font-size: 14px;color: #33475B;display: block;">Last name
+                                        <span style="color: red;">*</span></label>
+                                    <input type="text" id="lname"
+                                        style="width: 100%; height: 40px; background-color: #f5f8fa; border: 1px solid #cbd6e2;  border-radius: 3px;">
+                                </div>
+                            </div>
+                            <div class="col-md-6 py-2">
+                                <div>
+                                    <label for="jobTitle" style="font-size: 14px;display: block;color: #33475B;">Business Email
+                                        <span style="color: red;">*</span></label>
+                                    <input type="text" id="jobTitle"
+                                        style="width: 100%; height: 40px; background-color: #f5f8fa; border: 1px solid #cbd6e2;  border-radius: 3px;">
+                                </div>
+                            </div>
+                            <div class="col-md-6 py-2">
+                                <div>
+                                    <label for="businessEmail"
+                                        style="font-size: 14px;color: #33475B;display: block;">
+                                        Phone number<span
+                                            style="color: red;">*</span></label>
+                                    <input type="text" id="businessEmail"
+                                        style="width: 100%; height: 40px; background-color: #f5f8fa; border: 1px solid #cbd6e2;  border-radius: 3px;">
+                                </div>
+                            </div>
+                            <div class="col-md-6 py-2">
+                                <div>
+                                    <label for="companyName" style="font-size: 14px;color: #33475B;">Country/Region<span
+                                            style="color: red;">*</span></label>
+                                    <!-- <select class="form-control" id="sel1">
+                                        <option>India</option>
+                                        <option>USA</option>
+                                        <option>England</option>
+                                        <option>Russia</option>
+                                    </select> -->
+                                    <select class="form-control" placeholder="Please Select">
+                                        <option value="" style="    color: #bfbfbf;">Please Select</option>
+                                        <option value="United States">United States</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="Mexico">Mexico</option>
+                                        <option value="United Kingdom">United Kingdom</option>
+                                        <option value="Ireland">Ireland</option>
+                                        <option value="Europe">Europe</option>
+                                        <option value="Central America">Central America</option>
+                                        <option value="South America">South America</option>
+                                        <option value="Caribbean Islands">Caribbean Islands</option>
+                                        <option value="Australia">Australia &amp; New Zealand</option>
+                                        <option value="Eastern Asia">Eastern Asia</option>
+                                        <option value="Western Asia">Western Asia</option>
+                                        <option value="Southern Asia">Southern Asia</option>
+                                        <option value="Africa">Africa</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <!-- <input type="text" id="companyName" placeholder="Please Select"
+                                        style="width: 100%; height: 40px;background-color: #f5f8fa; border: 1px solid #cbd6e2;  border-radius: 3px;"> -->
+                                </div>
+                            </div>
+                            <div class="col-md-6 py-2">
+                                <div>
+                                    <label for="companyName"
+                                        style="font-size: 14px;color: #33475B;display: block;">Company
+                                        Name<span style="color: red;">*</span></label>
+                                    <input type="text" id="companyName"
+                                        style="width: 100%; height: 40px; background-color: #f5f8fa; border: 1px solid #cbd6e2; border-radius: 3px;">
+                                </div>
+                            </div>
+                            <div class="col-md-12 py-2">
+                                <!-- <div>
+                                    <label for="companyName" style="font-size: 14px;color: #33475B;">Country/Region<span
+                                            style="color: red;">*</span></label>
+                                    <select class="form-control" placeholder="Please Select">
+                                        <option value="" style="    color: #bfbfbf;">Please Select</option>
+                                        <option value="United States">United States</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="Mexico">Mexico</option>
+                                        <option value="United Kingdom">United Kingdom</option>
+                                        <option value="Ireland">Ireland</option>
+                                        <option value="Europe">Europe</option>
+                                        <option value="Central America">Central America</option>
+                                        <option value="South America">South America</option>
+                                        <option value="Caribbean Islands">Caribbean Islands</option>
+                                        <option value="Australia">Australia &amp; New Zealand</option>
+                                        <option value="Eastern Asia">Eastern Asia</option>
+                                        <option value="Western Asia">Western Asia</option>
+                                        <option value="Southern Asia">Southern Asia</option>
+                                        <option value="Africa">Africa</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div> -->
+                            </div>
+                            <div class="col-md-12">
+                                <div>
+                                    <p style="font-size: 14px;">What can we help you with? <span style="color: red;">*</span> </p>
+                                    <textarea name="" id="" cols="30" rows="5"
+                                        style="width: 100%;height: 3.5rem; border: 1px solid #cbd6e2;  border-radius: 3px;"></textarea>
+                                </div>
+                            </div><br /><br /><br /><br /><br />
+                            <div class="col-md-12">
+                                <div>
+                                    <p style="font-size: 11px; font-family: Mulish; line-height: 24px;">
+                                        By submitting this form, you agree that you have read our <a href="#"
+                                            style="color: #03d5cc;">Privacy
+                                            Policy</a> and consent to Ascent's cookie policy and receiving marketing
+                                        communications. You can unsubscribe at any time.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-white" style="height: 60px;
+                                width: 256px;
+                                box-shadow: gray 0px 0px 5px;">
+                                    <div style="float: left; 
+                                    background-color: #1A73E8;
+                                     color: white; 
+                                     font-size: 13px;
+                                      padding: 0 19px;
+                                      text-align: justify;
+                                    
+                                      height: 60px;">
+                                        <ul style="list-style-type: none;font-size: 11px;margin: 0px;padding: 0px;">
+                                            <li style="font-family: Roboto,helvetica,arial,sans-serif;
+                                            font-size: 13px;   margin-top: 10px;
+                                           ">protected by <strong>reCAPTCHA</strong></li>
+                                            <a href="#" class="text-white" id="underline" style="
+                                                font-size: 10px; text-decoration: none !important; ">Privacy -Terms</a>
+                                        </ul>
+                                    </div>
+                                    <div style="background-color: #fff;
+                                    text-align: center;  height: 60px;
+                                width: 256px;
+                                " class=" p-2">
+                                        <img src="logo_48.png" alt="" style="background-size: 44px;
+                                        height: 44px;
+                                        width: 44px;
+                                        margin-right: -5px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6"></div>
+                            <div class="col-md-6 py-5">
+                                <div>
+                                    <button class="btn text-white" style="background: #03d5cc;
+                                        border-color: #03d5cc;
+                                        color: #ffffff;
+                                        font-size: 15px;
+                                        line-height: 15px;
+                                        font-family: Mulish;
+                                        padding: 12px 24px;
+                                        "><strong>Request a
+                                            Demo</strong></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- <button onclick="sample()">CLICK</button> -->
     <!-- fotter -->
     <div class="container-fluid" style="background-color: #253859; ">
         <div class="container">
@@ -521,16 +700,17 @@
             hamburger.classList.toggle("toggle");
         });
 
-        const gif = document.querySelector(".nectar-video-self-hosted");
-        const vedio = document.querySelector(".vedio");
-        gif.addEventListener('click'), () => {
-            vedio('play')
-        }
-        vedio.addEventListener('click'), () => {
-            gif('play')
-        }
+        // const gif = document.querySelector(".nectar-video-self-hosted");
+        // const vedio = document.querySelector(".vedio");
+        // gif.addEventListener('click', () => {
+        //     vedio('play')
+        // });
+        // vedio.addEventListener('click', () => {
+        //     gif('play')
+        // });
         // first div scroll animation
     </Script>
+    
 </body>
 
 
