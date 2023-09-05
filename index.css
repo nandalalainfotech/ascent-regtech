@@ -40,7 +40,7 @@ nav {
     position: relative;
 }
 
- .show .line a {
+ .show1 .line a {
     color: #253859 !important;
     text-decoration: none !important;
     cursor: pointer !important;
@@ -139,7 +139,7 @@ nav {
     /* transition: 0.2s ease !important; */
 }
 
-.show:hover ul#submenu {
+.show1:hover ul#submenu {
     opacity: 1 !important;
     top: 40px !important;
     visibility: visible !important;
@@ -153,7 +153,7 @@ nav {
     /* transition-delay:1s; */
 }
 
-.show:hover ul#submenu a {
+.show1:hover ul#submenu a {
     text-decoration: none;
     color: #253859 !important;
     padding: 0.4rem !important;
@@ -316,7 +316,7 @@ ul#submenu a:hover {
     /* #submenu {
         transition: all 0.7s ease;
     }  */
-    .show {
+    .show1 {
         display: block !important;
         color: #fff !important;
         position: fixed;
@@ -324,7 +324,7 @@ ul#submenu a:hover {
         margin-top: -1rem;
         bottom: 0;
     }
- .show .line a {
+ .show1 .line a {
      color: #fff !important;
      text-decoration: none !important;
      cursor: pointer !important;
