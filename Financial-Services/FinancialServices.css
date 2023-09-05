@@ -26,7 +26,27 @@
 @media screen  and (min-width: 480px){
     #formPad{
         height: 16rem;
+        width: 100%;
     }
+}
+@media screen  and (max-width: 480px){
+    .viewBox-test{
+        width: 100%;
+        position: relative;
+    }
+}
+
+.whowe{
+    display: none;
+}
+@media screen and (max-width: 800px) {
+    .whowe{
+        display: block;
+    }
+    .serve{
+        display: none;
+    }
+
 }
 #underline{
     text-decoration: none;
@@ -42,10 +62,17 @@ color: #28BEBB;
     color: white;
 }
 
-#form-input {
+.form-input-test {
     width: 85%;
     height: 40px;
     margin-left: 30px;
     border: none;
     border-radius: 2px;
+}
+.form-input1{
+    width: 85%;
+height: 40px;
+margin-left: 0px;
+border: none;
+border-radius: 2px;
 }

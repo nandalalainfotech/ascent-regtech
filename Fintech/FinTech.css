@@ -66,6 +66,25 @@
     font-size: 20px;
     padding: 0px 0px 27px;
 }
+
+/* @media screen and (min-width: 800px) {
+  #demo1{
+    display: none;
+  }
+} */
+
+.row.whowe{
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .row.whowe{
+      display: block;
+  }
+  .row.serve{
+      display: none;
+  }
+
+}
 @media screen  and (min-width: 480px){
     #formPad{
         height: 16rem;
