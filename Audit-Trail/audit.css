@@ -219,3 +219,17 @@
         margin-top: 50px;
     }
 }
+
+#footer-hover:hover{
+    color: #28BEBB;
+    }
+    #footer-hover{
+        text-decoration: none;
+        color: white;
+    }
+
+    @media screen  and (min-width: 480px){
+        #formPad{
+            height: 16rem;
+        }
+    }
