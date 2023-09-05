@@ -64,3 +64,24 @@ var myChart = new Chart(myContext2, {
         responsive: true
     }
 });
+
+
+$(window).on('scroll', () => {
+    $('left_and_right').each(() => {
+        if (isElementInViewport(this)) {
+            $(this).addClass('visible');
+        }
+    })
+})
+
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
