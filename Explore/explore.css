@@ -5,7 +5,7 @@
     list-style: none;
     box-sizing: border-box;
     outline-style: none !important;
-    font-family: Mulish;
+    font-family: 'Mulish';
 }
 
 .initial {
@@ -82,7 +82,7 @@
 
 span.regulatory-unique {
     -webkit-text-stroke: thin;
-    font-size: 32px;
+    font-size: 31.7px;
     font-weight: bold;
     font-family: 'Mulish';
     text-shadow: 1px 1px;
@@ -90,9 +90,9 @@ span.regulatory-unique {
 }
 
 .paragraph-explore {
-    font-size: 1.4em;
+    font-size: 1.5em;
     color: #253859;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .mapping-paragraph {
