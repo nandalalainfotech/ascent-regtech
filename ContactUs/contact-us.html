@@ -38,6 +38,57 @@
         font-style: inherit;
         background-size: 0 80%;
     }
+
+    #Privacy a {
+        color: #03d5cc;
+        text-decoration: underline;
+    }
+
+    #Privacy a:hover {
+        color: #2AB4B0;
+    }
+
+    #top {
+        height: 80px !important;
+    }
+
+    @media screen and (min-width:375px) and (max-width:667px) {
+        .captcha {
+            margin-left: -13px;
+        }
+
+        .heading h1 {
+            color: #ffffff;
+            /* font-size: 45px; */
+            font-family: Mulish !important;
+            font-weight: 900 !important;
+            -webkit-text-stroke: thin !important;
+            text-align: justify !important;
+            letter-spacing: -0.02em !important;
+            font-size: 37.7px !important;
+            line-height: 29.25px !important;
+        }
+
+        .nectar-highlighted-text .nectar-scribble {
+            position: absolute !important;
+            left: 30px !important;
+            top: 179PX !important;
+            z-index: 4 !important;
+            width: 259px !important;
+            height: 49px !important;
+        }
+
+    }
+
+    .heading h1 {
+        color: #ffffff;
+        font-size: 45px;
+        font-family: Mulish;
+        font-weight: 900 !important;
+        -webkit-text-stroke: thin;
+        text-align: justify;
+        letter-spacing: -0.02em;
+    }
 </style>
 
 
@@ -113,7 +164,7 @@
     <div class="container-fluid py-5 px-5" style="background-color: #03d5cc;">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 " style="height: 100px !important;">
+                <div class="col-sm-12 " id="top" style="height: 100px !important;">
                 </div>
                 <div class="col-md-5 text-center">
                     <div class="text-white" style="margin-top: auto;">
@@ -169,14 +220,17 @@
                         .nectar-highlighted-text .nectar-scribble {
                             position: absolute;
                             left: 30px;
-                            top: 250PX;
+                            top: 223PX;
                             z-index: 4;
+                            width: 300px;
+                            height: 80px;
                         }
 
                         .nectar-highlighted-text .nectar-scribble path {
                             stroke-dasharray: 1;
                             stroke-dashoffset: 1;
                             opacity: 0;
+                            z-index: -1 !important;
                         }
 
                         .nectar-highlighted-text em.animated .nectar-scribble path {
@@ -187,7 +241,7 @@
                     </style>
                     <div class="row">
                         <div class="col-md-12" id="formPad"></div>
-                        <div class="col-md-10">
+                        <div class="col-md-10 heading" >
                             <h1 style="color: #ffffff; font-size: 45px;
                             font-family: Mulish;
                             font-weight: 900 !important;
@@ -239,7 +293,7 @@
                                 <strong>
                                     <span style="color: #253859;">
                                         <a style="color: #253859;  text-decoration: none;  margin-bottom: -20px !important; font-weight: revert;
-                                        -webkit-text-stroke: medium;
+                                        -webkit-text-stroke: thin;
                                         " href=" #">+1 (815) 396-4754</a>
                                     </span>
                                 </strong>
@@ -251,7 +305,7 @@
                                 <strong>
                                     <span style="color: #253859;">
                                         <a style="color: #253859;  text-decoration: none;  font-weight: revert;
-                                        -webkit-text-stroke: medium;" href="#">sales@ascentregtech.com</a>
+                                        -webkit-text-stroke: thin;" href="#">sales@ascentregtech.com</a>
                                     </span>
                                 </strong>
                             </p>
@@ -334,7 +388,7 @@
                                         <option>England</option>
                                         <option>Russia</option>
                                     </select> -->
-                                    <select class="form-control" placeholder="Please Select">
+                                    <select class="form-control" style="color: #bfbfbf;"  placeholder="Please Select">
                                         <option value="" style="    color: #bfbfbf;">Please Select</option>
                                         <option value="United States">United States</option>
                                         <option value="Canada">Canada</option>
@@ -365,7 +419,7 @@
                                         style="width: 100%;height: 3.5rem; border: 1px solid #cbd6e2;  border-radius: 3px;"></textarea>
                                 </div>
                             </div><br /><br /><br /><br /><br />
-                            <div class="col-md-12">
+                            <div class="col-md-12" id="Privacy">
                                 <div>
                                     <p style="font-size: 11px; font-family: Mulish; line-height: 24px;">
                                         By submitting this form, you agree that you have read our <a href="#"
@@ -376,7 +430,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="text-white" style="height: 60px;
+                                <div class="text-white captcha" style="height: 60px;
                                 width: 256px;
                                 box-shadow: gray 0px 0px 5px;">
                                     <div style="float: left; 
