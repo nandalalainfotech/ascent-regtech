@@ -23,10 +23,23 @@
     font-size: 20px;
     padding: 0px 0px 27px;
 }
+.whowe{
+    display: none;
+}
+@media screen and (max-width: 800px) {
+    .whowe{
+        display: block;
+    }
+    .serve{
+        display: none;
+    }
+
+}
 @media screen  and (min-width: 480px){
     #formPad{
         height: 16rem;
     }
+    
 }
 #underline{
     text-decoration: none;
