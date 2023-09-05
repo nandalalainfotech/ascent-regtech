@@ -81,7 +81,7 @@
     }
 
     .left_and_right {
-      opacity: 0;
+      opacity: 1;
       transform: translateX(-50px);
       transition: opacity 0.5s, transform 0.5s;
     }
@@ -492,9 +492,10 @@
     <div class="container mb-5">
       <div class="row">
         <div class="col-sm-12">
-          <!-- <section class="left_and_right"> -->
-            <img src="img-big1.jpg" alt="" width="100%"  />
-          <!-- </section> -->
+          <section class="left_and_right">
+            <!-- <img src="img-big1.jpg" alt="" width="100%"/>  -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ab nihil totam quae ullam blanditiis vitae corporis ipsum cupiditate nisi.
+          </section>
 
           <p
             style="
@@ -785,6 +786,9 @@
             $(this).addClass("visible");
           }
         });
+      });
+
+      $(window).on("scroll", function () {
         $(".left_and_right").each(function () {
           if (isElementInViewport(this)) {
             $(this).addClass("visible");
