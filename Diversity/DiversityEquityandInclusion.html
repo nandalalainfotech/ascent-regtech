@@ -17,7 +17,61 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
+
+  <style>
+    /* Réinitialisation des styles par défaut */
+    body,
+    h1,
+    h2,
+    p,
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+    }
+    /* Importer la police Roboto depuis Google Fonts */
+    /* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"); */
+    /* Appliquer la police à vos éléments */
+    body {
+        font-family: "Roboto", sans-serif;
+    }
+    /* Styles pour l'arrière-plan dégradé bleu-violet */
+    body {
+        /* background-image: linear-gradient(to top, #7FFFD4, #0F52BA); */
+        background-repeat: repeat;
+        background-position: center;
+        /* Mode de fusion pour superposer l'image */
+        background-blend-mode: overlay;
+    }
+    body::after {
+        /* Opacité de l'image superposée */
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background: url("https://github.com/berru-g/scroll-effect/blob/main/src/img/back.png?raw=true") center/cover; */
+        opacity: 0.3;
+        /* Modifier l'opacité ici */
+        pointer-events: none;
+    }
+    /*scroll effect*/
+    .scroll-section {
+        /* padding: 15px 50px; */
+        color: #000;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.5s, transform 0.5s;
+    }
+    .scroll-section.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
   <body>
     <nav>
       <div class="logo">
@@ -296,7 +350,10 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <img src="group.jpg" alt="" width="100%" />
+          <section class='scroll-section'>
+             <img src="group.jpg" alt="" width="100%" />
+          </section>
+         
           <p style="color: #253859; font-size: 17px; padding-top: 10px">
             [PICTURED FROM LEFT TO RIGHT] <strong>Yesenia Vega</strong>, Junior
             Software Developer (Ascent); <strong>Balaka Das</strong>, Regulatory
@@ -391,208 +448,102 @@
         </p>
       </div>
     </div>
-    <div class="container-fluid">
-      <div class="container" style="background-color: #eff4f9">
-        <h2
-          class="p-2"
-          style="text-align: center; background-color: #253859; color: white"
-        >
-          Diversity, Equity, and Inclusion (DEI) Transparency
-          <span><img src="images/logo.png" alt="" width="7%" /></span>
-        </h2>
-        <p style="text-align: center; color: #253859">
-          <b
-            >For a closer look at our culture, view results below from our 2022
-            employee engagement survey.</b
-          >
-        </p>
-        <div class="row">
-          <div class="col-sm-12">
-            <div style="float: left; width: 49%; padding-left: 1px">
-              <table style="width: 100%">
-                <tr>
-                  <th style="background-color: #28bebb; color: white">
-                    Diversity, Equity, and Inclusion (DEI)
-                  </th>
-                  <th style="background-color: #28bebb; color: white">
-                    Score (1 - 10)
-                  </th>
-                </tr>
-                <tr>
-                  <td>Successfully diverse environment</td>
-                  <td>7.6</td>
-                </tr>
-                <tr>
-                  <td>Rate DEI overall</td>
-                  <td>8.6</td>
-                </tr>
-                <tr>
-                  <td>Importance of diversity</td>
-                  <td>8.9</td>
-                </tr>
-                <tr>
-                  <td>Inclusive environment created</td>
-                  <td>8.9</td>
-                </tr>
-                <tr>
-                  <td>DEI importance personally</td>
-                  <td>9.0</td>
-                </tr>
-                <tr>
-                  <td>Inclusion importance</td>
-                  <td>9.2</td>
-                </tr>
-              </table>
-            </div>
-            <div style="width: 2%"></div>
-            <div style="float: right; width: 49%">
-              <table style="width: 100%">
-                <tr>
-                  <th style="background-color: #28bebb; color: white">
-                    Sentiment
-                  </th>
-                  <th style="background-color: #28bebb; color: white">
-                    Score (1 - 10)
-                  </th>
-                </tr>
-                <tr>
-                  <td>DEI</td>
-                  <td>7.6</td>
-                </tr>
-                <tr>
-                  <td>Communication</td>
-                  <td>8.6</td>
-                </tr>
-                <tr>
-                  <td>Importance of diversity</td>
-                  <td>8.9</td>
-                </tr>
-                <tr>
-                  <td>Communication</td>
-                  <td>8.9</td>
-                </tr>
-                <tr>
-                  <td>Leadership</td>
-                  <td>9.0</td>
-                </tr>
-
-                <tr>
-                  <td>Team & Culture</td>
-                  <td>8.9</td>
-                </tr>
-                <tr>
-                  <td>Meeting</td>
-                  <td>9.0</td>
-                </tr>
-                <tr>
-                  <td>Satisfaction</td>
-                  <td>9.2</td>
-                </tr>
-                <tr>
-                  <td>Compensation</td>
-                  <td>9.2</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-          <!-- <div class='col-sm-6'>
-       
-      </div> -->
-        </div>
+    <div class='container'>
+      <div
+      class="wpb_raw_code wpb_content_element wpb_raw_html"
+    >
+      <div class="wpb_wrapper">
+        <iframe
+          width="100%"
+          height="1150"
+          src="https://datastudio.google.com/embed/reporting/a115dbda-53e8-43b9-b155-8946238553f6/page/a8krB"
+          frameborder="0"
+          style="border: 0px; opacity: 1; visibility: visible"
+          allowfullscreen=""
+        ></iframe>
       </div>
     </div>
-    <div class="container-fluid">
-      <div class="container " style="background-color: #eff4f9">
-        <div class="row">
-          <div class="col-sm-6 col-md-6">
+    </div>
 
-            <!-- <div class="card" style='box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);width: 50%;'> -->
-              <div id="containerID" >
-                <canvas id="stackedChartID1" width='500'></canvas>
-              </div>
-            <!-- </div> -->
+     <!-- <style> 
+       @media screen and (max-width: 600px) {
+        .diversity {
+      font-size: 5px !important;
+ 
+         }
+         .equity {
+          font-size: 5px !important;
+         }
+         .include {
+          font-size: 5px !important;
+         }
 
-          </div>
+       }  
+        @media screen and (max-width: 1200px){
+        .diversity {
+      font-size: 5px !important;
+         }
+         .equity {
+          font-size: 5px !important;
+         }
+         .include {
+          font-size: 5px !important;
+         }
 
-          <div class="col-sm-6 col-md-6">
-            <!-- <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);width: 50%;"> -->
-              <div id="containerID" >
-                <canvas id="stackedChartID2" width='500'></canvas>
-              </div>
-            <!-- </div> -->
-          </div>
+       } 
 
-            
 
-            
+    </style>  -->
+   <!-- <div class='container-fluid mt-5'>
+    <div class='container'>
+      <div class='row' >
+        <div class='col-4 col-sm-4 col-md-4 col-lg-4 diversity' >
+          <div class="inclusioncard" style='background-color: rgb(41, 190, 188); ' >
            
-            
-          
-
-          <!-- <div class="col-sm-12 col-md-6"> -->
-            
-          <!-- </div> -->
-          
-          <!-- <div class="col-sm-6">
-      
-    </div> -->
-        </div>
-      </div>
-    </div>
-    <div class="container p-5">
-      <div class="row">
-        <div class='col-sm-4'>
-        <div class="card"  style=" background-color: rgb(41, 190, 188);">
-         
-          <div class="card-body">
-            <p style="text-align: center"><b>ON DEI</b></p>
-            <p>
-              ​ "Ascent is always providing unique ways of learning, either through group training sessions or 
-              media group sessions! My favorite thing about these sessions is 
-              the openness they provide. It truly is a safe space and learning environment. 
-            </p>
+            <div class="card-body">
+              <p style="text-align: center"><b>ON DEI</b></p>
+              <p>
+                ​ "Ascent is always providing unique ways of learning, either through group training sessions or 
+                media group sessions! My favorite thing about these sessions is 
+                the openness they provide. It truly is a safe space and learning environment. 
+              </p>
+            </div>
           </div>
         </div>
-        </div>
-        <div class="col-sm-4">
-          <div
-            class="card "
-            style="
-
-              background-color: rgb(207, 209, 231);
-            "
-          >
-          <div class="card-body">
-            <p style="text-align: center"><b>ON Team & Culture</b></p>
-            <p>"Working on such a collaborative team, learning from and growing with my peers, 
-              having a leadership team that invests in their entry-level employees, and in-person 
-              gatherings!'"
-
-            </p>
-          </div>
+        <div class='col-4 col-sm-4 col-md-4 col-lg-4 equity' >
+          <div class="inclusioncard"  style=" background-color: rgb(195, 157, 215);">
+           
+            <div class="card-body">
+              <p style="text-align: center"><b>ON Team & Culture</b></p>
+              <p>
+              "Working on such a collaborative team, learning from and growing with my 
+              peers, having a leadership team that 
+               invests in their entry-level employees, and in-person gatherings!'"
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div
-            class="card"
-            style="
-            
-              background-color: rgb(157, 215, 203);
-            "
-          >
+        <div class='col-4 col-sm-4 col-md-4 col-lg-4 include' >
+          <div class="inclusioncard"  style="  background-color: rgb(157, 215, 203);">
+           
             <div class="card-body">
               <p style="text-align: center"><b>ON LEADERSHIP</b></p>
               <p>
-                ​ "Ascent has gone through some difficult times recently and I
-                appreciate the transparency through it all. I genuinely feel
-                that the leadership team cares about the employees and is
-                working hard to make this company a success.."
+                ​ 
+                "Ascent has gone through some difficult times recently and I appreciate the 
+                transparency through it all. I genuinely feel that the leadership team cares
+                about the employees and is working hard to make this company a success.."
               </p>
             </div>
           </div>
         </div>
       </div>
+    
+
     </div>
+   </div> -->
+
+<!--     
     <div class="container">
       <div class="row">
         <div class="col-md-11"></div>
@@ -602,7 +553,7 @@
           
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -639,6 +590,34 @@
     </div>
 
     <script src="DiversityEquityandInclusion.js"></script>
+    <script>
+      $(window).on("scroll", function () {
+          $(".scroll-section").each(function () {
+              if (isElementInViewport(this)) {
+                  $(this).addClass("visible");
+              }
+          });
+      });
+      function isElementInViewport(el) {
+          var rect = el.getBoundingClientRect();
+          return (
+              rect.top >= 0 &&
+              rect.left >= 0 &&
+              rect.bottom <=
+              (window.innerHeight || document.documentElement.clientHeight) &&
+              rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+
+          );
+      }
+  </script>
+
+
+
+
+
+
+
   </body>
 </html>
+
 
