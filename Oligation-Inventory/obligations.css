@@ -1,80 +1,115 @@
-body{
+body {
     font-family: "Mulish";
     color: #183460;
 }
-#requestBtn{
-    background-color: #03d5cc;;
+
+#requestBtn {
+    background-color: #03d5cc;
+    ;
     color: #fff;
     position: relative;
 }
-#requestBtn:hover{
+
+#requestBtn:hover {
     bottom: .5rem;
     background-color: #28bebb;
     animation-name: btn;
     animation-duration: 1s;
     box-shadow: 0px 1px 4px 4px lightblue;
 }
-#learnMoreBtn{
-    background-color: #03d5cc;;
+
+#learnMoreBtn {
+    background-color: #03d5cc;
+    ;
     color: #fff;
     position: relative;
 }
+
 @keyframes btn {
-    0%   {bottom : 0rem;}
-    50%  {bottom: .025  rem;}
-    100% {bottom : .50rem;}
+    0% {
+        bottom: 0rem;
+    }
+
+    50% {
+        bottom: .025 rem;
+    }
+
+    100% {
+        bottom: .50rem;
+    }
 }
-#learnMoreBtn:hover{
+
+#learnMoreBtn:hover {
     bottom: .5rem;
     background-color: #28bebb;
     animation-name: btn;
     animation-duration: 1s;
 }
 
-.centerPos{
+.centerPos {
     text-align: left;
 }
-@media screen and (max-width: 600px){
-    .centerPos{
+
+@media screen and (max-width: 600px) {
+    .centerPos {
         text-align: center;
     }
 }
-@media screen and (min-width: 480px){
-    #placing{
+
+@media screen and (min-width: 480px) {
+    #placing {
         margin-top: 8rem;
     }
 }
 
-#underline{
+#underline {
     text-decoration: none;
 }
-#underline:hover{
+
+#underline:hover {
     text-decoration: underline;
 }
-@media screen  and (min-width: 480px){
-    #formPad{
+
+@media screen and (min-width: 480px) {
+    #formPad {
         height: 16rem;
     }
 }
 
 /* ============================/==================================/=================================  */
 
-.item{
+.item {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 70%;
     height: 10%;
 }
+
 @media screen and (min-width:980px) {
-    #others{
+    #others {
         display: block;
     }
 }
-#footer-hover:hover{
+
+#footer-hover:hover {
     color: #28BEBB;
+}
+
+#footer-hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (max-width:500px) {
+    #owl {
+        padding-left: 80px;
     }
-    #footer-hover{
-        text-decoration: none;
-        color: white;
+}
+
+@media screen and (max-width:900px) and (min-width:500px) {
+    #owl {
+        padding-left: 40px;
     }
+}
