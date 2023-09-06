@@ -96,7 +96,7 @@
   <nav>
     <div class="logo">
         <a href="index.html">
-            <img src="images/index/image (3).png" alt="Logo Image"  style="visibility: hidden;"/>
+            <img src="../images/index/360logo.svg" alt="Logo Image" />
         </a>
     </div>
     <div class="hamburger">
@@ -140,7 +140,7 @@
                 <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
             </ul>
         </li>
-        <li class="show show1" style="padding: 1rem"><span class="line"><a href="../OurTeam/ourteam.html">Company</a></span>
+        <li class="show show1" style="padding: 1rem"><span class="line" id="active_page"><a href="../OurTeam/ourteam.html">Company</a></span>
             <ul id="submenu">
                 <a href="../OurTeam/ourteam.html">Our Team</a>
                 <a href="../Diversity/DiversityEquityandInclusion.html">Diversity, Equity, and Inclusion</a>
@@ -227,12 +227,24 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-            <h3
+            <!-- <h3
               style="color: #21a89f; font-weight: 700; margin-bottom: 30px"
               id="top-content"
             >
               Learn about what unites our team
-            </h3>
+            </h3> -->
+            <section class="checkout"><a class="link link--arrowed"
+              style="color: #21A89F; font-weight: 600; font-size: 30px; margin-bottom: 30px"
+              id="top-content" href="#">Learn about what unites our team
+              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27"
+                  viewBox="0 0 32 32">
+                  <g fill="none" stroke="#03D5CC" stroke-width="1.5" stroke-linejoin="round"
+                      stroke-miterlimit="10">
+                      <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                      <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98">
+                      </path>
+                  </g>
+              </svg></a></section>
           </div>
         </div>
       </div>
@@ -258,7 +270,7 @@
             <h4 style="font-size: 17px">
               <span>
                 <img
-                  src="ascent_icon-6B.svg"
+                  src="new_icon.svg"
                   alt=""
                   width="40px"
                   height="30px"
