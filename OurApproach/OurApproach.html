@@ -13,6 +13,7 @@ Online HTML, CSS and JavaScript editor to run code online.
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="OurApproach.css" />
   <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
   <title>Browser</title>
 </head>
 
@@ -28,96 +29,194 @@ Online HTML, CSS and JavaScript editor to run code online.
     transform: translateY(0);
     opacity: 1;
   }
+
+
+  @keyframes nectarStrokeAnimation {
+      0% {
+        stroke-dashoffset: 1;
+        opacity: 0;
+      }
+
+      1% {
+        opacity: 1;
+      }
+
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    .nectar-highlighted-text .nectar-scribble {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2;
+    }
+
+    .nectar-highlighted-text em.animated .nectar-scribble path {
+      stroke-linecap: round;
+      opacity: 1;
+      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    .nectar-highlighted-text .nectar-scribble path {
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      opacity: 0;
+    }
+
+    .nectar-highlighted-text em.animated .nectar-scribble path {
+      stroke-linecap: round;
+      opacity: 1;
+      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    .nectar-highlighted-text[data-style="scribble"] em {
+      background-image: none !important;
+    }
+
+    body .nectar-scribble.squiggle-underline {
+      width: 185px;
+      height: 22px;
+    }
+
+    .nectar-highlighted-text .nectar-scribble {
+      position: absolute;
+      top: 35px;
+      left: 100px;
+      z-index: 7;
+      /* display: none; */
+    }
+
+    @media screen and (max-width:670px) {
+      .nectar-highlighted-text .nectar-scribble {
+        top: 35px !important;
+        left: 100px !important;
+      }
+    }
+
+    /* @media screen and (min-width: 375px) and (max-width: 667px){
+      nectar-highlighted-text .nectar-scribble {
+    position: absolute;
+    top: none !important;
+    left: 33px !important;
+    z-index: 11;
+}
+} */
+
+
+    .nectar-highlighted-text .nectar-scribble path {
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      opacity: 0;
+    }
+
+    .nectar-highlighted-text em.animated .nectar-scribble path {
+      stroke-linecap: round;
+      opacity: 1;
+      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
 </style>
 
 <body>
   <nav>
     <div class="logo">
-      <!-- <a href="../index.html"><img src="../images/index/logo.png" alt="Logo Image"></a> -->
+        <a href="index.html">
+            <img src="images/index/image (3).png" alt="Logo Image"  style="visibility: hidden;"/>
+        </a>
     </div>
     <div class="hamburger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
     </div>
     <ul class="nav-links">
-      <li class="show" style="padding: 1rem"> <span class="line">
-          <a href="../PlatForm-page/PlatForm.html" style="text-decoration: none;color: #253859;">Platform</a></span>
-        <ul id="submenu">
-          <a href="../OurApproach/OurApproach.html">Our Approach</a>
-          <a href="../OurData/OurData.html">Our Data</a>
-          <a href="../Regulators/Regulators.html"> Regulators</a>
-          <a href="../TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
-        </ul>
-      </li>
-      <li class="show" style="padding: 1rem;"><span class="line">
-          <a href="" style="text-decoration: none;color: #253859;">Capabilities</a></span>
-        <ul id="submenu">
-          <a href="../Oligation-Inventory/obligations.html">Obligations Inventory</a>
-          <a href="../Scenario-planning/scenerio.html">Scenario Planning</a>
-          <a href="../Horizon-Scanning/horizonScanning.html">Horizon Scanning</a>
-          <a href="../Audit-Trail/Audit.html">Audit Trail</a>
-          <a href="../Explore/explore.html">Explore Use Cases</a>
-        </ul>
-      </li>
-      <li class="show" style="padding: 1rem;"><span class="line"><a href=""
-            style="text-decoration: none;color: #253859;">Who We Serve</a></span>
-        <ul id="submenu">
-          <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
-          <a href="../Mortage-Lenders/MortgageLenders.html">Mortgage Lenders</a>
-          <a href="../Fintech/FinTech.html">FinTech</a>
-          <a href="../Professional/professional.html">Professional Services</a>
-        </ul>
-      </li>
-      <li class="show" style="padding: 1rem"><span class="line">
-          <a href="" style="text-decoration: none;color: #253859;">Resources</a></span>
-        <ul id="submenu">
-                    <a href="../WhatisReg/whatis.html">What is RegTech?</a>
-                    <a href="../Blogs/blogs.html">Blog</a>
-                    <a href="../Resources/Resources.html">Resources</a>
-                    <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
-                </ul>
-      </li>
-      <li class="show" style="padding: 1rem"><span class="line">
-          <a href="" style="text-decoration: none;color: #253859;">Company</a></span>
-        <ul id="submenu">
-          <a href="../OurTeam/ourteam.html">Our Team</a>
-          <a href="../Diversity/DiversityEquityandInclusion.html">Diversity, Equity, and Inclusion</a>
-          <a href="../Careers/Careers.html">Careers</a>
-        </ul>
-      </li>
-      <li class="login-button show"><a href="../Signin/sign.html" style="text-decoration: none;color: #253859;">Sign
-          In</a>
-      </li>
-      <li class="join-button show">
-        <a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;">
-          Contact Us
-        </a>
-      </li>
-      <li class="show" style="display: none; font-size: xx-small;">360 RegTech</li>
+        <li class="show show1" style="padding: 1rem"> <span class="line">
+                <a href="../PlatForm-page/PlatForm.html">Platform</a></span>
+            <ul id="submenu">
+                <a href="../OurApproach/OurApproach.html">Our Approach</a>
+                <a href="../OurData/OurData.html">Our Data</a>
+                <a href="../Regulators/Regulators.html"> Regulators</a>
+                <a href="../TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
+            </ul>
+        </li>
+        <li class="show show1" style="padding: 1rem;"><span class="line"><a href="">Capabilities</a></span>
+            <ul id="submenu">
+                <a href="../Oligation-Inventory/obligations.html">Obligations Inventory</a>
+                <a href="../Scenario-planning/scenerio.html">Scenario Planning</a>
+                <a href="../Horizon-Scanning/horizonScanning.html">Horizon Scanning</a>
+                <a href="../Audit-Trail/Audit.html">Audit Trail</a>
+                <a href="../Explore/explore.html">Explore Use Cases</a>
+            </ul>
+        </li>
+        <li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html">Who We
+                    Serve</a></span>
+            <ul id="submenu">
+                <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
+                <a href="../Mortage-Lenders/MortgageLenders.html">Mortgage Lenders</a>
+                <a href="../Fintech/FinTech.html">FinTech</a>
+                <a href="../Professional/professional.html">Professional Services</a>
+            </ul>
+        </li>
+        <li class="show show1" style="padding: 1rem"><span class="line"> <a href="../Resources/Resources.html">Resources</a></span>
+            <ul id="submenu">
+                <a href="../WhatisReg/whatis.html">What is RegTech?</a>
+                <a href="../Blogs/blogs.html">Blog</a>
+                <a href="../Resources/Resources.html">Resources</a>
+                <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
+            </ul>
+        </li>
+        <li class="show show1" style="padding: 1rem"><span class="line"><a href="../OurTeam/ourteam.html">Company</a></span>
+            <ul id="submenu">
+                <a href="../OurTeam/ourteam.html">Our Team</a>
+                <a href="../Diversity/DiversityEquityandInclusion.html">Diversity, Equity, and Inclusion</a>
+                <a href="../Careers/Careers.html">Careers</a>
+            </ul>
+        </li>
+        <li class="login-button show show1"><a href="../Signin/sign.html">Sign
+                In</a>
+        </li>
+        <li class="join-button show show1">
+            <a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;">
+                Contact Us
+            </a>
+        </li>
+        <li class="show show1" style="display: none; font-size: xx-small;">360 RegTech</li>
     </ul>
   </nav>
   <div class="container-fluid initial">
+    <div class="container">
     <div class="row ">
       <div class="col-sm-12" style="position: relative;">
         <!-- <img class="responsive" src="our-approach-img-1.jpg" alt=" " width="100%" height="" style="height: 420px !important;"> -->
       </div>
       <div class="col-sm-12 res" style="position: absolute;top: 220px;" id="respons">
-        <h1 class="text-white" style="text-indent: 50px;font-weight: 700;
-          font-weight: revert;-webkit-text-stroke: inherit;font-size: 45px;">Our Approach</h1><br>
+        <h1 class="nectar-highlighted-text" data-style="scribble" data-exp="default" data-user-color="true"
+            style="color: #ffffff;-webkit-text-stroke: thin;font-weight: 700;" data-using-custom-color="false"
+            data-animation-delay="false" data-color="" data-color-gradient=""> Our  <em class="animated">Approach<svg
+                class="nectar-scribble squiggle-underline" role="presentation" viewBox="-347 -30.1947 694 96.19"
+                preserveAspectRatio="none">
+                <path style="animation-duration: 1.8s;"
+                  d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
+                  stroke="#03d5cc" pathLength="1" stroke-width="14" fill="none"></path>
+              </svg></em></h1>
+          </h1>
+        <!-- <h1 class="text-white" style="text-indent: 50px;font-weight: 700;
+          font-weight: revert;-webkit-text-stroke: inherit;font-size: 45px;">Our Approach</h1><br> -->
         <div class="row">
 
-          <div class="col-sm-10 p-2" style="font-weight: 700;">
-            <h4 class="text-white" style="text-indent: 3.3rem;font-weight: 500;">Compliance teams of all sizes choose
+          <div class="col-sm-10 mt-3" >
+            <h5 class="text-white" style="font-weight: 600;">Compliance teams of all sizes choose
               360 RegTech in order to pinpoint
-            </h4>
-            <h4 class="text-white" style="text-indent: 3.3rem;font-weight: 500;"> their financial
-              regulatory obligations.</h4>
+            </h5>
+            <h5 class="text-white" style="font-weight: 600;"> their financial
+              regulatory obligations.</h5>
 
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
   <div class="container-fluid reveal">
     <div class="container">
@@ -127,7 +226,8 @@ Online HTML, CSS and JavaScript editor to run code online.
             <h1 style="color:#03d5cc;
             -webkit-text-stroke: medium;
             font-size: 40px;"> Not just data, but targeted knowledge</h1><br>
-            <p class="mt-4 para" style="text-align: inherit;font-weight: 300; font-size: 17px;">Identifying your regulatory obligations is a complicated, time- consuming and
+            <p class="mt-4 para" style="text-align: inherit;font-weight: 300; font-size: 17px;">Identifying your
+              regulatory obligations is a complicated, time- consuming and
               costly practice that mires compliance teams in manual work, and must be repeated with every new change in
               regulation.</p>
             <p class="mt-3" style="text-align: inherit;
@@ -192,12 +292,13 @@ Online HTML, CSS and JavaScript editor to run code online.
             Your implementation partner, every step of the way
           </h1>
           <div class="mt-4" style="color: #253859;">
-            <p style="text-align: inherit;font-weight: 300; font-size: 17px;">Too many technology vendors set it, then forget it. At 360 RegTech, we know that even more important than
+            <p style="text-align: inherit;font-weight: 300; font-size: 17px;">Too many technology vendors set it, then
+              forget it. At 360 RegTech, we know that even more important than
               the
               decision to purchase a new tool is how effectively you can implement it.</p>
             <p class="mt-3" style="text-align: inherit;font-weight: 300; font-size: 17px;">
-              That’s why our Support team works with you hand in hand to  ensure your team is properly onboarded and
-              trained, with your goals  in mind. As your partner in compliance, we help you get up and  running
+              That’s why our Support team works with you hand in hand to ensure your team is properly onboarded and
+              trained, with your goals in mind. As your partner in compliance, we help you get up and running
               in days,
               not
               months.
@@ -210,11 +311,11 @@ Online HTML, CSS and JavaScript editor to run code online.
       </div>
     </div>
   </div>
-  
 
 
-   <!-- fotter -->
-   <div class="container-fluid" style="background-color: #253859">
+
+  <!-- fotter -->
+  <div class="container-fluid" style="background-color: #253859">
     <div class="container">
       <div class="row">
         <div class="col-md-4 mt-5">

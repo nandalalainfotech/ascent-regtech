@@ -1,7 +1,31 @@
-.base{
-    background-image: url("our-approach-img-1.jpg");
-    height: 580px;
+.basee{
+    background-image: url("app1.png");
+    height: 520px !important;
 }
+@media screen and (max-width: 550px) {
+  .basee{
+    background-image: url("app1.png");
+    height: 608px !important;
+}
+
+/* .nectar-highlighted-text .nectar-scribble {
+  position: absolute;
+  top: 35px !important;
+  left: 96px !important;
+  z-index: 11;
+} */
+}
+
+
+/* @media screen and (min-width: 375px) and (max-width: 667px){
+  .nectar-highlighted-text .nectar-scribble {
+    position: absolute;
+    top: 35px !important;
+    left: 96px !important;
+    z-index: 11;
+}
+} */
+
 
  @media screen and (max-width: 750px) {
     img {

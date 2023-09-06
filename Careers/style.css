@@ -107,3 +107,21 @@ a {
     text-decoration: none;
     color: white;
 }
+
+@media only screen and (max-width: 768px) {
+    span.compliance {
+        color: #03D5CC;
+        margin-top: 15px;
+        float: left;
+        font-size: 12px;
+
+    }
+}
+
+span.compliance {
+    color: #03D5CC;
+    margin-top: 15px;
+    float: left;
+    font-size: 18px;
+
+}

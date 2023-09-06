@@ -75,10 +75,12 @@
     width: 100%;
 }
 
-.double {
+h4,
+span.double {
     text-align: center;
-    font-weight: 500;
-    font-size: 37px;
+    font-weight: 500px;
+    font-size: 27px;
+    text-align: center;
     /* line-height: 1.6 !important; */
 }
 
@@ -86,6 +88,23 @@
     margin-top: 30px;
     font-weight: 400;
     text-align: center;
+    line-height: -10;
+}
+
+.double-check {
+    margin-top: 30px;
+    font-weight: 400px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 4.6ch;
+}
+
+.check {
+    font-weight: bold;
+    font-size: 27px;
+    text-align: center;
+    line-height: 2.6ch;
+    letter-spacing: -1px;
 }
 
 .carded:hover {
@@ -96,7 +115,7 @@
 }
 
 .cards {
-    transition: transform .1s;
+    transition: box-shadow 1s ease-in-out;
     cursor: pointer;
 }
 
@@ -104,6 +123,7 @@
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
 }
 
 #white {

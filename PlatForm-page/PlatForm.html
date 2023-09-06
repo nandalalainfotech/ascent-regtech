@@ -35,6 +35,7 @@ Online HTML, CSS and JavaScript editor to run code online.
     as="font" type="font/woff" crossorigin="anonymous">
   <title>Browser</title>
   <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <style>
   .login-button {
@@ -99,6 +100,19 @@ Online HTML, CSS and JavaScript editor to run code online.
     opacity: 1;
   }
 
+
+  .reveal1 {
+    position: relative;
+    transform: translatex(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+
+  .reveal1.active {
+    transform: translatex(0);
+    opacity: 1;
+  }
+
   .link {
     color: #2175FF;
     cursor: pointer;
@@ -137,12 +151,34 @@ Online HTML, CSS and JavaScript editor to run code online.
     text-align: center;
     font-size: 18px;
   }
+
+  .right_to_left {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  .right_to_left.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .left_to_right {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  .left_to_right.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
 </style>
 
 <body>
   <nav>
     <div class="logo">
-      <a href="../index.html"><img src="../images/index/logo.png" alt="Logo Image"></a>
+      <a href="../index.html"><img src="../images/index/logo.png" alt="Logo Image" style="visibility: hidden;"></a>
     </div>
     <div class="hamburger">
       <div class="line1"></div>
@@ -150,7 +186,7 @@ Online HTML, CSS and JavaScript editor to run code online.
       <div class="line3"></div>
     </div>
     <ul class="nav-links">
-      <li class="show" style="padding: 1rem"> <span class="line">
+      <li class="show1" style="padding: 1rem"> <span class="line">
           <a href="../PlatForm-page/PlatForm.html" style="text-decoration: none;color: #253859;">Platform</a></span>
         <ul id="submenu">
           <a href="../OurApproach/OurApproach.html">Our Approach</a>
@@ -159,7 +195,7 @@ Online HTML, CSS and JavaScript editor to run code online.
           <a href="../TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
         </ul>
       </li>
-      <li class="show" style="padding: 1rem;"><span class="line">
+      <li class="show1" style="padding: 1rem;"><span class="line">
           <a href="" style="text-decoration: none;color: #253859;">Capabilities</a></span>
         <ul id="submenu">
           <a href="../Oligation-Inventory/obligations.html">Obligations Inventory</a>
@@ -169,7 +205,7 @@ Online HTML, CSS and JavaScript editor to run code online.
           <a href="../Explore/explore.html">Explore Use Cases</a>
         </ul>
       </li>
-      <li class="show" style="padding: 1rem;"><span class="line"><a href=""
+      <li class="show1" style="padding: 1rem;"><span class="line"><a href=""
             style="text-decoration: none;color: #253859;">Who We Serve</a></span>
         <ul id="submenu">
           <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
@@ -178,7 +214,7 @@ Online HTML, CSS and JavaScript editor to run code online.
           <a href="../Professional/professional.html">Professional Services</a>
         </ul>
       </li>
-      <li class="show" style="padding: 1rem"><span class="line">
+      <li class="show1" style="padding: 1rem"><span class="line">
           <a href="" style="text-decoration: none;color: #253859;">Resources</a></span>
         <ul id="submenu">
           <a href="../WhatisReg/whatis.html">What is RegTech?</a>
@@ -187,7 +223,7 @@ Online HTML, CSS and JavaScript editor to run code online.
           <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
         </ul>
       </li>
-      <li class="show" style="padding: 1rem"><span class="line">
+      <li class="show1" style="padding: 1rem"><span class="line">
           <a href="" style="text-decoration: none;color: #253859;">Company</a></span>
         <ul id="submenu">
           <a href="../OurTeam/ourteam.html">Our Team</a>
@@ -195,15 +231,15 @@ Online HTML, CSS and JavaScript editor to run code online.
           <a href="../Careers/Careers.html">Careers</a>
         </ul>
       </li>
-      <li class="login-button show"><a href="../Signin/sign.html" style="text-decoration: none;color: #253859;">Sign
+      <li class="login-button show1"><a href="../Signin/sign.html" style="text-decoration: none;color: #253859;">Sign
           In</a>
       </li>
-      <li class="join-button show">
+      <li class="join-button show1">
         <a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;">
           Contact Us
         </a>
       </li>
-      <li class="show" style="display: none; font-size: xx-small;">Ascent RegTech</li>
+      <li class="show1" style="display: none; font-size: xx-small;">360regtech RegTech</li>
     </ul>
   </nav>
   <div class="container-fluid" id="contain">
@@ -228,7 +264,7 @@ Online HTML, CSS and JavaScript editor to run code online.
               <p class="text-white">Targeted obligations? Yes. Automated change management? Yes. Mapping to your
                 controls
                 and policies? Yes.
-                But beyond groundbreaking capabilities, Ascent uses AI to solve your real problem — reducing your
+                But beyond groundbreaking capabilities, 360regtech uses AI to solve your real problem — reducing your
                 regulatory and reputational risk, without the eye-boggling costs.</p>
             </div>
             <!-- <div class="col-sm-1"></div> -->
@@ -310,7 +346,7 @@ Online HTML, CSS and JavaScript editor to run code online.
                     color: #33475b;
                     font-size: 11px; line-height: 20px;">
                       By submitting this form, you agree that you have read our <a href="#" style=" ">Privacy
-                        Policy</a> and consent to Ascent's
+                        Policy</a> and consent to 360regtech's
                       cookie policy and receiving marketing communications. You can unsubscribe at any time.
                     </p>
                   </div>
@@ -404,14 +440,15 @@ Online HTML, CSS and JavaScript editor to run code online.
                 </div>
                 <br>
               </div>
-
-              <h5>
-                <strong>Cut through the clutter</strong>
-              </h5>
-              <p>
-                Cut through the clutter of irrelevant regulations. Establish a single, reliable source of regulatory
-                truth.
-              </p>
+              <div class="reveal">
+                <h5>
+                  <strong>Cut through the clutter</strong>
+                </h5>
+                <p>
+                  Cut through the clutter of irrelevant regulations. Establish a single, reliable source of regulatory
+                  truth.
+                </p>
+              </div>
             </div>
             <div class="col-sm-2 Clutter1">
 
@@ -450,14 +487,16 @@ Online HTML, CSS and JavaScript editor to run code online.
                 </div>
                 <br>
               </div>
-              <h5>
-                <strong>Stay ahead of regulations</strong>
-              </h5>
-              <br>
-              <p>
-                Stay ahead of regulations by building a comprehensive register of obligations to
-                ensure compliance.
-              </p>
+              <div class="reveal">
+                <h5>
+                  <strong>Stay ahead of regulations</strong>
+                </h5>
+                <br>
+                <p>
+                  Stay ahead of regulations by building a comprehensive register of obligations to
+                  ensure compliance.
+                </p>
+              </div>
             </div>
             <div class="col-sm-2 Clutter2">
               <div style="color: #03d5cc; text-align: center;">
@@ -515,12 +554,16 @@ Online HTML, CSS and JavaScript editor to run code online.
                 </div>
                 <br>
               </div>
-              <h5><strong>Maximize efficiency</strong></h5>
+              <div class="reveal">
+                <h5>
+                  <strong>Maximize efficiency</strong>
+                </h5>
 
-              <br>
-              <p>Maximize efficiency and scalability by removing the need to consider or research
-                non-applicable
-                regulations.</p>
+                <br>
+                <p>Maximize efficiency and scalability by removing the need to consider or research
+                  non-applicable
+                  regulations.</p>
+              </div>
             </div>
             <div class="col-sm-2 Clutter3">
               <div style="color: #03d5cc; text-align: center;">
@@ -546,10 +589,14 @@ Online HTML, CSS and JavaScript editor to run code online.
 
                 <br>
               </div>
-              <h5><strong>Leave an audit trail</strong></h5>
-              <p>Prove compliance by tracking & recording compliance activities; easily generate proof
-                of compliance for
-                auditors.</p>
+              <div class="reveal">
+                <h5>
+                  <strong>Leave an audit trail</strong>
+                </h5>
+                <p>Prove compliance by tracking & recording compliance activities; easily generate proof
+                  of compliance for
+                  auditors.</p>
+              </div>
             </div>
             <div class="col-sm-2 Clutter4">
               <div style="color: #03d5cc; text-align: center;">
@@ -580,20 +627,20 @@ Online HTML, CSS and JavaScript editor to run code online.
                 </div>
                 <br>
               </div>
-              <h5><strong>Leave an audit trail</strong></h5>
-              <br>
-              <p>Map compliance to internal policies, procedures, and operations by integrating
-                seamlessly with your GRC
-                tool.</p>
+              <div class="reveal">
+                <h5>
+                  <strong>Leave an audit trail</strong>
+                </h5>
+                <br>
+                <p>Map compliance to internal policies, procedures, and operations by integrating
+                  seamlessly with your GRC
+                  tool.</p>
+              </div>
             </div>
             <div class="col-sm-1"></div>
 
           </div>
-
         </div>
-        <!-- <div class="col-sm-1">
-
-        </div> -->
       </div>
       <br>
 
@@ -601,14 +648,16 @@ Online HTML, CSS and JavaScript editor to run code online.
   </div>
 
   <br>
-  <div class="container-fluid mt-4">
+  <div class="container-fluid reveal">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6" style="margin-top: -60px;">
-          <img class="img-res  " id="img-sm" src="../images/Overview-1.png" alt="" width="600" height="640">
+        <div class="col-sm-6">
+          <div class="">
+            <img class="img-res " id="img-sm" src="../images/Overview-1.png" alt="" width="600" height="640">
+          </div>
         </div>
-        <div class="col-sm-6 obligation ">
-          <div class="obligation">
+        <div class="col-sm-6 obligation">
+          <div class="obligation reveal reveal1">
             <h3 style="color: #253859;  font-weight: 900; ">Your Obligations, Automatically Generated</h3>
             <br>
             <h5 style="font-family: Mulish;
@@ -629,7 +678,7 @@ Online HTML, CSS and JavaScript editor to run code online.
                   Firm</b> </strong>
             </h5>
 
-            <p>Ascent filters out regulatory white noise, getting you to the right obligations that
+            <p>360regtech filters out regulatory white noise, getting you to the right obligations that
               matter to your
               business,
               almost instantly.</p>
@@ -673,7 +722,7 @@ Online HTML, CSS and JavaScript editor to run code online.
                 Updates</strong>
 
             </h5>
-            <p>Static or outdated obligations are useless. Ascent updates your obligations automatically
+            <p>Static or outdated obligations are useless. 360regtech updates your obligations automatically
               every time a
               rule
               changes, for your immediate review.</p>
@@ -681,14 +730,13 @@ Online HTML, CSS and JavaScript editor to run code online.
         </div>
       </div>
     </div>
-
   </div>
 
   <br>
-  <div class=" container-fluid">
+  <div class=" container-fluid ">
     <div class="row">
       <div class="col-sm-12 ingcommbank-sm">
-        <img src="../images/ingcommbank.jpg" alt="">
+        <img src="../images/img/ingcommbank.jpg" alt="">
       </div>
       <div class="row">
         <div class="col-sm-2"></div>
@@ -703,11 +751,6 @@ Online HTML, CSS and JavaScript editor to run code online.
                   manually.</span></span></p>
             <br>
             <h3 style="color: #183460;">Read Their Story <span>
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="40"
-                  height="40" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                </svg> -->
                 <span class="link link--arrowed" style="color: #253859">
                   <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 32 32">
                     <g fill="none" stroke="#03D5CC" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
@@ -716,10 +759,6 @@ Online HTML, CSS and JavaScript editor to run code online.
                       </path>
                     </g>
                   </svg></span>
-                <!-- <section class="checkout"><a class="link link--arrowed"
-                    style="color: #03D5CC;text-align: center ;margin-top: 25px;font-weight: 600;" href="#">Check
-                    us out on Instagram!
-                   </a></section> -->
               </span>
             </h3>
           </div>
@@ -736,7 +775,7 @@ Online HTML, CSS and JavaScript editor to run code online.
         <div class="col-sm-6 p-4">
           <div class="row">
             <div class="col-sm-12 p-5">
-              <div class="single-sm">
+              <div class="single-sm left_to_right">
                 <h3>A Single Source of Regulatory Truth</h3><br>
                 <p style="font-family: Mulish;font-size: inherit; -webkit-text-stroke: medium; letter-spacing: 1px;
                 text-transform: none;
@@ -745,12 +784,10 @@ Online HTML, CSS and JavaScript editor to run code online.
                 line-height: 30px;
                 color: #253859;">
                   <span></span> <span style="color: #03d5cc !important;padding: 15px;">
-                    <!-- <i class="icon-default-style fa fa-users accent-color"></i> -->
                     <i class="icon-default-style fa fa-users accent-color"></i>
 
                   </span>
                   Bridge Organizational Divides
-                  <!-- <b>Bridge Organizational Divides</b> -->
                 </p>
                 <p style="font-family: Mulish;
                 text-transform: none;
@@ -758,42 +795,39 @@ Online HTML, CSS and JavaScript editor to run code online.
                 font-weight: 400; 
                 color: #253859;
                 text-align: justify;margin-left: 50px;">Siloed teams and processes are prone to gaps.
-                  Ascent
+                  360regtech
                   unites your people, ensuring they’re always working
                   off the same data, even as rules change.</p>
               </div>
-              <div class="single-sm">
-                <h3 style="font-family: Mulish;font-size: inherit; -webkit-text-stroke: medium;
+              <div class="single-sm left_to_right">
+                <p style="font-family: Mulish;font-size: inherit; -webkit-text-stroke: medium; letter-spacing: 1px;
                 text-transform: none;
                 letter-spacing: -0.02em;
                 font-size: large;
                 line-height: 30px;
-                letter-spacing: 1px;
-             
                 color: #253859;"><span style="color: #03d5cc !important;padding: 15px;"><i
                       class="icon-default-style fa fa-eye "></i></span>Avoid
-                  Black Boxes</h3>
+                  Black Boxes</p>
                 <p style="font-family: Mulish;
                 text-transform: none;
                 line-height: 30px;
                 font-weight: 400; 
                 color: #253859;
                 text-align: justify;margin-left: 50px;">Your requirements shouldn’t be a mystery.
-                  Ascent gives
+                  360regtech gives
                   you 360 degree visibility into every obligation and lets you trace each one back to the exact
                   rule it
                   came from.</p>
               </div>
-              <div class="single-sm">
-                <h3 style="font-family: Mulish;font-size: inherit; -webkit-text-stroke: medium;
+              <div class="single-sm left_to_right">
+                <p style="font-family: Mulish;font-size: inherit; -webkit-text-stroke: medium; letter-spacing: 1px;
                 text-transform: none;
                 letter-spacing: -0.02em;
                 font-size: large;
                 line-height: 30px;
-                letter-spacing: 1px;
                 color: #253859;"><span style="color: #03d5cc;padding: 15px;"><i
                       class="icon-default-style fa fa-shield "></i></span>
-                  Evidence Compliance</h3>
+                  Evidence Compliance</p>
                 <p style="font-family: Mulish;
                 text-transform: none;
                 line-height: 30px;
@@ -809,7 +843,7 @@ Online HTML, CSS and JavaScript editor to run code online.
         </div>
         <div class="col-sm-6">
           <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12  reveal reveal1">
               <img class="img-res1 Overview1" src="../images/img/img-3.png" alt="">
             </div>
           </div>
@@ -818,7 +852,7 @@ Online HTML, CSS and JavaScript editor to run code online.
     </div>
   </div>
   <br>
-  <div class="container-fluid">
+  <!-- <div class="container-fluid">
     <div class="img-Sizes">
       <div class="row " id="img-Sizes">
         <div class="col-sm-12 " style="height: 120px !important;"></div>
@@ -826,8 +860,9 @@ Online HTML, CSS and JavaScript editor to run code online.
           <div class="col-sm-2"> </div>
           <div class="col-sm-4 global-sm">
             <p style="font-size: 300%; font-family: Mulish;
-            font-weight: 900;color: #253859;
-        "><strong><span>A Global Bank</span></strong></p>
+            font-weight: 900;color: #253859;">
+              <strong><span>A Global Bank</span></strong>
+            </p>
 
             <p>
               <span style="color: #ffffff;">
@@ -838,28 +873,62 @@ Online HTML, CSS and JavaScript editor to run code online.
             </p>
             <br>
             <h4 style="color: #183460;">Read Their Story
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-                  class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+              <span class="link link--arrowed">
+                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 32 32">
+                  <g fill="none" stroke="#253859" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
+                    <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                    <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98">
+                    </path>
+                  </g>
                 </svg>
               </span>
             </h4>
-            <!-- <h4 style="color: #183460;"> Read Their Story<span class="link_wrap"><a
-                  class="link_text" role="button"
-                  href="https://www.ascentregtech.com/customer-story-global-bank-gdpr/"><span
-                    class="arrow"></span></a></span></h4> -->
           </div>
           <div class="col-sm-4">
-
           </div>
         </div>
       </div>
     </div>
+  </div> -->
+  <div class=" container-fluid ">
+    <div class="row">
+      <div class="col-sm-12 ingcommbank-sm">
+        <img src="globaltop50bank.jpg" alt="">
+      </div>
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4 ing">
+          <div class="CommBank global-sm">
+            <p style="font-size: 300%; font-family: Mulish;
+            font-weight: 900;color: #253859;">
+              <strong><span>A Global Bank</span></strong>
+            </p>
+            <p>
+              <span style="color: #ffffff;">
+                <span style="font-size: 200%; line-height: 30px;">achieved <strong>99% cost reduction
+                  </strong>and <strong>30% time savings </strong>in regulatory change triage across the
+                  business.</span>
+              </span>
+            </p>
+            <h3 style="color: #183460;">Read Their Story <span>
+                <span class="link link--arrowed" style="color: #253859">
+                  <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 32 32">
+                    <g fill="none" stroke="#03D5CC" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
+                      <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                      <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98">
+                      </path>
+                    </g>
+                  </svg></span>
+              </span>
+            </h3>
+          </div>
+        </div>
+        <div class="col-sm-6"></div>
+      </div>
+    </div>
   </div>
   <br>
-  <div class="container-fluid">
+  <div class="container-fluid reveal">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 p-3">
@@ -867,8 +936,8 @@ Online HTML, CSS and JavaScript editor to run code online.
         </div>
         <div class="col-sm-6">
           <div class="row p-5">
-            <div class="col-sm-12">
-              <div>
+            <div class="col-sm-12 reveal reveal1">
+              <div class=" ">
                 <h3 id="header-color" style="	font-size: 27.45px;
                 line-height: 25.5px;
                 font-family: Mulish;
@@ -893,7 +962,7 @@ Online HTML, CSS and JavaScript editor to run code online.
                 font-weight: 400;
                 color: #253859;    line-height: 27px;">
                   Unlike legacy tools or traditional service engagements that can take months to implement,
-                  Ascent is
+                  360regtech is
                   ready
                   for your immediate use.
                 </p>
@@ -927,7 +996,7 @@ Online HTML, CSS and JavaScript editor to run code online.
                 <p style="margin-left: 45px;
                 font-weight: 400;
                 color: #253859;    line-height: 27px;">
-                  Whether your business complies with a couple regulators or hundreds, Ascent is your partner in
+                  Whether your business complies with a couple regulators or hundreds, 360regtech is your partner in
                   untangling complex regulation into a streamlined process that scales with you.
                 </p>
               </div>
@@ -960,7 +1029,7 @@ Online HTML, CSS and JavaScript editor to run code online.
                 color: #253859;"><b>Obligations Register</b></h4>
             <p>An easy-to-read digital register of your firm’s regulatory obligations. Automatically generated
               and kept
-              up-to-date by Ascent.</p>
+              up-to-date by 360regtech.</p>
             <h2 style=" font-family: Mulish;font-size: 28.45px;letter-spacing: 1px;font-size: inherit;
               -webkit-text-stroke: medium; letter-spacing: 1px; text-transform: none; letter-spacing: -0.02em;
               font-size: 30px; line-height: 30px; letter-spacing: 1px; color: #253859;">Rule Inventory</h2>
@@ -1038,7 +1107,7 @@ Online HTML, CSS and JavaScript editor to run code online.
               <p class="big">
                 <span style="font-size: large;font-family: Mulish;
                 font-weight: 900; color: #253859;letter-spacing: -0.02em;">
-                  <b>Manage Obligations in Ascent</b>
+                  <b>Manage Obligations in 360regtech</b>
                 </span>
               </p>
               <div class="mt-4">
@@ -1067,13 +1136,14 @@ Online HTML, CSS and JavaScript editor to run code online.
             <br>
             <div class="mt-4">
               <p class="big"><span span style="font-size: large;font-family: Mulish;
-                font-weight: 900; color: #253859;letter-spacing: -0.02em;"><b>Leverage Ascent Data via API</b></span>
+                font-weight: 900; color: #253859;letter-spacing: -0.02em;"><b>Leverage 360regtech Data via
+                    API</b></span>
               </p>
               <div class="mt-4">
                 <p class="">
                   <span style="font-size: large; color: #253859;">Using a different GRC or internal system to
                     manage your obligations?
-                    Seamlessly connect Ascent data to other enterprise platforms via API.
+                    Seamlessly connect 360regtech data to other enterprise platforms via API.
                   </span>
                 </p>
                 <a href="#" style="font-size: large;color: #03d5cc;text-decoration: none;">
@@ -1088,7 +1158,7 @@ Online HTML, CSS and JavaScript editor to run code online.
       </div>
     </div>
   </div>
-  <div class="container-fluid" style="background-image: url(../images/ascent_cta-bg-1.jpg);
+  <div class="container-fluid" style="background-image: url(../images/360regtech_cta-bg-1.jpg);
   background-repeat: no-repeat;background-size: cover;">
     <div class="container">
       <div class="row">
@@ -1127,7 +1197,7 @@ Online HTML, CSS and JavaScript editor to run code online.
     <div class="container">
       <div class="row">
         <div class="col-md-4 mt-5">
-          <img src="../images/footer.png" alt="">
+          <img src="../images/footer.png" alt="" style="visibility: hidden;">
           <h5 style="color: #03D5CC;">Compliance, Uncomplicated.</h5>
         </div>
         <div class="col-md-4 mt-5">
@@ -1174,7 +1244,7 @@ Online HTML, CSS and JavaScript editor to run code online.
       <div class="row p-3">
         <div class="col-md-1"></div>
         <div class="col-md-4">
-          <p style="color: white;font-size: 12px;">© 2023 Ascent RegTech. All Rights Reserved.</p>
+          <p style="color: white;font-size: 12px;">© 2023 360regtech RegTech. All Rights Reserved.</p>
         </div>
         <div class="col-md-4"></div>
         <div class="col-md-3">
@@ -1245,6 +1315,32 @@ Online HTML, CSS and JavaScript editor to run code online.
       }
     }
     window.addEventListener("scroll", reveal);
+  </script>
+  <script>
+    $(window).on("scroll", function () {
+      $(".left_to_right").each(function () {
+        if (isElementInViewport(this)) {
+          $(this).addClass("visible");
+        }
+      });
+    });
+    $(window).on("scroll", function () {
+      $(".right_to_left").each(function () {
+        if (isElementInViewport(this)) {
+          $(this).addClass("visible");
+        }
+      });
+    });
+    function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
   </script>
 </body>
 
