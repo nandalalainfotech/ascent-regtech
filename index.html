@@ -14,7 +14,400 @@
     <title>Responsive Animated Navbar</title>
 </head>
 <style>
+    * {
+        font-family: Mulish;
+    }
 
+    .row1 {
+        display: none;
+    }
+
+    /* first div vedio start */
+    .index-head {
+        margin-top: 9rem !important;
+        margin-left: 7rem !important;
+        font-size: 42px !important;
+        -webkit-text-stroke: thin;
+        font-weight: 900;
+    }
+
+    .index-heads {
+        margin-left: 7rem !important;
+        color: #253859;
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem;
+        text-align: justify;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .vedio,
+    .nectar-video-self-hosted {
+        margin-top: 9rem !important;
+        /* margin-left: 7rem !important; */
+        border-radius: 10px !important;
+        box-shadow: 15px 15px 15px 5px #e7e4e4;
+    }
+
+    .button {
+        border: none;
+        color: white;
+        padding: 9px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline;
+        font-size: 12px;
+        font-weight: bold;
+        margin: 0 0 10px;
+        border-radius: 5px;
+        transition-duration: 0.4s;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    .button2 {
+        background-color: inherit;
+        color: #03d5cc;
+        width: 10rem;
+        z-index: 5;
+        border: 2px solid #03d5cc;
+        text-transform: uppercase !important;
+        position: absolute;
+        margin-left: 0.5rem;
+    }
+
+    .button3 {
+        background-color: #03d5cc;
+        height: 2.5rem;
+        z-index: 5 !important;
+        margin-left: 7rem !important;
+        text-transform: uppercase !important;
+        position: relative;
+    }
+
+    .button3:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .button2:hover {
+        background-color: #03d5cc;
+        color: white;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    /* first div vedio end */
+    /* second div */
+    .center {
+        margin-top: -15rem;
+        text-align: center;
+        color: #253859;
+        text-transform: none;
+        letter-spacing: -0.01em;
+        font-size: 29px;
+        line-height: 27px;
+        margin-left: 25rem !important;
+        margin-right: 24rem !important;
+        -webkit-text-stroke: 1.5px;
+        font-weight: 900;
+        padding-left: 2rem;
+        padding-top: 1rem;
+    }
+
+    .centers {
+        margin-top: 2rem;
+        text-align: center !important;
+        line-height: 27px;
+        color: #253859;
+        font-size: 17px !important;
+        margin-left: 2rem !important;
+    }
+
+    .path {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: dash 3s ease-in-out;
+    }
+
+
+    @keyframes dash {
+        from {
+            stroke-dashoffset: 200;
+        }
+
+        to {
+            stroke-dashoffset: 10;
+        }
+    }
+
+
+    /* second div end */
+
+    /* third div */
+    .center-content {
+        margin-top: 1rem;
+        margin-left: 7rem;
+        margin-right: 5rem;
+        color: #253859;
+        word-spacing: -0.05em;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 500;
+        -webkit-text-stroke: thin;
+    }
+
+    .centers-content {
+        margin-left: 7rem;
+        margin-right: 8rem;
+        color: #253859;
+        font-size: 17px;
+        margin-bottom: 2rem;
+    }
+
+    .resposive-phone {
+        display: none;
+    }
+
+    /* third div end */
+    /* fourth div */
+
+    .centers-contents {
+        text-align: center !important;
+        font-size: 1.4rem !important;
+        font-weight: 700;
+        color: #253859;
+        padding: 1rem 0 1rem 0;
+        margin-left: 0rem !important;
+        margin-right: 2rem !important;
+        /* margin-top: 100px; */
+    }
+
+    .centers-contents span {
+        top: 1rem !important;
+    }
+
+    .image-div {
+        margin: 1rem 0 2rem 0;
+        opacity: 1;
+    }
+
+    .wavetable {
+        display: none;
+    }
+
+    /* fourth div end */
+
+    /* fifth div */
+    .centers-para {
+        margin-top: 1rem;
+        letter-spacing: -0.02em;
+        line-height: 30px;
+        text-align: center;
+        color: #253859;
+        font-size: 17px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 5rem;
+    }
+
+    .centers-head {
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: -0.04em;
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: inherit;
+        color: #253859 !important;
+    }
+
+    .centers-svg {
+        margin-top: 2rem;
+        text-align: center !important;
+        margin-left: 2rem !important;
+    }
+
+    /* fifth div end */
+    /* sixth div */
+    .svg-span {
+        background-color: #d3fcfa;
+        height: 50px;
+    }
+
+    /* sixth div end */
+    .row3 {
+        background-color: #eff4f9;
+        height: 30rem !important;
+    }
+
+    .obligations {
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 700;
+    }
+
+    .obligations-para {
+        color: #253859;
+        font-weight: bold;
+    }
+
+    .regulatory {
+        line-height: 30px;
+        margin-top: 125px;
+        -webkit-text-stroke-width: thin;
+        color: #253859;
+        margin-right: -6.5rem;
+        font-size: 32px;
+    }
+
+
+    .card {
+        min-height: 300px;
+        margin-left: 8rem;
+    }
+
+    #buttonlearn-work {
+        background-color: #03d5cc;
+        color: #fff;
+        position: relative;
+    }
+
+    #buttonlearn-work:hover {
+        bottom: .5rem;
+        background-color: #28bebb;
+        animation-name: btn;
+        animation-duration: 1s;
+    }
+
+    .card-body {
+        color: #fff;
+        margin-left: 2rem;
+    }
+
+
+    .card-para {
+        color: #fff;
+        margin-top: 10px;
+        margin-bottom: 2.5rem;
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .card-head {
+        -webkit-text-stroke: thin;
+        margin-top: 10px;
+        font-size: 42.6px;
+        line-height: 37px;
+    }
+
+    .Gain-Compliance {
+        color: #253859;
+        margin-top: 20px;
+        font-family: Mulish;
+        font-size: 2rem;
+        font-weight: 500;
+        -webkit-text-stroke: thin;
+        margin-left: 4rem;
+        padding-right: 4.3rem;
+    }
+
+    @keyframes nectarStrokeAnimation {
+        0% {
+            stroke-dashoffset: 1;
+            opacity: 0;
+        }
+
+        1% {
+            opacity: 1;
+        }
+
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    .nectar-highlighted-text .nectar-scribble {
+        z-index: 4;
+    }
+
+    .nectar-highlighted-text em.animated .nectar-scribble path {
+        stroke-linecap: round;
+        opacity: 1;
+        animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    .nectar-highlighted-text .nectar-scribble path {
+        stroke-dasharray: 1;
+        stroke-dashoffset: 1;
+        opacity: 0;
+    }
+
+    .nectar-highlighted-text em.animated .nectar-scribble path {
+        stroke-linecap: round;
+        opacity: 1;
+        animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    .nectar-highlighted-text .nectar-scribble {
+        position: relative;
+        /* left: 21px; */
+        top: -13PX;
+        z-index: 0;
+        width: 179px;
+        height: 18px;
+    }
+
+    .nectar-highlighted-text .nectar-scribble path {
+        stroke-dasharray: 1;
+        stroke-dashoffset: 1;
+        opacity: 0;
+        z-index: -1 !important;
+    }
+
+    .nectar-highlighted-text em.animated .nectar-scribble path {
+        stroke-linecap: round;
+        opacity: 1;
+        animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    .link {
+        color: #2175FF;
+        cursor: pointer;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    .link--arrowed {
+        display: inline-block;
+        height: 2rem;
+        line-height: 2rem;
+    }
+
+    .link--arrowed .arrow-icon {
+        position: relative;
+        top: -1px;
+        transition: transform 0.3s ease;
+        vertical-align: middle;
+    }
+
+    .link--arrowed .arrow-icon--circle {
+        stroke-dashoffset: 0;
+    }
+
+    .link--arrowed:hover .arrow-icon {
+        transform: translate3d(5px, 0, 0);
+    }
+
+    .link--arrowed:hover .arrow-icon--circle {
+        transition: stroke-dashoffset 0.3s ease;
+        stroke-dasharray: 95;
+        stroke-dashoffset: 95;
+    }
+
+    .checkout {
+        text-align: center;
+        font-size: 18px;
+    }
+/* 
+    @media only screen and (min-width: 2500px) {
         * {
             font-family: Mulish;
         }
@@ -23,17 +416,17 @@
             display: none;
         }
 
-        /* first div vedio start */
+        /* first div vedio start 
         .index-head {
-            margin-top: 9rem !important;
-            margin-left: 7rem !important;
+            margin-top: 13rem !important;
+            margin-left:0rem !important;
             font-size: 42px !important;
             -webkit-text-stroke: thin;
             font-weight: 900;
         }
 
         .index-heads {
-            margin-left: 7rem !important;
+            margin-left: 0rem !important;
             color: #253859;
             margin-top: 1.5rem !important;
             margin-bottom: 1.5rem;
@@ -44,8 +437,10 @@
 
         .vedio,
         .nectar-video-self-hosted {
-            margin-top: 9rem !important;
-            /* margin-left: 7rem !important; */
+            height: 245.2px;
+            width: 518.62px;
+            margin-top: 13rem !important;
+            /* margin-left: 7rem !important; 
             border-radius: 10px !important;
             box-shadow: 15px 15px 15px 5px #e7e4e4;
         }
@@ -81,7 +476,7 @@
             background-color: #03d5cc;
             height: 2.5rem;
             z-index: 5 !important;
-            margin-left: 7rem !important;
+            margin-left: 0rem !important;
             text-transform: uppercase !important;
             position: relative;
         }
@@ -97,7 +492,7 @@
         }
 
         /* first div vedio end */
-        /* second div */
+        /* second div 
         .center {
             margin-top: -15rem;
             text-align: center;
@@ -148,7 +543,7 @@
 
         /* second div end */
 
-        /* third div */
+        /* third div 
         .center-content {
             margin-top: 1rem;
             margin-left: 7rem;
@@ -174,7 +569,7 @@
         }
 
         /* third div end */
-        /* fourth div */
+        /* fourth div 
 
         .centers-contents {
             text-align: center !important;
@@ -184,7 +579,7 @@
             padding: 1rem 0 1rem 0;
             margin-left: 0rem !important;
             margin-right: 2rem !important;
-            /* margin-top: 100px; */
+            /* margin-top: 100px; 
         }
 
         .centers-contents span {
@@ -202,7 +597,7 @@
 
         /* fourth div end */
 
-        /* fifth div */
+        /* fifth div 
         .centers-para {
             margin-top: 1rem;
             letter-spacing: -0.02em;
@@ -232,13 +627,13 @@
         }
 
         /* fifth div end */
-        /* sixth div */
+        /* sixth div 
         .svg-span {
             background-color: #d3fcfa;
             height: 50px;
         }
 
-        /* sixth div end */
+        /* sixth div end 
         .row3 {
             background-color: #eff4f9;
             height: 30rem !important;
@@ -314,7 +709,111 @@
             margin-left: 4rem;
             padding-right: 4.3rem;
         }
-    
+
+        .nectar-shape-divider-wrap.no-color .nectar-shape-divider {
+            display: none;
+        }
+
+        @keyframes nectarStrokeAnimation {
+            0% {
+                stroke-dashoffset: 1;
+                opacity: 0;
+            }
+
+            1% {
+                opacity: 1;
+            }
+
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .nectar-highlighted-text .nectar-scribble {
+            z-index: 4;
+        }
+
+        .nectar-highlighted-text em.animated .nectar-scribble path {
+            stroke-linecap: round;
+            opacity: 1;
+            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+
+        .nectar-highlighted-text .nectar-scribble path {
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+            opacity: 0;
+        }
+
+        .nectar-highlighted-text em.animated .nectar-scribble path {
+            stroke-linecap: round;
+            opacity: 1;
+            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+
+        .nectar-highlighted-text .nectar-scribble {
+            position: relative;
+            /* left: 21px; 
+            top: -13PX;
+            z-index: 0;
+            width: 179px;
+            height: 18px;
+        }
+
+        .nectar-highlighted-text .nectar-scribble path {
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+            opacity: 0;
+            z-index: -1 !important;
+        }
+
+        .nectar-highlighted-text em.animated .nectar-scribble path {
+            stroke-linecap: round;
+            opacity: 1;
+            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+
+        .link {
+            color: #2175FF;
+            cursor: pointer;
+            font-weight: 400;
+            text-decoration: none;
+        }
+
+        .link--arrowed {
+            display: inline-block;
+            height: 2rem;
+            line-height: 2rem;
+        }
+
+        .link--arrowed .arrow-icon {
+            position: relative;
+            top: -1px;
+            transition: transform 0.3s ease;
+            vertical-align: middle;
+        }
+
+        .link--arrowed .arrow-icon--circle {
+            stroke-dashoffset: 0;
+        }
+
+        .link--arrowed:hover .arrow-icon {
+            transform: translate3d(5px, 0, 0);
+        }
+
+        .link--arrowed:hover .arrow-icon--circle {
+            transition: stroke-dashoffset 0.3s ease;
+            stroke-dasharray: 95;
+            stroke-dashoffset: 95;
+        }
+
+        .checkout {
+            text-align: center;
+            font-size: 18px;
+        }
+
+
+    } */
 
     @media only screen and (max-width: 690px) {
         * {
@@ -544,10 +1043,23 @@
 
         .contaier2 {
             margin-top: -73px;
+            margin-left: -0.5rem;
+        }
+
+        .contaier3 {
+            margin-top: -2rem;
+        }
+
+        .contaier4 {
+            margin-left: 3rem !important;
+        }
+
+        .contaier5 {
+            margin-right: 10rem !important;
         }
 
         .regulatory {
-            line-height: 25px;
+            line-height: 30px;
             overflow-y: hidden;
             margin-top: 10px;
             color: #253859;
@@ -562,7 +1074,8 @@
             font-family: Mulish;
             font-size: 30PX;
             overflow-y: hidden;
-            margin-right: 0;
+            margin-right: -67px;
+            margin-left: 0rem;
         }
 
         .overall {
@@ -570,6 +1083,105 @@
             padding-right: 5rem;
 
         }
+
+        @keyframes nectarStrokeAnimation {
+            0% {
+                stroke-dashoffset: 1;
+                opacity: 0;
+            }
+
+            1% {
+                opacity: 1;
+            }
+
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .nectar-highlighted-text .nectar-scribble {
+            z-index: 4;
+        }
+
+        .nectar-highlighted-text em.animated .nectar-scribble path {
+            stroke-linecap: round;
+            opacity: 1;
+            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+
+        .nectar-highlighted-text .nectar-scribble path {
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+            opacity: 0;
+        }
+
+        .nectar-highlighted-text em.animated .nectar-scribble path {
+            stroke-linecap: round;
+            opacity: 1;
+            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+
+        .nectar-highlighted-text .nectar-scribble {
+            position: relative;
+            /* left: 21px; */
+            top: -13PX;
+            z-index: 0;
+            width: 179px;
+            height: 18px;
+        }
+
+        .nectar-highlighted-text .nectar-scribble path {
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+            opacity: 0;
+            z-index: -1 !important;
+        }
+
+        .nectar-highlighted-text em.animated .nectar-scribble path {
+            stroke-linecap: round;
+            opacity: 1;
+            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+
+        .link {
+            color: #2175FF;
+            cursor: pointer;
+            font-weight: 400;
+            text-decoration: none;
+        }
+
+        .link--arrowed {
+            display: inline-block;
+            height: 2rem;
+            line-height: 2rem;
+        }
+
+        .link--arrowed .arrow-icon {
+            position: relative;
+            top: -1px;
+            transition: transform 0.3s ease;
+            vertical-align: middle;
+        }
+
+        .link--arrowed .arrow-icon--circle {
+            stroke-dashoffset: 0;
+        }
+
+        .link--arrowed:hover .arrow-icon {
+            transform: translate3d(5px, 0, 0);
+        }
+
+        .link--arrowed:hover .arrow-icon--circle {
+            transition: stroke-dashoffset 0.3s ease;
+            stroke-dasharray: 95;
+            stroke-dashoffset: 95;
+        }
+
+        .checkout {
+            text-align: center;
+            font-size: 18px;
+        }
+
     }
 
     @media only screen and (max-width: 999px) and (min-width: 690px) {
@@ -880,6 +1492,105 @@
             opacity: 0.3;
         }
 
+        @keyframes nectarStrokeAnimation {
+            0% {
+                stroke-dashoffset: 1;
+                opacity: 0;
+            }
+
+            1% {
+                opacity: 1;
+            }
+
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .nectar-highlighted-text .nectar-scribble {
+            z-index: 4;
+        }
+
+        .nectar-highlighted-text em.animated .nectar-scribble path {
+            stroke-linecap: round;
+            opacity: 1;
+            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+
+        .nectar-highlighted-text .nectar-scribble path {
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+            opacity: 0;
+        }
+
+        .nectar-highlighted-text em.animated .nectar-scribble path {
+            stroke-linecap: round;
+            opacity: 1;
+            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+
+        .nectar-highlighted-text .nectar-scribble {
+            position: relative;
+            /* left: 21px; */
+            top: -13PX;
+            z-index: 0;
+            width: 179px;
+            height: 18px;
+        }
+
+        .nectar-highlighted-text .nectar-scribble path {
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+            opacity: 0;
+            z-index: -1 !important;
+        }
+
+        .nectar-highlighted-text em.animated .nectar-scribble path {
+            stroke-linecap: round;
+            opacity: 1;
+            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+
+        .link {
+            color: #2175FF;
+            cursor: pointer;
+            font-weight: 400;
+            text-decoration: none;
+        }
+
+        .link--arrowed {
+            display: inline-block;
+            height: 2rem;
+            line-height: 2rem;
+        }
+
+        .link--arrowed .arrow-icon {
+            position: relative;
+            top: -1px;
+            transition: transform 0.3s ease;
+            vertical-align: middle;
+        }
+
+        .link--arrowed .arrow-icon--circle {
+            stroke-dashoffset: 0;
+        }
+
+        .link--arrowed:hover .arrow-icon {
+            transform: translate3d(5px, 0, 0);
+        }
+
+        .link--arrowed:hover .arrow-icon--circle {
+            transition: stroke-dashoffset 0.3s ease;
+            stroke-dasharray: 95;
+            stroke-dashoffset: 95;
+        }
+
+        .checkout {
+            text-align: center;
+            font-size: 18px;
+        }
+
+
     }
 
     .full-width-section>.nectar-shape-divider-wrap {
@@ -924,11 +1635,185 @@
     .nectar-shape-divider-wrap[data-style="waves_opacity_alt"] svg path:nth-child(2) {
         opacity: 0.3;
     }
-    @media only screen and (max-width: 999px){
-        
-    }
 </style>
-<!-- <style>
+<style>
+    @media only screen and (min-width: 2500px) {
+
+        body,
+        h1,
+        h2,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Importer la police Roboto depuis Google Fonts */
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+        /* Appliquer la police à vos éléments */
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+
+        /* Styles pour l'arrière-plan dégradé bleu-violet */
+        body {
+            /* background-image: linear-gradient(to top, #7FFFD4, #0F52BA); */
+            background-repeat: repeat;
+            background-position: center;
+            /* Mode de fusion pour superposer l'image */
+            background-blend-mode: overlay;
+        }
+
+        body::after {
+            /* Opacité de l'image superposée */
+            content: "";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* background: url("https://github.com/berru-g/scroll-effect/blob/main/src/img/back.png?raw=true") center/cover; */
+            opacity: 0.3;
+            /* Modifier l'opacité ici */
+            pointer-events: none;
+        }
+
+        /*scroll effect*/
+        .scroll-section {
+            /* padding: 15px 50px; */
+            color: #000;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+
+        .scroll-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media only screen and (max-width: 690px) {
+
+        body,
+        h1,
+        h2,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Importer la police Roboto depuis Google Fonts */
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+        /* Appliquer la police à vos éléments */
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+
+        /* Styles pour l'arrière-plan dégradé bleu-violet */
+        body {
+            /* background-image: linear-gradient(to top, #7FFFD4, #0F52BA); */
+            background-repeat: repeat;
+            background-position: center;
+            /* Mode de fusion pour superposer l'image */
+            background-blend-mode: overlay;
+        }
+
+        body::after {
+            /* Opacité de l'image superposée */
+            content: "";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* background: url("https://github.com/berru-g/scroll-effect/blob/main/src/img/back.png?raw=true") center/cover; */
+            opacity: 0.3;
+            /* Modifier l'opacité ici */
+            pointer-events: none;
+        }
+
+        /*scroll effect*/
+        .scroll-section {
+            /* padding: 15px 50px; */
+            color: #000;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+
+        .scroll-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media only screen and (max-width: 999px) and (min-width: 690px) {
+
+        body,
+        h1,
+        h2,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Importer la police Roboto depuis Google Fonts */
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+        /* Appliquer la police à vos éléments */
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+
+        /* Styles pour l'arrière-plan dégradé bleu-violet */
+        body {
+            /* background-image: linear-gradient(to top, #7FFFD4, #0F52BA); */
+            background-repeat: repeat;
+            background-position: center;
+            /* Mode de fusion pour superposer l'image */
+            background-blend-mode: overlay;
+        }
+
+        body::after {
+            /* Opacité de l'image superposée */
+            content: "";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* background: url("https://github.com/berru-g/scroll-effect/blob/main/src/img/back.png?raw=true") center/cover; */
+            opacity: 0.3;
+            /* Modifier l'opacité ici */
+            pointer-events: none;
+        }
+
+        /*scroll effect*/
+        .scroll-section {
+            /* padding: 15px 50px; */
+            color: #000;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+
+        .scroll-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
     /* Réinitialisation des styles par défaut */
     body,
     h1,
@@ -969,12 +1854,12 @@
         /* background: url("https://github.com/berru-g/scroll-effect/blob/main/src/img/back.png?raw=true") center/cover; */
         opacity: 0.3;
         /* Modifier l'opacité ici */
-        pointer-events: none; -->
-<!-- } -->
-<!-- 
+        pointer-events: none;
+    }
+
     /*scroll effect*/
-    /* .scroll-section {
-        /* padding: 15px 50px; 
+    .scroll-section {
+        /* padding: 15px 50px; */
         color: #000;
         opacity: 0;
         transform: translateY(50px);
@@ -984,8 +1869,8 @@
     .scroll-section.visible {
         opacity: 1;
         transform: translateY(0);
-    } */
-</style> -->
+    }
+</style>
 
 <body>
     <!-- nav bar start -->
@@ -1072,36 +1957,38 @@
                 </path>
             </svg>
         </div>
-        <div class="row">
-            <div class="col-sm-6 col-md-12 col-lg-6">
-                <section class="scroll-section">
-                    <h3 class="index-head mt-5" style="color: #253859;">Streamline compliance processes, even in
-                        complex multi-jurisdictional operating environments</h3>
-                    <h6 class="index-heads ">Cut through the regulatory clutter. Identify only the specific <br>
-                        regulatory
-                        information
-                        you need to stay compliant.</h6>
-                    <div class="col-sm-1 col-md-12 col-lg-1" style="display: inline;">
-                        <button class="button button3">Talk to a solutions specialist</button>
-                        <button class="button button2">Explore Solutions</button>
-                    </div>
-                </section>
-            </div>
-            <div class="col-sm-3 col-md-12 col-lg-3">
-                <video width=" 449.49" height="256.26" class="nectar-video-self-hosted" preload="metadata" controls=""
-                    controlslist="nodownload" poster="vedio/index-vedio.mp" style="visibility: visible;">
-                    <source src="vedio/index-vedio.mp" type="video/webm">
-                </video>
-                <video width="500" controls class="vedio" style="visibility: hidden;">
-                    <source src="vedio/index-vedio.mp4" type="video/mp4">
-                    <source src="vedio/index-vedio.mp" type="video/ogg">
-                    Your browser does not support HTML video.
-                </video>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-12 col-lg-6">
+                    <section class="scroll-section">
+                        <h3 class="index-head mt-5" style="color: #253859;">Streamline compliance processes, even in
+                            complex multi-jurisdictional operating environments</h3>
+                        <h6 class="index-heads ">Cut through the regulatory clutter. Identify only the specific <br>
+                            regulatory
+                            information
+                            you need to stay compliant.</h6>
+                        <div class="col-sm-1 col-md-12 col-lg-1" style="display: inline;">
+                            <button class="button button3">Talk to a solutions specialist</button>
+                            <button class="button button2">Explore Solutions</button>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-sm-3 col-md-12 col-lg-3">
+                    <video width=" 449.49" height="256.26" class="nectar-video-self-hosted" preload="metadata"
+                        controls="" controlslist="nodownload" poster="vedio/index-vedio.mp"
+                        style="visibility: visible;">
+                        <source src="vedio/index-vedio.mp" type="video/webm">
+                    </video>
+                    <video width="500" controls class="vedio" style="visibility: hidden;">
+                        <source src="vedio/index-vedio.mp4" type="video/mp4">
+                        <source src="vedio/index-vedio.mp" type="video/ogg">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
             </div>
         </div>
     </div>
     <div class="container-fluid row1" style="background-color:#eff4f9 ;">
-
         <div class="row" style="background-image: url(wave1.svg);">
             <div class="col-sm-6 col-md-12 col-lg-6">
                 <section class="scroll-section">
@@ -1118,103 +2005,122 @@
                 </section>
             </div>
             <div class="col-sm-3 col-md-12 col-lg-3 ">
-                <video width="449.49" height="256.26" class="nectar-video-self-hosted" preload="metadata" controls=""
-                    controlslist="nodownload"
-                    poster="https://www.ascentregtech.com/wp-content/uploads/2023/03/Obligations-GIF-1.gif"
-                    style="visibility: visible;">
-                    <source
-                        src="https://www.ascentregtech.com/wp-content/uploads/2023/04/Turn-Regulatory-Content-into-Regulatory-Intelligence-with-Ascents-Powerful-Data-1.mp4"
-                        type="video/webm">
+                <video width=" 449.49" height="256.26" class="nectar-video-self-hosted" preload="metadata" controls=""
+                    controlslist="nodownload" poster="vedio/index-vedio.mp" style="visibility: visible;">
+                    <source src="vedio/index-vedio.mp" type="video/webm">
                 </video>
-                <video width="500" controls autoplay class="vedio" style="visibility: hidden;">
-                    <source src="../Ascent RegTech/vedio/head-vedio.mp4" type="video/mp4">
-                    <source src="../Ascent RegTech/vedio/head-vedio.mp4" type="video/ogg">
+                <video width="500" controls class="vedio" style="visibility: hidden;">
+                    <source src="vedio/index-vedio.mp4" type="video/mp4">
+                    <source src="vedio/index-vedio.mp" type="video/ogg">
                     Your browser does not support HTML video.
                 </video>
             </div>
         </div>
     </div>
+
     <!-- first div vedio start -->
     <div class="container-fluid bg-white">
-        <!-- second div start -->
-        <div class="center">
-            <p>Superior Compliance Technology to Keep Your Organization Regulation Ready</p>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <p class="centers">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
-                        xml:space="preserve" id="nectar-svg-animation-instance-0"
-                        style="height: 60px; width: 60px; animation: flash 0.6s infinite alternate forwards;"
-                        fill="rgb(7,226,211)" stroke="rgb(7,226,211)">
-                        <path class="path" fill="none" stroke="rgb(7,226,211)" stroke-width="2" stroke-miterlimit="10"
-                            d="M53.92,10.081c12.107,12.105,12.107,31.732,0,43.838
+        <div class="nectar-highlighted-text font_size_tablet_6vw font_size_phone_10vw ease_out " data-style="scribble"
+            data-exp="default" data-user-color="true" data-using-custom-color="false" data-animation-delay="1000"
+            data-color="" data-color-gradient="">
+            <p style="text-align: center" class="center">
+                Superior Compliance Technology to Keep Your Organization&nbsp;<em class="animated">Regulation Ready
+                    <svg class="nectar-scribble squiggle-underline-2" role="presentation"
+                        viewBox="-320 -70.8161 640.4 59.82" preserveAspectRatio="none">
+                        <path style="animation-duration: 1.3s;"
+                            d="M-300,-56 C-50,-72 298,-65 300,-59 C332,-53 -239,-36 -255,-27 C-271,-18 -88,-24 91,-20"
+                            stroke="#03D5CC" pathLength="1" stroke-width="7.77777777778" fill="none"></path>
+                    </svg>
+                </em>
+            </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p class="centers">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px"
+                                viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"
+                                id="nectar-svg-animation-instance-0"
+                                style="height: 60px; width: 60px; animation: flash 0.6s infinite alternate forwards;"
+                                fill="rgb(7,226,211)" stroke="rgb(7,226,211)">
+                                <path class="path" fill="none" stroke="rgb(7,226,211)" stroke-width="2"
+                                    stroke-miterlimit="10"
+                                    d="M53.92,10.081c12.107,12.105,12.107,31.732,0,43.838
                                 c-12.106,12.108-31.734,12.108-43.84,0c-12.107-12.105-12.107-31.732,0-43.838C22.186-2.027,41.813-2.027,53.92,10.081z"
-                            style="stroke-dasharray: 195, 197; stroke-dashoffset: 0;"></path>
-                        <path class="path" fill="none" stroke="rgb(7,226,211)" stroke-width="2" stroke-miterlimit="10"
-                            d="M9.001000000000001,32A22.999,22.999 0,1,1 54.998999999999995,32A22.999,22.999 0,1,1 9.001000000000001,32"
-                            style="stroke-dasharray: 145, 147; stroke-dashoffset: 0;"></path>
-                        <path class="path" fill="none" stroke="rgb(7,226,211)" stroke-width="2" stroke-miterlimit="10"
-                            d="M17,32A15,15 0,1,1 47,32A15,15 0,1,1 17,32"
-                            style="stroke-dasharray: 95, 97; stroke-dashoffset: 0;">
-                        </path>
-                        <path class="path" fill="none" stroke="rgb(7,226,211)" stroke-width="2" stroke-miterlimit="10"
-                            d="M25.001,32A6.999,6.999 0,1,1 38.999,32A6.999,6.999 0,1,1 25.001,32"
-                            style="stroke-dasharray: 44, 46; stroke-dashoffset: 0;"></path>
-                    </svg><br> <br>
-                    Precisely identify only the regulations <br> that apply to your business, no matter <br> how often
-                    they
-                    change.
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <p class="centers">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
-                        xml:space="preserve" id="nectar-svg-animation-instance-1" style="height: 60px; width: 60px;">
-                        <path class="path1" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                            d="M32,64L32,36" style="stroke-dasharray: 28, 30; stroke-dashoffset: 0;"></path>
-                        <path class="path1" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10" d="M32,1L22,1L22,5L27,9L25,26L16,30L15,36L
+                                    style="stroke-dasharray: 195, 197; stroke-dashoffset: 0;"></path>
+                                <path class="path" fill="none" stroke="rgb(7,226,211)" stroke-width="2"
+                                    stroke-miterlimit="10"
+                                    d="M9.001000000000001,32A22.999,22.999 0,1,1 54.998999999999995,32A22.999,22.999 0,1,1 9.001000000000001,32"
+                                    style="stroke-dasharray: 145, 147; stroke-dashoffset: 0;"></path>
+                                <path class="path" fill="none" stroke="rgb(7,226,211)" stroke-width="2"
+                                    stroke-miterlimit="10" d="M17,32A15,15 0,1,1 47,32A15,15 0,1,1 17,32"
+                                    style="stroke-dasharray: 95, 97; stroke-dashoffset: 0;">
+                                </path>
+                                <path class="path" fill="none" stroke="rgb(7,226,211)" stroke-width="2"
+                                    stroke-miterlimit="10"
+                                    d="M25.001,32A6.999,6.999 0,1,1 38.999,32A6.999,6.999 0,1,1 25.001,32"
+                                    style="stroke-dasharray: 44, 46; stroke-dashoffset: 0;"></path>
+                            </svg><br> <br>
+                            Precisely identify only the regulations <br> that apply to your business, no matter <br> how
+                            often
+                            they
+                            change.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="centers">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px"
+                                viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"
+                                id="nectar-svg-animation-instance-1" style="height: 60px; width: 60px;">
+                                <path class="path1" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                    d="M32,64L32,36" style="stroke-dasharray: 28, 30; stroke-dashoffset: 0;"></path>
+                                <path class="path1" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                    d="M32,1L22,1L22,5L27,9L25,26L16,30L15,36L
                         	32,36" style="stroke-dasharray: 71, 73; stroke-dashoffset: 0;"></path>
-                        <path class="path1" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10" d="M32,1L42,1L42,5L37,9L39,26L48,30L49,36L
+                                <path class="path1" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                    d="M32,1L42,1L42,5L37,9L39,26L48,30L49,36L
                         	32,36" style="stroke-dasharray: 71, 73; stroke-dashoffset: 0;"></path>
-                    </svg> <br> <br>
-                    Pinpoint your specific obligations under <br> each federal, state, or municipal rule.
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <p class="centers">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
-                        xml:space="preserve" id="nectar-svg-animation-instance-2" style="height: 60px; width: 60px;">
-                        <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                            d="M25,24L47,24" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
-                        <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                            d="M25,34L47,34" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
-                        <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                            d="M25,44L47,44" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
-                        <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                            d="M25,54L47,54" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
-                        <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                            d="M21,24L17,24" style="stroke-dasharray: 4, 6; stroke-dashoffset: 0;"></path>
-                        <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                            d="M21,34L17,34" style="stroke-dasharray: 4, 6; stroke-dashoffset: 0;"></path>
-                        <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                            d="M21,44L17,44" style="stroke-dasharray: 4, 6; stroke-dashoffset: 0;"></path>
-                        <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                            d="M21,54L17,54" style="stroke-dasharray: 4, 6; stroke-dashoffset: 0;"></path>
-                        <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                            d="M23,8L10,8L10,63L54,63L54,8L41,8"
-                            style="stroke-dasharray: 180, 182; stroke-dashoffset: 0;">
-                        </path>
-                        <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                            d="M36,5L36,1L28,1L28,5L24,5L22,13L42,13L40,5Z"
-                            style="stroke-dasharray: 61, 63; stroke-dashoffset: 0;"></path>
-                    </svg> <br> <br>
-                    Get tailored obligation inventories <br> mapped to your businesses, products, <br> services, or
-                    entities.
-                </p>
+                            </svg> <br> <br>
+                            Pinpoint your specific obligations under <br> each federal, state, or municipal rule.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="centers">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px"
+                                viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"
+                                id="nectar-svg-animation-instance-2" style="height: 60px; width: 60px;">
+                                <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                    d="M25,24L47,24" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
+                                <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                    d="M25,34L47,34" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
+                                <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                    d="M25,44L47,44" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
+                                <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                    d="M25,54L47,54" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
+                                <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                    d="M21,24L17,24" style="stroke-dasharray: 4, 6; stroke-dashoffset: 0;"></path>
+                                <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                    d="M21,34L17,34" style="stroke-dasharray: 4, 6; stroke-dashoffset: 0;"></path>
+                                <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                    d="M21,44L17,44" style="stroke-dasharray: 4, 6; stroke-dashoffset: 0;"></path>
+                                <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                    d="M21,54L17,54" style="stroke-dasharray: 4, 6; stroke-dashoffset: 0;"></path>
+                                <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                    d="M23,8L10,8L10,63L54,63L54,8L41,8"
+                                    style="stroke-dasharray: 180, 182; stroke-dashoffset: 0;">
+                                </path>
+                                <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                    d="M36,5L36,1L28,1L28,5L24,5L22,13L42,13L40,5Z"
+                                    style="stroke-dasharray: 61, 63; stroke-dashoffset: 0;"></path>
+                            </svg> <br> <br>
+                            Get tailored obligation inventories <br> mapped to your businesses, products, <br> services,
+                            or
+                            entities.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- second div end -->
@@ -1275,7 +2181,7 @@
             </div>
         </div>
     </div>
-    <div class="wavetable1" style="background-color: #83EEE8;">
+    <div class="container-fluid wavetable1" style="background-color: #83EEE8;">
         <section class="scroll-section">
             <div class="centers-contents">
                 <span>Financial Firms That Trust 360 RegTech</span>
@@ -1301,7 +2207,7 @@
             </div>
         </section>
     </div>
-    <div class="wavetable" style="background-color: #83EEE8;">
+    <div class="container-fluid wavetable" style="background-color: #83EEE8;">
         <section class="scroll-section">
             <div class="centers-contents">
                 <span>Financial Firms That Trust 360 RegTech</span> <br><br>
@@ -1440,7 +2346,8 @@
                     </p>
                     <h3 class="centers-head">Audit Trail</h3>
                     <p class="centers-para">
-                        Know exactly where you stand in the event of an audit with 360 RegTech comprehensive dashboard
+                        Know exactly where you stand in the event of an audit with 360 RegTech comprehensive
+                        dashboard
                         view
                         of
                         your
@@ -1540,9 +2447,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 col-md-12  col-lg-3 contaier">
-                <div class="container " style="margin-top: 125px;margin-left: 4rem; width: 30rem;height: 350px;">
-                    <div class="card" style=" background-color: #03d5cc;">
+            <div class="col-sm-3 col-md-12 col-lg-3 contaier">
+                <div class="container contaier4"
+                    style="margin-top: 125px;margin-left: 4rem; width: 30rem;height: 350px;">
+                    <div class="card contaier5" style=" background-color: #03d5cc;">
                         <div class="card-body">
                             <svg style="margin-top: 20px;" role="presentation" version="1.1"
                                 xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 32 32"
@@ -1570,7 +2478,7 @@
             </div>
             <div class="col-sm-2 col-lg-2">
             </div>
-            <div class="col-sm-3 col-md-12 col-lg-3">
+            <div class="col-sm-3 col-md-12 col-lg-3 contaier3">
                 <div class="container" style="margin-top: 50px;width: 30rem;height: 350px !important;">
                     <div class="card" style=" background-color: #03d5cc;">
                         <div class="card-body">
