@@ -72,15 +72,14 @@
 .heading-work {
     color: #28bebb;
     line-height: 1.1em;
-    /* font-weight: normal; */
-    font-size: 37px;
+    font-size: 30px;
     margin-top: 100px;
 }
 
 .paragraph-work {
     color: #253859;
     margin-top: 20px;
-    line-height: 1.1em;
+    /* line-height: 1.1em; */
     font-weight: 500;
 }
 
@@ -118,10 +117,11 @@
 
 .audit-paragraph {
     font-size: 1.1em;
-    display: block;
+    /* display: block; */
     letter-spacing: -0.02em;
     color: #253859;
     margin-top: 20px;
+
 }
 
 .image-filter {
@@ -188,6 +188,10 @@
         border-radius: 5px;
         margin-top: 30px;
     }
+
+    /* .heading-work {
+        display: none;
+    } */
 }
 
 
