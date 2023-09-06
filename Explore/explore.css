@@ -8,6 +8,10 @@
     font-family: 'Mulish';
 }
 
+#active_page {
+    border-bottom: 1px solid #03D5CC;
+}
+
 .initial {
     background-image: url("images/Audit_banner.png");
     height: 450px;
