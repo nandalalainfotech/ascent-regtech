@@ -15,7 +15,20 @@ Online HTML, CSS and JavaScript editor to run code online.
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
   <title>Browser</title>
 </head>
+<style>
+  .right_to_left {
+    /* padding: 15px 50px; */
+    /* color: #000; */
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
 
+  .right_to_left.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+</style>
 <style>
   /* Réinitialisation des styles par défaut */
   body,
@@ -65,7 +78,7 @@ Online HTML, CSS and JavaScript editor to run code online.
       /* padding: 15px 50px; */
       color: #000;
       opacity: 0;
-      transform: translateX(50px);
+      transform: translateX(-50px);
       transition: opacity 0.5s, transform 0.5s;
   }
 
@@ -263,7 +276,7 @@ Online HTML, CSS and JavaScript editor to run code online.
   <div class="container-fluid mt-3 p-3">
     <div class="container">
     <div class="row mt-2 p-3">
-      <div class="col-sm-5 p-1">
+      <div class="col-sm-5 p-1 ">
         <div class="p-5 scroll-section">
           <h2 style="color:#253859 ;-webkit-text-stroke: medium; font-size: 35px;"> U.S. Federal Regulators</h2>
           <p style="color: #253859;font-weight: 600;font-size: large;">For banks and other financial firms that operate <br>
@@ -556,6 +569,7 @@ Online HTML, CSS and JavaScript editor to run code online.
   }
   window.addEventListener("scroll", reveal);
 </script>
+
 </body>
 
 </html>
