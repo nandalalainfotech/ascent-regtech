@@ -113,3 +113,8 @@ body {
         padding-left: 40px;
     }
 }
+@media screen and (max-width:900px) and (min-width:550px) {
+    #content_one{
+       margin-top: -2rem;
+    }
+}
