@@ -117,13 +117,6 @@
     font-weight: 500 !important;
 }
 
-.w3-animate-bottom {
-    opacity: 1;
-    z-index: 5 !important;
-    animation-timing-function: ease-in;
-    animation-duration: 3s !important;
-}
-
 .pilot {
     margin-top: 20px;
     line-height: 1.4em;
@@ -287,4 +280,13 @@ body .nectar-scribble.squiggle-underline {
         margin-top: 100px;
     }
 
+}
+
+#footer-hover:hover {
+    color: #28BEBB;
+}
+
+#footer-hover {
+    text-decoration: none;
+    color: white;
 }
