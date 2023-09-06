@@ -163,7 +163,7 @@ Online HTML, CSS and JavaScript editor to run code online.
     }
 
     body .nectar1-scribble.squiggle-underline {
-      width: 105px;
+      width: 172px;
       height: 22px;
     }
 
@@ -178,7 +178,7 @@ Online HTML, CSS and JavaScript editor to run code online.
     @media screen and (max-width:670px) {
       .nectar1-highlighted-text .nectar1-scribble {
         top: 125px !important;
-        left: 10px !important;
+        left: 68px !important;
       }
     }
 
@@ -204,7 +204,7 @@ Online HTML, CSS and JavaScript editor to run code online.
       animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
     }
 
-     /* Nector 1 */
+     /* Nector 2 */
      @keyframes nectarStrokeAnimation {
       0% {
         stroke-dashoffset: 1;
@@ -220,26 +220,26 @@ Online HTML, CSS and JavaScript editor to run code online.
       }
     }
 
-    .nectar2-highlighted-text .nectar-scribble {
+    .nectar2-highlighted-text .nectar2-scribble {
       position: absolute;
       left: 0;
       top: 0;
       z-index: 2;
     }
 
-    .nectar2-highlighted-text em.animated .nectar-scribble path {
+    .nectar2-highlighted-text em.animated .nectar2-scribble path {
       stroke-linecap: round;
       opacity: 1;
       animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
     }
 
-    .nectar2-highlighted-text .nectar-scribble path {
+    .nectar2-highlighted-text .nectar2-scribble path {
       stroke-dasharray: 1;
       stroke-dashoffset: 1;
       opacity: 0;
     }
 
-    .nectar2-highlighted-text em.animated .nectar-scribble path {
+    .nectar2-highlighted-text em.animated .nectar2-scribble path {
       stroke-linecap: round;
       opacity: 1;
       animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
@@ -250,22 +250,22 @@ Online HTML, CSS and JavaScript editor to run code online.
     }
 
     body .nectar2-scribble.squiggle-underline {
-      width: 75px;
+      width: 185px;
       height: 22px;
     }
 
-    .nectar2-highlighted-text .nectar-scribble {
+    .nectar2-highlighted-text .nectar2-scribble {
       position: absolute;
-      top: 75px;
-      left: 340px;
+      top: 50px;
+      left: 80px;
       z-index: 7;
       /* display: none; */
     }
 
     @media screen and (max-width:670px) {
-      .nectar2-highlighted-text .nectar-scribble {
-        top: 125px !important;
-        left: 10px !important;
+      .nectar2-highlighted-text .nectar2-scribble {
+        top: 50px !important;
+        left: 66px !important;
       }
     }
 
@@ -279,13 +279,100 @@ Online HTML, CSS and JavaScript editor to run code online.
 } */
 
 
-    .nectar2-highlighted-text .nectar-scribble path {
+    .nectar2-highlighted-text .nectar2-scribble path {
       stroke-dasharray: 1;
       stroke-dashoffset: 1;
       opacity: 0;
     }
 
-    .nectar2-highlighted-text em.animated .nectar-scribble path {
+    .nectar2-highlighted-text em.animated .nectar2-scribble path {
+      stroke-linecap: round;
+      opacity: 1;
+      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+     /* Nector 3 */
+     @keyframes nectarStrokeAnimation {
+      0% {
+        stroke-dashoffset: 1;
+        opacity: 0;
+      }
+
+      1% {
+        opacity: 1;
+      }
+
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    .nectar3-highlighted-text .nectar3-scribble {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2;
+    }
+
+    .nectar3-highlighted-text em.animated .nectar3-scribble path {
+      stroke-linecap: round;
+      opacity: 1;
+      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    .nectar3-highlighted-text .nectar3-scribble path {
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      opacity: 0;
+    }
+
+    .nectar3-highlighted-text em.animated .nectar3-scribble path {
+      stroke-linecap: round;
+      opacity: 1;
+      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    .nectar3-highlighted-text[data-style="scribble"] em {
+      background-image: none !important;
+    }
+
+    body .nectar3-scribble.squiggle-underline {
+      width: 145px;
+      height: 22px;
+    }
+
+    .nectar3-highlighted-text .nectar3-scribble {
+      position: absolute;
+      top: 92px;
+      left: 10px;
+      z-index: 7;
+      /* display: none; */
+    }
+
+    @media screen and (max-width:670px) {
+      .nectar3-highlighted-text .nectar3-scribble {
+        top: 140px !important;
+        left: 16px !important;
+      }
+    }
+
+    /* @media screen and (min-width: 375px) and (max-width: 667px){
+      nectar-highlighted-text .nectar-scribble {
+    position: absolute;
+    top: none !important;
+    left: 33px !important;
+    z-index: 11;
+}
+} */
+
+
+    .nectar3-highlighted-text .nectar3-scribble path {
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      opacity: 0;
+    }
+
+    .nectar3-highlighted-text em.animated .nectar3-scribble path {
       stroke-linecap: round;
       opacity: 1;
       animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
@@ -438,9 +525,18 @@ Online HTML, CSS and JavaScript editor to run code online.
         </div>
         <div class="col-sm-6 p-1">
           <div class="p-2">
-            <h1 style="color:#03d5cc;-webkit-text-stroke: medium; font-size: 40px;">
+            <h1 class="nectar2-highlighted-text" data-style="scribble" data-exp="default" data-user-color="true"
+            style="color: #03d5cc;-webkit-text-stroke: thin;font-weight: 700;" data-using-custom-color="false"
+            data-animation-delay="false" data-color="" data-color-gradient=""> The expertise of a human at   <em class="animated"><br> the speed of a machine <svg
+                class="nectar2-scribble squiggle-underline" role="presentation" viewBox="-347 -30.1947 694 96.19"
+                preserveAspectRatio="none">
+                <path style="animation-duration: 1.8s;"
+                  d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
+                  stroke="#253859" pathLength="1" stroke-width="14" fill="none"></path>
+              </svg></em></h1>
+            <!-- <h1 style="color:#03d5cc;-webkit-text-stroke: medium; font-size: 40px;">
               The expertise of a human at <br> the speed of a machine
-            </h1>
+            </h1> -->
           </div>
           <div class=" mt-3">
             <p style="color: #253859;text-align: inherit;
@@ -471,11 +567,20 @@ Online HTML, CSS and JavaScript editor to run code online.
 
       <div class="row p-3">
         <div class="col-sm-6 p-2">
-          <h1 style="color:#03d5cc;
+          <h1 class="nectar3-highlighted-text" data-style="scribble" data-exp="default" data-user-color="true"
+          style="color: #03d5cc;-webkit-text-stroke: thin;font-weight: 700;" data-using-custom-color="false"
+          data-animation-delay="false" data-color="" data-color-gradient="">  Your implementation  <em class="animated"><br>  partner, every step of the <br>way<svg
+              class="nectar3-scribble squiggle-underline" role="presentation" viewBox="-347 -30.1947 694 96.19"
+              preserveAspectRatio="none">
+              <path style="animation-duration: 1.8s;"
+                d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
+                stroke="#253859" pathLength="1" stroke-width="14" fill="none"></path>
+            </svg></em></h1>
+          <!-- <h1 style="color:#03d5cc;
           -webkit-text-stroke: medium;
           font-size: 40px;">
             Your implementation partner, every step of the way
-          </h1>
+          </h1> -->
           <div class="mt-4" style="color: #253859;">
             <p style="text-align: inherit;font-weight: 300; font-size: 17px;">Too many technology vendors set it, then
               forget it. At 360 RegTech, we know that even more important than
