@@ -74,6 +74,16 @@ Online HTML, CSS and JavaScript editor to run code online.
       transform: translateX(0);
   }
 
+  .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
 
   /* Animation sign */
   @keyframes nectarStrokeAnimation {
@@ -218,7 +228,7 @@ Online HTML, CSS and JavaScript editor to run code online.
     <div class="row">
       <div class="col-sm-12" style="height: 120px !important;"></div>
     </div>
-    <div class="row p-2 my-" style="margin-left: -50px;">
+    <div class="row p-3 mt-1 my-" style="margin-left: -50px;">
       <div class="col-sm-9 p-4 mt-3 mx-4 mediaScr" >
         <div class="mb-4">
           <h1 class="nectar-highlighted-text" data-style="scribble" data-exp="default" data-user-color="true"
@@ -325,6 +335,40 @@ Online HTML, CSS and JavaScript editor to run code online.
   </div>
 </div>
  
+<div class="container-fluid" style="background-image: url(../images/360regtech_cta-bg-1.jpg);
+  background-repeat: no-repeat;background-size: cover;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 py-5 ">
+          <div class="reveal">
+            <div style="height: 3rem;" class="pt-5"> </div>
+            <h6 style="text-align: center; font-size: 24px;
+          line-height: 28px; "><span style="color: #ffffff;">Turn compliance into a competitive
+                advantage</span></h6>
+            <h2 style="text-align: center; font-size: 42.5px;
+          line-height: 38.25px; font-family: Mulish;
+          font-weight: 600;letter-spacing: -0.05em;"><strong><span style="color: #ffffff;">Talk to a solutions
+                  specialist
+                  today</span></strong></h2>
+          </div>
+          <div class="pt-5" style="text-align: center;">
+            <button class="btn text-white hover-sm" style="background: #03d5cc;
+                                        border-color: #03d5cc;
+                                        color: #ffffff;
+                                        line-height: 15px;
+                                        font-family: Mulish;
+                                        padding: 12px 24px;text-align: center;
+                                        font-size: 14px;
+                                       padding: 15px 22px;
+                                         "><strong>REQUEST A DEMO</strong>
+            </button>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+    </div>
+  </div>
   <!-- fotter -->
   <div class="container-fluid" style="background-color: #253859">
     <div class="container">
@@ -486,6 +530,22 @@ Online HTML, CSS and JavaScript editor to run code online.
             rect.right <= (window.innerWidth || document.documentElement.clientWidth)
         );
     }
+</script>
+<script>
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  window.addEventListener("scroll", reveal);
 </script>
 </body>
 
