@@ -58,15 +58,10 @@
 }
 
 
-
-
-
-
 .hover-underline-text:hover {
     text-decoration: underline;
     cursor: pointer;
 }
-
 
 
 .carded {
@@ -190,7 +185,7 @@ span.double {
 
 
 
-@media (min-width: 300px) and (max-width: 700px) {
+@media (min-width: 300px) and (max-width: 768px) {
     .filter {
         font-size: 20px;
         color: #253859;
