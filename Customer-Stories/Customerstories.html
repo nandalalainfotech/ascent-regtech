@@ -35,6 +35,18 @@
 		}
 	}
 
+	.reveal {
+		position: relative;
+		transform: translateY(150px);
+		opacity: 0;
+		transition: 1s all ease;
+	}
+
+	.reveal.active {
+		transform: translateY(0);
+		opacity: 1;
+	}
+
 	#learnMoreBtn:hover {
 		bottom: .5rem;
 		background-color: #28BEBB;
@@ -200,7 +212,7 @@
 	<div class="container-fluid ">
 		<div class="row">
 			<div class="col-sm-12 text-white"
-				style="background-position: left center;margin-top: 4rem; background-image: url(Ascent-Customer-Stories\ \(1\).png);">
+				style="background-position: left center;margin-top: 4rem; background-image: url(Customer-Stories\ \(1\).png);">
 				<div class="row">
 					<div class="col-sm-6 p-5 ">
 						<h3 style="color:#28bebb; font-weight: 900;font-size: 30px;"><b>Customer Stories</b></h3>
@@ -248,27 +260,30 @@
 			<div class="col-sm-6 ">
 				<div class="text-center">
 					<section class="right_to_left">
-						<h2 style="font-size: 42px;">ING & CommBank Map Obligation<span class="vc_sep_line">s in 2</span>.5
+						<h2 style="font-size: 42px;">ING & CommBank Map Obligation<span class="vc_sep_line">s in
+								2</span>.5
 							Minutes</h2>
-						<p style="font-size: 17px; font-size: 21px;" class="pt-2 ">Global banks ING and Commonwealth Bank of
+						<p style="font-size: 17px; font-size: 21px;" class="pt-2 ">Global banks ING and Commonwealth
+							Bank of
 							Australia
-							generated their obligations for MiFiD/MiFID II in 2.5 minutes, compared to 1,800 hours when done
+							generated their obligations for MiFiD/MiFID II in 2.5 minutes, compared to 1,800 hours when
+							done
 							manually.</p>
 						<div class="pt-2">
 							<button class="btn text-white" id="learnMoreBtn"><span
 									style="font-size: .8rem;font-weight: 700;">READ THEIR STORY</span></button>
 						</div>
 					</section>
-					
+
 				</div>
 			</div>
 
 			<div class="col-sm-6 ">
 				<section class="left_to_right">
-				<div class="centerPos">
-					<img src="ing-cba-featured.jpg" alt="" width="100%"
-						style="box-shadow: 0 30px 60px rgba(0,0,0,.15);">
-				</div>
+					<div class="centerPos">
+						<img src="ing-cba-featured.jpg" alt="" width="100%"
+							style="box-shadow: 0 30px 60px rgba(0,0,0,.15);">
+					</div>
 				</section>
 			</div>
 
@@ -279,51 +294,74 @@
 		<div class="row">
 			<div class="col-sm-6 ">
 				<section class="right_to_left">
-				<div class="centerPos">
-					<img src="global-50-featured.jpg" alt="" width="100%"
-						style="box-shadow: 0 30px 60px rgba(0,0,0,.15);">
-				</div>
+					<div class="centerPos">
+						<img src="global-50-featured.jpg" alt="" width="100%"
+							style="box-shadow: 0 30px 60px rgba(0,0,0,.15);">
+					</div>
 				</section>
 			</div>
 			<div class="col-sm-6 ">
 				<div class="text-center">
-				<section class="left_to_right">
-					<h2 class="" style="font-size: 42px;">Global Bank Achieves 99% Cost Reduction
-						and 30% T<span class="vc_sep_line">ime S</span>avings</h2>
-					<p style="font-size: 17px;color: #253859;font-size: 21px;" class="pt-2">A Top 50 Global Bank with
-						over 1,000 locations worldwide
-						leveraged 360regtech to pinpoint its GDPR obligations. As a result, the firm slashed their
-						compliance costs and saved significant time in regulatory change triage across the business.</p>
-					<div class="pt-2">
-						<button class="btn text-white" id="learnMoreBtn"><span
-								style="font-size: .8rem;font-weight: 700;">READ THEIR STORY</span></button>
-					</div>
-				</section>
+					<section class="left_to_right">
+						<h2 class="" style="font-size: 42px;">Global Bank Achieves 99% Cost Reduction
+							and 30% T<span class="vc_sep_line">ime S</span>avings</h2>
+						<p style="font-size: 17px;color: #253859;font-size: 21px;" class="pt-2">A Top 50 Global Bank
+							with
+							over 1,000 locations worldwide
+							leveraged 360regtech to pinpoint its GDPR obligations. As a result, the firm slashed their
+							compliance costs and saved significant time in regulatory change triage across the business.
+						</p>
+						<div class="pt-2">
+							<button class="btn text-white" id="learnMoreBtn"><span
+									style="font-size: .8rem;font-weight: 700;">READ THEIR STORY</span></button>
+						</div>
+					</section>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="container-fluid" style="background-image: url(../images/index/image.png);
-        background-repeat: no-repeat;background-size: cover; height: 17rem; margin-top: 100px;">
+	<div class="container-fluid mt-4" style="background-image: url(360regtech_cta-bg-1.jpg);
+  background-repeat: no-repeat;background-size: cover;">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12">
-					<div class="text-center" style=" color: white;">
-						<h6 style="margin-top: 70px; font-size: 24px;"><span></span>Turn compliance into a competitive
-							advantage
-						</h6>
-						<h1 style="font-weight:900">Talk to a solutions specialist today</h1>
-						<div class="pt-2">
-							<button class="btn text-white p-2" id="learnMoreBtn"><span
-									style="font-size: .8rem;font-weight: 700; padding: 30px;"><b>REQUEST
-										DEMO</b></span></button>
-						</div>
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 py-5 ">
+					<div class="reveal">
+						<div style="height: 3rem;" class="pt-5"> </div>
+						<h6 style="text-align: center; font-size: 24px;
+          line-height: 28px; "><span style="color: #FFFFFF;">Turn compliance into a competitive
+								advantage</span></h6>
+						<h2 style="text-align: center; font-size: 42.5px;
+          line-height: 38.25px; font-family: Mulish;
+          font-weight: 600;letter-spacing: -0.05em;"><strong><span style="color: #FFFFFF;">Talk to a solutions
+									specialist
+									today</span></strong></h2>
+					</div>
+					<div class="pt-5" style="text-align: center;">
+						<button class="btn text-white hover-sm" style="background: #03D5CC;
+                                        border-color: #03D5CC;
+                                        color: #FFFFFF;
+                                        line-height: 15px;
+                                        font-family: Mulish;
+                                        padding: 12px 24px;text-align: center;
+                                        font-size: 14px;
+                                       padding: 15px 22px;
+                                         "><strong>REQUEST A DEMO</strong>
+						</button>
 					</div>
 				</div>
+				<div class="col-sm-2"></div>
 			</div>
 		</div>
 	</div>
+
+
+
+
+
+
+
 	<!-- fotter -->
 	<div class="container-fluid" style="background-color: #253859; ">
 		<div class="container">
@@ -376,7 +414,7 @@
 			<div class="row p-3">
 				<div class="col-md-1"></div>
 				<div class="col-md-4">
-					<p style="color: white;font-size: 12px;">© 2023 360regtech RegTech. All Rights Reserved.</p>
+					<p style="color: white;font-size: 12px;">© 2023 360regtech. All Rights Reserved.</p>
 				</div>
 				<div class="col-md-4"></div>
 				<div class="col-md-3">
@@ -458,6 +496,23 @@
 			);
 		}
 	</script>
+	  <script>
+		function reveal() {
+		  var reveals = document.querySelectorAll(".reveal");
+		  for (var i = 0; i < reveals.length; i++) {
+			var windowHeight = window.innerHeight;
+			var elementTop = reveals[i].getBoundingClientRect().top;
+			var elementVisible = 150;
+			if (elementTop < windowHeight - elementVisible) {
+			  reveals[i].classList.add("active");
+			} else {
+			  reveals[i].classList.remove("active");
+			}
+		  }
+		}
+		window.addEventListener("scroll", reveal);
+	  </script>
+	</body>
 </body>
 
 </html>
