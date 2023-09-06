@@ -116,6 +116,181 @@ Online HTML, CSS and JavaScript editor to run code online.
       opacity: 1;
       animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
     }
+
+    /* Nector 1 */
+    @keyframes nectarStrokeAnimation {
+      0% {
+        stroke-dashoffset: 1;
+        opacity: 0;
+      }
+
+      1% {
+        opacity: 1;
+      }
+
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    .nectar1-highlighted-text .nectar1-scribble {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2;
+    }
+
+    .nectar1-highlighted-text em.animated .nectar1-scribble path {
+      stroke-linecap: round;
+      opacity: 1;
+      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    .nectar1-highlighted-text .nectar1-scribble path {
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      opacity: 0;
+    }
+
+    .nectar1-highlighted-text em.animated .nectar1-scribble path {
+      stroke-linecap: round;
+      opacity: 1;
+      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    .nectar1-highlighted-text[data-style="scribble"] em {
+      background-image: none !important;
+    }
+
+    body .nectar1-scribble.squiggle-underline {
+      width: 105px;
+      height: 22px;
+    }
+
+    .nectar1-highlighted-text .nectar1-scribble {
+      position: absolute;
+      top: 75px;
+      left: 340px;
+      z-index: 7;
+      /* display: none; */
+    }
+
+    @media screen and (max-width:670px) {
+      .nectar1-highlighted-text .nectar1-scribble {
+        top: 125px !important;
+        left: 10px !important;
+      }
+    }
+
+    /* @media screen and (min-width: 375px) and (max-width: 667px){
+      nectar-highlighted-text .nectar-scribble {
+    position: absolute;
+    top: none !important;
+    left: 33px !important;
+    z-index: 11;
+}
+} */
+
+
+    .nectar1-highlighted-text .nectar1-scribble path {
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      opacity: 0;
+    }
+
+    .nectar1-highlighted-text em.animated .nectar1-scribble path {
+      stroke-linecap: round;
+      opacity: 1;
+      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+     /* Nector 1 */
+     @keyframes nectarStrokeAnimation {
+      0% {
+        stroke-dashoffset: 1;
+        opacity: 0;
+      }
+
+      1% {
+        opacity: 1;
+      }
+
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    .nectar2-highlighted-text .nectar-scribble {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2;
+    }
+
+    .nectar2-highlighted-text em.animated .nectar-scribble path {
+      stroke-linecap: round;
+      opacity: 1;
+      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    .nectar2-highlighted-text .nectar-scribble path {
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      opacity: 0;
+    }
+
+    .nectar2-highlighted-text em.animated .nectar-scribble path {
+      stroke-linecap: round;
+      opacity: 1;
+      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    .nectar2-highlighted-text[data-style="scribble"] em {
+      background-image: none !important;
+    }
+
+    body .nectar2-scribble.squiggle-underline {
+      width: 75px;
+      height: 22px;
+    }
+
+    .nectar2-highlighted-text .nectar-scribble {
+      position: absolute;
+      top: 75px;
+      left: 340px;
+      z-index: 7;
+      /* display: none; */
+    }
+
+    @media screen and (max-width:670px) {
+      .nectar2-highlighted-text .nectar-scribble {
+        top: 125px !important;
+        left: 10px !important;
+      }
+    }
+
+    /* @media screen and (min-width: 375px) and (max-width: 667px){
+      nectar-highlighted-text .nectar-scribble {
+    position: absolute;
+    top: none !important;
+    left: 33px !important;
+    z-index: 11;
+}
+} */
+
+
+    .nectar2-highlighted-text .nectar-scribble path {
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      opacity: 0;
+    }
+
+    .nectar2-highlighted-text em.animated .nectar-scribble path {
+      stroke-linecap: round;
+      opacity: 1;
+      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
 </style>
 
 <body>
@@ -223,9 +398,19 @@ Online HTML, CSS and JavaScript editor to run code online.
       <div class="row mt-4">
         <div class="col-sm-6 p-2">
           <div class="p-1 mt-4">
-            <h1 style="color:#03d5cc;
+            <h1 class="nectar1-highlighted-text" data-style="scribble" data-exp="default" data-user-color="true"
+            style="color: #03d5cc;-webkit-text-stroke: thin;font-weight: 700;" data-using-custom-color="false"
+            data-animation-delay="false" data-color="" data-color-gradient=""> Not just data, but targeted   <em class="animated"><br> knowledge <svg
+                class="nectar1-scribble squiggle-underline" role="presentation" viewBox="-347 -30.1947 694 96.19"
+                preserveAspectRatio="none">
+                <path style="animation-duration: 1.8s;"
+                  d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
+                  stroke="#253859" pathLength="1" stroke-width="14" fill="none"></path>
+              </svg></em></h1>
+          </h1>
+            <!-- <h1 style="color:#03d5cc;
             -webkit-text-stroke: medium;
-            font-size: 40px;"> Not just data, but targeted knowledge</h1><br>
+            font-size: 40px;"> Not just data, but targeted knowledge</h1><br> -->
             <p class="mt-4 para" style="text-align: inherit;font-weight: 300; font-size: 17px;">Identifying your
               regulatory obligations is a complicated, time- consuming and
               costly practice that mires compliance teams in manual work, and must be repeated with every new change in
@@ -313,6 +498,40 @@ Online HTML, CSS and JavaScript editor to run code online.
   </div>
 
 
+  <div class="container-fluid" style="background-image: url(../images/360regtech_cta-bg-1.jpg);
+  background-repeat: no-repeat;background-size: cover;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 py-5 ">
+          <div class="reveal">
+            <div style="height: 3rem;" class="pt-5"> </div>
+            <h6 style="text-align: center; font-size: 24px;
+          line-height: 28px; "><span style="color: #ffffff;">Turn compliance into a competitive
+                advantage</span></h6>
+            <h2 style="text-align: center; font-size: 42.5px;
+          line-height: 38.25px; font-family: Mulish;
+          font-weight: 600;letter-spacing: -0.05em;"><strong><span style="color: #ffffff;">Talk to a solutions
+                  specialist
+                  today</span></strong></h2>
+          </div>
+          <div class="pt-5" style="text-align: center;">
+            <button class="btn text-white hover-sm" style="background: #03d5cc;
+                                        border-color: #03d5cc;
+                                        color: #ffffff;
+                                        line-height: 15px;
+                                        font-family: Mulish;
+                                        padding: 12px 24px;text-align: center;
+                                        font-size: 14px;
+                                       padding: 15px 22px;
+                                         "><strong>REQUEST A DEMO</strong>
+            </button>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+    </div>
+  </div>
 
   <!-- fotter -->
   <div class="container-fluid" style="background-color: #253859">
