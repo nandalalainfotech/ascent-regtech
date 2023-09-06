@@ -258,14 +258,6 @@ input[type=text]:focus {
     display: none;
 }
 
-#footer-hover:hover {
-    color: #28BEBB;
-}
-
-#footer-hover {
-    text-decoration: none;
-    color: white;
-}
 
 @media (min-width: 300px) and (max-width: 700px) {
     .filter {
@@ -292,6 +284,10 @@ input[type=text]:focus {
 #footer-hover {
     text-decoration: none;
     color: white;
+}
+
+#active_page {
+    border-bottom: 1px solid #03D5CC;
 }
 
 /* @media (min-width: 300px) and (max-width: 700px) { */
