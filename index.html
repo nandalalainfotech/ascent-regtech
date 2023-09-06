@@ -305,10 +305,10 @@
         margin-left: 4rem;
     }
 
-
-    @media screen and (max-width: 800px) {
+    @media only screen and (max-width: 690px) {
         * {
             overflow-x: hidden;
+            font-family: Mulish;
         }
 
         /* first div */
@@ -321,12 +321,14 @@
         }
 
         .index-head {
-            text-align: start !important;
-            color: #253859;
-            font-size: 2rem !important;
+            position: relative !important;
             margin-left: 1rem !important;
             margin-top: 5rem !important;
-            overflow-y: hidden;
+            overflow-y: hidden !important;
+            /* font-size: 37.7px; */
+            line-height: 38.25px;
+            letter-spacing: -0.02em;
+            font-weight: 800;
         }
 
         .index-heads {
@@ -350,13 +352,15 @@
             text-transform: uppercase !important;
             margin-right: 5rem;
             display: block;
+            z-index: 5 !important;
+            position: relative !important;
         }
 
         .vedio,
         .nectar-video-self-hosted {
             background-color: #eff4f9 !important;
             width: 100% !important;
-            margin-top: 5rem !important;
+            margin-top: 8rem !important;
             margin-left: -0.2rem !important;
             border-radius: 10px !important;
             z-index: 5;
@@ -550,6 +554,253 @@
         }
     }
 
+    @media only screen and (max-width: 999px) and (min-width: 690px) {
+
+        * {
+            overflow-x: hidden;
+            font-family: Mulish;
+        }
+
+        /* first div */
+        .row2 {
+            display: none;
+        }
+
+        .row1 {
+            display: block;
+        }
+
+        .index-head {
+            position: relative !important;
+            font-size: 40.6px;
+            line-height: 31.5px;
+        }
+    
+
+    .index-heads {
+        margin-left: 1rem !important;
+        color: #253859;
+        overflow-y: hidden;
+
+    }
+
+    .button3,
+    .button2 {
+        margin-left: 1rem !important;
+        width: 15rem;
+        overflow-y: hidden;
+        text-transform: uppercase !important;
+    }
+
+    .button2 {
+        width: 10rem;
+        font-weight: 900;
+        text-transform: uppercase !important;
+        margin-right: 5rem;
+        display: block;
+        z-index: 5 !important;
+        position: relative !important;
+    }
+
+    .vedio,
+    .nectar-video-self-hosted {
+        background-color: #eff4f9 !important;
+        width: 100% !important;
+        margin-top: 8rem !important;
+        margin-left: -0.2rem !important;
+        border-radius: 10px !important;
+        z-index: 5;
+        overflow: hidden;
+        box-shadow: 15px 15px 15px 5px #e7e4e4;
+    }
+
+    .nectar-shape-divider {
+        display: none;
+    }
+
+    /*first div end */
+    /* second div start */
+
+    .center {
+        text-align: center !important;
+        font-size: 1rem !important;
+        line-height: 1.4rem !important;
+        color: #253859;
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+        margin-top: 0.5rem;
+        -webkit-text-stroke: thin;
+        overflow-y: hidden;
+    }
+
+
+    .centers {
+        text-align: center;
+        color: #253859;
+        font-size: 1rem;
+        font-weight: 4rem;
+        margin-left: 0rem;
+        margin-right: 0.5rem;
+    }
+
+    /* second div end */
+    /* third div start */
+    .resposive-phone {
+        display: block;
+    }
+
+    .resposive-desktop {
+        display: none;
+    }
+
+    .center-content {
+        margin-left: 1rem;
+        color: #253859;
+        font-style: 1rem;
+        margin-right: 1rem;
+        padding-right: 7%;
+        padding-left: 7%;
+    }
+
+    .centers-content {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        color: #253859;
+        padding-right: 7%;
+        padding-left: 7%;
+    }
+
+    .resposive-phone img {
+        width: 100%;
+        margin-left: 2.5rem;
+    }
+
+    /* third div end */
+    /* fourth div  */
+    .image-div {
+        width: 100%;
+    }
+
+    .centers-contents {
+        text-align: center !important;
+        font-size: 1.4rem !important;
+        color: #253859;
+        font-weight: 700;
+        padding: 0 1rem 0 1rem;
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+
+    }
+
+    .image-div {
+        margin: 1rem 0 1rem 3rem;
+    }
+
+    /* fourth div end */
+    /* five div */
+    .centers-para {
+        margin-top: 1rem;
+        line-height: 2rem;
+        text-align: center;
+        color: #253859;
+        font-size: 17px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 5rem;
+    }
+
+    .centers-head {
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: -0.04em;
+        font-size: 20px;
+        font-weight: 500;
+        color: #253859 !important;
+        -webkit-text-stroke: thin;
+    }
+
+    .centers-svg {
+        margin-top: -1rem;
+        text-align: center !important;
+        margin-left: 0rem !important;
+    }
+
+    /* card */
+    .card {
+        margin-left: 0rem;
+        margin-right: 7rem;
+        border-radius: 1rem;
+    }
+
+    .card-body {
+        color: #fff;
+        margin-left: 0rem;
+        padding-bottom: 0rem;
+        margin-bottom: -3rem;
+        overflow-y: hidden;
+    }
+
+    .card-para {
+        color: #fff;
+        margin-top: 22px;
+        margin-bottom: 3.5rem;
+        font-size: 17px;
+        line-height: 27px;
+        overflow-y: hidden;
+    }
+
+    .card-head {
+        margin-top: 15px;
+        font-size: 30.6px;
+        line-height: 35px;
+        overflow-y: hidden;
+
+    }
+
+    .contaier {
+        margin-left: -4rem;
+        margin-right: 4rem;
+        margin-top: -100px;
+        width: 100%;
+    }
+
+    .contaier1 {
+        margin-left: 0rem !important;
+        margin-right: 4rem;
+        margin-top: -74px;
+    }
+
+    .contaier2 {
+        margin-top: -73px;
+    }
+
+    .regulatory {
+        line-height: 25px;
+        overflow-y: hidden;
+        margin-top: 10px;
+        color: #253859;
+        margin-right: 2rem;
+        font-size: 25px;
+        -webkit-text-stroke: 0%;
+    }
+
+    .Gain-Compliance {
+        color: #253859;
+        margin-top: 20px;
+        font-family: Mulish;
+        font-size: 30PX;
+        overflow-y: hidden;
+        margin-right: 0;
+    }
+
+    .overall {
+        overflow-y: hidden;
+        padding-right: 5rem;
+
+    }
+
+    }
+
     .full-width-section>.nectar-shape-divider-wrap {
         /* margin-left: -50vw; */
         margin-left: calc(-50vw + var(13px)/ 2);
@@ -596,7 +847,7 @@
 
     /* tablet view */
 </style>
-<style>
+<!-- <style>
     /* Réinitialisation des styles par défaut */
     body,
     h1,
@@ -637,12 +888,12 @@
         /* background: url("https://github.com/berru-g/scroll-effect/blob/main/src/img/back.png?raw=true") center/cover; */
         opacity: 0.3;
         /* Modifier l'opacité ici */
-        pointer-events: none;
-    }
-
+        pointer-events: none; -->
+    <!-- } -->
+<!-- 
     /*scroll effect*/
-    .scroll-section {
-        /* padding: 15px 50px; */
+    /* .scroll-section {
+        /* padding: 15px 50px; 
         color: #000;
         opacity: 0;
         transform: translateY(50px);
@@ -652,17 +903,17 @@
     .scroll-section.visible {
         opacity: 1;
         transform: translateY(0);
-    }
-</style>
+    } */
+</style> -->
 
 <body>
     <!-- nav bar start -->
     <nav>
-        <div class="logo">
+        <!-- <div class="logo">
             <a href="index.html">
                 <img src="images/index/image (3).png" alt="Logo Image" />
             </a>
-        </div>
+        </div> -->
         <div class="hamburger">
             <div class="line1"></div>
             <div class="line2"></div>
@@ -777,7 +1028,6 @@
     </div>
     <div class="container-fluid row1" style="background-color:#eff4f9 ;">
         <!-- first div vedio start -->
-
         <div class="row" style="background-image: url(wave1.svg);">
             <div class="col-sm-6">
                 <section class="scroll-section">
