@@ -73,9 +73,9 @@
   <body style="font-family: Mulish">
     <!-- nav bar start -->
     <nav>
-      <div class="logo">
-          <a href="index.html">
-              <img src="images/index/image (3).png" alt="Logo Image"  style="visibility: hidden;"/>
+      <div class="">
+          <a href="index.html" class="logo">
+              <img src="../images/index/360logo.svg" alt="Logo Image"  />
           </a>
       </div>
       <div class="hamburger">
@@ -102,11 +102,11 @@
                   <a href="../Explore/explore.html">Explore Use Cases</a>
               </ul>
           </li>
-          <li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html">Who We
+          <li class="show show1" style="padding: 1rem;"><span class="line" id="active_page"><a href="../WhoweServe/whoweserve.html">Who We
                       Serve</a></span>
               <ul id="submenu">
                   <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
-                  <a href="../Mortage-Lenders/MortgageLenders.html">Mortgage Lenders</a>
+                  <a href="../Mortage-Lenders/MortgageLenders.html" id="active_page">Mortgage Lenders</a>
                   <a href="../Fintech/FinTech.html">FinTech</a>
                   <a href="../Professional/professional.html">Professional Services</a>
               </ul>
@@ -141,7 +141,7 @@
     <div
       class="container-fluid"
       style="
-        background-image: url(ascent-for-banks.png);
+        background-image: url(mortage-for-banks.png);
         background-repeat: no-repeat;
         background-size: cover;
       "
@@ -255,7 +255,7 @@
         <div class="col-md-6">
           <section class="scroll-section">
             <img
-              src="ascent-gap-analysis-v4.png"
+              src="mortage-gap-analysis-v4.png"
               alt=""
               width="100%"
               height="100%"
