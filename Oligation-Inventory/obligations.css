@@ -31,11 +31,11 @@ body {
     }
 
     50% {
-        bottom: .025 rem;
+        bottom: .10 rem;
     }
 
     100% {
-        bottom: .50rem;
+        bottom: .20rem;
     }
 }
 
