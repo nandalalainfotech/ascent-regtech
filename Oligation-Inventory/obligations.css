@@ -31,11 +31,11 @@ body {
     }
 
     50% {
-        bottom: .025 rem;
+        bottom: .10 rem;
     }
 
     100% {
-        bottom: .50rem;
+        bottom: .20rem;
     }
 }
 
@@ -111,5 +111,10 @@ body {
 @media screen and (max-width:900px) and (min-width:500px) {
     #owl {
         padding-left: 40px;
+    }
+}
+@media screen and (max-width:900px) and (min-width:550px) {
+    #content_one{
+       margin-top: -2rem;
     }
 }

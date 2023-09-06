@@ -143,7 +143,8 @@
     }
 
     .global-sm {
-        margin: 38px;
+        margin: 33px;
+        margin-top: -111px;
     }
 }
 
@@ -475,27 +476,18 @@ input[type="checkbox"]:checked+.checkmark>span:before {
     color: #03d5cc;
 }
 
-/* path {
-    color: #03d5cc;
-} */
-
-/* img */
-/* style="height:600px;width: 380px;" */
 .img-Sizes {
     background-image: url("globaltop50bank.jpg");
     width: 100%;
     height: 600px;
     position: relative;
+    background-size: cover;
 }
 
 #header-color {
     color: #253859;
 }
 
-/* .responsive {
-    width: 100%;
-    height: auto;
-  } */
 .img-res {
 
     margin-left: -50px
