@@ -116,11 +116,16 @@
 }
 
 .audit-paragraph {
-    font-size: 1.1em;
-    /* display: block; */
+
+    font-size: 18px;
+    color: #253859;
+    letter-spacing: -0.02em;
+    line-height: 2rem
+        /* font-size: 1.1em;
+    display: block;
     letter-spacing: -0.02em;
     color: #253859;
-    margin-top: 20px;
+    margin-top: 20px; */
 
 }
 
@@ -164,6 +169,7 @@
 .obligations-paragraph {
     font-size: 1.1em;
     color: #253859;
+    /* padding-bottom: 50px; */
 
 }
 
@@ -174,10 +180,39 @@
     color: #fff;
 }
 
+.banner-head {
+    font-size: 44px;
+}
+
 @media screen and (min-width: 480px) {
     #formword {
         height: 16rem;
     }
+}
+
+#underline {
+    text-decoration: none;
+}
+
+#underline:hover {
+    text-decoration: underline;
+}
+
+
+input[type=text]:focus {
+    border: 1.2px solid #28BEBB;
+}
+
+.footer-icons {
+    cursor: pointer;
+}
+
+.form-privacy {
+    color: #03d5cc;
+}
+
+.form-privacy:hover {
+    opacity: 0.5;
 }
 
 @media (min-width: 300px) and (max-width: 700px) {
@@ -189,9 +224,25 @@
         margin-top: 30px;
     }
 
-    /* .heading-work {
-        display: none;
-    } */
+    .heading-work {
+        /* margin-left: 0px; */
+        font-size: 28px;
+    }
+
+    .single-click-get {
+        margin-top: 5px;
+        /* line-height: 1.1em; */
+    }
+
+    .obligations-paragraph {
+        padding: 20px;
+        padding-left: 5px;
+        padding-bottom: 40px;
+    }
+
+    .banner-head {
+        font-size: 30px;
+    }
 }
 
 
@@ -243,8 +294,9 @@
     color: white;
 }
 
-@media screen and (min-width: 480px) {
-    #formPad {
-        height: 16rem;
-    }
+/* @media (min-width: 300px) and (max-width: 700px) { */
+#formPad {
+    height: 16rem;
 }
+
+/* } */
