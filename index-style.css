@@ -1,5 +1,5 @@
 * {
-    font-family: Mulish;
+    font-family: "Mulish";
 }
 
 .row1 {
@@ -13,6 +13,10 @@
     font-size: 42px !important;
     -webkit-text-stroke: thin;
     font-weight: 900;
+}
+
+.row2 {
+    height: 36rem;
 }
 
 .index-heads {
@@ -82,17 +86,20 @@
 /* first div vedio end */
 /* second div */
 .center {
-    display: block;
-    /* margin-top: -11rem; */
-    /* text-align: center; */
+    text-align: center;
     color: #253859;
-    /* text-transform: none; */
+    text-transform: none;
     letter-spacing: -0.01em;
     font-size: 29px;
-    line-height:20px;
+    line-height: 27px;
     -webkit-text-stroke: 1.5px;
     font-weight: 900;
-    /* padding:2em 11rem 0 11rem; */
+    padding: 5rem 11rem 0 11rem;
+}
+
+.centerspan-head,
+.centerspan-heads {
+    display: block;
 }
 
 .centers {
@@ -280,7 +287,7 @@
 .Gain-Compliance {
     color: #253859;
     margin-top: 20px;
-    font-family: Mulish;
+    font-family: "Mulish";
     font-size: 2rem;
     font-weight: 500;
     -webkit-text-stroke: thin;
@@ -394,7 +401,7 @@
     .Gain-Compliance {
         color: #253859;
         margin-top: 20px;
-        font-family: Mulish;
+        font-family: "Mulish";
         font-size: 2.5rem !important;
         font-weight: 500;
         -webkit-text-stroke: thin;
@@ -403,18 +410,23 @@
     }
 
     .center {
-        margin-top: -7.5rem;
+        /* margin-top: -7.5rem; */
         text-align: center;
         color: #253859;
         text-transform: none;
         letter-spacing: -0.01em;
         font-size: 29px;
         line-height: 27px;
-        margin-left: 19rem !important;
-        margin-right: 24rem !important;
+        margin-left: 14rem !important;
+        margin-right: 14rem !important;
         -webkit-text-stroke: 1.5px;
         font-weight: 900;
-        padding-left: 3rem;
+        padding-top: 11rem;
+        /* padding-left: 3rem; */
+    }
+
+    .centerspan-head {
+        display: block;
     }
 
     .nectar-shape-divider-wrap {
@@ -431,7 +443,7 @@
     }
 
     * {
-        font-family: Mulish;
+        font-family: "Mulish";
     }
 
 }
@@ -439,7 +451,7 @@
 @media only screen and (max-width: 690px) {
     * {
         overflow-x: hidden;
-        font-family: Mulish;
+        font-family: "Mulish";
     }
 
     /* first div */
@@ -518,8 +530,16 @@
         margin-top: 0.5rem;
         -webkit-text-stroke: thin;
         overflow-y: hidden;
+        padding: 5rem 0rem 0 0rem;
     }
 
+    .centerspan-head {
+        display: block;
+    }
+
+    .centerspan-heads {
+        display: inline;
+    }
 
     .centers {
         text-align: center;
@@ -566,17 +586,18 @@
     /* fourth div  */
     .image-div {
         width: 100%;
-        margin: 1rem 0 1rem 3rem;
+        height: 29px !important;
+        margin: 0.5rem 0 0.5rem 3rem;
     }
 
     .centers-contents {
         text-align: center !important;
-        font-size: 1.4rem !important;
+        font-size: 1rem !important;
         color: #253859;
         font-weight: 700;
         padding: 0 1rem 0 1rem;
-        margin-left: 2rem !important;
-        margin-right: 2rem !important;
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
 
     }
 
@@ -688,7 +709,7 @@
     .Gain-Compliance {
         color: #253859;
         margin-top: 20px;
-        font-family: Mulish;
+        font-family: "Mulish";
         font-size: 30PX;
         overflow-y: hidden;
         margin-right: -67px;
@@ -805,7 +826,7 @@
 
     * {
         overflow-x: hidden;
-        font-family: Mulish;
+        font-family: "Mulish";
     }
 
     /* first div */
@@ -879,17 +900,18 @@
 
     .center {
         font-size: 25.9px;
-        line-height: 28px;
+        line-height: 21px;
         text-align: center !important;
         color: #253859;
-        font-family: Mulish;
+        font-family: "Mulish";
         letter-spacing: -0.02em;
         font-size: 17px;
         font-weight: 900 !important;
-        margin-left: 11rem !important;
+        margin-left: 7rem !important;
         margin-right: 7rem !important;
         margin-top: 0.5rem;
         -webkit-text-stroke: thin;
+        padding: 5rem 0rem 0 0rem;
     }
 
 
@@ -931,7 +953,7 @@
 
     .resposive-phone img {
         width: 100%;
-        margin-left: 2.5rem;
+        text-align: center;
     }
 
     /* third div end */
@@ -1051,7 +1073,7 @@
     .Gain-Compliance {
         color: #253859;
         margin-top: 20px;
-        font-family: Mulish;
+        font-family: "Mulish";
         font-size: 30PX;
         overflow-y: hidden;
         margin-right: 0;
