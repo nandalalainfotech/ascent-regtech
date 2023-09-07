@@ -20,9 +20,8 @@
   <link rel="stylesheet" href="../index.css">
 </head>
 
-
+<!-- Style For Animation -->
 <style>
-  /* Réinitialisation des styles par défaut */
   body,
   h1,
   h2,
@@ -33,25 +32,17 @@
     padding: 0;
   }
 
-  /* Importer la police Roboto depuis Google Fonts */
-  /* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"); */
-
-  /* Appliquer la police à vos éléments */
   body {
     font-family: "Roboto", sans-serif;
   }
 
-  /* Styles pour l'arrière-plan dégradé bleu-violet */
   body {
-    /* background-image: linear-gradient(to top, #7FFFD4, #0F52BA); */
     background-repeat: repeat;
     background-position: center;
-    /* Mode de fusion pour superposer l'image */
     background-blend-mode: overlay;
   }
 
   body::after {
-    /* Opacité de l'image superposée */
     content: "";
     display: block;
     position: fixed;
@@ -59,15 +50,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: url("https://github.com/berru-g/scroll-effect/blob/main/src/img/back.png?raw=true") center/cover; */
     opacity: 0.3;
-    /* Modifier l'opacité ici */
     pointer-events: none;
   }
 
   /*scroll effect*/
   .scroll-section {
-    /* padding: 15px 50px; */
     color: #000;
     opacity: 0;
     transform: translateY(50px);
@@ -154,8 +142,7 @@
   <!-- nav bar end -->
   <br><br>
   <!-- Header image section -->
-  <div class="container-fluid" style="background-image: url(Audit_banner.png);
-  background-repeat: no-repeat;background-size: cover;">
+  <div class="container-fluid background_image">
     <div class="container mt-3">
       <div class="row">
         <div class="col-sm-12 text-white">
@@ -182,41 +169,11 @@
     </div>
 
   </div>
-
-  <!-- Header image section -->
-  <!-- <div class="container-fluid" style="background-image: url(Audit_banner.png);
-    background-repeat: no-repeat;background-size: cover;margin-bottom: 100px;">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 text-white">
-          <div class="col-sm-8 py-5 ">
-            <div style="height: 2rem;" class="pt-5 mt-5"> </div>
-            <h1 class="banner-head">Audit
-              Preparedness</h1>
-            <p style="font-size: 1.2em;line-height: 30px;" class="pt-4">Sophisticated filtering
-              capabilities allow you to
-              identify and drill down
-              into
-              the
-              necessary obligation data
-              regulators are looking for, without combing through extraneous information.</p>
-            <div class="pt-5">
-              <button class="btn text-white" id="learnMoreBtn"><span style="font-size: .8rem;font-weight: 400;"><b>LEARN
-                    MORE</b></span></button>
-            </div>
-            <div style="height: 7.5rem;"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div> -->
-  <div class="container">
+  <div class="container save-hours">
     <div class="row">
-      <div class="col-sm-3 ">
-
+      <div class="col-sm-0 col-md-0  col-lg-3">
       </div>
-      <div class="col-sm-8">
+      <div class="col-sm-12 col-md-12 col-lg-8">
         <section class="scroll-section">
           <h3 class="heading-work px-5">Save Hours of Manual Work</h3>
           <p class="paragraph-work px-5" style="line-height: 25px;">Know exactly where you stand in the
@@ -236,9 +193,9 @@
   </div>
 
 
-  <div class="container">
+  <div class="container class-easy-way">
     <div class="row">
-      <div class="col-sm-7 ">
+      <div class="col-sm-6 col-md-12 col-lg-7">
         <div class="container">
 
           <!--hidden image only show1 in mobile view -->
@@ -262,10 +219,9 @@
           </section>
         </div>
       </div>
-      <div class="col-sm-5 ">
+      <div class="col-sm-6 col-md-12  col-lg-5">
         <div class="filter-image">
           <section class="scroll-section">
-            </br></br></br>
             <img src="man-1-filter-1536x1536.png" alt="Nature" class="responsive" width="500" height="400">
           </section>
         </div>
@@ -274,10 +230,10 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 ">
+      <div class="col-sm-0 col-md-0 col-lg-6 ">
 
       </div>
-      <div class="col-sm-6 mt-5">
+      <div class="col-sm-12 col-md-12 col-lg-6 mt-6">
         <section class="scroll-section">
           <h2 class="single-click" id="responc">Export Audit Data with a Single
             Click</h2>
@@ -289,11 +245,11 @@
       </div>
     </div>
   </div>
-  <!-- Form section -->
 
-  <div class="container">
+
+  <div class="container class-test">
     <div class="row">
-      <div class="col-sm-7 ">
+      <div class="col-sm-6 col-md-12 col-lg-6 ">
         <div class="container">
           <section class="scroll-section">
             <div class="filter">
@@ -310,7 +266,7 @@
           </br></br></br></br></br></br>
         </div>
       </div>
-      <div class="col-sm-5">
+      <div class="col-sm-5 col-md-12 col-lg-6">
         <div class="filter-image">
           <section class="scroll-section mt-15">
             <img src="image.png" alt="Nature" class="responsive" width="600" height="400">
@@ -321,24 +277,24 @@
     </div>
   </div>
 
+  <!-- Form section -->
   <div class="container-fluid py-5 px-5" style="background-color: #183460">
     <div class="container">
       <div class="row">
-        <div class="col-md-5 text-center">
-          <div class="text-white" style="margin-top: auto">
-          </div>
+        <div class="col-md-12 col-lg-6 text-center">
+          <!-- <div class="text-white" style="margin-top: auto">
+          </div> -->
           <div class="row">
-            <div class="col-md-12" id="formPad"></div>
-            <div class="col-md-12 text-white">
+            <div class="col-sm-12 col-md-12 col-lg-6 " id="formPad"></div>
+            <div class=" text-white">
               <h2>Eliminate audit anxiety.</h2>
             </div>
           </div>
         </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-6 viewBox-test" style="
+        <div class="col-sm-12 col-md-12 col-lg-6 viewBox-test" style="
             background-color: #abb8c3;
             border-radius: 10px;
-            margin-top: 15px;
+             margin-top: 15px; 
             mask-border-width: 100%;
           ">
           <div class="container">
@@ -432,10 +388,6 @@
                     <option value="Africa" style="color: #33475b;">Africa</option>
                     <option value="Other" style="color: #33475b;">Other</option>
                   </select>
-                  <!-- <input type="text" id="companyName" placeholder="Please Select" style="
-                      width: 100%;
-                      height: 40px;
-                    " /> -->
                 </div>
               </div>
               <div class="col-md-12">
@@ -498,182 +450,6 @@
       </div>
     </div>
   </div>
-  <!-- <div class="container-fluid py-5 px-5" style="background-color: #183460">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5 text-center">
-          <div class="text-white" style="margin-top: auto">
-          </div>
-          <div class="row">
-            <div class="col-md-12" id="formPad"></div>
-            <div style="height: 120px;"></div>
-            <div class="col-md-12 text-white">
-              <h1>Eliminate audit anxiety.</h1>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-6 viewBox-test" style="
-                background-color: #abb8c3;
-                border-radius: 10px;
-                margin-top: 15px;
-                mask-border-width: 100%;
-              ">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 text-center py-5" style="margin-top: -25px">
-                <div>
-                  <h3>Get Started</h3>
-                </div>
-              </div>
-              <div class="col-md-6 py-2">
-                <div>
-                  <label for="fname" style="font-size: 14px; color: #33475b; display: block">First name <span
-                      style="color: red">*</span></label>
-                  <input type="text" id="fname" style="
-                          width: 100%;
-                          height: 40px;
-                          border: none;
-                          border-radius: 2px;
-                        " />
-                </div>
-              </div>
-              <div class="col-md-6 py-2">
-                <div>
-                  <label for="lname" style="font-size: 14px; color: #33475b; display: block">Last name <span
-                      style="color: red">*</span></label>
-                  <input type="text" id="lname" style="
-                          width: 100%;
-                          height: 40px;
-                          border: none;
-                          border-radius: 2px;
-                        " />
-                </div>
-              </div>
-              <div class="col-md-6 py-2">
-                <div>
-                  <label for="jobTitle" style="font-size: 14px; display: block; color: #33475b">Job title<span
-                      style="color: red">*</span></label>
-                  <input type="text" id="jobTitle" style="
-                          width: 100%;
-                          height: 40px;
-                          border: none;
-                          border-radius: 2px;
-                        " />
-                </div>
-              </div>
-              <div class="col-md-6 py-2">
-                <div>
-                  <label for="businessEmail" style="font-size: 14px; color: #33475b; display: block">Business Email<span
-                      style="color: red">*</span></label>
-                  <input type="text" id="businessEmail" style="
-                          width: 100%;
-                          height: 40px;
-                          border: none;
-                          border-radius: 2px;
-                        " />
-                </div>
-              </div>
-              <div class="col-md-6 py-2">
-                <div>
-                  <label for="mobile" style="font-size: 14px; color: #33475b; display: block">Phone number<span
-                      style="color: red">*</span></label>
-                  <input type="text" id="mobile" style="
-                          width: 100%;
-                          height: 40px;
-                          border: none;
-                          border-radius: 2px;
-                        " />
-                </div>
-              </div>
-              <div class="col-md-6 py-2">
-                <div>
-                  <label for="companyName" style="font-size: 14px; color: #33475b; display: block">Company Name<span
-                      style="color: red">*</span></label>
-                  <input type="text" id="companyName" style="
-                          width: 100%;
-                          height: 40px;
-                          border: none;
-                          border-radius: 2px;
-                        " />
-                </div>
-              </div>
-              <div class="col-md-12 py-2">
-                <div>
-                  <label for="companyName" style="font-size: 14px; color: #33475b">Country/Region<span
-                      style="color: red">*</span></label>
-                  <input type="text" id="companyName" placeholder="Please Select" style="
-                          width: 100%;
-                          height: 40px;
-                          border: none;
-                          border-radius: 3px;
-                        " />
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div>
-                  <p style="font-size: 14px">
-                    Please share any specific objectives or goals you would
-                    like to discuss with our sales team.
-                  </p>
-                  <textarea name="" id="" cols="30" rows="5" style="
-                          width: 100%;
-                          height: 40px;
-                          border: none;
-                          border-radius: 3px;
-                        "></textarea>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div>
-                  <p style="font-size: 11px">
-                    By submitting this form, you agree that you have read our
-                    <a href="#">Privacy Policy</a> and consent to 360regtech's
-                    cookie policy and receiving marketing communications. You
-                    can unsubscribe at any time.
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="text-white" style="width: 12.5rem">
-                  <div style="float: left; background-color: #1a73e8" class="p-2">
-                    <ul style="
-                            list-style-type: none;
-                            font-size: 11px;
-                            margin: 0px;
-                            padding: 0px;
-                          ">
-                      <li>protected by reCAPTCHA</li>
-                      <li>
-                        <a href="#" class="text-white" id="underline">Privacy</a>
-                        -
-                        <a href="#" class="text-white" id="underline">Terms</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div style="background-color: #fff; text-align: end" class="p-2">
-                    <img src="captcha_img.png" alt="" style="width: 33px" />
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6"></div>
-              <div class="col-md-6 py-3">
-                <div>
-                  <button class="btn text-white" style="
-                          background-color: #03d5cc;
-                          font-size: 14px;
-                          padding: 10px 20px;
-                        ">
-                    <strong>Request a Demo</strong>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
 
   <!-- Caurosel section -->
   <div class="container-fluid py-5">
@@ -841,6 +617,8 @@
     </div>
   </div>
   <!-- fotter end -->
+
+
   <Script>
     const hamburger = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
