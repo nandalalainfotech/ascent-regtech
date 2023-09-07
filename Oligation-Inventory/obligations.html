@@ -32,38 +32,6 @@
         padding: 0;
     }
 
-    /* Importer la police Roboto depuis Google Fonts */
-    /* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"); */
-
-    /* Appliquer la police à vos éléments */
-    body {
-        font-family: "Roboto", sans-serif;
-    }
-
-    /* Styles pour l'arrière-plan dégradé bleu-violet */
-    body {
-        /* background-image: linear-gradient(to top, #7FFFD4, #0F52BA); */
-        background-repeat: repeat;
-        background-position: center;
-        /* Mode de fusion pour superposer l'image */
-        background-blend-mode: overlay;
-    }
-
-    body::after {
-        /* Opacité de l'image superposée */
-        content: "";
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        /* background: url("https://github.com/berru-g/scroll-effect/blob/main/src/img/back.png?raw=true") center/cover; */
-        opacity: 0.3;
-        /* Modifier l'opacité ici */
-        pointer-events: none;
-    }
-
     /*scroll effect*/
     .scroll-section {
         /* padding: 15px 50px; */
@@ -155,7 +123,7 @@
                 <div class="col-sm-12 text-white">
                     <div class="col-sm-8 py-5">
                         <div style="height: 6rem;" class="pt-5"> </div>
-                        <strong style="font-size: 44px;">Obligations Inventory</strong>
+                        <strong class="obligation">Obligations Inventory</strong>
                         <p style="font-size: 1.2em;line-height: 30px;" class="pt-4">To effectively manage regulatory risk, it’s
                             imperative to
                             understand the regulatory obligations by which you’re bound.
@@ -186,8 +154,8 @@
             <div class="col-sm-7 d-flex align-items-center">
                 <section class="scroll-section">
                     <div id="content_one">
-                        <strong style="color: #28bebb;font-size: 30px;font-weight: 500;">Cut Through the Noise</strong>
-                        <p style="font-size: 18px;color: #253859;letter-spacing: -0.02em;line-height: 2rem;" class="pt-2">Get to the heart of your obligations without
+                        <strong style="color: #28bebb;" class="cut">Cut Through the Noise</strong>
+                        <p style="color: #253859;letter-spacing: -0.02em;line-height: 2rem;" class="pt-2">Get to the heart of your obligations without
                             sifting through mountains regulatory text that’s
                             irrelevant to your business entity, jurisdiction,
                             or product and service offerings.</p>
@@ -211,9 +179,9 @@
                 </section>
             </div>
             <div class="col-sm-6 d-flex align-items-center">
-                <section class="scroll-section">
-                    <strong style="color: #28bebb;font-size: 30px;font-weight: 500;">Start with Our Impact Questionnaire</strong>
-                    <p style="font-size: 18px;color: #253859;letter-spacing: -0.02em;line-height: 2rem;" class="pt-2">Through 360 RegTech impact questionnaire, you’ll easily identify laws
+                <section class="scroll-section" id="start_with">
+                    <strong style="color: #28bebb;" class="cut">Start with Our Impact <span class="cut">Questionnaire</span></strong>
+                    <p style="color: #253859;letter-spacing: -0.02em;line-height: 2rem;" class="pt-2">Through 360 RegTech impact questionnaire, you’ll easily identify laws
                         and regulations that apply to your business.
                         A series of related questions surfaces the relevant
                         inventory of applicable obligations. 360 Regtech also provides
@@ -226,9 +194,9 @@
         <div class="row">
             <div class="col-sm-7 d-flex align-items-center" id="placing">
                 <section class="scroll-section">
-                    <div>
-                        <strong style="color: #28bebb;font-size: 30px;font-weight: 500;">Drill Down into Your Specific Obligations</strong>
-                        <p style="font-size: 18px;color: #253859;letter-spacing: -0.02em;line-height: 1.8rem;" class="pt-2">Once you have the full obligations inventory,
+                    <div id="start_with">
+                        <strong style="color: #28bebb;" class="cut">Drill Down into Your Specific <span class="cut">Obligations</span></strong>
+                        <p style="color: #253859;letter-spacing: -0.02em;line-height: 1.8rem;" class="pt-2">Once you have the full obligations inventory,
                             the platform selects only the specific obligations
                             that will apply to your firm in its expanded state,
                             whether that’s a new service offering or business line,
@@ -254,7 +222,7 @@
               <div class="row">
                 <div class="col-md-12" id="formPad"></div>
                 <div class="col-md-12 text-white">
-                  <h2>See how you can meet obligations more easily and more effectively.</h2>
+                  <h2 class="see_how">See how you can meet obligations more easily and more effectively.</h2>
                 </div>
               </div>
             </div>
@@ -633,13 +601,13 @@
         <div class="container">
           <div class="row py-3">
             <!-- <div class="col-md-1"></div> -->
-            <div class="col-md-4">
+            <div class="col-md-4" id="rights">
               <p style="color: white; font-size: 12px">
                 © 2023 360 RegTech. All Rights Reserved.
               </p>
             </div>
             <div class="col-md-6"></div>
-            <div class="col-md-2" >
+            <div class="col-md-2" id="social">
               <span style="color: white; padding-right: 12px"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
