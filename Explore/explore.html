@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="../index.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
+<!-- Style For Animation -->
 <style>
-    /* Réinitialisation des styles par défaut */
     body,
     h1,
     h2,
@@ -27,24 +28,18 @@
         padding: 0;
     }
 
-    /* Importer la police Roboto depuis Google Fonts */
 
-    /* Appliquer la police à vos éléments */
     body {
         font-family: "Roboto", sans-serif;
     }
 
-    /* Styles pour l'arrière-plan dégradé bleu-violet */
     body {
-        /* background-image: linear-gradient(to top, #7FFFD4, #0F52BA); */
         background-repeat: repeat;
         background-position: center;
-        /* Mode de fusion pour superposer l'image */
         background-blend-mode: overlay;
     }
 
     body::after {
-        /* Opacité de l'image superposée */
         content: "";
         display: block;
         position: fixed;
@@ -53,13 +48,11 @@
         width: 100%;
         height: 100%;
         opacity: 0.3;
-        /* Modifier l'opacité ici */
         pointer-events: none;
     }
 
     /*scroll effect*/
     .scroll-section {
-        /* padding: 15px 50px; */
         color: #000;
         opacity: 0;
         transform: translateY(50px);
@@ -71,6 +64,7 @@
         transform: translateY(0);
     }
 </style>
+<!-- Style For Header Svg -->
 <style>
     @keyframes nectarStrokeAnimation {
         0% {
@@ -158,7 +152,6 @@
     }
 </style>
 
-
 <body>
     <!-- nav bar start -->
     <nav>
@@ -233,42 +226,42 @@
         </ul>
     </nav>
     <!-- nav bar end -->
+
     <!-- Header Image -->
     <div class="container-fluid initial">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-white pt-5 py--5">
-                    <div class="col-sm-8 py-5">
-                        <div style="height:4rem;" class="pt-5 mt-3"> </div>
-                        <h2 class="header "><b>Platform<span id="capabilitie">Capabilities</b></span>
-                        </h2>
-                        <h3 class="nectar-highlighted-text" data-style="scribble" data-exp="default"
-                            data-using-custom-color="false" data-animation-delay="false" data-color=""
-                            data-color-gradient=""> <em class="animated"><svg class="nectar-scribble squiggle-underline"
-                                    role="presentation" viewBox="-347 -30.1947 694 96.19" preserveAspectRatio="none">
-                                    <path style="animation-duration: 1.8s;"
-                                        d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
-                                        stroke="#03d5cc" pathLength="1" stroke-width="9" fill="none"></path>
-                                </svg></em>
-                        </h3>
-                        <p>
-                            <span style="font-size: 150%; color: #ffffff;"><b>Learn how teams in financial compliance
-                                    unlock the full potential </br>360Regtech</span></b>
-                        </p>
-                    </div>
+            <div class="row ">
+                <div class="col-sm-12 text-white">
+                    <div style="height:6rem;" class=" mt-5"> </div>
+                    <h2 class="header"><b>Platform<span id="capabilitie">Capabilities</b></span>
+                    </h2>
+                    <h3 class="nectar-highlighted-text" data-style="scribble" data-exp="default"
+                        data-using-custom-color="false" data-animation-delay="false" data-color=""
+                        data-color-gradient=""> <em class="animated"><svg class="nectar-scribble squiggle-underline"
+                                role="presentation" viewBox="-347 -30.1947 694 96.19" preserveAspectRatio="none">
+                                <path style="animation-duration: 1.8s;"
+                                    d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
+                                    stroke="#03d5cc" pathLength="1" stroke-width="9" fill="none"></path>
+                            </svg></em>
+                    </h3>
+                    <p>
+                        <span style="font-size: 150%; color: #ffffff;"><b>Learn how teams in financial compliance
+                                unlock the full potential </br> 360Regtech</span></b>
+                    </p>
+                    <div style="height: 7rem;"></div>
                 </div>
             </div>
         </div>
-
     </div>
+
     <!-- Event Icons -->
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 ">
+            <div class="col-sm-6 col-md-12 col-lg-6">
                 <div class="iwt-icon">
                     <i class="icon-default-style fa fa-list accent-color">
                     </i>
-                    <div class="container">
+                    <div class="container px-3">
                         <a href="#Mapping Obligations" style="color: inherit; text-decoration: none;">
                             <p class="mapping-para">Mapping Obligations</p>
                         </a>
@@ -276,7 +269,7 @@
                     </div>
                 </div>
                 <div class="iwt-icon"> <i class="icon-default-style fa fa-retweet accent-color"></i>
-                    <div class="container">
+                    <div class="container px-3">
                         <a href="#Regulatory Change Management" style="color: inherit; text-decoration: none;">
                             <p class="mapping-para">Regulatory Change Management</p>
                         </a>
@@ -284,17 +277,17 @@
                     </div>
                 </div>
                 <div class="iwt-icon"> <i class="icon-default-style fa fa-file-o accent-color"></i>
-                    <div class="container">
+                    <div class="container px-3">
                         <a href="#Regulatory Monitoring" style="color: inherit; text-decoration: none;">
                             <p class="mapping-para">Regulatory Monitoring</p>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 ">
+            <div class="col-sm-6 col-md-12 col-lg-6">
                 <div class="iwt-icon">
                     <i class="icon-default-style fa fa-pencil accent-color"></i>
-                    <div class="container">
+                    <div class="container px-3">
                         <a href="#Obligations Management" style="color: inherit; text-decoration: none;">
                             <p class="mapping-para">Obligations Management</p>
                         </a>
@@ -302,7 +295,7 @@
                     </div>
                 </div>
                 <div class="iwt-icon"> <i class="icon-default-style fa fa-exclamation-triangle accent-color"></i>
-                    <div class="container">
+                    <div class="container px-3">
                         <a href="#Obligations Gap Analysics" style="color: inherit; text-decoration: none;">
                             <p class="mapping-para">Obligations Gap Analysics</p>
                         </a>
@@ -310,24 +303,23 @@
                     </div>
                 </div>
                 <div class="iwt-icon"> <i class="icon-default-style fa fa-check-square accent-color"></i>
-                    <div class="container">
+                    <div class="container px-3">
                         <a href="#Compliance Audits" style="color: inherit; text-decoration: none;">
                             <p class="mapping-para">Compliance Audits</p>
                         </a>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- mapping obligations row -->
-    <div class="container">
-        <div class="row" style="margin-top: 70px;">
-            <div class="col-sm-6">
+    <div class="container mapping-obli" id="Mapping Obligations">
+        <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6">
                 <div class="row">
                     <section class="scroll-section">
                         <div class="container ">
-                            <h2 class="heading-explore" id="Mapping Obligations">
+                            <h2 class="heading-explore">
                                 Mapping
                                 Obligations</h2>
                             <p>
@@ -343,17 +335,17 @@
                     </section>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 col-md-12 col-lg-6">
                 <div class="row">
-                    <div class="col-sm-2 col-md-2 col-lg-2">
+                    <div class="col-sm-1 col-md-2 col-lg-2">
                     </div>
-                    <div class="col-sm-8">
+                    <div class="col-sm-9">
                         <section class="scroll-section">
                             <img src="images/img-3.png" width="100%">
                         </section>
                     </div>
                     <br>
-                    <div class="col-sm-2 col-md-2 col-lg-2">
+                    <div class="col-sm-1 col-md-2 col-lg-2">
                     </div>
                 </div>
 
@@ -362,7 +354,7 @@
     </div>
     <div class="container">
         <div class="row" style="margin-top: 70px;">
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 col-md-12 col-lg-4">
                 <div class="iwt-icon"> <i class="icon-default-style fa fa-list-ul accent-color"></i>
                     <div class="container">
                         <p class="mapping-paragraph">Know Your Obligations</b>
@@ -378,7 +370,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 col-md-12 col-lg-4 ">
                 <div class="iwt-icon"> <i class="icon-default-style fa fa-refresh accent-color"></i>
                     <div class="container">
                         <p class="mapping-paragraph">Keep Them Current</p>
@@ -388,7 +380,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 col-md-12 col-lg-4">
                 <div class="iwt-icon"> <i class="icon-default-style fa fa-magic accent-color"></i>
                     <div class="container">
                         <p class="mapping-paragraph">Automate Manual Work</p>
@@ -405,11 +397,11 @@
     <!-- Regulatory Change Management section -->
     <div class="container mt-5">
         <div class="row" style="margin-top: 150px;">
-            <div class="col-sm-5">
+            <div class="col-sm-5 col-md-12 col-lg-5">
                 <div class="row">
                     <div class="col-sm-1">
                     </div>
-                    <div class="col-sm-10">
+                    <div class="col-sm-9">
                         <section class="scroll-section">
                             <img src="images/image-1.png" width="100%">
                         </section>
@@ -420,7 +412,7 @@
                 </div>
 
             </div>
-            <div class="col-sm-7">
+            <div class="col-sm-7 col-md-12 col-lg-7" id="Regulatory Change Management">
                 <div class="row" style="margin-top:80px;">
                     <section class="scroll-section">
                         <div class="container">
@@ -428,7 +420,7 @@
                                 <div class="col-sm-1"></div>
                             </div>
                             <div class="wpb_wrapper">
-                                <span class="regulatory-unique" id="Regulatory Change Management">
+                                <span class="regulatory-unique">
                                     Regulatory
                                     Change Management</span>
                             </div>
@@ -452,7 +444,7 @@
     </div>
     <div class="container">
         <div class="row" style="margin-top: 70px;">
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 col-md-12 col-lg-4">
                 <div class="iwt-icon"> <i class="icon-default-style fa fa-eye accent-color"></i>
                     <div class="container">
                         <p class="mapping-paragraph">Never Miss an Update</p>
@@ -462,7 +454,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 col-md-12 col-lg-4">
                 <div class="iwt-icon"> <i class="icon-default-style fa fa-arrow-right accent-color"></i>
                     <div class="container">
                         <p class="mapping-paragraph">Know the Impact</p>
@@ -472,7 +464,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 col-md-12 col-lg-4">
                 <div class="iwt-icon"> <i class="icon-default-style fa fa-star accent-color"></i>
                     <div class="container">
                         <p class="mapping-paragraph">Create a Clean Process</p>
@@ -485,12 +477,12 @@
 
     </div>
     <!-- Obligations Management section -->
-    <div class="container">
+    <div class="container" id="Obligations Management">
         <div class="row" style="margin-top: 150px;">
-            <div class="col-sm-6 ">
+            <div class="col-sm-6 col-md-12 col-lg-6">
                 <section class="scroll-section">
                     <div class="container" style="margin-top:80px;">
-                        <span class="regulatory-unique " id="Regulatory Change Management">
+                        <span class="regulatory-unique ">
                             Obligations Management</span>
                         <p>
                             <span class="paragraph-explore">Effective compliance requires the work of many.
@@ -501,7 +493,7 @@
                 </section>
 
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 col-md-12 col-lg-6">
                 <div class="row">
                     <div class="col-sm-2 col-md-2 col-lg-2">
                     </div>
@@ -519,7 +511,7 @@
     </div>
     <div class="container">
         <div class="row" style="margin-top: 70px;">
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 col-md-12 col-lg-4">
                 <div class="iwt-icon"> <i class="icon-default-style fa fa-link accent-color"></i>
                     <div class="container">
                         <p class="mapping-paragraph">Create Traceability</p>
@@ -529,7 +521,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 col-md-12 col-lg-4">
                 <div class="iwt-icon"> <i class="icon-default-style fa fa-users accent-color"></i>
                     <div class="container">
                         <p class="mapping-paragraph">Collaborate Across Teams</p>
@@ -539,7 +531,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 col-md-12 col-lg-4">
                 <div class="iwt-icon"> <i class="icon-default-style fa fa-exclamation accent-color"></i>
                     <div class="container">
                         <p class="mapping-paragraph">Remediate Issues</p>
@@ -556,7 +548,7 @@
     <!-- Regulatory monitoring section -->
     <div class="container">
         <div class="row" style="margin-top: 200px;">
-            <div class="col-sm-5">
+            <div class="col-sm-5 col-md-12 col-lg-5">
                 <div class="row">
                     <div class="col-sm-1">
                     </div>
@@ -567,11 +559,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-7">
+            <div class="col-sm-7 col-md-12 col-lg-7" id="Regulatory Monitoring">
                 <section class="scroll-section">
                     <div class="container" style="margin-top:100px;">
                         <div class="wpb_wrapper">
-                            <span class="regulatory-unique " id="Regulatory Monitoring">
+                            <span class="regulatory-unique ">
                                 Regulatory Monitoring</span>
                             <p>
                                 <span style="font-size: 1.3em; color: #253859;">Stay ahead of the curve. 360regtech
@@ -588,7 +580,7 @@
     </div>
     <div class="container">
         <div class="row" style="margin-top: 70px;">
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 col-md-12 col-lg-4">
                 <div class="iwt-icon"> <i class="icon-default-style fa fa-crosshairs accent-color"></i>
                     <div class="container">
                         <p class="mapping-paragraph">Keep Track Better</p>
@@ -597,7 +589,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 col-md-12 col-lg-4">
                 <div class="iwt-icon"> <i class="icon-default-style fa fa-lightbulb-o accent-color"></i>
                     <div class="container">
                         <p class="mapping-paragraph">Comply Proactively</p>
@@ -606,7 +598,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 col-md-12 col-lg-4">
                 <div class="iwt-icon"> <i class="icon-default-style fa fa-clock-o accent-color"></i>
                     <div class="container">
                         <p class="mapping-paragraph">Focus on Strategy</p>
@@ -618,12 +610,12 @@
         </div>
 
     </div>
-    <div class="container">
+    <div class="container" id="Obligations Gap Analysics">
         <div class="row" style="margin-top: 200px;">
-            <div class="col-sm-6">
+            <div class="col-sm-6 col-md-12 col-lg-6">
                 <section class="scroll-section">
                     <div class="container" style="margin-top:80px;">
-                        <span class="regulatory-unique " id="Obligations Gap Analysics">
+                        <span class="regulatory-unique ">
                             Obligations Gap Analysis</span>
                         <p>
                             <span class="paragraph-explore">Need assurances that your compliance program is
@@ -634,17 +626,12 @@
                 </section>
 
             </div>
-            <div class="col-sm-6 ">
+            <div class="col-sm-6 col-md-12 col-lg-6">
                 <div class="row">
-                    <div class="col-sm-1">
-                    </div>
-                    <div class="col-sm-10">
+                    <div class="col-sm-12">
                         <section class="scroll-section">
                             <img src="images/gap-analysis-v6.png" width="100%">
                         </section>
-                    </div>
-                    <br>
-                    <div class="col-sm-1">
                     </div>
                 </div>
             </div>
@@ -652,7 +639,7 @@
     </div>
     <div class="container">
         <div class="row" style="margin-top: 70px;">
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 col-md-12 col-lg-4">
                 <div class="iwt-icon"> <i class="icon-default-style fa fa-check-square accent-color"></i>
                     <div class="container">
                         <p class="mapping-paragraph">Prepare for Audits</p>
@@ -662,7 +649,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 col-md-12 col-lg-4">
                 <div class="iwt-icon"> <i class="icon-default-style fa fa-check-square accent-color"></i>
                     <div class="container">
                         <p class="mapping-paragraph">Shore Up Gaps</p>
@@ -672,7 +659,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 col-md-12 col-lg-4">
                 <div class="iwt-icon"> <i class="icon-default-style fa fa-usd accent-color"></i>
                     <div class="container">
                         <p class="mapping-paragraph">Save on Resources</p>
@@ -686,15 +673,15 @@
     </div>
     <div class="container">
         <div class="row" style="margin-top: 200px;">
-            <div class="col-sm-6">
+            <div class="col-sm-6 col-md-12 col-lg-6">
                 <section class="scroll-section">
                     <img src="images/image-4.png" width="100%">
                 </section>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 col-md-12 col-lg-6" id="Compliance Audits">
                 <section class="scroll-section">
                     <div class="container" style="margin-top:80px;">
-                        <span class="regulatory-unique " id="Compliance Audits">
+                        <span class="regulatory-unique ">
                             Compliance Audits</span>
                         <p>
                             <span class="paragraph-explore">Whether you are preparing for an internal or
@@ -712,7 +699,7 @@
     </div>
     <div class="container">
         <div class="row" style="margin-top: 70px;">
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 col-md-12 col-lg-4">
                 <div class="iwt-icon"> <i class="icon-default-style fa fa-list accent-color"></i>
                     <div class="container">
                         <p class="mapping-paragraph">Automate Your Audit Trail</p>
@@ -722,7 +709,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 col-md-12 col-lg-4">
                 <div class="iwt-icon"> <i class="icon-default-style fa fa-shield accent-color"></i>
                     <div class="container">
                         <p class="mapping-paragraph">Improve Accountability</p>
@@ -733,7 +720,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 col-md-12 col-lg-4">
                 <div class="iwt-icon"> <i class="icon-default-style fa fa-exclamation-triangle accent-color"></i>
                     <div class="container">
                         <p class="mapping-paragraph">Catch Issues Sooner</p>
@@ -748,13 +735,13 @@
 
     </div>
     <div class="container-fluid" style="background-image: url(images/image-5background.jpg);
-    background-repeat: no-repeat;background-size: cover; height: 15rem; margin-top: 70px;">
+    background-repeat: no-repeat;background-size: cover; height: 17rem; margin-top: 70px;">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12 col-md-12 col-lg-12">
                     <section class="scroll-section">
                         <div class="text-center" style=" color: white;">
-                            <p style="font-size: 1.2rem; margin-top: 20px; ">Turn compliance into a competitive
+                            <p style="font-size: 1.2rem; margin-top: 60px; ">Turn compliance into a competitive
                                 advantage
                             </p>
                             <h1 style="font-weight:900">Talk to a solutions specialist today</h1>

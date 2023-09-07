@@ -13,8 +13,10 @@
 }
 
 .initial {
-    background-image: url("images/Audit_banner.png");
+    background-image: url("images/our-approach-2.png");
     height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .banner-paragraph {
@@ -22,14 +24,10 @@
     color: #ffffff;
 }
 
-/* .responsive {
-    width: 100%;
-    height: auto;
-} */
-
 .mapping-para {
     font-size: 25.5px;
     font-weight: bold;
+    line-height: 45px;
 }
 
 .mapping-para:hover {
@@ -60,13 +58,13 @@
     position: relative;
 }
 
-#buttonlearn-work:hover {
+/* #buttonlearn-work:hover {
     bottom: .5rem;
     background-color: #28bebb;
     animation-name: btn;
     animation-duration: 1s;
     box-shadow: 0px 1px 4px 4px lightblue;
-}
+} */
 
 .iwt-icon {
     color: #03d5cc;
@@ -100,7 +98,7 @@ span.regulatory-unique {
 }
 
 .mapping-paragraph {
-    font-size: 25.5px;
+    font-size: 23px;
     color: #253859;
     -webkit-text-stroke: thin;
     font-weight: bold;
@@ -109,7 +107,7 @@ span.regulatory-unique {
 .mapping-paragraph-icon {
     color: #253859;
     font-size: 15px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 #animation-image {
@@ -119,7 +117,7 @@ span.regulatory-unique {
 .header {
     font-size: 40px;
     font-weight: bold;
-    /* padding-top: 7px; */
+    padding-top: 20px;
     -webkit-text-stroke: 1.5px;
 }
 
@@ -131,6 +129,24 @@ span.regulatory-unique {
     .heading-explore {
         /* display: none; */
         font-size: 30px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .heading-explore {
+        font-size: 35px;
+    }
+
+    .mapping-paragraph {
+        padding: 5px;
+    }
+
+    .mapping-paragraph-icon {
+        line-height: 30px;
+    }
+
+    .initial {
+        background-image: url("images/our-approach-2.png");
     }
 }
 
