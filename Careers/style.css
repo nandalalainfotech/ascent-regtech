@@ -1,3 +1,7 @@
+* {
+    font-family: "Mulish";
+}
+
 .circle:hover {
     display: none !important;
     background-color: #fff;
@@ -62,7 +66,7 @@
 .team {
     font-size: 28px;
     color: #253859;
-    font-weight: 500;
+    font-weight: 900;
 }
 
 .medicial ul,
@@ -124,4 +128,29 @@ span.compliance {
     float: left;
     font-size: 18px;
 
+}
+
+#active_page {
+    border-bottom: 1px solid #03D5CC;
+}
+
+.employee {
+    line-height: 30px;
+    font-weight: 487;
+    font-size: 17px;
+    color: #253859 !important;
+}
+
+@media screen and (max-width:480px) {
+    .dollars {
+        margin-left: 15px;
+    }
+
+    .dental {
+        margin-left: 20px;
+    }
+
+    .avater {
+        padding: 20px 20px 20px 20px;
+    }
 }
