@@ -231,7 +231,7 @@ span.double {
 }
 
 body .nectar-scribble.squiggle-underline {
-    width: 500px;
+    width: 480px;
     height: 28px;
 }
 
@@ -289,6 +289,17 @@ body .nectar-scribble.squiggle-underline {
     .cards {
         height: 620px !important;
     }
+
+    body .nectar-scribble.squiggle-underline {
+        width: 480px;
+        height: 30px;
+    }
+
+    .nectar-highlighted-text .nectar-scribble {
+        position: absolute;
+        top: 35px;
+        z-index: 4;
+    }
 }
 
 @media screen and (max-width:780px) and (min-width:600px) {
@@ -311,6 +322,17 @@ body .nectar-scribble.squiggle-underline {
 
     #myDIV {
         margin-left: 170px !important;
+    }
+
+    body .nectar-scribble.squiggle-underline {
+        width: 480px;
+        height: 30px;
+    }
+
+    .nectar-highlighted-text .nectar-scribble {
+        position: absolute;
+        top: 35px;
+        z-index: 4;
     }
 }
 
