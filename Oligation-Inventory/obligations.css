@@ -122,3 +122,66 @@ body {
 #active_page{
     border-bottom: 1px solid #03d5cc;
   }
+.obligation{
+    font-size: 44px;
+}
+.cut{
+    font-size: 30px;
+    font-weight: 500;
+}
+#content_one{
+    font-size: 18px;
+}
+#start_with p{
+    font-size: 18px;
+}
+@media screen and (max-width:480px) {
+    .obligation{
+        font-size: 35px;
+        font-weight: 100;
+    }
+    .centerPos{
+        margin-top: -4rem;
+    }
+    #content_one{
+        margin-top: 2rem;
+    }
+    .cut{
+        font-size: 25px;
+        font-weight: 300;
+        margin-left: 35px;
+    }
+    #content_one p{
+        font-size: 15px;
+        color: #253859;
+        line-height: 2rem;
+        font-weight: 500;
+        font-family: "Mulish";
+        margin-left: 35px;
+        webkit-font-smoothing: antialiased;
+    }
+    #content_one button{
+        margin-left: 35px;
+    }
+    #start_with{
+        margin-top: 2rem;
+    }
+    #start_with p{
+        font-size: 15px;
+        color: #253859;
+        line-height: 2rem;
+        font-weight: 500;
+        font-family: "Mulish";
+        margin-left: 35px;
+        webkit-font-smoothing: antialiased;
+    }
+    .see_how{
+        font-size: 25px;
+    }
+    #social{
+        margin-top: 1rem;
+    }
+    #rights{
+        margin-top: 1rem;
+    }
+}
