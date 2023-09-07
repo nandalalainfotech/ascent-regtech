@@ -8,1872 +8,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Responsive Animated Navbar</title>
 </head>
-<style>
-    * {
-        font-family: Mulish;
-    }
-
-    .row1 {
-        display: none;
-    }
-
-    /* first div vedio start */
-    .index-head {
-        margin-top: 9rem !important;
-        margin-left: 7rem !important;
-        font-size: 42px !important;
-        -webkit-text-stroke: thin;
-        font-weight: 900;
-    }
-
-    .index-heads {
-        margin-left: 7rem !important;
-        color: #253859;
-        margin-top: 1.5rem !important;
-        margin-bottom: 1.5rem;
-        text-align: justify;
-        font-size: 18px;
-        line-height: 25px;
-    }
-
-    .vedio,
-    .nectar-video-self-hosted {
-        margin-top: 9rem !important;
-        /* margin-left: 7rem !important; */
-        border-radius: 10px !important;
-        box-shadow: 15px 15px 15px 5px #e7e4e4;
-    }
-
-    .button {
-        border: none;
-        color: white;
-        padding: 9px 15px;
-        text-align: center;
-        text-decoration: none;
-        display: inline;
-        font-size: 12px;
-        font-weight: bold;
-        margin: 0 0 10px;
-        border-radius: 5px;
-        transition-duration: 0.4s;
-        z-index: 5;
-        cursor: pointer;
-    }
-
-    .button2 {
-        background-color: inherit;
-        color: #03d5cc;
-        width: 10rem;
-        z-index: 5;
-        border: 2px solid #03d5cc;
-        text-transform: uppercase !important;
-        position: absolute;
-        margin-left: 0.5rem;
-    }
-
-    .button3 {
-        background-color: #03d5cc;
-        height: 2.5rem;
-        z-index: 5 !important;
-        margin-left: 7rem !important;
-        text-transform: uppercase !important;
-        position: relative;
-    }
-
-    .button3:hover {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    .button2:hover {
-        background-color: #03d5cc;
-        color: white;
-        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    /* first div vedio end */
-    /* second div */
-    .center {
-        margin-top: -15rem;
-        text-align: center;
-        color: #253859;
-        text-transform: none;
-        letter-spacing: -0.01em;
-        font-size: 29px;
-        line-height: 27px;
-        margin-left: 25rem !important;
-        margin-right: 24rem !important;
-        -webkit-text-stroke: 1.5px;
-        font-weight: 900;
-        padding-left: 2rem;
-        padding-top: 1rem;
-    }
-
-    .centers {
-        margin-top: 2rem;
-        text-align: center !important;
-        line-height: 27px;
-        color: #253859;
-        font-size: 17px !important;
-        margin-left: 2rem !important;
-    }
-
-    .path {
-        stroke-dasharray: 1000;
-        stroke-dashoffset: 1000;
-        animation: dash 3s ease-in-out;
-    }
-
-
-    @keyframes dash {
-        from {
-            stroke-dashoffset: 200;
-        }
-
-        to {
-            stroke-dashoffset: 10;
-        }
-    }
-
-
-    /* second div end */
-
-    /* third div */
-    .center-content {
-        margin-top: 1rem;
-        margin-left: 7rem;
-        margin-right: 5rem;
-        color: #253859;
-        word-spacing: -0.05em;
-        font-size: 30px;
-        line-height: 40px;
-        font-weight: 500;
-        -webkit-text-stroke: thin;
-    }
-
-    .centers-content {
-        margin-left: 7rem;
-        margin-right: 8rem;
-        color: #253859;
-        font-size: 17px;
-        margin-bottom: 2rem;
-    }
-
-    .resposive-phone {
-        display: none;
-    }
-
-    /* third div end */
-    /* fourth div */
-
-    .centers-contents {
-        text-align: center !important;
-        font-size: 1.4rem !important;
-        font-weight: 700;
-        color: #253859;
-        padding: 1rem 0 1rem 0;
-        margin-left: 0rem !important;
-        margin-right: 2rem !important;
-        /* margin-top: 100px; */
-    }
-
-    .centers-contents span {
-        top: 1rem !important;
-    }
-
-    .image-div {
-        margin: 1rem 0 2rem 0;
-        opacity: 1;
-    }
-
-    .wavetable {
-        display: none;
-    }
-
-    /* fourth div end */
-
-    /* fifth div */
-    .centers-para {
-        margin-top: 1rem;
-        letter-spacing: -0.02em;
-        line-height: 30px;
-        text-align: center;
-        color: #253859;
-        font-size: 17px;
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-bottom: 5rem;
-    }
-
-    .centers-head {
-        text-align: center;
-        text-transform: capitalize;
-        letter-spacing: -0.04em;
-        font-size: 25px;
-        line-height: 30px;
-        font-weight: inherit;
-        color: #253859 !important;
-    }
-
-    .centers-svg {
-        margin-top: 2rem;
-        text-align: center !important;
-        margin-left: 2rem !important;
-    }
-
-    /* fifth div end */
-    /* sixth div */
-    .svg-span {
-        background-color: #d3fcfa;
-        height: 50px;
-    }
-
-    /* sixth div end */
-    .row3 {
-        background-color: #eff4f9;
-        height: 30rem !important;
-    }
-
-    .obligations {
-        font-size: 30px;
-        line-height: 40px;
-        font-weight: 700;
-    }
-
-    .obligations-para {
-        color: #253859;
-        font-weight: bold;
-    }
-
-    .regulatory {
-        line-height: 30px;
-        margin-top: 125px;
-        -webkit-text-stroke-width: thin;
-        color: #253859;
-        margin-right: -6.5rem;
-        font-size: 32px;
-    }
-
-
-    .card {
-        min-height: 300px;
-        margin-left: 8rem;
-    }
-
-    #buttonlearn-work {
-        background-color: #03d5cc;
-        color: #fff;
-        position: relative;
-    }
-
-    #buttonlearn-work:hover {
-        bottom: .5rem;
-        background-color: #28bebb;
-        animation-name: btn;
-        animation-duration: 1s;
-    }
-
-    .card-body {
-        color: #fff;
-        margin-left: 2rem;
-    }
-
-
-    .card-para {
-        color: #fff;
-        margin-top: 10px;
-        margin-bottom: 2.5rem;
-        font-size: 17px;
-        line-height: 30px;
-    }
-
-    .card-head {
-        -webkit-text-stroke: thin;
-        margin-top: 10px;
-        font-size: 42.6px;
-        line-height: 37px;
-    }
-
-    .Gain-Compliance {
-        color: #253859;
-        margin-top: 20px;
-        font-family: Mulish;
-        font-size: 2rem;
-        font-weight: 500;
-        -webkit-text-stroke: thin;
-        margin-left: 4rem;
-        padding-right: 4.3rem;
-    }
-
-    @keyframes nectarStrokeAnimation {
-        0% {
-            stroke-dashoffset: 1;
-            opacity: 0;
-        }
-
-        1% {
-            opacity: 1;
-        }
-
-        100% {
-            stroke-dashoffset: 0;
-        }
-    }
-
-    .nectar-highlighted-text .nectar-scribble {
-        z-index: 4;
-    }
-
-    .nectar-highlighted-text em.animated .nectar-scribble path {
-        stroke-linecap: round;
-        opacity: 1;
-        animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-    }
-
-    .nectar-highlighted-text .nectar-scribble path {
-        stroke-dasharray: 1;
-        stroke-dashoffset: 1;
-        opacity: 0;
-    }
-
-    .nectar-highlighted-text em.animated .nectar-scribble path {
-        stroke-linecap: round;
-        opacity: 1;
-        animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-    }
-
-    .nectar-highlighted-text .nectar-scribble {
-        position: relative;
-        /* left: 21px; */
-        top: -13PX;
-        z-index: 0;
-        width: 179px;
-        height: 18px;
-    }
-
-    .nectar-highlighted-text .nectar-scribble path {
-        stroke-dasharray: 1;
-        stroke-dashoffset: 1;
-        opacity: 0;
-        z-index: -1 !important;
-    }
-
-    .nectar-highlighted-text em.animated .nectar-scribble path {
-        stroke-linecap: round;
-        opacity: 1;
-        animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-    }
-
-    .link {
-        color: #2175FF;
-        cursor: pointer;
-        font-weight: 400;
-        text-decoration: none;
-    }
-
-    .link--arrowed {
-        display: inline-block;
-        height: 2rem;
-        line-height: 2rem;
-    }
-
-    .link--arrowed .arrow-icon {
-        position: relative;
-        top: -1px;
-        transition: transform 0.3s ease;
-        vertical-align: middle;
-    }
-
-    .link--arrowed .arrow-icon--circle {
-        stroke-dashoffset: 0;
-    }
-
-    .link--arrowed:hover .arrow-icon {
-        transform: translate3d(5px, 0, 0);
-    }
-
-    .link--arrowed:hover .arrow-icon--circle {
-        transition: stroke-dashoffset 0.3s ease;
-        stroke-dasharray: 95;
-        stroke-dashoffset: 95;
-    }
-
-    .checkout {
-        text-align: center;
-        font-size: 18px;
-    }
-/* 
-    @media only screen and (min-width: 2500px) {
-        * {
-            font-family: Mulish;
-        }
-
-        .row1 {
-            display: none;
-        }
-
-        /* first div vedio start 
-        .index-head {
-            margin-top: 13rem !important;
-            margin-left:0rem !important;
-            font-size: 42px !important;
-            -webkit-text-stroke: thin;
-            font-weight: 900;
-        }
-
-        .index-heads {
-            margin-left: 0rem !important;
-            color: #253859;
-            margin-top: 1.5rem !important;
-            margin-bottom: 1.5rem;
-            text-align: justify;
-            font-size: 18px;
-            line-height: 25px;
-        }
-
-        .vedio,
-        .nectar-video-self-hosted {
-            height: 245.2px;
-            width: 518.62px;
-            margin-top: 13rem !important;
-            /* margin-left: 7rem !important; 
-            border-radius: 10px !important;
-            box-shadow: 15px 15px 15px 5px #e7e4e4;
-        }
-
-        .button {
-            border: none;
-            color: white;
-            padding: 9px 15px;
-            text-align: center;
-            text-decoration: none;
-            display: inline;
-            font-size: 12px;
-            font-weight: bold;
-            margin: 0 0 10px;
-            border-radius: 5px;
-            transition-duration: 0.4s;
-            z-index: 5;
-            cursor: pointer;
-        }
-
-        .button2 {
-            background-color: inherit;
-            color: #03d5cc;
-            width: 10rem;
-            z-index: 5;
-            border: 2px solid #03d5cc;
-            text-transform: uppercase !important;
-            position: absolute;
-            margin-left: 0.5rem;
-        }
-
-        .button3 {
-            background-color: #03d5cc;
-            height: 2.5rem;
-            z-index: 5 !important;
-            margin-left: 0rem !important;
-            text-transform: uppercase !important;
-            position: relative;
-        }
-
-        .button3:hover {
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-
-        .button2:hover {
-            background-color: #03d5cc;
-            color: white;
-            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-        }
-
-        /* first div vedio end */
-        /* second div 
-        .center {
-            margin-top: -15rem;
-            text-align: center;
-            color: #253859;
-            text-transform: none;
-            letter-spacing: -0.01em;
-            font-size: 29px;
-            line-height: 27px;
-            margin-left: 25rem !important;
-            margin-right: 24rem !important;
-            -webkit-text-stroke: 1.5px;
-            font-weight: 900;
-            padding-left: 2rem;
-        }
-
-        .centers {
-            margin-top: 2rem;
-            text-align: center !important;
-            line-height: 27px;
-            color: #253859;
-            font-size: 17px !important;
-            margin-left: 2rem !important;
-        }
-
-        .path {
-            stroke-dasharray: 1000;
-            stroke-dashoffset: 1000;
-            animation: dash 3s ease-in-out;
-        }
-
-        .path1 {
-            stroke-dasharray: 1000;
-            stroke-dashoffset: 1000;
-            animation: dash 0.5s ease;
-        }
-
-
-        @keyframes dash {
-            from {
-                stroke-dashoffset: 200;
-            }
-
-            to {
-                stroke-dashoffset: 10;
-            }
-        }
-
-
-        /* second div end */
-
-        /* third div 
-        .center-content {
-            margin-top: 1rem;
-            margin-left: 7rem;
-            margin-right: 5rem;
-            color: #253859;
-            word-spacing: -0.05em;
-            font-size: 30px;
-            line-height: 40px;
-            font-weight: 500;
-            -webkit-text-stroke: thin;
-        }
-
-        .centers-content {
-            margin-left: 7rem;
-            margin-right: 8rem;
-            color: #253859;
-            font-size: 17px;
-            margin-bottom: 2rem;
-        }
-
-        .resposive-phone {
-            display: none;
-        }
-
-        /* third div end */
-        /* fourth div 
-
-        .centers-contents {
-            text-align: center !important;
-            font-size: 1.4rem !important;
-            font-weight: 700;
-            color: #253859;
-            padding: 1rem 0 1rem 0;
-            margin-left: 0rem !important;
-            margin-right: 2rem !important;
-            /* margin-top: 100px; 
-        }
-
-        .centers-contents span {
-            top: 1rem !important;
-        }
-
-        .image-div {
-            margin: 1rem 0 2rem 0;
-            opacity: 1;
-        }
-
-        .wavetable {
-            display: none;
-        }
-
-        /* fourth div end */
-
-        /* fifth div 
-        .centers-para {
-            margin-top: 1rem;
-            letter-spacing: -0.02em;
-            line-height: 30px;
-            text-align: center;
-            color: #253859;
-            font-size: 17px;
-            margin-left: 5px;
-            margin-right: 5px;
-            margin-bottom: 5rem;
-        }
-
-        .centers-head {
-            text-align: center;
-            text-transform: capitalize;
-            letter-spacing: -0.04em;
-            font-size: 25px;
-            line-height: 30px;
-            font-weight: inherit;
-            color: #253859 !important;
-        }
-
-        .centers-svg {
-            margin-top: 2rem;
-            text-align: center !important;
-            margin-left: 2rem !important;
-        }
-
-        /* fifth div end */
-        /* sixth div 
-        .svg-span {
-            background-color: #d3fcfa;
-            height: 50px;
-        }
-
-        /* sixth div end 
-        .row3 {
-            background-color: #eff4f9;
-            height: 30rem !important;
-        }
-
-        .obligations {
-            font-size: 30px;
-            line-height: 40px;
-            font-weight: 700;
-        }
-
-        .obligations-para {
-            color: #253859;
-            font-weight: bold;
-        }
-
-        .regulatory {
-            line-height: 30px;
-            margin-top: 125px;
-            -webkit-text-stroke-width: thin;
-            color: #253859;
-            margin-right: -6.5rem;
-            font-size: 32px;
-        }
-
-
-        .card {
-            min-height: 300px;
-            margin-left: 8rem;
-        }
-
-        #buttonlearn-work {
-            background-color: #03d5cc;
-            color: #fff;
-            position: relative;
-        }
-
-        #buttonlearn-work:hover {
-            bottom: .5rem;
-            background-color: #28bebb;
-            animation-name: btn;
-            animation-duration: 1s;
-        }
-
-        .card-body {
-            color: #fff;
-            margin-left: 2rem;
-        }
-
-
-        .card-para {
-            color: #fff;
-            margin-top: 10px;
-            margin-bottom: 2.5rem;
-            font-size: 17px;
-            line-height: 30px;
-        }
-
-        .card-head {
-            -webkit-text-stroke: thin;
-            margin-top: 10px;
-            font-size: 42.6px;
-            line-height: 37px;
-        }
-
-        .Gain-Compliance {
-            color: #253859;
-            margin-top: 20px;
-            font-family: Mulish;
-            font-size: 2rem;
-            font-weight: 500;
-            -webkit-text-stroke: thin;
-            margin-left: 4rem;
-            padding-right: 4.3rem;
-        }
-
-        .nectar-shape-divider-wrap.no-color .nectar-shape-divider {
-            display: none;
-        }
-
-        @keyframes nectarStrokeAnimation {
-            0% {
-                stroke-dashoffset: 1;
-                opacity: 0;
-            }
-
-            1% {
-                opacity: 1;
-            }
-
-            100% {
-                stroke-dashoffset: 0;
-            }
-        }
-
-        .nectar-highlighted-text .nectar-scribble {
-            z-index: 4;
-        }
-
-        .nectar-highlighted-text em.animated .nectar-scribble path {
-            stroke-linecap: round;
-            opacity: 1;
-            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-        }
-
-        .nectar-highlighted-text .nectar-scribble path {
-            stroke-dasharray: 1;
-            stroke-dashoffset: 1;
-            opacity: 0;
-        }
-
-        .nectar-highlighted-text em.animated .nectar-scribble path {
-            stroke-linecap: round;
-            opacity: 1;
-            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-        }
-
-        .nectar-highlighted-text .nectar-scribble {
-            position: relative;
-            /* left: 21px; 
-            top: -13PX;
-            z-index: 0;
-            width: 179px;
-            height: 18px;
-        }
-
-        .nectar-highlighted-text .nectar-scribble path {
-            stroke-dasharray: 1;
-            stroke-dashoffset: 1;
-            opacity: 0;
-            z-index: -1 !important;
-        }
-
-        .nectar-highlighted-text em.animated .nectar-scribble path {
-            stroke-linecap: round;
-            opacity: 1;
-            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-        }
-
-        .link {
-            color: #2175FF;
-            cursor: pointer;
-            font-weight: 400;
-            text-decoration: none;
-        }
-
-        .link--arrowed {
-            display: inline-block;
-            height: 2rem;
-            line-height: 2rem;
-        }
-
-        .link--arrowed .arrow-icon {
-            position: relative;
-            top: -1px;
-            transition: transform 0.3s ease;
-            vertical-align: middle;
-        }
-
-        .link--arrowed .arrow-icon--circle {
-            stroke-dashoffset: 0;
-        }
-
-        .link--arrowed:hover .arrow-icon {
-            transform: translate3d(5px, 0, 0);
-        }
-
-        .link--arrowed:hover .arrow-icon--circle {
-            transition: stroke-dashoffset 0.3s ease;
-            stroke-dasharray: 95;
-            stroke-dashoffset: 95;
-        }
-
-        .checkout {
-            text-align: center;
-            font-size: 18px;
-        }
-
-
-    } */
-
-    @media only screen and (max-width: 690px) {
-        * {
-            overflow-x: hidden;
-            font-family: Mulish;
-        }
-
-        /* first div */
-        .row2 {
-            display: none;
-        }
-
-        .row1 {
-            display: block;
-            height: 1041px;
-            overflow-y: hidden;
-        }
-
-        .index-head {
-            position: relative !important;
-            margin-left: 1rem !important;
-            margin-top: 5rem !important;
-            overflow-y: hidden !important;
-            /* font-size: 37.7px; */
-            line-height: 38.25px;
-            letter-spacing: -0.02em;
-            font-weight: 800;
-        }
-
-        .index-heads {
-            margin-left: 1rem !important;
-            color: #253859;
-            overflow-y: hidden;
-
-        }
-
-        .button3,
-        .button2 {
-            margin-left: 1rem !important;
-            width: 15rem;
-            overflow-y: hidden;
-            text-transform: uppercase !important;
-        }
-
-        .button2 {
-            width: 10rem;
-            font-weight: 900;
-            text-transform: uppercase !important;
-            margin-right: 5rem;
-            display: block;
-            z-index: 1 !important;
-            position: relative !important;
-        }
-
-        .button3 {
-            z-index: 0 !important;
-        }
-
-        .vedio,
-        .nectar-video-self-hosted {
-            background-color: #eff4f9 !important;
-            width: 100% !important;
-            margin-top: 8rem !important;
-            margin-left: -0.2rem !important;
-            border-radius: 10px !important;
-            z-index: 5;
-            overflow: hidden;
-            box-shadow: 15px 15px 15px 5px #e7e4e4;
-        }
-
-        .nectar-shape-divider {
-            display: none;
-        }
-
-        /*first div end */
-        /* second div start */
-
-        .center {
-            text-align: center !important;
-            font-size: 1rem !important;
-            line-height: 1.4rem !important;
-            color: #253859;
-            margin-left: 0rem !important;
-            margin-right: 0rem !important;
-            margin-top: 0.5rem;
-            -webkit-text-stroke: thin;
-            overflow-y: hidden;
-        }
-
-
-        .centers {
-            text-align: center;
-            color: #253859;
-            font-size: 1rem;
-            font-weight: 4rem;
-            margin-left: 0rem;
-            margin-right: 0.5rem;
-        }
-
-        /* second div end */
-        /* third div start */
-        .resposive-phone {
-            display: block;
-        }
-
-        .resposive-desktop {
-            display: none;
-        }
-
-        .center-content {
-            margin-left: 1rem;
-            color: #253859;
-            font-style: 1rem;
-            margin-right: 1rem;
-            padding-right: 7%;
-            padding-left: 7%;
-        }
-
-        .centers-content {
-            margin-left: 1rem;
-            margin-right: 1rem;
-            color: #253859;
-            padding-right: 7%;
-            padding-left: 7%;
-        }
-
-        .resposive-phone img {
-            width: 100%;
-            margin-left: 2.5rem;
-        }
-
-        /* third div end */
-        /* fourth div  */
-        .image-div {
-            width: 100%;
-            margin: 1rem 0 1rem 3rem;
-        }
-
-        .centers-contents {
-            text-align: center !important;
-            font-size: 1.4rem !important;
-            color: #253859;
-            font-weight: 700;
-            padding: 0 1rem 0 1rem;
-            margin-left: 2rem !important;
-            margin-right: 2rem !important;
-
-        }
-
-        .wavetable {
-            display: none;
-        }
-
-        /* fourth div end */
-        /* five div */
-        .centers-para {
-            margin-top: 1rem;
-            line-height: 2rem;
-            text-align: center;
-            color: #253859;
-            font-size: 17px;
-            margin-left: 5px;
-            margin-right: 5px;
-            margin-bottom: 5rem;
-        }
-
-        .centers-head {
-            text-align: center;
-            text-transform: capitalize;
-            letter-spacing: -0.04em;
-            font-size: 20px;
-            font-weight: 500;
-            color: #253859 !important;
-            -webkit-text-stroke: thin;
-        }
-
-        .centers-svg {
-            margin-top: -1rem;
-            text-align: center !important;
-            margin-left: 0rem !important;
-        }
-
-        /* card */
-        .card {
-            margin-left: 0rem;
-            margin-right: 7rem;
-            border-radius: 1rem;
-        }
-
-        .card-body {
-            color: #fff;
-            margin-left: 0rem;
-            padding-bottom: 0rem;
-            margin-bottom: -3rem;
-            overflow-y: hidden;
-        }
-
-        .card-para {
-            color: #fff;
-            margin-top: 22px;
-            margin-bottom: 3.5rem;
-            font-size: 17px;
-            line-height: 27px;
-            overflow-y: hidden;
-        }
-
-        .card-head {
-            margin-top: 15px;
-            font-size: 30.6px;
-            line-height: 35px;
-            overflow-y: hidden;
-
-        }
-
-        .contaier {
-            margin-left: -4rem;
-            margin-right: 4rem;
-            margin-top: -100px;
-            width: 100%;
-        }
-
-        .contaier1 {
-            margin-left: 0rem !important;
-            margin-right: 4rem;
-            margin-top: -74px;
-        }
-
-        .contaier2 {
-            margin-top: -73px;
-            margin-left: -0.5rem;
-        }
-
-        .contaier3 {
-            margin-top: -2rem;
-        }
-
-        .contaier4 {
-            margin-left: 3rem !important;
-        }
-
-        .contaier5 {
-            margin-right: 10rem !important;
-        }
-
-        .regulatory {
-            line-height: 30px;
-            overflow-y: hidden;
-            margin-top: 10px;
-            color: #253859;
-            margin-right: 2rem;
-            font-size: 25px;
-            -webkit-text-stroke: 0%;
-        }
-
-        .Gain-Compliance {
-            color: #253859;
-            margin-top: 20px;
-            font-family: Mulish;
-            font-size: 30PX;
-            overflow-y: hidden;
-            margin-right: -67px;
-            margin-left: 0rem;
-        }
-
-        .overall {
-            overflow-y: hidden;
-            padding-right: 5rem;
-
-        }
-
-        @keyframes nectarStrokeAnimation {
-            0% {
-                stroke-dashoffset: 1;
-                opacity: 0;
-            }
-
-            1% {
-                opacity: 1;
-            }
-
-            100% {
-                stroke-dashoffset: 0;
-            }
-        }
-
-        .nectar-highlighted-text .nectar-scribble {
-            z-index: 4;
-        }
-
-        .nectar-highlighted-text em.animated .nectar-scribble path {
-            stroke-linecap: round;
-            opacity: 1;
-            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-        }
-
-        .nectar-highlighted-text .nectar-scribble path {
-            stroke-dasharray: 1;
-            stroke-dashoffset: 1;
-            opacity: 0;
-        }
-
-        .nectar-highlighted-text em.animated .nectar-scribble path {
-            stroke-linecap: round;
-            opacity: 1;
-            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-        }
-
-        .nectar-highlighted-text .nectar-scribble {
-            position: relative;
-            /* left: 21px; */
-            top: -13PX;
-            z-index: 0;
-            width: 179px;
-            height: 18px;
-        }
-
-        .nectar-highlighted-text .nectar-scribble path {
-            stroke-dasharray: 1;
-            stroke-dashoffset: 1;
-            opacity: 0;
-            z-index: -1 !important;
-        }
-
-        .nectar-highlighted-text em.animated .nectar-scribble path {
-            stroke-linecap: round;
-            opacity: 1;
-            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-        }
-
-        .link {
-            color: #2175FF;
-            cursor: pointer;
-            font-weight: 400;
-            text-decoration: none;
-        }
-
-        .link--arrowed {
-            display: inline-block;
-            height: 2rem;
-            line-height: 2rem;
-        }
-
-        .link--arrowed .arrow-icon {
-            position: relative;
-            top: -1px;
-            transition: transform 0.3s ease;
-            vertical-align: middle;
-        }
-
-        .link--arrowed .arrow-icon--circle {
-            stroke-dashoffset: 0;
-        }
-
-        .link--arrowed:hover .arrow-icon {
-            transform: translate3d(5px, 0, 0);
-        }
-
-        .link--arrowed:hover .arrow-icon--circle {
-            transition: stroke-dashoffset 0.3s ease;
-            stroke-dasharray: 95;
-            stroke-dashoffset: 95;
-        }
-
-        .checkout {
-            text-align: center;
-            font-size: 18px;
-        }
-
-    }
-
-    @media only screen and (max-width: 999px) and (min-width: 690px) {
-
-        * {
-            overflow-x: hidden;
-            font-family: Mulish;
-        }
-
-        /* first div */
-        .row2 {
-            display: none;
-        }
-
-        .row1 {
-            display: block;
-            height: 923px;
-            overflow-y: hidden;
-        }
-
-        .index-head {
-            position: relative !important;
-            font-size: 40.6px !important;
-            line-height: 35.5px;
-            margin-left: 4rem !important;
-            overflow-y: hidden;
-            margin-top: 7rem !important;
-            margin-right: 3.5rem;
-            font-weight: 900;
-        }
-
-
-        .index-heads {
-            color: #253859;
-            overflow-y: hidden;
-            margin-left: 4rem !important;
-
-        }
-
-        .button3,
-        .button2 {
-            margin-left: 4rem !important;
-            width: 15rem;
-            overflow-y: hidden;
-            text-transform: uppercase !important;
-        }
-
-        .button3 {
-            z-index: 0 !important;
-        }
-
-        .button2 {
-            width: 10rem;
-            font-weight: 900;
-            text-transform: uppercase !important;
-            margin-right: 5rem;
-            display: block;
-            z-index: 3 !important;
-            position: relative !important;
-        }
-
-        .vedio,
-        .nectar-video-self-hosted {
-            background-color: #eff4f9 !important;
-            margin-top: 3rem !important;
-            margin-left: 4rem !important;
-            border-radius: 10px !important;
-            z-index: 5;
-            overflow: hidden;
-            box-shadow: 15px 15px 15px 5px #e7e4e4;
-            height: 305px;
-            width: 542px;
-        }
-
-        .nectar-shape-divider {
-            display: none;
-        }
-
-        /*first div end */
-        /* second div start */
-
-        .center {
-            font-size: 25.9px;
-            line-height: 21px;
-            text-align: center !important;
-            color: #253859;
-            font-family: Mulish;
-            letter-spacing: -0.02em;
-            font-size: 17px;
-            font-weight: 900 !important;
-            margin-left: 0rem;
-            margin-right: 0rem;
-            margin-top: 0.5rem;
-            -webkit-text-stroke: thin;
-        }
-
-
-        .centers {
-            text-align: center;
-            color: #253859;
-            font-size: 1rem;
-            font-weight: 4rem;
-            margin-left: 0rem;
-            margin-right: 0.5rem;
-        }
-
-        /* second div end */
-        /* third div start */
-        .resposive-phone {
-            display: block;
-        }
-
-        .resposive-desktop {
-            display: none;
-        }
-
-        .center-content {
-            margin-left: 1rem;
-            color: #253859;
-            font-style: 1rem;
-            margin-right: 1rem;
-            padding-right: 7%;
-            padding-left: 7%;
-        }
-
-        .centers-content {
-            margin-left: 1rem;
-            margin-right: 1rem;
-            color: #253859;
-            padding-right: 7%;
-            padding-left: 7%;
-        }
-
-        .resposive-phone img {
-            width: 100%;
-            margin-left: 2.5rem;
-        }
-
-        /* third div end */
-        /* fourth div  */
-        .image-div {
-            width: 100%;
-            margin: 1rem 0 1rem 3rem;
-        }
-
-        .centers-contents {
-            text-align: center !important;
-            font-size: 1.4rem !important;
-            color: #253859;
-            font-weight: 700;
-            padding: 0 1rem 0 1rem;
-            margin-left: 2rem !important;
-            margin-right: 2rem !important;
-
-        }
-
-        .wavetable1 {
-            display: none;
-        }
-
-        .wavetable {
-            display: block;
-        }
-
-        /* fourth div end */
-        /* five div */
-        .centers-para {
-            margin-top: 1rem;
-            line-height: 2rem;
-            text-align: center;
-            color: #253859;
-            font-size: 17px;
-            margin-left: 5px;
-            margin-right: 5px;
-            margin-bottom: 5rem;
-        }
-
-        .centers-head {
-            text-align: center;
-            text-transform: capitalize;
-            letter-spacing: -0.04em;
-            font-size: 20px;
-            font-weight: 500;
-            color: #253859 !important;
-            -webkit-text-stroke: thin;
-        }
-
-        .centers-svg {
-            margin-top: -1rem;
-            text-align: center !important;
-            margin-left: 0rem !important;
-        }
-
-        /* card */
-        .card {
-            margin-left: 0rem;
-            margin-right: 7rem;
-            border-radius: 1rem;
-        }
-
-        .card-body {
-            color: #fff;
-            margin-left: 0rem;
-            padding-bottom: 0rem;
-            margin-bottom: -3rem;
-            overflow-y: hidden;
-        }
-
-        .card-para {
-            color: #fff;
-            margin-top: 22px;
-            margin-bottom: 3.5rem;
-            font-size: 17px;
-            line-height: 27px;
-            overflow-y: hidden;
-        }
-
-        .card-head {
-            margin-top: 15px;
-            font-size: 30.6px;
-            line-height: 35px;
-            overflow-y: hidden;
-
-        }
-
-        .contaier {
-            margin-left: -4rem;
-            margin-right: 4rem;
-            margin-top: -100px;
-            width: 100%;
-        }
-
-        .contaier1 {
-            margin-left: 0rem !important;
-            margin-right: 4rem;
-            margin-top: -74px;
-        }
-
-        .contaier2 {
-            margin-top: -73px;
-        }
-
-        .regulatory {
-            line-height: 25px;
-            overflow-y: hidden;
-            margin-top: 10px;
-            color: #253859;
-            margin-right: 2rem;
-            font-size: 25px;
-            -webkit-text-stroke: 0%;
-        }
-
-        .Gain-Compliance {
-            color: #253859;
-            margin-top: 20px;
-            font-family: Mulish;
-            font-size: 30PX;
-            overflow-y: hidden;
-            margin-right: 0;
-        }
-
-        .overall {
-            overflow-y: hidden;
-            padding-right: 5rem;
-
-        }
-
-        .full-width-section>.nectar-shape-divider-wrap {
-            /* margin-left: -50vw; */
-            margin-left: calc(-50vw + var(13px)/ 2);
-            left: 50%;
-            /* width: 100vw; */
-            width: calc(100vw - var(13px));
-        }
-
-        .nectar-shape-divider-wrap {
-            position: relative;
-            top: auto;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            width: 100%;
-            height: 100px;
-            /* z-index: 1;  */
-            /* overflow: visible; */
-            transform: translateZ(0);
-        }
-
-        .nectar-shape-divider-wrap.no-color .nectar-shape-divider {
-            fill: #fff;
-        }
-
-        .nectar-shape-divider {
-            width: 100% !important;
-            left: 0 !important;
-            bottom: -1px !important;
-            height: 100px !important;
-            position: relative !important;
-            overflow: visible !important;
-            z-index: -1 !important;
-        }
-
-        .nectar-shape-divider-wrap[data-style="waves_opacity_alt"] svg path:nth-child(1) {
-            opacity: 0.15;
-        }
-
-        .nectar-shape-divider-wrap[data-style="waves_opacity_alt"] svg path:nth-child(2) {
-            opacity: 0.3;
-        }
-
-        @keyframes nectarStrokeAnimation {
-            0% {
-                stroke-dashoffset: 1;
-                opacity: 0;
-            }
-
-            1% {
-                opacity: 1;
-            }
-
-            100% {
-                stroke-dashoffset: 0;
-            }
-        }
-
-        .nectar-highlighted-text .nectar-scribble {
-            z-index: 4;
-        }
-
-        .nectar-highlighted-text em.animated .nectar-scribble path {
-            stroke-linecap: round;
-            opacity: 1;
-            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-        }
-
-        .nectar-highlighted-text .nectar-scribble path {
-            stroke-dasharray: 1;
-            stroke-dashoffset: 1;
-            opacity: 0;
-        }
-
-        .nectar-highlighted-text em.animated .nectar-scribble path {
-            stroke-linecap: round;
-            opacity: 1;
-            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-        }
-
-        .nectar-highlighted-text .nectar-scribble {
-            position: relative;
-            /* left: 21px; */
-            top: -13PX;
-            z-index: 0;
-            width: 179px;
-            height: 18px;
-        }
-
-        .nectar-highlighted-text .nectar-scribble path {
-            stroke-dasharray: 1;
-            stroke-dashoffset: 1;
-            opacity: 0;
-            z-index: -1 !important;
-        }
-
-        .nectar-highlighted-text em.animated .nectar-scribble path {
-            stroke-linecap: round;
-            opacity: 1;
-            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-        }
-
-        .link {
-            color: #2175FF;
-            cursor: pointer;
-            font-weight: 400;
-            text-decoration: none;
-        }
-
-        .link--arrowed {
-            display: inline-block;
-            height: 2rem;
-            line-height: 2rem;
-        }
-
-        .link--arrowed .arrow-icon {
-            position: relative;
-            top: -1px;
-            transition: transform 0.3s ease;
-            vertical-align: middle;
-        }
-
-        .link--arrowed .arrow-icon--circle {
-            stroke-dashoffset: 0;
-        }
-
-        .link--arrowed:hover .arrow-icon {
-            transform: translate3d(5px, 0, 0);
-        }
-
-        .link--arrowed:hover .arrow-icon--circle {
-            transition: stroke-dashoffset 0.3s ease;
-            stroke-dasharray: 95;
-            stroke-dashoffset: 95;
-        }
-
-        .checkout {
-            text-align: center;
-            font-size: 18px;
-        }
-
-
-    }
-
-    .full-width-section>.nectar-shape-divider-wrap {
-        /* margin-left: -50vw; */
-        margin-left: calc(-50vw + var(13px)/ 2);
-        left: 50%;
-        /* width: 100vw; */
-        width: calc(100vw - var(13px));
-    }
-
-    .nectar-shape-divider-wrap {
-        position: absolute;
-        top: auto;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 150px;
-        /* z-index: 1;  */
-        /* overflow: visible; */
-        transform: translateZ(0);
-    }
-
-    .nectar-shape-divider-wrap.no-color .nectar-shape-divider {
-        fill: #fff;
-    }
-
-    .nectar-shape-divider {
-        width: 100%;
-        left: 0;
-        bottom: -1px;
-        height: 100%;
-        position: relative;
-        overflow: visible;
-        z-index: -1;
-    }
-
-    .nectar-shape-divider-wrap[data-style="waves_opacity_alt"] svg path:nth-child(1) {
-        opacity: 0.15;
-    }
-
-    .nectar-shape-divider-wrap[data-style="waves_opacity_alt"] svg path:nth-child(2) {
-        opacity: 0.3;
-    }
-</style>
-<style>
-    @media only screen and (min-width: 2500px) {
-
-        body,
-        h1,
-        h2,
-        p,
-        ul,
-        li {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Importer la police Roboto depuis Google Fonts */
-        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-
-        /* Appliquer la police à vos éléments */
-        body {
-            font-family: "Roboto", sans-serif;
-        }
-
-        /* Styles pour l'arrière-plan dégradé bleu-violet */
-        body {
-            /* background-image: linear-gradient(to top, #7FFFD4, #0F52BA); */
-            background-repeat: repeat;
-            background-position: center;
-            /* Mode de fusion pour superposer l'image */
-            background-blend-mode: overlay;
-        }
-
-        body::after {
-            /* Opacité de l'image superposée */
-            content: "";
-            display: block;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            /* background: url("https://github.com/berru-g/scroll-effect/blob/main/src/img/back.png?raw=true") center/cover; */
-            opacity: 0.3;
-            /* Modifier l'opacité ici */
-            pointer-events: none;
-        }
-
-        /*scroll effect*/
-        .scroll-section {
-            /* padding: 15px 50px; */
-            color: #000;
-            opacity: 0;
-            transform: translateY(50px);
-            transition: opacity 0.5s, transform 0.5s;
-        }
-
-        .scroll-section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    @media only screen and (max-width: 690px) {
-
-        body,
-        h1,
-        h2,
-        p,
-        ul,
-        li {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Importer la police Roboto depuis Google Fonts */
-        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-
-        /* Appliquer la police à vos éléments */
-        body {
-            font-family: "Roboto", sans-serif;
-        }
-
-        /* Styles pour l'arrière-plan dégradé bleu-violet */
-        body {
-            /* background-image: linear-gradient(to top, #7FFFD4, #0F52BA); */
-            background-repeat: repeat;
-            background-position: center;
-            /* Mode de fusion pour superposer l'image */
-            background-blend-mode: overlay;
-        }
-
-        body::after {
-            /* Opacité de l'image superposée */
-            content: "";
-            display: block;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            /* background: url("https://github.com/berru-g/scroll-effect/blob/main/src/img/back.png?raw=true") center/cover; */
-            opacity: 0.3;
-            /* Modifier l'opacité ici */
-            pointer-events: none;
-        }
-
-        /*scroll effect*/
-        .scroll-section {
-            /* padding: 15px 50px; */
-            color: #000;
-            opacity: 0;
-            transform: translateY(50px);
-            transition: opacity 0.5s, transform 0.5s;
-        }
-
-        .scroll-section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    @media only screen and (max-width: 999px) and (min-width: 690px) {
-
-        body,
-        h1,
-        h2,
-        p,
-        ul,
-        li {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Importer la police Roboto depuis Google Fonts */
-        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-
-        /* Appliquer la police à vos éléments */
-        body {
-            font-family: "Roboto", sans-serif;
-        }
-
-        /* Styles pour l'arrière-plan dégradé bleu-violet */
-        body {
-            /* background-image: linear-gradient(to top, #7FFFD4, #0F52BA); */
-            background-repeat: repeat;
-            background-position: center;
-            /* Mode de fusion pour superposer l'image */
-            background-blend-mode: overlay;
-        }
-
-        body::after {
-            /* Opacité de l'image superposée */
-            content: "";
-            display: block;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            /* background: url("https://github.com/berru-g/scroll-effect/blob/main/src/img/back.png?raw=true") center/cover; */
-            opacity: 0.3;
-            /* Modifier l'opacité ici */
-            pointer-events: none;
-        }
-
-        /*scroll effect*/
-        .scroll-section {
-            /* padding: 15px 50px; */
-            color: #000;
-            opacity: 0;
-            transform: translateY(50px);
-            transition: opacity 0.5s, transform 0.5s;
-        }
-
-        .scroll-section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    /* Réinitialisation des styles par défaut */
-    body,
-    h1,
-    h2,
-    p,
-    ul,
-    li {
-        margin: 0;
-        padding: 0;
-    }
-
-    /* Importer la police Roboto depuis Google Fonts */
-    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-
-    /* Appliquer la police à vos éléments */
-    body {
-        font-family: "Roboto", sans-serif;
-    }
-
-    /* Styles pour l'arrière-plan dégradé bleu-violet */
-    body {
-        /* background-image: linear-gradient(to top, #7FFFD4, #0F52BA); */
-        background-repeat: repeat;
-        background-position: center;
-        /* Mode de fusion pour superposer l'image */
-        background-blend-mode: overlay;
-    }
-
-    body::after {
-        /* Opacité de l'image superposée */
-        content: "";
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        /* background: url("https://github.com/berru-g/scroll-effect/blob/main/src/img/back.png?raw=true") center/cover; */
-        opacity: 0.3;
-        /* Modifier l'opacité ici */
-        pointer-events: none;
-    }
-
-    /*scroll effect*/
-    .scroll-section {
-        /* padding: 15px 50px; */
-        color: #000;
-        opacity: 0;
-        transform: translateY(50px);
-        transition: opacity 0.5s, transform 0.5s;
-    }
-
-    .scroll-section.visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
-</style>
 
 <body>
-    <!-- nav bar start -->
+    <!--NAV BAR START -->
     <nav>
         <a href="index.html" class="logo">
             <img src="images/index/360logo.svg" alt="Logo Image" />
@@ -1937,11 +80,12 @@
             <li class="show show1" style="display: none; font-size: xx-small;">360 RegTech</li>
         </ul>
     </nav>
-    <!-- nav bar end -->
+    <!-- NAV BAR END -->
 
-    <!-- main content start -->
+    <!-- MAIN CONTENT -->
+
+    <!-- FIRST DIV VEDIO DESKTOP VIEW -->
     <div class="container-fluid row2" style="background-color:#eff4f9 ;">
-        <!-- first div vedio start -->
         <div class="nectar-shape-divider-wrap no-color " style=" height:50%;" data-using-percent-val="true"
             data-height="50%" data-front="" data-style="waves_opacity_alt" data-position="bottom">
             <svg class="nectar-shape-divider" aria-hidden="true" fill="" xmlns="http://www.w3.org/2000/svg"
@@ -1988,6 +132,9 @@
             </div>
         </div>
     </div>
+    <!--  FIRST DIV VEDIO DESKTOP VIEW END -->
+
+    <!--  FIRST DIV VEDIO PHONE VIEW -->
     <div class="container-fluid row1" style="background-color:#eff4f9 ;">
         <div class="row" style="background-image: url(wave1.svg);">
             <div class="col-sm-6 col-md-12 col-lg-6">
@@ -2017,115 +164,120 @@
             </div>
         </div>
     </div>
+    <!--  FIRST DIV VEDIO PHONE VIEW END -->
 
-    <!-- first div vedio start -->
+    <!-- SECOND DIV CIRCLE DIV START -->
     <div class="container-fluid bg-white">
-        <div class="nectar-highlighted-text font_size_tablet_6vw font_size_phone_10vw ease_out " data-style="scribble"
-            data-exp="default" data-user-color="true" data-using-custom-color="false" data-animation-delay="1000"
-            data-color="" data-color-gradient="">
-            <p style="text-align: center" class="center">
-                Superior Compliance Technology to Keep Your Organization&nbsp;<em class="animated">Regulation Ready
-                    <svg class="nectar-scribble squiggle-underline-2" role="presentation"
-                        viewBox="-320 -70.8161 640.4 59.82" preserveAspectRatio="none">
-                        <path style="animation-duration: 1.3s;"
-                            d="M-300,-56 C-50,-72 298,-65 300,-59 C332,-53 -239,-36 -255,-27 C-271,-18 -88,-24 91,-20"
-                            stroke="#03D5CC" pathLength="1" stroke-width="7.77777777778" fill="none"></path>
-                    </svg>
-                </em>
-            </p>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <p class="centers">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px"
-                                viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"
-                                id="nectar-svg-animation-instance-0"
-                                style="height: 60px; width: 60px; animation: flash 0.6s infinite alternate forwards;"
-                                fill="rgb(7,226,211)" stroke="rgb(7,226,211)">
-                                <path class="path" fill="none" stroke="rgb(7,226,211)" stroke-width="2"
-                                    stroke-miterlimit="10"
-                                    d="M53.92,10.081c12.107,12.105,12.107,31.732,0,43.838
+        <div class="container">
+            <div class="nectar-highlighted-text font_size_tablet_6vw font_size_phone_10vw ease_out "
+                data-style="scribble" data-exp="default" data-user-color="true" data-using-custom-color="false"
+                data-animation-delay="1000" data-color="" data-color-gradient="">
+                <p style="text-align: center" class="center">
+                    Superior Compliance Technology to Keep Your Organization&nbsp;
+                    <em class="animated">Regulation Ready
+                        <svg class="nectar-scribble squiggle-underline-2" role="presentation"
+                            viewBox="-320 -70.8161 640.4 59.82" preserveAspectRatio="none">
+                            <path style="animation-duration: 1.3s;"
+                                d="M-300,-56 C-50,-72 298,-65 300,-59 C332,-53 -239,-36 -255,-27 C-271,-18 -88,-24 91,-20"
+                                stroke="#03D5CC" pathLength="1" stroke-width="7.77777777778" fill="none">
+                            </path>
+                        </svg>
+                    </em>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p class="centers">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64"
+                            enable-background="new 0 0 64 64" xml:space="preserve" id="nectar-svg-animation-instance-0"
+                            style="height: 60px; width: 60px; animation: flash 0.6s infinite alternate forwards;"
+                            fill="rgb(7,226,211)" stroke="rgb(7,226,211)">
+                            <path class="path" fill="none" stroke="rgb(7,226,211)" stroke-width="2"
+                                stroke-miterlimit="10"
+                                d="M53.92,10.081c12.107,12.105,12.107,31.732,0,43.838
                                 c-12.106,12.108-31.734,12.108-43.84,0c-12.107-12.105-12.107-31.732,0-43.838C22.186-2.027,41.813-2.027,53.92,10.081z"
-                                    style="stroke-dasharray: 195, 197; stroke-dashoffset: 0;"></path>
-                                <path class="path" fill="none" stroke="rgb(7,226,211)" stroke-width="2"
-                                    stroke-miterlimit="10"
-                                    d="M9.001000000000001,32A22.999,22.999 0,1,1 54.998999999999995,32A22.999,22.999 0,1,1 9.001000000000001,32"
-                                    style="stroke-dasharray: 145, 147; stroke-dashoffset: 0;"></path>
-                                <path class="path" fill="none" stroke="rgb(7,226,211)" stroke-width="2"
-                                    stroke-miterlimit="10" d="M17,32A15,15 0,1,1 47,32A15,15 0,1,1 17,32"
-                                    style="stroke-dasharray: 95, 97; stroke-dashoffset: 0;">
-                                </path>
-                                <path class="path" fill="none" stroke="rgb(7,226,211)" stroke-width="2"
-                                    stroke-miterlimit="10"
-                                    d="M25.001,32A6.999,6.999 0,1,1 38.999,32A6.999,6.999 0,1,1 25.001,32"
-                                    style="stroke-dasharray: 44, 46; stroke-dashoffset: 0;"></path>
-                            </svg><br> <br>
-                            Precisely identify only the regulations <br> that apply to your business, no matter <br> how
-                            often
-                            they
-                            change.
-                        </p>
-                    </div>
-                    <div class="col-sm-4">
-                        <p class="centers">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px"
-                                viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"
-                                id="nectar-svg-animation-instance-1" style="height: 60px; width: 60px;">
-                                <path class="path1" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                                    d="M32,64L32,36" style="stroke-dasharray: 28, 30; stroke-dashoffset: 0;"></path>
-                                <path class="path1" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                                    d="M32,1L22,1L22,5L27,9L25,26L16,30L15,36L
+                                style="stroke-dasharray: 195, 197; stroke-dashoffset: 0;"></path>
+                            <path class="path" fill="none" stroke="rgb(7,226,211)" stroke-width="2"
+                                stroke-miterlimit="10"
+                                d="M9.001000000000001,32A22.999,22.999 0,1,1 54.998999999999995,32A22.999,22.999 0,1,1 9.001000000000001,32"
+                                style="stroke-dasharray: 145, 147; stroke-dashoffset: 0;"></path>
+                            <path class="path" fill="none" stroke="rgb(7,226,211)" stroke-width="2"
+                                stroke-miterlimit="10" d="M17,32A15,15 0,1,1 47,32A15,15 0,1,1 17,32"
+                                style="stroke-dasharray: 95, 97; stroke-dashoffset: 0;">
+                            </path>
+                            <path class="path" fill="none" stroke="rgb(7,226,211)" stroke-width="2"
+                                stroke-miterlimit="10"
+                                d="M25.001,32A6.999,6.999 0,1,1 38.999,32A6.999,6.999 0,1,1 25.001,32"
+                                style="stroke-dasharray: 44, 46; stroke-dashoffset: 0;"></path>
+                        </svg><br> <br>
+                        Precisely identify only the regulations <br> that apply to your business, no matter <br> how
+                        often
+                        they
+                        change.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <p class="centers">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64"
+                            enable-background="new 0 0 64 64" xml:space="preserve" id="nectar-svg-animation-instance-1"
+                            style="height: 60px; width: 60px;">
+                            <path class="path1" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                d="M32,64L32,36" style="stroke-dasharray: 28, 30; stroke-dashoffset: 0;"></path>
+                            <path class="path1" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10" d="M32,1L22,1L22,5L27,9L25,26L16,30L15,36L
                         	32,36" style="stroke-dasharray: 71, 73; stroke-dashoffset: 0;"></path>
-                                <path class="path1" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                                    d="M32,1L42,1L42,5L37,9L39,26L48,30L49,36L
+                            <path class="path1" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10" d="M32,1L42,1L42,5L37,9L39,26L48,30L49,36L
                         	32,36" style="stroke-dasharray: 71, 73; stroke-dashoffset: 0;"></path>
-                            </svg> <br> <br>
-                            Pinpoint your specific obligations under <br> each federal, state, or municipal rule.
-                        </p>
-                    </div>
-                    <div class="col-sm-4">
-                        <p class="centers">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px"
-                                viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"
-                                id="nectar-svg-animation-instance-2" style="height: 60px; width: 60px;">
-                                <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                                    d="M25,24L47,24" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
-                                <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                                    d="M25,34L47,34" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
-                                <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                                    d="M25,44L47,44" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
-                                <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                                    d="M25,54L47,54" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
-                                <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                                    d="M21,24L17,24" style="stroke-dasharray: 4, 6; stroke-dashoffset: 0;"></path>
-                                <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                                    d="M21,34L17,34" style="stroke-dasharray: 4, 6; stroke-dashoffset: 0;"></path>
-                                <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                                    d="M21,44L17,44" style="stroke-dasharray: 4, 6; stroke-dashoffset: 0;"></path>
-                                <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                                    d="M21,54L17,54" style="stroke-dasharray: 4, 6; stroke-dashoffset: 0;"></path>
-                                <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                                    d="M23,8L10,8L10,63L54,63L54,8L41,8"
-                                    style="stroke-dasharray: 180, 182; stroke-dashoffset: 0;">
-                                </path>
-                                <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
-                                    d="M36,5L36,1L28,1L28,5L24,5L22,13L42,13L40,5Z"
-                                    style="stroke-dasharray: 61, 63; stroke-dashoffset: 0;"></path>
-                            </svg> <br> <br>
-                            Get tailored obligation inventories <br> mapped to your businesses, products, <br> services,
-                            or
-                            entities.
-                        </p>
-                    </div>
+                        </svg> <br> <br>
+                        Pinpoint your specific obligations under <br> each federal, state, or municipal rule.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <p class="centers">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64"
+                            enable-background="new 0 0 64 64" xml:space="preserve" id="nectar-svg-animation-instance-2"
+                            style="height: 60px; width: 60px;">
+                            <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                d="M25,24L47,24" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
+                            <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                d="M25,34L47,34" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
+                            <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                d="M25,44L47,44" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
+                            <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                d="M25,54L47,54" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"></path>
+                            <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                d="M21,24L17,24" style="stroke-dasharray: 4, 6; stroke-dashoffset: 0;"></path>
+                            <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                d="M21,34L17,34" style="stroke-dasharray: 4, 6; stroke-dashoffset: 0;"></path>
+                            <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                d="M21,44L17,44" style="stroke-dasharray: 4, 6; stroke-dashoffset: 0;"></path>
+                            <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                d="M21,54L17,54" style="stroke-dasharray: 4, 6; stroke-dashoffset: 0;"></path>
+                            <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                d="M23,8L10,8L10,63L54,63L54,8L41,8"
+                                style="stroke-dasharray: 180, 182; stroke-dashoffset: 0;">
+                            </path>
+                            <path class="path" fill="none" stroke="#03D5CC" stroke-width="2" stroke-miterlimit="10"
+                                d="M36,5L36,1L28,1L28,5L24,5L22,13L42,13L40,5Z"
+                                style="stroke-dasharray: 61, 63; stroke-dashoffset: 0;"></path>
+                        </svg> <br> <br>
+                        Get tailored obligation inventories <br> mapped to your businesses, products, <br> services,
+                        or
+                        entities.
+                    </p>
                 </div>
             </div>
         </div>
-        <!-- second div end -->
+    </div>
+    <!-- SECOND DIV CIRCLE SVG END -->
 
-        <!-- third div start -->
+    <!-- THIRD DIV IMAGE -->
+    <div class="container">
+         <!-- THIRD DIV IMAGE DESKTOP VIEW -->
         <div class="row mt-5 resposive-desktop">
             <div class="col-sm-7 ">
                 <section class="scroll-section">
@@ -2153,6 +305,9 @@
                 <img src="images/index/change-v2.png" alt="change" style="height: 400px;width:400px;margin-top: 5rem;">
             </div>
         </div>
+        <!-- THIRD DIV IMAGE DESKTOP VIEW END -->
+
+        <!-- THIRD DIV IMAGE PHONE VIEW -->
         <div class="row resposive-phone">
             <div class="col-sm-12 col-md-12">
                 <img src="images/index/change-v2.png" alt="change" style="height: 300px;width:250px ;">
@@ -2180,7 +335,12 @@
                 </section>
             </div>
         </div>
+        <!-- THIRD DIV IMAGE PHONE VIEW END -->
     </div>
+<!-- THIRD DIV IMAGE END -->
+
+<!-- FOURTH DIV BLUE WAVE -->
+<!-- FOURTH DIV DESKTOP AND PHONE VIEW -->
     <div class="container-fluid wavetable1" style="background-color: #83EEE8;">
         <section class="scroll-section">
             <div class="centers-contents">
@@ -2207,6 +367,9 @@
             </div>
         </section>
     </div>
+    <!-- FOURTH DIV DESKTOP AND PHONE VIEW -->
+
+    <!-- FOURTH DIV TAB IEW -->
     <div class="container-fluid wavetable" style="background-color: #83EEE8;">
         <section class="scroll-section">
             <div class="centers-contents">
@@ -2237,137 +400,148 @@
             </div>
         </section>
     </div>
+    <!-- FOURTH DIV TAB VIEW END -->
+    <!--  FOURTH DIV END -->
+
+    <!-- FIFTH DIV START FIVE SVG -->
     <div class="container-fluid">
         <section class="scroll-section">
-            <div class="row">
-                <div class="col-sm-1 col-md-12 col-lg-1"></div>
-                <div class="col-sm-2 col-md-12 col-lg-2">
-                    <p class="centers-svg">
-                        <br>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="Compress" width="50px"
-                            height="50px">
-                            <path
-                                d="M47.707 25.707l-1.561-1.414-7.146 7v1.414l7.146 7 1.488-1.414L42.414 33H64v-2H42.414zM16.293 38.293l1.561 1.414 7.146-7v-1.414l-7.146-7-1.488 1.414L21.586 31H0v2h21.586zM31.293 39l-7 7.146 1.414 1.488L31 42.414V64h2V42.414l5.293 5.293 1.414-1.561-7-7.146zM31 0v21.586l-5.293-5.293-1.414 1.561 7 7.146h1.414l7-7.146-1.414-1.488L33 21.586V0z"
-                                fill="#03D5CC" class="color000000 svgShape">
-                            </path>
-                        </svg>
-                    </p>
-                    <h3 class="centers-head">Obligations Library</h3>
-                    <p class="centers-para">
-                        Get an automatically generated, up-to-date, easy-to-read digital register of your firm’s
-                        regulatory
-                        obligations that
-                        keeps you ahead of regulatory change.
-                    </p>
-                </div>
-                <div class="col-sm-2 col-md-12 col-lg-2">
-                    <p class="centers-svg">
-                        <br>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="Bookmark" width="50px"
-                            height="50px">
-                            <path
-                                d="M69 15H31c-1.1 0-2 .9-2 2v66c0 1.8 2.1 2.7 3.4 1.4L50 66.8l17.6 17.6c1 1 3.4.7 3.4-1.4V17c0-1.1-.9-2-2-2zm-2 63.2L51.4 62.6c-.8-.8-2-.8-2.8 0L33 78.2V19h34v59.2z"
-                                fill="#03D5CC" stroke-width="2" class="color000000 svgShape"></path>
-                            <path fill="#03D5CC" d="M664-930V754h-1784V-930H664m8-8h-1800V762H672V-938z"
-                                class="color0000ff svgShape"></path>
-                        </svg>
-                    </p>
-                    <h3 class="centers-head">Rule Compare</h3>
-                    <p class="centers-para">
-                        Take the pain out of regulatory changes with a side-by-side comparison of the new and former
-                        versions of
-                        a rule, with
-                        changes redlined..
-                    </p>
-                </div>
-                <div class="col-sm-2 col-md-12 col-lg-2">
-                    <p class="centers-svg">
-                        <br><svg enable-background="new 0 0 64 64" height="50px" viewBox="0 0 64 64" width="50px"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g fill="none" stroke="#03D5CC" stroke-miterlimit="10" stroke-width="2">
-                                <circle cx="21" cy="21" r="20" />
-                                <path d="m35 35 6 6" />
-                                <path d="m46.257 37.065h8.485v26.87h-8.485z"
-                                    transform="matrix(-.7071 .7071 -.7071 -.7071 121.9178 50.5)" />
-                            </g>
-                        </svg>
-                    </p>
-                    <h3 class="centers-head">Horizon Scanning</h3>
-                    <p class="centers-para">
-                        Gain a comprehensive understanding of your business’s regulatory requirements to make more
-                        informed
-                        decisions on new
-                        products or services.
-                    </p>
-                </div>
-                <div class="col-sm-2 col-md-12 col-lg-2">
-                    <p class="centers-svg">
-                        <br>
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px"
-                            viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-                            <g>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-1 col-md-12 col-lg-1"></div>
+                    <div class="col-sm-2 col-md-12 col-lg-2">
+                        <p class="centers-svg">
+                            <br>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="Compress" width="50px"
+                                height="50px">
                                 <path
-                                    d="M43,14.586L30.414,2H0v60h43V14.586z M31,5.414L39.586,14H31V5.414z M2,60V4h27v12h12v44H2z"
-                                    fill="#03D5CC" />
+                                    d="M47.707 25.707l-1.561-1.414-7.146 7v1.414l7.146 7 1.488-1.414L42.414 33H64v-2H42.414zM16.293 38.293l1.561 1.414 7.146-7v-1.414l-7.146-7-1.488 1.414L21.586 31H0v2h21.586zM31.293 39l-7 7.146 1.414 1.488L31 42.414V64h2V42.414l5.293 5.293 1.414-1.561-7-7.146zM31 0v21.586l-5.293-5.293-1.414 1.561 7 7.146h1.414l7-7.146-1.414-1.488L33 21.586V0z"
+                                    fill="#03D5CC" class="color000000 svgShape">
+                                </path>
+                            </svg>
+                        </p>
+                        <h3 class="centers-head">Obligations Library</h3>
+                        <p class="centers-para">
+                            Get an automatically generated, up-to-date, easy-to-read digital register of your firm’s
+                            regulatory
+                            obligations that
+                            keeps you ahead of regulatory change.
+                        </p>
+                    </div>
+                    <div class="col-sm-2 col-md-12 col-lg-2">
+                        <p class="centers-svg">
+                            <br>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="Bookmark" width="50px"
+                                height="50px">
                                 <path
-                                    d="M64,0H54v54.236l5,10l5-10V0z M62,2v8h-6V2H62z M59,59.764l-3-6V12h6v41.764L59,59.764z"
-                                    fill="#03D5CC" />
-                                <rect x="8" y="12" width="12" height="2" fill="#03D5CC" />
-                                <rect x="8" y="22" width="27" height="2" fill="#03D5CC" />
-                                <rect x="8" y="30" width="27" height="2" fill="#03D5CC" />
-                                <rect x="8" y="38" width="27" height="2" fill="#03D5CC" />
-                                <rect x="8" y="46" width="27" height="2" fill="#03D5CC" />
-                            </g>
-                        </svg>
-                    </p>
-                    <h3 class="centers-head">Scenario Planning</h3>
-                    <p class="centers-para">
-                        Know the compliance obligations that will apply in any acquisition or expansion effort with
-                        360 RegTech
-                        powerful scenario
-                        planning software.
-                    </p>
-                </div>
-                <div class="col-sm-2 col-md-12 col-lg-2">
-                    <p class="centers-svg"><br>
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px"
-                            viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-                            <g>
-                                <path
-                                    d="M8,14.586V64h48V0H22.586L8,14.586z M22,3.414V14H11.414L22,3.414z M54,62H10V16h14V2h30V62z"
-                                    fill="#03D5CC" />
-                                <path d="M22,35c0,3.86,3.141,7,7,7c1.569,0,3.016-0.526,4.185-1.402l7.108,7.109l1.414-1.414l-7.108-7.109
+                                    d="M69 15H31c-1.1 0-2 .9-2 2v66c0 1.8 2.1 2.7 3.4 1.4L50 66.8l17.6 17.6c1 1 3.4.7 3.4-1.4V17c0-1.1-.9-2-2-2zm-2 63.2L51.4 62.6c-.8-.8-2-.8-2.8 0L33 78.2V19h34v59.2z"
+                                    fill="#03D5CC" stroke-width="2" class="color000000 svgShape"></path>
+                                <path fill="#03D5CC" d="M664-930V754h-1784V-930H664m8-8h-1800V762H672V-938z"
+                                    class="color0000ff svgShape"></path>
+                            </svg>
+                        </p>
+                        <h3 class="centers-head">Rule Compare</h3>
+                        <p class="centers-para">
+                            Take the pain out of regulatory changes with a side-by-side comparison of the new and former
+                            versions of
+                            a rule, with
+                            changes redlined..
+                        </p>
+                    </div>
+                    <div class="col-sm-2 col-md-12 col-lg-2">
+                        <p class="centers-svg">
+                            <br><svg enable-background="new 0 0 64 64" height="50px" viewBox="0 0 64 64" width="50px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g fill="none" stroke="#03D5CC" stroke-miterlimit="10" stroke-width="2">
+                                    <circle cx="21" cy="21" r="20" />
+                                    <path d="m35 35 6 6" />
+                                    <path d="m46.257 37.065h8.485v26.87h-8.485z"
+                                        transform="matrix(-.7071 .7071 -.7071 -.7071 121.9178 50.5)" />
+                                </g>
+                            </svg>
+                        </p>
+                        <h3 class="centers-head">Horizon Scanning</h3>
+                        <p class="centers-para">
+                            Gain a comprehensive understanding of your business’s regulatory requirements to make more
+                            informed
+                            decisions on new
+                            products or services.
+                        </p>
+                    </div>
+                    <div class="col-sm-2 col-md-12 col-lg-2">
+                        <p class="centers-svg">
+                            <br>
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px"
+                                viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                                <g>
+                                    <path
+                                        d="M43,14.586L30.414,2H0v60h43V14.586z M31,5.414L39.586,14H31V5.414z M2,60V4h27v12h12v44H2z"
+                                        fill="#03D5CC" />
+                                    <path
+                                        d="M64,0H54v54.236l5,10l5-10V0z M62,2v8h-6V2H62z M59,59.764l-3-6V12h6v41.764L59,59.764z"
+                                        fill="#03D5CC" />
+                                    <rect x="8" y="12" width="12" height="2" fill="#03D5CC" />
+                                    <rect x="8" y="22" width="27" height="2" fill="#03D5CC" />
+                                    <rect x="8" y="30" width="27" height="2" fill="#03D5CC" />
+                                    <rect x="8" y="38" width="27" height="2" fill="#03D5CC" />
+                                    <rect x="8" y="46" width="27" height="2" fill="#03D5CC" />
+                                </g>
+                            </svg>
+                        </p>
+                        <h3 class="centers-head">Scenario Planning</h3>
+                        <p class="centers-para">
+                            Know the compliance obligations that will apply in any acquisition or expansion effort with
+                            360 RegTech
+                            powerful scenario
+                            planning software.
+                        </p>
+                    </div>
+                    <div class="col-sm-2 col-md-12 col-lg-2">
+                        <p class="centers-svg"><br>
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px"
+                                viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                                <g>
+                                    <path
+                                        d="M8,14.586V64h48V0H22.586L8,14.586z M22,3.414V14H11.414L22,3.414z M54,62H10V16h14V2h30V62z"
+                                        fill="#03D5CC" />
+                                    <path d="M22,35c0,3.86,3.141,7,7,7c1.569,0,3.016-0.526,4.185-1.402l7.108,7.109l1.414-1.414l-7.108-7.109
                         		C35.475,38.016,36,36.57,36,35c0-3.86-3.141-7-7-7S22,31.14,22,35z M29,30c2.757,0,5,2.243,5,5s-2.243,5-5,5s-5-2.243-5-5
                         		S26.243,30,29,30z" fill="#03D5CC" />
-                            </g>
-                        </svg>
-                    </p>
-                    <h3 class="centers-head">Audit Trail</h3>
-                    <p class="centers-para">
-                        Know exactly where you stand in the event of an audit with 360 RegTech comprehensive
-                        dashboard
-                        view
-                        of
-                        your
-                        active
-                        obligations.
-                    </p>
+                                </g>
+                            </svg>
+                        </p>
+                        <h3 class="centers-head">Audit Trail</h3>
+                        <p class="centers-para">
+                            Know exactly where you stand in the event of an audit with 360 RegTech comprehensive
+                            dashboard
+                            view
+                            of
+                            your
+                            active
+                            obligations.
+                        </p>
+                    </div>
+                    <div class="col-sm-1 col-md-12 col-lg-1"></div>
                 </div>
             </div>
         </section>
     </div>
+    <!-- FIFTH DIV END -->
+    <!-- SIXTH DIV START (GAIN COMPLIANCE) -->
     <div class="container-fluid py-5 overall" style="background-color: #EFF4F9;">
         <section class="scroll-section">
-            <div class="row">
-                <div class="col-sm-8 col-md-12 col-lg-8">
-                    <h2 class="Gain-Compliance">Gain Compliance
-                        Confidence
-                        with 360 RegTech Suite of Regulatory
-                        Change Management Tools</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-12 col-lg-8">
+                        <h2 class="Gain-Compliance">Gain Compliance
+                            Confidence
+                            with 360 RegTech Suite of Regulatory
+                            Change Management Tools</h2>
+                    </div>
+                    <div class="col-sm-4 col-lg-8"></div>
                 </div>
-                <div class="col-sm-4 col-lg-8"></div>
             </div>
             <div class="container">
                 <div class="row">
@@ -2418,6 +592,8 @@
             </div>
         </section>
     </div>
+    <!-- SIXTH DIV END -->
+    <!-- SEVENTH DIV START CARD -->
     <div class="container">
         <div class="row">
             <div class="col-sm-3 col-md-12 col-lg-3">
@@ -2519,6 +695,8 @@
         </div>
     </div>
     <br><br>
+    <!-- SEVENTH DIV CARD END -->
+    <!-- EIGHT DIV BACKGROUND IMAGE START -->
     <div class="container-fluid" style="background-image: url(images/index/image.png);
         background-repeat: no-repeat;background-size: cover; height: 25rem; margin-top: 100px;">
         <div class="container">
@@ -2531,9 +709,11 @@
                             </p>
                             <h1 style="font-weight:900">Talk to a solutions specialist today</h1>
                             <div class="pt-2">
-                                <button class="btn text-white" id="buttonlearn-work"><span
-                                        style="font-size: .8rem;font-weight: 500; padding: 5px;"><b>REQUEST
-                                            DEMO</b></span></button>
+                                <button class="btn text-white" id="buttonlearn-work">
+                                    <span style="font-size: .8rem;font-weight: 500; padding: 5px;">
+                                        <b>REQUEST DEMO</b>
+                                    </span>
+                                </button>
                             </div>
                         </div>
                     </section>
@@ -2541,8 +721,9 @@
             </div>
         </div>
     </div>
-    <!-- main content end -->
-    <!-- fotter -->
+    <!-- EIGHT DIV BG IMAHE END -->
+    <!-- MAIN CONTENT END -->
+    <!-- FOOTER START -->
     <div class="container-fluid" style="background-color: #253859">
         <div class="container">
             <div class="row">
@@ -2659,8 +840,8 @@
             </div>
         </div>
     </div>
-    <!-- fotter end -->
-    <script src="script.js"></script>
+    <!-- FOOTER END -->
+    <!-- SCRIPT FOR NAVBAR -->
     <Script>
         const hamburger = document.querySelector(".hamburger");
         const navLinks = document.querySelector(".nav-links");
@@ -2687,6 +868,8 @@
         }
     // first div scroll animation
     </Script>
+    <!-- SCRIPT FOR NAVBAR END -->
+    <!-- SCRIPT FOR ANIMATION -->
     <script>
         $(window).on("scroll", function () {
             $(".scroll-section").each(function () {
@@ -2706,7 +889,7 @@
             );
         }
     </script>
-    <!-- main content end -->
+    <!-- ACRIPT FOR ANIMATION END -->
 </body>
 
 </html>
