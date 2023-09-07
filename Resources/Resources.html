@@ -119,7 +119,7 @@
     .hover-underline-animation:after {
         content: '';
         position: absolute;
-        width: 22%;
+        width: 25%;
         transform: scaleX(0);
         height: 1px;
         bottom: 0;
@@ -127,13 +127,19 @@
         background-color: #03D5CC;
         transform-origin: bottom right;
         transition: transform 0.10s ease-out;
-        margin-bottom: 20px;
+        margin-top: 10px !important;
     }
 
     .hover-underline-animation:hover:after {
         transform: scaleX(4);
         transform-origin: bottom left;
-        margin-bottom: 20px;
+        margin-top: 10px !important;
+    }
+
+    @media only screen and (max-width: 724px) {
+        #myDIV {
+            display: none;
+        }
     }
 </style>
 
@@ -142,7 +148,9 @@
     <nav>
         <div class="logo">
             <a href="../index.html">
-                <img src="360logo.svg" alt="Logo Image" />
+                <!-- <img src="360logo.svg" alt="Logo Image" /> -->
+                <img class="logoo" src="../images/index/head-logo-360.png" alt="Logo Image" width="160px"
+                    height="60px" />
             </a>
         </div>
         <div class="hamburger">
@@ -179,7 +187,7 @@
                     <a href="../Professional/professional.html">Professional Services</a>
                 </ul>
             </li>
-            <li class="show show1" style="padding: 1rem"><span class="line"> <a
+            <li class="show show1" style="padding: 1rem"><span id="active_page" class="line"> <a
                         href="../Resources/Resources.html">Resources</a></span>
                 <ul id="submenu">
                     <a href="../WhatisReg/whatis.html">What is RegTech?</a>
@@ -210,7 +218,7 @@
     <!-- nav bar end -->
     <div class="container-fluid">
         <div class="row">
-            <div style="background-color: #EFF4F9; ">
+            <div style="background-color: #EFF4F9;" class="compilance">
                 <div class=" full-width-content">
                     <div class=" vc_column_container col centered-text padding-6-percent ">
                         <div class="vc_column-inner">
@@ -225,7 +233,7 @@
                                             stroke="#03D5CC" pathLength="1" stroke-width="16" fill="none"></path>
                                     </svg></em></h1>
                             <div>
-                                <h2 style="font-weight: 700;color: #253859;margin-top: 20px;font-size: 24px;"
+                                <h2 style="font-weight: 100;color: #253859;margin-top: 20px;font-size: 24px; -webkit-text-stroke: medium;"
                                     class="cssanimation sequence fadeInBottom"> Explore
                                     360regtech's
                                     library of carefully
@@ -241,22 +249,31 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-sm-3 col-md-3 col-lg-2">
+            <div class="col-sm-3 col-md-3 col-lg-3">
             </div>
             <div class="filter">
                 <button class="button1" onclick="myFunction()">
                     FILTER
                 </button>
             </div>
-            <div class="col-sm-7">
+            <div class="col-sm-8">
                 <ul class="nav" id="myDIV">
-                    <li href="#" style="text-decoration: 2px solid underline;text-decoration-color: #03D5CC;">
-                        All</li>
-                    <li href="#" class="hover-underline-animation">Double Check</li>
-                    <li href="#" class="hover-underline-animation">E-book</li>
-                    <li href="#" class="hover-underline-animation">Guide</li>
-                    <li href="#" class="hover-underline-animation">Webinar</li>
-                    <li href="#" class="hover-underline-animation">Whitepaper</li>
+                    <li><a style="text-decoration: 2px solid underline;text-decoration-color: #03D5CC;">
+                            All
+                        </a>
+                    </li>
+                    <li><a class="hover-underline-animation" style="text-decoration: none;color: #253859;">Double
+                            Check</a>
+                    </li>
+                    <li><a class="hover-underline-animation" style="text-decoration: none;color: #253859;">E-book</a>
+                    </li>
+                    <li><a class="hover-underline-animation" style="text-decoration: none;color: #253859;">Guide</a>
+                    </li>
+                    <li><a class="hover-underline-animation" style="text-decoration: none;color: #253859;">Webinar</a>
+                    </li>
+                    <li><a class="hover-underline-animation"
+                            style="text-decoration: none;color: #253859;">Whitepaper</a>
+                    </li>
                     <script>
                         function myFunction() {
                             var x = document.getElementById("myDIV");
@@ -269,13 +286,13 @@
                     </script>
                 </ul>
             </div>
-            <div class="col-sm-3 col-md-3 col-lg-2">
+            <div class="col-sm-3 col-md-3 col-lg-3">
             </div>
         </div>
     </div>
     <div class="container mt-5">
         <div class="row">
-            <div class="col-sm-4" id="white">
+            <div class="col-12 col-sm-8 col-lg-4 col-md-6" id="white">
                 <div class="carded img-fluid"
                     style="width:500px;border-radius: 10px;height: 550px;    background-color: rgb(239, 244, 249);">
                     <img class="card-img-top" src="../Resources/Double-Check-Gif.gif" alt="Card image"
@@ -288,7 +305,7 @@
                         Board Double Check</p>
                 </div>
             </div>
-            <div class="col-sm-4" id="white">
+            <div class="col-12 col-sm-8 col-lg-4 col-md-6" id="white">
                 <div class="carded img-fluid"
                     style="width:500px;border-radius: 10px;height: 550px;    background-color: rgb(239, 244, 249);">
                     <img class="card-img-top" src="../Resources/State-of-Mortgage-Industry-Hero.png" alt="Card image"
@@ -302,7 +319,7 @@
                         Mortgage Industry</p>
                 </div>
             </div>
-            <div class="col-sm-4" id="white">
+            <div class="col-12 col-sm-8 col-lg-4 col-md-6" id="white">
                 <div class="carded img-fluid"
                     style="width:500px;border-radius: 10px;height: 550px;    background-color: rgb(239, 244, 249);">
                     <img class="card-img-top" src="../Resources/Webinar-Thumb.png"
@@ -323,9 +340,9 @@
                         Program</p>
                 </div>
             </div>
-            <div class="col-sm-4" id="white">
+            <div class="col-12 col-sm-8 col-lg-4 col-md-6" id="white">
                 <div class="carded img-fluid"
-                    style="width:500px;border-radius: 10px;height: 480px ; background-color: rgb(239, 244, 249);">
+                    style="width:500px;border-radius: 10px;height: 550px ; background-color: rgb(239, 244, 249);">
                     <img class="card-img-top" src="../Resources/Scorecard-Thumb-1.png" alt="Card image"
                         style="width:100%;height: 200px;border-radius: 10px;">
                     <p class="double-check hover-underline-text">
@@ -338,9 +355,9 @@
                         Scorecard</p>
                 </div>
             </div>
-            <div class="col-sm-4" id="white">
+            <div class="col-12 col-sm-8 col-lg-4 col-md-6" id="white">
                 <div class="carded img-fluid"
-                    style="width:500px;border-radius: 10px;height: 480px;background-color: rgb(239, 244, 249);">
+                    style="width:500px;border-radius: 10px;height: 550px;background-color: rgb(239, 244, 249);">
                     <img class="card-img-top" src="../Resources/Digitalizing-Compliance-in-2023-.png" alt="Card image"
                         style="width:100%;height: 200px;border-radius: 10px;">
                     <p class="double-check hover-underline-text">
@@ -366,9 +383,9 @@
     <br>
     <div class="container">
         <div class="row">
-            <div class="col-sm-3" id="white">
+            <div class="col-12 col-sm-10 col-lg-3 col-md-6" id="white">
                 <div class="cards img-fluid wrapper"
-                    style="width:400px;border-radius: 10px;height: 550px;    background-color: rgb(239, 244, 249);">
+                    style="width:400px;border-radius: 10px;height: 520px;    background-color: rgb(239, 244, 249);">
                     <img class="card-img-top cardzoom" src="../Resources/Blog-INGCBA-v3-300x141.jpg" alt="Card image"
                         style="width:100%;height: 120px">
                     <div class="col-sm-2 col-md-2 col-lg-2">
@@ -386,9 +403,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3" id="white">
+            <div class="col-12 col-sm-10 col-lg-3 col-md-6" id="white">
                 <div class="cards img-fluid wrapper"
-                    style="width:400px;border-radius: 10px;height: 550px;    background-color: rgb(239, 244, 249);">
+                    style="width:400px;border-radius: 10px;height: 520px;    background-color: rgb(239, 244, 249);">
                     <img class="card-img-top cardzoom" src="../Resources/Blog-Culture-of-Compliance-300x141.jpg"
                         alt="Card image" style="width:100%;height: 120px">
                     <div class="col-sm-2 col-md-2 col-lg-2">
@@ -406,9 +423,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3" id="white">
+            <div class="col-12 col-sm-10 col-lg-3 col-md-6" id="white">
                 <div class="cards img-fluid wrapper"
-                    style="width:400px;border-radius: 10px;height: 550px;    background-color: rgb(239, 244, 249);">
+                    style="width:400px;border-radius: 10px;height: 520px;    background-color: rgb(239, 244, 249);">
                     <img class="card-img-top cardzoom"
                         src="../Resources/Blog_Not-So-Hidden-Cost-of-Compliance-300x141.png" alt="Card image"
                         style="width:100%;height: 120px">
@@ -424,9 +441,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3" id="white">
+            <div class="col-12 col-sm-10 col-lg-3 col-md-6" id="white">
                 <div class="cards img-fluid wrapper"
-                    style="width:400px;border-radius: 10px;height: 550px;    background-color: rgb(239, 244, 249);">
+                    style="width:400px;border-radius: 10px;height: 520px;    background-color: rgb(239, 244, 249);">
                     <img class="card-img-top cardzoom" src="../Resources/Blog-email-crypto-1.jpg" alt="Card image"
                         style="width:100%;height: 90px">
                     <div class="col-sm-2 col-md-2 col-lg-2">
@@ -449,10 +466,11 @@
     <div class="container-fluid" style="background-color: #253859">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 mt-5">
-                    <!-- <img src="../images/footer.png" alt="" /> -->
-                    <h5 style="color: #03D5CC; margin-top: 15px">
-                        Compliance, Uncomplicated.
+                <div class="col-md-4 mt-5 text-white">
+                    <!-- <h5 style="color: #03d5cc; margin-top: 15px"> -->
+                    <div><img class="logoo" src="../images/index/footer-logo.jpg" alt="Logo Image" width=" 160px"
+                            height=" 60px" style="margin-left:25px !important" /></div>
+                    Compliance, Uncomplicated.
                     </h5>
                 </div>
                 <div class="col-md-4 mt-5">
@@ -528,13 +546,13 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid" style="background-color: #253859; border-top: 1px solid #FFFFFF">
+    <div class="container-fluid" style="background-color: #253859; border-top: 1px solid #ffffff">
         <div class="container">
             <div class="row py-3">
                 <!-- <div class="col-md-1"></div> -->
                 <div class="col-md-4">
                     <p style="color: white; font-size: 12px">
-                        © 2023 360regtech. All Rights Reserved.
+                        © 2023 360 RegTech All Rights Reserved.
                     </p>
                 </div>
                 <div class="col-md-6"></div>
@@ -582,6 +600,32 @@
             );
         }
     </script>
+    <Script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links li");
+
+        hamburger.addEventListener('click', () => {
+            //Animate Links
+            navLinks.classList.toggle("open");
+            links.forEach(link => {
+                link.classList.toggle("fade");
+            });
+
+            //Hamburger Animation
+            hamburger.classList.toggle("toggle");
+        });
+
+        const gif = document.querySelector(".nectar-video-self-hosted");
+        const vedio = document.querySelector(".vedio");
+        gif.addEventListener('click'), () => {
+            vedio('play')
+        }
+        vedio.addEventListener('click'), () => {
+            gif('play')
+        }
+        // first div scroll animation
+    </Script>
 </body>
 
 </html>

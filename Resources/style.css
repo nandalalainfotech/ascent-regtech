@@ -1,5 +1,9 @@
 /***************Resources**************************/
 
+* {
+    font-family: "Mulish";
+}
+
 .full-width-content .col.padding-6-percent>.vc_column-inner {
     padding: calc(100vw * 0.08);
 }
@@ -14,7 +18,8 @@
 }
 
 .full-width-content h1 {
-    font-weight: 700;
+    font-weight: 100;
+    -webkit-text-stroke: medium;
     color: #253859;
     font-size: 43px;
 }
@@ -22,7 +27,6 @@
 .nectar-highlighted-text em {
     position: relative;
     display: inline-block;
-    font-family: inherit;
     font-size: inherit;
     font-style: inherit;
     font-weight: inherit;
@@ -173,15 +177,6 @@ span.double {
     --scroll-bar-w: 13px;
 }
 
-.every {
-    font-size: 20px;
-    font-weight: 600;
-    /* text-align: center; */
-    /* line-height: 2.6ch; */
-    /* letter-spacing: -1px; */
-    margin-top: 20px;
-    margin-top: 20px;
-}
 
 
 
@@ -195,9 +190,9 @@ span.double {
         margin-top: 20px !important;
     }
 
-    /* #myDIV {
-        margin-left: 40px;
-    } */
+    #myDIV {
+        margin-left: 30px;
+    }
 
     .button1 {
         border: 1px solid lightgray;
@@ -236,7 +231,7 @@ span.double {
 }
 
 body .nectar-scribble.squiggle-underline {
-    width: 480px;
+    width: 500px;
     height: 28px;
 }
 
@@ -260,6 +255,14 @@ body .nectar-scribble.squiggle-underline {
         width: 280px;
         height: 28px;
     }
+
+    .cards {
+        height: 380px !important;
+    }
+
+    .carded {
+        height: 515px !important;
+    }
 }
 
 @media screen and (min-width:1000px) {
@@ -273,7 +276,7 @@ body .nectar-scribble.squiggle-underline {
     }
 }
 
-@media screen and (max-width:1000px) and (min-width:780px) {
+@media screen and (max-width:1050px) and (min-width:780px) {
     .nectar-highlighted-text .nectar-scribble {
         /* left: 20px; */
         top: 50px;
@@ -281,6 +284,10 @@ body .nectar-scribble.squiggle-underline {
 
     .nectar-highlighted-text {
         margin-top: 100px;
+    }
+
+    .cards {
+        height: 620px !important;
     }
 }
 
@@ -293,18 +300,43 @@ body .nectar-scribble.squiggle-underline {
     .nectar-highlighted-text {
         margin-top: 100px;
     }
+
+    .cards {
+        height: 460px !important;
+    }
+
+    .carded {
+        height: 515px !important;
+    }
+
+    #myDIV {
+        margin-left: 170px !important;
+    }
 }
 
 @media screen and (max-width:600px) and (min-width:500) {
     .nectar-highlighted-text .nectar-scribble {
         top: 50px;
-        /* left: 150px */
+        /* left: 250px; */
     }
 
     .nectar-highlighted-text {
         margin-top: 100px;
     }
 
+}
+
+@media screen and (max-width:450px) and (min-width:376px) {
+    .nectar-highlighted-text .nectar-scribble {
+        top: 80px;
+        width: 320px !important;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .compilance {
+        padding: 0px 0px 0px 0px;
+    }
 }
 
 #footer-hover:hover {
@@ -314,4 +346,8 @@ body .nectar-scribble.squiggle-underline {
 #footer-hover {
     text-decoration: none;
     color: white;
+}
+
+#active_page {
+    border-bottom: 1px solid #03D5CC;
 }
