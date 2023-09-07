@@ -20,48 +20,7 @@
   <link rel="stylesheet" href="../index.css">
 </head>
 <style>
-  /* Réinitialisation des styles par défaut */
-  body,
-  h1,
-  h2,
-  p,
-  ul,
-  li {
-    margin: 0;
-    padding: 0;
-  }
-
-  /* Importer la police Roboto depuis Google Fonts */
-  /* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"); */
-
-  /* Appliquer la police à vos éléments */
-  body {
-    font-family: "Roboto", sans-serif;
-  }
-
-  /* Styles pour l'arrière-plan dégradé bleu-violet */
-  body {
-    /* background-image: linear-gradient(to top, #7FFFD4, #0F52BA); */
-    background-repeat: repeat;
-    background-position: center;
-    /* Mode de fusion pour superposer l'image */
-    background-blend-mode: overlay;
-  }
-
-  body::after {
-    /* Opacité de l'image superposée */
-    content: "";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background: url("https://github.com/berru-g/scroll-effect/blob/main/src/img/back.png?raw=true") center/cover; */
-    opacity: 0.3;
-    /* Modifier l'opacité ici */
-    pointer-events: none;
-  }
+ 
 
   /*scroll effect*/
   .scroll-section {
@@ -91,9 +50,10 @@
       <div class="line2"></div>
       <div class="line3"></div>
     </div>
-    <ul class="nav-links">
-      <li class="show show1" style="padding: 1rem"> <span class="line" onclick="sample()">
-          <a href="../PlatForm-page/PlatForm.html"  id="platform">Platform</a></span>
+    <ul class="nav-links" id="initial">
+      <li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
+          <a href="../PlatForm-page/PlatForm.html" id="platform" >Platform</a></span>
+
         <ul id="submenu">
           <a href="../OurApproach/OurApproach.html" id="approach">Our Approach</a>
           <a href="../OurData/OurData.html">Our Data</a>
@@ -101,8 +61,8 @@
           <a href="../TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
         </ul>
       </li>
-      <li class="show show1" style="padding: 1rem;"><span class="line" id="active_page"><a
-            href="">Capabilities</a></span>
+      <li class="show show1" style="padding: 1rem;"><span class="line" id="active_page"><a href="" id="capabilities"
+           >Capabilities</a></span>
         <ul id="submenu">
           <a href="../Oligation-Inventory/obligations.html">Obligations Inventory</a>
           <a href="../Scenario-planning/scenerio.html"><span>Scenario Planning</span></a>
@@ -111,7 +71,8 @@
           <a href="../Explore/explore.html">Explore Use Cases</a>
         </ul>
       </li>
-      <li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html">Who We
+      <li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html"
+            id="whoweserve">Who We
             Serve</a></span>
         <ul id="submenu">
           <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
@@ -120,8 +81,8 @@
           <a href="../Professional/professional.html">Professional Services</a>
         </ul>
       </li>
-      <li class="show show1" style="padding: 1rem"><span class="line"> <a
-            href="../Resources/Resources.html">Resources</a></span>
+      <li class="show show1" style="padding: 1rem"><span class="line"> <a href="../Resources/Resources.html"
+            id="resources">Resources</a></span>
         <ul id="submenu">
           <a href="../WhatisReg/whatis.html">What is RegTech?</a>
           <a href="../Blogs/blogs.html">Blog</a>
@@ -129,24 +90,27 @@
           <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
         </ul>
       </li>
-      <li class="show show1" style="padding: 1rem"><span class="line"><a
-            href="../OurTeam/ourteam.html">Company</a></span>
+      <li class="show show1" style="padding: 1rem"><span class="line"><a href="../OurTeam/ourteam.html"
+            id="company">Company</a></span>
         <ul id="submenu">
           <a href="../OurTeam/ourteam.html">Our Team</a>
           <a href="../Diversity/DiversityEquityandInclusion.html">Diversity, Equity, and Inclusion</a>
           <a href="../Careers/Careers.html">Careers</a>
         </ul>
       </li>
-      <li class="login-button show show1"><a href="../Signin/sign.html">Sign
+
+
+      <li class="login-button show show1"><a href="../Signin/sign.html" id="sign_in">Sign
           In</a>
       </li>
       <li class="join-button show show1">
-        <a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;">
+        <a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;" id="contact-us">
           Contact Us
         </a>
       </li>
       <li class="show show1" style="display: none; font-size: xx-small;">360 RegTech</li>
     </ul>
+
   </nav>
   <!-- nav bar end -->
   <br><br>
@@ -157,7 +121,7 @@
         <div class="col-sm-12 text-white">
           <div class="col-sm-8 py-5">
             <div style="height: 10rem;" class="pt-5"> </div>
-            <strong style="font-size: 44px;">Scenario Planning</strong>
+            <strong  class="scenerio">Scenario Planning</strong>
             <p style="font-size: 1.3rem;" class="pt-5">Accelerate and de-risk expansion into new
               jurisdictions
               or service offerings by quickly identifying the exact obligations
@@ -186,9 +150,9 @@
       </div>
       <div class="col-sm-7 d-flex align-items-center" id="blocker">
         <section class="scroll-section">
-          <div class="">
-            <strong style="color: #28bebb;font-size: 30px;font-weight: 500;">Capitalize on New Opportunities</strong>
-            <p style="font-size: 18px;color: #253859;letter-spacing: -0.02em;line-height: 2rem;margin-top: 1.5rem;"
+          <div id="content_one">
+            <strong style="color: #28bebb;" class="cut">Capitalize on New Opportunities</strong>
+            <p style="color: #253859;letter-spacing: -0.02em;line-height: 2rem;margin-top: 1.5rem;"
               class="pt-2">Ensure that understanding the compliance
               requirements
               of new acquisitions,
@@ -218,9 +182,9 @@
       </div>
       <div class="col-sm-6 " style="margin-top: 4rem;">
         <section class="scroll-section">
-          <strong style="color: #28bebb;font-size: 30px;font-weight: 500;">Find Rules Applicable to Your
-            Business</strong>
-          <p style="font-size: 18px;color: #253859;letter-spacing: -0.02em;line-height: 2rem;" class="pt-2">The impact
+          <strong style="color: #28bebb;" class="cut">Find Rules Applicable to Your
+            <span class="cut">Business</span></strong>
+          <p style="color: #253859;letter-spacing: -0.02em;line-height: 2rem;" class="pt-2">The impact
             questionnaire guides you to identify the
             laws and regulations applicable to your expanded
             business offering. Through a series of related questions,
@@ -237,9 +201,9 @@
       <div class="col-sm-7" id="placing">
         <section class="scroll-section">
           <div>
-            <strong style="color: #28bebb;font-size: 30px;font-weight: 500;">Drill Down into Your Specific
-              Obligations</strong>
-            <p style="font-size: 18px;color: #253859;letter-spacing: -0.02em;line-height: 2rem;" class="pt-2">Once you
+            <strong style="color: #28bebb;" class="cut">Drill Down into Your Specific
+              <span class="cut">Obligations</span></strong>
+            <p style="color: #253859;letter-spacing: -0.02em;line-height: 2rem;" class="pt-2">Once you
               have the full obligations inventory,
               the platform selects only the specific obligations
               that will apply to your firm in its expanded state,
@@ -270,8 +234,8 @@
       </div>
       <div class="col-sm-6 " style="margin-top: 4rem;">
         <section class="scroll-section">
-          <strong style="color: #28bebb;font-size: 30px;font-weight: 500;">Act on New Regulations</strong>
-          <p style="font-size: 18px;color: #253859;letter-spacing: -0.02em;line-height: 2rem;" class="pt-2">Your new
+          <strong style="color: #28bebb;" class="cut">Act on New Regulations</strong>
+          <p style="color: #253859;letter-spacing: -0.02em;line-height: 2rem;" class="pt-2">Your new
             obligations are automatically applied to your
             compliance environment; you’re compliance-ready the moment you
             pull the trigger on your new venture.</p>
@@ -588,13 +552,13 @@
     <div class="container">
       <div class="row py-3">
         <!-- <div class="col-md-1"></div> -->
-        <div class="col-md-4">
+        <div class="col-md-4" id="rights">
           <p style="color: white; font-size: 12px">
             © 2023 360 RegTech. All Rights Reserved.
           </p>
         </div>
         <div class="col-md-6"></div>
-        <div class="col-md-2">
+        <div class="col-md-2" id="social">
           <span style="color: white; padding-right: 12px"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="24"
               fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
               <path
@@ -620,6 +584,14 @@
     </div>
   </div>
   <!-- fotter end -->
+
+  <!-- -----------------------------------------------------------------------------  -->
+
+
+
+
+
+  <!-- -----------------------------------------------------------------------------  -->
   <Script>
     const hamburger = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
@@ -630,6 +602,7 @@
       navLinks.classList.toggle("open");
       links.forEach(link => {
         link.classList.toggle("fade");
+       
       });
 
       //Hamburger Animation
@@ -666,12 +639,9 @@
       );
     }
 
-    function sample() {
-     document.getElementById('platform').removeAttribute('href');
-     document.querySelector('.submenu').style.display = 'block';
-    }
-  </script>
 
+  </script>
+  <script src="scenerio.js"></script>
 </body>
 
 </html>
