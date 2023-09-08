@@ -14,38 +14,62 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Responsive Animated Navbar</title>
 </head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 30px;
+        height: 300px;
+        /* Should be removed. Only for demonstration */
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
 
 <body>
-    <!--NAV BAR START -->
     <nav>
-        <a href="index.html">
-            <img class="logoo" src="images/index/head-logo-360.png" alt="Logo Image" width="160px" height="60px" />
-        </a>
-        <div class="hamburger">
+        <div class="">
+            <a href="index.html">
+                <img class="logoo" src="images/index/head-logo-360.png" alt="Logo Image" width="160px" height="60px" />
+            </a>
+        </div>
+        <div class="hamburger" onclick="toggleClicker()">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
-        <ul class="nav-links">
-            <li class="show show1" style="padding: 1rem"> <span class="line">
-                    <a href="PlatForm-page/PlatForm.html">Platform</a></span>
+        <ul class="nav-links" id="initial">
+            <li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
+                    <a href="PlatForm-page/PlatForm.html" id="platform" onclick="platform1()">Platform</a></span>
                 <ul id="submenu">
-                    <a href="OurApproach/OurApproach.html">Our Approach</a>
+                    <a href="OurApproach/OurApproach.html" id="approach">Our Approach</a>
                     <a href="OurData/OurData.html">Our Data</a>
                     <a href="Regulators/Regulators.html"> Regulators</a>
                     <a href="TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
                 </ul>
             </li>
-            <li class="show show1" style="padding: 1rem;"><span class="line"><a href="">Capabilities</a></span>
+            <li class="show show1" style="padding: 1rem;"><span class="line" id="active_page"><a href=""
+                        id="capabilities" onclick="capabilities1()">Capabilities</a></span>
                 <ul id="submenu">
                     <a href="Oligation-Inventory/obligations.html">Obligations Inventory</a>
-                    <a href="Scenario-planning/scenerio.html">Scenario Planning</a>
+                    <a href="Scenario-planning/scenerio.html"><span>Scenario Planning</span></a>
                     <a href="Horizon-Scanning/horizonScanning.html">Horizon Scanning</a>
                     <a href="Audit-Trail/Audit.html">Audit Trail</a>
                     <a href="Explore/explore.html">Explore Use Cases</a>
                 </ul>
             </li>
-            <li class="show show1" style="padding: 1rem;"><span class="line"><a href="WhoweServe/whoweserve.html">Who We
+            <li class="show show1" style="padding: 1rem;"><span class="line"><a href="WhoweServe/whoweserve.html"
+                        id="whoweserve" onclick="whoweserve1()">Who We
                         Serve</a></span>
                 <ul id="submenu">
                     <a href="Financial-Services/FinancialServices.html">Financial Services</a>
@@ -54,7 +78,8 @@
                     <a href="Professional/professional.html">Professional Services</a>
                 </ul>
             </li>
-            <li class="show show1" style="padding: 1rem"><span class="line"> <a href="">Resources</a></span>
+            <li class="show show1" style="padding: 1rem"><span class="line"> <a href="Resources/Resources.html"
+                        id="resources" onclick="resources1()">Resources</a></span>
                 <ul id="submenu">
                     <a href="WhatisReg/whatis.html">What is RegTech?</a>
                     <a href="Blogs/blogs.html">Blog</a>
@@ -62,25 +87,29 @@
                     <a href="Customer-Stories/Customerstories.html">Customer Stories</a>
                 </ul>
             </li>
-            <li class="show show1" style="padding: 1rem"><span class="line"><a href="">Company</a></span>
+            <li class="show show1" style="padding: 1rem"><span class="line"><a href="OurTeam/ourteam.html" id="company"
+                        onclick="company1()">Company</a></span>
                 <ul id="submenu">
                     <a href="OurTeam/ourteam.html">Our Team</a>
                     <a href="Diversity/DiversityEquityandInclusion.html">Diversity, Equity, and Inclusion</a>
                     <a href="Careers/Careers.html">Careers</a>
                 </ul>
             </li>
-            <li class="login-button show show1"><a href="Signin/sign.html">Sign
+            <li class="login-button show show1"><a href="Signin/sign.html" id="sign_in">Sign
                     In</a>
             </li>
             <li class="join-button show show1">
-                <a href="ContactUs/contact-us.html" style="text-decoration: none;color: #fff;">
+                <a href="ContactUs/contact-us.html" style="text-decoration: none;color: #fff;" id="contact-us">
                     Contact Us
                 </a>
             </li>
             <li class="show show1" style="display: none; font-size: xx-small;">360 RegTech</li>
         </ul>
+        <!-- <ul class="nav-links" id="platforms">
+        <li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
+            <a href="../PlatForm-page/PlatForm.html" id="platform" onclick="platform1();linkSetter()">Platform</a></span>
+    </ul> -->
     </nav>
-    <!-- NAV BAR END -->
 
     <!-- MAIN CONTENT -->
 
@@ -599,7 +628,8 @@
     </div>
     <!-- SIXTH DIV END -->
     <!-- SEVENTH DIV START CARD -->
-    <div class="container">
+    <!-- DESKTOP FOR CARD -->
+    <div class="container card-desktop">
         <div class="row">
             <div class="col-sm-3 col-md-12 col-lg-3">
                 <h3 class="regulatory">Regulatory Coverage<br> Bundles Built for Your
@@ -699,6 +729,121 @@
             <div class="col-sm-1 col-lg-1"></div>
         </div>
     </div>
+    <!-- DESKTOP CARD VIEW END -->
+    <!-- CARD VIEW FOR MOBILE AND TAB VIEW -->
+    <div class="container-fluid card-mobile">
+        <div class="container m-4">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="col text-center">
+                        <h5>Regulatory Coverage Bundles Built for Your Industry</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 g-4">
+
+                <div class="col card-container" style="background-color: #03d5cc;;">
+                    <div class="row row-cols-1 row-cols-md-1
+                        row-cols-lg-1 g-4">
+                        <div class="text-center">
+                            <div class="col-md- ">
+                                <svg style="margin-top: 20px; color: inherit;" role="presentation" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 32 32"
+                                    fill="#ffffff">
+                                    <path
+                                        d="M31.32 32h-30.667c-0.368 0-0.667-0.3-0.667-0.667v-4c0-0.367 0.299-0.667 0.667-0.667h30.667c0.367 0 0.667 0.3 0.667 0.667v4c0 0.367-0.299 0.667-0.667 0.667zM1.32 30.667h29.333v-2.667h-29.333v2.667zM28.653 28h-25.333c-0.368 0-0.667-0.3-0.667-0.667v-4c0-0.367 0.299-0.667 0.667-0.667h25.333c0.367 0 0.667 0.3 0.667 0.667v4c0 0.367-0.299 0.667-0.667 0.667zM3.987 26.667h24v-2.667h-24v2.667zM8.653 21.333h-4c-0.368 0-0.667-0.3-0.667-0.667v-12c0-0.368 0.299-0.667 0.667-0.667h4c0.367 0 0.667 0.299 0.667 0.667v12c0 0.367-0.299 0.667-0.667 0.667zM5.32 20h2.667v-10.667h-2.667v10.667zM27.32 21.333h-4c-0.368 0-0.667-0.3-0.667-0.667v-12c0-0.368 0.299-0.667 0.667-0.667h4c0.367 0 0.667 0.299 0.667 0.667v12c0 0.367-0.299 0.667-0.667 0.667zM23.987 20h2.667v-10.667h-2.667v10.667zM31.347 6.667c-0.008 0-0.017 0-0.027 0h-30.667c-0.325 0-0.603-0.235-0.657-0.556-0.055-0.32 0.132-0.632 0.439-0.739l15.333-5.333c0.14-0.051 0.296-0.051 0.437 0l15.253 5.305c0.313 0.055 0.553 0.328 0.553 0.657 0.001 0.367-0.297 0.665-0.665 0.665zM4.599 5.333h22.775l-11.388-3.961-11.387 3.961zM16.496 19.352c-1.5 0-2.509-0.967-2.509-2.405 0-0.368 0.299-0.667 0.667-0.667 0.367 0 0.667 0.299 0.667 0.667 0 0.932 0.737 1.072 1.176 1.072s1.175-0.139 1.175-1.072c0-0.629-0.137-0.743-1.212-1.341l-0.584-0.327c-1.055-0.588-1.888-1.055-1.888-2.503 0-1.424 1.031-2.419 2.509-2.419 1.484 0 2.481 0.973 2.481 2.419 0 0.369-0.3 0.667-0.667 0.667-0.368 0-0.667-0.297-0.667-0.667 0-0.944-0.72-1.085-1.148-1.085-0.353 0-1.176 0.107-1.176 1.085 0 0.629 0.136 0.741 1.204 1.339l0.584 0.325c1.060 0.589 1.896 1.056 1.896 2.507 0 1.415-1.032 2.405-2.508 2.405zM16.427 10.053c-0.173 0-0.348-0.065-0.468-0.2-0.133-0.119-0.199-0.293-0.199-0.467 0-0.172 0.067-0.345 0.199-0.467 0.253-0.253 0.695-0.253 0.933 0 0.133 0.121 0.2 0.295 0.2 0.467 0 0.173-0.068 0.348-0.2 0.467-0.105 0.135-0.279 0.2-0.465 0.2zM15.761 9.389h1.333v1.825h-1.333v-1.825zM16.427 21c-0.173 0-0.348-0.067-0.468-0.188-0.133-0.135-0.199-0.305-0.199-0.479s0.067-0.345 0.199-0.467c0.253-0.253 0.695-0.253 0.933 0 0.133 0.12 0.2 0.293 0.2 0.467s-0.068 0.347-0.2 0.467c-0.119 0.133-0.292 0.2-0.465 0.2zM15.761 18.509h1.333v1.824h-1.333v-1.824z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h1 style="color: #fff;">Mortgage</h1>
+                            <p style="color: #fff;">Gather all your state and federal requirements in one place, down to
+                                the
+                                smallest detail, and surface only what you need to do to remain compliant.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col card-container" style="background-color: #03d5cc;;">
+                    <div class="row row-cols-1 row-cols-md-1
+                        row-cols-lg-1 g-4">
+                        <div class="text-center">
+                            <div class="col-md- ">
+                                <svg style="margin-top: 20px; color: inherit;" role="presentation" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 32 32"
+                                    fill="#ffffff">
+                                    <path
+                                        d="M31.32 32h-30.667c-0.368 0-0.667-0.3-0.667-0.667v-4c0-0.367 0.299-0.667 0.667-0.667h30.667c0.367 0 0.667 0.3 0.667 0.667v4c0 0.367-0.299 0.667-0.667 0.667zM1.32 30.667h29.333v-2.667h-29.333v2.667zM28.653 28h-25.333c-0.368 0-0.667-0.3-0.667-0.667v-4c0-0.367 0.299-0.667 0.667-0.667h25.333c0.367 0 0.667 0.3 0.667 0.667v4c0 0.367-0.299 0.667-0.667 0.667zM3.987 26.667h24v-2.667h-24v2.667zM8.653 21.333h-4c-0.368 0-0.667-0.3-0.667-0.667v-12c0-0.368 0.299-0.667 0.667-0.667h4c0.367 0 0.667 0.299 0.667 0.667v12c0 0.367-0.299 0.667-0.667 0.667zM5.32 20h2.667v-10.667h-2.667v10.667zM27.32 21.333h-4c-0.368 0-0.667-0.3-0.667-0.667v-12c0-0.368 0.299-0.667 0.667-0.667h4c0.367 0 0.667 0.299 0.667 0.667v12c0 0.367-0.299 0.667-0.667 0.667zM23.987 20h2.667v-10.667h-2.667v10.667zM31.347 6.667c-0.008 0-0.017 0-0.027 0h-30.667c-0.325 0-0.603-0.235-0.657-0.556-0.055-0.32 0.132-0.632 0.439-0.739l15.333-5.333c0.14-0.051 0.296-0.051 0.437 0l15.253 5.305c0.313 0.055 0.553 0.328 0.553 0.657 0.001 0.367-0.297 0.665-0.665 0.665zM4.599 5.333h22.775l-11.388-3.961-11.387 3.961zM16.496 19.352c-1.5 0-2.509-0.967-2.509-2.405 0-0.368 0.299-0.667 0.667-0.667 0.367 0 0.667 0.299 0.667 0.667 0 0.932 0.737 1.072 1.176 1.072s1.175-0.139 1.175-1.072c0-0.629-0.137-0.743-1.212-1.341l-0.584-0.327c-1.055-0.588-1.888-1.055-1.888-2.503 0-1.424 1.031-2.419 2.509-2.419 1.484 0 2.481 0.973 2.481 2.419 0 0.369-0.3 0.667-0.667 0.667-0.368 0-0.667-0.297-0.667-0.667 0-0.944-0.72-1.085-1.148-1.085-0.353 0-1.176 0.107-1.176 1.085 0 0.629 0.136 0.741 1.204 1.339l0.584 0.325c1.060 0.589 1.896 1.056 1.896 2.507 0 1.415-1.032 2.405-2.508 2.405zM16.427 10.053c-0.173 0-0.348-0.065-0.468-0.2-0.133-0.119-0.199-0.293-0.199-0.467 0-0.172 0.067-0.345 0.199-0.467 0.253-0.253 0.695-0.253 0.933 0 0.133 0.121 0.2 0.295 0.2 0.467 0 0.173-0.068 0.348-0.2 0.467-0.105 0.135-0.279 0.2-0.465 0.2zM15.761 9.389h1.333v1.825h-1.333v-1.825zM16.427 21c-0.173 0-0.348-0.067-0.468-0.188-0.133-0.135-0.199-0.305-0.199-0.479s0.067-0.345 0.199-0.467c0.253-0.253 0.695-0.253 0.933 0 0.133 0.12 0.2 0.293 0.2 0.467s-0.068 0.347-0.2 0.467c-0.119 0.133-0.292 0.2-0.465 0.2zM15.761 18.509h1.333v1.824h-1.333v-1.824z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h1 style="color: #fff;">Mortgage</h1>
+                            <p style="color: #fff;">Gather all your state and federal requirements in one place, down to
+                                the
+                                smallest detail, and surface only what you need to do to remain compliant.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col card-container" style="background-color: #03d5cc;;">
+                    <div class="row row-cols-1 row-cols-md-1
+                        row-cols-lg-1 g-4">
+                        <div class="text-center">
+                            <div class="col-md- ">
+                                <svg style="margin-top: 20px; color: inherit;" role="presentation" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 32 32"
+                                    fill="#ffffff">
+                                    <path
+                                        d="M31.32 32h-30.667c-0.368 0-0.667-0.3-0.667-0.667v-4c0-0.367 0.299-0.667 0.667-0.667h30.667c0.367 0 0.667 0.3 0.667 0.667v4c0 0.367-0.299 0.667-0.667 0.667zM1.32 30.667h29.333v-2.667h-29.333v2.667zM28.653 28h-25.333c-0.368 0-0.667-0.3-0.667-0.667v-4c0-0.367 0.299-0.667 0.667-0.667h25.333c0.367 0 0.667 0.3 0.667 0.667v4c0 0.367-0.299 0.667-0.667 0.667zM3.987 26.667h24v-2.667h-24v2.667zM8.653 21.333h-4c-0.368 0-0.667-0.3-0.667-0.667v-12c0-0.368 0.299-0.667 0.667-0.667h4c0.367 0 0.667 0.299 0.667 0.667v12c0 0.367-0.299 0.667-0.667 0.667zM5.32 20h2.667v-10.667h-2.667v10.667zM27.32 21.333h-4c-0.368 0-0.667-0.3-0.667-0.667v-12c0-0.368 0.299-0.667 0.667-0.667h4c0.367 0 0.667 0.299 0.667 0.667v12c0 0.367-0.299 0.667-0.667 0.667zM23.987 20h2.667v-10.667h-2.667v10.667zM31.347 6.667c-0.008 0-0.017 0-0.027 0h-30.667c-0.325 0-0.603-0.235-0.657-0.556-0.055-0.32 0.132-0.632 0.439-0.739l15.333-5.333c0.14-0.051 0.296-0.051 0.437 0l15.253 5.305c0.313 0.055 0.553 0.328 0.553 0.657 0.001 0.367-0.297 0.665-0.665 0.665zM4.599 5.333h22.775l-11.388-3.961-11.387 3.961zM16.496 19.352c-1.5 0-2.509-0.967-2.509-2.405 0-0.368 0.299-0.667 0.667-0.667 0.367 0 0.667 0.299 0.667 0.667 0 0.932 0.737 1.072 1.176 1.072s1.175-0.139 1.175-1.072c0-0.629-0.137-0.743-1.212-1.341l-0.584-0.327c-1.055-0.588-1.888-1.055-1.888-2.503 0-1.424 1.031-2.419 2.509-2.419 1.484 0 2.481 0.973 2.481 2.419 0 0.369-0.3 0.667-0.667 0.667-0.368 0-0.667-0.297-0.667-0.667 0-0.944-0.72-1.085-1.148-1.085-0.353 0-1.176 0.107-1.176 1.085 0 0.629 0.136 0.741 1.204 1.339l0.584 0.325c1.060 0.589 1.896 1.056 1.896 2.507 0 1.415-1.032 2.405-2.508 2.405zM16.427 10.053c-0.173 0-0.348-0.065-0.468-0.2-0.133-0.119-0.199-0.293-0.199-0.467 0-0.172 0.067-0.345 0.199-0.467 0.253-0.253 0.695-0.253 0.933 0 0.133 0.121 0.2 0.295 0.2 0.467 0 0.173-0.068 0.348-0.2 0.467-0.105 0.135-0.279 0.2-0.465 0.2zM15.761 9.389h1.333v1.825h-1.333v-1.825zM16.427 21c-0.173 0-0.348-0.067-0.468-0.188-0.133-0.135-0.199-0.305-0.199-0.479s0.067-0.345 0.199-0.467c0.253-0.253 0.695-0.253 0.933 0 0.133 0.12 0.2 0.293 0.2 0.467s-0.068 0.347-0.2 0.467c-0.119 0.133-0.292 0.2-0.465 0.2zM15.761 18.509h1.333v1.824h-1.333v-1.824z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h1 style="color: #fff;">Mortgage</h1>
+                            <p style="color: #fff;">Gather all your state and federal requirements in one place, down to
+                                the
+                                smallest detail, and surface only what you need to do to remain compliant.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col card-container" style="background-color: #03d5cc;;">
+                    <div class="row row-cols-1 row-cols-md-1
+                        row-cols-lg-1 g-4">
+                        <div class="text-center">
+                            <div class="col-md- ">
+                                <svg style="margin-top: 20px; color: inherit;" role="presentation" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 32 32"
+                                    fill="#ffffff">
+                                    <path
+                                        d="M31.32 32h-30.667c-0.368 0-0.667-0.3-0.667-0.667v-4c0-0.367 0.299-0.667 0.667-0.667h30.667c0.367 0 0.667 0.3 0.667 0.667v4c0 0.367-0.299 0.667-0.667 0.667zM1.32 30.667h29.333v-2.667h-29.333v2.667zM28.653 28h-25.333c-0.368 0-0.667-0.3-0.667-0.667v-4c0-0.367 0.299-0.667 0.667-0.667h25.333c0.367 0 0.667 0.3 0.667 0.667v4c0 0.367-0.299 0.667-0.667 0.667zM3.987 26.667h24v-2.667h-24v2.667zM8.653 21.333h-4c-0.368 0-0.667-0.3-0.667-0.667v-12c0-0.368 0.299-0.667 0.667-0.667h4c0.367 0 0.667 0.299 0.667 0.667v12c0 0.367-0.299 0.667-0.667 0.667zM5.32 20h2.667v-10.667h-2.667v10.667zM27.32 21.333h-4c-0.368 0-0.667-0.3-0.667-0.667v-12c0-0.368 0.299-0.667 0.667-0.667h4c0.367 0 0.667 0.299 0.667 0.667v12c0 0.367-0.299 0.667-0.667 0.667zM23.987 20h2.667v-10.667h-2.667v10.667zM31.347 6.667c-0.008 0-0.017 0-0.027 0h-30.667c-0.325 0-0.603-0.235-0.657-0.556-0.055-0.32 0.132-0.632 0.439-0.739l15.333-5.333c0.14-0.051 0.296-0.051 0.437 0l15.253 5.305c0.313 0.055 0.553 0.328 0.553 0.657 0.001 0.367-0.297 0.665-0.665 0.665zM4.599 5.333h22.775l-11.388-3.961-11.387 3.961zM16.496 19.352c-1.5 0-2.509-0.967-2.509-2.405 0-0.368 0.299-0.667 0.667-0.667 0.367 0 0.667 0.299 0.667 0.667 0 0.932 0.737 1.072 1.176 1.072s1.175-0.139 1.175-1.072c0-0.629-0.137-0.743-1.212-1.341l-0.584-0.327c-1.055-0.588-1.888-1.055-1.888-2.503 0-1.424 1.031-2.419 2.509-2.419 1.484 0 2.481 0.973 2.481 2.419 0 0.369-0.3 0.667-0.667 0.667-0.368 0-0.667-0.297-0.667-0.667 0-0.944-0.72-1.085-1.148-1.085-0.353 0-1.176 0.107-1.176 1.085 0 0.629 0.136 0.741 1.204 1.339l0.584 0.325c1.060 0.589 1.896 1.056 1.896 2.507 0 1.415-1.032 2.405-2.508 2.405zM16.427 10.053c-0.173 0-0.348-0.065-0.468-0.2-0.133-0.119-0.199-0.293-0.199-0.467 0-0.172 0.067-0.345 0.199-0.467 0.253-0.253 0.695-0.253 0.933 0 0.133 0.121 0.2 0.295 0.2 0.467 0 0.173-0.068 0.348-0.2 0.467-0.105 0.135-0.279 0.2-0.465 0.2zM15.761 9.389h1.333v1.825h-1.333v-1.825zM16.427 21c-0.173 0-0.348-0.067-0.468-0.188-0.133-0.135-0.199-0.305-0.199-0.479s0.067-0.345 0.199-0.467c0.253-0.253 0.695-0.253 0.933 0 0.133 0.12 0.2 0.293 0.2 0.467s-0.068 0.347-0.2 0.467c-0.119 0.133-0.292 0.2-0.465 0.2zM15.761 18.509h1.333v1.824h-1.333v-1.824z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h1 style="color: #fff;">Mortgage</h1>
+                            <p style="color: #fff;">Gather all your state and federal requirements in one place, down to
+                                the
+                                smallest detail, and surface only what you need to do to remain compliant.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col " style="justify-items: center;">                
+                        <div class="card mb-3 bg-primary" style="max-width: 540px;">
+                                <div class="text-center">
+                                <div class="col-md- ">
+                                    <svg style="margin-top: 20px; color: inherit;" role="presentation" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 32 32"
+                                    fill="#ffffff">
+                                    <path
+                                    d="M31.32 32h-30.667c-0.368 0-0.667-0.3-0.667-0.667v-4c0-0.367 0.299-0.667 0.667-0.667h30.667c0.367 0 0.667 0.3 0.667 0.667v4c0 0.367-0.299 0.667-0.667 0.667zM1.32 30.667h29.333v-2.667h-29.333v2.667zM28.653 28h-25.333c-0.368 0-0.667-0.3-0.667-0.667v-4c0-0.367 0.299-0.667 0.667-0.667h25.333c0.367 0 0.667 0.3 0.667 0.667v4c0 0.367-0.299 0.667-0.667 0.667zM3.987 26.667h24v-2.667h-24v2.667zM8.653 21.333h-4c-0.368 0-0.667-0.3-0.667-0.667v-12c0-0.368 0.299-0.667 0.667-0.667h4c0.367 0 0.667 0.299 0.667 0.667v12c0 0.367-0.299 0.667-0.667 0.667zM5.32 20h2.667v-10.667h-2.667v10.667zM27.32 21.333h-4c-0.368 0-0.667-0.3-0.667-0.667v-12c0-0.368 0.299-0.667 0.667-0.667h4c0.367 0 0.667 0.299 0.667 0.667v12c0 0.367-0.299 0.667-0.667 0.667zM23.987 20h2.667v-10.667h-2.667v10.667zM31.347 6.667c-0.008 0-0.017 0-0.027 0h-30.667c-0.325 0-0.603-0.235-0.657-0.556-0.055-0.32 0.132-0.632 0.439-0.739l15.333-5.333c0.14-0.051 0.296-0.051 0.437 0l15.253 5.305c0.313 0.055 0.553 0.328 0.553 0.657 0.001 0.367-0.297 0.665-0.665 0.665zM4.599 5.333h22.775l-11.388-3.961-11.387 3.961zM16.496 19.352c-1.5 0-2.509-0.967-2.509-2.405 0-0.368 0.299-0.667 0.667-0.667 0.367 0 0.667 0.299 0.667 0.667 0 0.932 0.737 1.072 1.176 1.072s1.175-0.139 1.175-1.072c0-0.629-0.137-0.743-1.212-1.341l-0.584-0.327c-1.055-0.588-1.888-1.055-1.888-2.503 0-1.424 1.031-2.419 2.509-2.419 1.484 0 2.481 0.973 2.481 2.419 0 0.369-0.3 0.667-0.667 0.667-0.368 0-0.667-0.297-0.667-0.667 0-0.944-0.72-1.085-1.148-1.085-0.353 0-1.176 0.107-1.176 1.085 0 0.629 0.136 0.741 1.204 1.339l0.584 0.325c1.060 0.589 1.896 1.056 1.896 2.507 0 1.415-1.032 2.405-2.508 2.405zM16.427 10.053c-0.173 0-0.348-0.065-0.468-0.2-0.133-0.119-0.199-0.293-0.199-0.467 0-0.172 0.067-0.345 0.199-0.467 0.253-0.253 0.695-0.253 0.933 0 0.133 0.121 0.2 0.295 0.2 0.467 0 0.173-0.068 0.348-0.2 0.467-0.105 0.135-0.279 0.2-0.465 0.2zM15.761 9.389h1.333v1.825h-1.333v-1.825zM16.427 21c-0.173 0-0.348-0.067-0.468-0.188-0.133-0.135-0.199-0.305-0.199-0.479s0.067-0.345 0.199-0.467c0.253-0.253 0.695-0.253 0.933 0 0.133 0.12 0.2 0.293 0.2 0.467s-0.068 0.347-0.2 0.467c-0.119 0.133-0.292 0.2-0.465 0.2zM15.761 18.509h1.333v1.824h-1.333v-1.824z">
+                                    </path>
+                                </svg>
+                                </div>
+                                <h1>Mortgage</h1>
+                                <p>Gather all your state and federal requirements in one place, down to the smallest detail, and surface only what you need to do to remain compliant.</p>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- CARD VIEW FOR MOBILE AND TAB VIEW -->
     <br><br>
     <!-- SEVENTH DIV CARD END -->
     <!-- EIGHT DIV BACKGROUND IMAGE START -->
@@ -897,6 +1042,7 @@
         }
     </script>
     <!-- ACRIPT FOR ANIMATION END -->
+    <script src="index.js"></script>
 </body>
 
 </html>

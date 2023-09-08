@@ -6,6 +6,7 @@
     display: none;
 }
 
+
 /* first div vedio start */
 .index-head {
     margin-top: 7rem !important;
@@ -16,7 +17,7 @@
 }
 
 .row2 {
-    height: 35.5rem;
+    height: 35rem;
 }
 
 .index-heads {
@@ -284,6 +285,10 @@
     line-height: 37px;
 }
 
+.card-mobile {
+    display: none;
+}
+
 .Gain-Compliance {
     color: #253859;
     margin-top: 20px;
@@ -393,7 +398,54 @@
     font-size: 18px;
 }
 
-@media only screen and (min-width: 2500px) {
+
+    .nectar-shape-divider-wrap {
+        position: absolute !important;
+        top: 16.5rem !important;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 150px;
+        /* z-index: 1; */
+        /* overflow: visible;  */
+        transform: translateZ(0);
+    }
+
+    /* waves */
+    .full-width-section>.nectar-shape-divider-wrap {
+        /* margin-left: -50vw; */
+        margin-left: calc(-50vw + var(13px)/ 2);
+        left: 50%;
+        /* width: 100vw; */
+        width: calc(100vw - var(13px));
+    }
+
+
+    .nectar-shape-divider-wrap.no-color .nectar-shape-divider {
+        fill: #fff;
+    }
+
+    .nectar-shape-divider {
+        width: 100%;
+        left: 0;
+        bottom: -1px;
+        height: 100%;
+        position: relative;
+        overflow: visible;
+        z-index: -1;
+    }
+
+    .nectar-shape-divider-wrap[data-style="waves_opacity_alt"] svg path:nth-child(1) {
+        opacity: 0.15;
+    }
+
+    .nectar-shape-divider-wrap[data-style="waves_opacity_alt"] svg path:nth-child(2) {
+        opacity: 0.3;
+    }
+
+
+@media only screen and (min-width: 1500px) {
     .nectar-shape-divider-wrap.no-color .nectar-shape-divider {
         fill: #000;
     }
@@ -405,7 +457,7 @@
         font-size: 2.5rem !important;
         font-weight: 500;
         -webkit-text-stroke: thin;
-        margin-left: 4rem;
+        margin-left: 0rem;
         padding-right: 4.3rem;
     }
 
@@ -431,7 +483,7 @@
 
     .nectar-shape-divider-wrap {
         position: absolute;
-        top: 5.5rem !important;
+        top: 12rem !important;
         bottom: 0;
         left: 0;
         right: 0;
@@ -444,6 +496,10 @@
 
     * {
         font-family: "Mulish";
+    }
+
+    .card-mobile {
+        display: none;
     }
 
 }
@@ -664,6 +720,14 @@
         line-height: 35px;
         overflow-y: hidden;
 
+    }
+
+    .card-mobile {
+        display: block !important;
+    }
+
+    .card-desktop {
+        display: none;
     }
 
     .contaier {
@@ -1043,6 +1107,14 @@
 
     }
 
+    .card-mobile {
+        display: block !important;
+    }
+
+    .card-desktop {
+        display: none;
+    }
+
     .contaier {
         margin-left: -4rem;
         margin-right: 4rem;
@@ -1229,49 +1301,6 @@
 
 }
 
-/* waves */
-.full-width-section>.nectar-shape-divider-wrap {
-    /* margin-left: -50vw; */
-    margin-left: calc(-50vw + var(13px)/ 2);
-    left: 50%;
-    /* width: 100vw; */
-    width: calc(100vw - var(13px));
-}
-
-.nectar-shape-divider-wrap {
-    position: absolute;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 150px;
-    /* z-index: 1;  */
-    /* overflow: visible; */
-    transform: translateZ(0);
-}
-
-.nectar-shape-divider-wrap.no-color .nectar-shape-divider {
-    fill: #fff;
-}
-
-.nectar-shape-divider {
-    width: 100%;
-    left: 0;
-    bottom: -1px;
-    height: 100%;
-    position: relative;
-    overflow: visible;
-    z-index: -1;
-}
-
-.nectar-shape-divider-wrap[data-style="waves_opacity_alt"] svg path:nth-child(1) {
-    opacity: 0.15;
-}
-
-.nectar-shape-divider-wrap[data-style="waves_opacity_alt"] svg path:nth-child(2) {
-    opacity: 0.3;
-}
 
 /* animation */
 @media only screen and (min-width: 2500px) {
