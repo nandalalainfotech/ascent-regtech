@@ -95,7 +95,7 @@
 
     .scroll-section .see_how_you {
         color: #ffffff;
-        width: 400px !important;
+        /* width: 400px !important; */
         font-size: 24.05px !important;
         text-align: center;
     }
@@ -104,14 +104,14 @@
 @media (min-width: 690px) and (max-width: 991px) {
     .scroll-section .see_how_you {
         color: #ffffff;
-        width: 636px !important;
+        /* width: 636px !important; */
         font-size: 24.05px !important;
         text-align: center;
     } 
 }
 .scroll-section .see_how_you {
     color: #ffffff;
-    width: 382px;
+    /* width: 382px; */
     font-size: 31.45px;
     text-align: center;
 }
