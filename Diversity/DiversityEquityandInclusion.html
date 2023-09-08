@@ -1,264 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="DiversityEquityandInclusion.css" />
-    <link rel="stylesheet" href="../index.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Mulish"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="DiversityEquityandInclusion.css" />
+  <link rel="stylesheet" href="../index.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
 
-  <style>
-    /* Réinitialisation des styles par défaut */
-    body,
-    h1,
-    h2,
-    p,
-    ul,
-    li {
-      margin: 0;
-      padding: 0;
-    }
-    /* Importer la police Roboto depuis Google Fonts */
-    /* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"); */
-    /* Appliquer la police à vos éléments */
-    body {
-      font-family: "Roboto", sans-serif;
-    }
-    /* Styles pour l'arrière-plan dégradé bleu-violet */
-    body {
-      /* background-image: linear-gradient(to top, #7FFFD4, #0F52BA); */
-      background-repeat: repeat;
-      background-position: center;
-      /* Mode de fusion pour superposer l'image */
-      background-blend-mode: overlay;
-    }
-    body::after {
-      /* Opacité de l'image superposée */
-      content: "";
-      display: block;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      /* background: url("https://github.com/berru-g/scroll-effect/blob/main/src/img/back.png?raw=true") center/cover; */
-      opacity: 0.3;
-      /* Modifier l'opacité ici */
-      pointer-events: none;
-    }
-    /*scroll effect*/
-    @keyframes slide-in-left2 {
-      from {
-        transform: translateX(50%);
-      }
-      to {
-        transform: translateX(0);
-      }
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<style>
+  /* Réinitialisation des styles par défaut */
+  body,
+  h1,
+  h2,
+  p,
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Importer la police Roboto depuis Google Fonts */
+  /* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"); */
+  /* Appliquer la police à vos éléments */
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+
+  /* Styles pour l'arrière-plan dégradé bleu-violet */
+  body {
+    /* background-image: linear-gradient(to top, #7FFFD4, #0F52BA); */
+    background-repeat: repeat;
+    background-position: center;
+    /* Mode de fusion pour superposer l'image */
+    background-blend-mode: overlay;
+  }
+
+  body::after {
+    /* Opacité de l'image superposée */
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: url("https://github.com/berru-g/scroll-effect/blob/main/src/img/back.png?raw=true") center/cover; */
+    opacity: 0.3;
+    /* Modifier l'opacité ici */
+    pointer-events: none;
+  }
+
+  /*scroll effect*/
+  @keyframes slide-in-left2 {
+    from {
+      transform: translateX(50%);
     }
 
-    .scroll-section {
-      color: #000;
-      opacity: 0;
-      transform: translateY(50px);
-      transition: opacity 0.5s, transform 0.5s;
-    }
-    .scroll-section.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .left_and_right {
-      opacity: 1;
-      transform: translateX(-50px);
-      transition: opacity 0.5s, transform 0.5s;
-    }
-    .left_and_right.visible {
-      opacity: 1;
+    to {
       transform: translateX(0);
     }
-  </style>
-  <body>
-  
-   <!-- nav bar start -->
+  }
+
+  .scroll-section {
+    color: #000;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  .scroll-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .left_and_right {
+    opacity: 1;
+    transform: translateX(-50px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  .left_and_right.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+</style>
+
+<body>
+
+  <!-- nav bar start -->
   <nav>
-    <a href="../index.html">
-      <img class="logoo" src="../images/index/head-logo-360.png" alt="Logo Image" width="160px" height="60px"/>
+    <div class="">
+      <a href="../index.html">
+        <img class="logoo" src="../images/index/head-logo-360.png" alt="Logo Image" width="160px" height="60px" />
       </a>
-    <div class="hamburger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
     </div>
-    <ul class="nav-links">
-        <li class="show show1" style="padding: 1rem"> <span class="line">
-                <a href="../PlatForm-page/PlatForm.html">Platform</a></span>
-            <ul id="submenu">
-                <a href="../OurApproach/OurApproach.html">Our Approach</a>
-                <a href="../OurData/OurData.html">Our Data</a>
-                <a href="../Regulators/Regulators.html"> Regulators</a>
-                <a href="../TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
-            </ul>
-        </li>
-        <li class="show show1" style="padding: 1rem;"><span class="line"><a href="">Capabilities</a></span>
-            <ul id="submenu">
-                <a href="../Oligation-Inventory/obligations.html">Obligations Inventory</a>
-                <a href="../Scenario-planning/scenerio.html">Scenario Planning</a>
-                <a href="../Horizon-Scanning/horizonScanning.html">Horizon Scanning</a>
-                <a href="../Audit-Trail/Audit.html">Audit Trail</a>
-                <a href="../Explore/explore.html">Explore Use Cases</a>
-            </ul>
-        </li>
-        <li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html">Who We
-                    Serve</a></span>
-            <ul id="submenu">
-                <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
-                <a href="../Mortage-Lenders/MortgageLenders.html">Mortgage Lenders</a>
-                <a href="../Fintech/FinTech.html">FinTech</a>
-                <a href="../Professional/professional.html">Professional Services</a>
-            </ul>
-        </li>
-        <li class="show show1" style="padding: 1rem"><span class="line"> <a href="../Resources/Resources.html">Resources</a></span>
-            <ul id="submenu">
-                <a href="../WhatisReg/whatis.html">What is RegTech?</a>
-                <a href="../Blogs/blogs.html">Blog</a>
-                <a href="../Resources/Resources.html">Resources</a>
-                <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
-            </ul>
-        </li>
-        <li class="show show1" style="padding: 1rem"><span class="line" id="active_page"><a href="../OurTeam/ourteam.html">Company</a></span>
-            <ul id="submenu">
-                <a href="../OurTeam/ourteam.html">Our Team</a>
-                <a href="../Diversity/DiversityEquityandInclusion.html">Diversity, Equity, and Inclusion</a>
-                <a href="../Careers/Careers.html">Careers</a>
-            </ul>
-        </li>
-        <li class="login-button show show1"><a href="../Signin/sign.html">Sign
-                In</a>
-        </li>
-        <li class="join-button show show1">
-            <a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;">
-                Contact Us
-            </a>
-        </li>
-        <li class="show show1" style="display: none; font-size: xx-small;">360 RegTech</li>
+    <div class="hamburger" onclick="toggleClicker()">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <ul class="nav-links" id="initial">
+      <li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
+          <a href="../PlatForm-page/PlatForm.html" id="platform" onclick="platform1()">Platform</a></span>
+        <ul id="submenu">
+          <a href="../OurApproach/OurApproach.html" id="approach">Our Approach</a>
+          <a href="../OurData/OurData.html">Our Data</a>
+          <a href="../Regulators/Regulators.html"> Regulators</a>
+          <a href="../TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
+        </ul>
+      </li>
+      <li class="show show1" style="padding: 1rem;"><span class="line" id="active_page"><a href="" id="capabilities"
+            onclick="capabilities1()">Capabilities</a></span>
+        <ul id="submenu">
+          <a href="../Oligation-Inventory/obligations.html">Obligations Inventory</a>
+          <a href="../Scenario-planning/scenerio.html"><span>Scenario Planning</span></a>
+          <a href="../Horizon-Scanning/horizonScanning.html">Horizon Scanning</a>
+          <a href="../Audit-Trail/Audit.html">Audit Trail</a>
+          <a href="../Explore/explore.html">Explore Use Cases</a>
+        </ul>
+      </li>
+      <li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html"
+            id="whoweserve" onclick="whoweserve1()">Who We
+            Serve</a></span>
+        <ul id="submenu">
+          <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
+          <a href="../Mortage-Lenders/MortgageLenders.html">Mortgage Lenders</a>
+          <a href="../Fintech/FinTech.html">FinTech</a>
+          <a href="../Professional/professional.html">Professional Services</a>
+        </ul>
+      </li>
+      <li class="show show1" style="padding: 1rem"><span class="line"> <a href="../Resources/Resources.html"
+            id="resources" onclick="resources1()">Resources</a></span>
+        <ul id="submenu">
+          <a href="../WhatisReg/whatis.html">What is RegTech?</a>
+          <a href="../Blogs/blogs.html">Blog</a>
+          <a href="../Resources/Resources.html">Resources</a>
+          <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
+        </ul>
+      </li>
+      <li class="show show1" style="padding: 1rem"><span class="line"><a href="../OurTeam/ourteam.html" id="company"
+            onclick="company1()">Company</a></span>
+        <ul id="submenu">
+          <a href="../OurTeam/ourteam.html">Our Team</a>
+          <a href="../Diversity/DiversityEquityandInclusion.html">Diversity, Equity, and Inclusion</a>
+          <a href="../Careers/Careers.html">Careers</a>
+        </ul>
+      </li>
+      <li class="login-button show show1"><a href="../Signin/sign.html" id="sign_in">Sign
+          In</a>
+      </li>
+      <li class="join-button show show1">
+        <a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;" id="contact-us">
+          Contact Us
+        </a>
+      </li>
+      <li class="show show1" style="display: none; font-size: xx-small;">360 RegTech</li>
     </ul>
+    <!-- <ul class="nav-links" id="platforms">
+            <li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
+                <a href="../PlatForm-page/PlatForm.html" id="platform" onclick="platform1();linkSetter()">Platform</a></span>
+        </ul> -->
   </nav>
+
   <!-- nav bar end -->
 
 
-    <div class="container-fluid">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12" style="margin-top: 175px">
-            <h1 style="color: #253859 !important; font-weight: 300;  -webkit-text-stroke:thin; line-height: 29.25px; letter-spacing: -0.02em;">
-              <b>A community of shared values</b>
-              <!-- <b></b> -->
-            </h1>
-            <h2
-              style="
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" style="margin-top: 175px">
+          <h1
+            style="color: #253859 !important; font-weight: 300;  -webkit-text-stroke:thin; line-height: 29.25px; letter-spacing: -0.02em;">
+            <b>A community of shared values</b>
+            <!-- <b></b> -->
+          </h1>
+          <h2 style="
                 color: #28bebb;
                 margin-top: 0px;
                 letter-spacing: -0.02em;
                 font-size: 30px;
                 font-weight: 300;
                 -webkit-text-stroke:thin
-              "
-            >
-              360 Regtech is All of Us
-            </h2>
-          </div>
+              ">
+            360 Regtech is All of Us
+          </h2>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="container-fluid mt-5">
-      <div class="container">
-        <div class="row mt-3">
-          <div
-            class="col-sm-8"
-            style="font-size: 17px; color: #253859"
-            id="top-content"
-          >
-            <p style="line-height: 30px">
-              Our shared values have been a guiding light at 360 Regtech from the
-              very beginning. We believe in the power of a diverse, equitable,
-              and inclusive team, and that each of us has a role in making the
-              world a better place.
-            </p>
-          </div>
-          <div class="col-sm-4"></div>
+  <div class="container-fluid mt-5">
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-sm-8" style="font-size: 17px; color: #253859" id="top-content">
+          <p style="line-height: 30px">
+            Our shared values have been a guiding light at 360 Regtech from the
+            very beginning. We believe in the power of a diverse, equitable,
+            and inclusive team, and that each of us has a role in making the
+            world a better place.
+          </p>
         </div>
+        <div class="col-sm-4"></div>
       </div>
     </div>
-    <div class="container-fluid mt-5">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-sm-8"
-            style="font-size: 17px; color: #253859"
-            id="top-content"
-          >
-            <p style="line-height: 30px">
-              The best communities enrich us through belonging and growth. At
-              360 Regtech, we live this ideal by actively weaving our values into the
-              fabric of the company. It’s a commitment we make to ourselves and
-              to each other, and review on a regular basis. Together, we’re
-              proud to nurture and cultivate a kind, resilient, brilliant
-              community.
-            </p>
-          </div>
-          <div class="col-sm-4"></div>
+  </div>
+  <div class="container-fluid mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8" style="font-size: 17px; color: #253859" id="top-content">
+          <p style="line-height: 30px">
+            The best communities enrich us through belonging and growth. At
+            360 Regtech, we live this ideal by actively weaving our values into the
+            fabric of the company. It’s a commitment we make to ourselves and
+            to each other, and review on a regular basis. Together, we’re
+            proud to nurture and cultivate a kind, resilient, brilliant
+            community.
+          </p>
         </div>
+        <div class="col-sm-4"></div>
       </div>
     </div>
-    <div class="container-fluid mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <!-- <h3
+  </div>
+  <div class="container-fluid mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <!-- <h3
               style="color: #21a89f; font-weight: 700; margin-bottom: 30px"
               id="top-content"
             >
               Learn about what unites our team
             </h3> -->
-            <section class="checkout"><a class="link link--arrowed"
-              style="color: #21A89F; font-weight: 600; font-size: 30px; margin-bottom: 30px"
-              id="top-content" href="#">Learn about what unites our team
-              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27"
-                  viewBox="0 0 32 32">
-                  <g fill="none" stroke="#03D5CC" stroke-width="1.5" stroke-linejoin="round"
-                      stroke-miterlimit="10">
-                      <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
-                      <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98">
-                      </path>
-                  </g>
+          <section class="checkout"><a class="link link--arrowed"
+              style="color: #21A89F; font-weight: 600; font-size: 30px; margin-bottom: 30px" id="top-content"
+              href="#">Learn about what unites our team
+              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 32 32">
+                <g fill="none" stroke="#03D5CC" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
+                  <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                  <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98">
+                  </path>
+                </g>
               </svg></a></section>
-          </div>
         </div>
       </div>
     </div>
-    <div
-      class="container-fluid"
-      style="background-color: #eff4f9; margin-bottom: 30px"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h2
-              style="
+  </div>
+  <div class="container-fluid" style="background-color: #eff4f9; margin-bottom: 30px">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 style="
                 font-size: 40px;
                 margin-top: 45px;
                 color: #253859;
@@ -266,295 +265,255 @@
                 letter-spacing: -0.05em;
                 
                 
-              "
-            >
-              Our Commitment to DEI
-            </h2>
+              ">
+            Our Commitment to DEI
+          </h2>
 
-            <h4 style="font-size: 17px">
-              <span>
-                <img
-                  src="new_icon.svg"
-                  alt=""
-                  width="40px"
-                  height="30px"
-                />
-             
-                <span
-                  style="
+          <h4 style="font-size: 17px">
+            <span>
+              <img src="new_icon.svg" alt="" width="40px" height="30px" />
+
+              <span style="
                     color: #253859;
                     margin-left: 15px;
                     font-weight: 900;
-                  "
-                  >Education & Training </span
-                ></span
-              >
+                  ">Education & Training </span></span>
 
-              <!-- <p style="color: #253859; margin-left: 20px;">Education & Training</p>  -->
-            </h4>
+            <!-- <p style="color: #253859; margin-left: 20px;">Education & Training</p>  -->
+          </h4>
 
-            <p
-              style="
+          <p style="
                 padding-left: 60px;
                 font-size: 17px;
                 color: #253859;
                 margin-bottom: 30px;
                 line-height: 30px;
-              "
-            >
-              DEI is the responsibility of every 360 Regtech team member. We host
-              regular education and training events to raise awareness and
-              competency around key issues that impact our team and the
-              communities around us.
-            </p>
-            <h4 style="font-size: 17px">
-              <span>
-                <img src="img2.svg" alt="" width="40px" height="30px" />
-               
-                <span
-                  style="
+              ">
+            DEI is the responsibility of every 360 Regtech team member. We host
+            regular education and training events to raise awareness and
+            competency around key issues that impact our team and the
+            communities around us.
+          </p>
+          <h4 style="font-size: 17px">
+            <span>
+              <img src="img2.svg" alt="" width="40px" height="30px" />
+
+              <span style="
                     color: #253859;
                     margin-left: 15px;
                     font-weight: 900;
                    
-                  "                  
-                  >Recruitment</span
-                ></span
-              >
-            </h4>
+                  ">Recruitment</span></span>
+          </h4>
 
-            <p
-              style="
+          <p style="
                 padding-left: 60px;
                 font-size: 17px;
                 color: #253859;
                 line-height: 30px;
-              "
-            >
-              Representational diversity is a critical part of our vibrant
-              community. We systematically work to identify any biases that may
-              hamper our recruiting efforts to ensure that we attract the best
-              talent from all backgrounds.
-            </p>
-            <h4 style="font-size: 17px" class="mt-4">
-              <span>
-                <img src="img3.svg" alt="" width="40px" height="30px" />
-          
-                <span
-                  style="
+              ">
+            Representational diversity is a critical part of our vibrant
+            community. We systematically work to identify any biases that may
+            hamper our recruiting efforts to ensure that we attract the best
+            talent from all backgrounds.
+          </p>
+          <h4 style="font-size: 17px" class="mt-4">
+            <span>
+              <img src="img3.svg" alt="" width="40px" height="30px" />
+
+              <span style="
                     color: #253859;
                     margin-left: 15px;
                     font-weight: 900;
                     
                    
-                  "
-                  >Employee Experience</span
-                ></span
-              >
-            </h4>
+                  ">Employee Experience</span></span>
+          </h4>
 
-            <p
-              style="
+          <p style="
                 padding-left: 60px;
                 font-size: 17px;
                 color: #253859;
                 line-height: 30px;
-              "
-            >
-              We want our team to be able to focus and excel in their roles. We
-              carefully craft supportive policies and benefits, routinely review
-              pay equality in our compensation packages, and enable growth
-              through our career frameworks.
-            </p>
-            <h4 style="font-size: 17px" class="mt-4">
-              <span>
-                <img src="img4.svg" alt="" width="40px" height="30px" />
-        
-                <span
-                  style="
+              ">
+            We want our team to be able to focus and excel in their roles. We
+            carefully craft supportive policies and benefits, routinely review
+            pay equality in our compensation packages, and enable growth
+            through our career frameworks.
+          </p>
+          <h4 style="font-size: 17px" class="mt-4">
+            <span>
+              <img src="img4.svg" alt="" width="40px" height="30px" />
+
+              <span style="
                     color: #253859;
                     margin-left: 15px;
                     font-weight: 900;
                    
-                  "
-                  >Outreach</span
-                ></span
-              >
-            </h4>
+                  ">Outreach</span></span>
+          </h4>
 
-            <p
-              style="
+          <p style="
                 padding-left: 60px;
                 font-size: 17px;
                 color: #253859;
                 line-height: 30px;
                 margin-bottom: 40px;
-              "
-            >
-              We believe that each of us is an ambassador for DEI, and our
-              dedication to our values extends beyond the walls of 360 Regtech. We
-              regularly host fundraisers and events to support our extended
-              communities.
-            </p>
-          </div>
+              ">
+            We believe that each of us is an ambassador for DEI, and our
+            dedication to our values extends beyond the walls of 360 Regtech. We
+            regularly host fundraisers and events to support our extended
+            communities.
+          </p>
         </div>
       </div>
     </div>
-    <div class="container-fluid" style="background-color: #ffffff">
-      <div class="container">
-        <h2
-          style="
+  </div>
+  <div class="container-fluid" style="background-color: #ffffff">
+    <div class="container">
+      <h2 style="
             color: #28bebb;
             font-size: 28px;
             -webkit-text-stroke: thin;
             font-weight: 700;
             letter-spacing: -0.02em;
             line-height: 30px;
-          "
-        >
-          Meet 360 Regtech’s DEI Committee
-        </h2>
-        <p style="color: #253859; font-size: 17px">
-          <strong
-            >DEI Committee leads many of our efforts as we continue developing a
-            diverse, equitable, and inclusive community.</strong
-          >
-        </p>
-      </div>
+          ">
+        Meet 360 Regtech’s DEI Committee
+      </h2>
+      <p style="color: #253859; font-size: 17px">
+        <strong>DEI Committee leads many of our efforts as we continue developing a
+          diverse, equitable, and inclusive community.</strong>
+      </p>
     </div>
-    <div class="container mb-5">
-      <div class="row">
-        <div class="col-sm-12">
-          <section class="left_and_righ">
-            <img src="img_avatar.png" alt="Avatar" class="avatar" width="100%">
-            <!-- <img src="img-big1.jpg" alt="" width="100%"/>  -->
-          </section>
-
-          <p
-            style="
+  </div>
+  <br><br>
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-sm-12">
+        <section class="left_and_righ">
+          <img src="img_avatar.png" alt="Avatar" class="avatar" width="100%">
+          <!-- <img src="img-big1.jpg" alt="" width="100%"/>  -->
+        </section>
+        <br>
+        <p style="
               color: #253859;
               font-size: 17px;
               padding-top: 10px;
               line-height: 30px;
-            "
-          >
-            [PICTURED FROM LEFT TO RIGHT] <strong>Yesenia Vega</strong>, Junior
-            Software Developer (360 Regtech); <strong>Balaka Das</strong>, Regulatory
-            Knowledge Analyst (360 Regtech); <strong>Jonathan Crowley</strong>,
-            Regulatory Change Manager (360 Regtech); <strong>Ken Gass</strong>,
-            Senior Software Engineer (360 Regtech); <strong>Lisa Alvarado</strong>,
-            Managing Director (Holistic);<strong>Chris Doyle</strong> , Chief
-            Architect (360 Regtech); <strong>Tom Alexander</strong> , Co-Founder &
-            CEO (Holistic); <strong>Gillian Pena</strong>, Associate Consultant
-            (Holistic); <strong>Carrie Pinkham</strong>, VP of People (360 Regtech);
-            <strong>Ashia Lang</strong>, Technical Project Manager (360 Regtech)
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid bg-light mt-4">
-      <div class="container mt-3">
-        <div class="row mt-5">
-          <div class="col-sm-12 mt-5">
-            <div>
-              <h1 style="color: #28bebb; font-size: 25.9px" id="slider1">
-                <strong id="slider1">DEI Events at 360 Regtech</strong>
-              </h1>
-              <p
-                style="color: #253859; font-size: 17px; margin-bottom: 30px"
-                id="slider1"
-              >
-                The DEI Committee regularly hosts events to raise awareness and
-                support. Here are a few that the committee has hosted so far:
-              </p>
-              <ul
-                style="color: #253859; font-size: 17px; margin-left: 30px"
-                id="slider1"
-              >
-                <li style="line-height: 35px">Women’s Day panel</li>
-                <li style="line-height: 35px">LGBTQ+ Pride trivia</li>
-                <li style="line-height: 35px">
-                  Shuffleboard competition for DEI charities
-                </li>
-                <li style="line-height: 35px">
-                  Microaggression and Microinclusion training
-                </li>
-                <li style="line-height: 35px">
-                  Anti-Racism Training: Foundations of Systemic Racism
-                </li>
-                <li style="line-height: 35px">
-                  Inclusive Recruitment Training: Best Practices for Building a
-                  Diverse Team
-                </li>
-                <li style="line-height: 35px">And much more!</li>
-              </ul>
-            </div>
-            <div class="row" id="slider2">
-              <div class="col-lg-6 p-2">
-                <img src="img_avatar.png" width="100%" />
-              </div>
-              <div class="col-lg-6 p-2">
-                <img src="img_avatar2.png" width="100%" />
-              </div>
-
-              
-            </div>
-          </div>
-          <div class="row mt-3 mb-4">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-6 mt-4 text-center">
-              <p><b style='color:  #253859; font-size: 17px;'>PICTURED:</b><span style='color:#253859; font-size: 17px;'>360 Regtech DEI-charity shuffleboard competition</span></p>
-                         
-            </div>
-
-            <div class="col-sm-3"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="container mt-5">
-        <h3 style="color: #28bebb;  letter-spacing: -0.02rem;   font-weight: 900">
-          Our Commitment to Transparency
-        </h3>
-        <p style="color: #253859; font-size: 17px; line-height: 26px">
-          360 Regtech is also proud to partner with
-          <span style="color: #28bebb">Holistic</span>, a people analytics firm
-          with a lens on DEI. Holistic helps companies build diverse, inclusive,
-          vibrant workforces by using data and analysis to attract, retrain,
-          inspire and motivate top talent.
+            ">
+          [PICTURED FROM LEFT TO RIGHT] <strong>Yesenia Vega</strong>, Junior
+          Software Developer (360 Regtech); <strong>Balaka Das</strong>, Regulatory
+          Knowledge Analyst (360 Regtech); <strong>Jonathan Crowley</strong>,
+          Regulatory Change Manager (360 Regtech); <strong>Ken Gass</strong>,
+          Senior Software Engineer (360 Regtech); <strong>Lisa Alvarado</strong>,
+          Managing Director (Holistic);<strong>Chris Doyle</strong> , Chief
+          Architect (360 Regtech); <strong>Tom Alexander</strong> , Co-Founder &
+          CEO (Holistic); <strong>Gillian Pena</strong>, Associate Consultant
+          (Holistic); <strong>Carrie Pinkham</strong>, VP of People (360 Regtech);
+          <strong>Ashia Lang</strong>, Technical Project Manager (360 Regtech)
         </p>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <img src="img_avatar.png" width="100%" id="group_img" />
+  </div>
+  <div class="container-fluid bg-light mt-4">
+    <div class="container mt-3">
+      <div class="row mt-5">
+        <div class="col-sm-12 mt-5">
+          <div>
+            <h1 style="color: #28bebb; font-size: 25.9px" id="slider1">
+              <strong id="slider1">DEI Events at 360 Regtech</strong>
+            </h1>
+            <p style="color: #253859; font-size: 17px; margin-bottom: 30px" id="slider1">
+              The DEI Committee regularly hosts events to raise awareness and
+              support. Here are a few that the committee has hosted so far:
+            </p>
+            <ul style="color: #253859; font-size: 17px; margin-left: 30px" id="slider1">
+              <li style="line-height: 35px">Women’s Day panel</li>
+              <li style="line-height: 35px">LGBTQ+ Pride trivia</li>
+              <li style="line-height: 35px">
+                Shuffleboard competition for DEI charities
+              </li>
+              <li style="line-height: 35px">
+                Microaggression and Microinclusion training
+              </li>
+              <li style="line-height: 35px">
+                Anti-Racism Training: Foundations of Systemic Racism
+              </li>
+              <li style="line-height: 35px">
+                Inclusive Recruitment Training: Best Practices for Building a
+                Diverse Team
+              </li>
+              <li style="line-height: 35px">And much more!</li>
+            </ul>
+          </div>
+          <div class="row" id="slider2">
+            <div class="col-lg-6 p-2">
+              <img src="img_avatar.png" width="100%" />
+            </div>
+            <div class="col-lg-6 p-2">
+              <img src="img_avatar2.png" width="100%" />
+            </div>
+
+
+          </div>
+        </div>
+        <br>
+        <div class="row mt-3 mb-4">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-6 mt-4 text-center">
+            <p><b style='color:  #253859; font-size: 17px;'>PICTURED:</b><span
+                style='color:#253859; font-size: 17px;'>360 Regtech DEI-charity shuffleboard competition</span></p>
+
+          </div>
+
+          <div class="col-sm-3"></div>
         </div>
       </div>
     </div>
-    <div class="container-fluid">
-      <div class="container mt-5">
-        <section class="scroll-section">
-          <h2 style="color: #28bebb; font-size: 32px; letter-spacing: -0.02em; font-weight: 900">
-            360 Regtech by the Numbers
-          </h2>
-          <p style="color: #253859; font-size: 17px">
-            360 Regtech releases employee satisfaction and demographic data on a
-            quarterly basis in an effort to create transparency and
-            accountability. This data is captured by Holistic to ensure that the
-            results are impartial.
-          </p>
-          <p class="mt-5" style="color: #253859; font-size: 17px">
-            <b
-              >Here’s how our team ranks 360 Regtech for diversity, inclusion, and
-              overall experience, and what our team make-up looks like today.</b
-            >
-          </p>
-        </section>
+  </div>
+  <div class="container-fluid">
+    <div class="container mt-5">
+      <h3 style="color: #28bebb;  letter-spacing: -0.02rem;   font-weight: 900">
+        Our Commitment to Transparency
+      </h3>
+      <p style="color: #253859; font-size: 17px; line-height: 26px">
+        360 Regtech is also proud to partner with
+        <span style="color: #28bebb">Holistic</span>, a people analytics firm
+        with a lens on DEI. Holistic helps companies build diverse, inclusive,
+        vibrant workforces by using data and analysis to attract, retrain,
+        inspire and motivate top talent.
+      </p>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <img src="img_avatar.png" width="100%" id="group_img" />
       </div>
     </div>
-    <!-- <div class="container">
+  </div>
+  <div class="container-fluid">
+    <div class="container mt-5">
+      <section class="scroll-section">
+        <h2 style="color: #28bebb; font-size: 32px; letter-spacing: -0.02em; font-weight: 900">
+          360 Regtech by the Numbers
+        </h2>
+        <p style="color: #253859; font-size: 17px">
+          360 Regtech releases employee satisfaction and demographic data on a
+          quarterly basis in an effort to create transparency and
+          accountability. This data is captured by Holistic to ensure that the
+          results are impartial.
+        </p>
+        <p class="mt-5" style="color: #253859; font-size: 17px">
+          <b>Here’s how our team ranks 360 Regtech for diversity, inclusion, and
+            overall experience, and what our team make-up looks like today.</b>
+        </p>
+      </section>
+    </div>
+  </div>
+  <!-- <div class="container">
       <div class="wpb_raw_code wpb_content_element wpb_raw_html">
         <div class="wpb_wrapper">
           <iframe
@@ -569,250 +528,241 @@
       </div>
     </div> -->
 
-   
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <section class="scroll-section">
-            <h1 class="text-center" style="font-weight: 500; color: #253859">
-              Do you want to make it easy for regulated companies to do the
-              right thing?
-            </h1>
 
-            <h2 class="text-center">
-              <a
-                href=""
-                style="
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <section class="scroll-section">
+          <h1 class="text-center" style="font-weight: 500; color: #253859">
+            Do you want to make it easy for regulated companies to do the
+            right thing?
+          </h1>
+
+          <h2 class="text-center">
+            <a href="" style="
                   text-decoration: none;
                   text-align: center;
                   font-weight: 600;
                   font-size: 40px;
                   color: #03d5cc;
-                "
-                id="hoveran"
-                >We want to meet you!</a
-              >
-            </h2>
-          </section>
-        </div>
+                " id="hoveran">We want to meet you!</a>
+          </h2>
+        </section>
       </div>
     </div>
-    <div
-      class="container-fluid"
-      style="
+  </div>
+  <br><br>
+  <div class="container-fluid" style="
         background-image: url(endimage.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-      "
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div style="height: 100px"></div>
-            <h6 style="color: white">Join Our 360 Regtech Community</h6>
-            <button class="btn text-white" id="learnMoreBtn">
-              <span style="font-size: 0.8rem; font-weight: 500"
-                >VIEW OPEN ROLES</span
-              >
-            </button>
-            <div style="height: 100px"></div>
-          </div>
+      ">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div style="height: 100px"></div>
+          <h6 style="color: white">Join Our 360 Regtech Community</h6>
+          <button class="btn text-white" id="learnMoreBtn">
+            <span style="font-size: 0.8rem; font-weight: 500">VIEW OPEN ROLES</span>
+          </button>
+          <div style="height: 100px"></div>
         </div>
       </div>
     </div>
+  </div>
 
 
 
-     <!-- fotter -->
-     <div class="container-fluid" style="background-color: #253859">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 mt-5">
-            <div><img class="logoo" src="../images/index/footer-logo.jpg" alt="Logo Image" width=" 160px" height=" 60px"
+  <!-- fotter -->
+  <div class="container-fluid" style="background-color: #253859">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mt-5">
+          <div><img class="logoo" src="../images/index/footer-logo.jpg" alt="Logo Image" width=" 160px" height=" 60px"
               style="margin-left:25px !important" /></div>
-            <h5 style="color: #03d5cc; margin-top: 15px">
-              Compliance, Uncomplicated.
-            </h5>
-          </div>
-          <div class="col-md-4 mt-5">
-            <div class="row">
-              <div class="col-6">
-                <p style="color: white"><strong>Platform</strong></p>
-                <p style="padding-top: 10px; font-size: 15px">
-                  <a href="../OurApproach/OurApproach.html" id="footer-hover">Our Approach</a>
-                </p>
-                <p style="padding-top: 10px; font-size: 15px">
-                  <a href="../OurData/OurData.html" id="footer-hover">Our Data</a>
-                </p>
-                <p style="padding-top: 10px; font-size: 15px">
-                  <a href="../Regulators/Regulators.html" id="footer-hover">Regulators</a>
-                </p>
-                <p style="padding-top: 10px; font-size: 15px">
-                  <a href="../TechnologyPartners/TechnologyPartners.html" id="footer-hover">Technology Partners</a>
-                </p>
-              </div>
-              <div class="col-6">
-                <p style="color: white"><strong>Capabilities</strong></p>
-                <p style="padding-top: 10px; font-size: 15px">
-                  <a href="../Oligation-Inventory/obligations.html" id="footer-hover">Obligations Inventory</a>
-                </p>
-                <p style="padding-top: 10px; font-size: 15px">
-                  <a href="../Scenario-planning/scenerio.html" id="footer-hover">Scenario Planning</a>
-                </p>
-                <p style="padding-top: 10px; font-size: 15px">
-                  <a href="../Horizon-Scanning/horizonScanning.html" id="footer-hover">Horizon Scanning</a>
-                </p>
-                <p style="padding-top: 10px; font-size: 15px">
-                  <a href="../Audit-Trail/Audit.html" id="footer-hover">Audit Trail</a>
-                </p>
-              </div>
+          <h5 style="color: white; margin-top: 15px">
+            Compliance, Uncomplicated.
+          </h5>
+        </div>
+        <div class="col-md-4 mt-5">
+          <div class="row">
+            <div class="col-6">
+              <p style="color: white"><strong>Platform</strong></p>
+              <p style="padding-top: 10px; font-size: 15px">
+                <a href="../OurApproach/OurApproach.html" id="footer-hover">Our Approach</a>
+              </p>
+              <p style="padding-top: 10px; font-size: 15px">
+                <a href="../OurData/OurData.html" id="footer-hover">Our Data</a>
+              </p>
+              <p style="padding-top: 10px; font-size: 15px">
+                <a href="../Regulators/Regulators.html" id="footer-hover">Regulators</a>
+              </p>
+              <p style="padding-top: 10px; font-size: 15px">
+                <a href="../TechnologyPartners/TechnologyPartners.html" id="footer-hover">Technology Partners</a>
+              </p>
+            </div>
+            <div class="col-6">
+              <p style="color: white"><strong>Capabilities</strong></p>
+              <p style="padding-top: 10px; font-size: 15px">
+                <a href="../Oligation-Inventory/obligations.html" id="footer-hover">Obligations Inventory</a>
+              </p>
+              <p style="padding-top: 10px; font-size: 15px">
+                <a href="../Scenario-planning/scenerio.html" id="footer-hover">Scenario Planning</a>
+              </p>
+              <p style="padding-top: 10px; font-size: 15px">
+                <a href="../Horizon-Scanning/horizonScanning.html" id="footer-hover">Horizon Scanning</a>
+              </p>
+              <p style="padding-top: 10px; font-size: 15px">
+                <a href="../Audit-Trail/Audit.html" id="footer-hover">Audit Trail</a>
+              </p>
             </div>
           </div>
-          <div class="col-md-4 mt-5">
-            <div class="row">
-              <div class="col-6">
-                <p style="color: white"><strong>Resources</strong></p>
-                <p style="padding-top: 10px; font-size: 15px">
-                  <a href="../WhatisReg/whatis.html" id="footer-hover">What is RegTech?</a>
-                </p>
-                <p style="padding-top: 10px; font-size: 15px">
-                  <a href="../Blogs/blogs.html" id="footer-hover">Blog</a>
-                </p>
-                <p style="padding-top: 10px; font-size: 15px">
-                  <a href="../Resources/Resources.html" id="footer-hover">Resources</a>
-                </p>
-                <p style="padding-top: 10px; font-size: 15px">
-                  <a href="../Customer-Stories/Customerstories.html" id="footer-hover">Customer Stories</a>
-                </p>
-              </div>
-              <div class="col-6">
-                <p style="color: white"><strong>Company</strong></p>
-                <p style="padding-top: 10px; font-size: 15px">
-                  <a href="../OurTeam/ourteam.html" id="footer-hover">Our Team</a>
-                </p>
-                <p style="padding-top: 10px; font-size: 15px">
-                  <a href="../Careers/Careers.html" id="footer-hover">Careers</a>
-                </p>
-                <p style="padding-top: 10px; font-size: 15px">
-                  <a href="../Careers/Careers.html" id="footer-hover">Culture</a>
-                </p>
-              </div>
-              <div style="height: 80px"></div>
+        </div>
+        <div class="col-md-4 mt-5">
+          <div class="row">
+            <div class="col-6">
+              <p style="color: white"><strong>Resources</strong></p>
+              <p style="padding-top: 10px; font-size: 15px">
+                <a href="../WhatisReg/whatis.html" id="footer-hover">What is RegTech?</a>
+              </p>
+              <p style="padding-top: 10px; font-size: 15px">
+                <a href="../Blogs/blogs.html" id="footer-hover">Blog</a>
+              </p>
+              <p style="padding-top: 10px; font-size: 15px">
+                <a href="../Resources/Resources.html" id="footer-hover">Resources</a>
+              </p>
+              <p style="padding-top: 10px; font-size: 15px">
+                <a href="../Customer-Stories/Customerstories.html" id="footer-hover">Customer Stories</a>
+              </p>
             </div>
+            <div class="col-6">
+              <p style="color: white"><strong>Company</strong></p>
+              <p style="padding-top: 10px; font-size: 15px">
+                <a href="../OurTeam/ourteam.html" id="footer-hover">Our Team</a>
+              </p>
+              <p style="padding-top: 10px; font-size: 15px">
+                <a href="../Careers/Careers.html" id="footer-hover">Careers</a>
+              </p>
+              <p style="padding-top: 10px; font-size: 15px">
+                <a href="../Careers/Careers.html" id="footer-hover">Culture</a>
+              </p>
+            </div>
+            <div style="height: 80px"></div>
           </div>
         </div>
       </div>
     </div>
-    <div
-      class="container-fluid"
-      style="background-color: #253859; border-top: 1px solid #ffffff"
-    >
-      <div class="container">
-        <div class="row py-3">
-          <!-- <div class="col-lg-1"></div> -->
-          <div class="col-lg-4">
-            <p style="color: white; font-size: 12px">
-              © 2023 360 RegTech. All Rights Reserved.
-            </p>
-          </div>
-          <div class="col-lg-6"></div>
-          <div class="col-lg-2">
-            <a href="" style="text-decoration: none;">
-              <span style="color: white; padding-right: 12px"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="24"
-                fill="currentColor"
-                class="bi bi-twitter"
-                viewBox="0 0 16 16"
-              >
+  </div>
+  <div class="container-fluid" style="background-color: #253859; border-top: 1px solid #ffffff">
+    <div class="container">
+      <div class="row py-3">
+        <!-- <div class="col-lg-1"></div> -->
+        <div class="col-lg-4">
+          <p style="color: white; font-size: 12px">
+            © 2023 360 RegTech. All Rights Reserved.
+          </p>
+        </div>
+        <div class="col-lg-6"></div>
+        <div class="col-lg-2">
+          <a href="" style="text-decoration: none;">
+            <span style="color: white; padding-right: 12px"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
                 <path
-                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-              /></svg>
-              </span>
-            </a>
-            <a href="" style="text-decoration: none;">
-              <span style="color: white; padding-right: 12px"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="24"
-                fill="currentColor"
-                class="bi bi-linkedin"
-                viewBox="0 0 16 16"
-              >
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+              </svg>
+            </span>
+          </a>
+          <a href="" style="text-decoration: none;">
+            <span style="color: white; padding-right: 12px"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
                 <path
-                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-              /></svg>
-              </span>
-            </a>
-            <a href="" style="text-decoration: none;">
-              <span style="color: white; padding-right: 12px">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="24"
-                  fill="currentColor"
-                  class="bi bi-youtube"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
-              /></svg>
-              </span>
-            </a>
-            <a href="" style="text-decoration: none;">
-              <span style="color: white">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-instagram"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-              /></svg>
-              </span>
-            </a>
-          </div>
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+              </svg>
+            </span>
+          </a>
+          <a href="" style="text-decoration: none;">
+            <span style="color: white; padding-right: 12px">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" fill="currentColor" class="bi bi-youtube"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+              </svg>
+            </span>
+          </a>
+          <a href="" style="text-decoration: none;">
+            <span style="color: white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+              </svg>
+            </span>
+          </a>
         </div>
       </div>
     </div>
-    <!-- fotter end -->
+  </div>
+  <!-- fotter end -->
+  <!-- SCRIPT FOR NAVBAR -->
+  <Script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    const links = document.querySelectorAll(".nav-links li");
 
-
-
-    <script src="DiversityEquityandInclusion.js"></script>
-    <script>
-      $(window).on("scroll", function () {
-        $(".scroll-section").each(function () {
-          if (isElementInViewport(this)) {
-            $(this).addClass("visible");
-          }
-        });
+    hamburger.addEventListener('click', () => {
+      //Animate Links
+      navLinks.classList.toggle("open");
+      links.forEach(link => {
+        link.classList.toggle("fade");
       });
 
-      $(window).on("scroll", function () {
-        $(".left_and_right").each(function () {
-          if (isElementInViewport(this)) {
-            $(this).addClass("visible");
-          }
-        });
+      //Hamburger Animation
+      hamburger.classList.toggle("toggle");
+    });
+
+    const gif = document.querySelector(".nectar-video-self-hosted");
+    const vedio = document.querySelector(".vedio");
+    gif.addEventListener('click'), () => {
+      vedio('play')
+    }
+    vedio.addEventListener('click'), () => {
+      gif('play')
+    }
+    // first div scroll animation
+  </Script>
+  <!-- SCRIPT FOR NAVBAR END -->
+
+
+  <script src="DiversityEquityandInclusion.js"></script>
+  <script>
+    $(window).on("scroll", function () {
+      $(".scroll-section").each(function () {
+        if (isElementInViewport(this)) {
+          $(this).addClass("visible");
+        }
       });
-      function isElementInViewport(el) {
-        var rect = el.getBoundingClientRect();
-        return (
-          rect.top >= 0 &&
-          rect.left >= 0 &&
-          rect.bottom <=
-            (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.right <=
-            (window.innerWidth || document.documentElement.clientWidth)
-        );
-      }
-    </script>
-  </body>
+    });
+
+    $(window).on("scroll", function () {
+      $(".left_and_right").each(function () {
+        if (isElementInViewport(this)) {
+          $(this).addClass("visible");
+        }
+      });
+    });
+    function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <=
+        (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+  </script>
+  <script src="../navbar.js"></script>
+</body>
+
 </html>
