@@ -106,8 +106,8 @@ span.regulatory-unique {
 
 .mapping-paragraph-icon {
     color: #253859;
-    font-size: 15px;
-    /* font-weight: bold; */
+    font-size: 17px;
+    line-height: 30px;
 }
 
 #animation-image {
@@ -126,10 +126,7 @@ span.regulatory-unique {
         font-size: 30px;
     }
 
-    .heading-explore {
-        /* display: none; */
-        font-size: 30px;
-    }
+
 }
 
 @media (min-width: 700px) and (max-width: 900px) {
@@ -148,6 +145,11 @@ span.regulatory-unique {
     .initial {
         background-image: url("images/our-approach-2.png");
     }
+
+    .responsive {
+        margin-left: 50px;
+    }
+
 }
 
 #footer-hover:hover {
@@ -162,4 +164,12 @@ span.regulatory-unique {
 em {
     position: relative;
     display: inline-block;
+}
+
+
+@media (min-width: 300px) and (max-width: 700px) {
+    .responsive {
+        width: 100%;
+        height: auto;
+    }
 }
