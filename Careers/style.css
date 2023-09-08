@@ -34,11 +34,16 @@
     opacity: 1;
 }
 
+
 .role {
     font-size: 42.5px;
     color: #253859;
 }
 
+.imglogo {
+    margin-left: 35px;
+    font-size: 2em;
+}
 
 .tech {
     margin-left: 40px;
