@@ -1,60 +1,115 @@
-#financialbtn{
+body {
+    font-family: "Mulish";
+    margin: 0;
+    padding: 0;
+}
+
+#financialbtn {
     background-color: #28bebb;
     position: relative;
 }
+
 @keyframes btn {
-    0%   {bottom : 0rem;}
-    50%  {bottom: .025  rem;}
-    100% {bottom : .50rem;}
+    0% {
+        bottom: 0rem;
+    }
+
+    50% {
+        bottom: .025 rem;
+    }
+
+    100% {
+        bottom: .50rem;
+    }
 }
-#financialbtn:hover{
+
+#financialbtn:hover {
     bottom: .5rem;
     background-color: #28BEBB;
     animation-name: btn;
     animation-duration: 1s;
 }
-#finanletter{
+
+#finanletter {
     /* margin-top: 20px; */
     letter-spacing: -0.01em;
     font: inherit;
     vertical-align: baseline;
 }
-#spacestyle{
+
+#spacestyle {
     font-size: 20px;
     padding: 0px 0px 27px;
 }
-.whowe{
+
+.whowe {
     display: none;
 }
+
 @media screen and (max-width: 764px) {
-    .whowe{
+    .whowe {
         display: block;
     }
-    .serve{
+
+    .serve {
         display: none;
     }
 
 }
-@media screen  and (min-width: 480px){
-    #formPad{
+
+@media screen and (min-width: 480px) {
+    #formPad {
         height: 16rem;
     }
-    
+
 }
-#underline{
+
+#underline {
     text-decoration: none;
 }
-#underline:hover{
+
+#underline:hover {
     text-decoration: underline;
 }
-#footer-hover:hover{
+
+#footer-hover:hover {
     color: #28BEBB;
-    }
-  #footer-hover{
+}
+
+#footer-hover {
     text-decoration: none;
     color: white;
-  }
+}
 
-  #active_page{
+#active_page {
     border-bottom: 1px solid #28BEBB;
+}
+
+.parent_image {
+    display: flex;
+}
+
+
+@media (min-width: 1px) and (max-width: 690px) {
+    .images_content_right {
+        order: 2;
+    }
+
+    .images_content_left {
+        order: 1;
+    }
+    .scroll-section .see_how_you {
+        color: #ffffff;
+        width: 319px !important;
+        font-size: 24.05px !important;
+        text-align: center;
+        line-height: 30px;
+    }
+}
+
+.scroll-section .see_how_you {
+    color: #ffffff;
+    width: 382px;
+    font-size: 31.45px;
+    text-align: center;
 }

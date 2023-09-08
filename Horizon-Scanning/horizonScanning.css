@@ -187,3 +187,42 @@ body {
     }
 
 }
+
+
+@media (min-width: 691px) and (max-width: 991px) {
+    .scroll-section .see_how_you {
+      color: #ffffff;
+      width: 636px !important;
+      font-size: 35px !important;
+      text-align: center;
+      font-family: "Mulish";
+      text-transform: none;
+      letter-spacing: -0.05em;
+    }
+  }
+  
+  @media (min-width: 1px) and (max-width: 691px) {
+    .scroll-section .see_how_you {
+      color: #ffffff;
+      width: 348px !important;
+      font-size: 28px !important;
+      text-align: center;
+      font-family: "Mulish";
+      text-transform: none;
+      letter-spacing: -0.05em;
+    }
+  }
+  .scroll-section .see_how_you {
+    color: #ffffff;
+    width: 400px;
+    font-size: 42.45px;
+    text-align: center;
+    font-family: "Mulish";
+    text-transform: none;
+    letter-spacing: -0.05em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.2em;
+  }
