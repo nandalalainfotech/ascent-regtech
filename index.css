@@ -284,138 +284,141 @@ ul#submenu a:hover {
         color: #fff;
     }
 
+    .footer-media {
+        margin-top: 1rem;
+    }
 
 }
 
 @media only screen and (max-width: 1215px) and (min-width: 690px) {
     nav {
-            position: fixed;
-            height: 4rem;
-            background-color: #f2f5f7;
-            z-index: 5;
-            overflow-y: auto;
-        }
-    
-        .logoo,
-        .hamburger {
-            z-index: 5;
-        }
-    
-        .logoo {
-            margin-left: 5px !important;
-        }
-    
-        .join-button a,
-        .login-button a {
-            border: none;
-            color: #fff;
-            font-size: 25.2px;
-        }
-    
-        .nav-links {
-            top: 3.5rem;
-            position: fixed;
-            justify-content: space-evenly;
-            list-style: none;
-            width: 88vw;
-            align-items: center;
-            background: #03d5cc;
-            color: #fff !important;
-            height: 90vh;
-            width: 100%;
-            flex-direction: column;
-            clip-path: circle(50px at 90% -20%);
-            -webkit-clip-path: circle(50px at 90% -10%);
-            transition: all 1s ease-out;
-            pointer-events: none;
-        }
-    
-        .nav-links.open {
-            clip-path: circle(1000px at 90% -10%);
-            -webkit-clip-path: circle(1000px at 90% -10%);
-            pointer-events: all;
-        }
-    
-    
-        .nav-links li {
-            opacity: 0;
-        }
-    
-        .nav-links li:nth-child(1) {
-            transition: all 0.5s ease 0.2s;
-        }
-    
-        .nav-links li:nth-child(2) {
-            transition: all 0.5s ease 0.4s;
-        }
-    
-        .nav-links li:nth-child(3) {
-            transition: all 0.5s ease 0.6s;
-        }
-    
-        .nav-links li:nth-child(4) {
-            transition: all 0.5s ease 0.7s;
-        }
-    
-        .nav-links li:nth-child(5) {
-            transition: all 0.5s ease 0.8s;
-        }
-    
-        .nav-links li:nth-child(6) {
-            transition: all 0.5s ease 0.9s;
-            margin: 0;
-        }
-    
-        .nav-links li:nth-child(7) {
-            transition: all 0.5s ease 1s;
-            margin: 0;
-        }
-    
-        li.fade {
-            opacity: 1;
-        }
-    
-        .hamburger {
-            display: block;
-            position: absolute;
-            cursor: pointer;
-            right: 5%;
-            top: 50%;
-            transform: translate(-5%, -50%);
-            z-index: 2;
-            transition: all 0.7s ease;
-        }
-    
-        .show1 {
-            display: block !important;
-            color: #fff !important;
-            position: fixed;
-            overflow-y: hidden !important;
-            margin-top: -1rem;
-            bottom: 0;
-        }
-    
-        .show1 .line a {
-            color: #fff !important;
-            text-decoration: none !important;
-            cursor: pointer !important;
-            overflow-y: hidden !important;
-            font-size: 25.2px !important;
-        }
-    
-        .show1 .line a:hover {
-            border-bottom: none !important;
-        }
-    
-        #submenu {
-            display: none !important;
-        }
-    
-        .login-button a:hover {
-            border: #fff;
-            background-color: #03d5cc;
-            color: #fff;
-        }
+        position: fixed;
+        height: 4rem;
+        background-color: #f2f5f7;
+        z-index: 5;
+        overflow-y: auto;
+    }
+
+    .logoo,
+    .hamburger {
+        z-index: 5;
+    }
+
+    .logoo {
+        margin-left: 5px !important;
+    }
+
+    .join-button a,
+    .login-button a {
+        border: none;
+        color: #fff;
+        font-size: 25.2px;
+    }
+
+    .nav-links {
+        top: 3.5rem;
+        position: fixed;
+        justify-content: space-evenly;
+        list-style: none;
+        width: 88vw;
+        align-items: center;
+        background: #03d5cc;
+        color: #fff !important;
+        height: 90vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.7s;
+    }
+
+    .nav-links li:nth-child(5) {
+        transition: all 0.5s ease 0.8s;
+    }
+
+    .nav-links li:nth-child(6) {
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+
+    .nav-links li:nth-child(7) {
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+
+    li.fade {
+        opacity: 1;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+
+    .show1 {
+        display: block !important;
+        color: #fff !important;
+        position: fixed;
+        overflow-y: hidden !important;
+        margin-top: -1rem;
+        bottom: 0;
+    }
+
+    .show1 .line a {
+        color: #fff !important;
+        text-decoration: none !important;
+        cursor: pointer !important;
+        overflow-y: hidden !important;
+        font-size: 25.2px !important;
+    }
+
+    .show1 .line a:hover {
+        border-bottom: none !important;
+    }
+
+    #submenu {
+        display: none !important;
+    }
+
+    .login-button a:hover {
+        border: #fff;
+        background-color: #03d5cc;
+        color: #fff;
+    }
 }
 
 /*Animating Hamburger Icon on Click*/
