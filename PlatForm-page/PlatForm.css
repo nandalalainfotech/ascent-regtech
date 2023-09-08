@@ -1,8 +1,37 @@
-#contain {
-    height: auto;
-    background-color: #03d5cc;
-    padding: 60px;
-    position: relative;
+@media only screen and (min-width:375px) and (max-width:667px) {
+    .top-content {
+        height: 3% !important;
+    }
+
+    .captcha1 {
+        margin-left: -18px;
+    }
+
+    .wpb_wrapper h3 {
+        font-size: 25.45px !important;
+        line-height: 25.5px;
+        font-family: "Mulish";
+        text-transform: none;
+        letter-spacing: -0.02em;
+        font-weight: 900;
+        color: #253859;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .top-content {
+        height: 25% !important;
+    }
+
+    .wpb_wrapper h3 {
+        font-size: 25.45px !important;
+        line-height: 25.5px;
+        font-family: "Mulish";
+        text-transform: none;
+        letter-spacing: -0.02em;
+        font-weight: 900;
+        color: #253859;
+    }
 
 }
 
@@ -13,143 +42,6 @@
     background-color: #eff4f9;
     box-shadow: 0 30px 60px rgba(0, 0, 0, .15);
 }
-
-.ingcommbank-sm img {
-    background-size: cover;
-    width: 109%;
-    height: 100%;
-}
-
-
-@media only screen and (min-width:375px) and (max-width:667px) {
-
-    .obligation h3 {
-        font-size: 24.05px;
-        line-height: 19.5px;
-        font-family: Mulish;
-        text-transform: none;
-        letter-spacing: -0.02em;
-        font-weight: 900;
-        color: #253859;
-    }
-
-    .granular-svg {
-        width: 25px !important;
-    }
-
-    .ingcommbank-sm img {
-        height: 300%;
-    }
-
-    .ing {
-        margin-top: 10px !important;
-    }
-
-    .ing h2 {
-        font-size: 300%;
-        color: #253859;
-        font-weight: bold;
-        padding: 0px 0px 0px 35px;
-        margin-top: -164px;
-    }
-
-    .ing h3 {
-        font-size: 174%;
-        padding-left: 32px;
-        color: #ffffff;
-    }
-
-    #forms {
-        border-radius: 2%;
-        border-radius: 10px;
-        width: 129%;
-        margin-left: -36px;
-        height: auto;
-        background-color: #eff4f9;
-        box-shadow: 0 30px 60px rgba(0, 0, 0, .15);
-    }
-
-    .form-group {
-        font-family: Mulish;
-        font-size: 14px;
-        color: #33475b;
-        font-weight: 500;
-        line-height: 20px;
-        width: 126%;
-        margin-left: -30px;
-    }
-
-    /* 
-    .CommBank {
-        margin-left: 50px;
-    } */
-
-    .Overview1 {
-        width: 616 !important;
-        height: 616 !important;
-        max-width: 338px !important;
-        margin-left: -30px !important;
-    }
-
-    .Overview2 {
-        margin-left: -8px !important;
-        max-width: 321px !important;
-    }
-
-    .gray-cards {
-        border-radius: 10px !important;
-        /* padding: 9%; */
-        background-color: #eff4f9;
-        margin-top: -97px;
-    }
-
-    .top-content {
-        height: 0px !important;
-    }
-
-    .global-sm {
-        margin: 33px;
-        margin-top: -111px;
-    }
-
-    .platform-background {
-        width: 100% !important;
-    }
-
-    .Obligation-background {
-        background-image: url(Overview-1-768x768.png) !important;
-        background-repeat: no-repeat;
-        width: 42vh !important;
-        margin-left: -3px !important;
-        height: 40vh !important;
-    }
-
-    .img3 {
-        background-image: url(Overview-2-768x768.png) !important;
-        background-repeat: no-repeat;
-        width: 42vh !important;
-        margin-left: -3px !important;
-        height: 45vh !important;
-    }
-
-    .Overview-3-edit {
-        background-image: url(Overview-3-edit-768x768.png) !important;
-        background-repeat: no-repeat;
-        width: 42vh !important;
-        height: 46vh !important;
-        margin-left: -3px !important;
-    }
-
-    .Obligations-sm {
-        margin-top: -352px;
-    }
-
-    /* .platform-background {
-        background-image: url(ingcommbank1.jpg);
-       
-    } */
-}
-
 
 .Clutter h5 {
     color: #03d5cc;
@@ -221,113 +113,6 @@
     align-items: center;
 }
 
-
-.img-res1 {
-    width: 900 !important;
-    height: 900 !important;
-}
-
-
-@media screen and (max-width: 500px) {
-    .captcha {
-        flex-direction: column;
-    }
-
-    .text {
-        margin: .5em !important;
-        text-align: center;
-    }
-
-    .logo {
-        align-self: center !important;
-    }
-
-    .spinner {
-        margin: 2em .5em .5em .5em !important;
-    }
-}
-
-.text {
-    font-size: 1.75em;
-    font-weight: 500;
-    margin-right: 1em;
-}
-
-.spinner {
-    position: relative;
-    width: 2em;
-    height: 2em;
-    display: flex;
-    margin: 2em 1em;
-    align-items: center;
-    justify-content: center;
-}
-
-input[type="checkbox"] {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-}
-
-input[type="checkbox"]+.checkmark {
-    display: inline-block;
-    width: 2em;
-    height: 2em;
-    background-color: #fcfcfc;
-    border: 2.5px solid #c3c3c3;
-    border-radius: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-input[type="checkbox"]+.checkmark span {
-    content: '';
-    position: relative;
-    margin-top: -3px;
-    transform: rotate(45deg);
-    width: .75em;
-    height: 1.2em;
-    opacity: 0;
-}
-
-input[type="checkbox"]+.checkmark>span:after {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: #029f56;
-}
-
-input[type="checkbox"]+.checkmark>span:before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 3px;
-    bottom: 0;
-    right: 0;
-    background-color: #029f56;
-}
-
-input[type="checkbox"]:checked+.checkmark {
-    animation: 2s spin forwards;
-}
-
-input[type="checkbox"]:checked+.checkmark>span {
-    animation: 1s fadein 1.9s forwards;
-}
-
-input[type="checkbox"]:checked+.checkmark>span:after {
-    animation: .3s bottomslide 2s forwards;
-}
-
-input[type="checkbox"]:checked+.checkmark>span:before {
-    animation: .5s rightslide 2.2s forwards;
-}
-
 @keyframes fadein {
     0% {
         opacity: 0;
@@ -358,33 +143,6 @@ input[type="checkbox"]:checked+.checkmark>span:before {
     }
 }
 
-.logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    align-self: flex-end;
-    margin: 0.5em 1em;
-}
-
-.logo img {
-    height: 2em;
-    width: 2em;
-}
-
-.logo p {
-    color: #9d9ba7;
-    margin: 0;
-    font-size: 1em;
-    font-weight: 700;
-    margin: .4em 0 .2em 0;
-}
-
-.logo small {
-    color: #9d9ba7;
-    margin: 0;
-    font-size: .8em;
-}
 
 @keyframes spin {
     10% {
@@ -430,54 +188,6 @@ input[type="checkbox"]:checked+.checkmark>span:before {
     }
 }
 
-::selection {
-    background-color: transparent;
-    color: teal;
-}
-
-::-moz-selection {
-    background-color: transparent;
-    color: teal;
-}
-
-.btn-1 {
-    background-color: #03d5cc;
-
-}
-
-.col-sm-2 {
-    padding: 1%;
-}
-
-.myColor {
-    color: #03d5cc;
-}
-
-.img-Sizes {
-    background-image: url("globaltop50bank.jpg");
-    width: 100%;
-    height: 600px;
-    position: relative;
-    background-size: cover;
-}
-
-#header-color {
-    color: #253859;
-}
-
-.img-res {
-
-    margin-left: -50px
-}
-
-.ing {
-    margin-top: -500px;
-}
-
-h3 {
-    font-size: none !important;
-}
-
 body {
     font-family: "Mulish";
 }
@@ -487,10 +197,6 @@ body strong,
 body .bold {
     font-family: "Mulish";
     font-weight: 900;
-}
-
-.hello {
-    color: #03d5cc;
 }
 
 .nectar_icon_wrap {
@@ -531,11 +237,6 @@ body .bold {
     font-weight: 500;
 }
 
-.top-content {
-    height: 260px;
-}
-
-/* ---------------new container--------------- */
 .wpb_wrapper h3 {
     font-size: 31.45px;
     line-height: 25.5px;
@@ -615,12 +316,13 @@ body .bold {
     left: 0;
 }
 
+/* 
 .platform-background {
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
   
-}
+} */
 
 
 
@@ -634,9 +336,9 @@ body .bold {
 
 .wpb_wrappers .wpb-p {
     color: #ffffff;
-    font-size: 207%;
+    font-size: 200%;
     line-height: 30px;
-    letter-spacing: -0.02em;
+    /* letter-spacing: -0.02em; */
 }
 
 .read-text h4 {
@@ -697,10 +399,10 @@ body .bold {
 
 .Obligation-background {
     background-image: url(Overview-11.png);
-    height: 100vh;
-    width: 100vh;
+    /* height: 100vh;
+    width: 100vh; */
     background-repeat: no-repeat !important;
-    margin-left: -78px;
+    /* margin-left: -78px; */
 }
 
 .img3 {
@@ -753,4 +455,8 @@ body .bold {
     font-family: "Mulish";
     font-size: 17px;
     line-height: 30px;
+}
+
+.top-content {
+    height: 45%;
 }
