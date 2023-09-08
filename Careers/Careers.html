@@ -73,7 +73,6 @@
     <nav>
         <div class="logo">
             <a href="../index.html">
-                <!-- <img src="360logo.svg" alt="Logo Image" /> -->
                 <img class="logoo" src="../images/index/head-logo-360.png" alt="Logo Image" width="160px"
                     height="60px" />
             </a>
@@ -83,27 +82,29 @@
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
-        <ul class="nav-links">
-            <li class="show show1" style="padding: 1rem"> <span class="line">
-                    <a href="../PlatForm-page/PlatForm.html">Platform</a></span>
+        <ul class="nav-links" id="initial">
+            <li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
+                    <a href="../PlatForm-page/PlatForm.html" id="platform" onclick="platform1()">Platform</a></span>
+
                 <ul id="submenu">
-                    <a href="../OurApproach/OurApproach.html">Our Approach</a>
+                    <a href="../OurApproach/OurApproach.html" id="approach">Our Approach</a>
                     <a href="../OurData/OurData.html">Our Data</a>
                     <a href="../Regulators/Regulators.html"> Regulators</a>
                     <a href="../TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
                 </ul>
             </li>
-            <li class="show show1" style="padding: 1rem;"><span class="line"><a href="">Capabilities</a></span>
+            <li class="show show1" style="padding: 1rem;"><span class="line" id="active_page"><a href=""
+                        id="capabilities" onclick="capabilities1()">Capabilities</a></span>
                 <ul id="submenu">
                     <a href="../Oligation-Inventory/obligations.html">Obligations Inventory</a>
-                    <a href="../Scenario-planning/scenerio.html">Scenario Planning</a>
+                    <a href="../Scenario-planning/scenerio.html"><span>Scenario Planning</span></a>
                     <a href="../Horizon-Scanning/horizonScanning.html">Horizon Scanning</a>
                     <a href="../Audit-Trail/Audit.html">Audit Trail</a>
                     <a href="../Explore/explore.html">Explore Use Cases</a>
                 </ul>
             </li>
-            <li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html">Who
-                        We
+            <li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html"
+                        id="whoweserve">Who We
                         Serve</a></span>
                 <ul id="submenu">
                     <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
@@ -112,8 +113,8 @@
                     <a href="../Professional/professional.html">Professional Services</a>
                 </ul>
             </li>
-            <li class="show show1" style="padding: 1rem"><span class="line"> <a
-                        href="../Resources/Resources.html">Resources</a></span>
+            <li class="show show1" style="padding: 1rem"><span class="line"> <a href="../Resources/Resources.html"
+                        id="resources">Resources</a></span>
                 <ul id="submenu">
                     <a href="../WhatisReg/whatis.html">What is RegTech?</a>
                     <a href="../Blogs/blogs.html">Blog</a>
@@ -121,24 +122,31 @@
                     <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
                 </ul>
             </li>
-            <li class="show show1" style="padding: 1rem"><span id="active_page" class="line"><a
-                        href="../OurTeam/ourteam.html">Company</a></span>
+            <li class="show show1" style="padding: 1rem"><span class="line"><a href="../OurTeam/ourteam.html"
+                        id="company">Company</a></span>
                 <ul id="submenu">
                     <a href="../OurTeam/ourteam.html">Our Team</a>
                     <a href="../Diversity/DiversityEquityandInclusion.html">Diversity, Equity, and Inclusion</a>
                     <a href="../Careers/Careers.html">Careers</a>
                 </ul>
             </li>
-            <li class="login-button show show1"><a href="../Signin/sign.html">Sign
+
+
+            <li class="login-button show show1"><a href="../Signin/sign.html" id="sign_in">Sign
                     In</a>
             </li>
             <li class="join-button show show1">
-                <a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;">
+                <a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;" id="contact-us">
                     Contact Us
                 </a>
             </li>
             <li class="show show1" style="display: none; font-size: xx-small;">360 RegTech</li>
         </ul>
+        <!-- <ul class="nav-links" id="platforms">
+            <li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
+                <a href="../PlatForm-page/PlatForm.html" id="platform" onclick="platform1();linkSetter()">Platform</a></span>
+        </ul> -->
+
     </nav>
     <!-- nav bar end -->
 
@@ -552,6 +560,8 @@
             );
         }
     </script>
+
+    <script src="../navbar.js"></script>
     <Script>
         const hamburger = document.querySelector(".hamburger");
         const navLinks = document.querySelector(".nav-links");
@@ -562,6 +572,18 @@
             navLinks.classList.toggle("open");
             links.forEach(link => {
                 link.classList.toggle("fade");
+                document.getElementById('platform').innerText = 'Platform';
+                document.getElementById('capabilities').innerText = 'Capabilities';
+                document.getElementById('whoweserve').innerText = 'Who we serve';
+                document.getElementById('resources').innerText = 'Resoursces';
+                document.getElementById('company').innerText = 'Company';
+                document.getElementById('sign_in').innerText = 'Sign In';
+                document.getElementById('contact-us').innerText = ' Contact Us';
+                document.getElementById('platform').removeAttribute('href');
+                document.getElementById('capabilities').removeAttribute('href');
+                document.getElementById('whoweserve').removeAttribute('href');
+                document.getElementById('resources').removeAttribute('href');
+                document.getElementById('company').removeAttribute('href');
             });
 
             //Hamburger Animation

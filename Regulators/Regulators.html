@@ -37,54 +37,50 @@ Online HTML, CSS and JavaScript editor to run code online.
   p,
   ul,
   li {
-      margin: 0;
-      padding: 0;
+    margin: 0;
+    padding: 0;
   }
 
   /* Importer la police Roboto depuis Google Fonts */
   @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
   /* Appliquer la police à vos éléments */
-  body {
-      font-family: "Roboto", sans-serif;
-  }
-
   /* Styles pour l'arrière-plan dégradé bleu-violet */
   body {
-      /* background-image: linear-gradient(to top, #7FFFD4, #0F52BA); */
-      background-repeat: repeat;
-      background-position: center;
-      /* Mode de fusion pour superposer l'image */
-      background-blend-mode: overlay;
+    /* background-image: linear-gradient(to top, #7FFFD4, #0F52BA); */
+    background-repeat: repeat;
+    background-position: center;
+    /* Mode de fusion pour superposer l'image */
+    background-blend-mode: overlay;
   }
 
   body::after {
-      /* Opacité de l'image superposée */
-      content: "";
-      display: block;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      /* background: url("https://github.com/berru-g/scroll-effect/blob/main/src/img/back.png?raw=true") center/cover; */
-      opacity: 0.3;
-      /* Modifier l'opacité ici */
-      pointer-events: none;
+    /* Opacité de l'image superposée */
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: url("https://github.com/berru-g/scroll-effect/blob/main/src/img/back.png?raw=true") center/cover; */
+    opacity: 0.3;
+    /* Modifier l'opacité ici */
+    pointer-events: none;
   }
 
   /*scroll effect*/
   .scroll-section {
-      /* padding: 15px 50px; */
-      color: #000;
-      opacity: 0;
-      transform: translateX(-50px);
-      transition: opacity 0.5s, transform 0.5s;
+    /* padding: 15px 50px; */
+    color: #000;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s, transform 0.5s;
   }
 
   .scroll-section.visible {
-      opacity: 1;
-      transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
   }
 
   .reveal {
@@ -93,6 +89,7 @@ Online HTML, CSS and JavaScript editor to run code online.
     opacity: 0;
     transition: 1s all ease;
   }
+
   .reveal.active {
     transform: translateY(0);
     opacity: 1;
@@ -100,264 +97,277 @@ Online HTML, CSS and JavaScript editor to run code online.
 
   /* Animation sign */
   @keyframes nectarStrokeAnimation {
-      0% {
-        stroke-dashoffset: 1;
-        opacity: 0;
-      }
-
-      1% {
-        opacity: 1;
-      }
-
-      100% {
-        stroke-dashoffset: 0;
-      }
-    }
-
-    .nectar-highlighted-text .nectar-scribble {
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 2;
-    }
-
-    .nectar-highlighted-text em.animated .nectar-scribble path {
-      stroke-linecap: round;
-      opacity: 1;
-      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-    }
-
-    .nectar-highlighted-text .nectar-scribble path {
-      stroke-dasharray: 1;
+    0% {
       stroke-dashoffset: 1;
       opacity: 0;
     }
 
-    .nectar-highlighted-text em.animated .nectar-scribble path {
-      stroke-linecap: round;
+    1% {
       opacity: 1;
-      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
     }
 
-    .nectar-highlighted-text[data-style="scribble"] em {
-      background-image: none !important;
+    100% {
+      stroke-dashoffset: 0;
     }
+  }
 
-    body .nectar-scribble.squiggle-underline {
-      width: 185px;
-      height: 22px;
-    }
+  .nectar-highlighted-text .nectar-scribble {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  .nectar-highlighted-text em.animated .nectar-scribble path {
+    stroke-linecap: round;
+    opacity: 1;
+    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
+
+  .nectar-highlighted-text .nectar-scribble path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    opacity: 0;
+  }
+
+  .nectar-highlighted-text em.animated .nectar-scribble path {
+    stroke-linecap: round;
+    opacity: 1;
+    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
+
+  .nectar-highlighted-text[data-style="scribble"] em {
+    background-image: none !important;
+  }
+
+  body .nectar-scribble.squiggle-underline {
+    width: 180px;
+    height: 22px;
+  }
+
+  .nectar-highlighted-text .nectar-scribble {
+    position: absolute;
+    top: 35px;
+    z-index: 5;
+  }
+
+  @media screen and (max-width:650px) {
 
     .nectar-highlighted-text .nectar-scribble {
-      position: absolute;
-      top: 58px;
-      left: 250px;
-      z-index: 5;
-    }
-    @media screen and (max-width:650px) {
-      
-      .nectar-highlighted-text .nectar-scribble {
       /* position: absolute; */
-      top: 106px;
-      left: 20px;
+      top: 36px;
       z-index: 5;
     }
-    }
+  }
 
-    .nectar-highlighted-text .nectar-scribble path {
-      stroke-dasharray: 1;
-      stroke-dashoffset: 1;
-      opacity: 0;
-    }
 
-    .nectar-highlighted-text em.animated .nectar-scribble path {
-      stroke-linecap: round;
-      opacity: 1;
-      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-    }
+  .nectar-highlighted-text .nectar-scribble path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    opacity: 0;
+  }
+
+  .nectar-highlighted-text em.animated .nectar-scribble path {
+    stroke-linecap: round;
+    opacity: 1;
+    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
 </style>
+
 <body>
- <!-- nav bar start -->
- <nav>
-  <div class="logo">
-    <a href="../index.html">
-      <img class="logoo" src="../images/index/head-logo-360.png" alt="Logo Image" width="160px" height="60px"/>
+  <!-- nav bar start -->
+  <nav>
+    <div class="logo">
+      <a href="../index.html">
+        <img class="logoo" src="../images/index/head-logo-360.png" alt="Logo Image" width="160px" height="60px" />
       </a>
-  </div>
-  <div class="hamburger">
+    </div>
+    <div class="hamburger">
       <div class="line1"></div>
       <div class="line2"></div>
       <div class="line3"></div>
-  </div>
-  <ul class="nav-links">
-      <li class="show show1" style="padding: 1rem"> <span class="line">
-              <a href="../PlatForm-page/PlatForm.html">Platform</a></span>
-          <ul id="submenu">
-              <a href="../OurApproach/OurApproach.html">Our Approach</a>
-              <a href="../OurData/OurData.html">Our Data</a>
-              <a href="../Regulators/Regulators.html"> Regulators</a>
-              <a href="../TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
-          </ul>
+    </div>
+    <ul class="nav-links" id="initial">
+      <li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
+          <a href="../PlatForm-page/PlatForm.html" id="platform" onclick="platform1()">Platform</a></span>
+
+        <ul id="submenu">
+          <a href="../OurApproach/OurApproach.html" id="approach">Our Approach</a>
+          <a href="../OurData/OurData.html">Our Data</a>
+          <a href="../Regulators/Regulators.html"> Regulators</a>
+          <a href="../TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
+        </ul>
       </li>
-      <li class="show show1" style="padding: 1rem;"><span class="line"><a href="">Capabilities</a></span>
-          <ul id="submenu">
-              <a href="../Oligation-Inventory/obligations.html">Obligations Inventory</a>
-              <a href="../Scenario-planning/scenerio.html">Scenario Planning</a>
-              <a href="../Horizon-Scanning/horizonScanning.html">Horizon Scanning</a>
-              <a href="../Audit-Trail/Audit.html">Audit Trail</a>
-              <a href="../Explore/explore.html">Explore Use Cases</a>
-          </ul>
+      <li class="show show1" style="padding: 1rem;"><span class="line" id="active_page"><a href="" id="capabilities"
+            onclick="capabilities1()">Capabilities</a></span>
+        <ul id="submenu">
+          <a href="../Oligation-Inventory/obligations.html">Obligations Inventory</a>
+          <a href="../Scenario-planning/scenerio.html"><span>Scenario Planning</span></a>
+          <a href="../Horizon-Scanning/horizonScanning.html">Horizon Scanning</a>
+          <a href="../Audit-Trail/Audit.html">Audit Trail</a>
+          <a href="../Explore/explore.html">Explore Use Cases</a>
+        </ul>
       </li>
-      <li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html">Who We
-                  Serve</a></span>
-          <ul id="submenu">
-              <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
-              <a href="../Mortage-Lenders/MortgageLenders.html">Mortgage Lenders</a>
-              <a href="../Fintech/FinTech.html">FinTech</a>
-              <a href="../Professional/professional.html">Professional Services</a>
-          </ul>
+      <li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html"
+            id="whoweserve">Who We
+            Serve</a></span>
+        <ul id="submenu">
+          <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
+          <a href="../Mortage-Lenders/MortgageLenders.html">Mortgage Lenders</a>
+          <a href="../Fintech/FinTech.html">FinTech</a>
+          <a href="../Professional/professional.html">Professional Services</a>
+        </ul>
       </li>
-      <li class="show show1" style="padding: 1rem"><span class="line"> <a href="../Resources/Resources.html">Resources</a></span>
-          <ul id="submenu">
-              <a href="../WhatisReg/whatis.html">What is RegTech?</a>
-              <a href="../Blogs/blogs.html">Blog</a>
-              <a href="../Resources/Resources.html">Resources</a>
-              <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
-          </ul>
+      <li class="show show1" style="padding: 1rem"><span class="line"> <a href="../Resources/Resources.html"
+            id="resources">Resources</a></span>
+        <ul id="submenu">
+          <a href="../WhatisReg/whatis.html">What is RegTech?</a>
+          <a href="../Blogs/blogs.html">Blog</a>
+          <a href="../Resources/Resources.html">Resources</a>
+          <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
+        </ul>
       </li>
-      <li class="show show1" style="padding: 1rem"><span class="line"><a href="../OurTeam/ourteam.html">Company</a></span>
-          <ul id="submenu">
-              <a href="../OurTeam/ourteam.html">Our Team</a>
-              <a href="../Diversity/DiversityEquityandInclusion.html">Diversity, Equity, and Inclusion</a>
-              <a href="../Careers/Careers.html">Careers</a>
-          </ul>
+      <li class="show show1" style="padding: 1rem"><span class="line"><a href="../OurTeam/ourteam.html"
+            id="company">Company</a></span>
+        <ul id="submenu">
+          <a href="../OurTeam/ourteam.html">Our Team</a>
+          <a href="../Diversity/DiversityEquityandInclusion.html">Diversity, Equity, and Inclusion</a>
+          <a href="../Careers/Careers.html">Careers</a>
+        </ul>
       </li>
-      <li class="login-button show show1"><a href="../Signin/sign.html">Sign
-              In</a>
+
+
+      <li class="login-button show show1"><a href="../Signin/sign.html" id="sign_in">Sign
+          In</a>
       </li>
       <li class="join-button show show1">
-          <a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;">
-              Contact Us
-          </a>
+        <a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;" id="contact-us">
+          Contact Us
+        </a>
       </li>
       <li class="show show1" style="display: none; font-size: xx-small;">360 RegTech</li>
-  </ul>
-</nav>
-<!-- nav bar end -->
+    </ul>
+    <!-- <ul class="nav-links" id="platforms">
+        <li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
+            <a href="../PlatForm-page/PlatForm.html" id="platform" onclick="platform1();linkSetter()">Platform</a></span>
+    </ul> -->
+
+  </nav>
+  <!-- nav bar end -->
 
   <div class="container-fluid base">
     <div class="container ">
-    <div class="row">
-      <div class="col-sm-12" style="height: 120px !important;"></div>
-    </div>
-    <div class="row p-3 mt-1 my-" style="margin-left: -50px;">
-      <div class="col-sm-9 p-4 mt-3 mx-4 mediaScr" >
-        <div class="mb-4">
+      <div class="row">
+        <div class="col-sm-12" style="height: 120px !important;"></div>
+      </div>
+      <div class="row p-3 mt-1 my-" style="margin-left: -65px;">
+        <div class="col-sm-9 p-4 mt-3 mx-4 mediaScr">
           <h1 class="nectar-highlighted-text" data-style="scribble" data-exp="default" data-user-color="true"
             style="color: #ffffff;-webkit-text-stroke: thin;font-weight: 700;" data-using-custom-color="false"
-            data-animation-delay="false" data-color="" data-color-gradient=""> Regulatory  <em class="animated">Coverage<svg
-                class="nectar-scribble squiggle-underline" role="presentation" viewBox="-347 -30.1947 694 96.19"
-                preserveAspectRatio="none">
+            data-animation-delay="false" data-color="" data-color-gradient=""> Regulatory <em
+              class="animated">Coverage<svg class="nectar-scribble squiggle-underline" role="presentation"
+                viewBox="-347 -30.1947 694 96.19" preserveAspectRatio="none">
                 <path style="animation-duration: 1.8s;"
                   d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
                   stroke="#03d5cc" pathLength="1" stroke-width="14" fill="none"></path>
               </svg></em></h1>
           </h1>
+          <br>
+          <br>
+
+          <!-- <h1 style="color:#ffffff ;font-weight: 900;">Regulatory Coverage</h1><br> -->
+          <h4 class="text-white" style="font-weight: 500;" class="mt-5">360 RegTech provides the industry’s most
+            thorough intelligence for<br>
+            every regulation in
+            our platform.</h4>
         </div>
-        
-        <!-- <h1 style="color:#ffffff ;font-weight: 900;">Regulatory Coverage</h1><br> -->
-        <h4 class="text-white" style="font-weight: 500;" class="mt-5">360 RegTech provides the industry’s most thorough intelligence  for<br>
-           every regulation in
-          our platform.</h4>
       </div>
-    </div>     
+    </div>
   </div>
-  </div>
-  <div class="container-fluid mt-3 p-3">
-    <div class="container">
-    <div class="row mt-2 p-3">
-      <div class="col-sm-5 p-1 ">
-        <div class="p-5 scroll-section">
-          <h2 style="color:#253859 ;-webkit-text-stroke: medium; font-size: 35px;"> U.S. Federal Regulators</h2>
-          <p style="color: #253859;font-weight: 600;font-size: large;">For banks and other financial firms that operate <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-12 col-lg-6">
+        <section class="scroll-section">
+          <h2 style="color:#253859 ;-webkit-text-stroke: medium; font-size: 35px;margin-top: 90px;"> U.S. Federal
+            Regulators</h2>
+          <p style="color: #253859;font-weight: 400;font-size: 20px;">For banks and other financial firms that
+            operate <br>
             nationally in the United States.
           </p>
-          <p style="color: #253859;"> <i> To learn how 360 RegTech can help you stay ahead of federal regulations, please
+          <br>
+          <p> <i style="color: #253859 !important;"> To learn how 360 RegTech can help you stay ahead of federal
+              regulations,
+              please
               contact
               us.</i></p>
           <br>
-          <button class="btn btn text-white mx-2" style="background-color:#03d5cc ;width: 200px;height: 60px;"><b>TALK
+          <button class="btn sales-btn text-white" style="background-color:#03d5cc ;width: 200px;height: 60px;"><b>TALK
               TO
               SALES</b></button>
-        </div>
-
+        </section>
       </div>
-      <div class=" col-sm-7">
+
+      <div class="col-sm-6 col-md-12 col-lg-6">
         <section class="scroll-section">
-           <img src="reg-1.png" alt="Image" width="100%" height="427" class="img-res">
-           <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, tempora voluptatum?</p> -->
+          <img src="reg-1.png" alt="Image" width="100%" height="427" class="img-res barimg">
         </section>
       </div>
     </div>
   </div>
-  </div>
-  <div class="container-fluid mt-1 p-1">
-    <div class="container">
-    <div class="row mt-2 p-1">
-      <div class="col-sm-5 p-1">
-        <div class="p-5 mx-2 scroll-section">
-          <h2 style="color:#253859 ;color:#253859 ;-webkit-text-stroke: medium; font-size: 35px;"> <b>U.S. State Regulators</b> </h2>
-          <p style="color: #253859;font-weight: 600;font-size:16px;">For state and community banks and other  small to<br>
-            medium-sized financial institutions  that must comply <br> with state regulations.
-          </p>
-          <p style="color: #253859;"><i>To learn how 360 RegTech can help you stay ahead of state regulations, please contact
-              us.</i>
-
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-12 col-lg-6">
+        <section class="scroll-section">
+          <h2 style="color:#253859 ;-webkit-text-stroke: medium; font-size: 35px;margin-top: 90px;"> U.S. State
+            Regulators</h2>
+          <p style="color: #253859;font-weight: 400;font-size: 20px;">For state and community banks and other small
+            to
+            medium-sized financial institutions that must comply with state regulations.
           </p>
           <br>
-          <button class="btn btn text-white mx-2" style="background-color:#03d5cc ;width: 200px;height: 60px;"><b>TALK
+          <p style="color: #253859;"> <i> To learn how 360 RegTech can help you stay ahead of state regulations, please
+              contact
+              us.</i></p>
+          <br>
+          <button class="btn sales-btn text-white" style="background-color:#03d5cc ;width: 200px;height: 60px;"><b>TALK
               TO
               SALES</b></button>
-        </div>
-
+        </section>
       </div>
-      <div class="col-sm-7">
+      <div class="col-sm-6 col-md-12 col-lg-6">
         <section class="scroll-section">
-           <img src="reg-2.png" alt="" width="100%" height="427" class="img-res">
+          <img src="reg-2.png" alt="Image" width="100%" height="427" class="img-res barimg">
         </section>
       </div>
     </div>
   </div>
-</div>
-  <div class="container-fluid mt-3 p-1">
   <div class="container">
-      <div class="row mt-2 p-1">
-      <div class="col-sm-5 p-1">
-        <div class="p-5 scroll-section">
-          <h2 style="color:#253859 ;color:#253859 ;-webkit-text-stroke: medium; font-size: 35px;">Europe, APAC and Other Global Regulators</h2>
-          <p style="color: #253859;font-size: 16px;font-weight: 700;">For large financial institutions that operate
+    <div class="row">
+      <div class="col-sm-6 col-md-12 col-lg-6">
+        <section class="scroll-section">
+          <h2 style="color:#253859 ;-webkit-text-stroke: medium; font-size: 35px;margin-top: 90px;">Europe, APAC and
+            Other Global Regulators</h2>
+          <p style="color: #253859;font-weight: 400;font-size: 20px;">For large financial institutions that operate
             globally.
           </p>
-          <p style="color: #253859;"><i>To learn how 360 RegTech can help you stay ahead of global regulations, please
+          <br>
+          <p style="color: #253859;"> <i> To learn how 360 RegTech can help you stay ahead of global regulations, please
               contact
               us.</i></p>
           <br>
-          <button class="btn btn text-white mx-2" style="background-color:#03d5cc ;width: 200px;height: 60px;"><b>TALK
+          <button class="btn sales-btn text-white" style="background-color:#03d5cc ;width: 200px;height: 60px;"><b>TALK
               TO
               SALES</b></button>
-        </div>
-
+        </section>
       </div>
-      <div class=" col-sm-7">
+      <div class="col-sm-6 col-md-12 col-lg-6">
         <section class="scroll-section">
-          <img src="reg-3.png" alt="" width="100%" height="427" class="img-res">
+          <img src="reg-3.png" alt="Image" width="100%" height="427" class="img-res barimg">
         </section>
       </div>
     </div>
   </div>
-</div>
- 
-<div class="container-fluid" style="background-image: url(../images/360regtech_cta-bg-1.jpg);
+  <div class="container-fluid" style="background-image: url(../images/360regtech_cta-bg-1.jpg);
   background-repeat: no-repeat;background-size: cover;">
     <div class="container">
       <div class="row">
@@ -369,18 +379,17 @@ Online HTML, CSS and JavaScript editor to run code online.
           line-height: 28px; "><span style="color: #ffffff;">Turn compliance into a competitive
                 advantage</span></h6>
             <h2 style="text-align: center; font-size: 42.5px;
-          line-height: 38.25px; font-family: Mulish;
+          line-height: 38.25px;
           font-weight: 600;letter-spacing: -0.05em;"><strong><span style="color: #ffffff;">Talk to a solutions
                   specialist
                   today</span></strong></h2>
           </div>
           <div class="pt-5" style="text-align: center;">
-            <button class="btn text-white hover-sm" style="background: #03d5cc;
+            <button class="btn text-white sales-btn" style="background: #03d5cc;
                                         border-color: #03d5cc;
                                         color: #ffffff;
                                         line-height: 15px;
-                                        font-family: Mulish;
-                                        padding: 12px 24px;text-align: center;
+                                        text-align: center;
                                         font-size: 14px;
                                        padding: 15px 22px;
                                          "><strong>REQUEST A DEMO</strong>
@@ -397,11 +406,11 @@ Online HTML, CSS and JavaScript editor to run code online.
       <div class="row">
         <div class="col-md-4 mt-5 text-white">
           <!-- <h5 style="color: #03d5cc; margin-top: 15px"> -->
-              <div><img class="logoo" src="../images/index/footer-logo.jpg" alt="Logo Image" width=" 160px" height=" 60px"
-                      style="margin-left:25px !important" /></div>
+          <div><img class="logoo" src="../images/index/footer-logo.jpg" alt="Logo Image" width=" 160px" height=" 60px"
+              style="margin-left:25px !important" /></div>
           Compliance, Uncomplicated.
           </h5>
-        </div>  
+        </div>
         <div class="col-md-4 mt-5">
           <div class="row">
             <div class="col-6">
@@ -416,19 +425,22 @@ Online HTML, CSS and JavaScript editor to run code online.
                 <a href="../Regulators/Regulators.html" id="footer-hover">Regulators</a>
               </p>
               <p style="padding-top: 10px; font-size: 15px">
-                <a href="../TechnologyPartners/TechnologyPartners.html" id="footer-hover">Technology Partners</a>
+                <a href="../TechnologyPartners/TechnologyPartners.html" id="footer-hover">Technology
+                  Partners</a>
               </p>
             </div>
             <div class="col-6">
               <p style="color: white"><strong>Capabilities</strong></p>
               <p style="padding-top: 10px; font-size: 15px">
-                <a href="../Oligation-Inventory/obligations.html" id="footer-hover">Obligations Inventory</a>
+                <a href="../Oligation-Inventory/obligations.html" id="footer-hover">Obligations
+                  Inventory</a>
               </p>
               <p style="padding-top: 10px; font-size: 15px">
                 <a href="../Scenario-planning/scenerio.html" id="footer-hover">Scenario Planning</a>
               </p>
               <p style="padding-top: 10px; font-size: 15px">
-                <a href="../Horizon-Scanning/horizonScanning.html" id="footer-hover">Horizon Scanning</a>
+                <a href="../Horizon-Scanning/horizonScanning.html" id="footer-hover">Horizon
+                  Scanning</a>
               </p>
               <p style="padding-top: 10px; font-size: 15px">
                 <a href="../Audit-Trail/Audit.html" id="footer-hover">Audit Trail</a>
@@ -450,7 +462,8 @@ Online HTML, CSS and JavaScript editor to run code online.
                 <a href="../Resources/Resources.html" id="footer-hover">Resources</a>
               </p>
               <p style="padding-top: 10px; font-size: 15px">
-                <a href="../Customer-Stories/Customerstories.html" id="footer-hover">Customer Stories</a>
+                <a href="../Customer-Stories/Customerstories.html" id="footer-hover">Customer
+                  Stories</a>
               </p>
             </div>
             <div class="col-6">
@@ -475,13 +488,13 @@ Online HTML, CSS and JavaScript editor to run code online.
     <div class="container">
       <div class="row py-3">
         <!-- <div class="col-md-1"></div> -->
-        <div class="col-md-4">
+        <div class="col-md-5">
           <p style="color: white; font-size: 12px">
-            © 2023 360 RegTech. All Rights Reserved.
+            © 2023 360 RegTech All Rights Reserved.
           </p>
         </div>
-        <div class="col-md-6"></div>
-        <div class="col-md-2">
+        <div class="col-md-4"></div>
+        <div class="col-md-3">
           <span style="color: white; padding-right: 12px"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="24"
               fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
               <path
@@ -509,6 +522,7 @@ Online HTML, CSS and JavaScript editor to run code online.
   <!-- fotter end -->
 
   <script src="script.js"></script>
+  <script src="../navbar.js"></script>
   <Script>
     const hamburger = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
@@ -519,6 +533,18 @@ Online HTML, CSS and JavaScript editor to run code online.
       navLinks.classList.toggle("open");
       links.forEach(link => {
         link.classList.toggle("fade");
+        document.getElementById('platform').innerText = 'Platform';
+        document.getElementById('capabilities').innerText = 'Capabilities';
+        document.getElementById('whoweserve').innerText = 'Who we serve';
+        document.getElementById('resources').innerText = 'Resoursces';
+        document.getElementById('company').innerText = 'Company';
+        document.getElementById('sign_in').innerText = 'Sign In';
+        document.getElementById('contact-us').innerText = ' Contact Us';
+        document.getElementById('platform').removeAttribute('href');
+        document.getElementById('capabilities').removeAttribute('href');
+        document.getElementById('whoweserve').removeAttribute('href');
+        document.getElementById('resources').removeAttribute('href');
+        document.getElementById('company').removeAttribute('href');
       });
 
       //Hamburger Animation
@@ -535,41 +561,41 @@ Online HTML, CSS and JavaScript editor to run code online.
     }
 // first div scroll animation
   </Script>
-   <script>
+  <script>
     $(window).on("scroll", function () {
-        $(".scroll-section").each(function () {
-            if (isElementInViewport(this)) {
-                $(this).addClass("visible");
-            }
-        });
+      $(".scroll-section").each(function () {
+        if (isElementInViewport(this)) {
+          $(this).addClass("visible");
+        }
+      });
     });
     function isElementInViewport(el) {
-        var rect = el.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <=
-            (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
     }
-</script>
-<script>
-  function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
+  </script>
+  <script>
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
       }
     }
-  }
-  window.addEventListener("scroll", reveal);
-</script>
+    window.addEventListener("scroll", reveal);
+  </script>
 
 </body>
 
