@@ -9,7 +9,9 @@ function platform1() {
         document.getElementById('resources').removeAttribute('onclick');
         document.getElementById('company').removeAttribute('onclick');
 
-        document.getElementById('capabilities').setAttribute('href', '../OurApproach/OurApproach.html');
+        // document.getElementById('capabilities').style.transitionDuration = '2s';
+
+        document.getElementById('capabilities').setAttribute('href', '/OurApproach/OurApproach.html');
         document.getElementById('whoweserve').setAttribute('href', '../OurData/OurData.html');
         document.getElementById('resources').setAttribute('href', '../Regulators/Regulators.html');
         document.getElementById('company').setAttribute('href', '../TechnologyPartners/TechnologyPartners.html');
@@ -28,6 +30,7 @@ function platform1() {
         document.getElementById('whoweserve').removeAttribute('href');
         document.getElementById('resources').removeAttribute('href');
         document.getElementById('company').removeAttribute('href');
+        document.getElementById('sign_in').removeAttribute('href');
         document.getElementById('capabilities').setAttribute("onclick", "capabilities1()");
         document.getElementById('whoweserve').setAttribute("onclick", "whoweserve1()");
         document.getElementById('resources').setAttribute("onclick", "resources1()");
@@ -114,7 +117,7 @@ function setCapabilities() {
     document.getElementById('whoweserve').innerText = 'Scenario Planning';
     document.getElementById('resources').innerText = 'Horizon Scanning';
     document.getElementById('company').innerText = 'Audit Trail';
-    document.getElementById('sign_in').innerText = '';
+    document.getElementById('sign_in').innerText = 'Explore Use Cases';
     document.getElementById('contact-us').innerText = '';
 }
 function setWhoWeServe() {
@@ -155,6 +158,7 @@ function toggleClicker() {
         document.getElementById('company').removeAttribute('href');
     }
     if (counter == 2) {
+        counter = 0;
         document.getElementById('platform').innerText = 'Platform';
         document.getElementById('capabilities').innerText = 'Capabilities';
         document.getElementById('whoweserve').innerText = 'Who we serve';

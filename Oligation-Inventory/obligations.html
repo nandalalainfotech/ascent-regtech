@@ -50,35 +50,39 @@
 <body>
   <!-- nav bar start -->
   <nav>
-    <a href="../index.html">
-      <img class="logoo" src="../images/index/head-logo-360.png" alt="Logo Image" width="160px" height="60px" />
-    </a>
-    <div class="hamburger">
+    <div class="">
+      <a href="../index.html">
+        <img src="../images/index/head-logo-360.png" alt="Logo Image" class="logoo" width="160px" height="60px"/>
+      </a>
+    </div>
+    <div class="hamburger" onclick="toggleClicker()">
       <div class="line1"></div>
       <div class="line2"></div>
       <div class="line3"></div>
     </div>
-    <ul class="nav-links">
-      <li class="show show1" style="padding: 1rem"> <span class="line">
-          <a href="../PlatForm-page/PlatForm.html">Platform</a></span>
+    <ul class="nav-links" id="initial">
+      <li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
+          <a href="../PlatForm-page/PlatForm.html" id="platform" onclick="platform1()">Platform</a></span>
+
         <ul id="submenu">
-          <a href="../OurApproach/OurApproach.html">Our Approach</a>
+          <a href="../OurApproach/OurApproach.html" id="approach">Our Approach</a>
           <a href="../OurData/OurData.html">Our Data</a>
           <a href="../Regulators/Regulators.html"> Regulators</a>
           <a href="../TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
         </ul>
       </li>
-      <li class="show show1" style="padding: 1rem;"><span class="line" id="active_page"><a
-            href="">Capabilities</a></span>
+      <li class="show show1" style="padding: 1rem;"><span class="line" id="active_page"><a href="" id="capabilities"
+            onclick="capabilities1()">Capabilities</a></span>
         <ul id="submenu">
-          <a href="../Oligation-Inventory/obligations.html"><span>Obligations Inventory</span></a>
-          <a href="../Scenario-planning/scenerio.html">Scenario Planning</a>
+          <a href="../Oligation-Inventory/obligations.html">Obligations Inventory</a>
+          <a href="../Scenario-planning/scenerio.html"><span>Scenario Planning</span></a>
           <a href="../Horizon-Scanning/horizonScanning.html">Horizon Scanning</a>
           <a href="../Audit-Trail/Audit.html">Audit Trail</a>
           <a href="../Explore/explore.html">Explore Use Cases</a>
         </ul>
       </li>
-      <li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html">Who We
+      <li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html"
+            id="whoweserve" onclick="whoweserve1()">Who We
             Serve</a></span>
         <ul id="submenu">
           <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
@@ -87,8 +91,8 @@
           <a href="../Professional/professional.html">Professional Services</a>
         </ul>
       </li>
-      <li class="show show1" style="padding: 1rem"><span class="line"> <a
-            href="../Resources/Resources.html">Resources</a></span>
+      <li class="show show1" style="padding: 1rem"><span class="line"> <a href="../Resources/Resources.html"
+            id="resources" onclick="resources1()">Resources</a></span>
         <ul id="submenu">
           <a href="../WhatisReg/whatis.html">What is RegTech?</a>
           <a href="../Blogs/blogs.html">Blog</a>
@@ -96,24 +100,31 @@
           <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
         </ul>
       </li>
-      <li class="show show1" style="padding: 1rem"><span class="line"><a
-            href="../OurTeam/ourteam.html">Company</a></span>
+      <li class="show show1" style="padding: 1rem"><span class="line"><a href="../OurTeam/ourteam.html"
+            id="company" onclick="company1()">Company</a></span>
         <ul id="submenu">
           <a href="../OurTeam/ourteam.html">Our Team</a>
           <a href="../Diversity/DiversityEquityandInclusion.html">Diversity, Equity, and Inclusion</a>
           <a href="../Careers/Careers.html">Careers</a>
         </ul>
       </li>
-      <li class="login-button show show1"><a href="../Signin/sign.html">Sign
+
+
+      <li class="login-button show show1"><a href="../Signin/sign.html" id="sign_in">Sign
           In</a>
       </li>
       <li class="join-button show show1">
-        <a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;">
+        <a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;" id="contact-us">
           Contact Us
         </a>
       </li>
       <li class="show show1" style="display: none; font-size: xx-small;">360 RegTech</li>
     </ul>
+    <!-- <ul class="nav-links" id="platforms">
+        <li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
+            <a href="../PlatForm-page/PlatForm.html" id="platform" onclick="platform1();linkSetter()">Platform</a></span>
+    </ul> -->
+
   </nav>
   <!-- nav bar end -->
   <br><br>
@@ -182,7 +193,8 @@
       </div>
       <div class="col-sm-12 col-md-12 col-lg-6 d-flex align-items-center">
         <section class="scroll-section" id="start_with">
-          <strong style="color: #28bebb;" class="cut">Start with Our Impact <span>Questionnaire</span></strong>
+          <strong style="color: #28bebb;" class="cut">Start with Our Impact <span class="display_Q">Questionnaire</span>
+            </strong>
           <p class="noise-para" class="pt-2">Through 360 RegTech impact
             questionnaire, you’ll easily identify laws
             and regulations that apply to your business.
@@ -195,10 +207,11 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-md-12 col-lg-7 d-flex align-items-center" id="placing">
+      <div class="col-sm-12 col-md-12 col-lg-6 d-flex align-items-center" id="placing">
         <section class="scroll-section">
           <div id="start_with">
-            <strong style="color: #28bebb;" class="cut">Drill Down into Your Specific <span>Obligations</span></strong>
+            <!-- <strong style="color: #28bebb;" class="cut">Drill Down into Your <span class="">Specific</span> <span class="">Obligations</span></strong> -->
+            <h2 style="color: #28bebb;" class="drill" >Drill Down into Your Specific Obligations</h2>
             <p class="noise-para" class="pt-2">Once you have the full
               obligations inventory,
               the platform selects only the specific obligations
@@ -208,17 +221,16 @@
           </div>
         </section>
       </div>
-      <div class="col-sm-12 col-md-12 col-lg-5">
+      <div class="col-sm-12 col-md-12 col-lg-6">
         <section class="scroll-section">
-          <div>
+          <div class="text-center" style="text-align: left;">
             <img src="img-2.png" class="resp-image-down" alt="" width="100%">
-            <!-- <img src="img-3.png" class="resp-image-down-2" alt="" width="100%"> -->
           </div>
         </section>
       </div>
     </div>
   </div>
-  <div class="container-fluid py-5 px-5" style="background-color: #183460">
+  <div class="container-fluid py-5 px-5 mt-5" style="background-color: #183460">
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-lg-6 text-center">
@@ -611,6 +623,7 @@
       );
     }
   </script>
+  <script src="../navbar.js"></script>
 </body>
 
 </html>

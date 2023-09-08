@@ -285,6 +285,7 @@ body {
 @media screen and (max-width:480px) {
   .centerPos {
     margin-top: -4rem;
+    margin-left: 7rem;
   }
 
   .scenerio {
@@ -397,3 +398,16 @@ body {
   margin-inline-end: 0px;
   line-height: 1.2em;
 }
+@media (min-width: 400px) and (max-width: 500px) {
+.opportunities{
+  margin-left: 2.3rem;
+}
+.business{
+  margin-left: 2.3rem;
+}
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  .opportunities{
+    margin-left: 2.3rem;
+  }
+  }
