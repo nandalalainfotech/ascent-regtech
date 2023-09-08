@@ -21,8 +21,9 @@
 
 	<style>
 		.left {
-         text-align: left;
-        }
+			text-align: left;
+		}
+
 		body {
 			font-family: "Mulish";
 			color: #253859;
@@ -48,10 +49,11 @@
 				bottom: .50rem;
 			}
 		}
-         .blue:hover{
+
+		.blue:hover {
 			cursor: pointer;
 			color: #253859 !important;
-		 }
+		}
 
 		#Btn:hover {
 			bottom: .5rem;
@@ -79,13 +81,11 @@
 			font-size: 31.45px;
 			line-height: 0.5px;
 			font-weight: 900;
-			padding-bottom: 40px;
+
 		}
 
 		.rapid {
 			color: #fff;
-			font-family: Mulish;
-			text-transform: initial;
 			letter-spacing: -0.02em;
 			font-size: 41.45px;
 			font-weight: 800;
@@ -120,6 +120,7 @@
 
 
 		}
+	
 
 		.card-textt {
 			/* display: block;
@@ -131,44 +132,118 @@
 			text-align: left; */
 		}
 
-		.para{
+		.para {
 			font-weight: 500;
 			font-size: 18px;
+		}
+
+		.emerging {
+			font-size: 21px;
+			font-weight: 400;
+			color: #fff;
+		}
+		.compliance{
+			font-size:30px;
+			font-weight: 600;
+			letter-spacing: -0.05em;
+		}
+
+		@media screen and (max-width:0px) and (min-width:2560x) {
+			.center {
+				margin: auto;
+			}
+
+		}
+
+		@media screen and (max-width:768px) and (min-width:320px) {
+
+			.what {
+				color: #28bebb;
+				font-family: "Mulish";
+				letter-spacing: -0.02em;
+				font-size: 24px;
+				line-height: 0.5px;
+				font-weight: 900;
+				float: left !important;
+
+			}
+
+			.emerging {
+				color: #fff;
+				margin-top: 2rem;
+				font-size: 19px !important;
+				font-weight: 400 !important;
+				float: left !important;
+
+			}
+
+			.rapid {
+				color: #fff;
+				/* font-family:" Mulish"; */
+				letter-spacing: -0.02em;
+				font-size: 36.45px;
+				font-weight: 800;
+				float: left;
+				padding: 0% !important;
+
+			}.compliance{
+				font-size: 20px;
+			    font-weight: 600;
+			    letter-spacing: -0.05em;
+			}.reg{
+				font-size:30px;
+				
+			}.card-textt{
+				font-size:19px;
+				padding: 0 1em 1em;
+			}.head{
+				font-size: 23px !important;
+			}.head2{
+				font-size: 15px !important;
+				font-weight: 900 !important;
+			}.cat{
+				font-size: 33px !important;
+                font-weight: 600 !important;
+                line-height: 1;
+			}
 		}
 	</style>
 </head>
 
 <body>
 	<!-- nav bar start -->
-    <nav>
-		<a href="index.html">
-			<img class="logoo" src="../images/index/head-logo-360.png" alt="Logo Image" width="160px" height="60px"/>
-			</a>
+	<nav>
+		<div class="">
+			<img class="logoo" src="../images/index/head-logo-360.png" alt="Logo Image" width="160px" height="60px" />
+		</div>
 		<div class="hamburger">
 			<div class="line1"></div>
 			<div class="line2"></div>
 			<div class="line3"></div>
 		</div>
-		<ul class="nav-links">
-			<li class="show show1" style="padding: 1rem"> <span class="line">
-					<a href="../PlatForm-page/PlatForm.html">Platform</a></span>
+		<ul class="nav-links" id="initial">
+			<li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
+					<a href="../PlatForm-page/PlatForm.html" id="platform" onclick="platform1()">Platform</a></span>
+
 				<ul id="submenu">
-					<a href="../OurApproach/OurApproach.html">Our Approach</a>
+					<a href="../OurApproach/OurApproach.html" id="approach">Our Approach</a>
 					<a href="../OurData/OurData.html">Our Data</a>
 					<a href="../Regulators/Regulators.html"> Regulators</a>
 					<a href="../TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
 				</ul>
 			</li>
-			<li class="show show1" style="padding: 1rem;"><span class="line"><a href="">Capabilities</a></span>
+			<li class="show show1" style="padding: 1rem;"><span class="line" id="active_page"><a href=""
+						id="capabilities" onclick="capabilities1()">Capabilities</a></span>
 				<ul id="submenu">
 					<a href="../Oligation-Inventory/obligations.html">Obligations Inventory</a>
-					<a href="../Scenario-planning/scenerio.html">Scenario Planning</a>
+					<a href="../Scenario-planning/scenerio.html"><span>Scenario Planning</span></a>
 					<a href="../Horizon-Scanning/horizonScanning.html">Horizon Scanning</a>
 					<a href="../Audit-Trail/Audit.html">Audit Trail</a>
 					<a href="../Explore/explore.html">Explore Use Cases</a>
 				</ul>
 			</li>
-			<li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html">Who We
+			<li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html"
+						id="whoweserve">Who We
 						Serve</a></span>
 				<ul id="submenu">
 					<a href="../Financial-Services/FinancialServices.html">Financial Services</a>
@@ -177,7 +252,8 @@
 					<a href="../Professional/professional.html">Professional Services</a>
 				</ul>
 			</li>
-			<li class="show show1" style="padding: 1rem"><span class="line"> <a href="../Resources/Resources.html">Resources</a></span>
+			<li class="show show1" style="padding: 1rem"><span class="line"> <a href="../Resources/Resources.html"
+						id="resources">Resources</a></span>
 				<ul id="submenu">
 					<a href="../WhatisReg/whatis.html">What is RegTech?</a>
 					<a href="../Blogs/blogs.html">Blog</a>
@@ -185,36 +261,45 @@
 					<a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
 				</ul>
 			</li>
-			<li class="show show1" style="padding: 1rem"><span class="line"><a href="../OurTeam/ourteam.html">Company</a></span>
+			<li class="show show1" style="padding: 1rem"><span class="line"><a href="../OurTeam/ourteam.html"
+						id="company">Company</a></span>
 				<ul id="submenu">
 					<a href="../OurTeam/ourteam.html">Our Team</a>
 					<a href="../Diversity/DiversityEquityandInclusion.html">Diversity, Equity, and Inclusion</a>
 					<a href="../Careers/Careers.html">Careers</a>
 				</ul>
 			</li>
-			<li class="login-button show show1"><a href="../Signin/sign.html">Sign
+
+
+			<li class="login-button show show1"><a href="../Signin/sign.html" id="sign_in">Sign
 					In</a>
 			</li>
 			<li class="join-button show show1">
-				<a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;">
+				<a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;" id="contact-us">
 					Contact Us
 				</a>
 			</li>
 			<li class="show show1" style="display: none; font-size: xx-small;">360 RegTech</li>
 		</ul>
-	  </nav>
-	  <!-- nav bar end -->
-	<div class="container-fluid">
+		<!-- <ul class="nav-links" id="platforms">
+			<li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
+				<a href="../PlatForm-page/PlatForm.html" id="platform" onclick="platform1();linkSetter()">Platform</a></span>
+		</ul> -->
+
+	</nav>
+	<!-- nav bar end -->
+	<!-- <div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-12 text-white "
 				style="background-image: url(obligation_banner.png); margin-top: 4rem; background-position: center center; background-repeat: no-repeat;background-size: cover;">
 				<div class="row">
-					<div class="col-sm-8 ">
-						<div style="margin: 50px 0px 0px 50px;">
+					<div class="col-sm-8">
+						<div   class=" center" >
 
 							<h1 class="rapid">Rapid Review</h1>
-							<h2 class="what">What is RegTech?</h2>
-							<p style="font-size: 21px;font-weight: 400;">Emerging technology is helping financial firms
+							<h2 class="what" >What is RegTech?</h2>
+							<p class="emerging mt-5">Emerging
+								technology is helping financial firms
 								be more efficient, reduce regulatory risk, and lower their overall compliance costs.
 							</p>
 						</div>
@@ -222,13 +307,45 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
+
+	<div
+	class="container-fluid  "
+	style="
+	
+	background-image: url(our-approach-2.png);
+	background-repeat: no-repeat;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+    background-color: rgb(24, 52, 96);
+	
+	"
+	>
+	<div class="container">
+		<div class="row">
+			<div class="row">
+				<div class="col-sm-8">
+					<div    style="margin-top: 7rem;">
+
+						<h1 class="rapid">Rapid Review</h1>
+						<h2 class="what" >What is RegTech?</h2>
+						<p class="emerging mt-5">Emerging
+							technology is helping financial firms
+							be more efficient, reduce regulatory risk, and lower their overall compliance costs.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
 	<div class="container-fluid mt-4">
 		<div class="container">
 			<div class="col-12">
 				<div class="p-4">
-					<p style="font-size: 29px;font-weight: 600;letter-spacing: -0.05em;">Compliance is getting harder.
+					<p class="compliance">Compliance is getting harder.
 						Financial firms are
 						dealing with
 						more regulation, more changes, and more complexity than ever before. In the face of this looming
@@ -246,24 +363,37 @@
 			<div class="wpb_wrapper2 vc_custom_1687282133222">
 				<div class="px-4">
 					<ul>
-						<li><span class="blue" style="font-size: 1em;color:  #03d5cc;font-weight:500;"><b>What is RegTech</b></span>?</li>
-						<li><span class="blue" style="font-size: 1em;color:  #03d5cc;font-weight:500;"><b>A Brief History of
-								RegTech</b></span></li>
-						<li><span class="blue" style="font-size: 1em;color:  #03d5cc;font-weight:500;"><b>Benefits of RegTech</b></span>
+						<li><span class="blue" style="font-size: 1em;color:  #03d5cc;font-weight:500;"><b>What is
+									RegTech</b></span>?</li>
+						<li><span class="blue" style="font-size: 1em;color:  #03d5cc;font-weight:500;"><b>A Brief
+									History of
+									RegTech</b></span></li>
+						<li><span class="blue" style="font-size: 1em;color:  #03d5cc;font-weight:500;"><b>Benefits of
+									RegTech</b></span>
 						</li>
-						<li><span class="blue" style="font-size: 1em;color:  #03d5cc;font-weight:500;"><b>Understanding the RegTech
-								Universe</b></span></li>
-						<li><span  class="blue" style="font-size: 1em;color:  #03d5cc;font-weight:500;"><b>Implementing RegTech:
-								Problems and Solutions</b></span></li>
+						<li><span class="blue" style="font-size: 1em;color:  #03d5cc;font-weight:500;"><b>Understanding
+									the RegTech
+									Universe</b></span></li>
+						<li><span class="blue" style="font-size: 1em;color:  #03d5cc;font-weight:500;"><b>Implementing
+									RegTech:
+									Problems and Solutions</b></span></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div class="container ">
+		<div class="px-4 ">
+			<div >
+				<h2 style="font-weight: 900;font-size: 3rem;"><strong>—</strong></h2>
+			</div>
+		</div>
+	</div>
+	
 
 	<div class="container px-4 ">
 
-		<div class="container " >
+		<div class="container ">
 
 			<div class="card cards mt-5">
 				<div class="card-body">
@@ -286,16 +416,18 @@
 		<div class="container">
 			<div class="col-12">
 				<div class="p-4">
-					<p class="para">Rule changes have increased <span  class="blue"style="color:  #03d5cc;">500
+					<p class="para">Rule changes have increased <span class="blue" style="color:  #03d5cc;">500
 							percent</span> in the last decade. A new
-						regulatory update is implemented every 7 minutes, according to Thomson Reuters’ <span class="blue"
-							style="color:  #03d5cc;">2018 Cost of
+						regulatory update is implemented every 7 minutes, according to Thomson Reuters’ <span
+							class="blue" style="color:  #03d5cc;">2018 Cost of
 							Compliance Report.</span> Fines for non-compliance are becoming more frequent and more
 						severe. In 2019,
-						the <span class="blue" style="color:  #03d5cc;">Securities and Exchange Commission (SEC)</span> alone
-						issued<span  class="blue" style="color:  #03d5cc;">862 enforcement actions</span>, ordering
+						the <span class="blue" style="color:  #03d5cc;">Securities and Exchange Commission (SEC)</span>
+						alone
+						issued<span class="blue" style="color:  #03d5cc;">862 enforcement actions</span>, ordering
 						those in violation to pay more than $4.3 billion combined. The U.K.’s Financial Conduct
-						Authority (FCA)<span class="blue" style="color:  #03d5cc;">levied its largest personal fine ever</span>, also
+						Authority (FCA)<span class="blue" style="color:  #03d5cc;">levied its largest personal fine
+							ever</span>, also
 						in 2019.
 
 					</p>
@@ -321,8 +453,8 @@
 		<div class="container">
 			<div class="col-12">
 				<div class="p-4">
-					<h1 style="font-size:32px;font-weight: bolder;"><strong>A Brief History of RegTech</strong></h1>
-					<h2><strong><span style="font-size: 24px;font-weight: 900;
+					<h1 class="head" style="font-size:32px;font-weight: bolder;"><strong>A Brief History of RegTech</strong></h1>
+					<h2><strong><span  class="head2" style="font-size: 24px;font-weight: 900;
 					">The dawn of a new regulatory era</span></strong></h2>
 					<p class="para">The year was 2008 and the financial world was in chaos. Lehman Brothers
 						had imploded, the federal government took over Fannie and Freddie, and money-market funds broke
@@ -338,7 +470,7 @@
 						<section class="scroll-section">
 							<p style="font-size: 22px;font-weight:500;padding-bottom: 20px;color:#253859;letter-spacing: -0.02em;
 						">
-							The federal
+								The federal
 								government needed
 								to revive the public’s
 								trust in our
@@ -346,14 +478,15 @@
 							</p>
 						</section>
 					</div>
-				
+
 
 
 					<p class="para">This new era was epitomized by one single and massive piece of
 						legislation: <span class="blue" style="color:  #03d5cc;">the Dodd-Frank
 							Financial Reform Act.</span></p>
 					<p class="para">Dodd-Frank would mark a sea of change in the world of regulatory
-						compliance. Based on President Obama’s proposal for a <span class="blue" style="color:  #03d5cc;">“sweeping
+						compliance. Based on President Obama’s proposal for a <span class="blue"
+							style="color:  #03d5cc;">“sweeping
 							overhaul of the United States
 							financial regulatory system, a transformation on a scale not seen since the reforms that
 							followed the Great Depression</span>,” Dodd-Frank was undeniably expansive and ambitious.
@@ -370,7 +503,7 @@
 						era pre-Global Financial Crisis to the over-regulated era that would follow.</p>
 					<p class="para">The massive tolls this new regulatory era has brought to bear on
 						financial institutions is staggering.</p>
-					<h2 style="font-size: 24px;font-weight:900;letter-spacing:-0.05em"> The Rise of AI</h1>
+					<h2 class="head2" style="font-size: 24px;font-weight:900;letter-spacing:-0.05em"> The Rise of AI</h1>
 						<p class="para">Meanwhile, another tidal shift was beginning to disrupt nearly every
 							vertical (though some much faster than others) — the rise of artificial intelligence.
 
@@ -437,7 +570,7 @@
 		<div class="container">
 			<div class="col-12">
 				<div class="p-4">
-					<h2 style="font-size: 24px;font-weight:900;letter-spacing:-0.05em">The RegTech Revolution</h2>
+					<h2 class="head2" style="font-size: 24px;font-weight:900;letter-spacing:-0.05em">The RegTech Revolution</h2>
 
 					<p class="para">It was at this junction of the looming regulatory burden and the rise of
 						AI that RegTech was born.</p>
@@ -490,11 +623,13 @@
 						that the value they now offered was real and meaningful. </p>
 					<div class="col-10">
 						<section class="scroll-section">
-											
-							<p style="font-size: 23px;color:#253859;letter-spacing: -0.02em;">“RegTech is no longer just for early adopters. We’re starting to see
+
+							<p style="font-size: 23px;color:#253859;letter-spacing: -0.02em;">“RegTech is no longer just
+								for early adopters. We’re starting to see
 								the
 								actual, tangible benefits these technologies can provide.”</p>
-							<p  class="para" style="font-style:italic ;padding-bottom: 30px;color:#253859;">—Brian Clark, 360 RegTech
+							<p class="para" style="font-style:italic ;padding-bottom: 30px;color:#253859;">—Brian Clark,
+								360 RegTech
 								President and Founder,
 								<span class="blue" style="color:  #03d5cc;">Forecasting RegTech</span>.
 							</p>
@@ -509,7 +644,7 @@
 		<div class="container">
 			<div class="col-12">
 				<div class="p-4">
-					<h2 style="font-size:32px;
+					<h2 class="head" style="font-size:32px;
 					font-weight: 900;
 					text-transform: none;
 					letter-spacing: -0.05em;"><b>Benefits of RegTech</b></h2>
@@ -526,7 +661,7 @@
 							can
 							quickly parse and analyze raw legal text and extract valuable insights.
 						</p>
-						<p class="px-4 mt-4"style="font-size: 17px;">
+						<p class="px-4 mt-4" style="font-size: 17px;">
 							<span style="font-weight: 900;
 							text-transform: none;
 							letter-spacing: -0.05em;"><b>» Greater accuracy and comprehensiveness — </b></span>
@@ -536,7 +671,7 @@
 							exposure. Implementing the right technology (and integrating those technologies thoughtfully
 							where necessary) shores up gaps and creates a streamlined compliance process.
 						</p>
-						<p  class="px-4 mt-4" style="font-size: 18px;">
+						<p class="px-4 mt-4" style="font-size: 18px;">
 							<span style="font-weight: 900;
 							text-transform: none;
 							letter-spacing: -0.05em;"><b>» Greater internal alignment — </b></span>
@@ -548,7 +683,7 @@
 							stronger
 							culture of compliance.
 						</p>
-						<p  class="px-4 mt-4"style="font-size: 18px;">
+						<p class="px-4 mt-4" style="font-size: 18px;">
 							<span style="font-weight: 900;
 							text-transform: none;
 							letter-spacing: -0.05em;">
@@ -570,7 +705,7 @@
 		<div class="container">
 			<div class="col-12">
 				<div class="p-4">
-					<h2 style="font-weight: 900;">Understanding the RegTech Universe</h2>
+					<h2 class="head" style="font-weight: 900;">Understanding the RegTech Universe</h2>
 					<div class="container">
 						<p class="para" style="margin-top: 15px;">The list of those tangible benefits seems to
 							grow a little longer every day. The industry is flourishing and constantly finding new
@@ -628,17 +763,17 @@
 	<div class="container px-4">
 
 		<div class="row text-center">
-		
-			<p  style="font-size: 43px;font-weight:600">4 RegTech Categories</p>
+
+			<p class="cat" style="font-size: 43px;font-weight:600">4 RegTech Categories</p>
 			<div class="col-md-3 ">
 				<section class=" scroll-section">
 					<div class="card " style="border-radius: 0%;background-color: #EFF4F9;border:none">
 						<div class="card-body">
 							<div class="mt-3">
 								<span>
-								<i style="font-size: 30px; line-height: 30px; height: 30px; width: 30px; color:#03d5cc"
-									class="fa fa-binoculars">
-								</i>
+									<i style="font-size: 30px; line-height: 30px; height: 30px; width: 30px; color:#03d5cc"
+										class="fa fa-binoculars">
+									</i>
 								</span>
 							</div>
 							<div style="font-weight: 900;
@@ -652,7 +787,8 @@
 
 							<h5 class="card-title mt-4" style="color: #253859;">“Content”</h5>
 							<p class="card-text mt-4 " style="font-size: 13.6px;color: #253859;line-height: 27px;">Tools
-								that provide <em style="font-size: 17px;font-weight: 400;">regulatory content</em> content, usually in the form of a
+								that provide <em style="font-size: 17px;font-weight: 400;">regulatory content</em>
+								content, usually in the form of a
 								content
 								library, feed, or resource center. Content tools consolidate documents published by
 								regulators into one platform (including the laws, enforcement actions, guidance, rule
@@ -683,7 +819,8 @@
 
 							<h5 class="card-title mt-4" style="color: #253859;">“Knowledge”</h5>
 							<p class="card-text mt-4 " style="font-size: 13.6px;color: #253859;line-height: 27px;">
-								Technology that provides <em style="font-size: 17px;font-weight: 400;">regulatory knowledge</em> is a quantum leap
+								Technology that provides <em style="font-size: 17px;font-weight: 400;">regulatory
+									knowledge</em> is a quantum leap
 								beyond
 								content. Solutions in this category transform the raw text of regulatory documents into
 								actionable knowledge, such as the specific obligations that a firm must comply with.</p>
@@ -712,7 +849,8 @@
 							<h5 class="card-title mt-4" style="color: #253859;">“Containers”</h5>
 							<p class=" mt-4" style="font-size: 13.6px;color: #253859;line-height: 27px;">Technology that
 								includes GRC platforms and other workflow systems,
-								considered <em style="font-size: 17px;font-weight: 400;">containers</em> because they contain all of a firm’s regulatory information —
+								considered <em style="font-size: 17px;font-weight: 400;">containers</em> because they
+								contain all of a firm’s regulatory information —
 								including their regulatory obligations, controls, policies and procedures. Workflow
 								capabilities allow users to track and manage their compliance efforts.</p>
 						</div>
@@ -756,7 +894,7 @@
 		<div class="container">
 			<div class="col-12">
 				<div class="p-4">
-					<h2 style="font-weight: 900"><b>Implementing RegTech: Problems and Solutions</b></h2>
+					<h2 class="head" style="font-weight: 900"><b>Implementing RegTech: Problems and Solutions</b></h2>
 
 					<p class="para">RegTech stands at an exciting crossroads. The need for compliance
 						solutions in financial services has been demonstrated all too clearly, and the power of the
@@ -780,11 +918,15 @@
 				<section class="scroll-section">
 					<div class="card  left  p-4" style="border-radius: 0%;background-color: #EFF4F9;border:none">
 						<div class="card-body">
-							<p><span style="font-size: 130%;font-weight: 900;color: #253859;"><strong>Problem:</strong></span>
-								<span style="font-size:130%;color: #253859;">“I want to save time on horizon scanning and
-									research.” </p></span>
-								
-								<p style="font-size: 17px; color: #253859;padding: 5px;    letter-spacing: -0.02em;">Whether you have a full staff of compliance analysts or are a
+							<p><span
+									style="font-size: 130%;font-weight: 900;color: #253859;"><strong>Problem:</strong></span>
+								<span style="font-size:130%;color: #253859;">“I want to save time on horizon scanning
+									and
+									research.”
+							</p></span>
+
+							<p style="font-size: 17px; color: #253859;padding: 5px;    letter-spacing: -0.02em;">Whether
+								you have a full staff of compliance analysts or are a
 								compliance
 								team of one, countless hours are often dedicated to monitoring for new rules and changes
 								to
@@ -798,12 +940,15 @@
 			</div>
 			<div class="col-md-6">
 				<section class="scroll-section">
-					<div class="card  left p-4 " style="border-radius: 0%;background-color:  #253859;border:none;color: white;">
+					<div class="card  left p-4 "
+						style="border-radius: 0%;background-color:  #253859;border:none;color: white;">
 						<div class="card-body">
 							<p><span style="font-size: 130%;font-weight: 900; "><strong>Solution:</strong></span>
 								<span style="font-size: 130%;">
-								Consider a regulatory content provider</p></span>
-								<p style="font-size: 17px; ">With the majority of regulatory documents centralized in one platform,
+									Consider a regulatory content provider
+							</p></span>
+							<p style="font-size: 17px; ">With the majority of regulatory documents centralized in one
+								platform,
 								your
 								team can more easily research and review updates and other regulatory documents such as
 								press releases, guidance notes, and enforcement actions – without needing to sift
@@ -828,11 +973,15 @@
 						<div class="card-body">
 
 
-							<p><span style="font-size: 130%;font-weight: 900;color: #253859;"><strong>Problem:</strong></span>
-								<span style="font-size:130%;color: #253859;">“I want to know my firm’s regulatory obligations, as well as the impact
-								of
-								regulatory changes.”</p></span>
-								<p style="font-size: 17px; color: #253859;">Compliance workers analyze dense regulatory text and synthesize that information into
+							<p><span
+									style="font-size: 130%;font-weight: 900;color: #253859;"><strong>Problem:</strong></span>
+								<span style="font-size:130%;color: #253859;">“I want to know my firm’s regulatory
+									obligations, as well as the impact
+									of
+									regulatory changes.”
+							</p></span>
+							<p style="font-size: 17px; color: #253859;">Compliance workers analyze dense regulatory text
+								and synthesize that information into
 								obligations that apply to the firm. Once they have compiled these obligations, personnel
 								must constantly track rule changes and additions and then determine how those changes
 								impact
@@ -849,16 +998,18 @@
 			<div class="col-md-6">
 				<section class="scroll-section">
 
-					<div class="card  p-5" style="border-radius: 0%;background-color:  #253859;border:none;color: white;">
+					<div class="card  p-5"
+						style="border-radius: 0%;background-color:  #253859;border:none;color: white;">
 						<div class="card-body left ">
 							<p><span style="font-size: 130%;font-weight: 900; "><strong>Solution:</strong></span>
 								<span style="font-size: 130%;">
 									Consider a regulatory knowledge provider that identifies your obligations
-								and
-								rule changes
+									and
+									rule changes
 								</span>.
 							</p>
-							<p style="font-size: 17px; ">If you are looking for a way to help your team surface the relevant areas of regulation—
+							<p style="font-size: 17px; ">If you are looking for a way to help your team surface the
+								relevant areas of regulation—
 								i.e.
 								the individual actions your firm must take (or refrain from taking) in order to be
 								compliant
@@ -885,12 +1036,15 @@
 						<div class="card-body left">
 
 
-							<p> <span style="font-size: 130%;font-weight: 900;color: #253859;"><strong>Problem:</strong> </span>
-								<span style="font-size:130%;color: #253859;">
-							    “I want to manage my daily compliance activities, including creating and
-								maintaining controls, policies and procedures.”</p>
+							<p> <span style="font-size: 130%;font-weight: 900;color: #253859;"><strong>Problem:</strong>
 								</span>
-							<p style="font-size: 17px; color: #253859;">After identifying their firm’s obligations, it is standard for teams to write their
+								<span style="font-size:130%;color: #253859;">
+									“I want to manage my daily compliance activities, including creating and
+									maintaining controls, policies and procedures.”
+							</p>
+							</span>
+							<p style="font-size: 17px; color: #253859;">After identifying their firm’s obligations, it
+								is standard for teams to write their
 								policies
 								and procedures around those requirements. During this process, it usually becomes clear
 								as
@@ -908,16 +1062,18 @@
 			<div class="col-md-6">
 				<section class="scroll-section">
 
-					<div class="card left p-5 " style="border-radius: 0%;background-color:  #253859;border:none;color: white;">
+					<div class="card left p-5 "
+						style="border-radius: 0%;background-color:  #253859;border:none;color: white;">
 						<div class="card-body">
 							<p><span style="font-size: 130%;font-weight: 900;"><strong>Solution:</strong></span>
 								<span style="font-size: 130%;">
-								Consider a GRC platform or other workflow system that allows you to house
-								and
-								project manage your compliance activities.
+									Consider a GRC platform or other workflow system that allows you to house
+									and
+									project manage your compliance activities.
 								</span>
 							</p>
-							<p style="font-size: 17px; ">GRC (governance, risk and compliance) platforms are commonplace, especially in larger
+							<p style="font-size: 17px; ">GRC (governance, risk and compliance) platforms are
+								commonplace, especially in larger
 								organizations, and can help automate menial workflow tasks, tie together disparate data,
 								and
 								house controls, policies, and procedures. Team members can assign tasks, track progress,
@@ -937,7 +1093,9 @@
 				<div class="p-4">
 
 					<div class="container">
-						<p style="font-size: 17px;margin-top: 15px;">If you are looking for a solution that can accomplish all of these use cases, it is likely that your compliance operation requires multiple solutions, combined to create a full-scale compliance technology stack. 
+						<p style="font-size: 17px;margin-top: 15px;">If you are looking for a solution that can
+							accomplish all of these use cases, it is likely that your compliance operation requires
+							multiple solutions, combined to create a full-scale compliance technology stack.
 						</p>
 						<p style="font-size: 17px;">A common misconception is that “end-to-end compliance” can be
 							accomplished with one vendor. While an attractive vision, it is one that is unattainable (at
@@ -948,7 +1106,7 @@
 							the massive complexity and scope of regulation.
 						</p>
 
-						<h2 style="font-weight: 900;"><b>Market Impact of RegTech</b></h2>
+						<h2 class="head" style="font-weight: 900;"><b>Market Impact of RegTech</b></h2>
 						<p style="font-size: 17px;">Beyond the clear operational benefits to businesses, RegTech also
 							has significant implications for the market as a whole. Historically, spurring business and
 							protecting consumers have been viewed as two objectives that are diametrically opposed, at
@@ -960,7 +1118,8 @@
 							create a world where it is easier for businesses to comply, unlocking both opportunity and
 							business value without compromising consumer protection. And that makes a better world, for
 							everyone. </p>
-						<p style="font-size: 17px;font-weight: 900;"><b>To keep learning about RegTech,<span class="blue" style="color:#03d5cc"> sign
+						<p style="font-size: 17px;font-weight: 900;"><b>To keep learning about RegTech,<span
+									class="blue" style="color:#03d5cc"> sign
 									up for our monthly Cliff Notes newsletter.</span></b> </p>
 
 					</div>
@@ -978,16 +1137,21 @@
 						Keep exploring with these blog articles:</p>
 					<div class="px-4">
 						<ul style="font-size: 1em;">
-							<li><span class="blue" style="color:  #03d5cc;font-weight:500;"><b>9 Common RegTech Questions,
-								Answered</b></span></li>
-							<li><span  class="blue" style="color:  #03d5cc;font-weight:500;"><b>Setting up a regulatory compliance
-								framework: The first (and most difficult) step</b></span></li>
-							<li><span class="blue" style="color:  #03d5cc;font-weight:500;"><b>How an Integrated Risk Management (IRM)
-								approach can transform your organization</b></span></li>
-							<li><span class="blue" style="color:  #03d5cc;font-weight:500;"><b>What are ‘granular obligations’ in
-								RegTech?</b></span></li>
-							<li><span class="blue"  style="color:  #03d5cc;font-weight:500;"><b>360 RegTech RegulationAI™: How does it work
-								and why is it different?</b></span></li>
+							<li><span class="blue" style="color:  #03d5cc;font-weight:500;"><b>9 Common RegTech
+										Questions,
+										Answered</b></span></li>
+							<li><span class="blue" style="color:  #03d5cc;font-weight:500;"><b>Setting up a regulatory
+										compliance
+										framework: The first (and most difficult) step</b></span></li>
+							<li><span class="blue" style="color:  #03d5cc;font-weight:500;"><b>How an Integrated Risk
+										Management (IRM)
+										approach can transform your organization</b></span></li>
+							<li><span class="blue" style="color:  #03d5cc;font-weight:500;"><b>What are ‘granular
+										obligations’ in
+										RegTech?</b></span></li>
+							<li><span class="blue" style="color:  #03d5cc;font-weight:500;"><b>360 RegTech
+										RegulationAI™: How does it work
+										and why is it different?</b></span></li>
 						</ul>
 					</div>
 
@@ -1006,8 +1170,9 @@
 					<section class="scroll-section">
 						<div class="card-body">
 							<img src="implementation-800px.jpg" alt="" width="100%">
-							<h3  style="color: #253859;font-weight: 900;"><b>Our Approach</b></h3>
-							<p style="color: #253859;font-size: 18px;">Learn why financial firms choose 360 RegTech to automate the most tedious
+							<h3 style="color: #253859;font-weight: 900;"><b>Our Approach</b></h3>
+							<p style="color: #253859;font-size: 18px;">Learn why financial firms choose 360 RegTech to
+								automate the most tedious
 								parts
 								of regulatory compliance.</p>
 							<div class="pt-2">
@@ -1025,7 +1190,8 @@
 						<div class="card-body">
 							<img src="gap-800px.jpg" alt="" width="100%">
 							<h3 style="color: #253859;font-weight: 900;"><b>Customer Stories</b></h3>
-							<p style="color: #253859;font-size: 18px;">Read about how firms like yours used 360 RegTech to significantly reduce
+							<p style="color: #253859;font-size: 18px;">Read about how firms like yours used 360 RegTech
+								to significantly reduce
 								their
 								regulatory and reputational risk.</p>
 							<div class="pt-2">
@@ -1044,7 +1210,8 @@
 						<div class="card-body">
 							<img src="news-800px.jpg" alt="" width="100%">
 							<h3 style="color: #253859;font-weight: 900;"><b>In the News</b></h3>
-							<p style="color: #253859;font-size: 18px;">Discover more about the 360 RegTech story and how we’re making waves in
+							<p style="color: #253859;font-size: 18px;">Discover more about the 360 RegTech story and how
+								we’re making waves in
 								financial services and RegTech.</p>
 							<div class="pt-2">
 								<button class="btn text-white" id="Btn"><span
@@ -1067,7 +1234,8 @@
 					<div style=" color: white;">
 						<h6>Request a Demo
 						</h6>
-						<h4 class="pt-4 scroll-section" style="font-weight: 900; color: white;">See how top firms use 360 RegTech to win at compliance.</h4>
+						<h4 class="pt-4 scroll-section" style="font-weight: 900; color: white;">See how top firms use
+							360 RegTech to win at compliance.</h4>
 						<div class="pt-4">
 							<button class="btn text-white" id="Btn"><span
 									style="font-size: .8rem;font-weight: 500; padding: 5px;"><b>REQUEST
@@ -1083,8 +1251,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 mt-5">
-					<div><img class="logoo" src="../images/index/footer-logo.jpg" alt="Logo Image" width=" 160px" height=" 60px"
-						style="margin-left:25px !important" /></div>
+					<div><img class="logoo" src="../images/index/footer-logo.jpg" alt="Logo Image" width=" 160px"
+							height=" 60px" style="margin-left:25px !important" /></div>
 					<h5 style="color: #03D5CC;">Compliance, Uncomplicated.</h5>
 				</div>
 				<div class="col-md-4 mt-5">
@@ -1161,6 +1329,8 @@
 	</div>
 	<!-- fotter end -->
 	<script src="script.js"></script>
+	<script src="../navbar.js"></script>
+
 	<Script>
 		const hamburger = document.querySelector(".hamburger");
 		const navLinks = document.querySelector(".nav-links");
@@ -1171,6 +1341,18 @@
 			navLinks.classList.toggle("open");
 			links.forEach(link => {
 				link.classList.toggle("fade");
+				document.getElementById('platform').innerText = 'Platform';
+				document.getElementById('capabilities').innerText = 'Capabilities';
+				document.getElementById('whoweserve').innerText = 'Who we serve';
+				document.getElementById('resources').innerText = 'Resoursces';
+				document.getElementById('company').innerText = 'Company';
+				document.getElementById('sign_in').innerText = 'Sign In';
+				document.getElementById('contact-us').innerText = ' Contact Us';
+				document.getElementById('platform').removeAttribute('href');
+				document.getElementById('capabilities').removeAttribute('href');
+				document.getElementById('whoweserve').removeAttribute('href');
+				document.getElementById('resources').removeAttribute('href');
+				document.getElementById('company').removeAttribute('href');
 			});
 
 			//Hamburger Animation
