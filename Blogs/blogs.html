@@ -22,7 +22,7 @@
     <style>
         body {
             letter-spacing: 0.02em;
-            font-family: Mulish;
+            font-family: "Mulish";
         }
 
         @keyframes nectarStrokeAnimation {
@@ -82,12 +82,6 @@
             z-index: -1;
         }
 
-        .nectar-highlighted-text .nectar-scribble {
-            left: 500px;
-            top: 200px;
-
-        }
-
         @media screen and (max-width:500px) {
             body .nectar-scribble.squiggle-underline {
                 left: 40px;
@@ -106,13 +100,26 @@
             }
         } */
 
-        /* @media screen and (min-width:1000px) {
+        @media screen and (min-width:1000px) {
             .nectar-highlighted-text .nectar-scribble {
-                left: 733px;
+                left: 500px;
                 top: 200px;
 
+            } .nectar-scribble.squiggle-underline {
+                width: 13rem !important;
+                height: 20px !important;
             }
-        } */
+        }
+
+
+        @media only screen and (min-width: 2560px) {
+            .nectar-highlighted-text .nectar-scribble {
+                left: 66rem;
+                top: 200px;
+            }
+
+            ;
+        }
 
         @media screen and (max-width:1000px) and (min-width:780px) {
             .nectar-highlighted-text .nectar-scribble {
@@ -123,17 +130,26 @@
 
         @media screen and (max-width:780px) and (min-width:600px) {
             .nectar-highlighted-text .nectar-scribble {
-                left: 40px;
-                top: 250px;
-            }
+                
+                left: 2rem;
+                top: 16rem;
+            } 
+             .nectar-scribble.squiggle-underline {
+            width: 9rem !important;
+            height: 20px !important;
+           }
         }
-
-        @media screen and (max-width:600px) and (min-width:500) {
+       
+        @media screen and (max-width:600px) and (min-width:500px) {
             .nectar-highlighted-text .nectar-scribble {
                 top: 250px;
                 left: 170px
             }
+
         }
+        
+
+       
 
         .nectar-highlighted-text .nectar-scribble path {
             stroke-dasharray: 1;
@@ -141,13 +157,7 @@
             opacity: 0;
         }
 
-        @media screen and (max-width:1200) {
-            .nectar-highlighted-text .nectar-scribble {
-                left: 500px;
-                top: 200px;
 
-            }
-        }
 
         .nectar-highlighted-text .animated .nectar-scribble path {
             stroke-linecap: round;
@@ -270,18 +280,7 @@
         }
 
 
-        /* Réinitialisation des styles par défaut */
-        body,
-        h1,
-        h2,
-        p,
-        ul,
-        li {
-            margin: 0;
-            padding: 0;
-        }
 
-        /* Importer la police Roboto depuis Google Fonts */
 
 
 
