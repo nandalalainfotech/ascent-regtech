@@ -106,3 +106,46 @@
 #active_page{
   border-bottom: 1px solid #28BEBB;
 }
+
+.images_content_right {
+  display: none;
+}
+
+.images_content_left {
+  display: block;
+}
+
+@media (min-width: 1px) and (max-width: 690px) {
+  .images_content_right {
+      display: block;
+  }
+
+  .images_content_left {
+      display: none;
+  }
+  .scroll-section .see_how_you {
+    color: #ffffff;
+    width: 319px !important;
+    font-size: 24.05px !important;
+    text-align: center;
+    line-height: 30px;
+}
+}
+
+@media (min-width: 691px) and (max-width: 991px) {
+  .scroll-section .see_how_you {
+    color: #ffffff;
+    width: 636px !important;
+    font-size: 24.05px !important;
+    text-align: center;
+    line-height: 30px;
+}
+}
+
+
+.scroll-section .see_how_you {
+  color: #ffffff;
+  width: 382px;
+  font-size: 31.45px;
+  text-align: center;
+}
