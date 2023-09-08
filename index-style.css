@@ -296,7 +296,7 @@
     font-size: 2rem;
     font-weight: 500;
     -webkit-text-stroke: thin;
-    margin-left: 4rem;
+    margin-left: 0rem;
     padding-right: 4.3rem;
 }
 
@@ -401,7 +401,7 @@
 
     .nectar-shape-divider-wrap {
         position: absolute !important;
-        top: 16.5rem !important;
+        top: 17.5rem !important;
         bottom: 0;
         left: 0;
         right: 0;
@@ -774,9 +774,10 @@
         color: #253859;
         margin-top: 20px;
         font-family: "Mulish";
-        font-size: 30PX;
+        font-size: 20PX;
+        font-weight: 900;
         overflow-y: hidden;
-        margin-right: -67px;
+        margin-right: -67px !important;
         margin-left: 0rem;
     }
 
