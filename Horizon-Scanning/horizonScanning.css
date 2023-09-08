@@ -139,29 +139,36 @@ body {
 .horizon {
     font-size: 44px;
 }
-.cut,.cut1{
+
+.cut,
+.cut1 {
     font-size: 30px;
     font-weight: 500;
-  }
+}
+
 @media screen and (max-width:480px) {
     .horizon {
         font-size: 35px;
         font-weight: 100;
     }
-    .cut{
+
+    .cut {
         font-size: 25px;
         font-weight: 300;
         margin-left: 35px;
-      }
-      .cut1{
+    }
+
+    .cut1 {
         font-size: 25px;
         font-weight: 300;
         /* margin-left: 35px; */
-      }
-      #content_one button{
+    }
+
+    #content_one button {
         margin-left: 35px;
-      }
-      #content_one p{
+    }
+
+    #content_one p {
         font-size: 15px;
         color: #253859;
         line-height: 2rem;
@@ -169,5 +176,14 @@ body {
         font-family: "Mulish";
         margin-left: 35px;
         webkit-font-smoothing: antialiased;
-      }
+    }
+}
+
+/* Tab View */
+@media (min-width: 700px) and (max-width: 900px) {
+    .centerPos {
+        width: 400px;
+        margin-left: 80px;
+    }
+
 }
