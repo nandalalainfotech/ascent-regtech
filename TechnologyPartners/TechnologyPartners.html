@@ -15,6 +15,9 @@ Online HTML, CSS and JavaScript editor to run code online.
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" id="redux-google-fonts-salient_redux-css"
+    href="https://fonts.googleapis.com/css?family=Mulish%3A700%2C400%2C500%2C800%2C600%2C900%2C200%2C500italic&amp;subset=latin&amp;display=swap&amp;ver=6.3"
+    type="text/css" media="all">
   <title>Browser</title>
 </head>
 
@@ -34,466 +37,399 @@ Online HTML, CSS and JavaScript editor to run code online.
 </style>
 
 <body>
- <!-- nav bar start -->
- <nav>
-  <div class="logo">
-    <a href="../index.html">
-      <img class="logoo" src="../images/index/head-logo-360.png" alt="Logo Image" width="160px" height="60px"/>
+  <!-- nav bar start -->
+  <nav>
+    <div class="">
+      <a href="../index.html">
+        <img class="logoo" src="../images/index/head-logo-360.png" alt="Logo Image" width="160px" height="60px" />
       </a>
-  </div>
-  <div class="hamburger">
+    </div>
+    <div class="hamburger">
       <div class="line1"></div>
       <div class="line2"></div>
       <div class="line3"></div>
-  </div>
-  <ul class="nav-links">
-      <li class="show show1" style="padding: 1rem"> <span class="line">
-              <a href="../PlatForm-page/PlatForm.html">Platform</a></span>
-          <ul id="submenu">
-              <a href="../OurApproach/OurApproach.html">Our Approach</a>
-              <a href="../OurData/OurData.html">Our Data</a>
-              <a href="../Regulators/Regulators.html"> Regulators</a>
-              <a href="../TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
-          </ul>
+    </div>
+    <ul class="nav-links" id="initial">
+      <li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
+          <a href="../PlatForm-page/PlatForm.html" id="platform" onclick="platform1()">Platform</a></span>
+
+        <ul id="submenu">
+          <a href="../OurApproach/OurApproach.html" id="approach">Our Approach</a>
+          <a href="../OurData/OurData.html">Our Data</a>
+          <a href="../Regulators/Regulators.html"> Regulators</a>
+          <a href="../TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
+        </ul>
       </li>
-      <li class="show show1" style="padding: 1rem;"><span class="line"><a href="">Capabilities</a></span>
-          <ul id="submenu">
-              <a href="../Oligation-Inventory/obligations.html">Obligations Inventory</a>
-              <a href="../Scenario-planning/scenerio.html">Scenario Planning</a>
-              <a href="../Horizon-Scanning/horizonScanning.html">Horizon Scanning</a>
-              <a href="../Audit-Trail/Audit.html">Audit Trail</a>
-              <a href="../Explore/explore.html">Explore Use Cases</a>
-          </ul>
+      <li class="show show1" style="padding: 1rem;"><span class="line" id="active_page"><a href="" id="capabilities"
+            onclick="capabilities1()">Capabilities</a></span>
+        <ul id="submenu">
+          <a href="../Oligation-Inventory/obligations.html">Obligations Inventory</a>
+          <a href="../Scenario-planning/scenerio.html"><span>Scenario Planning</span></a>
+          <a href="../Horizon-Scanning/horizonScanning.html">Horizon Scanning</a>
+          <a href="../Audit-Trail/Audit.html">Audit Trail</a>
+          <a href="../Explore/explore.html">Explore Use Cases</a>
+        </ul>
       </li>
-      <li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html">Who We
-                  Serve</a></span>
-          <ul id="submenu">
-              <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
-              <a href="../Mortage-Lenders/MortgageLenders.html">Mortgage Lenders</a>
-              <a href="../Fintech/FinTech.html">FinTech</a>
-              <a href="../Professional/professional.html">Professional Services</a>
-          </ul>
+      <li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html"
+            id="whoweserve">Who We
+            Serve</a></span>
+        <ul id="submenu">
+          <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
+          <a href="../Mortage-Lenders/MortgageLenders.html">Mortgage Lenders</a>
+          <a href="../Fintech/FinTech.html">FinTech</a>
+          <a href="../Professional/professional.html">Professional Services</a>
+        </ul>
       </li>
-      <li class="show show1" style="padding: 1rem"><span class="line"> <a href="../Resources/Resources.html">Resources</a></span>
-          <ul id="submenu">
-              <a href="../WhatisReg/whatis.html">What is RegTech?</a>
-              <a href="../Blogs/blogs.html">Blog</a>
-              <a href="../Resources/Resources.html">Resources</a>
-              <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
-          </ul>
+      <li class="show show1" style="padding: 1rem"><span class="line"> <a href="../Resources/Resources.html"
+            id="resources">Resources</a></span>
+        <ul id="submenu">
+          <a href="../WhatisReg/whatis.html">What is RegTech?</a>
+          <a href="../Blogs/blogs.html">Blog</a>
+          <a href="../Resources/Resources.html">Resources</a>
+          <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
+        </ul>
       </li>
-      <li class="show show1" style="padding: 1rem"><span class="line"><a href="../OurTeam/ourteam.html">Company</a></span>
-          <ul id="submenu">
-              <a href="../OurTeam/ourteam.html">Our Team</a>
-              <a href="../Diversity/DiversityEquityandInclusion.html">Diversity, Equity, and Inclusion</a>
-              <a href="../Careers/Careers.html">Careers</a>
-          </ul>
+      <li class="show show1" style="padding: 1rem"><span class="line"><a href="../OurTeam/ourteam.html"
+            id="company">Company</a></span>
+        <ul id="submenu">
+          <a href="../OurTeam/ourteam.html">Our Team</a>
+          <a href="../Diversity/DiversityEquityandInclusion.html">Diversity, Equity, and Inclusion</a>
+          <a href="../Careers/Careers.html">Careers</a>
+        </ul>
       </li>
-      <li class="login-button show show1"><a href="../Signin/sign.html">Sign
-              In</a>
+
+
+      <li class="login-button show show1"><a href="../Signin/sign.html" id="sign_in">Sign
+          In</a>
       </li>
       <li class="join-button show show1">
-          <a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;">
-              Contact Us
-          </a>
+        <a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;" id="contact-us">
+          Contact Us
+        </a>
       </li>
       <li class="show show1" style="display: none; font-size: xx-small;">360 RegTech</li>
-  </ul>
-</nav>
-<!-- nav bar end -->
-  <div class="container-fluid initial-img">
-    <div class="container">
+    </ul>
+    <!-- <ul class="nav-links" id="platforms">
+          <li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
+              <a href="../PlatForm-page/PlatForm.html" id="platform" onclick="platform1();linkSetter()">Platform</a></span>
+      </ul> -->
 
-  
-    <div class="row">
-      <div class="col-sm-12" style="height: 120px !important;">
+  </nav>
+  <!-- nav bar end -->
+
+
+
+
+  <div class="container-fluid"
+    style="background-image: url(img-1.jpg);background-repeat: no-repeat;background-size: cover;height: 490px">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-9 mt-5">
+          <div style="height: 150px">
+          </div>
+          <div>
+            <h1 style="line-height: 1.1em; font-weight: normal;color: #fff;">Technology Partners</h1>
+          </div>
+          <div style="margin-top: 20px;">
+            <h3 style="color: #28bebb; line-height: 1.1em; font-weight: normal;">Enhance your solution. Enable
+              compliance at every organizational touchpoint.</h3>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-3">
+
+        </div>
       </div>
     </div>
-    <div class="row p-5" id="reg-head">
-      <div class="col-sm-9 p-4" style="margin-left: -20px;">
-        <h1 class="text-white">Technology Partners</h1>
-        <h3 style="color:#03d5cc ;">Enhance your solution. Enable compliance at every organizational touchpoint.
-        </h3>
-      </div>
-    </div>
-  </div>
-  </div>
-  <!-- <section class="scroll-section"> -->
-  <div class="container-fluid p-5 reveal">
-    <div class="container">
 
-    
-    <div class="row p-2">
 
-      <div class="col-sm-6 p-1">
-        <br><br>
-        <h2 style="color: #03d5cc;">Why partner with 360 RegTech?</h2><br>
-        <div class="row">
-          <div class="col-sm-10">
-            <p style="font-size: large;text-align: inherit;"> Partnering with 360 RegTech helps  organizations up-level their compliance
-               operations, mapping compliance 
-              requirements to internal controls, policies,  and procedures, and enabling compliance  at
-              every
-              organizational touchpoint.
+  </div>
+
+  <div class="container mt-5 reveal">
+    <div class="conatiner">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6" style="justify-content: center;width: 100%;position: relative;">
+          <div style="height: 50px">
+          </div>
+          <div style="margin-bottom: 20px;">
+            <h3 style="color: #28bebb; line-height: 1.1em; font-weight: normal;">Why partner with
+              360 Regtech?</h3>
+          </div>
+          <div style="padding-right: 100px;">
+            <p style="font-size: 1.1em;display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;">Partnering with 360 Regtech helps organizations up-level their
+              compliance
+              operations, mapping compliance requirements to internal controls, policies, and procedures, and enabling
+              compliance at every organizational touchpoint.</p>
+          </div>
+          <div style="height: 20px">
+          </div>
+          <div>
+            <h3 style="color: #28bebb; line-height: 1.1em; font-weight: normal;">Empower clients and customers</h3>
+          </div>
+          <div style="padding-right: 100px;">
+            <p style="font-size: 1.1em;display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;">The 360 Regtech integration removes the need for manual tracking and analysis of
+              regulatory websites. Compliance teams save time and resources as AI-powered tools automatically identify
+              and flag rules and rule changes applicable to specific business units. When regulatory rule changes occur,
+              obligations are automatically updated, alerting the user to assess the impact and take necessary actions.
             </p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-10">
-            <h1 style="color: #03d5cc;">Empower clients and customers</h1><br>
-          </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
 
-          <div class="row">
-            <!-- <div class="col-sm-1"></div> -->
-            <div class="col-sm-12 mx-2">
-              <p>The 360 RegTech integration removes the need <br> for manual tracking and analysis of <br> regulatory
-                websites.
-                Compliance teams <br> save time and resources as AI-powered <br> tools automatically identify and flag
-                rules <br> and
-                rule changes applicable to specific <br> business units. When regulatory rule <br> changes occur,
-                obligations are <br>
-                automatically updated, alerting the user <br> to assess the impact and take necessary <br> actions.
-              </p>
+          <div class="row p-3"
+            style="background-color: rgb(243, 244, 241);border-radius: 2%;box-shadow: 0 30px 60px rgba(0,0,0,.15);opacity: 1;">
+            <div class="col-sm-12 mt-5">
+              <form method="post">
+                <div class="text-center">
+                  <h2 style="color: #253859;">Get Started</h2>
+                </div>
+                <div class="row">
+
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1" required>First Name</label><span style="color: red;">*</span>
+                      <input type="fname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1" required>Last Name</label><span style="color: red;">*</span>
+                      <input type="lname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1" required>Job Title Name</label><span style="color: red;">*</span>
+                      <input type="fname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1" required>Business Email </label><span style="color: red;">*</span>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1" required>Phone Number </label><span style="color: red;">*</span>
+                      <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1" required>Company Name </label><span style="color: red;">*</span>
+                      <input type="Cname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <label for="sel1">Country/ Region</label><span style="color: red;">*</span>
+                      <select class="form-control" id="sel1">
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>England</option>
+                        <option>Russia</option>
+                      </select>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Please share any specific objectives or goals you would
+                        like
+                        to discuss with our sales team. </label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <p style="font-size: x-small;">
+                      By submitting this form, you agree that you have read our <a href="#"
+                        style=" color: #03d5cc;">Privacy
+                        Policy</a> and consent to 360 RegTech's
+                      cookie policy and receiving marketing communications. You can unsubscribe at any time.
+                    </p>
+                  </div>
+                </div>
+
+                <br>
+                <button type="submit" class="btn btn-1 text-white" style="background-color: #03d5cc !important;">Request
+                  A
+                  Demo</button>
+                <br>
+                <br>
+              </form>
 
             </div>
           </div>
 
+
         </div>
       </div>
-
-      <div class="col-sm-6 p-1">
-        <div class="row p-3"
-          style="background-color: rgb(243, 244, 241);border-radius: 2%;box-shadow: 0 30px 60px rgba(0,0,0,.15);opacity: 1;">
-          <div class="col-sm-12 mt-5">
-            <form method="post">
-              <div class="text-center">
-                <h2 style="color: #253859;">Get Started</h2>
-              </div>
-              <div class="row">
-
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1" required>First Name</label><span style="color: red;">*</span>
-                    <input type="fname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1" required>Last Name</label><span style="color: red;">*</span>
-                    <input type="lname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1" required>Job Title Name</label><span style="color: red;">*</span>
-                    <input type="fname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1" required>Business Email </label><span style="color: red;">*</span>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1" required>Phone Number </label><span style="color: red;">*</span>
-                    <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1" required>Company Name </label><span style="color: red;">*</span>
-                    <input type="Cname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="form-group">
-                    <label for="sel1">Country/ Region</label><span style="color: red;">*</span>
-                    <select class="form-control" id="sel1">
-                      <option>India</option>
-                      <option>USA</option>
-                      <option>England</option>
-                      <option>Russia</option>
-                    </select>
-                  </div>
-                </div>
-
-              </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Please share any specific objectives or goals you would
-                      like
-                      to discuss with our sales team. </label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <p style="font-size: x-small;">
-                    By submitting this form, you agree that you have read our <a href="#"
-                      style=" color: #03d5cc;">Privacy
-                      Policy</a> and consent to 360 RegTech's
-                    cookie policy and receiving marketing communications. You can unsubscribe at any time.
-                  </p>
-                </div>
-              </div>
-
-              <br>
-              <button type="submit" class="btn btn-1 text-white" style="background-color: #03d5cc !important;">Request
-                A
-                Demo</button>
-              <br>
-              <br>
-            </form>
-
-          </div>
-        </div>
-      </div>
-
-
     </div>
   </div>
-  </div>
-  <!-- </section> -->
 
-
-  <div class="container-fluid reveal">
-    <div class="container">
-    <div class="row ">
-      <div class="col-sm-6 p-5">
-        <div class="row">
-          <div class="col-sm-12 " style="height: 80px !important;">
-
-          </div>
+  <div class="container mt-5 reveal">
+    <div class="conatiner">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div style="height: 100px;"></div>
+          <img src="tech-img1.png" alt="" width="100%" height="auto">
         </div>
-        <img src="tech-img1.png" alt="" width="496" height="213" id="img-res" style="margin-left: 1rem;">
-        <div class="row">
-          <div class="col-sm-12 " style="height: 80px !important;">
-
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div style="height: 30px;"></div>
+          <div>
+            <h3 style="color: #28bebb; line-height: 1.1em; font-weight: normal;font-size: 31.45px;text-transform: none;
+            letter-spacing: -0.02em;">Ways to partner</h3>
           </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="row">
-          <div class="col-sm-12">
+          <div style="margin-top: 20px;padding-right: 100px;">
+            <p style="font-size: 1.1em;padding-bottom: 27px;">360 Regtech’s delivery of targeted rule updates and
+              obligations
+              for financial firms
+              can be consumed directly in the 360 Regtech front-end platform, or in the customer’s existing systems via
+              API.
+            </p>
+            <p style="font-size: 1.1em;padding-bottom: 27px;font-weight: bold !important;"><strong>Traditional
+                integration</strong></p>
             <div>
-              <h2 style="color: #03d5cc;">Ways to partner</h2>
-              <p class="mt-3" style="color: #253859;-webkit-text-stroke: inherit;font-size:  1.1em;">360 RegTech’s delivery
-                of targeted rule updates and <br> obligations for financial
-                firms
-                can
-                be consumed directly <br> in
-                the 360 RegTech front-end platform, or in the customer’s <br> existing systems via API.</p>
+              <p style="font-size: 1.1em;padding-bottom: 27px;">Connect seamlessly between 360 Regtech’s regulatory
+                knowledge set and the customer’s
+                GRC or other compliance workflow systems.</p>
             </div>
-            <div style="color: #253859;">
-              <strong style="font-size: 20px; font-weight: 900;">Traditional integration</strong><br>
-              <p class="mt-3" style="color: #253859;-webkit-text-stroke: inherit;font-size:  1.1em;">Connect seamlessly
-                between 360 RegTech’s regulatory <br> knowledge set and the customer’s GRC or other <br>
-                compliance
-                workflow systems.</p>
-            </div>
-            <div style="color: #253859;">
-              <strong style="font-size: 20px; font-weight: 900;">Incorporate into core offering</strong><br>
-              <p class="mt-3" style="color: #253859;-webkit-text-stroke: inherit;font-size: 1.1em;">License and
-                configure 360 RegTech’s data feed directly into <br> your core offering.</p>
-            </div>
+
+            <p style="font-size: 1.1em;padding-bottom: 27px;font-weight: 900;"><strong>Incorporate into core offering</strong></p>
+            <p style="font-size: 1.1em;padding-bottom: 27px;">License and configure 360 Regtech’s data feed directly
+              into your core offering.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container mt-5 mb-5 reveal">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div style="height:50px">
+          </div>
+          <div>
+            <h3
+              style="color: #28bebb; line-height: 1.1em; font-weight: normal;font-size: 31.45px;margin-bottom: 0px;padding-bottom: 17px;">
+              Benefits of
+              partnership</h3>
+          </div>
+          <div>
+            <p style="font-size: 1.1em;padding-bottom: 27px;font-weight: 900;"><strong>New revenue stream</strong></p>
+            <p style="font-size: 1.1em;padding-bottom: 27px;padding-right: 100px;">Incorporate 360 Regtech and enhance your platform without
+              dedicating resources to
+              build from scratch.</p>
+            <p style="font-size: 1.1em;padding-bottom: 17px;font-weight: 900;"><strong>Platform differentiation </strong></p>
+            <p style="font-size: 1.1em;padding-right: 100px;">Outpace the competition by integrating 360 Regtech’s compliance software into
+              your
+              product or service offerings.</p>
           </div>
         </div>
 
-      </div>
-    </div>
-  </div>
-  </div>
-  <div class="container-fluid p-5 reveal">
-    <div class="container">
-    <div class="row">
-      <div class="col-sm-6 ">
-        <div>
-          <h2 style="color: #03d5cc;">Benefits of partnership</h2>
-        </div>
-        <div class="mt-3">
-          <strong style="color: #253859;-webkit-text-stroke: inherit;font-size: 20px;
-          ">New revenue stream</strong>
-        </div>
-        <div class="col-sm-9 mt-3" style="color: #253859;margin-left: -10px;">
-          <p>Incorporate 360 RegTech and enhance your platform without dedicating resources to build from scratch.</p>
-        </div>
-        <div class="mt-4">
-          <h5 style="color: #253859;-webkit-text-stroke: inherit;font-size: 20px;"><b>Platform differentiation</b></h5>
-          <br>
-        </div>
-        <div class="col-sm-8 mt-2" style="margin-left: -10px">
-          <p style="color: #253859;">Outpace the competition by integrating 360 RegTech’s compliance
-            software into your product or service offerings.</p>
-        </div>
-      </div>
-
-
-      <div class="col-sm-6">
-        <div>
-          <img src="tech-img-2.png" alt="" width="493" height="" id="img-res">
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <img src="tech-img-2.png" alt="" width="100%" height="auto">
         </div>
       </div>
     </div>
   </div>
-  </div>
-  <div class="container-fluid mt-5 reveal">
-    <div class="container">
 
-    <div class="row">
-      <div class="col-sm-12">
-        <h1 style="color: #253859;text-align: center;">Our partners include:</h1>
+  <!-- <div class="container-fluid mt-5">
+    <div class="conatiner">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <h2 style="line-height: 1.1em; font-weight: normal; text-align: center;">Our partners include:</h2>
+        </div>
       </div>
     </div>
-    <br>
-    <br><br>
-    <div class="row mt-3 text-center" style="color: #253859;">
-      <div class="col-sm-1">
+  </div> -->
 
-      </div>
-      <div class="col-sm-2 mt-2">
-        <img src="logo1.png" alt="" width="170" height="29" id="img-res1">
-        <div class="col-sm-12 " style="margin-top: 80px;">
-          <!-- <img src="logo1.png" alt="" width="170" height="29">
-          <br> -->
-          <p style="color: #253859;font-size: 1.1em;line-height: 30px;font-weight: 500;letter-spacing: -0.02em;">
-            Provides a platform for enterprise risk management, third-party risk management, and Cyber risk
-            management.
-          </p>
+  <!-- <div class="conatiner mt-5">
+    <div class="conatiner">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-3">
+          <img src="logo1.png" alt="">
         </div>
-
-      </div>
-      <div class="col-sm-2"><img src="logo2.png" alt="" width="153" height="54" id="img-res1">
-        <div class="col-sm-12 " style="margin-top: 65px;">
-
-          <p style="color: #253859;font-size: 1.1em;line-height: 30px;font-weight: 500;letter-spacing: -0.02em;">Gathers
-            organizational risk data and analyzes it in context—revealing the true business impact within every
-            risk.</p>
+        <div class="col-sm-12 col-md-12 col-lg-2">
+          <img src="logo2.png" alt="">
         </div>
-      </div>
-      <div class="col-sm-2"><img src="log3.jpg" alt="" width="136" height="102" id="img-res1">
-        <div class="col-sm-12 " style="margin-top: 20px;">
-
-          <p style="color: #253859;font-size: 1.1em;line-height: 30px;font-weight: 500;letter-spacing: -0.02em;">
-            Simplifies risk management and regulatory compliance with a unified GRC platform fueled by AI and your data.
-          </p>
+        <div class="col-sm-12 col-md-12 col-lg-2">
+          <img src="log3.jpg" alt="">
         </div>
-      </div>
-      <div class="col-sm-2 mt-2"><img src="log04.png" alt="" width="143" height="37" id="img-res1">
-        <div class="col-sm-12 " style="margin-top: 80px;">
-
-          <p style="color: #253859;font-size: 1.1em;line-height: 30px;font-weight: 500;letter-spacing: -0.02em;">
-            Swiftly aggregates and integrates cyber, financial, operational, and reputational risk data into a single
-            source.
-          </p>
+        <div class="col-sm-12 col-md-12 col-lg-2">
+          <img src="log04.png" alt="">
         </div>
-      </div>
-      <div class="col-sm-2 mt-2"><img src="logo5.png" alt="" width="143" height="39" id="img-res1">
-        <div class="col-sm-12 " style="margin-top: 80px;">
-          <p style="color: #253859;font-size: 1.1em;line-height: 30px;font-weight: 500;letter-spacing: -0.02em;">
-            A GRC, SaaS leader that helps organizations connect insights across governance, risk compliance, audit, and
-            ESG.
-          </p>
+        <div class="col-sm-12 col-md-12 col-lg-3">
+          <img src="logo5.png" alt="">
         </div>
-      </div>
-      <div class="col-sm-1">
-
       </div>
     </div>
-    <!-- <div class="row mt-3  text-center" style="color: #253859;font-size: large;">
-      <div class="col-sm-1">
-
-      </div>
-      <div class="col-sm-2  ">
-       
-      
-        <p>Provides a platform for enterprise risk management, third-party risk management, and Cyber risk
-          management.
-        </p>
-      </div>
-      <div class="col-sm-2 ">
-
-        <p>Gathers organizational risk data and analyzes it in context—revealing the true business impact within every
-          risk.</p>
-      </div>
-      <div class="col-sm-2">
-
-        <p>
-          Simplifies risk management and regulatory compliance with a unified GRC platform fueled by AI and your data.
-        </p>
-      </div>
-      <div class="col-sm-2">
-
-        <p>
-          Swiftly aggregates and integrates cyber, financial, operational, and reputational risk data into a single
-          source.
-        </p>
-      </div>
-      <div class="col-sm-2 ">
-        <p>
-          A GRC, SaaS leader that helps organizations connect insights across governance, risk compliance, audit, and
-          ESG.
-        </p>
-      </div>
-      <div class="col-sm-1">
-
-      </div>
-    </div> -->
-  </div>
-</div>
+  </div> -->
 
 
-
-  <!-- fotter -->
-  <div class="container-fluid" style="background-color: #253859">
+  <div class="container-fluid " style="background-color: #253859">
     <div class="container">
       <div class="row">
         <div class="col-md-4 mt-5 text-white">
           <!-- <h5 style="color: #03d5cc; margin-top: 15px"> -->
-              <div><img class="logoo" src="../images/index/footer-logo.jpg" alt="Logo Image" width=" 160px" height=" 60px"
-                      style="margin-left:25px !important" /></div>
+          <div><img class="logoo" src="../images/index/footer-logo.jpg" alt="Logo Image" width=" 160px" height=" 60px"
+              style="margin-left:25px !important" /></div>
           Compliance, Uncomplicated.
           </h5>
-        </div>  
+        </div>
         <div class="col-md-4 mt-5">
           <div class="row">
             <div class="col-6">
               <p style="color: white"><strong>Platform</strong></p>
               <p style="padding-top: 10px; font-size: 15px">
-                <a href="../OurApproach/OurApproach.html" id="footer-hover">Our Approach</a>
+                <a href="OurApproach/OurApproach.html" id="footer-hover">Our Approach</a>
               </p>
               <p style="padding-top: 10px; font-size: 15px">
-                <a href="../OurData/OurData.html" id="footer-hover">Our Data</a>
+                <a href="OurData/OurData.html" id="footer-hover">Our Data</a>
               </p>
               <p style="padding-top: 10px; font-size: 15px">
-                <a href="../Regulators/Regulators.html" id="footer-hover">Regulators</a>
+                <a href="Regulators/Regulators.html" id="footer-hover">Regulators</a>
               </p>
               <p style="padding-top: 10px; font-size: 15px">
-                <a href="../TechnologyPartners/TechnologyPartners.html" id="footer-hover">Technology Partners</a>
+                <a href="TechnologyPartners/TechnologyPartners.html" id="footer-hover">Technology
+                  Partners</a>
               </p>
             </div>
             <div class="col-6">
               <p style="color: white"><strong>Capabilities</strong></p>
               <p style="padding-top: 10px; font-size: 15px">
-                <a href="../Oligation-Inventory/obligations.html" id="footer-hover">Obligations Inventory</a>
+                <a href="Oligation-Inventory/obligations.html" id="footer-hover">Obligations
+                  Inventory</a>
               </p>
               <p style="padding-top: 10px; font-size: 15px">
-                <a href="../Scenario-planning/scenerio.html" id="footer-hover">Scenario Planning</a>
+                <a href="Scenario-planning/scenerio.html" id="footer-hover">Scenario Planning</a>
               </p>
               <p style="padding-top: 10px; font-size: 15px">
-                <a href="../Horizon-Scanning/horizonScanning.html" id="footer-hover">Horizon Scanning</a>
+                <a href="Horizon-Scanning/horizonScanning.html" id="footer-hover">Horizon
+                  Scanning</a>
               </p>
               <p style="padding-top: 10px; font-size: 15px">
-                <a href="../Audit-Trail/Audit.html" id="footer-hover">Audit Trail</a>
+                <a href="Audit-Trail/Audit.html" id="footer-hover">Audit Trail</a>
               </p>
             </div>
           </div>
@@ -503,28 +439,29 @@ Online HTML, CSS and JavaScript editor to run code online.
             <div class="col-6">
               <p style="color: white"><strong>Resources</strong></p>
               <p style="padding-top: 10px; font-size: 15px">
-                <a href="../WhatisReg/whatis.html" id="footer-hover">What is RegTech?</a>
+                <a href="WhatisReg/whatis.html" id="footer-hover">What is RegTech?</a>
               </p>
               <p style="padding-top: 10px; font-size: 15px">
-                <a href="../Blogs/blogs.html" id="footer-hover">Blog</a>
+                <a href="Blogs/blogs.html" id="footer-hover">Blog</a>
               </p>
               <p style="padding-top: 10px; font-size: 15px">
-                <a href="../Resources/Resources.html" id="footer-hover">Resources</a>
+                <a href="Resources/Resources.html" id="footer-hover">Resources</a>
               </p>
               <p style="padding-top: 10px; font-size: 15px">
-                <a href="../Customer-Stories/Customerstories.html" id="footer-hover">Customer Stories</a>
+                <a href="Customer-Stories/Customerstories.html" id="footer-hover">Customer
+                  Stories</a>
               </p>
             </div>
             <div class="col-6">
               <p style="color: white"><strong>Company</strong></p>
               <p style="padding-top: 10px; font-size: 15px">
-                <a href="../OurTeam/ourteam.html" id="footer-hover">Our Team</a>
+                <a href="OurTeam/ourteam.html" id="footer-hover">Our Team</a>
               </p>
               <p style="padding-top: 10px; font-size: 15px">
-                <a href="../Careers/Careers.html" id="footer-hover">Careers</a>
+                <a href="Careers/Careers.html" id="footer-hover">Careers</a>
               </p>
               <p style="padding-top: 10px; font-size: 15px">
-                <a href="../Careers/Careers.html" id="footer-hover">Culture</a>
+                <a href="Careers/Careers.html" id="footer-hover">Culture</a>
               </p>
             </div>
             <div style="height: 80px"></div>
@@ -537,13 +474,13 @@ Online HTML, CSS and JavaScript editor to run code online.
     <div class="container">
       <div class="row py-3">
         <!-- <div class="col-md-1"></div> -->
-        <div class="col-md-4">
+        <div class="col-md-4" id="rights">
           <p style="color: white; font-size: 12px">
-            © 2023 360 RegTech . All Rights Reserved.
+            © 2023 360 RegTech. All Rights Reserved.
           </p>
         </div>
         <div class="col-md-6"></div>
-        <div class="col-md-2">
+        <div class="col-md-2" id="social">
           <span style="color: white; padding-right: 12px"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="24"
               fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
               <path
@@ -570,9 +507,10 @@ Online HTML, CSS and JavaScript editor to run code online.
   </div>
   <!-- fotter end -->
 
-
- 
   <script src="script.js"></script>
+
+  <script src="../navbar.js"></script>
+  
   <Script>
     const hamburger = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
@@ -583,6 +521,18 @@ Online HTML, CSS and JavaScript editor to run code online.
       navLinks.classList.toggle("open");
       links.forEach(link => {
         link.classList.toggle("fade");
+        document.getElementById('platform').innerText = 'Platform';
+        document.getElementById('capabilities').innerText = 'Capabilities';
+        document.getElementById('whoweserve').innerText = 'Who we serve';
+        document.getElementById('resources').innerText = 'Resoursces';
+        document.getElementById('company').innerText = 'Company';
+        document.getElementById('sign_in').innerText = 'Sign In';
+        document.getElementById('contact-us').innerText = ' Contact Us';
+        document.getElementById('platform').removeAttribute('href');
+        document.getElementById('capabilities').removeAttribute('href');
+        document.getElementById('whoweserve').removeAttribute('href');
+        document.getElementById('resources').removeAttribute('href');
+        document.getElementById('company').removeAttribute('href');
       });
 
       //Hamburger Animation

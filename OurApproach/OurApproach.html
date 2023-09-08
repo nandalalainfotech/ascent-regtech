@@ -14,6 +14,9 @@ Online HTML, CSS and JavaScript editor to run code online.
   <link rel="stylesheet" href="OurApproach.css" />
   <link rel="stylesheet" href="../index.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
+  <link rel="stylesheet" id="redux-google-fonts-salient_redux-css"
+    href="https://fonts.googleapis.com/css?family=Mulish%3A700%2C400%2C500%2C800%2C600%2C900%2C200%2C500italic&amp;subset=latin&amp;display=swap&amp;ver=6.3"
+    type="text/css" media="all">
   <title>Browser</title>
 </head>
 
@@ -32,70 +35,70 @@ Online HTML, CSS and JavaScript editor to run code online.
 
 
   @keyframes nectarStrokeAnimation {
-      0% {
-        stroke-dashoffset: 1;
-        opacity: 0;
-      }
-
-      1% {
-        opacity: 1;
-      }
-
-      100% {
-        stroke-dashoffset: 0;
-      }
+    0% {
+      stroke-dashoffset: 1;
+      opacity: 0;
     }
 
+    1% {
+      opacity: 1;
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .nectar-highlighted-text .nectar-scribble {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  .nectar-highlighted-text em.animated .nectar-scribble path {
+    stroke-linecap: round;
+    opacity: 1;
+    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
+
+  .nectar-highlighted-text .nectar-scribble path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    opacity: 0;
+  }
+
+  .nectar-highlighted-text em.animated .nectar-scribble path {
+    stroke-linecap: round;
+    opacity: 1;
+    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
+
+  .nectar-highlighted-text[data-style="scribble"] em {
+    background-image: none !important;
+  }
+
+  body .nectar-scribble.squiggle-underline {
+    width: 185px;
+    height: 22px;
+  }
+
+  .nectar-highlighted-text .nectar-scribble {
+    position: absolute;
+    top: 35px;
+    left: 100px;
+    z-index: 7;
+    /* display: none; */
+  }
+
+  @media screen and (max-width:670px) {
     .nectar-highlighted-text .nectar-scribble {
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 2;
+      top: 35px !important;
+      left: 100px !important;
     }
+  }
 
-    .nectar-highlighted-text em.animated .nectar-scribble path {
-      stroke-linecap: round;
-      opacity: 1;
-      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-    }
-
-    .nectar-highlighted-text .nectar-scribble path {
-      stroke-dasharray: 1;
-      stroke-dashoffset: 1;
-      opacity: 0;
-    }
-
-    .nectar-highlighted-text em.animated .nectar-scribble path {
-      stroke-linecap: round;
-      opacity: 1;
-      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-    }
-
-    .nectar-highlighted-text[data-style="scribble"] em {
-      background-image: none !important;
-    }
-
-    body .nectar-scribble.squiggle-underline {
-      width: 185px;
-      height: 22px;
-    }
-
-    .nectar-highlighted-text .nectar-scribble {
-      position: absolute;
-      top: 35px;
-      left: 100px;
-      z-index: 7;
-      /* display: none; */
-    }
-
-    @media screen and (max-width:670px) {
-      .nectar-highlighted-text .nectar-scribble {
-        top: 35px !important;
-        left: 100px !important;
-      }
-    }
-
-    /* @media screen and (min-width: 375px) and (max-width: 667px){
+  /* @media screen and (min-width: 375px) and (max-width: 667px){
       nectar-highlighted-text .nectar-scribble {
     position: absolute;
     top: none !important;
@@ -105,84 +108,84 @@ Online HTML, CSS and JavaScript editor to run code online.
 } */
 
 
-    .nectar-highlighted-text .nectar-scribble path {
-      stroke-dasharray: 1;
+  .nectar-highlighted-text .nectar-scribble path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    opacity: 0;
+  }
+
+  .nectar-highlighted-text em.animated .nectar-scribble path {
+    stroke-linecap: round;
+    opacity: 1;
+    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
+
+  /* Nector 1 */
+  @keyframes nectarStrokeAnimation {
+    0% {
       stroke-dashoffset: 1;
       opacity: 0;
     }
 
-    .nectar-highlighted-text em.animated .nectar-scribble path {
-      stroke-linecap: round;
+    1% {
       opacity: 1;
-      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
     }
 
-    /* Nector 1 */
-    @keyframes nectarStrokeAnimation {
-      0% {
-        stroke-dashoffset: 1;
-        opacity: 0;
-      }
-
-      1% {
-        opacity: 1;
-      }
-
-      100% {
-        stroke-dashoffset: 0;
-      }
+    100% {
+      stroke-dashoffset: 0;
     }
+  }
 
+  .nectar1-highlighted-text .nectar1-scribble {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  .nectar1-highlighted-text em.animated .nectar1-scribble path {
+    stroke-linecap: round;
+    opacity: 1;
+    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
+
+  .nectar1-highlighted-text .nectar1-scribble path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    opacity: 0;
+  }
+
+  .nectar1-highlighted-text em.animated .nectar1-scribble path {
+    stroke-linecap: round;
+    opacity: 1;
+    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
+
+  .nectar1-highlighted-text[data-style="scribble"] em {
+    background-image: none !important;
+  }
+
+  body .nectar1-scribble.squiggle-underline {
+    width: 172px;
+    height: 22px;
+  }
+
+  .nectar1-highlighted-text .nectar1-scribble {
+    position: absolute;
+    top: 75px;
+    left: 340px;
+    z-index: 7;
+    /* display: none; */
+  }
+
+  @media screen and (max-width:670px) {
     .nectar1-highlighted-text .nectar1-scribble {
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 2;
+      top: 125px !important;
+      left: 68px !important;
     }
+  }
 
-    .nectar1-highlighted-text em.animated .nectar1-scribble path {
-      stroke-linecap: round;
-      opacity: 1;
-      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-    }
-
-    .nectar1-highlighted-text .nectar1-scribble path {
-      stroke-dasharray: 1;
-      stroke-dashoffset: 1;
-      opacity: 0;
-    }
-
-    .nectar1-highlighted-text em.animated .nectar1-scribble path {
-      stroke-linecap: round;
-      opacity: 1;
-      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-    }
-
-    .nectar1-highlighted-text[data-style="scribble"] em {
-      background-image: none !important;
-    }
-
-    body .nectar1-scribble.squiggle-underline {
-      width: 172px;
-      height: 22px;
-    }
-
-    .nectar1-highlighted-text .nectar1-scribble {
-      position: absolute;
-      top: 75px;
-      left: 340px;
-      z-index: 7;
-      /* display: none; */
-    }
-
-    @media screen and (max-width:670px) {
-      .nectar1-highlighted-text .nectar1-scribble {
-        top: 125px !important;
-        left: 68px !important;
-      }
-    }
-
-    /* @media screen and (min-width: 375px) and (max-width: 667px){
+  /* @media screen and (min-width: 375px) and (max-width: 667px){
       nectar-highlighted-text .nectar-scribble {
     position: absolute;
     top: none !important;
@@ -192,84 +195,84 @@ Online HTML, CSS and JavaScript editor to run code online.
 } */
 
 
-    .nectar1-highlighted-text .nectar1-scribble path {
-      stroke-dasharray: 1;
+  .nectar1-highlighted-text .nectar1-scribble path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    opacity: 0;
+  }
+
+  .nectar1-highlighted-text em.animated .nectar1-scribble path {
+    stroke-linecap: round;
+    opacity: 1;
+    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
+
+  /* Nector 2 */
+  @keyframes nectarStrokeAnimation {
+    0% {
       stroke-dashoffset: 1;
       opacity: 0;
     }
 
-    .nectar1-highlighted-text em.animated .nectar1-scribble path {
-      stroke-linecap: round;
+    1% {
       opacity: 1;
-      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
     }
 
-     /* Nector 2 */
-     @keyframes nectarStrokeAnimation {
-      0% {
-        stroke-dashoffset: 1;
-        opacity: 0;
-      }
-
-      1% {
-        opacity: 1;
-      }
-
-      100% {
-        stroke-dashoffset: 0;
-      }
+    100% {
+      stroke-dashoffset: 0;
     }
+  }
 
+  .nectar2-highlighted-text .nectar2-scribble {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  .nectar2-highlighted-text em.animated .nectar2-scribble path {
+    stroke-linecap: round;
+    opacity: 1;
+    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
+
+  .nectar2-highlighted-text .nectar2-scribble path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    opacity: 0;
+  }
+
+  .nectar2-highlighted-text em.animated .nectar2-scribble path {
+    stroke-linecap: round;
+    opacity: 1;
+    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
+
+  .nectar2-highlighted-text[data-style="scribble"] em {
+    background-image: none !important;
+  }
+
+  body .nectar2-scribble.squiggle-underline {
+    width: 185px;
+    height: 22px;
+  }
+
+  .nectar2-highlighted-text .nectar2-scribble {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    z-index: 7;
+    /* display: none; */
+  }
+
+  @media screen and (max-width:670px) {
     .nectar2-highlighted-text .nectar2-scribble {
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 2;
+      top: 50px !important;
+      left: 66px !important;
     }
+  }
 
-    .nectar2-highlighted-text em.animated .nectar2-scribble path {
-      stroke-linecap: round;
-      opacity: 1;
-      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-    }
-
-    .nectar2-highlighted-text .nectar2-scribble path {
-      stroke-dasharray: 1;
-      stroke-dashoffset: 1;
-      opacity: 0;
-    }
-
-    .nectar2-highlighted-text em.animated .nectar2-scribble path {
-      stroke-linecap: round;
-      opacity: 1;
-      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-    }
-
-    .nectar2-highlighted-text[data-style="scribble"] em {
-      background-image: none !important;
-    }
-
-    body .nectar2-scribble.squiggle-underline {
-      width: 185px;
-      height: 22px;
-    }
-
-    .nectar2-highlighted-text .nectar2-scribble {
-      position: absolute;
-      top: 50px;
-      left: 80px;
-      z-index: 7;
-      /* display: none; */
-    }
-
-    @media screen and (max-width:670px) {
-      .nectar2-highlighted-text .nectar2-scribble {
-        top: 50px !important;
-        left: 66px !important;
-      }
-    }
-
-    /* @media screen and (min-width: 375px) and (max-width: 667px){
+  /* @media screen and (min-width: 375px) and (max-width: 667px){
       nectar-highlighted-text .nectar-scribble {
     position: absolute;
     top: none !important;
@@ -279,84 +282,84 @@ Online HTML, CSS and JavaScript editor to run code online.
 } */
 
 
-    .nectar2-highlighted-text .nectar2-scribble path {
-      stroke-dasharray: 1;
+  .nectar2-highlighted-text .nectar2-scribble path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    opacity: 0;
+  }
+
+  .nectar2-highlighted-text em.animated .nectar2-scribble path {
+    stroke-linecap: round;
+    opacity: 1;
+    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
+
+  /* Nector 3 */
+  @keyframes nectarStrokeAnimation {
+    0% {
       stroke-dashoffset: 1;
       opacity: 0;
     }
 
-    .nectar2-highlighted-text em.animated .nectar2-scribble path {
-      stroke-linecap: round;
+    1% {
       opacity: 1;
-      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
     }
 
-     /* Nector 3 */
-     @keyframes nectarStrokeAnimation {
-      0% {
-        stroke-dashoffset: 1;
-        opacity: 0;
-      }
-
-      1% {
-        opacity: 1;
-      }
-
-      100% {
-        stroke-dashoffset: 0;
-      }
+    100% {
+      stroke-dashoffset: 0;
     }
+  }
 
+  .nectar3-highlighted-text .nectar3-scribble {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  .nectar3-highlighted-text em.animated .nectar3-scribble path {
+    stroke-linecap: round;
+    opacity: 1;
+    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
+
+  .nectar3-highlighted-text .nectar3-scribble path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    opacity: 0;
+  }
+
+  .nectar3-highlighted-text em.animated .nectar3-scribble path {
+    stroke-linecap: round;
+    opacity: 1;
+    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
+
+  .nectar3-highlighted-text[data-style="scribble"] em {
+    background-image: none !important;
+  }
+
+  body .nectar3-scribble.squiggle-underline {
+    width: 145px;
+    height: 22px;
+  }
+
+  .nectar3-highlighted-text .nectar3-scribble {
+    position: absolute;
+    top: 92px;
+    left: 10px;
+    z-index: 7;
+    /* display: none; */
+  }
+
+  @media screen and (max-width:670px) {
     .nectar3-highlighted-text .nectar3-scribble {
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 2;
+      top: 140px !important;
+      left: 16px !important;
     }
+  }
 
-    .nectar3-highlighted-text em.animated .nectar3-scribble path {
-      stroke-linecap: round;
-      opacity: 1;
-      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-    }
-
-    .nectar3-highlighted-text .nectar3-scribble path {
-      stroke-dasharray: 1;
-      stroke-dashoffset: 1;
-      opacity: 0;
-    }
-
-    .nectar3-highlighted-text em.animated .nectar3-scribble path {
-      stroke-linecap: round;
-      opacity: 1;
-      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-    }
-
-    .nectar3-highlighted-text[data-style="scribble"] em {
-      background-image: none !important;
-    }
-
-    body .nectar3-scribble.squiggle-underline {
-      width: 145px;
-      height: 22px;
-    }
-
-    .nectar3-highlighted-text .nectar3-scribble {
-      position: absolute;
-      top: 92px;
-      left: 10px;
-      z-index: 7;
-      /* display: none; */
-    }
-
-    @media screen and (max-width:670px) {
-      .nectar3-highlighted-text .nectar3-scribble {
-        top: 140px !important;
-        left: 16px !important;
-      }
-    }
-
-    /* @media screen and (min-width: 375px) and (max-width: 667px){
+  /* @media screen and (min-width: 375px) and (max-width: 667px){
       nectar-highlighted-text .nectar-scribble {
     position: absolute;
     top: none !important;
@@ -366,96 +369,172 @@ Online HTML, CSS and JavaScript editor to run code online.
 } */
 
 
-    .nectar3-highlighted-text .nectar3-scribble path {
-      stroke-dasharray: 1;
-      stroke-dashoffset: 1;
-      opacity: 0;
-    }
+  .nectar3-highlighted-text .nectar3-scribble path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    opacity: 0;
+  }
 
-    .nectar3-highlighted-text em.animated .nectar3-scribble path {
-      stroke-linecap: round;
-      opacity: 1;
-      animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-    }
-
+  .nectar3-highlighted-text em.animated .nectar3-scribble path {
+    stroke-linecap: round;
+    opacity: 1;
+    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
 </style>
 
 <body>
   <nav>
-    <div class="logo">
+    <div class="">
       <a href="../index.html">
-        <img class="logoo" src="../images/index/head-logo-360.png" alt="Logo Image" width="160px" height="60px"/>
-        </a>
+        <img class="logoo" src="../images/index/head-logo-360.png" alt="Logo Image" width="160px" height="60px" />
+      </a>
     </div>
     <div class="hamburger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <ul class="nav-links" id="initial">
+      <li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
+          <a href="../PlatForm-page/PlatForm.html" id="platform" onclick="platform1()">Platform</a></span>
+
+        <ul id="submenu">
+          <a href="../OurApproach/OurApproach.html" id="approach">Our Approach</a>
+          <a href="../OurData/OurData.html">Our Data</a>
+          <a href="../Regulators/Regulators.html"> Regulators</a>
+          <a href="../TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
+        </ul>
+      </li>
+      <li class="show show1" style="padding: 1rem;"><span class="line" id="active_page"><a href="" id="capabilities"
+            onclick="capabilities1()">Capabilities</a></span>
+        <ul id="submenu">
+          <a href="../Oligation-Inventory/obligations.html">Obligations Inventory</a>
+          <a href="../Scenario-planning/scenerio.html"><span>Scenario Planning</span></a>
+          <a href="../Horizon-Scanning/horizonScanning.html">Horizon Scanning</a>
+          <a href="../Audit-Trail/Audit.html">Audit Trail</a>
+          <a href="../Explore/explore.html">Explore Use Cases</a>
+        </ul>
+      </li>
+      <li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html"
+            id="whoweserve">Who We
+            Serve</a></span>
+        <ul id="submenu">
+          <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
+          <a href="../Mortage-Lenders/MortgageLenders.html">Mortgage Lenders</a>
+          <a href="../Fintech/FinTech.html">FinTech</a>
+          <a href="../Professional/professional.html">Professional Services</a>
+        </ul>
+      </li>
+      <li class="show show1" style="padding: 1rem"><span class="line"> <a href="../Resources/Resources.html"
+            id="resources">Resources</a></span>
+        <ul id="submenu">
+          <a href="../WhatisReg/whatis.html">What is RegTech?</a>
+          <a href="../Blogs/blogs.html">Blog</a>
+          <a href="../Resources/Resources.html">Resources</a>
+          <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
+        </ul>
+      </li>
+      <li class="show show1" style="padding: 1rem"><span class="line"><a href="../OurTeam/ourteam.html"
+            id="company">Company</a></span>
+        <ul id="submenu">
+          <a href="../OurTeam/ourteam.html">Our Team</a>
+          <a href="../Diversity/DiversityEquityandInclusion.html">Diversity, Equity, and Inclusion</a>
+          <a href="../Careers/Careers.html">Careers</a>
+        </ul>
+      </li>
+
+
+      <li class="login-button show show1"><a href="../Signin/sign.html" id="sign_in">Sign
+          In</a>
+      </li>
+      <li class="join-button show show1">
+        <a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;" id="contact-us">
+          Contact Us
+        </a>
+      </li>
+      <li class="show show1" style="display: none; font-size: xx-small;">360 RegTech</li>
+    </ul>
+    <!-- <ul class="nav-links" id="platforms">
+          <li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
+              <a href="../PlatForm-page/PlatForm.html" id="platform" onclick="platform1();linkSetter()">Platform</a></span>
+      </ul> -->
+
+  </nav><nav>
+    <div class="logo">
+      <a href="../index.html">
+        <img class="logoo" src="../images/index/head-logo-360.png" alt="Logo Image" width="160px" height="60px" />
+      </a>
+    </div>
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
     </div>
     <ul class="nav-links">
-        <li class="show show1" style="padding: 1rem"> <span class="line">
-                <a href="../PlatForm-page/PlatForm.html">Platform</a></span>
-            <ul id="submenu">
-                <a href="../OurApproach/OurApproach.html">Our Approach</a>
-                <a href="../OurData/OurData.html">Our Data</a>
-                <a href="../Regulators/Regulators.html"> Regulators</a>
-                <a href="../TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
-            </ul>
-        </li>
-        <li class="show show1" style="padding: 1rem;"><span class="line"><a href="">Capabilities</a></span>
-            <ul id="submenu">
-                <a href="../Oligation-Inventory/obligations.html">Obligations Inventory</a>
-                <a href="../Scenario-planning/scenerio.html">Scenario Planning</a>
-                <a href="../Horizon-Scanning/horizonScanning.html">Horizon Scanning</a>
-                <a href="../Audit-Trail/Audit.html">Audit Trail</a>
-                <a href="../Explore/explore.html">Explore Use Cases</a>
-            </ul>
-        </li>
-        <li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html">Who We
-                    Serve</a></span>
-            <ul id="submenu">
-                <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
-                <a href="../Mortage-Lenders/MortgageLenders.html">Mortgage Lenders</a>
-                <a href="../Fintech/FinTech.html">FinTech</a>
-                <a href="../Professional/professional.html">Professional Services</a>
-            </ul>
-        </li>
-        <li class="show show1" style="padding: 1rem"><span class="line"> <a href="../Resources/Resources.html">Resources</a></span>
-            <ul id="submenu">
-                <a href="../WhatisReg/whatis.html">What is RegTech?</a>
-                <a href="../Blogs/blogs.html">Blog</a>
-                <a href="../Resources/Resources.html">Resources</a>
-                <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
-            </ul>
-        </li>
-        <li class="show show1" style="padding: 1rem"><span class="line"><a href="../OurTeam/ourteam.html">Company</a></span>
-            <ul id="submenu">
-                <a href="../OurTeam/ourteam.html">Our Team</a>
-                <a href="../Diversity/DiversityEquityandInclusion.html">Diversity, Equity, and Inclusion</a>
-                <a href="../Careers/Careers.html">Careers</a>
-            </ul>
-        </li>
-        <li class="login-button show show1"><a href="../Signin/sign.html">Sign
-                In</a>
-        </li>
-        <li class="join-button show show1">
-            <a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;">
-                Contact Us
-            </a>
-        </li>
-        <li class="show show1" style="display: none; font-size: xx-small;">360 RegTech</li>
+      <li class="show show1" style="padding: 1rem"> <span class="line">
+          <a href="../PlatForm-page/PlatForm.html">Platform</a></span>
+        <ul id="submenu">
+          <a href="../OurApproach/OurApproach.html">Our Approach</a>
+          <a href="../OurData/OurData.html">Our Data</a>
+          <a href="../Regulators/Regulators.html"> Regulators</a>
+          <a href="../TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
+        </ul>
+      </li>
+      <li class="show show1" style="padding: 1rem;"><span class="line"><a href="">Capabilities</a></span>
+        <ul id="submenu">
+          <a href="../Oligation-Inventory/obligations.html">Obligations Inventory</a>
+          <a href="../Scenario-planning/scenerio.html">Scenario Planning</a>
+          <a href="../Horizon-Scanning/horizonScanning.html">Horizon Scanning</a>
+          <a href="../Audit-Trail/Audit.html">Audit Trail</a>
+          <a href="../Explore/explore.html">Explore Use Cases</a>
+        </ul>
+      </li>
+      <li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html">Who We
+            Serve</a></span>
+        <ul id="submenu">
+          <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
+          <a href="../Mortage-Lenders/MortgageLenders.html">Mortgage Lenders</a>
+          <a href="../Fintech/FinTech.html">FinTech</a>
+          <a href="../Professional/professional.html">Professional Services</a>
+        </ul>
+      </li>
+      <li class="show show1" style="padding: 1rem"><span class="line"> <a
+            href="../Resources/Resources.html">Resources</a></span>
+        <ul id="submenu">
+          <a href="../WhatisReg/whatis.html">What is RegTech?</a>
+          <a href="../Blogs/blogs.html">Blog</a>
+          <a href="../Resources/Resources.html">Resources</a>
+          <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
+        </ul>
+      </li>
+      <li class="show show1" style="padding: 1rem"><span class="line"><a
+            href="../OurTeam/ourteam.html">Company</a></span>
+        <ul id="submenu">
+          <a href="../OurTeam/ourteam.html">Our Team</a>
+          <a href="../Diversity/DiversityEquityandInclusion.html">Diversity, Equity, and Inclusion</a>
+          <a href="../Careers/Careers.html">Careers</a>
+        </ul>
+      </li>
+      <li class="login-button show show1"><a href="../Signin/sign.html">Sign
+          In</a>
+      </li>
+      <li class="join-button show show1">
+        <a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;">
+          Contact Us
+        </a>
+      </li>
+      <li class="show show1" style="display: none; font-size: xx-small;">360 RegTech</li>
     </ul>
   </nav>
-  <div class="container-fluid initial">
+  <div class="container-fluid" style="background-image: url(our-approach-img-1.jpg);background-repeat: no-repeat;background-size: cover;height: 490px">
     <div class="container">
-    <div class="row ">
-      <div class="col-sm-12">
-        <!-- <img class="responsive" src="our-approach-img-1.jpg" alt=" " width="100%" height="" style="height: 420px !important;"> -->
-      </div>
-      <div class="col-sm-12 res" style="top: 220px;" id="respons">
-        <h1 class="nectar-highlighted-text" data-style="scribble" data-exp="default" data-user-color="true"
+      <div class="row ">
+        <div class="col-sm-12">
+        </div>
+        <div class="col-sm-12 col-md-12 res" style="top: 220px;" id="respons">
+          <h1 class="nectar-highlighted-text" data-style="scribble" data-exp="default" data-user-color="true"
             style="color: #ffffff;-webkit-text-stroke: thin;font-weight: 700;" data-using-custom-color="false"
-            data-animation-delay="false" data-color="" data-color-gradient=""> Our  <em class="animated">Approach<svg
+            data-animation-delay="false" data-color="" data-color-gradient=""> Our <em class="animated">Approach<svg
                 class="nectar-scribble squiggle-underline" role="presentation" viewBox="-347 -30.1947 694 96.19"
                 preserveAspectRatio="none">
                 <path style="animation-duration: 1.8s;"
@@ -463,38 +542,38 @@ Online HTML, CSS and JavaScript editor to run code online.
                   stroke="#03d5cc" pathLength="1" stroke-width="14" fill="none"></path>
               </svg></em></h1>
           </h1>
-        <!-- <h1 class="text-white" style="text-indent: 50px;font-weight: 700;
+          <!-- <h1 class="text-white" style="text-indent: 50px;font-weight: 700;
           font-weight: revert;-webkit-text-stroke: inherit;font-size: 45px;">Our Approach</h1><br> -->
-        <div class="row">
+          <div class="row">
 
-          <div class="col-sm-10 mt-3" >
-            <h5 class="text-white" style="font-weight: 600;">Compliance teams of all sizes choose
-              360 RegTech in order to pinpoint
-            </h5>
-            <h5 class="text-white" style="font-weight: 600;"> their financial
-              regulatory obligations.</h5>
+            <div class="col-sm-10 mt-3">
+              <h5 class="text-white" style="font-weight: 600;">Compliance teams of all sizes choose
+                360 RegTech in order to pinpoint
+              </h5>
+              <h5 class="text-white" style="font-weight: 600;"> their financial
+                regulatory obligations.</h5>
 
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
   <div class="container-fluid reveal">
     <div class="container">
       <div class="row mt-4">
-        <div class="col-sm-6 p-2">
+        <div class="col-sm-12 col-md-12 col-lg-6 p-2">
           <div class="p-1 mt-4">
             <h1 class="nectar1-highlighted-text" data-style="scribble" data-exp="default" data-user-color="true"
-            style="color: #03d5cc;-webkit-text-stroke: thin;font-weight: 700;" data-using-custom-color="false"
-            data-animation-delay="false" data-color="" data-color-gradient=""> Not just data, but targeted   <em class="animated"><br> knowledge <svg
-                class="nectar1-scribble squiggle-underline" role="presentation" viewBox="-347 -30.1947 694 96.19"
-                preserveAspectRatio="none">
-                <path style="animation-duration: 1.8s;"
-                  d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
-                  stroke="#253859" pathLength="1" stroke-width="14" fill="none"></path>
-              </svg></em></h1>
-          </h1>
+              style="color: #03d5cc;-webkit-text-stroke: thin;font-weight: 700;" data-using-custom-color="false"
+              data-animation-delay="false" data-color="" data-color-gradient=""> Not just data, but targeted <em
+                class="animated"><br> knowledge <svg class="nectar1-scribble squiggle-underline" role="presentation"
+                  viewBox="-347 -30.1947 694 96.19" preserveAspectRatio="none">
+                  <path style="animation-duration: 1.8s;"
+                    d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
+                    stroke="#253859" pathLength="1" stroke-width="14" fill="none"></path>
+                </svg></em></h1>
+            </h1>
             <!-- <h1 style="color:#03d5cc;
             -webkit-text-stroke: medium;
             font-size: 40px;"> Not just data, but targeted knowledge</h1><br> -->
@@ -511,8 +590,8 @@ Online HTML, CSS and JavaScript editor to run code online.
               relevant to you.</p>
           </div>
         </div>
-        <div class="col-sm-6 p-2">
-          <img class="responsive" src="img-2-OurApp.jpg" alt="" width="540" height="456">
+        <div class="col-sm-12 col-md-12 col-lg-6 p-2">
+          <img class="responsive" src="img-2-OurApp.jpg" alt="" width="100%" height="auto">
         </div>
       </div>
     </div>
@@ -520,20 +599,20 @@ Online HTML, CSS and JavaScript editor to run code online.
   <div class="container-fluid reveal">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6">
-          <img class="responsive" src="img-3-OurApp.jpg" alt="" width="546" height="470">
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <img class="responsive" src="img-3-OurApp.jpg" alt="" width="100%" height="auto">
         </div>
-        <div class="col-sm-6 p-1">
+        <div class="col-sm-12 col-md-12 col-lg-6 p-1">
           <div class="p-2">
             <h1 class="nectar2-highlighted-text" data-style="scribble" data-exp="default" data-user-color="true"
-            style="color: #03d5cc;-webkit-text-stroke: thin;font-weight: 700;" data-using-custom-color="false"
-            data-animation-delay="false" data-color="" data-color-gradient=""> The expertise of a human at   <em class="animated"><br> the speed of a machine <svg
-                class="nectar2-scribble squiggle-underline" role="presentation" viewBox="-347 -30.1947 694 96.19"
-                preserveAspectRatio="none">
-                <path style="animation-duration: 1.8s;"
-                  d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
-                  stroke="#253859" pathLength="1" stroke-width="14" fill="none"></path>
-              </svg></em></h1>
+              style="color: #03d5cc;-webkit-text-stroke: thin;font-weight: 700;" data-using-custom-color="false"
+              data-animation-delay="false" data-color="" data-color-gradient=""> The expertise of a human at <em
+                class="animated"><br> the speed of a machine <svg class="nectar2-scribble squiggle-underline"
+                  role="presentation" viewBox="-347 -30.1947 694 96.19" preserveAspectRatio="none">
+                  <path style="animation-duration: 1.8s;"
+                    d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
+                    stroke="#253859" pathLength="1" stroke-width="14" fill="none"></path>
+                </svg></em></h1>
             <!-- <h1 style="color:#03d5cc;-webkit-text-stroke: medium; font-size: 40px;">
               The expertise of a human at <br> the speed of a machine
             </h1> -->
@@ -566,16 +645,16 @@ Online HTML, CSS and JavaScript editor to run code online.
     <div class="container">
 
       <div class="row p-3">
-        <div class="col-sm-6 p-2">
+        <div class="col-sm-12 col-md-12 col-lg-6 p-2">
           <h1 class="nectar3-highlighted-text" data-style="scribble" data-exp="default" data-user-color="true"
-          style="color: #03d5cc;-webkit-text-stroke: thin;font-weight: 700;" data-using-custom-color="false"
-          data-animation-delay="false" data-color="" data-color-gradient="">  Your implementation  <em class="animated"><br>  partner, every step of the <br>way<svg
-              class="nectar3-scribble squiggle-underline" role="presentation" viewBox="-347 -30.1947 694 96.19"
-              preserveAspectRatio="none">
-              <path style="animation-duration: 1.8s;"
-                d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
-                stroke="#253859" pathLength="1" stroke-width="14" fill="none"></path>
-            </svg></em></h1>
+            style="color: #03d5cc;-webkit-text-stroke: thin;font-weight: 700;" data-using-custom-color="false"
+            data-animation-delay="false" data-color="" data-color-gradient=""> Your implementation <em
+              class="animated"><br> partner, every step of the <br>way<svg class="nectar3-scribble squiggle-underline"
+                role="presentation" viewBox="-347 -30.1947 694 96.19" preserveAspectRatio="none">
+                <path style="animation-duration: 1.8s;"
+                  d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
+                  stroke="#253859" pathLength="1" stroke-width="14" fill="none"></path>
+              </svg></em></h1>
           <!-- <h1 style="color:#03d5cc;
           -webkit-text-stroke: medium;
           font-size: 40px;">
@@ -595,8 +674,8 @@ Online HTML, CSS and JavaScript editor to run code online.
             </p>
           </div>
         </div>
-        <div class="col-sm-6">
-          <img class="responsive" src="img-4-OurApp.jpg" alt="" width="576" height="408">
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <img class="responsive" src="img-4-OurApp.jpg" alt="" width="100%" height="auto">
         </div>
       </div>
     </div>
@@ -644,11 +723,11 @@ Online HTML, CSS and JavaScript editor to run code online.
       <div class="row">
         <div class="col-md-4 mt-5 text-white">
           <!-- <h5 style="color: #03d5cc; margin-top: 15px"> -->
-              <div><img class="logoo" src="../images/index/footer-logo.jpg" alt="Logo Image" width=" 160px" height=" 60px"
-                      style="margin-left:25px !important" /></div>
+          <div><img class="logoo" src="../images/index/footer-logo.jpg" alt="Logo Image" width=" 160px" height=" 60px"
+              style="margin-left:25px !important" /></div>
           Compliance, Uncomplicated.
           </h5>
-        </div>  
+        </div>
         <div class="col-md-4 mt-5">
           <div class="row">
             <div class="col-6">
@@ -756,6 +835,9 @@ Online HTML, CSS and JavaScript editor to run code online.
   <!-- fotter end -->
 
   <script src="script.js"></script>
+
+  <script src="../navbar.js"></script>
+
   <script>const hamburger = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
     const links = document.querySelectorAll(".nav-links li");
@@ -765,6 +847,18 @@ Online HTML, CSS and JavaScript editor to run code online.
       navLinks.classList.toggle("open");
       links.forEach(link => {
         link.classList.toggle("fade");
+        document.getElementById('platform').innerText = 'Platform';
+        document.getElementById('capabilities').innerText = 'Capabilities';
+        document.getElementById('whoweserve').innerText = 'Who we serve';
+        document.getElementById('resources').innerText = 'Resoursces';
+        document.getElementById('company').innerText = 'Company';
+        document.getElementById('sign_in').innerText = 'Sign In';
+        document.getElementById('contact-us').innerText = ' Contact Us';
+        document.getElementById('platform').removeAttribute('href');
+        document.getElementById('capabilities').removeAttribute('href');
+        document.getElementById('whoweserve').removeAttribute('href');
+        document.getElementById('resources').removeAttribute('href');
+        document.getElementById('company').removeAttribute('href');
       });
 
       //Hamburger Animation
