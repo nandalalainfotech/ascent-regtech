@@ -44,6 +44,7 @@
 
 	.reveal.active {
 		transform: translateY(0);
+		scroll-margin-top:translateY(0) ;
 		opacity: 1;
 	}
 
@@ -51,8 +52,8 @@
 		bottom: .5rem;
 		background-color: #28BEBB;
 		animation-name: btn;
-		animation-duration: 1s;
-		box-shadow: 0px 1px 4px 4px lightblue;
+		/* animation-duration: 1s; */
+		/* box-shadow: 0px 1px 4px 4px lightblue; */
 	}
 
 	.vc_sep_line {
@@ -69,24 +70,7 @@
 </style>
 
 <style>
-	/* Réinitialisation des styles par défaut */
-	body,
-	h1,
-	h2,
-	p,
-	ul,
-	li {
-		margin: 0;
-		padding: 0;
-	}
-
-	/* Importer la police Roboto depuis Google Fonts */
-	@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-
-	/* Appliquer la police à vos éléments */
-	body {
-		font-family: "Roboto", sans-serif;
-	}
+	
 
 	/* Styles pour l'arrière-plan dégradé bleu-violet */
 	body {
@@ -114,8 +98,6 @@
 
 	/*scroll effect*/
 	.left_to_right {
-		/* padding: 15px 50px; */
-		/* color: #000; */
 		opacity: 0;
 		transform: translateX(50px);
 		transition: opacity 0.5s, transform 0.5s;
