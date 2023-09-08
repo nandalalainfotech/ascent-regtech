@@ -40,22 +40,6 @@ nav {
     /* margin: 0 1rem; */
 }
 
-/* .nav-links .show ::before {
-    content: "";
-    display: block;
-    height: 1px;
-    width: 0%;
-    background-color: #61DAFB;
-    position: absolute;
-    transition: all linear 250ms;
-    margin: 0 0 0 10%;
-}
-
-.nav-links .show:hover::before {
-    width: 80%;
-    margin-top: 1rem; */
-/* } */
-
 .line {
     cursor: pointer;
 }
@@ -170,7 +154,7 @@ ul#submenu a:hover {
 }
 
 /*Stying for small screens*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 690px) {
     nav {
         position: fixed;
         height: 4rem;
@@ -179,56 +163,20 @@ ul#submenu a:hover {
         overflow-y: auto;
     }
 
-    .logo0,
+    .logoo,
     .hamburger {
         z-index: 5;
     }
 
     .logoo {
         margin-left: 5px !important;
-        /* margin-top: -15px !important */
     }
 
+    .join-button a,
     .login-button a {
         border: none;
         color: #fff;
-    }
-
-    .join-button,
-    .nav-links,
-    .login-button:focus {
-        background: #03d5cc;
-        border: none;
-    }
-
-    .join-button,
-    .nav-links,
-    .login-button:hover {
-        background: #03d5cc;
-        border: none;
-        color: #f8f8f8;
-    }
-
-    .join-button:focus {
-        border: none;
-        color: #253859;
-    }
-
-    .join-button:hover {
-        color: #f8f8f8;
-        border: none;
-    }
-
-    .nav-links li {
-        /* top: 10em; */
-        color: #fff;
-        z-index: 5;
-    }
-
-
-    .nav-links li :focus::before,
-    .nav-links li :hover::before {
-        display: none;
+        font-size: 25.2px;
     }
 
     .nav-links {
@@ -238,7 +186,7 @@ ul#submenu a:hover {
         list-style: none;
         width: 88vw;
         align-items: center;
-        /* background: #03d5cc; */
+        background: #03d5cc;
         color: #fff !important;
         height: 90vh;
         width: 100%;
@@ -255,11 +203,6 @@ ul#submenu a:hover {
         pointer-events: all;
     }
 
-    .join-button,
-    .login-button,
-    .nav-links li {
-        color: #f8f8f8 !important;
-    }
 
     .nav-links li {
         opacity: 0;
@@ -299,10 +242,6 @@ ul#submenu a:hover {
         opacity: 1;
     }
 
-    a.fade {
-        opacity: 1;
-    }
-
     .hamburger {
         display: block;
         position: absolute;
@@ -314,9 +253,6 @@ ul#submenu a:hover {
         transition: all 0.7s ease;
     }
 
-    /* #submenu {
-        transition: all 0.7s ease;
-    }  */
     .show1 {
         display: block !important;
         color: #fff !important;
@@ -331,192 +267,155 @@ ul#submenu a:hover {
         text-decoration: none !important;
         cursor: pointer !important;
         overflow-y: hidden !important;
-        /* margin: 0 1rem; */
+        font-size: 25.2px !important;
     }
 
-    .line {
+    .show1 .line a:hover {
+        border-bottom: none !important;
+    }
+
+    #submenu {
+        display: none !important;
+    }
+
+    .login-button a:hover {
+        border: #fff;
+        background-color: #03d5cc;
         color: #fff;
-        cursor: pointer;
     }
 
-    .line:hover {
-        border-bottom: none;
-    }
 
 }
 
 @media only screen and (max-width: 1215px) and (min-width: 690px) {
     nav {
-        position: fixed;
-        height: 4rem;
-        background-color: #f2f5f7;
-        z-index: 5;
-        overflow-y: auto;
-    }
-
-    .logo0,
-    .hamburger {
-        z-index: 5;
-    }
-
-  .logoo {
-      margin-left: 5px !important;
-      /* margin-top: -15px !important */
-  }
-
-    .login-button a {
-        border: none;
-        color: #fff;
-    }
-
-    .join-button,
-    .nav-links,
-    .login-button:focus {
-        background: #03d5cc;
-        border: none;
-    }
-
-    .join-button,
-    .nav-links,
-    .login-button:hover {
-        background: #03d5cc;
-        border: none;
-        color: #f8f8f8;
-    }
-
-    .join-button:focus {
-        border: none;
-        color: #253859;
-    }
-
-    .join-button:hover {
-        color: #f8f8f8;
-        border: none;
-    }
-
-    .nav-links li {
-        /* top: 10em; */
-        color: #fff;
-        z-index: 5;
-    }
-
-
-    .nav-links li :focus::before,
-    .nav-links li :hover::before {
-        display: none;
-    }
-
-    .nav-links {
-        top: 3.5rem;
-        position: fixed;
-        justify-content: space-evenly;
-        list-style: none;
-        width: 88vw;
-        align-items: center;
-        /* background: #03d5cc; */
-        color: #fff !important;
-        height: 90vh;
-        width: 100%;
-        flex-direction: column;
-        clip-path: circle(50px at 90% -20%);
-        -webkit-clip-path: circle(50px at 90% -10%);
-        transition: all 1s ease-out;
-        pointer-events: none;
-    }
-
-    .nav-links.open {
-        clip-path: circle(1000px at 90% -10%);
-        -webkit-clip-path: circle(1000px at 90% -10%);
-        pointer-events: all;
-    }
-
-    .join-button,
-    .login-button,
-    .nav-links li {
-        color: #f8f8f8 !important;
-    }
-
-    .nav-links li {
-        opacity: 0;
-    }
-
-    .nav-links li:nth-child(1) {
-        transition: all 0.5s ease 0.2s;
-    }
-
-    .nav-links li:nth-child(2) {
-        transition: all 0.5s ease 0.4s;
-    }
-
-    .nav-links li:nth-child(3) {
-        transition: all 0.5s ease 0.6s;
-    }
-
-    .nav-links li:nth-child(4) {
-        transition: all 0.5s ease 0.7s;
-    }
-
-    .nav-links li:nth-child(5) {
-        transition: all 0.5s ease 0.8s;
-    }
-
-    .nav-links li:nth-child(6) {
-        transition: all 0.5s ease 0.9s;
-        margin: 0;
-    }
-
-    .nav-links li:nth-child(7) {
-        transition: all 0.5s ease 1s;
-        margin: 0;
-    }
-
-    li.fade {
-        opacity: 1;
-    }
-
-    a.fade {
-        opacity: 1;
-    }
-
-    .hamburger {
-        display: block;
-        position: absolute;
-        cursor: pointer;
-        right: 5%;
-        top: 50%;
-        transform: translate(-5%, -50%);
-        z-index: 2;
-        transition: all 0.7s ease;
-    }
-
-    /* #submenu {
+            position: fixed;
+            height: 4rem;
+            background-color: #f2f5f7;
+            z-index: 5;
+            overflow-y: auto;
+        }
+    
+        .logoo,
+        .hamburger {
+            z-index: 5;
+        }
+    
+        .logoo {
+            margin-left: 5px !important;
+        }
+    
+        .join-button a,
+        .login-button a {
+            border: none;
+            color: #fff;
+            font-size: 25.2px;
+        }
+    
+        .nav-links {
+            top: 3.5rem;
+            position: fixed;
+            justify-content: space-evenly;
+            list-style: none;
+            width: 88vw;
+            align-items: center;
+            background: #03d5cc;
+            color: #fff !important;
+            height: 90vh;
+            width: 100%;
+            flex-direction: column;
+            clip-path: circle(50px at 90% -20%);
+            -webkit-clip-path: circle(50px at 90% -10%);
+            transition: all 1s ease-out;
+            pointer-events: none;
+        }
+    
+        .nav-links.open {
+            clip-path: circle(1000px at 90% -10%);
+            -webkit-clip-path: circle(1000px at 90% -10%);
+            pointer-events: all;
+        }
+    
+    
+        .nav-links li {
+            opacity: 0;
+        }
+    
+        .nav-links li:nth-child(1) {
+            transition: all 0.5s ease 0.2s;
+        }
+    
+        .nav-links li:nth-child(2) {
+            transition: all 0.5s ease 0.4s;
+        }
+    
+        .nav-links li:nth-child(3) {
+            transition: all 0.5s ease 0.6s;
+        }
+    
+        .nav-links li:nth-child(4) {
+            transition: all 0.5s ease 0.7s;
+        }
+    
+        .nav-links li:nth-child(5) {
+            transition: all 0.5s ease 0.8s;
+        }
+    
+        .nav-links li:nth-child(6) {
+            transition: all 0.5s ease 0.9s;
+            margin: 0;
+        }
+    
+        .nav-links li:nth-child(7) {
+            transition: all 0.5s ease 1s;
+            margin: 0;
+        }
+    
+        li.fade {
+            opacity: 1;
+        }
+    
+        .hamburger {
+            display: block;
+            position: absolute;
+            cursor: pointer;
+            right: 5%;
+            top: 50%;
+            transform: translate(-5%, -50%);
+            z-index: 2;
             transition: all 0.7s ease;
-        }  */
-    .show1 {
-        display: block !important;
-        color: #fff !important;
-        position: fixed;
-        overflow-y: hidden !important;
-        margin-top: -1rem;
-        bottom: 0;
-    }
-
-    .show1 .line a {
-        color: #fff !important;
-        text-decoration: none !important;
-        cursor: pointer !important;
-        overflow-y: hidden !important;
-        /* margin: 0 1rem; */
-    }
-
-    .line {
-        color: #fff;
-        cursor: pointer;
-    }
-
-    .line:hover {
-        border-bottom: none;
-    }
+        }
+    
+        .show1 {
+            display: block !important;
+            color: #fff !important;
+            position: fixed;
+            overflow-y: hidden !important;
+            margin-top: -1rem;
+            bottom: 0;
+        }
+    
+        .show1 .line a {
+            color: #fff !important;
+            text-decoration: none !important;
+            cursor: pointer !important;
+            overflow-y: hidden !important;
+            font-size: 25.2px !important;
+        }
+    
+        .show1 .line a:hover {
+            border-bottom: none !important;
+        }
+    
+        #submenu {
+            display: none !important;
+        }
+    
+        .login-button a:hover {
+            border: #fff;
+            background-color: #03d5cc;
+            color: #fff;
+        }
 }
 
 /*Animating Hamburger Icon on Click*/
