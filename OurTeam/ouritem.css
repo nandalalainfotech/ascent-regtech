@@ -43,10 +43,19 @@ div.desc {
     padding: 20px;
     text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+ /* .overlay:nth-child(2){
+  justify-content: end;
+ } */
+ .arrow{
+  margin-top: 100px;
 
+  
+  
+} 
 
   .responsive:hover .overlay {
     /* transform: scale(.5);  */
