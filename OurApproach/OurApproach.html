@@ -184,7 +184,7 @@ Online HTML, CSS and JavaScript editor to run code online.
     /* display: none; */
   }
 
-  @media screen and (max-width:320px) {
+  /* @media screen and (max-width:320px) {
     .nectar1-highlighted-text .nectar1-scribble {
       top: 110px !important;
       left: 80px !important;
@@ -194,7 +194,7 @@ Online HTML, CSS and JavaScript editor to run code online.
       width: 145px;
       height: 22px;
     }
-  }
+  } */
 
 
 
@@ -371,10 +371,83 @@ Online HTML, CSS and JavaScript editor to run code online.
     z-index: 7;
     /* display: none; */
   }
-
+/* responsive 320px */
   @media screen and (max-width:320px) {
+    /* nector3 */
     .nectar3-highlighted-text .nectar3-scribble {
-      top: 142px !important;
+      top: 88px !important;
+      
+    }
+    body .nectar3-scribble.squiggle-underline {
+    width: 95px;
+    height: 18px;
+  }
+  /* nector2 */
+  .nectar2-highlighted-text .nectar2-scribble {
+      top: 35px !important;
+      
+    }
+    body .nectar2-scribble.squiggle-underline {
+    width: 115px;
+    height: 18px;
+  }
+
+   /* nector1 */
+   .nectar1-highlighted-text .nectar1-scribble {
+    top: 85px !important;
+    /* right: -130px; */
+    left: 8px !important;
+    }
+    body .nectar1-scribble.squiggle-underline {
+    width: 105px;
+    height: 18px;
+  }
+    .head-text{
+      font-size: 25px;
+    }
+    .head-text1{
+      font-size: 05px;
+    }
+  }
+
+  /* responsive 425px */
+  @media screen and (max-width:425px) {
+    /* nector3 */
+    .nectar3-highlighted-text .nectar3-scribble {
+      top: 88px !important;
+      
+    }
+    body .nectar3-scribble.squiggle-underline {
+    width: 95px;
+    height: 18px;
+  }
+  /* nector2 */
+  .nectar2-highlighted-text .nectar2-scribble {
+      top: 35px !important;
+      
+    }
+    body .nectar2-scribble.squiggle-underline {
+    width: 115px;
+    height: 18px;
+  }
+
+   /* nector1 */
+   
+   .nectar1-highlighted-text .nectar1-scribble {
+    position: absolute;
+    top: 121px;
+    left: 8px;
+    z-index: 7;
+    }
+    body .nectar1-scribble.squiggle-underline {
+    width: 105px;
+    height: 18px;
+  }
+    .head-text{
+      font-size: 25px;
+    }
+    .head-text1{
+      font-size: 05px;
     }
   }
 
@@ -517,7 +590,7 @@ Online HTML, CSS and JavaScript editor to run code online.
       <div class="row mt-4">
         <div class="col-sm-12 col-md-12 col-lg-6 p-2">
           <div class="p-1 mt-4">
-            <h1 class="nectar1-highlighted-text header-size" data-style="scribble" data-exp="default"
+            <h1 class="nectar1-highlighted-text head-text" data-style="scribble" data-exp="default"
               data-user-color="true" style="color: #03d5cc;-webkit-text-stroke: thin;font-weight: 700;"
               data-using-custom-color="false" data-animation-delay="false" data-color="" data-color-gradient=""> Not
               just data, but targeted knowledge <em class="animated"> <svg class="nectar1-scribble squiggle-underline"
@@ -558,7 +631,7 @@ Online HTML, CSS and JavaScript editor to run code online.
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6 p-1">
           <div class="p-2">
-            <h1 class="nectar2-highlighted-text header-size" data-style="scribble" data-exp="default"
+            <h1 class="nectar2-highlighted-text head-text" data-style="scribble" data-exp="default"
               data-user-color="true" style="color: #03d5cc;-webkit-text-stroke: thin;font-weight: 700;"
               data-using-custom-color="false" data-animation-delay="false" data-color="" data-color-gradient=""> The
               expertise of a human at the speed of a machine<em class="animated"><svg
@@ -601,7 +674,7 @@ Online HTML, CSS and JavaScript editor to run code online.
 
       <div class="row p-3">
         <div class="col-sm-12 col-md-12 col-lg-6 p-2">
-          <h1 class="nectar3-highlighted-text" data-style="scribble" data-exp="default" data-user-color="true"
+          <h1 class="nectar3-highlighted-text head-text" data-style="scribble" data-exp="default" data-user-color="true"
             style="color: #03d5cc;-webkit-text-stroke: thin;font-weight: 700;" data-using-custom-color="false"
             data-animation-delay="false" data-color="" data-color-gradient=""> Your implementation partner, every step
             of the way<em class="animated"><svg class="nectar3-scribble squiggle-underline" role="presentation"
