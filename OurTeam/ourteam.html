@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <title>Document</title>
@@ -19,68 +20,79 @@
 
   <!-- nav bar start -->
   <nav>
-    <a href="../index.html">
-        <img class="logoo" src="../images/index/head-logo-360.png" alt="Logo Image" width="160px" height="60px"/>
-        </a>
-    <div class="hamburger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+    <div class="">
+      <a href="../index.html">
+        <img class="logoo" src="../images/index/head-logo-360.png" alt="Logo Image" width="160px" height="60px" />
+      </a>
     </div>
-    <ul class="nav-links">
-        <li class="show show1" style="padding: 1rem"> <span class="line">
-                <a href="../PlatForm-page/PlatForm.html">Platform</a></span>
-            <ul id="submenu">
-                <a href="../OurApproach/OurApproach.html">Our Approach</a>
-                <a href="../OurData/OurData.html">Our Data</a>
-                <a href="../Regulators/Regulators.html"> Regulators</a>
-                <a href="../TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
-            </ul>
-        </li>
-        <li class="show show1" style="padding: 1rem;"><span class="line"><a href="">Capabilities</a></span>
-            <ul id="submenu">
-                <a href="../Oligation-Inventory/obligations.html">Obligations Inventory</a>
-                <a href="../Scenario-planning/scenerio.html">Scenario Planning</a>
-                <a href="../Horizon-Scanning/horizonScanning.html">Horizon Scanning</a>
-                <a href="../Audit-Trail/Audit.html">Audit Trail</a>
-                <a href="../Explore/explore.html">Explore Use Cases</a>
-            </ul>
-        </li>
-        <li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html">Who We
-                    Serve</a></span>
-            <ul id="submenu">
-                <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
-                <a href="../Mortage-Lenders/MortgageLenders.html">Mortgage Lenders</a>
-                <a href="../Fintech/FinTech.html">FinTech</a>
-                <a href="../Professional/professional.html">Professional Services</a>
-            </ul>
-        </li>
-        <li class="show show1" style="padding: 1rem"><span class="line"> <a href="../Resources/Resources.html">Resources</a></span>
-            <ul id="submenu">
-                <a href="../WhatisReg/whatis.html">What is RegTech?</a>
-                <a href="../Blogs/blogs.html">Blog</a>
-                <a href="../Resources/Resources.html">Resources</a>
-                <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
-            </ul>
-        </li>
-        <li class="show show1" style="padding: 1rem"><span class="line" id="active_page"><a href="../OurTeam/ourteam.html">Company</a></span>
-            <ul id="submenu">
-                <a href="../OurTeam/ourteam.html" ><span >Our Team</span></a>
-                <a href="../Diversity/DiversityEquityandInclusion.html">Diversity, Equity, and Inclusion</a>
-                <a href="../Careers/Careers.html">Careers</a>
-            </ul>
-        </li>
-        <li class="login-button show show1"><a href="../Signin/sign.html">Sign
-                In</a>
-        </li>
-        <li class="join-button show show1">
-            <a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;">
-                Contact Us
-            </a>
-        </li>
-        <li class="show show1" style="display: none; font-size: xx-small;">360 RegTech</li>
+    <div class="hamburger" onclick="toggleClicker()">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <ul class="nav-links" id="initial">
+      <li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
+          <a href="../PlatForm-page/PlatForm.html" id="platform" onclick="platform1()">Platform</a></span>
+        <ul id="submenu">
+          <a href="../OurApproach/OurApproach.html" id="approach">Our Approach</a>
+          <a href="../OurData/OurData.html">Our Data</a>
+          <a href="../Regulators/Regulators.html"> Regulators</a>
+          <a href="../TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
+        </ul>
+      </li>
+      <li class="show show1" style="padding: 1rem;"><span class="line" id="active_page"><a href="" id="capabilities"
+            onclick="capabilities1()">Capabilities</a></span>
+        <ul id="submenu">
+          <a href="../Oligation-Inventory/obligations.html">Obligations Inventory</a>
+          <a href="../Scenario-planning/scenerio.html"><span>Scenario Planning</span></a>
+          <a href="../Horizon-Scanning/horizonScanning.html">Horizon Scanning</a>
+          <a href="../Audit-Trail/Audit.html">Audit Trail</a>
+          <a href="../Explore/explore.html">Explore Use Cases</a>
+        </ul>
+      </li>
+      <li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html"
+            id="whoweserve" onclick="whoweserve1()">Who We
+            Serve</a></span>
+        <ul id="submenu">
+          <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
+          <a href="../Mortage-Lenders/MortgageLenders.html">Mortgage Lenders</a>
+          <a href="../Fintech/FinTech.html">FinTech</a>
+          <a href="../Professional/professional.html">Professional Services</a>
+        </ul>
+      </li>
+      <li class="show show1" style="padding: 1rem"><span class="line"> <a href="../Resources/Resources.html"
+            id="resources" onclick="resources1()">Resources</a></span>
+        <ul id="submenu">
+          <a href="../WhatisReg/whatis.html">What is RegTech?</a>
+          <a href="../Blogs/blogs.html">Blog</a>
+          <a href="../Resources/Resources.html">Resources</a>
+          <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
+        </ul>
+      </li>
+      <li class="show show1" style="padding: 1rem"><span class="line"><a href="../OurTeam/ourteam.html" id="company"
+            onclick="company1()">Company</a></span>
+        <ul id="submenu">
+          <a href="../OurTeam/ourteam.html">Our Team</a>
+          <a href="../Diversity/DiversityEquityandInclusion.html">Diversity, Equity, and Inclusion</a>
+          <a href="../Careers/Careers.html">Careers</a>
+        </ul>
+      </li>
+      <li class="login-button show show1"><a href="../Signin/sign.html" id="sign_in">Sign
+          In</a>
+      </li>
+      <li class="join-button show show1">
+        <a href="../ContactUs/contact-us.html" style="text-decoration: none;color: #fff;" id="contact-us">
+          Contact Us
+        </a>
+      </li>
+      <li class="show show1" style="display: none; font-size: xx-small;">360 RegTech</li>
     </ul>
+    <!-- <ul class="nav-links" id="platforms">
+            <li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
+                <a href="../PlatForm-page/PlatForm.html" id="platform" onclick="platform1();linkSetter()">Platform</a></span>
+        </ul> -->
   </nav>
+
   <!-- nav bar end -->
 
     <!-- ========================= Header Section end============================   -->
@@ -144,9 +156,15 @@
                                 </a>
                                 <div class="overlay" >
                                     <span>Directors Name</span>
+                                    
                                     <!-- <span>Chief Executive Officer</span>
                                     <h1>Christopher Junker</h1> -->
                                 </div>
+                                <!-- <div>
+                                    <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                      </svg></span>
+                                </div> -->
                             </div>
                         </div>
                         <!-- ======================== First Image end =======================   -->
@@ -1100,7 +1118,7 @@
                     </div>
                     <div class="responsive">
                         <div class="gallery" data-bs-toggle="collapse" href="#collapseFour">
-                            <a href="collapseFour">
+                            <a href="#collapseFour">
                                 <img src="img_avatar (1).png"
                                     alt="Mountains" width="600" height="400">
                             </a>
@@ -1559,6 +1577,7 @@
     }
     // first div scroll animation
 </Script>
+<script src="../navbar.js"></script>
 </body>
 
 
