@@ -405,9 +405,35 @@ body {
 .business{
   margin-left: 2.3rem;
 }
+.obligations{
+  margin-left: 2.3rem;
 }
-@media (min-width: 300px) and (max-width: 400px) {
+}
+@media (min-width: 350px) and (max-width: 400px) {
   .opportunities{
     margin-left: 2.3rem;
   }
+  .your{
+    margin-left: 2.3rem;
   }
+  .specific{
+    margin-left: 2.3rem;
+  }
+  }
+@media (min-width: 300px) and (max-width: 350px) {
+  .centerPos{
+    margin-left: 5rem;
+  }
+  .to{
+    margin-left: 2.3rem;
+  }
+  .opportunities{
+    margin-left: 2.3rem;
+  }
+  .specific{
+    margin-left: 2.3rem;
+  }
+  .regulations{
+    margin-left: 2.3rem;
+  }
+}

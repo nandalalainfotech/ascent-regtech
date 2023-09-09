@@ -32,23 +32,7 @@
     padding: 0;
   }
 
-  body {
-    background-repeat: repeat;
-    background-position: center;
-    background-blend-mode: overlay;
-  }
 
-  body::after {
-    content: "";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.3;
-    pointer-events: none;
-  }
 
   /*scroll effect*/
   .scroll-section {
@@ -69,7 +53,7 @@
   <nav>
     <div class="">
       <a href="../index.html">
-        <img class="logoo" src="../images/index/head-logo-360.png" alt="Logo Image" width="160px" height="60px" />
+        <img src="../images/index/head-logo-360.png" alt="Logo Image" class="logoo" width="160px" height="60px" />
       </a>
     </div>
     <div class="hamburger" onclick="toggleClicker()">
@@ -80,6 +64,7 @@
     <ul class="nav-links" id="initial">
       <li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
           <a href="../PlatForm-page/PlatForm.html" id="platform" onclick="platform1()">Platform</a></span>
+
         <ul id="submenu">
           <a href="../OurApproach/OurApproach.html" id="approach">Our Approach</a>
           <a href="../OurData/OurData.html">Our Data</a>
@@ -124,6 +109,8 @@
           <a href="../Careers/Careers.html">Careers</a>
         </ul>
       </li>
+
+
       <li class="login-button show show1"><a href="../Signin/sign.html" id="sign_in">Sign
           In</a>
       </li>
@@ -135,9 +122,10 @@
       <li class="show show1" style="display: none; font-size: xx-small;">360 RegTech</li>
     </ul>
     <!-- <ul class="nav-links" id="platforms">
-            <li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
-                <a href="../PlatForm-page/PlatForm.html" id="platform" onclick="platform1();linkSetter()">Platform</a></span>
-        </ul> -->
+        <li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
+            <a href="../PlatForm-page/PlatForm.html" id="platform" onclick="platform1();linkSetter()">Platform</a></span>
+    </ul> -->
+
   </nav>
 
   <!-- nav bar end -->
@@ -170,6 +158,7 @@
     </div>
 
   </div>
+
   <div class="container save-hours">
     <div class="row">
       <div class="col-sm-0 col-md-0  col-lg-3">
@@ -192,8 +181,6 @@
       </div>
     </div>
   </div>
-
-
   <div class="container class-easy-way">
     <div class="row">
       <div class="col-sm-6 col-md-12 col-lg-7">
@@ -235,12 +222,13 @@
       </div>
       <div class="col-sm-6 col-md-12 col-lg-6 mt-6">
         <section class="scroll-section">
-          <h2 class="single-click" id="responc">Export Audit Data with a Single
-            Click</h2>
-          <P class="single-click-paragraph">Filter down to the specific audit data required
-            and export a CSV
-            </br>file with a single click that
-            show1s all of your obligations,</br> responses, documentation, and interpretations.</P>
+           <h2 class="single-click-get">Get a Comprehensive View of Active
+            Obligations
+          </h2>
+          <p class="obligations-paragraph mt-3">From a single location, the 360regtech Dashboard lets you clearly see
+            all new, outstanding,
+            unassigned,
+            and old obligations.</p>
         </section>
 
       </div>
@@ -277,7 +265,6 @@
       </div>
     </div>
   </div>
-
   <!-- Form section -->
   <div class="container-fluid py-5 px-5" style="background-color: #183460">
     <div class="container">
@@ -451,7 +438,6 @@
       </div>
     </div>
   </div>
-
   <!-- Caurosel section -->
   <div class="container-fluid py-5">
     <div class="row">
