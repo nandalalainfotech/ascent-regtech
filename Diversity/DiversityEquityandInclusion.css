@@ -90,7 +90,11 @@ color: #253859;
 #active_page{
   border-bottom: 1px solid #03d5cc;
 }
-
+.events{
+  color: #28bebb; 
+  font-size: 25.9px; 
+  -webkit-text-stroke: thin;
+}
 
 
 .link {
@@ -124,6 +128,28 @@ color: #253859;
 .checkout {
   text-align: left;
   font-size: 18px;
+}
+@media screen and (max-width:500px) {
+  #header{
+    position: relative;
+    display: inline-block;
+   
+  }
+  #fname{
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: -0.01em;
+    line-height: 15px ;
+    
+  }
+  #sname{
+    font-size: 30px;
+
+  }
+ .events{
+  font-size: 22px  ;
+ }
+
 }
 
 
