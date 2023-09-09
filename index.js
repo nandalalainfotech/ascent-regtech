@@ -9,10 +9,12 @@ function platform1() {
         document.getElementById('resources').removeAttribute('onclick');
         document.getElementById('company').removeAttribute('onclick');
 
-        document.getElementById('capabilities').setAttribute('href', './OurApproach/OurApproach.html');
-        document.getElementById('whoweserve').setAttribute('href', './OurData/OurData.html');
-        document.getElementById('resources').setAttribute('href', './Regulators/Regulators.html');
-        document.getElementById('company').setAttribute('href', './TechnologyPartners/TechnologyPartners.html');
+        // document.getElementById('capabilities').style.transitionDuration = '2s';
+
+        document.getElementById('capabilities').setAttribute('href', '/OurApproach/OurApproach.html');
+        document.getElementById('whoweserve').setAttribute('href', '../OurData/OurData.html');
+        document.getElementById('resources').setAttribute('href', '../Regulators/Regulators.html');
+        document.getElementById('company').setAttribute('href', '../TechnologyPartners/TechnologyPartners.html');
     }
     else if (document.getElementById('platform').innerText == 'Back') {
         console.log("called");
@@ -28,6 +30,7 @@ function platform1() {
         document.getElementById('whoweserve').removeAttribute('href');
         document.getElementById('resources').removeAttribute('href');
         document.getElementById('company').removeAttribute('href');
+        document.getElementById('sign_in').removeAttribute('href');
         document.getElementById('capabilities').setAttribute("onclick", "capabilities1()");
         document.getElementById('whoweserve').setAttribute("onclick", "whoweserve1()");
         document.getElementById('resources').setAttribute("onclick", "resources1()");
@@ -44,12 +47,12 @@ function capabilities1() {
     document.getElementById('company').removeAttribute('onclick');
 
     setTimeout(() => {
-        document.getElementById('capabilities').setAttribute('href', './Oligation-Inventory/obligations.html');
+        document.getElementById('capabilities').setAttribute('href', '../Oligation-Inventory/obligations.html');
     }, 1000);
-    document.getElementById('whoweserve').setAttribute('href', './Scenario-planning/scenerio.html');
-    document.getElementById('resources').setAttribute('href', './Horizon-Scanning/horizonScanning.html');
-    document.getElementById('company').setAttribute('href', './Audit-Trail/Audit.html');
-    document.getElementById('sign_in').setAttribute('href', './Explore/explore.html');
+    document.getElementById('whoweserve').setAttribute('href', '../Scenario-planning/scenerio.html');
+    document.getElementById('resources').setAttribute('href', '../Horizon-Scanning/horizonScanning.html');
+    document.getElementById('company').setAttribute('href', '../Audit-Trail/Audit.html');
+    document.getElementById('sign_in').setAttribute('href', '../Explore/explore.html');
 
 }
 function whoweserve1() {
@@ -60,12 +63,12 @@ function whoweserve1() {
     document.getElementById('resources').removeAttribute('onclick');
     document.getElementById('company').removeAttribute('onclick');
 
-    document.getElementById('capabilities').setAttribute('href', './Financial-Services/FinancialServices.html');
+    document.getElementById('capabilities').setAttribute('href', '../Financial-Services/FinancialServices.html');
     setTimeout(() => {
-        document.getElementById('whoweserve').setAttribute('href', './Mortage-Lenders/MortgageLenders.html');
+        document.getElementById('whoweserve').setAttribute('href', '../Mortage-Lenders/MortgageLenders.html');
     }, 1000);
-    document.getElementById('resources').setAttribute('href', './Fintech/FinTech.html');
-    document.getElementById('company').setAttribute('href', './Professional/professional.html');
+    document.getElementById('resources').setAttribute('href', '../Fintech/FinTech.html');
+    document.getElementById('company').setAttribute('href', '../Professional/professional.html');
 }
 function resources1() {
     setResources();
@@ -75,12 +78,12 @@ function resources1() {
     document.getElementById('resources').removeAttribute('onclick');
     document.getElementById('company').removeAttribute('onclick');
 
-    document.getElementById('capabilities').setAttribute('href', './WhatisReg/whatis.html');
-    document.getElementById('whoweserve').setAttribute('href', './Blogs/blogs.html');
+    document.getElementById('capabilities').setAttribute('href', '../WhatisReg/whatis.html');
+    document.getElementById('whoweserve').setAttribute('href', '../Blogs/blogs.html');
     setTimeout(() => {
-        document.getElementById('resources').setAttribute('href', './Resources/Resources.html');
+        document.getElementById('resources').setAttribute('href', '../Resources/Resources.html');
     }, 1000);
-    document.getElementById('company').setAttribute('href', './Customer-Stories/Customerstories.html');
+    document.getElementById('company').setAttribute('href', '../Customer-Stories/Customerstories.html');
 }
 function company1() {
     setCompany();
@@ -90,9 +93,9 @@ function company1() {
     document.getElementById('resources').removeAttribute('onclick');
     document.getElementById('company').removeAttribute('onclick');
 
-    document.getElementById('capabilities').setAttribute('href', './OurTeam/ourteam.html');
-    document.getElementById('whoweserve').setAttribute('href', './Diversity/DiversityEquityandInclusion.html');
-    document.getElementById('resources').setAttribute('href', './Careers/Careers.html');
+    document.getElementById('capabilities').setAttribute('href', '../OurTeam/ourteam.html');
+    document.getElementById('whoweserve').setAttribute('href', '../Diversity/DiversityEquityandInclusion.html');
+    document.getElementById('resources').setAttribute('href', '../Careers/Careers.html');
 }
 
 
@@ -114,7 +117,7 @@ function setCapabilities() {
     document.getElementById('whoweserve').innerText = 'Scenario Planning';
     document.getElementById('resources').innerText = 'Horizon Scanning';
     document.getElementById('company').innerText = 'Audit Trail';
-    document.getElementById('sign_in').innerText = '';
+    document.getElementById('sign_in').innerText = 'Explore Use Cases';
     document.getElementById('contact-us').innerText = '';
 }
 function setWhoWeServe() {
@@ -155,6 +158,7 @@ function toggleClicker() {
         document.getElementById('company').removeAttribute('href');
     }
     if (counter == 2) {
+        counter = 0;
         document.getElementById('platform').innerText = 'Platform';
         document.getElementById('capabilities').innerText = 'Capabilities';
         document.getElementById('whoweserve').innerText = 'Who we serve';
@@ -163,9 +167,9 @@ function toggleClicker() {
         document.getElementById('sign_in').innerText = 'Sign In';
         document.getElementById('contact-us').innerText = ' Contact Us';
 
-        document.getElementById('platform').setAttribute('href', './PlatForm-page/PlatForm.html');
-        document.getElementById('whoweserve').setAttribute('href', './WhoweServe/whoweserve.html');
-        document.getElementById('resources').setAttribute('href', './Resources/Resources.html');
-        document.getElementById('company').setAttribute('href', './OurTeam/ourteam.html');
+        document.getElementById('platform').setAttribute('href', '../PlatForm-page/PlatForm.html');
+        document.getElementById('whoweserve').setAttribute('href', '../WhoweServe/whoweserve.html');
+        document.getElementById('resources').setAttribute('href', '../Resources/Resources.html');
+        document.getElementById('company').setAttribute('href', '../OurTeam/ourteam.html');
     }
 }

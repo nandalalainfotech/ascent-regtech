@@ -1,14 +1,15 @@
-.basee{
-    background-image: url("app1.png");
-    height: 520px !important;
-}
-@media screen and (max-width: 550px) {
-  .basee{
-    background-image: url("app1.png");
-    height: 608px !important;
+.basee {
+  background-image: url("app1.png");
+  height: 520px !important;
 }
 
-/* .nectar-highlighted-text .nectar-scribble {
+@media screen and (max-width: 550px) {
+  .basee {
+    background-image: url("app1.png");
+    height: 608px !important;
+  }
+
+  /* .nectar-highlighted-text .nectar-scribble {
   position: absolute;
   top: 35px !important;
   left: 96px !important;
@@ -17,42 +18,41 @@
 }
 
 
-/* @media screen and (min-width: 375px) and (max-width: 667px){
-  .nectar-highlighted-text .nectar-scribble {
-    position: absolute;
-    top: 35px !important;
-    left: 96px !important;
-    z-index: 11;
-}
+/* @media screen and (min-width: 375px) and (max-width: 667px) {
+  .nectar1-highlighted-text .nectar1-scribble {
+    position: absolute !important;
+    top: 87px !important;
+    left: 17px !important;
+    z-index: 7;
+  }
 } */
 
 
- @media screen and (max-width: 750px) {
-    img {
-       max-width: 150px !important;
-       margin-left: 50px;
-      }
-   } 
- @media screen and (max-width: 600px) {
-   img {
-      max-width: 200px !important;
-      margin-left: unset;
-    }
-  }  
-  body{
-    letter-spacing: 0.02em;
+@media screen and (max-width: 750px) {
+  img {
+    max-width: 150px !important;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    max-width: 200px !important;
+    margin-left: unset;
+  }
+}
+
+body {
+  letter-spacing: 0.02em;
   font-family: Mulish;
 }
 
 
-#footer-hover:hover{
+#footer-hover:hover {
   color: #28BEBB;
-  }
-#footer-hover{
+}
+
+#footer-hover {
   text-decoration: none;
   color: white;
 }
-
-
-
-
