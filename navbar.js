@@ -30,7 +30,7 @@ function platform1() {
         document.getElementById('whoweserve').removeAttribute('href');
         document.getElementById('resources').removeAttribute('href');
         document.getElementById('company').removeAttribute('href');
-        document.getElementById('sign_in').removeAttribute('href');
+        document.getElementById('sign_in').setAttribute('href','../Signin/sign.html');
         document.getElementById('capabilities').setAttribute("onclick", "capabilities1()");
         document.getElementById('whoweserve').setAttribute("onclick", "whoweserve1()");
         document.getElementById('resources').setAttribute("onclick", "resources1()");
