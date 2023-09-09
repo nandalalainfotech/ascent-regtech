@@ -409,12 +409,31 @@ Online HTML, CSS and JavaScript editor to run code online.
       font-size: 05px;
     }
   }
+  @media screen and (max-width:375px) {
+    .nectar1-highlighted-text .nectar1-scribble {
+    position: absolute;
+    top: 61px;
+    left: 8px;
+    z-index: 7;
+    }
+    body .nectar1-scribble.squiggle-underline {
+    width: 105px;
+    height: 18px;
+  }
+    .head-text{
+      font-size: 25px;
+    }
+    .head-text1{
+      font-size: 05px;
+    }
+  } 
+
 
   /* responsive 425px */
   @media screen and (max-width:425px) {
     /* nector3 */
     .nectar3-highlighted-text .nectar3-scribble {
-      top: 88px !important;
+      top: 60px !important;
       
     }
     body .nectar3-scribble.squiggle-underline {
@@ -423,7 +442,8 @@ Online HTML, CSS and JavaScript editor to run code online.
   }
   /* nector2 */
   .nectar2-highlighted-text .nectar2-scribble {
-      top: 35px !important;
+    top: 35px !important;
+    left: 59px !important;
       
     }
     body .nectar2-scribble.squiggle-underline {
@@ -435,7 +455,7 @@ Online HTML, CSS and JavaScript editor to run code online.
    
    .nectar1-highlighted-text .nectar1-scribble {
     position: absolute;
-    top: 121px;
+    top: 88px;
     left: 8px;
     z-index: 7;
     }
