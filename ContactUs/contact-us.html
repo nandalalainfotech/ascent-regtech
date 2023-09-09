@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="contact.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="contact.js"></script>
+    <link rel="stylesheet" id="redux-google-fonts-salient_redux-css"
+        href="https://fonts.googleapis.com/css?family=Mulish%3A700%2C400%2C500%2C800%2C600%2C900%2C200%2C500italic&amp;subset=latin&amp;display=swap&amp;ver=6.3"
+        type="text/css" media="all">
 </head>
+
 <style>
     body b,
     body strong,
@@ -48,46 +52,219 @@
         color: #2AB4B0;
     }
 
-    #top {
-        height: 80px !important;
+    .form-group {
+        font-family: "Mulish";
+        font-size: 14px;
+        color: #33475b;
+        font-weight: 500;
+        line-height: 20px;
     }
 
-    @media screen and (min-width:375px) and (max-width:667px) {
-        .captcha {
-            margin-left: -13px;
-        }
+    .nectar-highlighted-text.font_size_45px h1 {
+        font-size: 45px;
+        line-height: 1.1em;
+        font-family: "Mulish";
+        text-transform: initial;
+        letter-spacing: -0.05em;
+        font-weight: 800;
+    }
 
-        .heading h1 {
-            color: #ffffff;
-            /* font-size: 45px; */
-            font-family: "Mulish" !important;
-            font-weight: 900 !important;
-            -webkit-text-stroke: thin !important;
-            text-align: justify !important;
-            letter-spacing: -0.02em !important;
-            font-size: 37.7px !important;
-            line-height: 29.25px !important;
+    .vc_custom_1682646209179 {
+        margin-bottom: 30px !important;
+        padding-right: 15px !important;
+    }
+
+    .wpb_wrapper>div {
+        margin-bottom: 24px;
+    }
+
+    a {
+        color: #3555ff;
+        text-decoration: none;
+        transition: color .3s;
+    }
+
+    .form-control {
+        display: inline-block;
+        width: 90%;
+        max-width: 500px;
+        height: 40px;
+        padding: 9px 10px;
+        font-family: "Helvetica Neue",
+            Helvetica,
+            Arial,
+            sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 22px;
+        color: #33475b !important;
+        border: 1px solid #cbd6e2;
+        box-sizing: border-box;
+        border-radius: 3px;
+        background-color: #f5f8fa;
+    }
+
+    .form-controll {
+        display: inline-block;
+        width: 100%;
+        /* max-width: 500px; */
+        height: 40px;
+        padding: 9px 10px;
+        font-family: "Helvetica Neue",
+            Helvetica,
+            Arial,
+            sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 22px;
+        color: #33475b !important;
+        border: 1px solid #cbd6e2;
+        box-sizing: border-box;
+        border-radius: 3px;
+        background-color: #f5f8fa;
+    }
+
+    .top-content {
+        height: 100px;
+    }
+</style>
+
+<style>
+    @media only screen and (min-width:768px) and (max-width:1024px) {
+        .top-content {
+            height: 30px;
         }
 
         .nectar-highlighted-text .nectar-scribble {
-            position: absolute !important;
-            left: 30px !important;
-            top: 179PX !important;
-            z-index: 4 !important;
-            width: 259px !important;
-            height: 49px !important;
+            left: 2rem !important;
+            top: 124px !important;
+            z-index: -1;
+            width: 257px !important;
+            height: 61px !important;
         }
 
+        .nectar-highlighted-text.font_size_45px h1 {
+            font-family: "Mulish";
+            text-transform: initial;
+            letter-spacing: -0.05em;
+            font-weight: 800;
+            font-size: 40.6px;
+            line-height: 31.5px;
+        }
     }
 
-    .heading h1 {
-        color: #ffffff;
-        font-size: 45px;
-        font-family: "Mulish";
-        font-weight: 900 !important;
-        -webkit-text-stroke: thin;
-        text-align: justify;
-        letter-spacing: -0.02em;
+    @media screen and (min-width:375px) and (max-width:667px) {
+        .nectar-highlighted-text .nectar-scribble {
+            position: absolute;
+            left: 1rem !important;
+            top: 135PX !important;
+        }
+
+        .top-content {
+            height: 10px;
+        }
+
+        .nectar-highlighted-text.font_size_45px h1 {
+            font-size: 45px;
+            line-height: 1.1em;
+            font-family: "Mulish";
+            text-transform: initial;
+            letter-spacing: -0.05em;
+            font-weight: 800;
+            line-height: 34.25px;
+            font-size: 37.7px;
+            line-height: 29.25px;
+        }
+    }
+
+    @media only screen and (min-width : 1440px) {
+        .nectar-highlighted-text .nectar-scribble {
+            position: absolute;
+            left: 16rem !important;
+            top: 210PX !important;
+        }
+    }
+
+    @media only screen and (min-width : 2560px) {
+        .nectar-highlighted-text .nectar-scribble {
+            position: absolute;
+            left: 37rem !important;
+            top: 210PX !important;
+        }
+    }
+
+    /* @media only screen and (min-width : 768px) and (max-width : 1279px) {
+        .nectar-highlighted-text .nectar-scribble {
+            position: absolute;
+            left: 2rem !important;
+            top: 190PX !important;
+            z-index: 4;
+        }
+    } */
+
+
+    @keyframes nectarStrokeAnimation {
+        0% {
+            stroke-dashoffset: 1;
+            opacity: 0;
+        }
+
+        1% {
+            opacity: 1;
+        }
+
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    .nectar-highlighted-text .nectar-scribble {
+
+        z-index: 4;
+    }
+
+    .nectar-highlighted-text em.animated .nectar-scribble path {
+        stroke-linecap: round;
+        opacity: 1;
+        animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    .nectar-highlighted-text .nectar-scribble path {
+        stroke-dasharray: 1;
+        stroke-dashoffset: 1;
+        opacity: 0;
+    }
+
+    .nectar-highlighted-text em.animated .nectar-scribble path {
+        stroke-linecap: round;
+        opacity: 1;
+        animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    .nectar-highlighted-text .nectar-scribble {
+        position: absolute;
+        left: 30px;
+        top: 260PX;
+        z-index: 4;
+        width: 300px;
+        height: 80px;
+    }
+
+    .nectar-highlighted-text .nectar-scribble path {
+        stroke-dasharray: 1;
+        stroke-dashoffset: 1;
+        opacity: 0;
+        z-index: -1 !important;
+    }
+
+    .nectar-highlighted-text em.animated .nectar-scribble path {
+        stroke-linecap: round;
+        opacity: 1;
+        animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    .nectar-highlighted-text h1 .nectar-scribble path {
+        z-index: -1 !important;
     }
 </style>
 
@@ -166,228 +343,155 @@
             <li class="show show1" style="display: none; font-size: xx-small;">360 RegTech</li>
         </ul>
     </nav>
+
     <div class="container-fluid py-5 px-5" style="background-color: #03d5cc;">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 " id="top" style="height: 100px !important;">
-                </div>
-                <div class="col-md-5 text-center">
-                    <div class="text-white" style="margin-top: auto;">
-                    </div>
-                    <style>
-                        @media only screen and (min-width : 1400px) {
-                            .nectar-highlighted-text .nectar-scribble {
-                                position: absolute;
-                                left: 269px !important;
-                                top: 250PX;
-                                z-index: 4;
-                            }
-                        }
-
-                        @keyframes nectarStrokeAnimation {
-                            0% {
-                                stroke-dashoffset: 1;
-                                opacity: 0;
-                            }
-
-                            1% {
-                                opacity: 1;
-                            }
-
-                            100% {
-                                stroke-dashoffset: 0;
-                            }
-                        }
-
-                        .nectar-highlighted-text .nectar-scribble {
-
-                            z-index: 4;
-                        }
-
-                        .nectar-highlighted-text em.animated .nectar-scribble path {
-                            stroke-linecap: round;
-                            opacity: 1;
-                            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-                        }
-
-                        .nectar-highlighted-text .nectar-scribble path {
-                            stroke-dasharray: 1;
-                            stroke-dashoffset: 1;
-                            opacity: 0;
-                        }
-
-                        .nectar-highlighted-text em.animated .nectar-scribble path {
-                            stroke-linecap: round;
-                            opacity: 1;
-                            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-                        }
-
-                        .nectar-highlighted-text .nectar-scribble {
-                            position: absolute;
-                            left: 30px;
-                            top: 250PX;
-                            z-index: 4;
-                            width: 300px;
-                            height: 80px;
-                        }
-
-                        .nectar-highlighted-text .nectar-scribble path {
-                            stroke-dasharray: 1;
-                            stroke-dashoffset: 1;
-                            opacity: 0;
-                            z-index: -1 !important;
-                        }
-
-                        .nectar-highlighted-text em.animated .nectar-scribble path {
-                            stroke-linecap: round;
-                            opacity: 1;
-                            animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-                        }
-                    </style>
+                <div class="col-lg-5 col-sm-12 col-md-12">
                     <div class="row">
-                        <div class="col-md-12" id="formPad"></div>
-                        <div class="col-md-10 heading">
-                            <h1 style="color: #ffffff; font-size: 45px;
-                            font-family: Mulish;
-                            font-weight: 900 !important;
-                            text-align: justify;
-                            letter-spacing: -0.02em;">From chaos to <br />compliance<br /> <em
-                                    class="animated">confidence.
-                                    <div class="nectar-highlighted-text" data-style="scribble" data-exp="default"
-                                        data-using-custom-color="false" data-animation-delay="false" data-color=""
-                                        data-color-gradient="">
-                                        <em class="animated">
-                                            <svg class="nectar-scribble circle" role="presentation"
-                                                viewBox="0 0 800 350" style="width: 300px;height: 80px;"
-                                                preserveAspectRatio="none">
-                                                <path style="animation-duration: 1.8s;"
-                                                    transform="matrix(0.9791300296783447,0,0,0.9791300296783447,400,179)"
-                                                    stroke-linejoin="miter" fill-opacity="0" pathLength="1"
-                                                    stroke-miterlimit="4" stroke="#253859" stroke-opacity="1"
-                                                    stroke-width="20"
-                                                    d=" M253,-161 C253,-161 -284.78900146484375,-201.4600067138672 -376,-21 C-469,163 67.62300109863281,174.2100067138672 256,121 C564,34 250.82899475097656,-141.6929931640625 19.10700035095215,-116.93599700927734">
-                                                </path>
-                                            </svg></em>
+                        <div class="wpb_wrapper">
+                            <div class="top-content"></div>
+                            <div class="nectar-highlighted-text font_size_45px nectar-disable-mobile-animation "
+                                data-style="scribble" data-exp="default" data-user-color="true" style="color: #ffffff;"
+                                data-using-custom-color="false" data-animation-delay="false" data-color=""
+                                data-color-gradient="">
+                                <h1>From chaos to compliance <em class="animated">confidence.<svg
+                                            class="nectar-scribble circle" role="presentation" viewBox="0 0 800 350"
+                                            preserveAspectRatio="none">
+                                            <path style="animation-duration: 1.8s;"
+                                                transform="matrix(0.9791300296783447,0,0,0.9791300296783447,400,179)"
+                                                stroke-linejoin="miter" fill-opacity="0" pathLength="1"
+                                                stroke-miterlimit="4" stroke="#253859" stroke-opacity="1"
+                                                stroke-width="20"
+                                                d=" M253,-161 C253,-161 -284.78900146484375,-201.4600067138672 -376,-21 C-469,163 67.62300109863281,174.2100067138672 256,121 C564,34 250.82899475097656,-141.6929931640625 19.10700035095215,-116.93599700927734">
+                                            </path>
+                                        </svg></em></h1>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element  vc_custom_1682646209179">
+                                <div class="wpb_wrapper">
+                                    <div class="nectar-responsive-text font_size_min_16px">
+                                        <p><span style="color: #ffffff;
+                                            letter-spacing: -0.02em;
+                                            font-family: Mulish;
+                                            color: #eff4f9;
+                                            line-height: 30px;
+                                            font-weight: 500;
+                                        ">Ready to see how 360Regtech platform can help you
+                                                get your compliance house in order? Share your contact information and
+                                                take the first step to compliance confidence with 360Regtech.</span></p>
                                     </div>
-                                </em>
-                            </h1>
-                            <br />
-                            <p style="color: #ffffff; font-size: 17px;
-                            font-family: Mulish;
-                            font-weight: 500 !important;
-                            text-align: justify;
-                            letter-spacing: -0.02em;">
-                                <span>Ready to
-                                    see how 360regtech’s platform can
-                                    help you get your
-                                    compliance house in order? Share your contact information and take the first step to
-                                    compliance confidence with 360regtech.</span>
-                            </p>
-                            <br />
-                            <p style="color: #ffffff; font-size: 17px;
-                            font-family: Mulish;
-                            font-weight: 500 !important;
-                            text-align: justify;
-                            letter-spacing: -0.02em;
-                           ">
-                                <span>
-                                    Give us a call</span>
-                            </p>
+                                </div>
+                            </div>
 
-                            <p style="text-align: justify; text-decoration: none;">
-                                <strong>
-                                    <span style="color: #253859;">
-                                        <a style="color: #253859;  text-decoration: none;  margin-bottom: -20px !important; font-weight: revert;
-                                        -webkit-text-stroke: thin;
-                                        " href=" #">+1 (815) 396-4754</a>
-                                    </span>
-                                </strong>
-                            </p>
-                            <p style="color: #ffffff; font-size: 17px; font-family: Mulish; font-weight: 500
-                                !important; text-align: justify; letter-spacing: -0.02em;
-                               ">Send us an email</p>
-                            <p style=" text-align: justify;">
-                                <strong>
-                                    <span style="color: #253859;">
-                                        <a style="color: #253859;  text-decoration: none;  font-weight: revert;
-                                        -webkit-text-stroke: thin;" href="#">sales@360regtechregtech.com</a>
-                                    </span>
-                                </strong>
-                            </p>
+
+
+                            <p style="color: #ffffff;text-align: left"
+                                class="vc_custom_heading vc_custom_1682463464078">Give us a call</p>
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    <p><strong><span style="color: #253859;"><a style="color: #253859;" href="#">+1
+                                                    (815) 396-4754</a></span></strong>
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+                            <p style="color: #ffffff;text-align: left"
+                                class="vc_custom_heading vc_custom_1682463471590">Send us an email</p>
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    <p><strong><span style="color: #253859;"><a style="color: #253859;"
+                                                    href="#">sales@360Regtechregtech.com</a></span></strong>
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+                            <div class="nectar-cta  alignment_tablet_default alignment_phone_default display_tablet_inherit display_phone_inherit font_size_desktop_1px "
+                                data-color="default" data-using-bg="false" data-style="basic" data-display="block"
+                                data-alignment="left" data-text-color="std">
+                                <p><span class="link_wrap"><a class="link_text" role="button" href="#"><span
+                                                class="text">.</span></a></span></p>
+                            </div>
                         </div>
-                        <div class="col-md-2"></div>
                     </div>
                 </div>
 
-                <div class="col-md-7" style="background-color: #eff4f9;border-radius: 10px; ">
+                <div class="col-lg-7 col-sm-12 col-md-12 mt-5" style="
+                background-color: #eff4f9;
+                box-shadow: 0 30px 60px rgba(0, 0, 0, .15);
+                border-radius: 10px;
+                margin-top: 1px;
+                mask-border-width: 100%;">
 
                     <!-- ============== Request a Demo Form ================  -->
-                    <div class="container" id="request_form">
+                    <div class="container mt-4" id="request_form">
                         <div class="row">
-                            <div class="col-md-3"></div>
-                            <div class="col-md-6 text-center py-5" style="display: inline-block;">
+                            <div class="col-lg-12 text-center">
                                 <button type="button" class="btn btn-primary" style="padding: 8px 15px; background-color: #03d5cc;
                                 border-color: #03d5cc; border-radius: 1px !important;">Request A Demo</button>
                                 <button onclick="request_form_showOff()" type="button" class="btn btn-primary active"
                                     style="background-color: rgba(0,0,0,.045);     color: #888;    border: 1px solid rgba(0,0,0,.06);;padding: 8px 15px;  border-radius: 1px !important; margin-left: -5px;">Other
                                     Inquiries</button>
                             </div>
-                            <div class="col-md-3"></div>
-                            <div class="col-md-6 py-2">
-                                <div>
-                                    <label for="fname" style="font-size: 14px;color: #33475B;display: block;">First name
-                                        <span style="color: red;">*</span></label>
-                                    <input type="text" id="fname" class="hs-input"
-                                        style="width: 100%; height: 40px; background-color: #f5f8fa; border: 1px solid #cbd6e2;  border-radius: 3px;">
+                        </div>
+                        <div class="row mt-5" style="padding: 0px 20px 0px 20px;">
+                            <div class="col-lg-6 col-sm-6 py-2">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" required>First name</label><span
+                                        style="color: red;">*</span>
+                                    <input type="fname" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
                                 </div>
                             </div>
-                            <div class="col-md-6 py-2">
-                                <div>
-                                    <label for="lname" style="font-size: 14px;color: #33475B;display: block;">Last name
-                                        <span style="color: red;">*</span></label>
-                                    <input type="text" id="lname"
-                                        style="width: 100%; height: 40px; background-color: #f5f8fa; border: 1px solid #cbd6e2;  border-radius: 3px;">
+                            <div class="col-sm-6 col-lg-6 py-2">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" required>Last name</label><span
+                                        style="color: red;">*</span>
+                                    <input type="lname" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
                                 </div>
                             </div>
-                            <div class="col-md-6 py-2">
-                                <div>
-                                    <label for="jobTitle" style="font-size: 14px;display: block;color: #33475B;">Job
-                                        title<span style="color: red;">*</span></label>
-                                    <input type="text" id="jobTitle"
-                                        style="width: 100%; height: 40px; background-color: #f5f8fa; border: 1px solid #cbd6e2;  border-radius: 3px;">
+                            <div class="col-sm-6 col-lg-6 py-2">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" required>Job title</label><span
+                                        style="color: red;">*</span>
+                                    <input type="fname" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
                                 </div>
                             </div>
-                            <div class="col-md-6 py-2">
-                                <div>
-                                    <label for="businessEmail"
-                                        style="font-size: 14px;color: #33475B;display: block;">Business Email<span
-                                            style="color: red;">*</span></label>
-                                    <input type="text" id="businessEmail"
-                                        style="width: 100%; height: 40px; background-color: #f5f8fa; border: 1px solid #cbd6e2;  border-radius: 3px;">
+                            <div class="col-sm-6 col-lg-6 py-2">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" required>Business Email </label><span
+                                        style="color: red;">*</span>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
                                 </div>
                             </div>
-                            <div class="col-md-6 py-2">
-                                <div>
-                                    <label for="mobile" style="font-size: 14px;color: #33475B;display: block;">Phone
-                                        number<span style="color: red;">*</span></label>
-                                    <input type="text" id="mobile"
-                                        style="width: 100%; height: 40px; background-color: #f5f8fa; border: 1px solid #cbd6e2;  border-radius: 3px;">
+                            <div class="col-sm-6 col-sm-6 col-lg-6 py-2">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" required>Phone number</label><span
+                                        style="color: red;">*</span>
+                                    <input type="tel" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
                                 </div>
                             </div>
-                            <div class="col-md-6 py-2">
-                                <div>
-                                    <label for="companyName"
-                                        style="font-size: 14px;color: #33475B;display: block;">Company
-                                        Name<span style="color: red;">*</span></label>
-                                    <input type="text" id="companyName"
-                                        style="width: 100%; height: 40px; background-color: #f5f8fa; border: 1px solid #cbd6e2; border-radius: 3px;">
+                            <div class="col-sm-6  col-lg-6 py-2">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" required>Company Name</label><span
+                                        style="color: red;">*</span>
+                                    <input type="Cname" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
                                 </div>
                             </div>
-                            <div class="col-md-12 py-2">
-                                <div>
+                            <div class="col-lg-12 col-sm-12 py-2">
+                                <div class="form-group">
                                     <label for="companyName" style="font-size: 14px;color: #33475B;">Country/Region<span
                                             style="color: red;">*</span></label>
-                                    <select class="form-control" style="color: #bfbfbf;" placeholder="Please Select">
+                                    <select class="form-controll" style="color: #bfbfbf !important;"
+                                        placeholder="Please Select">
                                         <option value="" style="color: #33475b;">Please Select</option>
                                         <option value="United States" style="color: #33475b;">United States</option>
                                         <option value="Canada" style="color: #33475b;">Canada</option>
@@ -409,78 +513,85 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <div>
-                                    <p style="font-size: 14px;">Please share any specific objectives or goals you would
-                                        like
-                                        to discuss with our sales team. </p>
-                                    <textarea name="" id="" cols="30" rows="5"
-                                        style="width: 100%;height: 3.5rem; border: 1px solid #cbd6e2;  border-radius: 3px;"></textarea>
-                                </div>
-                            </div><br /><br /><br /><br /><br />
-                            <div class="col-md-12" id="Privacy">
-                                <div>
-                                    <p style="font-size: 11px; font-family: Mulish; line-height: 24px;">
-                                        By submitting this form, you agree that you have read our <a href="#"
-                                            style="color: #03d5cc;">Privacy
-                                            Policy</a> and consent to 360regtech's cookie policy and receiving marketing
-                                        communications. You can unsubscribe at any time.
+                            <div class="col-lg-12">
+                                <div class="form-group" style="font-family: Mulish; font-size: 14px; color: #33475b; font-weight:
+                      500; line-height: 20px;">
+                                    <p>
+                                        Please share any specific objectives or goals you would
+                                        like to discuss with our sales team.
                                     </p>
+                                    <textarea name="" id="" cols="30" rows="5" style="
+                          width: 100%;
+                          height: 40px;
+                          border: 1px solid #cbd6e2;
+                          border-radius: 3px;
+                        "></textarea>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="text-white captcha" style="height: 60px;
-                                width: 256px;
-                                box-shadow: gray 0px 0px 5px;">
+                            <div class="col-lg-12 col-sm-12" id="Privacy">
+                                <p style="font-family: Mulish;
+                      color: #33475b;
+                      font-size: 11px; line-height: 20px;">
+                                    By submitting this form, you agree that you have read our <a href="#"
+                                        style=" ">Privacy
+                                        Policy</a> and consent to 360regtech's
+                                    cookie policy and receiving marketing communications. You can unsubscribe at any
+                                    time.
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <div class="text-white captcha1" style="height: 60px;
+                    width: 256px;
+                    box-shadow: gray 0px 0px 5px;">
                                     <div style="float: left; 
-                                    background-color: #1A73E8;
-                                     color: white; 
-                                     font-size: 13px;
-                                      padding: 0 19px;
-                                      text-align: justify;
-                                    
-                                      height: 60px;">
-                                        <ul style="list-style-type: none;font-size: 11px;margin: 0px;padding: 0px;">
+                        background-color: #1A73E8;
+                         color: white; 
+                         font-size: 13px;
+                          padding: 0 19px;
+                          text-align: justify;
+                        
+                          height: 60px;">
+                                        <ul style="list-style-type: none;font-size: 11px;padding: 0px;">
                                             <li style="font-family: Roboto,helvetica,arial,sans-serif;
-                                            font-size: 13px;   margin-top: 10px;
-                                           ">protected by <strong>reCAPTCHA</strong></li>
+                                font-size: 13px;   margin-top: 10px;
+                               ">protected by <strong>reCAPTCHA</strong>
+                                            </li>
                                             <a href="#" class="text-white" id="underline" style="
-                                                font-size: 10px; text-decoration: none !important; ">Privacy -Terms</a>
+                                    font-size: 10px; text-decoration: none !important; ">Privacy -Terms</a>
                                         </ul>
                                     </div>
                                     <div style="background-color: #fff;
-                                    text-align: center;  height: 60px;
-                                width: 256px;
-                                " class=" p-2">
+                        text-align: center;  height: 60px;
+                    width: 256px;
+                    " class=" p-2">
                                         <img src="logo_48.png" alt="" style="background-size: 44px;
-                                        height: 44px;
-                                        width: 44px;
-                                        margin-right: -5px;">
+                            height: 44px;
+                            width: 44px;
+                            margin-right: -5px;">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6"></div>
-                            <div class="col-md-6 py-5">
+                            <div class="col-lg-6"></div>
+                            <div style="height: 30px;"></div>
+                            <div class="col-lg-6 py-3">
                                 <div>
-                                    <button class="btn text-white" style="background: #03d5cc;
-                                        border-color: #03d5cc;
-                                        color: #ffffff;
-                                        font-size: 15px;
-                                        line-height: 15px;
-                                        font-family: Mulish;
-                                        padding: 12px 24px;">
-                                        <strong>Request a
-                                            Demo</strong>
+                                    <button class="btn text-white" style="
+                          background-color: #03d5cc;
+                          font-size: 14px;
+                          padding: 10px 20px;
+                        ">
+                                        <strong>Request a Demo</strong>
                                     </button>
                                 </div>
                             </div>
+                            <div style="height: 30px;"></div>
                         </div>
                     </div>
+
                     <!-- ============== Other Inquiries Form ================  -->
-                    <div class="container" id="other_inquiry">
+                    <div class="container mt-4" id="other_inquiry">
                         <div class="row">
-                            <div class="col-md-3"></div>
-                            <div class="col-md-6 text-center py-5" style="display: inline-block;">
+                            <div class="col-lg-12 text-center">
                                 <button type="button" class="btn btn-primary" style="padding: 8px 15px; background-color:rgba(0,0,0,.045);border: 1px solid rgba(0,0,0,.06);
                                 border-radius: 1px !important; color: #888;" onclick="request_form_showOn()">Request A
                                     Demo</button>
@@ -488,45 +599,47 @@
                                     style="background-color: #03D5CC;border: 1px solid rgba(0,0,0,.06);padding: 8px 15px;  border-radius: 1px !important; margin-left: -5px;">Other
                                     Inquiries</button>
                             </div>
-                            <div class="col-md-3"></div>
-                            <div class="col-md-6 py-2">
-                                <div>
-                                    <label for="fname" style="font-size: 14px;color: #33475B;display: block;">First name
-                                        <span style="color: red;">*</span></label>
-                                    <input type="text" id="fname" class="hs-input"
-                                        style="width: 100%; height: 40px; background-color: #f5f8fa; border: 1px solid #cbd6e2;  border-radius: 3px;">
+                        </div>
+                        <div class="row mt-5" style="padding: 0px 20px 0px 20px;">
+                            <div class="col-lg-6 col-sm-6 py-2">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" required>First name</label><span
+                                        style="color: red;">*</span>
+                                    <input type="fname" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
                                 </div>
                             </div>
-                            <div class="col-md-6 py-2">
-                                <div>
-                                    <label for="lname" style="font-size: 14px;color: #33475B;display: block;">Last name
-                                        <span style="color: red;">*</span></label>
-                                    <input type="text" id="lname"
-                                        style="width: 100%; height: 40px; background-color: #f5f8fa; border: 1px solid #cbd6e2;  border-radius: 3px;">
+                            <div class="col-sm-6 col-lg-6 py-2">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" required>Last name</label><span
+                                        style="color: red;">*</span>
+                                    <input type="lname" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
                                 </div>
                             </div>
-                            <div class="col-md-6 py-2">
-                                <div>
-                                    <label for="jobTitle"
-                                        style="font-size: 14px;display: block;color: #33475B;">Business Email
-                                        <span style="color: red;">*</span></label>
-                                    <input type="text" id="jobTitle"
-                                        style="width: 100%; height: 40px; background-color: #f5f8fa; border: 1px solid #cbd6e2;  border-radius: 3px;">
+                            <div class="col-sm-6 col-lg-6 py-2">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" required>Business Email </label><span
+                                        style="color: red;">*</span>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
                                 </div>
                             </div>
-                            <div class="col-md-6 py-2">
-                                <div>
-                                    <label for="businessEmail" style="font-size: 14px;color: #33475B;display: block;">
-                                        Phone number<span style="color: red;">*</span></label>
-                                    <input type="text" id="businessEmail"
-                                        style="width: 100%; height: 40px; background-color: #f5f8fa; border: 1px solid #cbd6e2;  border-radius: 3px;">
+                            <div class="col-sm-6 col-sm-6 col-lg-6 py-2">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" required>Phone number</label><span
+                                        style="color: red;">*</span>
+                                    <input type="tel" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
                                 </div>
                             </div>
-                            <div class="col-md-6 py-2">
-                                <div>
+                            <div class="col-sm-6 col-sm-6 col-lg-6 py-2">
+                                <div class="form-group">
                                     <label for="companyName" style="font-size: 14px;color: #33475B;">Country/Region<span
-                                            style="color: red;">*</span></label>
-                                    <select class="form-control" style="color: #bfbfbf;" placeholder="Please Select">
+                                            style="color: red;">*</span>
+                                    </label>
+                                    <select class="form-controll" style="color: #bfbfbf !important;"
+                                        placeholder="Please Select">
                                         <option value="" style="color: #33475b;">Please Select</option>
                                         <option value="United States" style="color: #33475b;">United States</option>
                                         <option value="Canada" style="color: #33475b;">Canada</option>
@@ -548,100 +661,100 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-6 py-2">
-                                <div>
-                                    <label for="companyName"
-                                        style="font-size: 14px;color: #33475B;display: block;">Company
-                                        Name<span style="color: red;">*</span></label>
-                                    <input type="text" id="companyName"
-                                        style="width: 100%; height: 40px; background-color: #f5f8fa; border: 1px solid #cbd6e2; border-radius: 3px;">
+                            <div class="col-sm-6  col-lg-6 py-2">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" required>Company Name</label><span
+                                        style="color: red;">*</span>
+                                    <input type="Cname" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
                                 </div>
                             </div>
-                            <div class="col-md-12 py-2">
-                            </div>
-                            <div class="col-md-12">
-                                <div>
-                                    <p style="font-size: 14px;">What can we help you with? <span
-                                            style="color: red;">*</span> </p>
-                                    <textarea name="" id="" cols="30" rows="5"
-                                        style="width: 100%;height: 3.5rem; border: 1px solid #cbd6e2;  border-radius: 3px;"></textarea>
-                                </div>
-                            </div><br /><br /><br /><br /><br />
-                            <div class="col-md-12">
-                                <div>
-                                    <p style="font-size: 11px; font-family: Mulish; line-height: 24px;">
-                                        By submitting this form, you agree that you have read our <a href="#"
-                                            style="color: #03d5cc;">Privacy
-                                            Policy</a> and consent to 360regtech's cookie policy and receiving marketing
-                                        communications. You can unsubscribe at any time.
+                            <div class="col-lg-12">
+                                <div class="form-group" style="font-family: Mulish; font-size: 14px; color: #33475b; font-weight:
+                      500; line-height: 20px;">
+                                    <p>
+                                        Please share any specific objectives or goals you would
+                                        like to discuss with our sales team.
                                     </p>
+                                    <textarea name="" id="" cols="30" rows="5" style="
+                          width: 100%;
+                          height: 40px;
+                          border: 1px solid #cbd6e2;
+                          border-radius: 3px;
+                        "></textarea>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="text-white" style="height: 60px;
-                                width: 256px;
-                                box-shadow: gray 0px 0px 5px;">
+                            <div class="col-lg-12 col-sm-12" id="Privacy">
+                                <p style="font-family: Mulish;
+                      color: #33475b;
+                      font-size: 11px; line-height: 20px;">
+                                    By submitting this form, you agree that you have read our <a href="#"
+                                        style=" ">Privacy
+                                        Policy</a> and consent to 360regtech's
+                                    cookie policy and receiving marketing communications. You can unsubscribe at any
+                                    time.
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <div class="text-white captcha1" style="height: 60px;
+                    width: 256px;
+                    box-shadow: gray 0px 0px 5px;">
                                     <div style="float: left; 
-                                    background-color: #1A73E8;
-                                     color: white; 
-                                     font-size: 13px;
-                                      padding: 0 19px;
-                                      text-align: justify;
-                                    
-                                      height: 60px;">
-                                        <ul style="list-style-type: none;font-size: 11px;margin: 0px;padding: 0px;">
+                        background-color: #1A73E8;
+                         color: white; 
+                         font-size: 13px;
+                          padding: 0 19px;
+                          text-align: justify;
+                        
+                          height: 60px;">
+                                        <ul style="list-style-type: none;font-size: 11px;padding: 0px;">
                                             <li style="font-family: Roboto,helvetica,arial,sans-serif;
-                                            font-size: 13px;   margin-top: 10px;
-                                           ">protected by <strong>reCAPTCHA</strong></li>
+                                font-size: 13px;   margin-top: 10px;
+                               ">protected by <strong>reCAPTCHA</strong>
+                                            </li>
                                             <a href="#" class="text-white" id="underline" style="
-                                                font-size: 10px; text-decoration: none !important; ">Privacy -Terms</a>
+                                    font-size: 10px; text-decoration: none !important; ">Privacy -Terms</a>
                                         </ul>
                                     </div>
                                     <div style="background-color: #fff;
-                                    text-align: center;  height: 60px;
-                                width: 256px;
-                                " class=" p-2">
+                        text-align: center;  height: 60px;
+                    width: 256px;
+                    " class=" p-2">
                                         <img src="logo_48.png" alt="" style="background-size: 44px;
-                                        height: 44px;
-                                        width: 44px;
-                                        margin-right: -5px;">
+                            height: 44px;
+                            width: 44px;
+                            margin-right: -5px;">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6"></div>
-                            <div class="col-md-6 py-5">
+                            <div class="col-lg-6"></div>
+                            <div class="col-lg-6 py-3">
                                 <div>
                                     <button class="btn text-white" style="
-                                   background: #03d5cc;
-                                   border-color: #03d5cc;
-                                   font-size: 12px;
-                                   line-height: 12px;
-                                   font-family: Mulish;
-                                   border-radius: 3px;
-                                   border-style: solid;
-                                   border-width: 1px;
-                                   padding: 12px 24px;
-                                   font-weight: 700;">
-                                        <strong>submit</strong>
+                          background-color: #03d5cc;
+                          font-size: 14px;
+                          padding: 10px 20px;
+                        ">
+                                        <strong>Request a Demo</strong>
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
-    <!-- <button onclick="sample()">CLICK</button> -->
+
     <!-- fotter -->
     <div class="container-fluid" style="background-color: #253859">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 mt-5">
+                <div class="col-md-4 mt-5 text-white">
                     <div><img class="logoo" src="../images/index/footer-logo.jpg" alt="Logo Image" width=" 160px"
                             height=" 60px" style="margin-left:25px !important" /></div>
-                    <h5 style="color: #03d5cc; margin-top: 15px">
-                        Compliance, Uncomplicated.
+                    Compliance, Uncomplicated.
                     </h5>
                 </div>
                 <div class="col-md-4 mt-5">
@@ -692,7 +805,7 @@
                                 <a href="../Blogs/blogs.html" id="footer-hover">Blog</a>
                             </p>
                             <p style="padding-top: 10px; font-size: 15px">
-                                <a href="../Resources/Resources.html" id="footer-hover">Resources</a>
+                                <a href="Resources/Resources.html" id="footer-hover">Resources</a>
                             </p>
                             <p style="padding-top: 10px; font-size: 15px">
                                 <a href="../Customer-Stories/Customerstories.html" id="footer-hover">Customer
@@ -717,45 +830,37 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid" style="background-color: #253859;border-top: 1px solid #FFFFFF;">
+    <div class="container-fluid" style="background-color: #253859; border-top: 1px solid #ffffff">
         <div class="container">
             <div class="row py-3">
-                <!-- <div class="col-md-1"></div> -->
                 <div class="col-md-4">
-                    <p style="color: white;font-size: 12px;">© 2023 RegTech. All Rights Reserved.</p>
+                    <p style="color: white; font-size: 12px">
+                        © 2023 360 RegTech All Rights Reserved.
+                    </p>
                 </div>
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-md-7"></div>
-                        <div class="col-md-5">
-                            <span style="color: white;padding-right: 12px;"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="16" height="24" fill="currentColor" class="bi bi-twitter"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                </svg></span>
-                            <span style="color: white;padding-right: 12px;"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="16" height="24" fill="currentColor" class="bi bi-linkedin"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                                </svg></span>
-                            <span style="color: white;padding-right: 12px;"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="16" height="24" fill="currentColor" class="bi bi-youtube"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                </svg></span>
-                            <span style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                    fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                                </svg></span>
-                        </div>
-                    </div>
+                <div class="col-md-6"></div>
+                <div class="col-md-2">
+                    <span style="color: white; padding-right: 12px"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg></span>
+                    <span style="color: white; padding-right: 12px"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg></span>
+                    <span style="color: white; padding-right: 12px"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path
+                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                        </svg></span>
+                    <span style="color: white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg></span>
                 </div>
-
             </div>
         </div>
     </div>
