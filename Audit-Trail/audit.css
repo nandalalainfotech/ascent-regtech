@@ -28,6 +28,21 @@
     position: relative;
 }
 
+/* Image Section Mobile view */
+.parent_image {
+    display: flex;
+}
+
+@media (min-width: 1px) and (max-width: 690px) {
+    .images_content_right {
+        order: 2;
+    }
+
+    .images_content_left {
+        order: 1;
+    }
+}
+
 .image-banner {
     height: 30rem;
 }
@@ -111,6 +126,12 @@
     color: #28bebb;
     line-height: 1.1em;
     margin-top: 300px;
+}
+
+.audit-information-control {
+    color: #28bebb;
+    line-height: 1.1em;
+    margin-top: 30px;
 }
 
 #uniqueimg {
@@ -240,6 +261,7 @@ input[type=text]:focus {
 
     .single-click-get {
         margin-top: 5px;
+        margin-left: 2px;
         /* line-height: 1.1em; */
     }
 
@@ -273,12 +295,6 @@ input[type=text]:focus {
         width: 100%;
         height: auto;
     }
-
-    /* .export-audit {
-        margin-left: 20px;
-    } */
-
-
 }
 
 @media (min-width: 700px) and (max-width: 900px) {
@@ -296,6 +312,24 @@ input[type=text]:focus {
 
     #formPad {
         margin-top: -320px;
+    }
+
+    .audit-information {
+        margin-top: 10px;
+    }
+
+    .single-click-get {
+        margin-top: 15px;
+    }
+
+    #image-fluid {
+        width: 100%;
+        height: auto;
+    }
+
+    .heading-work {
+        /* margin-left: 0px; */
+        font-size: 28px;
     }
 }
 
