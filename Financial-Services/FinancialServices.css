@@ -164,8 +164,8 @@ p.Keep_your {
     padding: 0px 0px 27px 0px;
 }
 
-/* @media screen and (max-width:700px) and (min-width:1000px) {
-    #tabview-fin{
-        width: 50%;
+@media screen and (min-width:700px) and (max-width:800px) {
+    #financialtab{
+        width: 350px;
     }
-} */
+}
