@@ -183,7 +183,7 @@ body {
 @media (min-width: 700px) and (max-width: 900px) {
     .centerPos {
         width: 400px;
-        margin-left: 80px;
+        margin-left: 170px;
     }
 
 }
@@ -225,4 +225,22 @@ body {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     line-height: 1.2em;
+  }
+  @media screen and (min-width:300px) and (max-width: 350px){
+    .obligations{
+        margin-left: 2.3rem;
+    }
+    .single{
+        margin-left: 2.3rem;
+    }
+  }
+  @media screen and (min-width:370px) and (max-width: 425px) {
+    .place{
+        margin-left: 2.3rem;
+    }
+  }
+  @media (min-width: 700px) and (max-width: 800px) {
+    #sure{
+      width: 350px;
+    }
   }

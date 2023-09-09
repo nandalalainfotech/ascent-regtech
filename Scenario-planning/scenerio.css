@@ -351,7 +351,7 @@ body {
 
   /* .sec-image {
     width: 400px;
-    margin-left: 60px;
+    margin-left: 160px;
   } */
 
   #placing {
@@ -436,5 +436,11 @@ body {
   }
   .regulations{
     margin-left: 2.3rem;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+  #sure{
+    width: 300px;
   }
 }
