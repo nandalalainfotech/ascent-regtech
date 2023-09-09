@@ -33,6 +33,9 @@ Online HTML, CSS and JavaScript editor to run code online.
     opacity: 1;
   }
 
+  .ourappimg {
+    height: 450px;
+  }
 
   @keyframes nectarStrokeAnimation {
     0% {
@@ -86,7 +89,6 @@ Online HTML, CSS and JavaScript editor to run code online.
   .nectar-highlighted-text .nectar-scribble {
     position: absolute;
     top: 35px;
-    left: 100px;
     z-index: 7;
     /* display: none; */
   }
@@ -94,7 +96,11 @@ Online HTML, CSS and JavaScript editor to run code online.
   @media screen and (max-width:670px) {
     .nectar-highlighted-text .nectar-scribble {
       top: 35px !important;
-      left: 100px !important;
+      left: 5px !important;
+    }
+
+    .ourappimg {
+      height: 550px;
     }
   }
 
@@ -173,17 +179,26 @@ Online HTML, CSS and JavaScript editor to run code online.
   .nectar1-highlighted-text .nectar1-scribble {
     position: absolute;
     top: 75px;
-    left: 340px;
+    left: 360px;
     z-index: 7;
     /* display: none; */
   }
 
-  @media screen and (max-width:670px) {
+  @media screen and (max-width:320px) {
     .nectar1-highlighted-text .nectar1-scribble {
       top: 110px !important;
-      left: 0px !important;
+      left: 80px !important;
+    }
+
+    body .nectar1-scribble.squiggle-underline {
+      width: 145px;
+      height: 22px;
     }
   }
+
+
+
+
 
   /* @media screen and (min-width: 375px) and (max-width: 667px){
       nectar-highlighted-text .nectar-scribble {
@@ -260,15 +275,20 @@ Online HTML, CSS and JavaScript editor to run code online.
   .nectar2-highlighted-text .nectar2-scribble {
     position: absolute;
     top: 50px;
-    left: 80px;
+    left: 90px;
     z-index: 7;
     /* display: none; */
   }
 
-  @media screen and (max-width:670px) {
+  @media screen and (max-width:320px) {
     .nectar2-highlighted-text .nectar2-scribble {
       top: 45px !important;
       left: 66px !important;
+    }
+
+    body .nectar2-scribble.squiggle-underline {
+      width: 180px;
+      height: 22px;
     }
   }
 
@@ -347,15 +367,14 @@ Online HTML, CSS and JavaScript editor to run code online.
   .nectar3-highlighted-text .nectar3-scribble {
     position: absolute;
     top: 92px;
-    left: 10px;
+    left: 5px;
     z-index: 7;
     /* display: none; */
   }
 
-  @media screen and (max-width:670px) {
+  @media screen and (max-width:320px) {
     .nectar3-highlighted-text .nectar3-scribble {
       top: 142px !important;
-      left: -5px !important;
     }
   }
 
@@ -460,17 +479,18 @@ Online HTML, CSS and JavaScript editor to run code online.
       </ul> -->
 
   </nav>
-  <div class="container-fluid" style="background-image: url(our-approach-img-1.jpg);background-repeat: no-repeat;background-size: cover;height: 490px">
+  <div class="container-fluid ourappimg" style="background-image: url(our-approach-img-1.jpg);background-repeat: no-repeat;
+  background-size: cover;">
     <div class="container">
       <div class="row ">
         <div class="col-sm-12">
         </div>
-        <div class="col-sm-12 col-md-12 res" style="top: 220px;" id="respons">
-          <h1 class="nectar-highlighted-text header-size" data-style="scribble" data-exp="default" data-user-color="true"
-            style="color: #ffffff;-webkit-text-stroke: thin;font-weight: 700;" data-using-custom-color="false"
-            data-animation-delay="false" data-color="" data-color-gradient=""> Our <em class="animated">Approach<svg
-                class="nectar-scribble squiggle-underline" role="presentation" viewBox="-347 -30.1947 694 96.19"
-                preserveAspectRatio="none">
+        <div class="col-sm-12 col-md-12 res" style="top: 180px;" id="respons">
+          <h1 class="nectar-highlighted-text header-size" data-style="scribble" data-exp="default"
+            data-user-color="true" style="color: #ffffff;-webkit-text-stroke: thin;font-weight: 700;"
+            data-using-custom-color="false" data-animation-delay="false" data-color="" data-color-gradient=""> Our <em
+              class="animated">Approach<svg class="nectar-scribble squiggle-underline" role="presentation"
+                viewBox="-347 -30.1947 694 96.19" preserveAspectRatio="none">
                 <path style="animation-duration: 1.8s;"
                   d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
                   stroke="#03d5cc" pathLength="1" stroke-width="14" fill="none"></path>
@@ -480,12 +500,11 @@ Online HTML, CSS and JavaScript editor to run code online.
           font-weight: revert;-webkit-text-stroke: inherit;font-size: 45px;">Our Approach</h1><br> -->
           <div class="row">
 
-            <div class="col-sm-10 mt-3">
-              <h5 class="text-white" style="font-weight: 600;">Compliance teams of all sizes choose
-                360 RegTech in order to pinpoint
+            <div class="col-sm-10 mt-4">
+              <h5 class="text-white" style="font-weight: 600; font-size: 26px;">Compliance teams of all sizes choose
+                360 RegTech in order to pinpoint their financial
+                regulatory obligations.
               </h5>
-              <h5 class="text-white" style="font-weight: 600;"> their financial
-                regulatory obligations.</h5>
 
             </div>
           </div>
@@ -498,11 +517,11 @@ Online HTML, CSS and JavaScript editor to run code online.
       <div class="row mt-4">
         <div class="col-sm-12 col-md-12 col-lg-6 p-2">
           <div class="p-1 mt-4">
-            <h1 class="nectar1-highlighted-text header-size" data-style="scribble" data-exp="default" data-user-color="true"
-              style="color: #03d5cc;-webkit-text-stroke: thin;font-weight: 700;" data-using-custom-color="false"
-              data-animation-delay="false" data-color="" data-color-gradient=""> Not just data, but targeted <em
-                class="animated"><br> knowledge <svg class="nectar1-scribble squiggle-underline" role="presentation"
-                  viewBox="-347 -30.1947 694 96.19" preserveAspectRatio="none">
+            <h1 class="nectar1-highlighted-text header-size" data-style="scribble" data-exp="default"
+              data-user-color="true" style="color: #03d5cc;-webkit-text-stroke: thin;font-weight: 700;"
+              data-using-custom-color="false" data-animation-delay="false" data-color="" data-color-gradient=""> Not
+              just data, but targeted knowledge <em class="animated"> <svg class="nectar1-scribble squiggle-underline"
+                  role="presentation" viewBox="-347 -30.1947 694 96.19" preserveAspectRatio="none">
                   <path style="animation-duration: 1.8s;"
                     d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
                     stroke="#253859" pathLength="1" stroke-width="14" fill="none"></path>
@@ -511,7 +530,8 @@ Online HTML, CSS and JavaScript editor to run code online.
             <!-- <h1 style="color:#03d5cc;
             -webkit-text-stroke: medium;
             font-size: 40px;"> Not just data, but targeted knowledge</h1><br> -->
-            <p class="mt-4 para" style="text-align: inherit;font-weight: 400;color: #253859; font-size: 17px;">Identifying your
+            <p class="mt-4 para" style="text-align: inherit;font-weight: 400;color: #253859; font-size: 17px;">
+              Identifying your
               regulatory obligations is a complicated, time- consuming and
               costly practice that mires compliance teams in manual work, and must be repeated with every new change in
               regulation.</p>
@@ -538,11 +558,12 @@ Online HTML, CSS and JavaScript editor to run code online.
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6 p-1">
           <div class="p-2">
-            <h1 class="nectar2-highlighted-text header-size" data-style="scribble" data-exp="default" data-user-color="true"
-              style="color: #03d5cc;-webkit-text-stroke: thin;font-weight: 700;" data-using-custom-color="false"
-              data-animation-delay="false" data-color="" data-color-gradient=""> The expertise of a human at <em
-                class="animated"><br> the speed of a machine <svg class="nectar2-scribble squiggle-underline"
-                  role="presentation" viewBox="-347 -30.1947 694 96.19" preserveAspectRatio="none">
+            <h1 class="nectar2-highlighted-text header-size" data-style="scribble" data-exp="default"
+              data-user-color="true" style="color: #03d5cc;-webkit-text-stroke: thin;font-weight: 700;"
+              data-using-custom-color="false" data-animation-delay="false" data-color="" data-color-gradient=""> The
+              expertise of a human at the speed of a machine<em class="animated"><svg
+                  class="nectar2-scribble squiggle-underline" role="presentation" viewBox="-347 -30.1947 694 96.19"
+                  preserveAspectRatio="none">
                   <path style="animation-duration: 1.8s;"
                     d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
                     stroke="#253859" pathLength="1" stroke-width="14" fill="none"></path>
@@ -582,9 +603,9 @@ Online HTML, CSS and JavaScript editor to run code online.
         <div class="col-sm-12 col-md-12 col-lg-6 p-2">
           <h1 class="nectar3-highlighted-text" data-style="scribble" data-exp="default" data-user-color="true"
             style="color: #03d5cc;-webkit-text-stroke: thin;font-weight: 700;" data-using-custom-color="false"
-            data-animation-delay="false" data-color="" data-color-gradient=""> Your implementation <em
-              class="animated"><br> partner, every step of the <br>way<svg class="nectar3-scribble squiggle-underline"
-                role="presentation" viewBox="-347 -30.1947 694 96.19" preserveAspectRatio="none">
+            data-animation-delay="false" data-color="" data-color-gradient=""> Your implementation partner, every step
+            of the way<em class="animated"><svg class="nectar3-scribble squiggle-underline" role="presentation"
+                viewBox="-347 -30.1947 694 96.19" preserveAspectRatio="none">
                 <path style="animation-duration: 1.8s;"
                   d="M-335,54 C-335,54 -171,-58 -194,-3 C-217,52 -224.1199951171875,73.552001953125 -127,11 C-68,-27 -137,50 -33,42 C31.43899917602539,37.042999267578125 147.14700317382812,-29.308000564575195 335,2"
                   stroke="#253859" pathLength="1" stroke-width="14" fill="none"></path>
@@ -595,7 +616,8 @@ Online HTML, CSS and JavaScript editor to run code online.
             Your implementation partner, every step of the way
           </h1> -->
           <div class="mt-4" style="color: #253859;">
-            <p style="text-align: inherit;font-weight: 400; font-size: 17px;color: #253859;">Too many technology vendors set it, then
+            <p style="text-align: inherit;font-weight: 400; font-size: 17px;color: #253859;">Too many technology vendors
+              set it, then
               forget it. At 360 RegTech, we know that even more important than
               the
               decision to purchase a new tool is how effectively you can implement it.</p>
@@ -807,7 +829,7 @@ Online HTML, CSS and JavaScript editor to run code online.
     vedio.addEventListener('click'), () => {
       gif('play')
     }
-// first div scroll animation
+    // first div scroll animation
   </script>
 </body>
 
