@@ -28,18 +28,8 @@ td {
   animation-duration: 1s;
 }
 
-#group_img{
-  animation-name: slide-in-right1;
-  animation-duration: 1s;
-}
-@keyframes slide-in-right1{
-  from {
-    transform: translateX(-50%);
-  }
-  to{
-    transform: translateX(0);
-  }
-}
+
+
 
 
 #top-content{
