@@ -37,6 +37,19 @@ Online HTML, CSS and JavaScript editor to run code online.
       display: block;
     }
 
+      @media screen and (min-width:150px) and (max-width:320px) {
+        .nectar1-highlighted-text .nectar1-scribble {
+          position: absolute;
+          top: 84px !important;
+          left: 13px !important;
+          z-index: 7;
+      }
+      .nectar3-highlighted-text .nectar3-scribble {
+          top: 78px !important;
+          left: 9px !important;
+          z-index: 9;
+      }
+      }
     .reveal {
       position: relative;
       transform: translateY(150px);
@@ -558,7 +571,7 @@ Online HTML, CSS and JavaScript editor to run code online.
   <div class="container-fluid pt-5">
     <div class="container">
       <div class="row ">
-        <div class="col-sm-7 col-md-12 col-lg-7 right_to_left">
+        <div class="col-sm-7 col-md-12 col-lg-7 reveal">
           <!-- <section class="scroll-sections"> -->
           <div>
             <h1 class="nectar1-highlighted-text" data-style="scribble" data-exp="default" data-user-color="true"
@@ -597,7 +610,7 @@ Online HTML, CSS and JavaScript editor to run code online.
             <!-- </section> -->
           </div>
         </div>
-        <div class="col-sm-5 col-md-12 col-lg-5 p-1  left_to_right text-center">
+        <div class="col-sm-5 col-md-12 col-lg-5 p-1  reveal text-center">
           <!-- <section class="scroll-sections"> -->
           <img src="our-data-1.png" alt="" width="409" height="387">
           <!-- </section> -->
@@ -610,12 +623,12 @@ Online HTML, CSS and JavaScript editor to run code online.
     <div class="container">
       <div class="row">
         <div class="col-sm-1"></div>
-        <div class="col-sm-3 col-md-12 col-lg-3 ourdata-img right_to_left text-center">
+        <div class="col-sm-3 col-md-12 col-lg-3 ourdata-img reveal text-center">
           <img src="our-data-2.png" alt="" width="379" height="358">
         </div>
         <div class="col-sm-2"></div>
         <!-- <div class="col-sm-1"></div> -->
-        <div class="col-sm-6 col-md-12 col-lg-6 p-2 mt-5 left_to_right">
+        <div class="col-sm-6 col-md-12 col-lg-6 p-2 mt-5 reveal">
           <h1 class="nectar2-highlighted-text" data-style="scribble" data-exp="default" data-user-color="true"
             style="color: #03d5cc;-webkit-text-stroke: medium;" data-using-custom-color="false"
             data-animation-delay="false" data-color="" data-color-gradient=""> <span
@@ -651,7 +664,7 @@ Online HTML, CSS and JavaScript editor to run code online.
     <div class="container">
 
       <div class="row p-2">
-        <div class="col-sm-6 col-md-12 col-lg-6 p-1 right_to_left">
+        <div class="col-sm-6 col-md-12 col-lg-6 p-1 reveal">
           <div class="p-2">
             <h2 class="nectar3-highlighted-text" data-style="scribble" data-exp="default" data-user-color="true"
               style="color: #03D5CC;-webkit-text-stroke: medium;" data-using-custom-color="false"
@@ -674,7 +687,7 @@ Online HTML, CSS and JavaScript editor to run code online.
           </div>
         </div>
         <div class="col-sm-1"></div>
-        <div class="col-sm-5 col-md-12 col-lg-5 left_to_right text-center">
+        <div class="col-sm-5 col-md-12 col-lg-5 reveal text-center">
           <img src="our-data-3.png" alt="" width="409" height="387">
         </div>
       </div>
