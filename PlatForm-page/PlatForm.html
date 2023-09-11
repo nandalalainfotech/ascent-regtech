@@ -132,10 +132,10 @@
   <nav>
     <div class="">
       <a href="../index.html">
-        <img src="../images/index/head-logo-360.png" alt="Logo Image" class="logoo" width="160px" height="60px" />
+        <img class="logoo" src="../images/index/head-logo-360.png" alt="Logo Image" width="160px" height="60px" />
       </a>
     </div>
-    <div class="hamburger" onclick="toggleClicker()">
+    <div class="hamburger">
       <div class="line1"></div>
       <div class="line2"></div>
       <div class="line3"></div>
@@ -162,7 +162,7 @@
         </ul>
       </li>
       <li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html"
-            id="whoweserve" onclick="whoweserve1()">Who We
+            id="whoweserve">Who We
             Serve</a></span>
         <ul id="submenu">
           <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
@@ -172,7 +172,7 @@
         </ul>
       </li>
       <li class="show show1" style="padding: 1rem"><span class="line"> <a href="../Resources/Resources.html"
-            id="resources" onclick="resources1()">Resources</a></span>
+            id="resources">Resources</a></span>
         <ul id="submenu">
           <a href="../WhatisReg/whatis.html">What is RegTech?</a>
           <a href="../Blogs/blogs.html">Blog</a>
@@ -180,14 +180,15 @@
           <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
         </ul>
       </li>
-      <li class="show show1" style="padding: 1rem"><span class="line"><a href="../OurTeam/ourteam.html" id="company"
-            onclick="company1()">Company</a></span>
+      <li class="show show1" style="padding: 1rem"><span class="line"><a href="../OurTeam/ourteam.html"
+            id="company">Company</a></span>
         <ul id="submenu">
           <a href="../OurTeam/ourteam.html">Our Team</a>
           <a href="../Diversity/DiversityEquityandInclusion.html">Diversity, Equity, and Inclusion</a>
           <a href="../Careers/Careers.html">Careers</a>
         </ul>
       </li>
+
 
       <li class="login-button show show1"><a href="../Signin/sign.html" id="sign_in">Sign
           In</a>
@@ -230,8 +231,10 @@
         <div class="col-lg-6 col-sm-12 col-md-12 mt-5 viewBox-test" style="
             background-color: #eff4f9;
             box-shadow: 0 30px 60px rgba(0, 0, 0, .15);
-            border-radius: 10px;">
-
+            border-radius: 10px;
+            margin-top: 1px;
+            mask-border-width: 100%;
+          ">
           <div class="container mt-5">
             <div class="row">
               <div class="col-lg-6 col-sm-6 py-2">
@@ -306,8 +309,8 @@
                   cookie policy and receiving marketing communications. You can unsubscribe at any time.
                 </p>
               </div>
-              <div class="col-md-6 col-lg-6 col-sm-12">
-                <div class="text-white captcha1" style="
+              <div class="col-md-6 col-lg-6">
+                <div class="text-white captcha1" style="height: 60px;
                 width: 256px;
                 box-shadow: gray 0px 0px 5px;">
                   <div style="float: left; 
@@ -316,6 +319,7 @@
                      font-size: 13px;
                       padding: 0 19px;
                       text-align: justify;
+                    
                       height: 60px;">
                     <ul style="list-style-type: none;font-size: 11px;padding: 0px;">
                       <li style="font-family: Roboto,helvetica,arial,sans-serif;
@@ -1056,7 +1060,7 @@
                 <a href="../Blogs/blogs.html" id="footer-hover">Blog</a>
               </p>
               <p style="padding-top: 10px; font-size: 15px">
-                <a href="Resources/Resources.html" id="footer-hover">Resources</a>
+                <a href="../Resources/Resources.html" id="footer-hover">Resources</a>
               </p>
               <p style="padding-top: 10px; font-size: 15px">
                 <a href="../Customer-Stories/Customerstories.html" id="footer-hover">Customer
@@ -1084,13 +1088,13 @@
   <div class="container-fluid" style="background-color: #253859; border-top: 1px solid #ffffff">
     <div class="container">
       <div class="row py-3">
-        <div class="col-md-4">
+        <div class="col-md-5">
           <p style="color: white; font-size: 12px">
             © 2023 360 RegTech All Rights Reserved.
           </p>
         </div>
-        <div class="col-md-6"></div>
-        <div class="col-md-2">
+        <div class="col-md-4"></div>
+        <div class="col-md-3">
           <span style="color: white; padding-right: 12px"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="24"
               fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
               <path
