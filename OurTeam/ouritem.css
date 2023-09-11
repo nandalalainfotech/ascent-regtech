@@ -132,3 +132,18 @@ div.desc {
 #active_page{
   border-bottom: 1px solid  #03d5cc;
 }
+
+
+#leftToRight{
+ animation-duration: 0.5s;
+  animation-name: slide-in-right;
+}
+
+@keyframes slide-in-right{
+  from {
+    transform: translateX(-50%);
+  }
+  to{
+    transform: translateX(0);
+  }
+}

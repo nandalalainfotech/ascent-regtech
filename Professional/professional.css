@@ -113,3 +113,9 @@ body {
     font-size: 31.45px;
     text-align: center;
 }
+
+@media screen and (min-width:700px) and (max-width:800px) {
+    #financialtab{
+        width: 350px;
+    }
+}
