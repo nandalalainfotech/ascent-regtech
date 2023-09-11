@@ -6,6 +6,9 @@
     display: none;
 }
 
+.fivesvg {
+    display: none;
+}
 
 /* first div vedio start */
 .index-head {
@@ -450,6 +453,10 @@
         fill: #000;
     }
 
+    .fivesvg {
+        display: none;
+    }
+
     .Gain-Compliance {
         color: #253859;
         margin-top: 20px;
@@ -513,6 +520,14 @@
     /* first div */
     .row2 {
         display: none;
+    }
+
+    .fivesvg1 {
+        display: none;
+    }
+
+    .fivesvg {
+        display: block;
     }
 
     .row1 {
@@ -903,6 +918,14 @@
         display: block;
         height: 923px;
         overflow-y: hidden;
+    }
+
+    .fivesvg1 {
+        display: none;
+    }
+
+    .fivesvg {
+        display: block;
     }
 
     .index-head {
@@ -1306,8 +1329,6 @@
 /* animation */
 
 
-
-
 .cssanimation,
 .cssanimation span {
     animation-duration: 1s;
@@ -1332,6 +1353,7 @@
         opacity: 1
     }
 }
+
 /* animation */
 /* Réinitialisation des styles par défaut */
 body,
@@ -1379,7 +1401,7 @@ body::after {
 /*scroll effect*/
 .scroll-section {
     /* padding: 15px 50px; */
-    color: #000;
+    color: #253859 !important;
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.5s, transform 0.5s;
@@ -1397,7 +1419,7 @@ body::after {
     }
 }
 
-@media only screen and (min-width: 690px)and(max-width: 800px)   {
+@media only screen and (min-width: 690px)and(max-width: 800px) {
     #index-animation {
         width: 300px;
     }
