@@ -11,13 +11,12 @@ function platform1() {
 
         // document.getElementById('capabilities').style.transitionDuration = '2s';
 
-        document.getElementById('capabilities').setAttribute('href', '/OurApproach/OurApproach.html');
+        document.getElementById('capabilities').setAttribute('href', '../OurApproach/OurApproach.html');
         document.getElementById('whoweserve').setAttribute('href', '../OurData/OurData.html');
         document.getElementById('resources').setAttribute('href', '../Regulators/Regulators.html');
         document.getElementById('company').setAttribute('href', '../TechnologyPartners/TechnologyPartners.html');
     }
     else if (document.getElementById('platform').innerText == 'Back') {
-        console.log("called");
         document.getElementById('platform').innerText = 'Platform';
         document.getElementById('capabilities').innerText = 'Capabilities';
         document.getElementById('whoweserve').innerText = 'Who we serve';
@@ -141,7 +140,7 @@ function setResources() {
 function setCompany() {
     document.getElementById('platform').innerText = 'Back';
     document.getElementById('capabilities').innerText = 'Our Team';
-    document.getElementById('whoweserve').innerText = 'Diversity,Equity and Inclusion';
+    document.getElementById('whoweserve').innerText = 'Diversity,Equity and \u00A0 \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 Inclusion';
     document.getElementById('resources').innerText = 'Careers';
     document.getElementById('company').innerText = '';
     document.getElementById('sign_in').innerText = '';
