@@ -35,6 +35,31 @@
 
 }
 
+@media screen and (min-width:300px) and (max-width:350px) {
+    .top-content {
+        height: 3% !important;
+    }
+
+    .captcha1 {
+        margin-left: -6px;
+    }
+
+    .wpb_wrapper h3 {
+        font-size: 25.45px !important;
+        line-height: 25.5px;
+        font-family: "Mulish";
+        text-transform: none;
+        letter-spacing: -0.02em;
+        font-weight: 900;
+        color: #253859;
+    }
+
+    .viewBox-test {
+        width: 128%;
+        margin-left: -31px;
+    }
+}
+
 #forms {
     border-radius: 3%;
     height: auto;
