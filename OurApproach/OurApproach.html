@@ -89,7 +89,7 @@ Online HTML, CSS and JavaScript editor to run code online.
   .nectar-highlighted-text .nectar-scribble {
     position: absolute;
     top: 35px;
-    z-index: 7;
+    z-index: 2;
     /* display: none; */
   }
 
@@ -428,6 +428,20 @@ Online HTML, CSS and JavaScript editor to run code online.
     }
   } 
 
+  @media screen and (max-width:425) {
+      /* nector2 */
+    .nectar1-highlighted-text .nectar1-scribble {
+      position: absolute;
+    top: 75px;
+    left: 215px;
+    z-index: 7;
+    /* display: none; */
+  }
+    body .nectar2-scribble.squiggle-underline {
+    width: 115px;
+    height: 18px;
+  }
+  }
 
   /* responsive 425px */
   @media screen and (max-width:425px) {
@@ -457,7 +471,7 @@ Online HTML, CSS and JavaScript editor to run code online.
     position: absolute;
     top: 88px;
     left: 8px;
-    z-index: 7;
+    z-index: 2;
     }
     body .nectar1-scribble.squiggle-underline {
     width: 105px;
