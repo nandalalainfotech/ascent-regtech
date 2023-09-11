@@ -27,37 +27,6 @@
     padding: 0;
   }
 
-  /* Importer la police Roboto depuis Google Fonts */
-  /* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"); */
-  /* Appliquer la police à vos éléments */
-  body {
-    font-family: "Roboto", sans-serif;
-  }
-
-  /* Styles pour l'arrière-plan dégradé bleu-violet */
-  body {
-    /* background-image: linear-gradient(to top, #7FFFD4, #0F52BA); */
-    background-repeat: repeat;
-    background-position: center;
-    /* Mode de fusion pour superposer l'image */
-    background-blend-mode: overlay;
-  }
-
-  body::after {
-    /* Opacité de l'image superposée */
-    content: "";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background: url("https://github.com/berru-g/scroll-effect/blob/main/src/img/back.png?raw=true") center/cover; */
-    opacity: 0.3;
-    /* Modifier l'opacité ici */
-    pointer-events: none;
-  }
-
   /*scroll effect*/
   @keyframes slide-in-left2 {
     from {
@@ -81,141 +50,126 @@
     transform: translateY(0);
   }
 
-  .left_and_right {
-    opacity: 1;
-    transform: translateX(-50px);
-    transition: opacity 0.5s, transform 0.5s;
-  }
-
-  .left_and_right.visible {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
   /* ==============================================================  */
   .animatable {
 
-    /* initially hide animatable objects */
-    visibility: hidden;
+/* initially hide animatable objects */
+visibility: hidden;
 
-    /* initially pause animatable objects their animations */
-    -webkit-animation-play-state: paused;
-    -moz-animation-play-state: paused;
-    -ms-animation-play-state: paused;
-    -o-animation-play-state: paused;
-    animation-play-state: paused;
-  }
+/* initially pause animatable objects their animations */
+-webkit-animation-play-state: paused;   
+-moz-animation-play-state: paused;     
+-ms-animation-play-state: paused;
+-o-animation-play-state: paused;   
+animation-play-state: paused; 
+}
+.animated {
+visibility: visible;
 
-  .animated {
-    visibility: visible;
+-webkit-animation-fill-mode: both;
+-moz-animation-fill-mode: both;
+-ms-animation-fill-mode: both;
+-o-animation-fill-mode: both;
+animation-fill-mode: both;
 
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    animation-fill-mode: both;
-
-    -webkit-animation-duration: .5s;
-    -moz-animation-duration: .5s;
-    -ms-animation-duration: .5s;
-    -o-animation-duration: .5s;
-    animation-duration: .5s;
+-webkit-animation-duration: .5s;
+-moz-animation-duration: .5s;
+-ms-animation-duration: .5s;
+-o-animation-duration: .5s;
+animation-duration: .5s;
 
 
-    -webkit-animation-play-state: running;
-    -moz-animation-play-state: running;
-    -ms-animation-play-state: running;
-    -o-animation-play-state: running;
-    animation-play-state: running;
-  }
+-webkit-animation-play-state: running;
+-moz-animation-play-state: running;
+-ms-animation-play-state: running;
+-o-animation-play-state: running;
+animation-play-state: running;
+}
+@-webkit-keyframes bounceInLeft {
+0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+}
+60% {
+    -webkit-transform: translateX(20px);
+}
 
-  @-webkit-keyframes bounceInLeft {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateX(-2000px);
-    }
+80% {
+    -webkit-transform: translateX(-5px);
+}
 
-    60% {
-      -webkit-transform: translateX(20px);
-    }
+100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+}
+}
 
-    80% {
-      -webkit-transform: translateX(-5px);
-    }
+@-moz-keyframes bounceInLeft {
+0% {
+    opacity: 0;
+    -moz-transform: translateX(-2000px);
+}
 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateX(0);
-    }
-  }
+60% {
+    -moz-transform: translateX(20px);
+}
 
-  @-moz-keyframes bounceInLeft {
-    0% {
-      opacity: 0;
-      -moz-transform: translateX(-2000px);
-    }
+80% {
+    -moz-transform: translateX(-5px);
+}
 
-    60% {
-      -moz-transform: translateX(20px);
-    }
+100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+}
+}
 
-    80% {
-      -moz-transform: translateX(-5px);
-    }
+@-o-keyframes bounceInLeft {
+0% {
+    opacity: 0;
+    -o-transform: translateX(-2000px);
+}
 
-    100% {
-      opacity: 1;
-      -moz-transform: translateX(0);
-    }
-  }
+60% {
+    opacity: 1;
+    -o-transform: translateX(20px);
+}
 
-  @-o-keyframes bounceInLeft {
-    0% {
-      opacity: 0;
-      -o-transform: translateX(-2000px);
-    }
+80% {
+    -o-transform: translateX(-5px);
+}
 
-    60% {
-      opacity: 1;
-      -o-transform: translateX(20px);
-    }
+100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+}
+}
 
-    80% {
-      -o-transform: translateX(-5px);
-    }
+@keyframes bounceInLeft {
+0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+}
 
-    100% {
-      opacity: 1;
-      -o-transform: translateX(0);
-    }
-  }
+60% {
+    transform: translateX(20px);
+}
 
-  @keyframes bounceInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-2000px);
-    }
+80% {
+    transform: translateX(-5px);
+}
 
-    60% {
-      transform: translateX(20px);
-    }
-
-    80% {
-      transform: translateX(-5px);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-  .animated.bounceInLeft {
-    -webkit-animation-name: bounceInLeft;
-    -moz-animation-name: bounceInLeft;
-    -o-animation-name: bounceInLeft;
-    animation-name: bounceInLeft;
-  }
+100% {
+    opacity: 1;
+    transform: translateX(0);
+}
+}
+.animated.bounceInLeft {
+-webkit-animation-name: bounceInLeft;
+-moz-animation-name: bounceInLeft;
+-o-animation-name: bounceInLeft;
+animation-name: bounceInLeft;
+}
 </style>
 
 <body>
@@ -233,7 +187,7 @@
       <div class="line3"></div>
     </div>
     <ul class="nav-links" id="initial">
-      <li class="show show1" style="padding:0.5rem 1rem 1.5rem 1rem" id="initial"> <span class="line">
+      <li class="show show1" style="padding: 1rem" id="initial"> <span class="line">
           <a href="../PlatForm-page/PlatForm.html" id="platform" onclick="platform1()">Platform</a></span>
         <ul id="submenu">
           <a href="../OurApproach/OurApproach.html" id="approach">Our Approach</a>
@@ -242,8 +196,8 @@
           <a href="../TechnologyPartners/TechnologyPartners.html">Technology Partners</a>
         </ul>
       </li>
-      <li class="show show1" style="padding:0.5rem 1rem 1.5rem 1rem"><span class="line" id="active_page"><a href=""
-            id="capabilities" onclick="capabilities1()">Capabilities</a></span>
+      <li class="show show1" style="padding: 1rem;"><span class="line" id="active_page"><a href="" id="capabilities"
+            onclick="capabilities1()">Capabilities</a></span>
         <ul id="submenu">
           <a href="../Oligation-Inventory/obligations.html">Obligations Inventory</a>
           <a href="../Scenario-planning/scenerio.html"><span>Scenario Planning</span></a>
@@ -252,8 +206,8 @@
           <a href="../Explore/explore.html">Explore Use Cases</a>
         </ul>
       </li>
-      <li class="show show1" style="padding:0.5rem 1rem 1.5rem 1rem"><span class="line"><a
-            href="../WhoweServe/whoweserve.html" id="whoweserve" onclick="whoweserve1()">Who We
+      <li class="show show1" style="padding: 1rem;"><span class="line"><a href="../WhoweServe/whoweserve.html"
+            id="whoweserve" onclick="whoweserve1()">Who We
             Serve</a></span>
         <ul id="submenu">
           <a href="../Financial-Services/FinancialServices.html">Financial Services</a>
@@ -262,8 +216,8 @@
           <a href="../Professional/professional.html">Professional Services</a>
         </ul>
       </li>
-      <li class="show show1" style="padding:0.5rem 1rem 1.5rem 1rem"><span class="line"> <a
-            href="../Resources/Resources.html" id="resources" onclick="resources1()">Resources</a></span>
+      <li class="show show1" style="padding: 1rem"><span class="line"> <a href="../Resources/Resources.html"
+            id="resources" onclick="resources1()">Resources</a></span>
         <ul id="submenu">
           <a href="../WhatisReg/whatis.html">What is RegTech?</a>
           <a href="../Blogs/blogs.html">Blog</a>
@@ -271,12 +225,12 @@
           <a href="../Customer-Stories/Customerstories.html">Customer Stories</a>
         </ul>
       </li>
-      <li class="show show1" style="padding:0.5rem 1rem 1.5rem 1rem"><span class="line"><a
-            href="../OurTeam/ourteam.html" id="company" onclick="company1()">Company</a></span>
+      <li class="show show1" style="padding: 1rem"><span class="line"><a href="../OurTeam/ourteam.html" id="company"
+            onclick="company1()">Company</a></span>
         <ul id="submenu">
           <a href="../OurTeam/ourteam.html">Our Team</a>
           <a href="../Diversity/DiversityEquityandInclusion.html">Diversity, Equity, and Inclusion</a>
-             <a href="../Careers/Careers.html">Careers</a>
+          <a href="../Careers/Careers.html">Careers</a>
         </ul>
       </li>
       <li class="login-button show show1"><a href="../Signin/sign.html" id="sign_in">Sign
@@ -365,8 +319,8 @@
               Learn about what unites our team
             </h3> -->
           <section class="checkout"><a class="link link--arrowed"
-              style="color: #21A89F; font-weight: 600; font-size: 30px;letter-spacing: -0.02em; margin-bottom: 30px"
-              id="top-content" href="#">Learn about what unites our team
+              style="color: #21A89F; font-weight: 600; font-size: 30px;letter-spacing: -0.02em; margin-bottom: 30px" id="top-content"
+              href="#">Learn about what unites our team
               <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 32 32">
                 <g fill="none" stroke="#03D5CC" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
                   <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
@@ -392,7 +346,7 @@
                 
                 
               ">
-            <span id="sname"> Our Commitment to DEI</span>
+          <span id="sname">  Our Commitment to DEI</span>
           </h2>
 
           <h4 style="font-size: 17px">
@@ -521,7 +475,7 @@
   <div class="container mb-5">
     <div class="row">
       <div class="col-sm-12">
-        <section class="text-center animatable bounceInLeft">
+        <section class="text-center animatable fadeInUp">
           <img src="img_avatar.png" alt="Avatar" class="avatar" width="100%">
           <!-- <img src="img-big1.jpg" alt="" width="100%"/>  -->
         </section>
@@ -551,8 +505,8 @@
       <div class="row mt-5">
         <div class="col-sm-12 mt-5">
           <div>
-            <h1 id="slider1">
-              <strong class="events" id="slider1">DEI Events at 360 Regtech</strong>
+            <h1   id="slider1">
+              <strong class="events"  id="slider1">DEI Events at 360 Regtech</strong>
             </h1>
             <p style="color: #253859; font-size: 17px; margin-bottom: 30px" id="slider1">
               The DEI Committee regularly hosts events to raise awareness and
@@ -577,11 +531,11 @@
               <li style="line-height: 35px">And much more!</li>
             </ul>
           </div>
-          <div class="row text-center animatable bounceInRight">
-            <div class="col-lg-6 p-2">
+          <div class="row text-center " >
+            <div class="col-lg-6 p-2 animatable fadeInUp">
               <img src="img_avatar.png" width="100%" />
             </div>
-            <div class="col-lg-6 p-2 ">
+            <div class="col-lg-6 p-2 animatable fadeInUp">
               <img src="img_avatar2.png" width="100%" />
             </div>
 
@@ -619,7 +573,7 @@
   <br>
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 text-center animatable bounceInLeft">
+      <div class="col-sm-12 text-center animatable fadeInUp">
         <img src="img_avatar.png" width="100%" id="group_img" />
       </div>
     </div>
@@ -674,7 +628,6 @@
                   text-align: center;
                   font-weight: 600;
                   font-size: 40px;
-                  color: #03d5cc;
                 " id="hoveran">We want to meet you!</a>
           </h2>
         </section>
@@ -893,35 +846,35 @@
     }
 
 
-    jQuery(function ($) {
-
-      // Function which adds the 'animated' class to any '.animatable' in view
-      var doAnimations = function () {
-
-        // Calc current offset and get all animatables
-        var offset = $(window).scrollTop() + $(window).height(),
-          $animatables = $('.animatable');
-
-        // Unbind scroll handler if we have no animatables
-        if ($animatables.length == 0) {
-          $(window).off('scroll', doAnimations);
-        }
-
-        // Check all animatables and animate them if necessary
-        $animatables.each(function (i) {
-          var $animatable = $(this);
-          if (($animatable.offset().top + $animatable.height() - 20) < offset) {
-            $animatable.removeClass('animatable').addClass('animated');
-          }
-        });
-
-      };
-
-      // Hook doAnimations on scroll, and trigger a scroll
-      $(window).on('scroll', doAnimations);
-      $(window).trigger('scroll');
-
+    jQuery(function($) {
+  
+  // Function which adds the 'animated' class to any '.animatable' in view
+  var doAnimations = function() {
+    
+    // Calc current offset and get all animatables
+    var offset = $(window).scrollTop() + $(window).height(),
+        $animatables = $('.animatable');
+    
+    // Unbind scroll handler if we have no animatables
+    if ($animatables.length == 0) {
+      $(window).off('scroll', doAnimations);
+    }
+    
+    // Check all animatables and animate them if necessary
+        $animatables.each(function(i) {
+       var $animatable = $(this);
+            if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+        $animatable.removeClass('animatable').addClass('animated');
+            }
     });
+
+    };
+  
+  // Hook doAnimations on scroll, and trigger a scroll
+    $(window).on('scroll', doAnimations);
+  $(window).trigger('scroll');
+
+});
   </script>
   scri
   <script src="../navbar.js"></script>
