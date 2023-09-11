@@ -151,7 +151,7 @@ body {
         font-size: 35px;
         font-weight: 100;
     }
-
+ 
     .cut {
         font-size: 25px;
         font-weight: 300;
@@ -242,5 +242,10 @@ body {
   @media (min-width: 700px) and (max-width: 800px) {
     #sure{
       width: 350px;
+    }
+  }
+  @media (min-width: 400px) and (max-width: 500px) {
+    .place{
+        margin-left: 2.3rem;
     }
   }

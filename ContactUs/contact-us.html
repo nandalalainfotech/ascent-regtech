@@ -107,7 +107,6 @@
     .form-controll {
         display: inline-block;
         width: 100%;
-        /* max-width: 500px; */
         height: 40px;
         padding: 9px 10px;
         font-family: "Helvetica Neue",
@@ -199,15 +198,6 @@
         }
     }
 
-    /* @media only screen and (min-width : 768px) and (max-width : 1279px) {
-        .nectar-highlighted-text .nectar-scribble {
-            position: absolute;
-            left: 2rem !important;
-            top: 190PX !important;
-            z-index: 4;
-        }
-    } */
-
 
     @keyframes nectarStrokeAnimation {
         0% {
@@ -271,6 +261,56 @@
 
     .nectar-highlighted-text h1 .nectar-scribble path {
         z-index: -1 !important;
+    }
+
+    @media screen and (min-width:300px) and (max-width:350px) {
+        .top-content {
+            height: 3% !important;
+        }
+
+        .captcha1 {
+            margin-left: -34px;
+        }
+
+        .viewBox-test {
+            width: 128% !important;
+            margin-left: -31px !important;
+            max-width: 124%;
+        }
+
+        .form-control {
+            display: inline-block;
+            width: 100%;
+            max-width: 500px;
+            height: 40px;
+            padding: 9px 10px;
+            font-family: "Helvetica Neue",
+                Helvetica,
+                Arial,
+                sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 22px;
+            color: #33475b !important;
+            border: 1px solid #cbd6e2;
+            box-sizing: border-box;
+            border-radius: 3px;
+            background-color: #f5f8fa;
+        }
+
+        .nectar-highlighted-text.font_size_45px h1 {
+            font-size: 37.7px;
+            line-height: 26.25px;
+        }
+
+        .nectar-highlighted-text .nectar-scribble {
+            position: absolute;
+            left: 30px;
+            top: 161PX;
+            z-index: 4;
+            width: 239px;
+            height: 55px;
+        }
     }
 </style>
 
@@ -425,12 +465,10 @@
                     </div>
                 </div>
 
-                <div class="col-lg-7 col-sm-12 col-md-12 mt-5" style="
+                <div class="col-lg-7 col-sm-12 col-md-12 mt-5 viewBox-test" style="
                 background-color: #eff4f9;
                 box-shadow: 0 30px 60px rgba(0, 0, 0, .15);
-                border-radius: 10px;
-                margin-top: 1px;
-                mask-border-width: 100%;">
+                border-radius: 10px;">
 
                     <!-- ============== Request a Demo Form ================  -->
                     <div class="container mt-4" id="request_form">

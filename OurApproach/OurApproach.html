@@ -89,7 +89,7 @@ Online HTML, CSS and JavaScript editor to run code online.
   .nectar-highlighted-text .nectar-scribble {
     position: absolute;
     top: 35px;
-    z-index: 7;
+    z-index: 2;
     /* display: none; */
   }
 
@@ -103,16 +103,6 @@ Online HTML, CSS and JavaScript editor to run code online.
       height: 550px;
     }
   }
-
-  /* @media screen and (min-width: 375px) and (max-width: 667px){
-      nectar-highlighted-text .nectar-scribble {
-    position: absolute;
-    top: none !important;
-    left: 33px !important;
-    z-index: 11;
-}
-} */
-
 
   .nectar-highlighted-text .nectar-scribble path {
     stroke-dasharray: 1;
@@ -181,34 +171,7 @@ Online HTML, CSS and JavaScript editor to run code online.
     top: 75px;
     left: 360px;
     z-index: 7;
-    /* display: none; */
   }
-
-  /* @media screen and (max-width:320px) {
-    .nectar1-highlighted-text .nectar1-scribble {
-      top: 110px !important;
-      left: 80px !important;
-    }
-
-    body .nectar1-scribble.squiggle-underline {
-      width: 145px;
-      height: 22px;
-    }
-  } */
-
-
-
-
-
-  /* @media screen and (min-width: 375px) and (max-width: 667px){
-      nectar-highlighted-text .nectar-scribble {
-    position: absolute;
-    top: none !important;
-    left: 33px !important;
-    z-index: 11;
-}
-} */
-
 
   .nectar1-highlighted-text .nectar1-scribble path {
     stroke-dasharray: 1;
@@ -277,7 +240,6 @@ Online HTML, CSS and JavaScript editor to run code online.
     top: 50px;
     left: 90px;
     z-index: 7;
-    /* display: none; */
   }
 
   @media screen and (max-width:320px) {
@@ -291,16 +253,6 @@ Online HTML, CSS and JavaScript editor to run code online.
       height: 22px;
     }
   }
-
-  /* @media screen and (min-width: 375px) and (max-width: 667px){
-      nectar-highlighted-text .nectar-scribble {
-    position: absolute;
-    top: none !important;
-    left: 33px !important;
-    z-index: 11;
-}
-} */
-
 
   .nectar2-highlighted-text .nectar2-scribble path {
     stroke-dasharray: 1;
@@ -369,104 +321,137 @@ Online HTML, CSS and JavaScript editor to run code online.
     top: 92px;
     left: 5px;
     z-index: 7;
-    /* display: none; */
   }
-/* responsive 320px */
+
+  /* responsive 320px */
   @media screen and (max-width:320px) {
+
     /* nector3 */
     .nectar3-highlighted-text .nectar3-scribble {
       top: 88px !important;
-      
-    }
-    body .nectar3-scribble.squiggle-underline {
-    width: 95px;
-    height: 18px;
-  }
-  /* nector2 */
-  .nectar2-highlighted-text .nectar2-scribble {
-      top: 35px !important;
-      
-    }
-    body .nectar2-scribble.squiggle-underline {
-    width: 115px;
-    height: 18px;
-  }
 
-   /* nector1 */
-   .nectar1-highlighted-text .nectar1-scribble {
-    top: 85px !important;
-    /* right: -130px; */
-    left: 8px !important;
     }
+
+    body .nectar3-scribble.squiggle-underline {
+      width: 95px;
+      height: 18px;
+    }
+
+    /* nector2 */
+    .nectar2-highlighted-text .nectar2-scribble {
+      top: 35px !important;
+
+    }
+
+    body .nectar2-scribble.squiggle-underline {
+      width: 115px;
+      height: 18px;
+    }
+
+    /* nector1 */
+    .nectar1-highlighted-text .nectar1-scribble {
+      top: 85px !important;
+      /* right: -130px; */
+      left: 8px !important;
+    }
+
     body .nectar1-scribble.squiggle-underline {
-    width: 105px;
-    height: 18px;
-  }
-    .head-text{
+      width: 105px;
+      height: 18px;
+    }
+
+    .head-text {
       font-size: 25px;
     }
-    .head-text1{
+
+    .head-text1 {
       font-size: 05px;
     }
   }
+
   @media screen and (max-width:375px) {
     .nectar1-highlighted-text .nectar1-scribble {
-    position: absolute;
-    top: 61px;
-    left: 8px;
-    z-index: 7;
+      position: absolute;
+      top: 61px;
+      left: 8px;
+      z-index: 7;
     }
+
     body .nectar1-scribble.squiggle-underline {
-    width: 105px;
-    height: 18px;
-  }
-    .head-text{
+      width: 105px;
+      height: 18px;
+    }
+
+    .head-text {
       font-size: 25px;
     }
-    .head-text1{
+
+    .head-text1 {
       font-size: 05px;
     }
-  } 
+  }
 
+  @media screen and (max-width:500px) and (min-width:400px) {
+
+    /* nector2 */
+    .nectar1-highlighted-text .nectar1-scribble {
+      position: absolute;
+      top: 122px;
+      left: 23px;
+      z-index: 7;
+    }
+
+    body .nectar2-scribble.squiggle-underline {
+      width: 115px;
+      height: 18px;
+    }
+  }
 
   /* responsive 425px */
   @media screen and (max-width:425px) {
+
     /* nector3 */
     .nectar3-highlighted-text .nectar3-scribble {
       top: 60px !important;
-      
-    }
-    body .nectar3-scribble.squiggle-underline {
-    width: 95px;
-    height: 18px;
-  }
-  /* nector2 */
-  .nectar2-highlighted-text .nectar2-scribble {
-    top: 35px !important;
-    left: 59px !important;
-      
-    }
-    body .nectar2-scribble.squiggle-underline {
-    width: 115px;
-    height: 18px;
-  }
 
-   /* nector1 */
-   
-   .nectar1-highlighted-text .nectar1-scribble {
-    position: absolute;
-    top: 88px;
-    left: 8px;
-    z-index: 7;
     }
+
+    body .nectar3-scribble.squiggle-underline {
+      width: 95px;
+      height: 18px;
+    }
+
+    /* nector2 */
+    .nectar2-highlighted-text .nectar2-scribble {
+      top: 35px !important;
+      left: 59px !important;
+
+    }
+
+    body .nectar2-scribble.squiggle-underline {
+      width: 115px;
+      height: 18px;
+    }
+
+    /* nector1 */
+
+    .nectar1-highlighted-text .nectar1-scribble {
+      position: absolute;
+      top: 88px;
+      left: 8px;
+      z-index: 2;
+    }
+
     body .nectar1-scribble.squiggle-underline {
-    width: 105px;
-    height: 18px;
-  }
-    .head-text{
+      width: 105px;
+      height: 18px;
+    }
+
+    .head-text {
       font-size: 25px;
     }
-    .head-text1{
+
+    .head-text1 {
       font-size: 05px;
     }
   }
