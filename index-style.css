@@ -1411,16 +1411,3 @@ body::after {
     opacity: 1;
     transform: translateY(0);
 }
-
-
-@media only screen and (max-width: 690px) {
-    #index-animation {
-        width: 300px;
-    }
-}
-
-@media only screen and (min-width: 690px)and(max-width: 800px) {
-    #index-animation {
-        width: 300px;
-    }
-}
