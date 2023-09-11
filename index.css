@@ -1,6 +1,7 @@
 * {
     font-family: "Mulish";
 }
+
 body {
     overflow-x: hidden;
 }
@@ -53,15 +54,19 @@ nav {
 }
 
 /*Styling Buttons*/
+.login-button {
+    margin-bottom: 1rem !important;
+    margin-right:2rem;
+    margin-left: 1%;
+}
+
 .login-button a {
     background-color: transparent;
     border: 2px solid rgba(0, 0, 0, .4);
     border-radius: 5px;
-    padding: 0.2rem 0.6rem;
-    height: 37px;
+    padding: 0.3rem 1rem;
     font-size: 1rem;
     cursor: pointer;
-    margin: 1.5rem;
     color: #253859;
     text-decoration: none;
 }
@@ -81,12 +86,13 @@ nav {
     padding: 0.4rem 0.9rem;
     font-size: 1rem;
     cursor: pointer;
+    margin-bottom: 1rem;
     margin-right: 8rem;
 }
 
 .join-button:hover {
     background: #03d5cc;
-    box-shadow: 5px 5px 5px 0 #03d5cc;
+    box-shadow: 5px 5px 5px 5px #03d5cc;
     transition: all 0.5s ease;
 }
 
