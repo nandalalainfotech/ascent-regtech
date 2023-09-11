@@ -140,7 +140,7 @@ function setResources() {
 function setCompany() {
     document.getElementById('platform').innerText = 'Back';
     document.getElementById('capabilities').innerText = 'Our Team';
-    document.getElementById('whoweserve').innerText = 'Diversity,Equity and \u00A0 \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 Inclusion';
+    document.getElementById('whoweserve').innerText = 'Diversity,Equity and Inclusion ';
     document.getElementById('resources').innerText = 'Careers';
     document.getElementById('company').innerText = '';
     document.getElementById('sign_in').innerText = '';
