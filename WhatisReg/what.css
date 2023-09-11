@@ -1,0 +1,179 @@
+.left {
+    text-align: left;
+}
+
+body {
+    font-family: "Mulish";
+    color: #253859;
+}
+
+#Btn {
+    background-color: #03D5CC;
+    ;
+    color: #fff;
+    position: relative;
+}
+
+@keyframes btn {
+    0% {
+        bottom: 0rem;
+    }
+
+    50% {
+        bottom: .025 rem;
+    }
+
+    100% {
+        bottom: .50rem;
+    }
+}
+
+.blue:hover {
+    cursor: pointer;
+    color: #253859 !important;
+}
+
+#Btn:hover {
+    background-color: #28BEBB;
+    animation-name: btn;
+}
+
+.vc_sep_line {
+    border-bottom: 2px solid;
+    border-color: #00c1cf;
+}
+body {
+    font-family: "Mulish";
+    color: #253859;
+}
+.what {
+    color: #28bebb;
+    font-family: Mulish;
+    text-transform: none;
+    letter-spacing: -0.02em;
+    font-size: 31.45px;
+    line-height: 0.5px;
+    font-weight: 900;
+}
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.reveal.active {
+    transform: translateY(0);
+    scroll-margin-top: translateY(0);
+    opacity: 1;
+}
+.rapid {
+    color: #fff;
+    letter-spacing: -0.02em;
+    font-size: 41.45px;
+    font-weight: 800;
+
+}
+.scroll-section {
+    color: #000;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+.scroll-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.cards {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    background: #fff;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.reg {
+    font-size: 1em;
+    font-weight: 700;
+    text-align: left;
+
+
+}
+.para {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 33px;
+}
+.emerging {
+    font-size: 21px;
+    font-weight: 400;
+    color: #fff;
+}
+.compliance {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+}
+
+@media screen and (max-width:0px) and (min-width:2560x) {
+    .center {
+        margin: auto;
+    }
+
+}
+@media screen and (max-width:767px) and (min-width:320px) {
+    .what {
+        color: #28bebb;
+        font-family: "Mulish";
+        letter-spacing: -0.02em;
+        font-size: 24px;
+        line-height: 0.5px;
+        font-weight: 900;
+        float: left !important;
+
+    }
+    .emerging {
+        color: #fff;
+        margin-top: 2rem;
+        font-size: 19px !important;
+        font-weight: 400 !important;
+        float: left !important;
+
+    }
+    .rapid {
+        color: #fff;
+        /* font-family:" Mulish"; */
+        letter-spacing: -0.02em;
+        font-size: 36.45px;
+        font-weight: 800;
+        float: left;
+        padding: 0% !important;
+
+    }
+    .compliance {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: -0.05em;
+    }
+    .reg {
+        font-size: 30px;
+
+    }
+    .card-textt {
+        font-size: 19px;
+        padding: 0 1em 1em;
+    }
+
+    .head {
+        font-size: 23px !important;
+    }
+    .head2 {
+        font-size: 18px !important;
+        font-weight: 900 !important;
+    }
+    .cat {
+        font-size: 33px !important;
+        font-weight: 600 !important;
+        line-height: 1;
+    }
+}

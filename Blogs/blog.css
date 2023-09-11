@@ -1,0 +1,378 @@
+body {
+    letter-spacing: 0.02em;
+    font-family: "Mulish";
+}
+
+.excerpt {
+    color: #000;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.titles {
+    font-family: Mulish;
+    letter-spacing: -0.06em;
+    font-size: 20px !important;
+    line-height: 24px;
+    font-weight: 500 !important;
+}
+
+.title {
+    font-style: normal;
+    color: #000;
+    font-size: 31.45px;
+    line-height: 25.5px;
+    font-family: Mulish;
+    text-transform: none;
+    letter-spacing: -0.02em;
+
+}
+/* sign svg */
+
+@keyframes nectarStrokeAnimation {
+    0% {
+        stroke-dashoffset: 1;
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.nectar-highlighted-text .nectar-scribble {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.nectar-highlighted-text em.animated .nectar-scribble path {
+    stroke-linecap: round;
+    opacity: 1;
+    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+.nectar-highlighted-text .nectar-scribble path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    opacity: 0;
+}
+
+.nectar-highlighted-text em.animated .nectar-scribble path {
+    stroke-linecap: round;
+    opacity: 1;
+    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+.nectar-highlighted-text[data-style="scribble"] em {
+    background-image: none !important;
+}
+
+body .nectar-scribble.squiggle-underline {
+    width: 250px;
+    height: 20px;
+
+
+}
+
+.nectar-highlighted-text .nectar-scribble {
+    position: absolute;
+    top: 160px;
+    z-index: -1;
+}
+
+@media screen and (max-width:500px) {
+    body .nectar-scribble.squiggle-underline {
+        left: 40px;
+        top: 290px;
+        width: 220px;
+        height: 20px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .nectar-highlighted-text .nectar-scribble {
+        left: 500px;
+        top: 200px;
+
+    }
+
+    .nectar-scribble.squiggle-underline {
+        width: 13rem !important;
+        height: 20px !important;
+    }
+}
+
+
+@media only screen and (min-width: 2560px) {
+    .nectar-highlighted-text .nectar-scribble {
+        left: 66rem;
+        top: 200px;
+    }
+
+    ;
+}
+
+@media screen and (max-width:1000px) and (min-width:780px) {
+    .nectar-highlighted-text .nectar-scribble {
+        left: 20px;
+        top: 200px;
+    }
+}
+
+@media screen and (max-width:780px) and (min-width:600px) {
+    .nectar-highlighted-text .nectar-scribble {
+
+        left: 2rem;
+        top: 16rem;
+    }
+
+    .nectar-scribble.squiggle-underline {
+        width: 9rem !important;
+        height: 20px !important;
+    }
+}
+
+@media screen and (max-width:600px) and (min-width:500px) {
+    .nectar-highlighted-text .nectar-scribble {
+        top: 250px;
+        left: 170px
+    }
+
+}
+
+
+
+
+.nectar-highlighted-text .nectar-scribble path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    opacity: 0;
+}
+
+
+
+.nectar-highlighted-text .animated .nectar-scribble path {
+    stroke-linecap: round;
+    opacity: 1;
+    animation: nectarStrokeAnimation 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+
+.section-cards {
+    z-index: 3;
+    position: relative;
+}
+
+.section-gray {
+    background: #e5e5e5;
+    padding: 60px 0 30px 0;
+}
+
+/*---------------------------------------------------------------------- /
+CARDS
+----------------------------------------------------------------------- */
+
+.card {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #ffffff;
+    border: none;
+}
+
+.card .card-image {
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -30px;
+    border-radius: 6px;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56),
+        0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-image img {
+
+    height: 100%;
+    border-radius: 6px;
+    pointer-events: none;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card .ftr div {
+    display: inline-block;
+}
+
+.card .ftr .author {
+    color: #888;
+}
+
+.card .ftr .stats {
+    float: right;
+    line-height: 30px;
+}
+
+.card .ftr .stats {
+    position: relative;
+    top: 1px;
+    font-size: 14px;
+}
+
+/* ============ Card Table ============ */
+
+.table {
+    margin-bottom: 0px;
+}
+
+.card .table {
+    padding: 15px 30px;
+}
+
+/* ============ Card Blog ============ */
+
+.card-blog {}
+
+.card-blog .card-caption {
+    margin-top: 5px;
+}
+
+.card-blog .card-image+.category {
+    margin-top: 20px;
+}
+
+.card-raised {
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56),
+        0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+/*---------------------------------------------------------------------- /
+BOOTSTRAP COL-MD-12 CLASS
+----------------------------------------------------------------------- */
+
+.col-md-12 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/* ======= GENERAL  ======= */
+
+.wrapper:hover .zoomer {
+    transition: 2s;
+    transform: scale(1.05);
+}
+
+.wrapper {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #03D5CC;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #03D5CC;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#footer-hover:hover {
+    color: #28BEBB;
+}
+
+#footer-hover {
+    text-decoration: none;
+    color: white;
+}
+/* for animation */
+
+:before,
+:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.box {
+    width: 100%;
+
+    margin: 10px auto;
+    position: relative;
+}
+
+
+
+
+.animation-element {
+    position: relative;
+}
+
+.bounce-up .box {
+    opacity: 0;
+    -moz-transition: all 700ms ease-out;
+    -webkit-transition: all 700ms ease-out;
+    -o-transition: all 700ms ease-out;
+    transition: all 700ms ease-out;
+    -moz-transform: translate3d(0px, 200px, 0px);
+    -webkit-transform: translate3d(0px, 200px, 0px);
+    -o-transform: translate(0px, 200px);
+    -ms-transform: translate(0px, 200px);
+    transform: translate3d(0px, 200, 0px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.bounce-up.in-view .box {
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+}
+
+body {
+    font-family: Mulish;
+}
+
+.headings {
+    font-family: Mulish;
+    letter-spacing: -0.05em;
+    font-size: 42px;
+    line-height: 45px;
+    font-weight: 800;
+}
+
+.para {
+    font-weight: 500;
+    color: #fff;
+}
