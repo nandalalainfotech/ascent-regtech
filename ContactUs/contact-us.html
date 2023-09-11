@@ -126,6 +126,10 @@
     .top-content {
         height: 100px;
     }
+
+    .viewBox-test {
+        margin-top: 80px;
+    }
 </style>
 
 <style>
@@ -150,6 +154,10 @@
             font-size: 40.6px;
             line-height: 31.5px;
         }
+
+        .viewBox-test {
+            margin-top: -42px;
+        }
     }
 
     @media screen and (min-width:375px) and (max-width:667px) {
@@ -166,7 +174,7 @@
         }
 
         .captcha1 {
-            margin-left: -34px;
+            margin-left: -6px;
         }
 
         .nectar-highlighted-text.font_size_45px h1 {
@@ -180,12 +188,36 @@
             font-size: 37.7px;
             line-height: 29.25px;
         }
+
+        .viewBox-test {
+            width: 131%;
+            max-width: 122%;
+            margin-left: -30px;
+            margin-top: -43px;
+        }
+
+        .form-control {
+            display: inline-block;
+            width: 100%;
+            max-width: 500px;
+            height: 40px;
+            padding: 9px 10px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 22px;
+            color: #33475b !important;
+            border: 1px solid #cbd6e2;
+            box-sizing: border-box;
+            border-radius: 3px;
+            background-color: #f5f8fa;
+        }
     }
 
     @media only screen and (min-width : 1440px) {
         .nectar-highlighted-text .nectar-scribble {
             position: absolute;
-            left: 16rem !important;
+            left: 3rem !important;
             top: 210PX !important;
         }
     }
@@ -275,7 +307,8 @@
         .viewBox-test {
             width: 128% !important;
             margin-left: -31px !important;
-            max-width: 124%;
+            max-width: 127%;
+            margin-top: -29px;
         }
 
         .form-control {
@@ -318,7 +351,7 @@
 <body>
     <nav>
         <div class="">
-            <a href="index.html">
+            <a href="../index.html">
                 <img class="logoo" src="../images/index/head-logo-360.png" alt="Logo Image" width="160px"
                     height="60px" />
             </a>
@@ -465,10 +498,11 @@
                     </div>
                 </div>
 
-                <div class="col-lg-7 col-sm-12 col-md-12 mt-5 viewBox-test" style="
+                <div class="col-lg-7 col-sm-12 col-md-12  viewBox-test" style="
                 background-color: #eff4f9;
                 box-shadow: 0 30px 60px rgba(0, 0, 0, .15);
-                border-radius: 10px;">
+                border-radius: 10px;
+                ">
 
                     <!-- ============== Request a Demo Form ================  -->
                     <div class="container mt-4" id="request_form">
